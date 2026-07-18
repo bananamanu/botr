@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "meta"
 phase: "1"
 statut: "en-cours"
-date_maj: "2026-07-18"
+date_maj: "2026-07-19"
 tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.1"
+version: "1.2"
 ---
 
 # Document de cadrage du projet
@@ -59,7 +59,7 @@ Figurines MESBG, collection très complète.
 | Jeu | Ce qu'on en retient |
 |---|---|
 | **C&C Ancients** | Gestion des unités légères, règles d'évasion. |
-| **Memoir '44** | Clarté de présentation des scénarios, format des cartes de terrain, médailles objectif. Règle [Arme à distance] (dés dégressifs avec la distance) — utile pour Archers de Mirkwood/Arcs Longs de Rohan. Face de dé « miss universel » (voir §5.2, D001). |
+| **Memoir '44** | Clarté de présentation des scénarios, format des cartes de terrain, médailles objectif. Face de dé « miss universel » (voir §5.2, D001). |
 | **C&C Napoleonics** | Système de moral et de cohésion d'unité. |
 | **BattleLore V1** | Règles de Peur/Terreur — pertinentes pour les Nazgûl, les Trolls, les Mûmakil. |
 | **Battle of Westeros** | Bonus offensif +1 dé depuis le terrain surélevé. |
@@ -242,8 +242,10 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 | 015 | 2026-07-18 | [Massif] retirée du socle de règles, sans remplacement en V1 | Règle héritée d'un système voisin pour différencier l'infanterie d'élite sur socle 25 mm (type Hommes-Lézards de Warhammer). Toutes les Infanteries de BdTdM partagent déjà la même base (25 mm) — le cas ne se présente plus. Si un besoin de différenciation apparaît en Phase 3, une nouvelle règle sera introduite à ce moment-là. |
 | 016 | 2026-07-18 | Abandon de la sous-force nominative par joueur ("Commandement" ne désigne plus que le système de cartes/activation) | La logique "Rohan / Minas Tirith-Dol Amroth / Compagnie Grise" du cadrage 5 n'a plus de sens dans l'architecture C&C pure. En Épique (3v3), chaque joueur contrôle une Section (Gauche/Centre/Droite) ; la répartition des peuples entre sections devient une décision de scénario (Phase 3), pas une règle de commandement. Annule la définition "sous-force" de D014. |
 | 017 | 2026-07-18 | Pas de terrain spécifique développé pour le Pelennor | Le champ de bataille est majoritairement plat (des champs qui s'étendent à perte de vue) — les règles de terrain génériques (bois, gué, terrain surélevé) suffiront pour d'éventuels éléments ponctuels introduits par le scénario. |
+| 018 | 2026-07-19 | [Arme à distance] (ex-[Arme à feu]) retirée du socle de règles, sans remplacement en V1 | Règle spécifique aux armes à poudre (dés dégressifs avec la distance), héritée par erreur de la référence Memoir '44 — sans objet dans un univers sans armes à feu. Le §2 est corrigé en conséquence : la référence Memoir '44 ne mentionne plus cette règle. Voir [[Regles_Speciales]]. |
+| 019 | 2026-07-19 | Carte de commandement "Arcanes de guerre" renommée en "Ruée générale" | Le nom évoquait une magie de bataille, incompatible avec l'absence de couche pouvoirs/magie en V1 (D001, D010). Le mécanisme (activation par dés) reste inchangé. Voir [[Cartes_Commandement]] §4.2. |
 
 ---
 
-*Version : 1.1 — Phase 1 — 2026-07-18. [Massif] retirée (D015), sous-force nominative abandonnée au profit des Sections (D016), pas de terrain spécifique Pelennor (D017).*
+*Version : 1.2 — Phase 1 — 2026-07-19. [Arme à distance] retirée des références (D018), carte "Arcanes de guerre" renommée "Ruée générale" (D019).*
 *Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique.*

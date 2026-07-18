@@ -11,14 +11,10 @@
             "id": "9325cc91e8d65535",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - META/Document_de_cadrage.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Document_de_cadrage"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -183,8 +179,18 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "9325cc91e8d65535",
+  "active": "730387c2e5f186e4",
   "lastOpenFiles": [
+    "00 - META/Templates/Tpl scenario.md",
+    "00 - META/Templates/Tpl regle.md",
+    "00 - META/Templates/Tpl playtest.md",
+    "00 - META/Templates/Tpl faction.md",
+    "01 - Règles/Terrain.md",
+    "05 - Playtest/BdVM_cloture_phase1.md",
+    "03 - Scénarios/BdVM_playtest1.md",
+    "02 - Factions/BdVM_Empire_Unites.md",
+    "04 - Composants/Cartes_Commandement.md",
+    "01 - Règles/Regles_Speciales.md",
     "00 - META/Document_de_cadrage.md",
     "00 - META/Document_de_cadrage_BdTdM.md",
     "01 - Règles/Regles_Base.md",
@@ -197,12 +203,10 @@
     "01 - Règles",
     "03 - Scénarios/BdVM_playtest2.md",
     "03 - Scénarios/BdVM_Playtest3.md",
-    "03 - Scénarios/BdVM_playtest1.md",
     "03 - Scénarios",
     "02 - Factions/BdVM_Hommes_Lezards_Unites.md",
     "02 - Factions/fiche_hommes_lezards.html",
     "02 - Factions/fiche_empire.html",
-    "02 - Factions/BdVM_Empire_Unites.md",
     "02 - Factions",
     "04 - Composants/BdVM_gabarit_cartes_playtest.svg",
     "04 - Composants/BdVM_deck_escarmouche_43cartes.svg",
@@ -219,16 +223,9 @@
     "00 - META/Images/Divers/saurus-lance.png",
     "00 - META/Images/Divers/icones",
     "00 - META/Scribus/playtest2.sla",
-    "00 - META/Templates/Tpl playtest.md",
     "00 - META/Templates/Tpl unite.md",
-    "00 - META/Templates/Tpl scenario.md",
-    "00 - META/Templates/Tpl regle.md",
-    "00 - META/Templates/Tpl faction.md",
     "00 - META/BdVM_Analyse_BLv2.md",
     "05 - Playtest/BdVM_Playtest_01.md",
-    "05 - Playtest/BdVM_Playtest_02.md",
-    "05 - Playtest/BdVM_cloture_phase1_6.md",
-    "05 - Playtest/BdVM_cloture_phase1_5.md",
-    "05 - Playtest/BdVM_cloture_phase1.md"
+    "05 - Playtest/BdVM_Playtest_02.md"
   ]
 }

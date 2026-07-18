@@ -1,28 +1,18 @@
 ---
-projet: "Batailles du Vieux Monde"
+projet: "Batailles de la Terre du Milieu"
 type: "regles"
-phase: "1.6"
-statut: "à-tester"
-date_maj: "2026-06-01"
-tags: [BdVM, "type/regles", "phase/1.6", "statut/à-tester"]
+phase: "1"
+statut: "brouillon-a-tester"
+date_maj: "2026-07-19"
+tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
+version: "0.1"
 ---
 
-# Batailles du Vieux Monde — Règles de terrain
+# Batailles de la Terre du Milieu — Règles de terrain
 
-> Ce document définit les règles de terrain pour la Phase 1.6. Il couvre six types de terrain : campagne, terrain boisé, terrain surélevé (colline), cours d'eau, gué, pont et bâtiment. Les terrains fantastiques (Tour de sorcier, Portail du Chaos, Pierre de Sang, etc.) sont réservés à la Phase 2.
+> Ce document définit les règles de terrain de la Phase 1. Il couvre six types de terrain : campagne, terrain boisé, terrain surélevé (colline), cours d'eau, gué, pont et bâtiment. Les terrains fantastiques ou spéciaux propres à certains lieux de la Terre du Milieu sont réservés à une phase ultérieure, si besoin s'en fait sentir.
 >
-> **Base de référence :** BattleLore Seconde Édition (FFG, 2013) — Rulebook p. 13 + Reference Book p. 2–5. Toutes les adaptations par rapport à BLv2 sont tracées dans `BdVM_Analyse_BLv2.md` §9.
-
-> 🔄 **Mise à jour — 2026-06-01 | Phase 1.6 Étape 6**
-> - **§10 — Retraites et terrain** : réécriture complète (D091). Alignement C&C standard (Memoir '44, C&C Ancients, BattleCry) : seul le terrain **impassable** bloque la retraite. La forêt, le gué et le bâtiment n'ont aucun effet sur la retraite.
-> - **§4, §7, §9** : suppression des sous-sections "Retraite" par terrain (devenues inutiles).
-> - **§9.2** : suppression de la référence au Moral dans l'exemple de jeu.
-
-> 🔄 **Mise à jour — 2026-05-30 | Phase 1.6 Étape 3**
-> - **Terrain boisé §4.2** : plafond de dés ramené à **2 dés** (retour BLv2 standard, conséquence de D061).
-> - **Terrain surélevé §5.2** : introduction du **bonus offensif +1 dé** pour l'attaquant en hauteur (D076).
-> - **[Terrain favori : Boisé]** : nouvelle règle spéciale (D079).
-> - **Tableau récapitulatif §11** : mis à jour.
+> Ce document est un complément détaillé à [[Regles_Base]] §6 (Mouvement) et §7.5 (Modificateurs de dés liés au terrain), qui donnent déjà la version condensée nécessaire au Playtest #1. Pas de terrain spécifique développé pour le scénario du Pelennor (D017 du [[Document de cadrage]]) : le champ de bataille y est majoritairement plat. Ces règles génériques couvrent les éléments ponctuels qu'un scénario pourrait vouloir introduire (bosquet, talus, cours d'eau, ruines).
 
 ---
 
@@ -50,7 +40,7 @@ Deux grandes catégories de terrain ont des effets systémiques sur la ligne de 
 
 **Terrain impassable** : aucune unité ne peut entrer dans cet hexagone ni le traverser, que ce soit en mouvement volontaire ou en retraite. Le cours d'eau est impassable, sauf si l'hexagone contient un gué ou un pont.
 
-> 🔗 **Voir aussi** [[BdVM_Regles_Base]] §6 — Mouvement · §9 — Retraite
+> 🔗 **Voir aussi** [[Regles_Base]] §6 — Mouvement · §9 — Retraite
 
 ---
 
@@ -74,9 +64,9 @@ La ligne de vue **n'est pas bloquée** par :
 **Unités en hauteur :** une unité positionnée sur un hexagone de terrain surélevé ignore toutes les autres unités lorsqu'elle trace sa ligne de vue. Le terrain bloquant continue de bloquer sa LdV normalement.
 
 > ⚠️ **Point ouvert**
-> Les unités volantes et leurs interactions avec la ligne de vue seront précisées en Phase 2.
+> Les unités volantes (ex. Nazgûl montés sur créature ailée) et leurs interactions avec la ligne de vue seront précisées en Phase 2, avec le reste des règles de monstres avancés.
 
-> 🔗 **Voir aussi** [[BdVM_Regles_Base]] §7.4 — Ligne de vue
+> 🔗 **Voir aussi** [[Regles_Base]] §7.4 — Ligne de vue
 
 ---
 
@@ -97,9 +87,9 @@ _Tout ce qui n'est pas qualifié autrement est de la campagne._
 
 ## 4. Terrain boisé
 
-Le **terrain boisé** représente les forêts, bosquets et sous-bois du Vieux Monde. Ces zones offrent un couvert naturel mais gênent les manœuvres et les tirs.
+Le **terrain boisé** représente les bois, bosquets et sous-bois de la Terre du Milieu. Ces zones offrent un couvert naturel mais gênent les manœuvres et les tirs.
 
-> 🎲 **Note de design** Le plafond est ramené à 2 dés (BLv2 standard) suite à la recalibration générale des dés (D061). Les unités avec [Terrain favori : Boisé] (ex. Skinks) ignorent toutes les restrictions du terrain boisé sauf la LdV.
+> 🎲 **Note de design** Certaines unités pourront à l'avenir porter la règle [Terrain favori : Boisé] (voir [[Regles_Speciales]]), qui annule toutes les restrictions de mouvement et de combat du terrain boisé pour elles — la LdV du bois reste bloquante même pour ces unités. Aucun peuple de la V1 ne porte cette règle pour l'instant.
 
 ### 4.1 Mouvement
 
@@ -114,7 +104,7 @@ Une unité qui **entre** dans un hexagone de terrain boisé **s'y arrête imméd
 - Si la valeur d'attaque de l'unité est inférieure ou égale à 2, elle lance ses dés normalement.
 
 > 💡 **Exemple de jeu**
-> Des Grandes Épées (4 dés) attaquent des Saurus positionnés dans un bois : 2 dés au lieu de 4. Des Skinks [Terrain favori : Boisé] tirent depuis un bois : ils ignorent le plafond.
+> Une unité d'Infanterie (4 dés) attaque une unité positionnée dans un bois : 2 dés au lieu de 4.
 
 ### 4.3 Ligne de vue
 
@@ -125,8 +115,6 @@ Un hexagone de terrain boisé est du **terrain bloquant** : il bloque la LdV pou
 ## 5. Terrain surélevé
 
 Le **terrain surélevé** représente les collines et promontoires qui offrent un avantage tactique décisif.
-
-> 🎲 **Note de design** En Phase 1.5, les collines n'avaient d'effet que sur la LdV. Le Playtest #2 a confirmé qu'elles n'étaient jamais disputées. La Phase 1.6 introduit un bonus offensif +1 dé (D086) inspiré de Battle of Westeros. Le mouvement reste libre (D087 écarté).
 
 ### 5.1 Mouvement
 
@@ -141,7 +129,7 @@ Ce bonus ne s'applique **pas** si :
 - l'attaquant est en contrebas et la cible est en hauteur.
 
 > 💡 **Exemple de jeu**
-> Des Arbalétriers (2 dés) en hauteur tirent sur des Saurus en contrebas : 3 dés. Des Hallebardiers en contrebas attaquent des Gardes du Temple en hauteur : 0 bonus.
+> Des archers (2 dés) en hauteur tirent sur une unité en contrebas : 3 dés. Une unité en contrebas attaque une unité en hauteur : 0 bonus.
 
 ### 5.3 Ligne de vue
 
@@ -167,7 +155,7 @@ Non applicable — aucune unité ne peut occuper un hexagone de cours d'eau.
 Un hexagone de cours d'eau **ne bloque pas la ligne de vue**.
 
 > ⚠️ **Point ouvert**
-> Les règles de traversée pour les unités dotées de capacités spéciales (vol, déplacement magique) seront définies en Phase 2.
+> Les règles de traversée pour les unités dotées de capacités spéciales (vol, etc.) seront définies en Phase 2.
 
 ---
 
@@ -185,7 +173,7 @@ Une unité qui **entre** dans un hexagone de gué **s'y arrête immédiatement**
 - Cette limite s'applique à l'**attaquant uniquement**. Une unité sur la berge attaquant une unité dans le gué utilise sa valeur d'attaque normale.
 
 > 💡 **Exemple de jeu**
-> Des Saurus à la Lance (3 dés) dans un gué contre-attaquent : 2 dés au lieu de 3. Des Grandes Épées sur la berge les attaquent : 4 dés normalement.
+> Une unité dans un gué contre-attaque avec 3 dés en profil : 2 dés au lieu de 3. Une unité sur la berge l'attaque normalement.
 
 ### 7.3 Ligne de vue
 
@@ -213,9 +201,7 @@ Un hexagone de pont **ne bloque pas la ligne de vue**.
 
 ## 9. Bâtiment
 
-Le **bâtiment** représente les constructions du Vieux Monde : ruines, maisons, bastions, fortifications.
-
-> 🎲 **Note de design** BLv2 accorde une protection fixe de 1 dégât ignoré. BdVM adapte ce système avec **[Protection X]** modulable (D050).
+Le **bâtiment** représente les constructions de la Terre du Milieu : ruines, fermes, bastions, fortifications.
 
 ### 9.1 Mouvement
 
@@ -234,7 +220,7 @@ Une unité occupant un bâtiment bénéficie de **[Protection X]**, où X est d�
 **Effet :** l'unité ignore X touches par attaque reçue, avant d'appliquer les pertes. S'applique à toutes les attaques (mêlée et tir).
 
 > 💡 **Exemple de jeu**
-> Des Hallebardiers dans un bâtiment solide [Protection 2] reçoivent 5 touches et 1 Drapeau : ils ignorent 2 touches → 3 touches effectives. Le Drapeau force 1 hexagone de retraite.
+> Une unité dans un bâtiment solide [Protection 2] reçoit 5 touches et 1 Drapeau : elle ignore 2 touches → 3 touches effectives. Le Drapeau force 1 hexagone de retraite.
 
 ### 9.3 Ligne de vue
 
@@ -243,9 +229,6 @@ Un hexagone de bâtiment est du **terrain bloquant** : il bloque la LdV pour tou
 ---
 
 ## 10. Retraites et terrain
-
-> 🔄 **Réécriture — 2026-06-01 | Phase 1.6 Étape 6 — D091**
-> Alignement sur la règle standard C&C (Memoir '44, C&C Ancients, BattleCry), en écart par rapport à BLv2 : seul le terrain impassable bloque la retraite.
 
 **Règle générale :**
 
@@ -265,9 +248,7 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 | **Unité ennemie** | Bloqué — 1 touche par hexagone non résolu. |
 | **Unité amie** | Soutien — tous les hexagones restants ignorés, 0 touche. |
 
-> **Note sur [Terrain favori : Boisé] :** cette règle reste utile pour le mouvement volontaire et le combat en forêt — la retraite en forêt étant désormais libre pour toutes les unités, cet aspect de [Terrain favori : Boisé] est sans objet.
-
-> 🔗 **Voir aussi** [[BdVM_Regles_Base]] §9 — Retraite
+> 🔗 **Voir aussi** [[Regles_Base]] §9 — Retraite
 
 ---
 
@@ -283,17 +264,16 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 | **Pont** | Libre (1 unité max) | Normal | Normal | Dégagée | Libre |
 | **Bâtiment** | Arrêt à l'entrée | Normal | Normal + [Protection X] | Bloquante si traversée | Libre |
 
-> **Note sur [Terrain favori : Boisé] :** les unités avec cette règle (ex. Skinks) ignorent le plafond de 2 dés et l'arrêt à l'entrée en terrain boisé. La LdV du bois s'applique normalement à toutes les unités.
+> **Note sur [Terrain favori : X] :** une unité portant cette règle pour un type de terrain donné ignore le plafond de dés et l'arrêt à l'entrée pour ce terrain. La ligne de vue du terrain s'applique normalement à toutes les unités, y compris celles-ci. Aucun peuple de la V1 ne porte cette règle pour l'instant (voir [[Regles_Speciales]]).
 
 > **Note sur [Protection X] :** valeur définie par le scénario (ruine = 1, bâtiment solide = 2, fortification = 3). S'applique aux touches en combat uniquement.
 
 ---
 
 > 🔗 **Voir aussi**
-> [[BdVM_Regles_Base]] — [[BdVM_Regles_Speciales]] — [[BdVM_Analyse_BLv2]] §9
+> [[Regles_Base]] — [[Regles_Speciales]] — [[Document de cadrage]]
 
 ---
 
-*Version : 3.1 — Phase 1.6 — 2026-06-01.*
-*🔄 Mise à jour Phase 1.6 Étape 6. §10 réécrit (D091) : seul le terrain impassable bloque la retraite, alignement C&C standard. Suppression des sous-sections retraite dans §4, §7, §9. Suppression référence au Moral dans §9.2. Colonne Retraite ajoutée au tableau récapitulatif §11.*
-*Remplace : BdVM_Terrain.md v3.0 (2026-05-30).*
+*Version : 0.1 — Phase 1 — 2026-07-19.*
+*Première adaptation de Batailles de la Terre du Milieu (BdTdM) : reprise du corps de règles générique (campagne, bois, colline, cours d'eau, gué, pont, bâtiment), sans reprise du contenu spécifique à l'autre projet dont il est issu. Retrait des exemples et références liés à cet autre univers, des notes de changelog propres à son historique de phases, et de toute mention de faction. Renommé depuis `BdVM_Terrain.md`.*
