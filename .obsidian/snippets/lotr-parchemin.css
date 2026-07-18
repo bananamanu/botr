@@ -1,0 +1,244 @@
+/* ============================================================
+   LE LIVRE DE MAZARBUL — thème Obsidian "The One Ring 2e"
+   Snippet CSS pour vaults thématiques Seigneur des Anneaux
+   Inspiré de la maquette du JDR The One Ring, 2e édition (Free
+   League) : Alois pour le corps ET les titres (en petites
+   capitales), texte qui alterne noir/rouge, mise en page carnet
+   de voyage.
+   ============================================================
+   Installation :
+   1. Placer ce fichier dans <vault>/.obsidian/snippets/lotr-parchemin.css
+   2. Réglages → Apparence → Feuilles de style (CSS snippets) → activer
+   3. Fonctionne mieux en thème clair (Réglages → Apparence → Clair)
+   4. Alois est une police LOCALE (pas sur Google Fonts) : elle
+      doit être installée sur le système pour que local() la
+      trouve. Sans elle, repli automatique sur EB Garamond (voir
+      @font-face et @import ci-dessous).
+   ============================================================ */
+
+/* --- Polices locales --- */
+@font-face {
+  font-family: 'Alois';
+  src: local('Alois'), local('Alois Regular');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alois';
+  src: local('Alois Bold'), local('Alois-Bold');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Repli web (chargé seulement si Alois n'est pas installée) :
+   EB Garamond a une chasse et une texture proches d'Alois.
+   Commenter cette ligne pour un vault 100% hors-ligne. */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* --- Palette "The One Ring 2e" : parchemin clair, encre noire,
+   rouge sang-de-bœuf saturé pour les titres et accents --- */
+.theme-light {
+  --background-primary: #f5ecd6;
+  --background-primary-alt: #efe1bd;
+  --background-secondary: #e9d8ab;
+  --background-secondary-alt: #ddc586;
+  --background-modifier-border: #b8892c;
+
+  --text-normal: #221912;
+  --text-muted: #4a3420;
+  --text-faint: #6b5636;
+  --text-accent: #a51c22;
+  --text-accent-hover: #c92430;
+  --text-selection: rgba(165, 28, 34, 0.22);
+
+  --interactive-accent: #a51c22;
+  --interactive-accent-hover: #c92430;
+
+  --font-text: 'Alois', 'EB Garamond', 'Palatino Linotype', Georgia, serif;
+  --font-interface: 'Alois', 'EB Garamond', 'Palatino Linotype', Georgia, serif;
+}
+
+/* --- Tailles de police relevées --- */
+/* Alois "crante" (aliasing visible) en dessous d'une certaine taille.
+   On augmente la taille de base et celle des titres pour rester
+   confortable. Non scopé à .theme-light : s'applique aussi en sombre. */
+body {
+  --font-text-size: 19px;
+}
+
+.markdown-rendered h1,
+.markdown-source-view .cm-header-1,
+.HyperMD-header-1 {
+  font-size: 2.1em;
+}
+
+.markdown-rendered h2,
+.markdown-source-view .cm-header-2,
+.HyperMD-header-2 {
+  font-size: 1.7em;
+}
+
+.markdown-rendered h3,
+.markdown-source-view .cm-header-3,
+.HyperMD-header-3 {
+  font-size: 1.4em;
+}
+
+.markdown-rendered h4,
+.markdown-source-view .cm-header-4,
+.HyperMD-header-4 {
+  font-size: 1.2em;
+}
+
+.markdown-rendered h5,
+.markdown-rendered h6,
+.markdown-source-view .cm-header-5,
+.markdown-source-view .cm-header-6,
+.HyperMD-header-5,
+.HyperMD-header-6 {
+  font-size: 1.1em;
+}
+
+/* Texture parchemin très subtile en fond, en CSS pur (pas d'image) */
+.theme-light .workspace,
+.theme-light .workspace-leaf-content {
+  background-image:
+    radial-gradient(rgba(120, 90, 40, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(120, 90, 40, 0.04) 1px, transparent 1px);
+  background-size: 3px 3px, 5px 5px;
+  background-position: 0 0, 2px 2px;
+}
+
+/* --- Titres --- */
+/* Alois partout, en petites capitales — hiérarchie assurée par la
+   taille/graisse plutôt que par un changement de police. Line-height
+   explicite pour éviter tout chevauchement sur les titres longs qui
+   passent à la ligne. */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.markdown-source-view .cm-header-1,
+.markdown-source-view .cm-header-2,
+.markdown-source-view .cm-header-3,
+.markdown-source-view .cm-header-4,
+.markdown-source-view .cm-header-5,
+.markdown-source-view .cm-header-6,
+.HyperMD-header-1,
+.HyperMD-header-2 {
+  font-family: 'Alois', 'EB Garamond', serif !important;
+  font-variant: small-caps;
+  font-weight: 700;
+  color: #a51c22;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+/* Filet appliqué uniquement à l'élément de bloc (lecture + ligne
+   Live Preview), jamais au span inline .cm-header-* — sinon les deux
+   bordures se superposent avec un léger décalage ("double filet"). */
+.markdown-rendered h1,
+.HyperMD-header-1 {
+  border-bottom: 3px solid #a51c22;
+  padding-bottom: 0.15em;
+}
+
+.markdown-rendered h2,
+.HyperMD-header-2 {
+  border-bottom: 1px solid #a51c22;
+  padding-bottom: 0.1em;
+}
+
+/* --- Emphase : le gras bascule aussi en rouge, comme dans le livre --- */
+strong,
+.markdown-rendered b {
+  color: #a51c22;
+}
+
+/* --- Citations façon carnet de voyage, filet rouge --- */
+blockquote {
+  background: #ecdfb8;
+  border-left: 4px solid #a51c22;
+  border-radius: 2px;
+  padding: 0.6em 1em;
+  font-style: italic;
+  color: #3a2a18;
+}
+
+blockquote p:first-of-type::first-letter {
+  font-family: 'Alois', serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.08em;
+  color: #a51c22;
+  font-style: normal;
+}
+
+/* --- Callouts (encadrés Obsidian) : bandeau rouge type "encart" --- */
+.callout {
+  background-color: #ecdfb8;
+  border: 1px solid #a51c22;
+  border-left-width: 5px;
+  border-radius: 4px;
+}
+
+.callout-title {
+  font-family: 'Alois', serif;
+  font-weight: 700;
+  color: #a51c22;
+  letter-spacing: 0.01em;
+}
+
+/* --- Liens : rouge saturé, pas de rouge délavé --- */
+a.internal-link,
+a.external-link {
+  color: #a51c22;
+  text-decoration: none;
+  border-bottom: 1px solid #a51c22;
+}
+
+a.internal-link:hover,
+a.external-link:hover {
+  color: #c92430;
+}
+
+/* --- Séparateur horizontal : filet rouge sobre, façon livre --- */
+hr {
+  border: none;
+  height: 3px;
+  background: #a51c22;
+  margin: 2em 0;
+  position: relative;
+}
+
+hr::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%) rotate(45deg);
+  width: 9px;
+  height: 9px;
+  background: #f5ecd6;
+  border: 2px solid #a51c22;
+}
+
+/* --- Blocs de code : garder le monospace mais teinté parchemin --- */
+code,
+.markdown-rendered pre {
+  background: #e2d1a2;
+  color: #221912;
+  border: 1px solid #b8892c;
+}
+
+/* --- Barres latérales et onglets : liseré rouge sur l'actif --- */
+.workspace-tab-header.is-active,
+.nav-file-title.is-active {
+  background-color: #ddc586;
+  border-left: 3px solid #a51c22;
+}

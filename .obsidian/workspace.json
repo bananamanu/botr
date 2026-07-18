@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Règles/BdVM_AideDeJeu.md",
+                "file": "00 - META/Document_de_cadrage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BdVM_AideDeJeu"
+              "title": "Document_de_cadrage"
             }
           }
         ]
@@ -185,11 +185,15 @@
   },
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
-    "01 - Règles/BdVM_Terrain.md",
-    "01 - Règles/BdVM_Regles_Base.md",
-    "01 - Règles/BdVM_Regles_Speciales.md",
-    "01 - Règles/BdVM_AideDeJeu.md",
+    "00 - META/Document_de_cadrage.md",
+    "00 - META/Document_de_cadrage_BdTdM.md",
+    "01 - Règles/Regles_Base.md",
     "01 - Règles/BdVM_AideDeJeu_Print.pdf",
+    "01 - Règles/BdTdM_Regles_Base_v0.1.md",
+    "01 - Règles/BdVM_AideDeJeu.md",
+    "01 - Règles/BdVM_Terrain.md",
+    "01 - Règles/BdVM_Regles_Speciales.md",
+    "01 - Règles/BdVM_Regles_Base.md",
     "01 - Règles",
     "03 - Scénarios/BdVM_playtest2.md",
     "03 - Scénarios/BdVM_Playtest3.md",
@@ -220,13 +224,11 @@
     "00 - META/Templates/Tpl scenario.md",
     "00 - META/Templates/Tpl regle.md",
     "00 - META/Templates/Tpl faction.md",
-    "00 - META/Document_de_cadrage.md",
     "00 - META/BdVM_Analyse_BLv2.md",
     "05 - Playtest/BdVM_Playtest_01.md",
     "05 - Playtest/BdVM_Playtest_02.md",
     "05 - Playtest/BdVM_cloture_phase1_6.md",
     "05 - Playtest/BdVM_cloture_phase1_5.md",
-    "05 - Playtest/BdVM_cloture_phase1.md",
-    "Bienvenue.md"
+    "05 - Playtest/BdVM_cloture_phase1.md"
   ]
 }
