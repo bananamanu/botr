@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BdVM — Playtest #3 — Fiche de troupes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+  :root {
+    --empire: #7a2020;
+    --empire-light: #f5ece8;
+    --empire-mid: #c8a090;
+    --hl: #1a4a2e;
+    --hl-light: #e8f0eb;
+    --hl-mid: #7aaa8a;
+    --gold: #b8972a;
+    --ink: #1a1410;
+    --parchment: #faf6ef;
+    --rule-bg: #f0ebe0;
+    --border: #c8b89a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Crimson Text', Georgia, serif;
+    background: var(--parchment);
+    color: var(--ink);
+    font-size: 10.5pt;
+    line-height: 1.35;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 10mm 11mm 10mm 11mm;
+    background: var(--parchment);
+  }
+
+  /* ── HEADER ── */
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+  }
+
+  .page-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 15pt;
+    font-weight: 700;
+    letter-spacing: .04em;
+    color: var(--ink);
+  }
+
+  .page-header .meta {
+    font-family: 'Cinzel', serif;
+    font-size: 7.5pt;
+    color: #6a5840;
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  .subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 8.5pt;
+    color: var(--gold);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  /* ── FACTION BLOCKS ── */
+  .faction-block {
+    margin-bottom: 10px;
+  }
+
+  .faction-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 8px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+  }
+
+  .faction-header.empire {
+    background: var(--empire);
+    color: #fdf5ee;
+  }
+
+  .faction-header.hl {
+    background: var(--hl);
+    color: #eef5f0;
+  }
+
+  .faction-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 10.5pt;
+    font-weight: 700;
+    letter-spacing: .06em;
+    flex: 1;
+  }
+
+  .faction-header .camp {
+    font-family: 'Cinzel', serif;
+    font-size: 7pt;
+    opacity: .8;
+    letter-spacing: .08em;
+  }
+
+  /* ── TABLE ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+  }
+
+  thead tr {
+    background: var(--rule-bg);
+    border-bottom: 1.5px solid var(--border);
+  }
+
+  th {
+    font-family: 'Cinzel', serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    letter-spacing: .05em;
+    padding: 4px 5px;
+    text-align: center;
+    color: #4a3820;
+  }
+
+  th.col-unit { text-align: left; width: 19%; }
+  th.col-type { text-align: left; width: 14%; }
+  th.col-stat { width: 6%; }
+  th.col-rules { text-align: left; }
+
+  td {
+    padding: 4px 5px;
+    vertical-align: top;
+    border-bottom: .75px solid #ddd5c0;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  tr:nth-child(even) td { background: rgba(200,184,154,.1); }
+
+  td.col-unit {
+    font-family: 'Cinzel', serif;
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: var(--ink);
+    vertical-align: middle;
+  }
+
+  td.col-type {
+    font-size: 8pt;
+    color: #5a4830;
+    font-style: italic;
+    vertical-align: middle;
+  }
+
+  td.col-stat {
+    text-align: center;
+    font-weight: 600;
+    font-size: 10pt;
+    vertical-align: middle;
+  }
+
+  td.col-rules {
+    font-size: 8.8pt;
+    color: #2a2010;
+    line-height: 1.4;
+  }
+
+  .rule-tag {
+    display: inline;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .rule-text {
+    color: #4a4030;
+  }
+
+  /* couleurs accent par faction */
+  .empire-row td.col-unit { color: var(--empire); }
+  .hl-row td.col-unit { color: var(--hl); }
+
+  /* ── RAPPELS ── */
+  .reminders {
+    margin-top: 10px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .reminders-header {
+    background: #3a3020;
+    color: #e8dfc8;
+    font-family: 'Cinzel', serif;
+    font-size: 8pt;
+    letter-spacing: .1em;
+    padding: 4px 8px;
+    text-transform: uppercase;
+  }
+
+  .reminders-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: var(--rule-bg);
+  }
+
+  .reminder-item {
+    padding: 4px 8px;
+    border-bottom: .75px solid #ddd5c0;
+    font-size: 8.3pt;
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+  }
+
+  .reminder-item:nth-child(odd) {
+    border-right: .75px solid #ddd5c0;
+  }
+
+  .reminder-label {
+    font-weight: 600;
+    color: #3a2a10;
+    flex-shrink: 0;
+    min-width: 130px;
+  }
+
+  .reminder-value {
+    color: #4a4030;
+    font-style: italic;
+  }
+
+  /* ── CONDITIONS VICTOIRE ── */
+  .victory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .victory-box {
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .victory-box .vbox-header {
+    padding: 3px 8px;
+    font-family: 'Cinzel', serif;
+    font-size: 8pt;
+    letter-spacing: .06em;
+    color: #fff;
+  }
+
+  .victory-box.empire .vbox-header { background: var(--empire); }
+  .victory-box.hl .vbox-header { background: var(--hl); }
+
+  .victory-box .vbox-body {
+    padding: 4px 8px;
+    font-size: 8.5pt;
+    background: var(--rule-bg);
+    color: #2a2010;
+    line-height: 1.5;
+  }
+
+  /* ── FOOTER ── */
+  .page-footer {
+    margin-top: 8px;
+    border-top: 1px solid var(--border);
+    padding-top: 4px;
+    font-size: 7.5pt;
+    color: #8a7860;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+  }
+
+  /* ── PRINT ── */
+  @media print {
+    body { background: white; }
+    .page { margin: 0; padding: 10mm 11mm; box-shadow: none; }
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <div>
+      <h1>Batailles du Vieux Monde</h1>
+      <div class="subtitle">La Lisière du Temple — Scénario Playtest #3</div>
+    </div>
+    <div class="meta">
+      Phase 1.6 · Format Escarmouche · 13 × 9 hex<br>
+      Seuil de victoire : 5 pts · Cartes : 4 en main (max 6)
+    </div>
+  </div>
+
+  <!-- EMPIRE -->
+  <div class="faction-block">
+    <div class="faction-header empire">
+      <h2>Empire</h2>
+      <span class="camp">Camp Nord · Premier joueur · 6 unités</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-unit">Unité</th>
+          <th class="col-type">Type</th>
+          <th class="col-stat">Mvt</th>
+          <th class="col-stat">Att</th>
+          <th class="col-stat">PV</th>
+          <th class="col-rules">Règles spéciales</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="empire-row">
+          <td class="col-unit">Hallebardiers</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">3</td>
+          <td class="col-stat">6</td>
+          <td class="col-rules"><span class="rule-tag">[Arme Lourde 1]</span> <span class="rule-text">— relancer 1 dé après le lancer.</span></td>
+        </tr>
+        <tr class="empire-row">
+          <td class="col-unit">Lanciers</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">3</td>
+          <td class="col-stat">6</td>
+          <td class="col-rules"><span class="rule-tag">[Réception de charge]</span> <span class="rule-text">— +1 dé en contre-attaque si l'adversaire s'est déplacé ce tour.</span></td>
+        </tr>
+        <tr class="empire-row">
+          <td class="col-unit">Arbalétriers</td>
+          <td class="col-type">Inf. · Distance</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">2&nbsp;<span style="font-size:8pt;font-weight:400">(1–3)</span></td>
+          <td class="col-stat">6</td>
+          <td class="col-rules"><span class="rule-tag">[Perforant 1]</span> <span class="rule-text">— relancer 1 dé après le lancer (tir uniquement).</span></td>
+        </tr>
+        <tr class="empire-row">
+          <td class="col-unit">Grandes Épées</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">1</td>
+          <td class="col-stat">4</td>
+          <td class="col-stat">6</td>
+          <td class="col-rules"><span class="rule-tag">[Arme Lourde 1]</span> <span class="rule-text">— relancer 1 dé après le lancer.</span></td>
+        </tr>
+        <tr class="empire-row">
+          <td class="col-unit">Flagellants</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">6</td>
+          <td class="col-rules">
+            <span class="rule-tag">[Inébranlable 2]</span> <span class="rule-text">— ignore 2 Drapeaux par attaque reçue.</span><br>
+            <span class="rule-tag">[Férocité]</span> <span class="rule-text">— contre-attaque résolue avant les retraites adverses.</span><br>
+            <span class="rule-tag">[Martyre]</span> <span class="rule-text">— sacrifier 1 fig. pour convertir 1 Couronne en touche.</span>
+          </td>
+        </tr>
+        <tr class="empire-row">
+          <td class="col-unit">Chevaliers</td>
+          <td class="col-type">Cav. · Mêlée</td>
+          <td class="col-stat">3</td>
+          <td class="col-stat">4</td>
+          <td class="col-stat">3</td>
+          <td class="col-rules">
+            <span class="rule-tag">[Armure 1]</span> <span class="rule-text">— retire 1 face Épée des attaques de mêlée reçues.</span><br>
+            <span class="rule-tag">[Poursuite 1]</span> <span class="rule-text">— après attaque réussie : 1 hex + attaque supplémentaire.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- HOMMES-LÉZARDS -->
+  <div class="faction-block">
+    <div class="faction-header hl">
+      <h2>Hommes-Lézards</h2>
+      <span class="camp">Camp Sud · 6 unités · Toutes [Immunisées au poison]</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-unit">Unité</th>
+          <th class="col-type">Type</th>
+          <th class="col-stat">Mvt</th>
+          <th class="col-stat">Att</th>
+          <th class="col-stat">PV</th>
+          <th class="col-rules">Règles spéciales</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hl-row">
+          <td class="col-unit">Saurus à l'Épée</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">3</td>
+          <td class="col-stat">4</td>
+          <td class="col-rules"><span class="rule-tag">[Massif]</span> <span class="rule-text">— 1 PV par touche (annule la règle intrinsèque Infanterie).</span></td>
+        </tr>
+        <tr class="hl-row">
+          <td class="col-unit">Saurus à la Lance</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">3</td>
+          <td class="col-stat">4</td>
+          <td class="col-rules">
+            <span class="rule-tag">[Massif]</span> <span class="rule-text">— voir ci-dessus.</span><br>
+            <span class="rule-tag">[Réception de charge]</span> <span class="rule-text">— +1 dé en contre-attaque si l'adversaire s'est déplacé ce tour.</span>
+          </td>
+        </tr>
+        <tr class="hl-row">
+          <td class="col-unit">Gardes du Temple</td>
+          <td class="col-type">Inf. · Mêlée</td>
+          <td class="col-stat">1</td>
+          <td class="col-stat">4</td>
+          <td class="col-stat">4</td>
+          <td class="col-rules">
+            <span class="rule-tag">[Massif]</span> <span class="rule-text">— voir ci-dessus.</span><br>
+            <span class="rule-tag">[Arme Lourde 1]</span> <span class="rule-text">— relancer 1 dé après le lancer.</span>
+          </td>
+        </tr>
+        <tr class="hl-row">
+          <td class="col-unit">Kroxigors</td>
+          <td class="col-type">Créature · Mêlée</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">4</td>
+          <td class="col-stat">4</td>
+          <td class="col-rules"><span class="rule-tag">[Meute 2]</span> <span class="rule-text">— 2 figurines de 2 PV chacune. Faible à 1 figurine restante. Jamais Faible autrement.</span></td>
+        </tr>
+        <tr class="hl-row">
+          <td class="col-unit">Skinks</td>
+          <td class="col-type">Inf. · Distance</td>
+          <td class="col-stat">2</td>
+          <td class="col-stat">2&nbsp;<span style="font-size:8pt;font-weight:400">(1–3)</span></td>
+          <td class="col-stat">6</td>
+          <td class="col-rules">
+            <span class="rule-tag">[Poison]</span> <span class="rule-text">— Couronne → 1 touche sup. (sauf [Immunisé au poison]).</span><br>
+            <span class="rule-tag">[Terrain favori : Boisé]</span> <span class="rule-text">— ignore toutes restrictions en terrain boisé.</span>
+          </td>
+        </tr>
+        <tr class="hl-row">
+          <td class="col-unit">Salamandres</td>
+          <td class="col-type">Artillerie · Distance</td>
+          <td class="col-stat">1</td>
+          <td class="col-stat">3&nbsp;<span style="font-size:8pt;font-weight:400">(1–3)</span></td>
+          <td class="col-stat">3</td>
+          <td class="col-rules">
+            <span class="rule-tag">[Souffle de feu]</span> <span class="rule-text">— Couronne → 1 touche sup. (sauf [Immunisé au feu]).</span><br>
+            <span class="rule-tag">[Bête incontrôlable]</span> <span class="rule-text">— sans servants : immobile, 1 touche suffit à l'éliminer.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CONDITIONS DE VICTOIRE -->
+  <div class="victory">
+    <div class="victory-box empire">
+      <div class="vbox-header">Conditions de victoire — Empire</div>
+      <div class="vbox-body">
+        Atteindre <strong>5 points</strong> en premier.<br>
+        +1 pt par unité ennemie éliminée.<br>
+        +1 pt (médaille) si une unité occupe l'hex <strong>E5</strong> (sommet de la colline) à la fin d'un tour du premier joueur.
+      </div>
+    </div>
+    <div class="victory-box hl">
+      <div class="vbox-header">Conditions de victoire — Hommes-Lézards</div>
+      <div class="vbox-body">
+        Atteindre <strong>5 points</strong> en premier.<br>
+        +1 pt par unité ennemie éliminée.<br>
+        +1 pt (médaille) si une unité occupe l'hex <strong>E5</strong> (sommet de la colline) à la fin d'un tour du premier joueur.
+      </div>
+    </div>
+  </div>
+
+  <!-- RAPPELS -->
+  <div class="reminders">
+    <div class="reminders-header">Rappels — Règles terrain &amp; interactions clés</div>
+    <div class="reminders-body">
+      <div class="reminder-item">
+        <span class="reminder-label">Attaque depuis la colline</span>
+        <span class="reminder-value">+1 dé vers un hex en contrebas (mêlée et tir)</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Attaque vers une unité dans le bois</span>
+        <span class="reminder-value">Plafond de 2 dés (ignoré par [Terrain favori : Boisé])</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Retraite en forêt</span>
+        <span class="reminder-value">Arrêt immédiat · 1 touche par hex non résolu</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Infanterie — Épées croisées / Cible</span>
+        <span class="reminder-value">2 PV perdus (annulé par [Massif] → 1 PV)</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Chevaliers — [Armure 1]</span>
+        <span class="reminder-value">Retire 1 face Épée en mêlée seulement (pas au tir)</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Unité Faible</span>
+        <span class="reminder-value">Dernière figurine : face Épée inactive + Moral −1</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Kroxigors — [Meute 2]</span>
+        <span class="reminder-value">2 PV par figurine · Faible à 1 fig. restante</span>
+      </div>
+      <div class="reminder-item">
+        <span class="reminder-label">Déploiement</span>
+        <span class="reminder-value">Alterné · Empire en premier · 1 unité à la fois</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="page-footer">
+    <span>BdVM — Phase 1.6 · Profils v4.0 Empire &amp; Hommes-Lézards</span>
+    <span>Playtest #3 — La Lisière du Temple · 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

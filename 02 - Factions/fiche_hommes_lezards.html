@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="utf-8">
+<title>BdVM — Hommes-Lézards</title>
+<style>
+  @page { size: A4; margin: 10mm 12mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5pt; color: #1a1a1a; background: white; }
+
+  header { display: flex; justify-content: space-between; align-items: baseline;
+            border-bottom: 2px solid #1a5a2a; padding-bottom: 4px; margin-bottom: 8px; }
+  .h-title { font-size: 16pt; font-weight: 700; color: #1a5a2a; }
+  .h-sub   { font-size: 8pt; color: #666; }
+
+  .note { background: #f5f0e0; border-left: 3px solid #c8a020; padding: 4px 8px;
+           font-size: 7.5pt; color: #5a4010; margin-bottom: 8px; border-radius: 2px; }
+
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    background: #1a5a2a; color: white; font-size: 7.5pt; font-weight: 600;
+    padding: 4px 5px; text-align: left; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  thead th.center { text-align: center; }
+  tbody tr { border-bottom: 0.5px solid #ddd; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:nth-child(even) { background: #f8f8f8; }
+  td { padding: 4px 5px; vertical-align: top; line-height: 1.35; }
+  td.center { text-align: center; vertical-align: middle; font-weight: 600; color: #1a1a1a; }
+  td.rules { font-size: 7.5pt; color: #333; }
+
+  .badge { display: inline-block; font-size: 6.5pt; font-weight: 600; border-radius: 2px;
+            padding: 1px 4px; margin-top: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .rule-name { font-weight: 600; color: #1a5a2a; }
+  .rule-desc  { color: #444; }
+  .no-rule    { color: #aaa; font-style: italic; }
+
+  footer { position: fixed; bottom: 5mm; left: 12mm; right: 12mm;
+            border-top: 0.5px solid #ccc; padding-top: 3px;
+            font-size: 6.5pt; color: #999; display: flex; justify-content: space-between; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head><body>
+
+<header>
+  <span class="h-title">Batailles du Vieux Monde &mdash; Hommes-Lézards</span>
+  <span class="h-sub">Phase 1.5 &bull; v2.0 &bull; 2026-05-02</span>
+</header>
+
+<div class="note">⚠ Magie des Slanns · Stégadons · Héros → Phase 2 | Toutes les unités sont Immunisées au poison.</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:18%">Unité</th>
+      <th class="center" style="width:5%">Mvt</th>
+      <th class="center" style="width:5%">Eff.</th>
+      <th class="center" style="width:5%">Atk</th>
+      <th class="center" style="width:7%">Portée</th>
+      <th class="center" style="width:5%">Moral</th>
+      <th style="width:55%">Règles spéciales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          <td><strong>Saurus à l'Épée</strong><br><span class="badge" style="background:#3a1a00;color:#c06020">Mêlée · Inf. moyenne</span></td>
+          <td class="center">2</td>
+          <td class="center">4</td>
+          <td class="center">6</td>
+          <td class="center">—</td>
+          <td class="center">1</td>
+          <td class="rules"><span class="rule-name">Tenace :</span><span class="rule-desc">il faut 2 touches dans la même attaque pour éliminer la dernière figurine.</span></td>
+        </tr><tr>
+          <td><strong>Saurus à la Lance</strong><br><span class="badge" style="background:#3a1a00;color:#c06020">Mêlée · Inf. moyenne</span></td>
+          <td class="center">2</td>
+          <td class="center">4</td>
+          <td class="center">6</td>
+          <td class="center">—</td>
+          <td class="center">1</td>
+          <td class="rules"><span class="rule-name">Tenace :</span><span class="rule-desc">voir ci-dessus.</span><br><span class="rule-name">Réception de charge :</span><span class="rule-desc">+2 dés en contre-attaque si l'adversaire s'est déplacé ce tour.</span></td>
+        </tr><tr>
+          <td><strong>Gardes du Temple</strong><br><span class="badge" style="background:#3a1a00;color:#c06020">Mêlée · Inf. lourde</span></td>
+          <td class="center">1</td>
+          <td class="center">4</td>
+          <td class="center">8</td>
+          <td class="center">—</td>
+          <td class="center">2</td>
+          <td class="rules"><span class="rule-name">Tenace :</span><span class="rule-desc">voir ci-dessus.</span><br><span class="rule-name">Arme Lourde 1 :</span><span class="rule-desc">relancer 1 dé de son choix après le lancer.</span></td>
+        </tr><tr>
+          <td><strong>Kroxigors</strong><br><span class="badge" style="background:#3a1a00;color:#c06020">Mêlée · Inf. lourde</span></td>
+          <td class="center">1</td>
+          <td class="center">2</td>
+          <td class="center">8</td>
+          <td class="center">—</td>
+          <td class="center">1</td>
+          <td class="rules"><span class="rule-name">Tenace :</span><span class="rule-desc">voir ci-dessus.</span><br><span class="rule-name">3 PV par figurine :</span><span class="rule-desc">chaque Kroxigor nécessite 3 touches pour être retiré (cumul dans le tour uniquement).</span></td>
+        </tr><tr>
+          <td><strong>Skinks</strong><br><span class="badge" style="background:#0a3010;color:#50b060">Tir · Inf. légère</span></td>
+          <td class="center">2</td>
+          <td class="center">6</td>
+          <td class="center">4</td>
+          <td class="center">2 hex</td>
+          <td class="center">1</td>
+          <td class="rules"><span class="rule-name">Poison :</span><span class="rule-desc">chaque Couronne inflige 1 touche supplémentaire (sauf contre Immunisé au poison).</span><br><span class="rule-desc">−2 dés si déplacés ce tour.</span></td>
+        </tr><tr>
+          <td><strong>Salamandres</strong><br><span class="badge" style="background:#0a3010;color:#50b060">Tir · Spéciale</span></td>
+          <td class="center">1</td>
+          <td class="center">4</td>
+          <td class="center">6</td>
+          <td class="center">3 hex</td>
+          <td class="center">1</td>
+          <td class="rules"><span class="rule-name">Souffle de feu :</span><span class="rule-desc">chaque Couronne inflige 1 touche supplémentaire (sauf Immunisé au feu).</span><br><span class="rule-name">Sans coureurs Skinks :</span><span class="rule-desc">Mouvement 0, Moral 0 (chaque Drapeau = 1 touche subie).</span><br><span class="rule-desc">Tir impossible si déplacées. Portée min. 2 hex.</span></td>
+        </tr><tr>
+          <td><strong>Saurus sur Sang-froid</strong><br><span class="badge" style="background:#0a1840;color:#5080d0">Mêlée · Cav. lourde</span></td>
+          <td class="center">3</td>
+          <td class="center">3</td>
+          <td class="center">6</td>
+          <td class="center">—</td>
+          <td class="center">1</td>
+          <td class="rules"><span class="rule-name">Cavalerie :</span><span class="rule-desc">2 touches nécessaires pour perdre 1 fig. ; excédent ignoré en fin de tour.</span><br><span class="rule-name">Tenace :</span><span class="rule-desc">voir ci-dessus.</span><br><span class="rule-name">Poursuite 2 :</span><span class="rule-desc">après élimination d'une unité, déplacement de jusqu'à 2 hex et attaque supplémentaire.</span></td>
+        </tr>
+  </tbody>
+</table>
+
+<footer>
+  <span>BdVM — Fiche Hommes-Lézards — Phase 1.5</span>
+  <span>Imprimer sur A4, orientation portrait, marges minimales</span>
+</footer>
+
+</body></html>

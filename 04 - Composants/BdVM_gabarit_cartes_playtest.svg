@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BdVM — Gabarit cartes de commandement — Playtest Phase 1 -->
+<!-- Format carte : 63 × 88 mm | Résolution : 3.7795 px/mm (96 dpi) -->
+<!-- 63 mm = 238 px | 88 mm = 333 px | Zone sécurité 3mm = 11px -->
+<!-- Planche A4 : 210 × 297 mm = 793 × 1122 px -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="793" height="1122"
+  viewBox="0 0 793 1122"
+  font-family="'UnifrakturMaguntia', 'Georgia', serif">
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+
+      .card-border     { fill: #ffffff; stroke: #333333; stroke-width: 0.8; }
+      .safe-zone       { fill: none; stroke: #cccccc; stroke-width: 0.4; stroke-dasharray: 2 2; }
+      .band-name       { fill: #e8e8e8; stroke: #bbbbbb; stroke-width: 0.4; }
+      .band-rule       { fill: #e8e8e8; stroke: #bbbbbb; stroke-width: 0.4; }
+      .sect-active     { fill: #444444; stroke: #222222; stroke-width: 0.5; }
+      .sect-inactive   { fill: #f2f2f2; stroke: #cccccc; stroke-width: 0.5; }
+      .divider         { stroke: #bbbbbb; stroke-width: 0.4; }
+      .t-title         { font-family: 'UnifrakturMaguntia', 'Georgia', serif; fill: #111111; }
+      .t-type          { font-family: Arial, Helvetica, sans-serif; fill: #888888; font-size: 10px; letter-spacing: 0.5px; }
+      .t-rule          { font-family: Arial, Helvetica, sans-serif; fill: #111111; font-size: 12.5px; }
+      .t-rule-sm       { font-family: Arial, Helvetica, sans-serif; fill: #111111; font-size: 11px; }
+      .t-note          { font-family: Arial, Helvetica, sans-serif; fill: #666666; font-size: 10px; font-style: italic; }
+      .t-sect          { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; }
+      .t-sect-active   { fill: #ffffff; }
+      .t-sect-inactive { fill: #bbbbbb; }
+      .t-format        { font-family: Arial, Helvetica, sans-serif; fill: #999999; font-size: 10px; }
+      .format-box      { fill: #f8f8f8; stroke: #cccccc; stroke-width: 0.4; }
+      .arr             { stroke: #555555; stroke-width: 1.2; fill: none; }
+      .arr-light       { stroke: #aaaaaa; stroke-width: 0.8; fill: none; }
+    </style>
+
+    <marker id="arr1" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555555"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Fond A4 -->
+  <rect width="793" height="1122" fill="#f0f0f0"/>
+
+  <!-- Titre planche -->
+  <text x="396" y="30" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11" fill="#888888" letter-spacing="1">
+    BATAILLES DU VIEUX MONDE — GABARIT CARTES PLAYTEST PHASE 1
+  </text>
+  <text x="396" y="44" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="9" fill="#aaaaaa">
+    63 × 88 mm — impression laser N&amp;B — zone de sécurité 3 mm (tirets)
+  </text>
+
+  <!-- ============================================================ -->
+  <!-- RANGÉE 1 : cartes de section -->
+  <!-- Positions x : 30, 281, 532 | y : 60 -->
+  <!-- ============================================================ -->
+
+  <!-- === CARTE 1 — Patrouille Gauche === -->
+  <g transform="translate(30, 60)">
+    <!-- Fond carte -->
+    <rect class="card-border" width="238" height="333" rx="7"/>
+    <!-- Zone sécurité -->
+    <rect class="safe-zone" x="11" y="11" width="216" height="311" rx="4"/>
+
+    <!-- ① Bandeau nom -->
+    <rect class="band-name" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="t-title" font-size="26"
+          x="119" y="43" text-anchor="middle">Patrouille Gauche</text>
+    <text class="t-type" x="119" y="60" text-anchor="middle">Carte de section</text>
+
+    <!-- ② Pictogramme plateau — bandes élargies -->
+    <!-- G active -->
+    <rect class="sect-active" x="18" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-active" x="49" y="119" text-anchor="middle">G</text>
+    <!-- C inactive -->
+    <rect class="sect-inactive" x="88" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="119" y="119" text-anchor="middle">C</text>
+    <!-- D inactive -->
+    <rect class="sect-inactive" x="158" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="189" y="119" text-anchor="middle">D</text>
+
+    <!-- ③ Zone règle -->
+    <rect class="band-rule" x="11" y="158" width="216" height="152" rx="4"/>
+    <text class="t-rule" x="119" y="182" text-anchor="middle">Activez</text>
+    <text class="t-rule" x="119" y="200" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="t-rule" x="119" y="218" text-anchor="middle">dans la section gauche.</text>
+    <!-- séparateur note -->
+    <line class="divider" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="t-note" x="119" y="249" text-anchor="middle">Si moins de 2 unités dans la section,</text>
+    <text class="t-note" x="119" y="263" text-anchor="middle">activez-les toutes.</text>
+
+    <!-- ④ Pastille format -->
+    <rect class="format-box" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="t-format" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+
+  <!-- === CARTE 2 — Attaque Centre === -->
+  <g transform="translate(281, 60)">
+    <rect class="card-border" width="238" height="333" rx="7"/>
+    <rect class="safe-zone" x="11" y="11" width="216" height="311" rx="4"/>
+
+    <!-- ① Bandeau nom -->
+    <rect class="band-name" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="t-title" font-size="26"
+          x="119" y="43" text-anchor="middle">Attaque Centre</text>
+    <text class="t-type" x="119" y="60" text-anchor="middle">Carte de section</text>
+
+    <!-- ② Pictogramme -->
+    <rect class="sect-inactive" x="18" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="49" y="119" text-anchor="middle">G</text>
+    <rect class="sect-active" x="88" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-active" x="119" y="119" text-anchor="middle">C</text>
+    <rect class="sect-inactive" x="158" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="189" y="119" text-anchor="middle">D</text>
+
+    <!-- ③ Zone règle -->
+    <rect class="band-rule" x="11" y="158" width="216" height="152" rx="4"/>
+    <text class="t-rule" x="119" y="182" text-anchor="middle">Activez</text>
+    <text class="t-rule" x="119" y="200" text-anchor="middle" font-weight="bold">3 unités</text>
+    <text class="t-rule" x="119" y="218" text-anchor="middle">dans la section centrale.</text>
+    <line class="divider" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="t-note" x="119" y="249" text-anchor="middle">Si moins de 3 unités dans la section,</text>
+    <text class="t-note" x="119" y="263" text-anchor="middle">activez-les toutes.</text>
+    <text class="t-note" x="119" y="283" text-anchor="middle" font-style="normal" fill="#999999">Absente du deck Escarmouche.</text>
+
+    <!-- ④ Pastille format -->
+    <rect class="format-box" x="196" y="296" width="22" height="15" rx="3"/>
+    <text class="t-format" x="207" y="307" text-anchor="middle">B</text>
+  </g>
+
+  <!-- === CARTE 3 — Percée Droite === -->
+  <g transform="translate(532, 60)">
+    <rect class="card-border" width="238" height="333" rx="7"/>
+    <rect class="safe-zone" x="11" y="11" width="216" height="311" rx="4"/>
+
+    <!-- ① Bandeau nom -->
+    <rect class="band-name" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="t-title" font-size="26"
+          x="119" y="43" text-anchor="middle">Percée Droite</text>
+    <text class="t-type" x="119" y="60" text-anchor="middle">Carte de section</text>
+
+    <!-- ② Pictogramme -->
+    <rect class="sect-inactive" x="18" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="49" y="119" text-anchor="middle">G</text>
+    <rect class="sect-inactive" x="88" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="119" y="119" text-anchor="middle">C</text>
+    <rect class="sect-active" x="158" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-active" x="189" y="119" text-anchor="middle">D</text>
+
+    <!-- ③ Zone règle -->
+    <rect class="band-rule" x="11" y="158" width="216" height="152" rx="4"/>
+    <text class="t-rule" x="119" y="182" text-anchor="middle">Activez dans la section droite</text>
+    <text class="t-rule" x="119" y="200" text-anchor="middle">autant d'unités que votre</text>
+    <text class="t-rule" x="119" y="218" text-anchor="middle" font-weight="bold">valeur de commandement.</text>
+    <line class="divider" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="t-note" x="119" y="249" text-anchor="middle">Valeur de commandement =</text>
+    <text class="t-note" x="119" y="263" text-anchor="middle">nombre de cartes en main (cette carte</text>
+    <text class="t-note" x="119" y="277" text-anchor="middle">comprise) au moment où elle est jouée.</text>
+
+    <!-- ④ Pastille format -->
+    <rect class="format-box" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="t-format" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- RANGÉE 2 : cartes Tactiques -->
+  <!-- Positions x : 30, 281 | y : 420 -->
+  <!-- ============================================================ -->
+
+  <!-- === CARTE 4 — Charge de cavalerie === -->
+  <g transform="translate(30, 420)">
+    <rect class="card-border" width="238" height="333" rx="7"/>
+    <rect class="safe-zone" x="11" y="11" width="216" height="311" rx="4"/>
+
+    <!-- ① Bandeau nom -->
+    <rect class="band-name" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="t-title" font-size="19"
+          x="119" y="40" text-anchor="middle">Charge de cavalerie</text>
+    <text class="t-type" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+
+    <!-- ② Pictogramme : 3 silhouettes cavalier + flèche -->
+    <!-- Cheval 1 -->
+    <ellipse cx="49" cy="114" rx="26" ry="13" class="sect-inactive"/>
+    <rect x="66" y="96" width="11" height="16" rx="3" class="sect-inactive"/>
+    <line class="arr-light" x1="30" y1="125" x2="27" y2="135"/>
+    <line class="arr-light" x1="38" y1="126" x2="36" y2="136"/>
+    <line class="arr-light" x1="58" y1="126" x2="58" y2="136"/>
+    <line class="arr-light" x1="67" y1="125" x2="69" y2="135"/>
+    <!-- Cheval 2 -->
+    <ellipse cx="119" cy="114" rx="26" ry="13" class="sect-inactive"/>
+    <rect x="136" y="96" width="11" height="16" rx="3" class="sect-inactive"/>
+    <line class="arr-light" x1="100" y1="125" x2="97" y2="135"/>
+    <line class="arr-light" x1="108" y1="126" x2="106" y2="136"/>
+    <line class="arr-light" x1="128" y1="126" x2="128" y2="136"/>
+    <line class="arr-light" x1="137" y1="125" x2="139" y2="135"/>
+    <!-- Cheval 3 -->
+    <ellipse cx="189" cy="114" rx="26" ry="13" class="sect-inactive"/>
+    <rect x="206" y="96" width="11" height="16" rx="3" class="sect-inactive"/>
+    <line class="arr-light" x1="170" y1="125" x2="167" y2="135"/>
+    <line class="arr-light" x1="178" y1="126" x2="176" y2="136"/>
+    <line class="arr-light" x1="198" y1="126" x2="198" y2="136"/>
+    <line class="arr-light" x1="207" y1="125" x2="209" y2="135"/>
+    <!-- Flèche de charge -->
+    <line class="arr" x1="18" y1="143" x2="216" y2="143" marker-end="url(#arr1)"/>
+
+    <!-- ③ Zone règle -->
+    <rect class="band-rule" x="11" y="158" width="216" height="152" rx="4"/>
+    <text class="t-rule-sm" x="119" y="179" text-anchor="middle">Activez autant d'unités de</text>
+    <text class="t-rule-sm" x="119" y="196" text-anchor="middle" font-weight="bold">Cavalerie</text>
+    <text class="t-rule-sm" x="119" y="213" text-anchor="middle">que votre valeur de commandement,</text>
+    <text class="t-rule-sm" x="119" y="230" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="t-rule-sm" x="119" y="247" text-anchor="middle">Ces unités combattent à</text>
+    <text class="t-rule-sm" x="119" y="264" text-anchor="middle" font-weight="bold">+1 dé en mêlée</text>
+    <text class="t-rule-sm" x="119" y="281" text-anchor="middle">ce tour.</text>
+    <line class="divider" x1="26" y1="291" x2="212" y2="291"/>
+    <text class="t-note" x="119" y="303" text-anchor="middle">Aucune Cavalerie : activez 1 unité libre.</text>
+
+    <!-- ④ Pastille format -->
+    <rect class="format-box" x="183" y="316" width="34" height="15" rx="3"/>
+    <text class="t-format" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+
+  <!-- === CARTE 5 — Pluie de flèches === -->
+  <g transform="translate(281, 420)">
+    <rect class="card-border" width="238" height="333" rx="7"/>
+    <rect class="safe-zone" x="11" y="11" width="216" height="311" rx="4"/>
+
+    <!-- ① Bandeau nom -->
+    <rect class="band-name" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="t-title" font-size="26"
+          x="119" y="43" text-anchor="middle">Pluie de flèches</text>
+    <text class="t-type" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+
+    <!-- ② Pictogramme : flèches tombantes -->
+    <!-- empennages + tiges + pointes -->
+    <line x1="44"  y1="82"  x2="36"  y2="144" class="arr" marker-end="url(#arr1)"/>
+    <path d="M43 85 L40 79 L47 83" fill="none" stroke="#555555" stroke-width="1"/>
+    <line x1="72"  y1="80"  x2="66"  y2="144" class="arr" marker-end="url(#arr1)"/>
+    <path d="M71 83 L68 77 L75 81" fill="none" stroke="#555555" stroke-width="1"/>
+    <line x1="104" y1="80"  x2="104" y2="144" class="arr" marker-end="url(#arr1)"/>
+    <path d="M103 83 L100 77 L107 81" fill="none" stroke="#555555" stroke-width="1.2"/>
+    <line x1="136" y1="80"  x2="142" y2="144" class="arr" marker-end="url(#arr1)"/>
+    <path d="M135 83 L132 77 L139 81" fill="none" stroke="#555555" stroke-width="1"/>
+    <line x1="166" y1="82"  x2="174" y2="144" class="arr" marker-end="url(#arr1)"/>
+    <path d="M165 85 L162 79 L169 83" fill="none" stroke="#555555" stroke-width="1"/>
+    <line x1="196" y1="84"  x2="208" y2="144" class="arr" marker-end="url(#arr1)"/>
+    <path d="M195 87 L192 81 L199 85" fill="none" stroke="#555555" stroke-width="0.9"/>
+
+    <!-- ③ Zone règle -->
+    <rect class="band-rule" x="11" y="158" width="216" height="152" rx="4"/>
+    <text class="t-rule-sm" x="119" y="179" text-anchor="middle">Activez</text>
+    <text class="t-rule-sm" x="119" y="196" text-anchor="middle" font-weight="bold">toutes vos unités de tir,</text>
+    <text class="t-rule-sm" x="119" y="213" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="t-rule-sm" x="119" y="230" text-anchor="middle">Elles tirent</text>
+    <text class="t-rule-sm" x="119" y="247" text-anchor="middle" font-weight="bold">deux fois</text>
+    <text class="t-rule-sm" x="119" y="264" text-anchor="middle">ce tour, mais ne peuvent ni</text>
+    <text class="t-rule-sm" x="119" y="281" text-anchor="middle">se déplacer ni tirer à bout portant.</text>
+    <line class="divider" x1="26" y1="291" x2="212" y2="291"/>
+    <text class="t-note" x="119" y="303" text-anchor="middle">Aucune unité de tir : activez 1 unité libre.</text>
+
+    <!-- ④ Pastille format -->
+    <rect class="format-box" x="183" y="316" width="34" height="15" rx="3"/>
+    <text class="t-format" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+
+  <!-- === CARTE 6 — Encerclement === -->
+  <g transform="translate(532, 420)">
+    <rect class="card-border" width="238" height="333" rx="7"/>
+    <rect class="safe-zone" x="11" y="11" width="216" height="311" rx="4"/>
+
+    <!-- ① Bandeau nom -->
+    <rect class="band-name" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="t-title" font-size="26"
+          x="119" y="43" text-anchor="middle">Encerclement</text>
+    <text class="t-type" x="119" y="60" text-anchor="middle">Carte de section</text>
+
+    <!-- ② Pictogramme : G + D actives, C inactive -->
+    <rect class="sect-active" x="18" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-active" x="49" y="119" text-anchor="middle">G</text>
+    <rect class="sect-inactive" x="88" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-inactive" x="119" y="119" text-anchor="middle">C</text>
+    <rect class="sect-active" x="158" y="80" width="62" height="68" rx="4"/>
+    <text class="t-sect t-sect-active" x="189" y="119" text-anchor="middle">D</text>
+
+    <!-- ③ Zone règle -->
+    <rect class="band-rule" x="11" y="158" width="216" height="152" rx="4"/>
+    <text class="t-rule" x="119" y="182" text-anchor="middle">Activez</text>
+    <text class="t-rule" x="119" y="200" text-anchor="middle" font-weight="bold">2 unités dans la section gauche</text>
+    <text class="t-rule" x="119" y="218" text-anchor="middle">et</text>
+    <text class="t-rule" x="119" y="236" text-anchor="middle" font-weight="bold">2 unités dans la section droite.</text>
+    <line class="divider" x1="26" y1="251" x2="212" y2="251"/>
+    <text class="t-note" x="119" y="269" text-anchor="middle">Si moins de 2 unités dans une section,</text>
+    <text class="t-note" x="119" y="283" text-anchor="middle">activez-les toutes dans cette section.</text>
+
+    <!-- ④ Pastille format -->
+    <rect class="format-box" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="t-format" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- LÉGENDE EN BAS DE PLANCHE -->
+  <!-- ============================================================ -->
+  <g transform="translate(30, 790)">
+    <rect x="0" y="0" width="733" height="96" rx="5"
+          fill="#f8f8f8" stroke="#cccccc" stroke-width="0.5"/>
+
+    <text x="16" y="18" font-family="Arial, Helvetica, sans-serif"
+          font-size="9" fill="#888888" letter-spacing="0.5">ZONES DU GABARIT</text>
+
+    <!-- Zone ① -->
+    <rect x="16" y="26" width="12" height="12" rx="2" fill="#e8e8e8" stroke="#bbbbbb" stroke-width="0.5"/>
+    <text x="32" y="36" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      ① Bandeau nom — UnifrakturMaguntia 26 / 19 / 14 px selon longueur. Étiquette type 10 px en dessous.
+    </text>
+    <!-- Zone ② -->
+    <rect x="16" y="42" width="12" height="12" rx="2" fill="#444444" stroke="#222222" stroke-width="0.5"/>
+    <text x="32" y="52" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      ② Pictogramme — Plateau G/C/D (section active = gris soutenu). Cartes Tactiques : icône propre.
+    </text>
+    <!-- Zone ③ -->
+    <rect x="16" y="58" width="12" height="12" rx="2" fill="#e8e8e8" stroke="#bbbbbb" stroke-width="0.5"/>
+    <text x="32" y="68" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      ③ Zone règle — 12.5 px (11 px si texte long). Note secondaire optionnelle sous trait.
+    </text>
+    <!-- Zone ④ -->
+    <rect x="16" y="74" width="12" height="12" rx="2" fill="#f8f8f8" stroke="#cccccc" stroke-width="0.5"/>
+    <text x="32" y="84" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      ④ Pastille format bas droite — E = Escarmouche (43 cartes) · B = Bataille (60 cartes) · E·B = les deux decks.
+    </text>
+
+    <!-- Colonnes droites -->
+    <text x="420" y="18" font-family="Arial, Helvetica, sans-serif"
+          font-size="9" fill="#888888" letter-spacing="0.5">DIMENSIONS</text>
+    <text x="420" y="34" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      Carte totale : 63 × 88 mm (standard poker)
+    </text>
+    <text x="420" y="48" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      Zone de sécurité : 3 mm sur chaque bord (tirets)
+    </text>
+    <text x="420" y="62" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      Zone utile : 57 × 82 mm
+    </text>
+    <text x="420" y="76" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#444444">
+      Direction artistique finale : Phase 4
+    </text>
+  </g>
+
+  <!-- Pied de planche -->
+  <text x="396" y="1108" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="9" fill="#aaaaaa">
+    BdVM — Gabarit Playtest v1.0 — Phase 1 — 2026-04-08
+  </text>
+
+</svg>

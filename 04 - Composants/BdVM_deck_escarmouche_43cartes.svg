@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BdVM — Deck Escarmouche — Phase 1.5</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#888; }
+  .page {
+    width: 794px;
+    height: 1123px;
+    margin: 0 auto;
+    page-break-after: always;
+    display: block;
+  }
+  .page:last-child { page-break-after: avoid; }
+  @media print {
+    body { background: white; }
+    .page { margin:0; }
+  }
+  @page { size: A4 portrait; margin: 0; }
+</style>
+</head>
+<body>
+<div class="page"><svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123" font-family="Arial, Helvetica, sans-serif">
+<defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+      .cb   { fill:#ffffff; stroke:#333; stroke-width:0.8; }
+      .sz   { fill:none; stroke:#cccccc; stroke-width:0.4; stroke-dasharray:2 2; }
+      .bn   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .br   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .sa   { fill:#444444; stroke:#222222; stroke-width:0.5; }
+      .si   { fill:#f2f2f2; stroke:#dddddd; stroke-width:0.5; }
+      .dv   { stroke:#bbbbbb; stroke-width:0.4; }
+      .tt   { font-family:'UnifrakturMaguntia','Georgia',serif; fill:#111111; }
+      .tp   { fill:#888888; font-size:10px; letter-spacing:0.5px; }
+      .tr   { fill:#111111; font-size:12.5px; }
+      .trs  { fill:#111111; font-size:11px; }
+      .trxs { fill:#111111; font-size:9.5px; }
+      .tn   { fill:#666666; font-size:10px; font-style:italic; }
+      .ts   { font-size:11px; font-weight:bold; }
+      .tsa  { fill:#ffffff; }
+      .tsi  { fill:#cccccc; }
+      .tf   { fill:#999999; font-size:10px; }
+      .fb   { fill:#f8f8f8; stroke:#cccccc; stroke-width:0.4; }
+      .al   { stroke:#aaaaaa; stroke-width:0.8; fill:none; }
+      .ad   { stroke:#555555; stroke-width:1.2; fill:none; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555555"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="al" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <!-- Gabarit réutilisable : fond + zone sécurité -->
+    <!-- Sections G/C/D inactives -->
+    <!-- Sections G/C/D : G active -->
+    <!-- etc. — tout inline par carte pour compatibilité maximale -->
+  </defs>
+<rect width="794" height="1123" fill="#e0e0e0"/>
+<text x="397" y="1117" text-anchor="middle" font-size="8" fill="#aaaaaa">BdVM · Deck Escarmouche 43 cartes · Phase 1.5 · v2.0 · 2026-05-09 — p.1/5</text>
+<g transform="translate(20,20)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Éclaireur Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <!-- plateau -->
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <!-- règle -->
+    <rect class="br" x="11" y="150" width="216" height="160" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="192" text-anchor="middle" font-weight="bold">1 unité</text>
+    <text class="tr" x="119" y="210" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="224" x2="212" y2="224"/>
+    <text class="tn" x="119" y="241" text-anchor="middle">Au lieu de piocher normalement,</text>
+    <text class="tn" x="119" y="257" text-anchor="middle">piochez 2 cartes</text>
+    <text class="tn" x="119" y="273" text-anchor="middle">et défaussez-en 1.</text>
+    <!-- format -->
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,20)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Éclaireur Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="160" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="192" text-anchor="middle" font-weight="bold">1 unité</text>
+    <text class="tr" x="119" y="210" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="224" x2="212" y2="224"/>
+    <text class="tn" x="119" y="241" text-anchor="middle">Au lieu de piocher normalement,</text>
+    <text class="tn" x="119" y="257" text-anchor="middle">piochez 2 cartes</text>
+    <text class="tn" x="119" y="273" text-anchor="middle">et défaussez-en 1.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,20)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Éclaireur Centre</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="si" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="sa" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="160" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="192" text-anchor="middle" font-weight="bold">1 unité</text>
+    <text class="tr" x="119" y="210" text-anchor="middle">dans la section centrale.</text>
+    <line class="dv" x1="26" y1="224" x2="212" y2="224"/>
+    <text class="tn" x="119" y="241" text-anchor="middle">Au lieu de piocher normalement,</text>
+    <text class="tn" x="119" y="257" text-anchor="middle">piochez 2 cartes</text>
+    <text class="tn" x="119" y="273" text-anchor="middle">et défaussez-en 1.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,361)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Éclaireur Centre</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="si" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="sa" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="160" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="192" text-anchor="middle" font-weight="bold">1 unité</text>
+    <text class="tr" x="119" y="210" text-anchor="middle">dans la section centrale.</text>
+    <line class="dv" x1="26" y1="224" x2="212" y2="224"/>
+    <text class="tn" x="119" y="241" text-anchor="middle">Au lieu de piocher normalement,</text>
+    <text class="tn" x="119" y="257" text-anchor="middle">piochez 2 cartes</text>
+    <text class="tn" x="119" y="273" text-anchor="middle">et défaussez-en 1.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,361)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Éclaireur Droite</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="si" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="sa" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="160" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="192" text-anchor="middle" font-weight="bold">1 unité</text>
+    <text class="tr" x="119" y="210" text-anchor="middle">dans la section droite.</text>
+    <line class="dv" x1="26" y1="224" x2="212" y2="224"/>
+    <text class="tn" x="119" y="241" text-anchor="middle">Au lieu de piocher normalement,</text>
+    <text class="tn" x="119" y="257" text-anchor="middle">piochez 2 cartes</text>
+    <text class="tn" x="119" y="273" text-anchor="middle">et défaussez-en 1.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,361)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Éclaireur Droite</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="si" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="sa" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="160" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="192" text-anchor="middle" font-weight="bold">1 unité</text>
+    <text class="tr" x="119" y="210" text-anchor="middle">dans la section droite.</text>
+    <line class="dv" x1="26" y1="224" x2="212" y2="224"/>
+    <text class="tn" x="119" y="241" text-anchor="middle">Au lieu de piocher normalement,</text>
+    <text class="tn" x="119" y="257" text-anchor="middle">piochez 2 cartes</text>
+    <text class="tn" x="119" y="273" text-anchor="middle">et défaussez-en 1.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,702)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text>
+    <text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,702)">
+    <rect class="cb" width="238" height="333" rx="7"/>
+    <rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/>
+    <text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text>
+    <text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/>
+    <text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,702)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+</svg></div>
+<div class="page"><svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123" font-family="Arial, Helvetica, sans-serif">
+<defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+      .cb   { fill:#ffffff; stroke:#333; stroke-width:0.8; }
+      .sz   { fill:none; stroke:#cccccc; stroke-width:0.4; stroke-dasharray:2 2; }
+      .bn   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .br   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .sa   { fill:#444444; stroke:#222222; stroke-width:0.5; }
+      .si   { fill:#f2f2f2; stroke:#dddddd; stroke-width:0.5; }
+      .dv   { stroke:#bbbbbb; stroke-width:0.4; }
+      .tt   { font-family:'UnifrakturMaguntia','Georgia',serif; fill:#111111; }
+      .tp   { fill:#888888; font-size:10px; letter-spacing:0.5px; }
+      .tr   { fill:#111111; font-size:12.5px; }
+      .trs  { fill:#111111; font-size:11px; }
+      .trxs { fill:#111111; font-size:9.5px; }
+      .tn   { fill:#666666; font-size:10px; font-style:italic; }
+      .ts   { font-size:11px; font-weight:bold; }
+      .tsa  { fill:#ffffff; }
+      .tsi  { fill:#cccccc; }
+      .tf   { fill:#999999; font-size:10px; }
+      .fb   { fill:#f8f8f8; stroke:#cccccc; stroke-width:0.4; }
+      .al   { stroke:#aaaaaa; stroke-width:0.8; fill:none; }
+      .ad   { stroke:#555555; stroke-width:1.2; fill:none; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555555"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="al" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <!-- Gabarit réutilisable : fond + zone sécurité -->
+    <!-- Sections G/C/D inactives -->
+    <!-- Sections G/C/D : G active -->
+    <!-- etc. — tout inline par carte pour compatibilité maximale -->
+  </defs>
+<rect width="794" height="1123" fill="#e0e0e0"/>
+<text x="397" y="1117" text-anchor="middle" font-size="8" fill="#aaaaaa">BdVM · Deck Escarmouche 43 cartes · Phase 1.5 · v2.0 · 2026-05-09 — p.2/5</text>
+<g transform="translate(20,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Gauche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">dans la section gauche.</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Centre</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">dans la section centrale.</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,361)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Centre</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section centrale.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(266,361)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Centre</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section centrale.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(512,361)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Centre</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section centrale.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(20,702)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Centre</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section centrale.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(266,702)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section droite.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(512,702)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section droite.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+</svg></div>
+<div class="page"><svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123" font-family="Arial, Helvetica, sans-serif">
+<defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+      .cb   { fill:#ffffff; stroke:#333; stroke-width:0.8; }
+      .sz   { fill:none; stroke:#cccccc; stroke-width:0.4; stroke-dasharray:2 2; }
+      .bn   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .br   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .sa   { fill:#444444; stroke:#222222; stroke-width:0.5; }
+      .si   { fill:#f2f2f2; stroke:#dddddd; stroke-width:0.5; }
+      .dv   { stroke:#bbbbbb; stroke-width:0.4; }
+      .tt   { font-family:'UnifrakturMaguntia','Georgia',serif; fill:#111111; }
+      .tp   { fill:#888888; font-size:10px; letter-spacing:0.5px; }
+      .tr   { fill:#111111; font-size:12.5px; }
+      .trs  { fill:#111111; font-size:11px; }
+      .trxs { fill:#111111; font-size:9.5px; }
+      .tn   { fill:#666666; font-size:10px; font-style:italic; }
+      .ts   { font-size:11px; font-weight:bold; }
+      .tsa  { fill:#ffffff; }
+      .tsi  { fill:#cccccc; }
+      .tf   { fill:#999999; font-size:10px; }
+      .fb   { fill:#f8f8f8; stroke:#cccccc; stroke-width:0.4; }
+      .al   { stroke:#aaaaaa; stroke-width:0.8; fill:none; }
+      .ad   { stroke:#555555; stroke-width:1.2; fill:none; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555555"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="al" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <!-- Gabarit réutilisable : fond + zone sécurité -->
+    <!-- Sections G/C/D inactives -->
+    <!-- Sections G/C/D : G active -->
+    <!-- etc. — tout inline par carte pour compatibilité maximale -->
+  </defs>
+<rect width="794" height="1123" fill="#e0e0e0"/>
+<text x="397" y="1117" text-anchor="middle" font-size="8" fill="#aaaaaa">BdVM · Deck Escarmouche 43 cartes · Phase 1.5 · v2.0 · 2026-05-09 — p.3/5</text>
+<g transform="translate(20,20)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section droite.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(266,20)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section droite.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(512,20)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Patrouille Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="152" rx="4"/><text class="tr" x="119" y="176" text-anchor="middle">Activez</text><text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">2 unités</text><text class="tr" x="119" y="216" text-anchor="middle">dans la section droite.</text><line class="dv" x1="26" y1="232" x2="212" y2="232"/><text class="tn" x="119" y="251" text-anchor="middle">Si moins de 2 unités dans la section,</text><text class="tn" x="119" y="267" text-anchor="middle">activez-les toutes.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(20,361)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Percée Gauche</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="162" rx="4"/><text class="tr" x="119" y="174" text-anchor="middle">Activez dans la section gauche</text><text class="tr" x="119" y="192" text-anchor="middle">autant d'unités que votre</text><text class="tr" x="119" y="212" text-anchor="middle" font-weight="bold">valeur de commandement.</text><line class="dv" x1="26" y1="228" x2="212" y2="228"/><text class="tn" x="119" y="246" text-anchor="middle">= nb de cartes en main au moment</text><text class="tn" x="119" y="262" text-anchor="middle">où cette carte est jouée.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(266,361)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Percée Gauche</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="162" rx="4"/><text class="tr" x="119" y="174" text-anchor="middle">Activez dans la section gauche</text><text class="tr" x="119" y="192" text-anchor="middle">autant d'unités que votre</text><text class="tr" x="119" y="212" text-anchor="middle" font-weight="bold">valeur de commandement.</text><line class="dv" x1="26" y1="228" x2="212" y2="228"/><text class="tn" x="119" y="246" text-anchor="middle">= nb de cartes en main au moment</text><text class="tn" x="119" y="262" text-anchor="middle">où cette carte est jouée.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(512,361)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Percée Centre</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="162" rx="4"/><text class="tr" x="119" y="174" text-anchor="middle">Activez dans la section centrale</text><text class="tr" x="119" y="192" text-anchor="middle">autant d'unités que votre</text><text class="tr" x="119" y="212" text-anchor="middle" font-weight="bold">valeur de commandement.</text><line class="dv" x1="26" y1="228" x2="212" y2="228"/><text class="tn" x="119" y="246" text-anchor="middle">= nb de cartes en main au moment</text><text class="tn" x="119" y="262" text-anchor="middle">où cette carte est jouée.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(20,702)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Percée Centre</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text><rect class="si" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="162" rx="4"/><text class="tr" x="119" y="174" text-anchor="middle">Activez dans la section centrale</text><text class="tr" x="119" y="192" text-anchor="middle">autant d'unités que votre</text><text class="tr" x="119" y="212" text-anchor="middle" font-weight="bold">valeur de commandement.</text><line class="dv" x1="26" y1="228" x2="212" y2="228"/><text class="tn" x="119" y="246" text-anchor="middle">= nb de cartes en main au moment</text><text class="tn" x="119" y="262" text-anchor="middle">où cette carte est jouée.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(266,702)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Percée Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="162" rx="4"/><text class="tr" x="119" y="174" text-anchor="middle">Activez dans la section droite</text><text class="tr" x="119" y="192" text-anchor="middle">autant d'unités que votre</text><text class="tr" x="119" y="212" text-anchor="middle" font-weight="bold">valeur de commandement.</text><line class="dv" x1="26" y1="228" x2="212" y2="228"/><text class="tn" x="119" y="246" text-anchor="middle">= nb de cartes en main au moment</text><text class="tn" x="119" y="262" text-anchor="middle">où cette carte est jouée.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+<g transform="translate(512,702)"><rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/><rect class="bn" x="11" y="11" width="216" height="60" rx="4"/><text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Percée Droite</text><text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text><rect class="si" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="49" y="114" text-anchor="middle">G</text><rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text><rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text><rect class="br" x="11" y="150" width="216" height="162" rx="4"/><text class="tr" x="119" y="174" text-anchor="middle">Activez dans la section droite</text><text class="tr" x="119" y="192" text-anchor="middle">autant d'unités que votre</text><text class="tr" x="119" y="212" text-anchor="middle" font-weight="bold">valeur de commandement.</text><line class="dv" x1="26" y1="228" x2="212" y2="228"/><text class="tn" x="119" y="246" text-anchor="middle">= nb de cartes en main au moment</text><text class="tn" x="119" y="262" text-anchor="middle">où cette carte est jouée.</text><rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text></g>
+</svg></div>
+<div class="page"><svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123" font-family="Arial, Helvetica, sans-serif">
+<defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+      .cb   { fill:#ffffff; stroke:#333; stroke-width:0.8; }
+      .sz   { fill:none; stroke:#cccccc; stroke-width:0.4; stroke-dasharray:2 2; }
+      .bn   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .br   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .sa   { fill:#444444; stroke:#222222; stroke-width:0.5; }
+      .si   { fill:#f2f2f2; stroke:#dddddd; stroke-width:0.5; }
+      .dv   { stroke:#bbbbbb; stroke-width:0.4; }
+      .tt   { font-family:'UnifrakturMaguntia','Georgia',serif; fill:#111111; }
+      .tp   { fill:#888888; font-size:10px; letter-spacing:0.5px; }
+      .tr   { fill:#111111; font-size:12.5px; }
+      .trs  { fill:#111111; font-size:11px; }
+      .trxs { fill:#111111; font-size:9.5px; }
+      .tn   { fill:#666666; font-size:10px; font-style:italic; }
+      .ts   { font-size:11px; font-weight:bold; }
+      .tsa  { fill:#ffffff; }
+      .tsi  { fill:#cccccc; }
+      .tf   { fill:#999999; font-size:10px; }
+      .fb   { fill:#f8f8f8; stroke:#cccccc; stroke-width:0.4; }
+      .al   { stroke:#aaaaaa; stroke-width:0.8; fill:none; }
+      .ad   { stroke:#555555; stroke-width:1.2; fill:none; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555555"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="al" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <!-- Gabarit réutilisable : fond + zone sécurité -->
+    <!-- Sections G/C/D inactives -->
+    <!-- Sections G/C/D : G active -->
+    <!-- etc. — tout inline par carte pour compatibilité maximale -->
+  </defs>
+<rect width="794" height="1123" fill="#e0e0e0"/>
+<text x="397" y="1117" text-anchor="middle" font-size="8" fill="#aaaaaa">BdVM · Deck Escarmouche 43 cartes · Phase 1.5 · v2.0 · 2026-05-09 — p.4/5</text>
+<g transform="translate(20,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="26" x="119" y="42" text-anchor="middle">En marche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <!-- plateau : G C D toutes actives -->
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">1 unité dans chaque section</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">(3 unités au total).</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si une section est vide,</text>
+    <text class="tn" x="119" y="267" text-anchor="middle">ignorez-la.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="26" x="119" y="42" text-anchor="middle">En marche</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="sa" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="176" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="196" text-anchor="middle" font-weight="bold">1 unité dans chaque section</text>
+    <text class="tr" x="119" y="216" text-anchor="middle">(3 unités au total).</text>
+    <line class="dv" x1="26" y1="232" x2="212" y2="232"/>
+    <text class="tn" x="119" y="251" text-anchor="middle">Si une section est vide,</text>
+    <text class="tn" x="119" y="267" text-anchor="middle">ignorez-la.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Encerclement</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="193" text-anchor="middle" font-weight="bold">2 unités en section gauche</text>
+    <text class="tr" x="119" y="212" text-anchor="middle">et</text>
+    <text class="tr" x="119" y="231" text-anchor="middle" font-weight="bold">2 unités en section droite.</text>
+    <line class="dv" x1="26" y1="247" x2="212" y2="247"/>
+    <text class="tn" x="119" y="265" text-anchor="middle">Si moins de 2 unités dans une section,</text>
+    <text class="tn" x="119" y="281" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,361)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="24" x="119" y="42" text-anchor="middle">Encerclement</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte de section</text>
+    <rect class="sa" x="18" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="49" y="114" text-anchor="middle">G</text>
+    <rect class="si" x="88" y="80" width="62" height="60" rx="4"/><text class="ts tsi" x="119" y="114" text-anchor="middle">C</text>
+    <rect class="sa" x="158" y="80" width="62" height="60" rx="4"/><text class="ts tsa" x="189" y="114" text-anchor="middle">D</text>
+    <rect class="br" x="11" y="150" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="174" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="193" text-anchor="middle" font-weight="bold">2 unités en section gauche</text>
+    <text class="tr" x="119" y="212" text-anchor="middle">et</text>
+    <text class="tr" x="119" y="231" text-anchor="middle" font-weight="bold">2 unités en section droite.</text>
+    <line class="dv" x1="26" y1="247" x2="212" y2="247"/>
+    <text class="tn" x="119" y="265" text-anchor="middle">Si moins de 2 unités dans une section,</text>
+    <text class="tn" x="119" y="281" text-anchor="middle">activez-les toutes.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,361)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="17" x="119" y="38" text-anchor="middle">Charge de cavalerie</text>
+    <text class="tp" x="119" y="57" text-anchor="middle">Carte Tactique</text>
+    <!-- picto cavaliers -->
+    <ellipse cx="49" cy="100" rx="24" ry="11" class="si"/>
+    <rect x="64" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="32" y1="109" x2="30" y2="118"/><line class="al" x1="39" y1="110" x2="38" y2="119"/>
+    <line class="al" x1="57" y1="110" x2="57" y2="119"/><line class="al" x1="64" y1="109" x2="66" y2="118"/>
+    <ellipse cx="119" cy="100" rx="24" ry="11" class="si"/>
+    <rect x="134" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="102" y1="109" x2="100" y2="118"/><line class="al" x1="109" y1="110" x2="108" y2="119"/>
+    <line class="al" x1="127" y1="110" x2="127" y2="119"/><line class="al" x1="134" y1="109" x2="136" y2="118"/>
+    <ellipse cx="189" cy="100" rx="24" ry="11" class="si"/>
+    <rect x="204" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="172" y1="109" x2="170" y2="118"/><line class="al" x1="179" y1="110" x2="178" y2="119"/>
+    <line class="al" x1="197" y1="110" x2="197" y2="119"/><line class="al" x1="204" y1="109" x2="206" y2="118"/>
+    <line class="ad" x1="18" y1="126" x2="216" y2="126" marker-end="url(#ar)"/>
+    <!-- règle -->
+    <rect class="br" x="11" y="138" width="216" height="170" rx="4"/>
+    <text class="trs" x="119" y="157" text-anchor="middle">Activez autant d'unités de</text>
+    <text class="trs" x="119" y="174" text-anchor="middle" font-weight="bold">Cavalerie</text>
+    <text class="trs" x="119" y="191" text-anchor="middle">que votre valeur de commandement,</text>
+    <text class="trs" x="119" y="208" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="225" text-anchor="middle">Ces unités combattent à</text>
+    <text class="trs" x="119" y="242" text-anchor="middle" font-weight="bold">+2 dés en mêlée</text>
+    <text class="trs" x="119" y="259" text-anchor="middle">ce tour.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,361)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="17" x="119" y="38" text-anchor="middle">Charge de cavalerie</text>
+    <text class="tp" x="119" y="57" text-anchor="middle">Carte Tactique</text>
+    <ellipse cx="49" cy="100" rx="24" ry="11" class="si"/><rect x="64" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="32" y1="109" x2="30" y2="118"/><line class="al" x1="39" y1="110" x2="38" y2="119"/><line class="al" x1="57" y1="110" x2="57" y2="119"/><line class="al" x1="64" y1="109" x2="66" y2="118"/>
+    <ellipse cx="119" cy="100" rx="24" ry="11" class="si"/><rect x="134" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="102" y1="109" x2="100" y2="118"/><line class="al" x1="109" y1="110" x2="108" y2="119"/><line class="al" x1="127" y1="110" x2="127" y2="119"/><line class="al" x1="134" y1="109" x2="136" y2="118"/>
+    <ellipse cx="189" cy="100" rx="24" ry="11" class="si"/><rect x="204" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="172" y1="109" x2="170" y2="118"/><line class="al" x1="179" y1="110" x2="178" y2="119"/><line class="al" x1="197" y1="110" x2="197" y2="119"/><line class="al" x1="204" y1="109" x2="206" y2="118"/>
+    <line class="ad" x1="18" y1="126" x2="216" y2="126" marker-end="url(#ar)"/>
+    <rect class="br" x="11" y="138" width="216" height="170" rx="4"/>
+    <text class="trs" x="119" y="157" text-anchor="middle">Activez autant d'unités de</text>
+    <text class="trs" x="119" y="174" text-anchor="middle" font-weight="bold">Cavalerie</text>
+    <text class="trs" x="119" y="191" text-anchor="middle">que votre valeur de commandement,</text>
+    <text class="trs" x="119" y="208" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="225" text-anchor="middle">Ces unités combattent à</text>
+    <text class="trs" x="119" y="242" text-anchor="middle" font-weight="bold">+2 dés en mêlée</text>
+    <text class="trs" x="119" y="259" text-anchor="middle">ce tour.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,702)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="17" x="119" y="38" text-anchor="middle">Charge de cavalerie</text>
+    <text class="tp" x="119" y="57" text-anchor="middle">Carte Tactique</text>
+    <ellipse cx="49" cy="100" rx="24" ry="11" class="si"/><rect x="64" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="32" y1="109" x2="30" y2="118"/><line class="al" x1="39" y1="110" x2="38" y2="119"/><line class="al" x1="57" y1="110" x2="57" y2="119"/><line class="al" x1="64" y1="109" x2="66" y2="118"/>
+    <ellipse cx="119" cy="100" rx="24" ry="11" class="si"/><rect x="134" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="102" y1="109" x2="100" y2="118"/><line class="al" x1="109" y1="110" x2="108" y2="119"/><line class="al" x1="127" y1="110" x2="127" y2="119"/><line class="al" x1="134" y1="109" x2="136" y2="118"/>
+    <ellipse cx="189" cy="100" rx="24" ry="11" class="si"/><rect x="204" y="85" width="10" height="14" rx="3" class="si"/>
+    <line class="al" x1="172" y1="109" x2="170" y2="118"/><line class="al" x1="179" y1="110" x2="178" y2="119"/><line class="al" x1="197" y1="110" x2="197" y2="119"/><line class="al" x1="204" y1="109" x2="206" y2="118"/>
+    <line class="ad" x1="18" y1="126" x2="216" y2="126" marker-end="url(#ar)"/>
+    <rect class="br" x="11" y="138" width="216" height="170" rx="4"/>
+    <text class="trs" x="119" y="157" text-anchor="middle">Activez autant d'unités de</text>
+    <text class="trs" x="119" y="174" text-anchor="middle" font-weight="bold">Cavalerie</text>
+    <text class="trs" x="119" y="191" text-anchor="middle">que votre valeur de commandement,</text>
+    <text class="trs" x="119" y="208" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="225" text-anchor="middle">Ces unités combattent à</text>
+    <text class="trs" x="119" y="242" text-anchor="middle" font-weight="bold">+2 dés en mêlée</text>
+    <text class="trs" x="119" y="259" text-anchor="middle">ce tour.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,702)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="17" x="119" y="38" text-anchor="middle">Assaut d'infanterie</text>
+    <text class="tp" x="119" y="57" text-anchor="middle">Carte Tactique</text>
+    <!-- picto : blocs infanterie groupés -->
+    <rect x="20" y="78" width="28" height="28" rx="3" class="si"/><rect x="54" y="78" width="28" height="28" rx="3" class="si"/>
+    <rect x="88" y="78" width="28" height="28" rx="3" class="si"/><rect x="122" y="78" width="28" height="28" rx="3" class="si"/>
+    <rect x="37" y="110" width="28" height="28" rx="3" class="si"/><rect x="71" y="110" width="28" height="28" rx="3" class="si"/>
+    <rect x="105" y="110" width="28" height="28" rx="3" class="si"/>
+    <!-- flèche charge -->
+    <line class="ad" x1="18" y1="126" x2="190" y2="126" marker-end="url(#ar)"/>
+    <rect class="br" x="11" y="143" width="216" height="165" rx="4"/>
+    <text class="trs" x="119" y="162" text-anchor="middle">Activez autant d'unités</text>
+    <text class="trs" x="119" y="179" text-anchor="middle" font-weight="bold">d'Infanterie</text>
+    <text class="trs" x="119" y="196" text-anchor="middle">que votre valeur de commandement,</text>
+    <text class="trs" x="119" y="213" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="230" text-anchor="middle">Déplacement 2 hex · combat mêlée.</text>
+    <text class="trs" x="119" y="247" text-anchor="middle" font-weight="bold">Ces unités doivent être adjacentes.</text>
+    <line class="dv" x1="26" y1="263" x2="212" y2="263"/>
+        <text class="tn" x="119" y="295" text-anchor="middle">Elles ne peuvent pas tirer à distance.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,702)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="17" x="119" y="38" text-anchor="middle">Assaut d'infanterie</text>
+    <text class="tp" x="119" y="57" text-anchor="middle">Carte Tactique</text>
+    <rect x="20" y="78" width="28" height="28" rx="3" class="si"/><rect x="54" y="78" width="28" height="28" rx="3" class="si"/>
+    <rect x="88" y="78" width="28" height="28" rx="3" class="si"/><rect x="122" y="78" width="28" height="28" rx="3" class="si"/>
+    <rect x="37" y="110" width="28" height="28" rx="3" class="si"/><rect x="71" y="110" width="28" height="28" rx="3" class="si"/>
+    <rect x="105" y="110" width="28" height="28" rx="3" class="si"/>
+    <line class="ad" x1="18" y1="126" x2="190" y2="126" marker-end="url(#ar)"/>
+    <rect class="br" x="11" y="143" width="216" height="165" rx="4"/>
+    <text class="trs" x="119" y="162" text-anchor="middle">Activez autant d'unités</text>
+    <text class="trs" x="119" y="179" text-anchor="middle" font-weight="bold">d'Infanterie</text>
+    <text class="trs" x="119" y="196" text-anchor="middle">que votre valeur de commandement,</text>
+    <text class="trs" x="119" y="213" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="230" text-anchor="middle">Déplacement 2 hex · combat mêlée.</text>
+    <text class="trs" x="119" y="247" text-anchor="middle" font-weight="bold">Ces unités doivent être adjacentes.</text>
+    <line class="dv" x1="26" y1="263" x2="212" y2="263"/>
+        <text class="tn" x="119" y="295" text-anchor="middle">Elles ne peuvent pas tirer à distance.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+</svg></div>
+<div class="page"><svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123" font-family="Arial, Helvetica, sans-serif">
+<defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+      .cb   { fill:#ffffff; stroke:#333; stroke-width:0.8; }
+      .sz   { fill:none; stroke:#cccccc; stroke-width:0.4; stroke-dasharray:2 2; }
+      .bn   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .br   { fill:#e8e8e8; stroke:#bbbbbb; stroke-width:0.4; }
+      .sa   { fill:#444444; stroke:#222222; stroke-width:0.5; }
+      .si   { fill:#f2f2f2; stroke:#dddddd; stroke-width:0.5; }
+      .dv   { stroke:#bbbbbb; stroke-width:0.4; }
+      .tt   { font-family:'UnifrakturMaguntia','Georgia',serif; fill:#111111; }
+      .tp   { fill:#888888; font-size:10px; letter-spacing:0.5px; }
+      .tr   { fill:#111111; font-size:12.5px; }
+      .trs  { fill:#111111; font-size:11px; }
+      .trxs { fill:#111111; font-size:9.5px; }
+      .tn   { fill:#666666; font-size:10px; font-style:italic; }
+      .ts   { font-size:11px; font-weight:bold; }
+      .tsa  { fill:#ffffff; }
+      .tsi  { fill:#cccccc; }
+      .tf   { fill:#999999; font-size:10px; }
+      .fb   { fill:#f8f8f8; stroke:#cccccc; stroke-width:0.4; }
+      .al   { stroke:#aaaaaa; stroke-width:0.8; fill:none; }
+      .ad   { stroke:#555555; stroke-width:1.2; fill:none; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555555"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="al" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <!-- Gabarit réutilisable : fond + zone sécurité -->
+    <!-- Sections G/C/D inactives -->
+    <!-- Sections G/C/D : G active -->
+    <!-- etc. — tout inline par carte pour compatibilité maximale -->
+  </defs>
+<rect width="794" height="1123" fill="#e0e0e0"/>
+<text x="397" y="1117" text-anchor="middle" font-size="8" fill="#aaaaaa">BdVM · Deck Escarmouche 43 cartes · Phase 1.5 · v2.0 · 2026-05-09 — p.5/5</text>
+<g transform="translate(20,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Pluie de flèches</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <!-- 6 flèches tombantes -->
+    <line x1="38"  y1="76" x2="30"  y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M37 79 L34 73 L41 77" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="68"  y1="74" x2="62"  y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M67 77 L64 71 L71 75" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="100" y1="74" x2="100" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M99 77 L96 71 L103 75" fill="none" stroke="#555" stroke-width="1.2"/>
+    <line x1="132" y1="74" x2="138" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M131 77 L128 71 L135 75" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="162" y1="76" x2="170" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M161 79 L158 73 L165 77" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="192" y1="78" x2="204" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M191 81 L188 75 L195 79" fill="none" stroke="#555" stroke-width="0.9"/>
+    <rect class="br" x="11" y="143" width="216" height="165" rx="4"/>
+    <text class="trs" x="119" y="162" text-anchor="middle">Activez</text>
+    <text class="trs" x="119" y="179" text-anchor="middle" font-weight="bold">toutes vos unités de tir,</text>
+    <text class="trs" x="119" y="196" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="213" text-anchor="middle">Elles tirent</text>
+    <text class="trs" x="119" y="230" text-anchor="middle" font-weight="bold">deux fois</text>
+    <text class="trs" x="119" y="247" text-anchor="middle">ce tour.</text>
+    <line class="dv" x1="26" y1="263" x2="212" y2="263"/>
+    <text class="tn" x="119" y="279" text-anchor="middle">Elles ne peuvent ni se déplacer</text>
+    <text class="tn" x="119" y="295" text-anchor="middle">ni tirer à bout portant.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Pluie de flèches</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <line x1="38"  y1="76" x2="30"  y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M37 79 L34 73 L41 77" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="68"  y1="74" x2="62"  y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M67 77 L64 71 L71 75" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="100" y1="74" x2="100" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M99 77 L96 71 L103 75" fill="none" stroke="#555" stroke-width="1.2"/>
+    <line x1="132" y1="74" x2="138" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M131 77 L128 71 L135 75" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="162" y1="76" x2="170" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M161 79 L158 73 L165 77" fill="none" stroke="#555" stroke-width="1"/>
+    <line x1="192" y1="78" x2="204" y2="132" class="ad" marker-end="url(#ar)"/>
+    <path d="M191 81 L188 75 L195 79" fill="none" stroke="#555" stroke-width="0.9"/>
+    <rect class="br" x="11" y="143" width="216" height="165" rx="4"/>
+    <text class="trs" x="119" y="162" text-anchor="middle">Activez</text>
+    <text class="trs" x="119" y="179" text-anchor="middle" font-weight="bold">toutes vos unités de tir,</text>
+    <text class="trs" x="119" y="196" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="trs" x="119" y="213" text-anchor="middle">Elles tirent</text>
+    <text class="trs" x="119" y="230" text-anchor="middle" font-weight="bold">deux fois</text>
+    <text class="trs" x="119" y="247" text-anchor="middle">ce tour.</text>
+    <line class="dv" x1="26" y1="263" x2="212" y2="263"/>
+    <text class="tn" x="119" y="279" text-anchor="middle">Elles ne peuvent ni se déplacer</text>
+    <text class="tn" x="119" y="295" text-anchor="middle">ni tirer à bout portant.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,20)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="26" x="119" y="42" text-anchor="middle">Ordre direct</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <!-- picto : 1 unité seule, étoile au dessus -->
+    <rect x="89" y="82" width="60" height="44" rx="5" class="si"/>
+    <text font-size="22" x="119" y="111" text-anchor="middle" fill="#444444">★</text>
+    <!-- +1 dé -->
+    <text font-size="14" x="158" y="90" text-anchor="middle" fill="#888888" font-family="Arial">+2</text>
+    <text font-size="9" x="158" y="102" text-anchor="middle" fill="#bbbbbb" font-family="Arial">dé</text>
+    <rect class="br" x="11" y="138" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="162" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="181" text-anchor="middle" font-weight="bold">1 unité de votre choix,</text>
+    <text class="tr" x="119" y="200" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="tr" x="119" y="219" text-anchor="middle">Cette unité combat à</text>
+    <text class="tr" x="119" y="238" text-anchor="middle" font-weight="bold">+2 dés</text>
+    <text class="tr" x="119" y="257" text-anchor="middle">pour toute la durée du tour.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,361)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="26" x="119" y="42" text-anchor="middle">Ordre direct</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <rect x="89" y="82" width="60" height="44" rx="5" class="si"/>
+    <text font-size="22" x="119" y="111" text-anchor="middle" fill="#444444">★</text>
+    <text font-size="14" x="158" y="90" text-anchor="middle" fill="#888888" font-family="Arial">+2</text>
+    <text font-size="9" x="158" y="102" text-anchor="middle" fill="#bbbbbb" font-family="Arial">dé</text>
+    <rect class="br" x="11" y="138" width="216" height="152" rx="4"/>
+    <text class="tr" x="119" y="162" text-anchor="middle">Activez</text>
+    <text class="tr" x="119" y="181" text-anchor="middle" font-weight="bold">1 unité de votre choix,</text>
+    <text class="tr" x="119" y="200" text-anchor="middle">dans n'importe quelle section.</text>
+    <text class="tr" x="119" y="219" text-anchor="middle">Cette unité combat à</text>
+    <text class="tr" x="119" y="238" text-anchor="middle" font-weight="bold">+2 dés</text>
+    <text class="tr" x="119" y="257" text-anchor="middle">pour toute la durée du tour.</text>
+    <rect class="fb" x="183" y="296" width="34" height="15" rx="3"/><text class="tf" x="200" y="307" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(266,361)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Contre-attaque</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <!-- picto : double flèche miroir -->
+    <line x1="40" y1="95" x2="115" y2="130" class="ad" marker-end="url(#ar)"/>
+    <line x1="198" y1="95" x2="123" y2="130" class="ad" marker-end="url(#ar)"/>
+    <line x1="40" y1="130" x2="115" y2="95" class="al" marker-end="url(#al)"/>
+    <line x1="198" y1="130" x2="123" y2="95" class="al" marker-end="url(#al)"/>
+    <rect class="br" x="11" y="143" width="216" height="178" rx="4"/>
+    <text class="trxs" x="119" y="162" text-anchor="middle">Jouez en réponse à la carte</text>
+    <text class="trxs" x="119" y="178" text-anchor="middle">que vient de jouer votre adversaire.</text>
+    <text class="trxs" x="119" y="198" text-anchor="middle">Vous exécutez le même ordre :</text>
+    <line class="dv" x1="26" y1="208" x2="212" y2="208"/>
+    <text class="tn" x="119" y="224" text-anchor="middle">Carte de section : la section gauche</text>
+    <text class="tn" x="119" y="239" text-anchor="middle">devient la droite et vice-versa.</text>
+    <line class="dv" x1="60" y1="249" x2="178" y2="249"/>
+    <text class="tn" x="119" y="264" text-anchor="middle">Carte Tactique : appliquez</text>
+    <text class="tn" x="119" y="279" text-anchor="middle">l'effet identique.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(512,361)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Contre-attaque</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <line x1="40" y1="95" x2="115" y2="130" class="ad" marker-end="url(#ar)"/>
+    <line x1="198" y1="95" x2="123" y2="130" class="ad" marker-end="url(#ar)"/>
+    <line x1="40" y1="130" x2="115" y2="95" class="al" marker-end="url(#al)"/>
+    <line x1="198" y1="130" x2="123" y2="95" class="al" marker-end="url(#al)"/>
+    <rect class="br" x="11" y="143" width="216" height="178" rx="4"/>
+    <text class="trxs" x="119" y="162" text-anchor="middle">Jouez en réponse à la carte</text>
+    <text class="trxs" x="119" y="178" text-anchor="middle">que vient de jouer votre adversaire.</text>
+    <text class="trxs" x="119" y="198" text-anchor="middle">Vous exécutez le même ordre :</text>
+    <line class="dv" x1="26" y1="208" x2="212" y2="208"/>
+    <text class="tn" x="119" y="224" text-anchor="middle">Carte de section : la section gauche</text>
+    <text class="tn" x="119" y="239" text-anchor="middle">devient la droite et vice-versa.</text>
+    <line class="dv" x1="60" y1="249" x2="178" y2="249"/>
+    <text class="tn" x="119" y="264" text-anchor="middle">Carte Tactique : appliquez</text>
+    <text class="tn" x="119" y="279" text-anchor="middle">l'effet identique.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+<g transform="translate(20,702)">
+    <rect class="cb" width="238" height="333" rx="7"/><rect class="sz" x="11" y="11" width="216" height="311" rx="4"/>
+    <rect class="bn" x="11" y="11" width="216" height="60" rx="4"/>
+    <text class="tt" font-size="22" x="119" y="42" text-anchor="middle">Arcanes de guerre</text>
+    <text class="tp" x="119" y="60" text-anchor="middle">Carte Tactique</text>
+    <!-- picto : 3 dés stylisés avec faces Épée / Arc / Couronne -->
+    <rect x="18" y="78" width="46" height="46" rx="5" class="si"/>
+    <text font-size="20" x="41" y="108" text-anchor="middle" fill="#555555" font-family="Arial">⚔</text>
+    <rect x="96" y="78" width="46" height="46" rx="5" class="si"/>
+    <text font-size="20" x="119" y="108" text-anchor="middle" fill="#555555" font-family="Arial">⚔</text>
+    <rect x="174" y="78" width="46" height="46" rx="5" class="si"/>
+    <text font-size="20" x="197" y="108" text-anchor="middle" fill="#555555" font-family="Arial">♛</text>
+    <!-- labels sous les dés -->
+    <text font-size="9" x="41"  y="132" text-anchor="middle" fill="#888888" font-family="Arial">Épée</text>
+    <text font-size="9" x="119" y="132" text-anchor="middle" fill="#888888" font-family="Arial">Ép. croisées</text>
+    <text font-size="9" x="197" y="132" text-anchor="middle" fill="#888888" font-family="Arial">Couronne</text>
+    <rect class="br" x="11" y="143" width="216" height="178" rx="4"/>
+    <text class="trxs" x="119" y="161" text-anchor="middle">Lancez autant de dés que votre</text>
+    <text class="trxs" x="119" y="177" text-anchor="middle" font-weight="bold">valeur de commandement.</text>
+    <line class="dv" x1="26" y1="189" x2="212" y2="189"/>
+    <text class="tn" x="119" y="204" text-anchor="middle">Épée / Ép. croisées → mêlée.</text>
+    <text class="tn" x="119" y="219" text-anchor="middle">Cible → unité à distance.</text>
+    <text class="tn" x="119" y="234" text-anchor="middle">Couronne → 1 unité libre.</text>
+    <line class="dv" x1="26" y1="244" x2="212" y2="244"/>
+    <text class="tn" x="119" y="259" text-anchor="middle">Toutes ces unités combattent à</text>
+    <text class="tn" x="119" y="274" text-anchor="middle" font-style="normal" font-weight="bold" fill="#444444">+2 dés</text>
+    <text class="tn" x="119" y="289" text-anchor="middle">ce tour. Puis mélangez la défausse.</text>
+    <rect class="fb" x="183" y="316" width="34" height="15" rx="3"/><text class="tf" x="200" y="327" text-anchor="middle">E · B</text>
+  </g>
+</svg></div>
+</body></html>

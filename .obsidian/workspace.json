@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "51645e823d98c818",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6c76e00ef187970",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9325cc91e8d65535",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Règles/BdVM_AideDeJeu.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "BdVM_AideDeJeu"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e7a13ee0e0a67f68",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae95f903fcdf22b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "730387c2e5f186e4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorateur de fichiers"
+            }
+          },
+          {
+            "id": "dbedb28cc1ddb3a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Rechercher"
+            }
+          },
+          {
+            "id": "73ba4a4b643ca20b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Signets"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ecf3f99cd9164ce8",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2de9e19ad26e608",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bd112e974f694e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01 - Règles/BdVM_AideDeJeu.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour BdVM_AideDeJeu"
+            }
+          },
+          {
+            "id": "a632abad490ff07b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01 - Règles/BdVM_AideDeJeu.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de BdVM_AideDeJeu"
+            }
+          },
+          {
+            "id": "ec1a38287eda74d7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "51fbd251c084029c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "ff9506dfeefb0ea2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01 - Règles/BdVM_AideDeJeu.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de BdVM_AideDeJeu"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
+      "bases:Créer une nouvelle base": false
+    }
+  },
+  "active": "9325cc91e8d65535",
+  "lastOpenFiles": [
+    "01 - Règles/BdVM_Terrain.md",
+    "01 - Règles/BdVM_Regles_Base.md",
+    "01 - Règles/BdVM_Regles_Speciales.md",
+    "01 - Règles/BdVM_AideDeJeu.md",
+    "01 - Règles/BdVM_AideDeJeu_Print.pdf",
+    "01 - Règles",
+    "03 - Scénarios/BdVM_playtest2.md",
+    "03 - Scénarios/BdVM_Playtest3.md",
+    "03 - Scénarios/BdVM_playtest1.md",
+    "03 - Scénarios",
+    "02 - Factions/BdVM_Hommes_Lezards_Unites.md",
+    "02 - Factions/fiche_hommes_lezards.html",
+    "02 - Factions/fiche_empire.html",
+    "02 - Factions/BdVM_Empire_Unites.md",
+    "02 - Factions",
+    "04 - Composants/BdVM_gabarit_cartes_playtest.svg",
+    "04 - Composants/BdVM_deck_escarmouche_43cartes.svg",
+    "04 - Composants/BdVM_Cartes_Commandement.md",
+    "04 - Composants/BdVM_deck_cartes_modifiees_A4.html",
+    "04 - Composants",
+    "00 - META/Images/Divers/icones/epeiste-empire.png",
+    "00 - META/Images/Divers/skink.png",
+    "00 - META/Images/Divers/skink.jpg",
+    "00 - META/Images/Divers/saurus-sur-sang-froid.webp",
+    "00 - META/Images/Divers/Saurus.webp",
+    "00 - META/Images/Divers/saurus-sur-sang-froid.png",
+    "00 - META/Images/Divers/saurus-lance.webp",
+    "00 - META/Images/Divers/saurus-lance.png",
+    "00 - META/Images/Divers/icones",
+    "00 - META/Scribus/playtest2.sla",
+    "00 - META/Templates/Tpl playtest.md",
+    "00 - META/Templates/Tpl unite.md",
+    "00 - META/Templates/Tpl scenario.md",
+    "00 - META/Templates/Tpl regle.md",
+    "00 - META/Templates/Tpl faction.md",
+    "00 - META/Document_de_cadrage.md",
+    "00 - META/BdVM_Analyse_BLv2.md",
+    "05 - Playtest/BdVM_Playtest_01.md",
+    "05 - Playtest/BdVM_Playtest_02.md",
+    "05 - Playtest/BdVM_cloture_phase1_6.md",
+    "05 - Playtest/BdVM_cloture_phase1_5.md",
+    "05 - Playtest/BdVM_cloture_phase1.md",
+    "Bienvenue.md"
+  ]
+}
