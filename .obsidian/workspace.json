@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Factions/Gondor_et_Fiefs.md",
+                "file": "00 - META/Document_de_cadrage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gondor_et_Fiefs"
+              "title": "Document_de_cadrage"
             }
           }
         ]
@@ -185,10 +185,11 @@
   },
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
+    "01 - Règles/Regles_Speciales.md",
+    "02 - Factions/Rohan.md",
+    "02 - Factions/Gondor_et_Fiefs.md",
     "01 - Règles/Regles_Points.md",
     "00 - META/Document_de_cadrage.md",
-    "01 - Règles/Regles_Speciales.md",
-    "02 - Factions/Gondor_et_Fiefs.md",
     "00 - META/Templates/Tpl unite.md",
     "00 - META/Templates/Tpl scenario.md",
     "00 - META/Templates/Tpl regle.md",
@@ -229,7 +230,6 @@
     "00 - META/Images/Divers/saurus-lance.webp",
     "00 - META/Images/Divers/saurus-lance.png",
     "00 - META/Images/Divers/icones",
-    "00 - META/Scribus/playtest2.sla",
-    "00 - META/BdVM_Analyse_BLv2.md"
+    "00 - META/Scribus/playtest2.sla"
   ]
 }

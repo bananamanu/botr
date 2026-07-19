@@ -1,11 +1,14 @@
 ---
-projet: "Batailles de la Terre du Milieu"
-type: "meta"
+projet: Batailles de la Terre du Milieu
+type: meta
 phase: "1"
-statut: "en-cours"
-date_maj: "2026-07-19"
-tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.5"
+statut: en-cours
+date_maj: 2026-07-19
+tags:
+  - BdTdM
+  - type/meta
+  - statut/en-cours
+version: "1.7"
 ---
 
 # Document de cadrage du projet
@@ -16,14 +19,14 @@ version: "1.5"
 
 ## Table des matières
 
-1. [Vision du projet](#1-vision-du-projet)
-2. [Références et inspirations](#2-références-et-inspirations)
-3. [Principes de design](#3-principes-de-design)
-4. [Composants du jeu](#4-composants-du-jeu)
-5. [Axes d'adaptation — BLv2 vers la Terre du Milieu](#5-axes-dadaptation--blv2-vers-la-terre-du-milieu)
-6. [Feuille de route](#6-feuille-de-route)
-7. [Conventions de travail](#7-conventions-de-travail)
-8. [Journal de décisions](#8-journal-de-décisions)
+1. [Vision du projet](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#1-vision-du-projet)
+2. [Références et inspirations](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#2-r%C3%A9f%C3%A9rences-et-inspirations)
+3. [Principes de design](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#3-principes-de-design)
+4. [Composants du jeu](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#4-composants-du-jeu)
+5. [Axes d'adaptation — BLv2 vers la Terre du Milieu](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#5-axes-dadaptation--blv2-vers-la-terre-du-milieu)
+6. [Feuille de route](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#6-feuille-de-route)
+7. [Conventions de travail](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#7-conventions-de-travail)
+8. [Journal de décisions](https://claude.ai/cowork/cse_018xgD6boARHCP71fz54hEnT#8-journal-de-d%C3%A9cisions)
 
 ---
 
@@ -49,21 +52,21 @@ Figurines MESBG, collection très complète.
 
 ### Références principales
 
-| Jeu | Ce qu'on en retient |
+|Jeu|Ce qu'on en retient|
 |---|---|
-| **BattleLore Seconde Édition** (FFG) | Référence mécanique principale : dés, règles spéciales, profils d'unités, avance, poursuite, contre-attaque universelle, système Lore (pouvoirs — hors scope V1, voir §5.2). |
-| **Commands & Colors : Medievals** | Structure de commandement (cartes de section + Tactiques), proximité thématique médiévale, profils d'infanterie lourde. |
+|**BattleLore Seconde Édition** (FFG)|Référence mécanique principale : dés, règles spéciales, profils d'unités, avance, poursuite, contre-attaque universelle, système Lore (pouvoirs — hors scope V1, voir §5.2).|
+|**Commands & Colors : Medievals**|Structure de commandement (cartes de section + Tactiques), proximité thématique médiévale, profils d'infanterie lourde.|
 
 ### Références secondaires
 
-| Jeu | Ce qu'on en retient |
+|Jeu|Ce qu'on en retient|
 |---|---|
-| **C&C Ancients** | Gestion des unités légères, règles d'évasion. |
-| **Memoir '44** | Clarté de présentation des scénarios, format des cartes de terrain, médailles objectif. Face de dé « miss universel » (voir §5.2, D001). |
-| **C&C Napoleonics** | Système de moral et de cohésion d'unité. |
-| **BattleLore V1** | Règles de Peur/Terreur — pertinentes pour les Nazgûl, les Trolls, les Mûmakil. |
-| **Battle of Westeros** | Bonus offensif +1 dé depuis le terrain surélevé. |
-| **MESBG (sourcebook officiel)** | Référence de fidélité au texte de Tolkien pour les scénarios et objectifs narratifs — pas de reprise mécanique (échelle et système trop différents). |
+|**C&C Ancients**|Gestion des unités légères, règles d'évasion.|
+|**Memoir '44**|Clarté de présentation des scénarios, format des cartes de terrain, médailles objectif. Face de dé « miss universel » (voir §5.2, D001).|
+|**C&C Napoleonics**|Système de moral et de cohésion d'unité.|
+|**BattleLore V1**|Règles de Peur/Terreur — pertinentes pour les Nazgûl, les Trolls, les Mûmakil.|
+|**Battle of Westeros**|Bonus offensif +1 dé depuis le terrain surélevé.|
+|**MESBG (sourcebook officiel)**|Référence de fidélité au texte de Tolkien pour les scénarios et objectifs narratifs — pas de reprise mécanique (échelle et système trop différents).|
 
 ---
 
@@ -85,11 +88,11 @@ Figurines MESBG, collection très complète.
 
 Tapis hexagonal, taille selon le format :
 
-| Format | Taille | Usage |
+|Format|Taille|Usage|
 |---|---|---|
-| Escarmouche | 10 × 7 hexagones | Petits engagements, 1v1/2v2 |
-| Normal | 13 × 9 hexagones | Format standard, 2v2/3v3 léger |
-| Épique | 16 × 13 hexagones | Grands affrontements type Pelennor (3v3, 6 joueurs) |
+|Escarmouche|10 × 7 hexagones|Petits engagements, 1v1/2v2|
+|Normal|13 × 9 hexagones|Format standard, 2v2/3v3 léger|
+|Épique|16 × 13 hexagones|Grands affrontements type Pelennor (3v3, 6 joueurs)|
 
 Divisé verticalement en 3 sections (Gauche / Centre / Droite), quel que soit le format.
 
@@ -99,18 +102,17 @@ Divisé verticalement en 3 sections (Gauche / Centre / Droite), quel que soit le
 
 ### Unités
 
-| Type | Figurines/hex | PV | Base |
+|Type|Figurines/hex|PV|Base|
 |---|---|---|---|
-| Infanterie | 6 | 1/fig. | 25 mm |
-| Cavalerie | 3 | 1/fig. | 40 mm |
-| Chars | 1 | Variable | 65 mm |
-| Créature / Machine de guerre | 1 | Variable | 65 mm (ex. Troll du Mordor) |
-| Artillerie | 1 pièce + servants | 1/servant | — |
+|Infanterie|6|1/fig.|25 mm|
+|Cavalerie|3|1/fig.|40 mm|
+|Chars|1|Variable|65 mm|
+|Créature / Machine de guerre|1|Variable|65 mm (ex. Troll du Mordor)|
+|Artillerie|1 pièce + servants|1/servant|—|
 
 Pas de distinction Infanterie standard/élite par le nombre de figurines ou la base (cohérent avec le principe 3 : la différenciation élite/standard passe par le profil, pas par l'effectif).
 
-> ⚠️ **Point ouvert critique — Mûmakil**
-> La figurine ne tient pas sur un hex standard (10 cm). Sujet sensible à traiter en profondeur, hors de ce document de cadrage. Pistes possibles : hex agrandi dédié, occupation de plusieurs hexes, ou gabarit hors-grille avec règles de zone d'effet. À planifier comme tâche de conception à part entière.
+> ⚠️ **Point ouvert critique — Mûmakil** La figurine ne tient pas sur un hex standard (10 cm). Sujet sensible à traiter en profondeur, hors de ce document de cadrage. Pistes possibles : hex agrandi dédié, occupation de plusieurs hexes, ou gabarit hors-grille avec règles de zone d'effet. À planifier comme tâche de conception à part entière. Emmanuel a déjà une idée de règle dédiée pour l'impact au contact (distincte de [Charge écrasante], réservée au Rohan — D029) ; à formaliser au moment de rédiger ce profil.
 
 ---
 
@@ -132,12 +134,11 @@ Pas de distinction Infanterie standard/élite par le nombre de figurines ou la b
 - [ ] [Peur] / [Terreur] — Nazgûl, Trolls, Mûmakil, Roi-Sorcier
 - [ ] Monstres avancés : vol (Fell Beasts), piétinement en zone (Mûmakil/Trolls)
 
-> 🎲 **Note de design — Pas de couche pouvoirs/magie en V1**
-> Hors scope pour l'instant (D001). Piste future : magie légère fondée sur les thèmes **Espoir** (Bien) / **Peur** (Mal), avec des dés personnalisés par camp portant sur la face concernée la **Rune de Gandalf** (Bien) et l'**Œil de Sauron** (Mal) au lieu du symbole Arcane générique.
+> 🎲 **Note de design — Pas de couche pouvoirs/magie en V1** Hors scope pour l'instant (D001). Piste future : magie légère fondée sur les thèmes **Espoir** (Bien) / **Peur** (Mal), avec des dés personnalisés par camp portant sur la face concernée la **Rune de Gandalf** (Bien) et l'**Œil de Sauron** (Mal) au lieu du symbole Arcane générique.
 
 ### 5.3 Priorité basse — Contenu et scénarios
 
-- [ ] Peuples à couvrir en V1 : **Gondor et ses fiefs** (rédigé, voir `02 - Factions/Gondor_et_Fiefs.md`), Rohan, Mordor, Harad, Khand, Easterling
+- [ ] Peuples à couvrir en V1 : **Gondor et ses fiefs** (rédigé, voir `02 - Factions/Gondor_et_Fiefs.md`), **Rohan** (rédigé et validé, voir `02 - Factions/Rohan.md`), Mordor, Harad, Khand, Easterling
 - [ ] Scénarios : Pelennor comme référence Épique, autres affrontements en Normal/Escarmouche
 - [ ] Construction d'armée : valeurs en points par unité et héros
 
@@ -151,7 +152,7 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 
 - [ ] Formaliser le corps de règles de base (commandement, dés, types d'unités, Faible, contre-attaque, avance/poursuite, règles spéciales de base)
 - [ ] Choisir le format de travail initial : Normal (plus rapide à tester qu'Épique)
-- [ ] **Playtest #1**
+- [ ] **Playtest #1** — Gondor (trio 15 pts) et Rohan (trio 13 pts) prêts à être testés
 
 ### Phase 2 — Héros, cas Mûmakil, montée en Épique
 
@@ -173,8 +174,7 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 - [ ] Fiches unités/héros imprimables
 - [ ] Répétition générale avant fin septembre
 
-> ⚠️ **Point ouvert**
-> Calendrier resserré (10 semaines) — le découpage tient si chaque phase reste ~2-3 semaines max. À surveiller après le Playtest #1.
+> ⚠️ **Point ouvert** Calendrier resserré (10 semaines) — le découpage tient si chaque phase reste ~2-3 semaines max. À surveiller après le Playtest #1.
 
 ---
 
@@ -199,62 +199,63 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 
 ### Terminologie fixée
 
-| Terme retenu | Signification | Éviter |
+|Terme retenu|Signification|Éviter|
 |---|---|---|
-| **Champ de bataille** | Surface de jeu (tapis hexagonal) | "Plateau", "Table" |
-| **Unité** | Groupe de figurines occupant un hexagone | "Régiment", "Bande" |
-| **Section** | Gauche / Centre / Droite du champ de bataille | "Flanc", "Aile" |
-| **Ordre** | Activation d'une unité via une carte | "Activation", "Tour" |
-| **Carte Tactique** | Carte spéciale (hors carte de section) | "Carte spéciale" |
-| **Commandement** | Système de cartes/activation (sens C&C d'origine) — plus de sous-force nominative par joueur | "Commande" |
-| **Peuple** | Camp jouable (Gondor, Rohan, Mordor...) | "Faction", "Race" |
-| **Camp** | Bien / Mal | "Alliance", "Légion" |
-| **Drapeau** | Face de dé forçant une retraite | "Bannière", "Étendard" |
-| **Faible** | Unité à 1 PV restant (dernière figurine) | "Blessé", "En déroute" |
-| **PV** | Points de Vie — une figurine = 1 PV | "Figurine" (dans un contexte de règle) |
-| **Infanterie** | 6 fig., base 25 mm | "Fantassin", "Piéton" |
-| **Cavalerie** | 3 fig., base 40 mm | "Cavalier", "Monture" |
-| **Chars** | 1/hex, base 65 mm | "Chariot" |
-| **Créature** | PV variables, jamais Faible | "Monstre", "Bête" |
-| **Machine de guerre** | PV variables, jamais Faible | "Engin" |
-| **Artillerie** | Servants éliminés en premier, jamais Faible | "Canon", "Pièce" |
-| **Unité légendaire** | Troupe d'élite narrativement marquante, profil enrichi (peut dépasser le plafond de 2 règles spéciales) — **pas** un héros, aucune valeur de commandement individuelle | "Héros" (réservé à la Phase 2, voir §5.2) |
+|**Champ de bataille**|Surface de jeu (tapis hexagonal)|"Plateau", "Table"|
+|**Unité**|Groupe de figurines occupant un hexagone|"Régiment", "Bande"|
+|**Section**|Gauche / Centre / Droite du champ de bataille|"Flanc", "Aile"|
+|**Ordre**|Activation d'une unité via une carte|"Activation", "Tour"|
+|**Carte Tactique**|Carte spéciale (hors carte de section)|"Carte spéciale"|
+|**Commandement**|Système de cartes/activation (sens C&C d'origine) — plus de sous-force nominative par joueur|"Commande"|
+|**Peuple**|Camp jouable (Gondor, Rohan, Mordor...)|"Faction", "Race"|
+|**Camp**|Bien / Mal|"Alliance", "Légion"|
+|**Drapeau**|Face de dé forçant une retraite|"Bannière", "Étendard"|
+|**Faible**|Unité à 1 PV restant (dernière figurine)|"Blessé", "En déroute"|
+|**PV**|Points de Vie — une figurine = 1 PV|"Figurine" (dans un contexte de règle)|
+|**Infanterie**|6 fig., base 25 mm|"Fantassin", "Piéton"|
+|**Cavalerie**|3 fig., base 40 mm|"Cavalier", "Monture"|
+|**Chars**|1/hex, base 65 mm|"Chariot"|
+|**Créature**|PV variables, jamais Faible|"Monstre", "Bête"|
+|**Machine de guerre**|PV variables, jamais Faible|"Engin"|
+|**Artillerie**|Servants éliminés en premier, jamais Faible|"Canon", "Pièce"|
+|**Unité légendaire**|Troupe d'élite narrativement marquante, profil enrichi (peut dépasser le plafond de 2 règles spéciales) — **pas** un héros, aucune valeur de commandement individuelle|"Héros" (réservé à la Phase 2, voir §5.2)|
 
 ---
 
 ## 8. Journal de décisions
 
-| # | Date | Décision | Justification |
+|#|Date|Décision|Justification|
 |---|---|---|---|
-| 001 | 2026-07-18 | Face Arcane = miss universel en V1 | Simplicité, pas de couche magie prévue pour l'instant. Piste future : dés custom par camp (Rune de Gandalf / Œil de Sauron) pour une magie légère Espoir/Peur. |
-| 002 | 2026-07-18 | Nom du projet : **Batailles de la Terre du Milieu (BdTdM)** | Basé directement sur Commands & Colors / BattleLore Seconde Édition — pas de dépendance affichée à un autre projet. |
-| 003 | 2026-07-18 | Ambition multi-format : Escarmouche / Normal / Épique | Le Pelennor n'est qu'un cas d'usage (format Épique) d'un système générique pour la Terre du Milieu, pas l'unique objectif du système. |
-| 004 | 2026-07-18 | Abandon complet de la mécanique à sac de tokens (Destin/Test of Honour) | Jugée trop fragile pour 6 joueurs peu à l'aise avec les règles complexes. Remplacée par le deck de commandement C&C/BLv2. |
-| 005 | 2026-07-18 | Format Épique fixé à 16 × 13 hexagones | Dimensionné pour le scénario Pelennor (6 joueurs, 3v3, 1 table). |
-| 006 | 2026-07-18 | Bases figurines MESBG : Infanterie 25 mm, Cavalerie 40 mm, Chars/Créatures 65 mm | Alignement sur les bases réelles de la collection MESBG plutôt que sur des valeurs génériques. |
-| 007 | 2026-07-18 | Pas de distinction Infanterie standard/élite par base ou effectif | Cohérent avec le principe "profils comme vecteurs de règles" (§3.3) — la différenciation élite/standard passe par le profil, pas par le socle. |
-| 008 | 2026-07-18 | Chars = type à 1 figurine/hex, base identique aux Trolls du Mordor (65 mm) | Simplifie la classification, réutilise un gabarit déjà existant. |
-| 009 | 2026-07-18 | Cas Mûmakil identifié comme point ouvert critique, hors cadrage | La figurine ne tient pas sur un hex standard (10 cm) — nécessite une tâche de conception dédiée (gabarit ou occupation multi-hex). |
-| 010 | 2026-07-18 | Pas de couche pouvoirs/magie pour la V1 | Hors scope pour la convention de septembre — priorité au socle de règles et au contenu Pelennor. |
-| 011 | 2026-07-18 | Peuples à couvrir en V1 : Gondor et fiefs, Rohan, Mordor, Harad, Khand, Easterling | Correspond aux 6 commandements du scénario Pelennor (cadrage 5) — Elfes/Nains/Isengard réservés à une version future. |
-| 012 | 2026-07-18 | Règles des héros à développer en Phase 2 | Une ébauche de structure existe ailleurs et doit être formalisée et adaptée au contexte BdTdM. |
-| 013 | 2026-07-18 | Feuille de route en 4 phases sur ~10 semaines | Fondations → Héros/Mûmakil/Épique → Contenu Pelennor → Finalisation, calé sur l'échéance de fin septembre. |
-| 014 | 2026-07-18 | Terminologie fixée : "Commandement" (sous-force), "Peuple" (camp jouable), "Camp" (Bien/Mal) | Clarté et cohérence terminologique pour tous les documents du projet. *(Révisé par D016.)* |
-| 015 | 2026-07-18 | [Massif] retirée du socle de règles, sans remplacement en V1 | Règle héritée d'un système voisin pour différencier l'infanterie d'élite sur socle 25 mm (type Hommes-Lézards de Warhammer). Toutes les Infanteries de BdTdM partagent déjà la même base (25 mm) — le cas ne se présente plus. Si un besoin de différenciation apparaît en Phase 3, une nouvelle règle sera introduite à ce moment-là. |
-| 016 | 2026-07-18 | Abandon de la sous-force nominative par joueur ("Commandement" ne désigne plus que le système de cartes/activation) | La logique "Rohan / Minas Tirith-Dol Amroth / Compagnie Grise" du cadrage 5 n'a plus de sens dans l'architecture C&C pure. En Épique (3v3), chaque joueur contrôle une Section (Gauche/Centre/Droite) ; la répartition des peuples entre sections devient une décision de scénario (Phase 3), pas une règle de commandement. Annule la définition "sous-force" de D014. |
-| 017 | 2026-07-18 | Pas de terrain spécifique développé pour le Pelennor | Le champ de bataille est majoritairement plat (des champs qui s'étendent à perte de vue) — les règles de terrain génériques (bois, gué, terrain surélevé) suffiront pour d'éventuels éléments ponctuels introduits par le scénario. |
-| 018 | 2026-07-19 | [Arme à distance] (ex-[Arme à feu]) retirée du socle de règles, sans remplacement en V1 | Règle spécifique aux armes à poudre (dés dégressifs avec la distance), héritée par erreur de la référence Memoir '44 — sans objet dans un univers sans armes à feu. Le §2 est corrigé en conséquence : la référence Memoir '44 ne mentionne plus cette règle. Voir [[Regles_Speciales]]. |
-| 019 | 2026-07-19 | Carte de commandement "Arcanes de guerre" renommée en "Ruée générale" | Le nom évoquait une magie de bataille, incompatible avec l'absence de couche pouvoirs/magie en V1 (D001, D010). Le mécanisme (activation par dés) reste inchangé. Voir [[Cartes_Commandement]] §4.2. |
-| 020 | 2026-07-19 | Portée de tir fixée à 4 hexagones pour les unités d'arc en V1 | Aucune valeur n'était définie dans [[Regles_Base]]. Choisie à la rédaction des profils Gondor et fiefs — assez généreuse pour laisser le tir dominer une partie du champ de bataille sans être illimitée. S'applique à tous les peuples à venir sauf mention contraire dans un profil. |
-| 021 | 2026-07-19 | [Réception de charge] assignée par équipement constaté (troupes effectivement armées de piques), pas par peuple entier | Évite d'attribuer une règle anti-cavalerie à un peuple entier par défaut. Pour Gondor et fiefs, seuls les Hommes d'armes de Dol Amroth en sont équipés. Reste ouverte pour Rohan si des piquiers y figurent. |
-| 022 | 2026-07-19 | Convention de profil : Mouvement 2 (Infanterie) / 3 (Cavalerie) par défaut, exception possible si justifiée dans le profil | Garde les profils mémorisables (règle par défaut simple) tout en autorisant des cas spéciaux clairement signalés — première exception : Chevaliers à pied de Dol Amroth (Mouvement 1, armure très lourde). |
-| 023 | 2026-07-19 | Convention de profil : maximum 2 règles spéciales pour les troupes standard/élite ; les unités légendaires peuvent en cumuler davantage | Garde la majorité des profils simples à mémoriser à la table tout en laissant les unités légendaires (voir Terminologie §7) se distinguer nettement. Premiers cas : Vétérans d'Osgiliath et Archers de la Racine Noire (3 règles), La Compagnie Grise (mécanique sur mesure, voir D024). |
-| 024 | 2026-07-19 | Nouvelle règle spéciale [Archer en mêlée] ajoutée au socle : les faces Cible infligent aussi une touche en mêlée | Créée pour le profil de la Compagnie Grise (Gondor et fiefs) — représente la précision hors norme de Legolas, dangereuse même au corps à corps. Nommée génériquement pour pouvoir être réattribuée à d'autres profils/peuples. Voir [[Regles_Speciales]]. |
-| 025 | 2026-07-19 | Des dominances strictes entre profils d'un même peuple sont temporairement assumées en V1 | Ex. Chevaliers de Dol Amroth vs Chevaliers de Minas Tirith ; Archers de la Racine Noire vs Rangers d'Ithilien (Gondor et fiefs). Pas un défaut de conception à corriger profil par profil — seront équilibrées en Phase 3 par un coût en points et/ou une limite d'enrôlement des unités légendaires par format (voir §6 Phase 3). |
-| 026 | 2026-07-19 | Système de points validé : `Points = Mouvement + PV + (Attaque × D) + Σ coût des règles` (D=3 Mêlée, D=2 Tir), règles spéciales chiffrées par catégorie (pas de coût forfaitaire unique), pas de prime de sécurité pour le Tir en V1, unités composites à figurines nommées chiffrées en pleine puissance | Calibré et testé sur les 14 profils de Gondor et fiefs — valide directement D025 (Chevaliers de Dol Amroth : 23 pts contre 20 pour Minas Tirith ; Racine Noire : 20 pts contre 18 pour Ithilien) sans retoucher aucun profil. Détail complet et table de coût par règle dans [[Regles_Points]]. Arrondi des coûts et généralisation des unités composites restent des points ouverts. |
-| 027 | 2026-07-19 | Compression finale ajoutée à la formule de points : `Points_finaux = round(Points_bruts ÷ 3) − 1`, sans changer les poids de la formule brute (D026) | Comparaison aux coûts réels de BattleLore Seconde Édition (échelle 4-8 pour l'essentiel du roster, PV uniforme à 3 par Type standard) : la formule brute de D026 étalait le roster Gondor sur 12 valeurs quasi uniques (14 à 26) pour 14 profils — pas mémorisable. La compression ramène le roster sur 4-8, quasi identique à BattleLore V2, tout en conservant les deux dominances D025 (Chevaliers de Dol Amroth 7 vs Minas Tirith 6 ; Racine Noire 6 vs Ithilien 5). Vérification annexe : le socle Mouvement+PV Infanterie/Cavalerie (8:6) correspond exactement au ratio de durabilité effective en Mêlée (12:9 dés pour tuer) — les poids de D026 n'avaient pas besoin d'être retouchés, seule l'échelle finale posait problème. Clôt le point "Arrondi" laissé ouvert en D026. Détail complet dans [[Regles_Points]] §2bis. |
+|001|2026-07-18|Face Arcane = miss universel en V1|Simplicité, pas de couche magie prévue pour l'instant. Piste future : dés custom par camp (Rune de Gandalf / Œil de Sauron) pour une magie légère Espoir/Peur.|
+|002|2026-07-18|Nom du projet : **Batailles de la Terre du Milieu (BdTdM)**|Basé directement sur Commands & Colors / BattleLore Seconde Édition — pas de dépendance affichée à un autre projet.|
+|003|2026-07-18|Ambition multi-format : Escarmouche / Normal / Épique|Le Pelennor n'est qu'un cas d'usage (format Épique) d'un système générique pour la Terre du Milieu, pas l'unique objectif du système.|
+|004|2026-07-18|Abandon complet de la mécanique à sac de tokens (Destin/Test of Honour)|Jugée trop fragile pour 6 joueurs peu à l'aise avec les règles complexes. Remplacée par le deck de commandement C&C/BLv2.|
+|005|2026-07-18|Format Épique fixé à 16 × 13 hexagones|Dimensionné pour le scénario Pelennor (6 joueurs, 3v3, 1 table).|
+|006|2026-07-18|Bases figurines MESBG : Infanterie 25 mm, Cavalerie 40 mm, Chars/Créatures 65 mm|Alignement sur les bases réelles de la collection MESBG plutôt que sur des valeurs génériques.|
+|007|2026-07-18|Pas de distinction Infanterie standard/élite par base ou effectif|Cohérent avec le principe "profils comme vecteurs de règles" (§3.3) — la différenciation élite/standard passe par le profil, pas par le socle.|
+|008|2026-07-18|Chars = type à 1 figurine/hex, base identique aux Trolls du Mordor (65 mm)|Simplifie la classification, réutilise un gabarit déjà existant.|
+|009|2026-07-18|Cas Mûmakil identifié comme point ouvert critique, hors cadrage|La figurine ne tient pas sur un hex standard (10 cm) — nécessite une tâche de conception dédiée (gabarit ou occupation multi-hex).|
+|010|2026-07-18|Pas de couche pouvoirs/magie pour la V1|Hors scope pour la convention de septembre — priorité au socle de règles et au contenu Pelennor.|
+|011|2026-07-18|Peuples à couvrir en V1 : Gondor et fiefs, Rohan, Mordor, Harad, Khand, Easterling|Correspond aux 6 commandements du scénario Pelennor (cadrage 5) — Elfes/Nains/Isengard réservés à une version future.|
+|012|2026-07-18|Règles des héros à développer en Phase 2|Une ébauche de structure existe ailleurs et doit être formalisée et adaptée au contexte BdTdM.|
+|013|2026-07-18|Feuille de route en 4 phases sur ~10 semaines|Fondations → Héros/Mûmakil/Épique → Contenu Pelennor → Finalisation, calé sur l'échéance de fin septembre.|
+|014|2026-07-18|Terminologie fixée : "Commandement" (sous-force), "Peuple" (camp jouable), "Camp" (Bien/Mal)|Clarté et cohérence terminologique pour tous les documents du projet. _(Révisé par D016.)_|
+|015|2026-07-18|[Massif] retirée du socle de règles, sans remplacement en V1|Règle héritée d'un système voisin pour différencier l'infanterie d'élite sur socle 25 mm (type Hommes-Lézards de Warhammer). Toutes les Infanteries de BdTdM partagent déjà la même base (25 mm) — le cas ne se présente plus. Si un besoin de différenciation apparaît en Phase 3, une nouvelle règle sera introduite à ce moment-là.|
+|016|2026-07-18|Abandon de la sous-force nominative par joueur ("Commandement" ne désigne plus que le système de cartes/activation)|La logique "Rohan / Minas Tirith-Dol Amroth / Compagnie Grise" du cadrage 5 n'a plus de sens dans l'architecture C&C pure. En Épique (3v3), chaque joueur contrôle une Section (Gauche/Centre/Droite) ; la répartition des peuples entre sections devient une décision de scénario (Phase 3), pas une règle de commandement. Annule la définition "sous-force" de D014.|
+|017|2026-07-18|Pas de terrain spécifique développé pour le Pelennor|Le champ de bataille est majoritairement plat (des champs qui s'étendent à perte de vue) — les règles de terrain génériques (bois, gué, terrain surélevé) suffiront pour d'éventuels éléments ponctuels introduits par le scénario.|
+|018|2026-07-19|[Arme à distance] (ex-[Arme à feu]) retirée du socle de règles, sans remplacement en V1|Règle spécifique aux armes à poudre (dés dégressifs avec la distance), héritée par erreur de la référence Memoir '44 — sans objet dans un univers sans armes à feu. Le §2 est corrigé en conséquence : la référence Memoir '44 ne mentionne plus cette règle. Voir [[Regles_Speciales]].|
+|019|2026-07-19|Carte de commandement "Arcanes de guerre" renommée en "Ruée générale"|Le nom évoquait une magie de bataille, incompatible avec l'absence de couche pouvoirs/magie en V1 (D001, D010). Le mécanisme (activation par dés) reste inchangé. Voir [[Cartes_Commandement]] §4.2.|
+|020|2026-07-19|Portée de tir fixée à 4 hexagones pour les unités d'arc en V1|Aucune valeur n'était définie dans [[Regles_Base]]. Choisie à la rédaction des profils Gondor et fiefs — assez généreuse pour laisser le tir dominer une partie du champ de bataille sans être illimitée. S'applique à tous les peuples à venir sauf mention contraire dans un profil.|
+|021|2026-07-19|[Réception de charge] assignée par équipement constaté (troupes effectivement armées de piques), pas par peuple entier|Évite d'attribuer une règle anti-cavalerie à un peuple entier par défaut. Pour Gondor et fiefs, seuls les Hommes d'armes de Dol Amroth en sont équipés. Aucune unité du Rohan n'en est équipée dans le roster validé — reste ouverte pour un futur profil de piquiers du Rohan (voir `02 - Factions/Rohan.md`).|
+|022|2026-07-19|Convention de profil : Mouvement 2 (Infanterie) / 3 (Cavalerie) par défaut, exception possible si justifiée dans le profil|Garde les profils mémorisables (règle par défaut simple) tout en autorisant des cas spéciaux clairement signalés — Gondor : Chevaliers à pied de Dol Amroth (Mouvement 1, armure très lourde) ; Rohan : Éored d'éclaireur (Mouvement 4, pour donner du rayon d'action à [Déploiement avancé], voir D028).|
+|023|2026-07-19|Convention de profil : maximum 2 règles spéciales pour les troupes standard/élite ; les unités légendaires peuvent en cumuler davantage|Garde la majorité des profils simples à mémoriser à la table tout en laissant les unités légendaires (voir Terminologie §7) se distinguer nettement. Premiers cas côté Gondor : Vétérans d'Osgiliath et Archers de la Racine Noire (3 règles), La Compagnie Grise (mécanique sur mesure, voir D024). Côté Rohan : Garde du Roi, Garde du roi à cheval et Helmingas de Grimbolg (3 règles chacun).|
+|024|2026-07-19|Nouvelle règle spéciale [Archer en mêlée] ajoutée au socle : les faces Cible infligent aussi une touche en mêlée|Créée pour le profil de la Compagnie Grise (Gondor et fiefs) — représente la précision hors norme de Legolas, dangereuse même au corps à corps. Nommée génériquement pour pouvoir être réattribuée à d'autres profils/peuples. Voir [[Regles_Speciales]].|
+|025|2026-07-19|Des dominances strictes entre profils d'un même peuple sont temporairement assumées en V1|Ex. Chevaliers de Dol Amroth vs Chevaliers de Minas Tirith ; Archers de la Racine Noire vs Rangers d'Ithilien (Gondor et fiefs). Pas un défaut de conception à corriger profil par profil — seront équilibrées en Phase 3 par un coût en points et/ou une limite d'enrôlement des unités légendaires par format (voir §6 Phase 3).|
+|026|2026-07-19|Système de points validé : `Points = Mouvement + PV + (Attaque × D) + Σ coût des règles` (D=3 Mêlée, D=2 Tir), règles spéciales chiffrées par catégorie (pas de coût forfaitaire unique), pas de prime de sécurité pour le Tir en V1, unités composites à figurines nommées chiffrées en pleine puissance|Calibré et testé sur les 14 profils de Gondor et fiefs — valide directement D025 (Chevaliers de Dol Amroth : 23 pts contre 20 pour Minas Tirith ; Racine Noire : 20 pts contre 18 pour Ithilien) sans retoucher aucun profil. Détail complet et table de coût par règle dans [[Regles_Points]]. Arrondi des coûts et généralisation des unités composites restent des points ouverts.|
+|027|2026-07-19|Compression finale ajoutée à la formule de points : `Points_finaux = round(Points_bruts ÷ 3) − 1`, sans changer les poids de la formule brute (D026)|Comparaison aux coûts réels de BattleLore Seconde Édition (échelle 4-8 pour l'essentiel du roster, PV uniforme à 3 par Type standard) : la formule brute de D026 étalait le roster Gondor sur 12 valeurs quasi uniques (14 à 26) pour 14 profils — pas mémorisable. La compression ramène le roster sur 4-8, quasi identique à BattleLore V2, tout en conservant les deux dominances D025 (Chevaliers de Dol Amroth 7 vs Minas Tirith 6 ; Racine Noire 6 vs Ithilien 5). Vérification annexe : le socle Mouvement+PV Infanterie/Cavalerie (8:6) correspond exactement au ratio de durabilité effective en Mêlée (12:9 dés pour tuer) — les poids de D026 n'avaient pas besoin d'être retouchés, seule l'échelle finale posait problème. Clôt le point "Arrondi" laissé ouvert en D026. Détail complet dans [[Regles_Points]] §2bis.|
+|028|2026-07-19|Nouvelle règle spéciale [Déploiement avancé] ajoutée au socle : une fois le déploiement des deux camps terminé, avant le premier Ordre du tour 1, l'unité se repositionne d'un déplacement égal à sa valeur de Mouvement, sans pouvoir finir au contact d'une unité ennemie|Créée pour l'Éored d'éclaireur (Rohan, `02 - Factions/Rohan.md`) — représente un rôle de reconnaissance qui permet de se replacer une fois le dispositif adverse connu, plutôt qu'une capacité de combat. Accompagnée d'une exception de Mouvement (3 → 4, voir D022) pour lui donner un vrai rayon d'action. Coût provisoire de 2 points forfaitaires dans [[Regles_Points]], non testé — à revoir après un premier usage à la table.|
+|029|2026-07-19|[Charge écrasante] confirmée pour la Garde du roi à cheval (Rohan) ; le Mûmakil recevra sa propre règle dédiée à l'impact au contact, distincte de [Charge écrasante]|Emmanuel a déjà une idée de règle spécifique pour le Mûmakil — [Charge écrasante] n'est donc plus listée comme candidate pour cette unité dans [[Regles_Speciales]] et reste assignée exclusivement à la Garde du roi à cheval. Clôture la revue du roster Rohan : les 9 profils sont validés et prêts pour le Playtest #1 (tâche Todoist du 20/07 close).|
 
 ---
 
-*Version : 1.5 — Phase 1 — 2026-07-19. Ajout D027 (compression de l'échelle de points, ÷3 −1) suite à comparaison avec BattleLore Seconde Édition — clôt le point "Arrondi" ouvert par D026.*
-*Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique.*
+_Version : 1.7 — Phase 1 — 2026-07-19. Ajout D029 (confirmation de [Charge écrasante] pour la Garde du roi à cheval, Mûmakil aura sa propre règle) — clôture de la revue profil par profil du roster Rohan (`02 - Factions/Rohan.md`, v1.0), prêt pour le Playtest #1._ _Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique._
