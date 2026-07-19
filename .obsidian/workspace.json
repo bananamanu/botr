@@ -11,10 +11,14 @@
             "id": "9325cc91e8d65535",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02 - Factions/Gondor_et_Fiefs.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Gondor_et_Fiefs"
             }
           }
         ]
@@ -179,8 +183,13 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "730387c2e5f186e4",
+  "active": "9325cc91e8d65535",
   "lastOpenFiles": [
+    "01 - Règles/Regles_Points.md",
+    "00 - META/Document_de_cadrage.md",
+    "01 - Règles/Regles_Speciales.md",
+    "02 - Factions/Gondor_et_Fiefs.md",
+    "00 - META/Templates/Tpl unite.md",
     "00 - META/Templates/Tpl scenario.md",
     "00 - META/Templates/Tpl regle.md",
     "00 - META/Templates/Tpl playtest.md",
@@ -190,8 +199,6 @@
     "03 - Scénarios/BdVM_playtest1.md",
     "02 - Factions/BdVM_Empire_Unites.md",
     "04 - Composants/Cartes_Commandement.md",
-    "01 - Règles/Regles_Speciales.md",
-    "00 - META/Document_de_cadrage.md",
     "00 - META/Document_de_cadrage_BdTdM.md",
     "01 - Règles/Regles_Base.md",
     "01 - Règles/BdVM_AideDeJeu_Print.pdf",
@@ -223,9 +230,6 @@
     "00 - META/Images/Divers/saurus-lance.png",
     "00 - META/Images/Divers/icones",
     "00 - META/Scribus/playtest2.sla",
-    "00 - META/Templates/Tpl unite.md",
-    "00 - META/BdVM_Analyse_BLv2.md",
-    "05 - Playtest/BdVM_Playtest_01.md",
-    "05 - Playtest/BdVM_Playtest_02.md"
+    "00 - META/BdVM_Analyse_BLv2.md"
   ]
 }

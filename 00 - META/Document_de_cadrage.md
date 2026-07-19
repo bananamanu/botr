@@ -5,7 +5,7 @@ phase: "1"
 statut: "en-cours"
 date_maj: "2026-07-19"
 tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.2"
+version: "1.5"
 ---
 
 # Document de cadrage du projet
@@ -137,7 +137,7 @@ Pas de distinction Infanterie standard/élite par le nombre de figurines ou la b
 
 ### 5.3 Priorité basse — Contenu et scénarios
 
-- [ ] Peuples à couvrir en V1 : **Gondor et ses fiefs, Rohan, Mordor, Harad, Khand, Easterling**
+- [ ] Peuples à couvrir en V1 : **Gondor et ses fiefs** (rédigé, voir `02 - Factions/Gondor_et_Fiefs.md`), Rohan, Mordor, Harad, Khand, Easterling
 - [ ] Scénarios : Pelennor comme référence Épique, autres affrontements en Normal/Escarmouche
 - [ ] Construction d'armée : valeurs en points par unité et héros
 
@@ -164,7 +164,7 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 
 - [ ] Profils d'unités pour les 6 peuples V1 (Gondor et fiefs, Rohan, Mordor, Harad, Khand, Easterling)
 - [ ] Reprise et adaptation du travail déjà fait en cadrage 5 (forces, héros, objectifs narratifs) au nouveau système — répartition des peuples par Section plutôt que par sous-force nominative (D016)
-- [ ] Valeurs en points, équilibrage Bien/Mal
+- [ ] Valeurs en points, équilibrage Bien/Mal, et limite d'enrôlement des unités légendaires par format (Escarmouche/Normal/Épique) — nécessaire pour arbitrer les quelques dominances strictes assumées en V1 entre profils d'un même peuple (D025)
 - [ ] **Playtest #3** (scénario Pelennor complet)
 
 ### Phase 4 — Finalisation convention
@@ -218,6 +218,7 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 | **Créature** | PV variables, jamais Faible | "Monstre", "Bête" |
 | **Machine de guerre** | PV variables, jamais Faible | "Engin" |
 | **Artillerie** | Servants éliminés en premier, jamais Faible | "Canon", "Pièce" |
+| **Unité légendaire** | Troupe d'élite narrativement marquante, profil enrichi (peut dépasser le plafond de 2 règles spéciales) — **pas** un héros, aucune valeur de commandement individuelle | "Héros" (réservé à la Phase 2, voir §5.2) |
 
 ---
 
@@ -244,8 +245,16 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 | 017 | 2026-07-18 | Pas de terrain spécifique développé pour le Pelennor | Le champ de bataille est majoritairement plat (des champs qui s'étendent à perte de vue) — les règles de terrain génériques (bois, gué, terrain surélevé) suffiront pour d'éventuels éléments ponctuels introduits par le scénario. |
 | 018 | 2026-07-19 | [Arme à distance] (ex-[Arme à feu]) retirée du socle de règles, sans remplacement en V1 | Règle spécifique aux armes à poudre (dés dégressifs avec la distance), héritée par erreur de la référence Memoir '44 — sans objet dans un univers sans armes à feu. Le §2 est corrigé en conséquence : la référence Memoir '44 ne mentionne plus cette règle. Voir [[Regles_Speciales]]. |
 | 019 | 2026-07-19 | Carte de commandement "Arcanes de guerre" renommée en "Ruée générale" | Le nom évoquait une magie de bataille, incompatible avec l'absence de couche pouvoirs/magie en V1 (D001, D010). Le mécanisme (activation par dés) reste inchangé. Voir [[Cartes_Commandement]] §4.2. |
+| 020 | 2026-07-19 | Portée de tir fixée à 4 hexagones pour les unités d'arc en V1 | Aucune valeur n'était définie dans [[Regles_Base]]. Choisie à la rédaction des profils Gondor et fiefs — assez généreuse pour laisser le tir dominer une partie du champ de bataille sans être illimitée. S'applique à tous les peuples à venir sauf mention contraire dans un profil. |
+| 021 | 2026-07-19 | [Réception de charge] assignée par équipement constaté (troupes effectivement armées de piques), pas par peuple entier | Évite d'attribuer une règle anti-cavalerie à un peuple entier par défaut. Pour Gondor et fiefs, seuls les Hommes d'armes de Dol Amroth en sont équipés. Reste ouverte pour Rohan si des piquiers y figurent. |
+| 022 | 2026-07-19 | Convention de profil : Mouvement 2 (Infanterie) / 3 (Cavalerie) par défaut, exception possible si justifiée dans le profil | Garde les profils mémorisables (règle par défaut simple) tout en autorisant des cas spéciaux clairement signalés — première exception : Chevaliers à pied de Dol Amroth (Mouvement 1, armure très lourde). |
+| 023 | 2026-07-19 | Convention de profil : maximum 2 règles spéciales pour les troupes standard/élite ; les unités légendaires peuvent en cumuler davantage | Garde la majorité des profils simples à mémoriser à la table tout en laissant les unités légendaires (voir Terminologie §7) se distinguer nettement. Premiers cas : Vétérans d'Osgiliath et Archers de la Racine Noire (3 règles), La Compagnie Grise (mécanique sur mesure, voir D024). |
+| 024 | 2026-07-19 | Nouvelle règle spéciale [Archer en mêlée] ajoutée au socle : les faces Cible infligent aussi une touche en mêlée | Créée pour le profil de la Compagnie Grise (Gondor et fiefs) — représente la précision hors norme de Legolas, dangereuse même au corps à corps. Nommée génériquement pour pouvoir être réattribuée à d'autres profils/peuples. Voir [[Regles_Speciales]]. |
+| 025 | 2026-07-19 | Des dominances strictes entre profils d'un même peuple sont temporairement assumées en V1 | Ex. Chevaliers de Dol Amroth vs Chevaliers de Minas Tirith ; Archers de la Racine Noire vs Rangers d'Ithilien (Gondor et fiefs). Pas un défaut de conception à corriger profil par profil — seront équilibrées en Phase 3 par un coût en points et/ou une limite d'enrôlement des unités légendaires par format (voir §6 Phase 3). |
+| 026 | 2026-07-19 | Système de points validé : `Points = Mouvement + PV + (Attaque × D) + Σ coût des règles` (D=3 Mêlée, D=2 Tir), règles spéciales chiffrées par catégorie (pas de coût forfaitaire unique), pas de prime de sécurité pour le Tir en V1, unités composites à figurines nommées chiffrées en pleine puissance | Calibré et testé sur les 14 profils de Gondor et fiefs — valide directement D025 (Chevaliers de Dol Amroth : 23 pts contre 20 pour Minas Tirith ; Racine Noire : 20 pts contre 18 pour Ithilien) sans retoucher aucun profil. Détail complet et table de coût par règle dans [[Regles_Points]]. Arrondi des coûts et généralisation des unités composites restent des points ouverts. |
+| 027 | 2026-07-19 | Compression finale ajoutée à la formule de points : `Points_finaux = round(Points_bruts ÷ 3) − 1`, sans changer les poids de la formule brute (D026) | Comparaison aux coûts réels de BattleLore Seconde Édition (échelle 4-8 pour l'essentiel du roster, PV uniforme à 3 par Type standard) : la formule brute de D026 étalait le roster Gondor sur 12 valeurs quasi uniques (14 à 26) pour 14 profils — pas mémorisable. La compression ramène le roster sur 4-8, quasi identique à BattleLore V2, tout en conservant les deux dominances D025 (Chevaliers de Dol Amroth 7 vs Minas Tirith 6 ; Racine Noire 6 vs Ithilien 5). Vérification annexe : le socle Mouvement+PV Infanterie/Cavalerie (8:6) correspond exactement au ratio de durabilité effective en Mêlée (12:9 dés pour tuer) — les poids de D026 n'avaient pas besoin d'être retouchés, seule l'échelle finale posait problème. Clôt le point "Arrondi" laissé ouvert en D026. Détail complet dans [[Regles_Points]] §2bis. |
 
 ---
 
-*Version : 1.2 — Phase 1 — 2026-07-19. [Arme à distance] retirée des références (D018), carte "Arcanes de guerre" renommée "Ruée générale" (D019).*
+*Version : 1.5 — Phase 1 — 2026-07-19. Ajout D027 (compression de l'échelle de points, ÷3 −1) suite à comparaison avec BattleLore Seconde Édition — clôt le point "Arrondi" ouvert par D026.*
 *Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique.*

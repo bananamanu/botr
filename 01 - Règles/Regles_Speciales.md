@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-07-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.1"
+version: "0.2"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -14,7 +14,9 @@ version: "0.1"
 > Aligné sur **Regles_Base** et **Terrain**.
 > Ce document ne couvre pas les règles universelles (Faible, contre-attaque, avance, Poursuite générique) ni les règles intrinsèques des types d'unités, qui sont définies dans [[Regles_Base]].
 >
-> **Statut des assignations :** aucun profil d'unité n'est encore rédigé — les tâches "Rédiger les profils d'unités" (Gondor et fiefs, Rohan, Mordor, Khând, Easterling) décideront quelles règles ci-dessous sont effectivement portées par quelles unités. [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
+> **Statut des assignations :** Gondor et ses fiefs est le premier peuple dont les profils sont rédigés — voir `02 - Factions/Gondor_et_Fiefs.md` (14 unités). Rohan, Mordor, Harad, Khand, Easterling restent à faire. [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
+>
+> **Nouvelle règle issue de Gondor :** [Archer en mêlée] a été créée pour le profil de la Compagnie Grise (Legolas) et généralisée volontairement pour pouvoir resservir sur d'autres profils/peuples (D024 du [[Document de cadrage]]).
 >
 > **Note pour le Mûmakil (tâche à venir) :** [Howdah], [Charge écrasante], [Bête incontrôlable] et [Meute X] sont des candidates naturelles pour cette unité — une tour d'archers sur son dos, un impact dévastateur au contact, un risque d'affolement une fois les guides tués, ou une résistance répartie sur plusieurs points de vie. À trancher au moment de rédiger son profil.
 
@@ -127,6 +129,17 @@ Lorsqu'une unité occupant une position protégée (bâtiment, fortification) re
 
 ---
 
+### [Archer en mêlée]
+
+Cette unité inflige aussi une touche sur chaque face **Cible** obtenue lors d'une attaque de **mêlée** (normalement inerte en mêlée, voir [[Regles_Base]] §7.2).
+
+> 💡 **Exemple de jeu**
+> Une unité [Archer en mêlée] attaque en mêlée : 3 dés. Résultat : Cible, Épée, Drapeau. Sans cette règle, seule l'Épée toucherait. Avec [Archer en mêlée], la Cible touche aussi → 2 touches au lieu d'une.
+
+> 🎲 **Note de design** Créée pour représenter une précision hors norme qui reste dangereuse même au corps à corps (Legolas, dans le profil de la Compagnie Grise — Gondor). Nommée de façon générique pour pouvoir être réattribuée à d'autres profils.
+
+---
+
 ### [Arme Lourde X]
 
 Après le lancer de dés, le joueur peut **relancer X dés** de son choix. Chaque dé ne peut être relancé qu'une seule fois.
@@ -174,7 +187,7 @@ Lorsque cette unité effectue une **contre-attaque** contre une unité qui s'est
 > 💡 **Exemple de jeu**
 > Une Cavalerie avance de 2 hexagones et charge une unité [Réception de charge] : 3 + 1 = **4 dés** en contre-attaque. Si la Cavalerie n'avait pas bougé ce tour, la cible n'aurait que 3 dés.
 
-> *Candidate naturelle pour une infanterie anti-cavalerie (piquiers de Gondor ou de Rohan, par exemple) — à confirmer à la rédaction des profils.*
+> 🔄 **Assignée — 2026-07-19** : Hommes d'armes de Dol Amroth (Gondor et fiefs), seule troupe de piquiers du peuple (D021 du [[Document de cadrage]] — assignée par équipement constaté sur la figurine, pas par peuple entier). Reste candidate pour d'autres peuples portant des piques (Rohan notamment, à trancher à la rédaction de son roster).
 
 ---
 
@@ -273,6 +286,7 @@ Voir [[Terrain]] §11. Annule toutes les restrictions de mouvement et de combat 
 
 | Règle | Catégorie | Résumé |
 |---|---|---|
+| **[Archer en mêlée]** | Offensif — Mêlée | Les faces Cible touchent aussi en mêlée |
 | **[Arme Lourde X]** | Offensif — Mêlée | Relancer X dés après le lancer |
 | **[Armure X]** | Défensif | Retire X faces Épée des attaques de mêlée reçues |
 | **[Bête incontrôlable]** | Offensif — Distance | Sans guides : ne bouge plus, 1 touche pour éliminer |
@@ -314,5 +328,6 @@ Voir [[Terrain]] §11. Annule toutes les restrictions de mouvement et de combat 
 
 ---
 
-*Version : 0.1 — Phase 1 — 2026-07-19.*
+*Version : 0.2 — Phase 1 — 2026-07-19.*
 *Première adaptation de Batailles de la Terre du Milieu (BdTdM) : reprise du glossaire mécanique générique, sans reprise du contenu spécifique à l'autre projet dont il est issu. [Massif] retirée (D015). [Arme à feu] supprimée (spécifique aux armes à poudre, sans objet en Terre du Milieu). Index par faction retiré (aucune assignation encore faite). Renommé depuis `BdVM_Regles_Speciales.md`.*
+*0.2 — Rédaction des profils Gondor et fiefs (voir `02 - Factions/Gondor_et_Fiefs.md`) : nouvelle règle [Archer en mêlée] ajoutée (D024). [Réception de charge] assignée aux Hommes d'armes de Dol Amroth (D021).*
