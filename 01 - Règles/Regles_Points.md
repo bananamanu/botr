@@ -5,14 +5,14 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-07-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.3"
+version: "0.5"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
 
 > **Objet de ce document :** Première proposition de formule de coût en points pour la construction d'armée (feuille de route Phase 3, [[Document de cadrage]] §6). Répond directement à D025 : les dominances strictes assumées en V1 (Chevaliers de Dol Amroth sur Chevaliers de Minas Tirith ; Archers de la Racine Noire sur Rangers d'Ithilien) doivent se refléter dans un écart de coût plutôt que dans une retouche de profil.
 >
-> Calibrée et testée sur les 14 profils déjà rédigés de [[Gondor_et_Fiefs]] — c'est la seule donnée réelle disponible à ce stade. À revalider dès que Rohan (et les autres peuples) seront rédigés, et impérativement au Playtest #3 (scénario Pelennor complet, premier test en conditions réelles de construction d'armée).
+> Calibrée et testée sur les 14 profils de [[Gondor_et_Fiefs]], puis sur les 9 profils de **Rohan** et les 5 profils de **Khand** (`02 - Factions/Khand.md`, roster validé et clos) — trois points de calibrage cohérents à ce stade.
 
 ---
 
@@ -20,7 +20,7 @@ version: "0.3"
 
 Trois remarques structurantes avant la formule elle-même :
 
-**Le Mouvement et les PV ne varient quasiment pas entre profils d'un même Type.** Le [[Document de cadrage]] fixe PV et Mouvement par Type (Infanterie : 6 PV / Mvt 2 ; Cavalerie : 3 PV / Mvt 3), sans exception dans le roster Gondor hormis Mouvement 1 pour les Chevaliers à pied de Dol Amroth. Concrètement, ces deux stats ne différencient presque jamais deux profils entre eux — ce qui varie vraiment, c'est l'**Attaque** (2 à 4 dés) et les **règles spéciales**. La formule ci-dessous en tient compte : Mouvement et PV forment un "socle" quasi fixe par Type, l'Attaque et les règles font tout le travail de différenciation.
+**Le Mouvement et les PV ne varient quasiment pas entre profils d'un même Type.** Le [[Document de cadrage]] fixe PV et Mouvement par Type (Infanterie : 6 PV / Mvt 2 ; Cavalerie : 3 PV / Mvt 3), sans exception dans le roster Gondor hormis Mouvement 1 pour les Chevaliers à pied de Dol Amroth (le roster Rohan a depuis ajouté sa propre exception : Éored d'éclaireur, Mouvement 4 ; le roster Khand ajoute une exception de PV plutôt que de Mouvement : Aurige de Khand, PV 3 au lieu de 4, voir §4bis). Concrètement, ces deux stats ne différencient presque jamais deux profils entre eux — ce qui varie vraiment, c'est l'**Attaque** (2 à 4 dés) et les **règles spéciales**. La formule ci-dessous en tient compte : Mouvement et PV forment un "socle" quasi fixe par Type, l'Attaque et les règles font tout le travail de différenciation.
 
 **L'Attaque vaut plus cher en Mêlée qu'au Tir, à dé égal.** Sur les 6 faces de dé, la Mêlée touche sur *deux* faces (Épées croisées, Épée) alors que le Tir n'en a qu'*une* (Cible) — voir [[Regles_Base]] §7.2-7.3. Un dé de Mêlée produit donc, en moyenne, environ 1,5× plus de dégâts attendus qu'un dé de Tir contre une cible d'Infanterie. La formule reflète ce ratio (3 points/dé en Mêlée contre 2 points/dé au Tir) plutôt que de traiter tous les dés pareil.
 
@@ -56,6 +56,10 @@ Points_finaux(unité) = round(Points_bruts ÷ 3) − 1
 Cette compression ramène le roster Gondor sur une échelle **4 à 8**, quasiment identique à celle de BattleLore V2, et regroupe les profils en une poignée de paliers mémorisables au lieu d'une valeur par unité (voir table complète au §4). Les deux dominances strictes actées en D025 restent lisibles après compression (vérifié au §4).
 
 > 🎲 **Note de design** Le calcul de compression reste un calcul fait une fois par profil, à la rédaction du roster — pas à la volée en pleine partie (même logique de fluidité que pour le coût des règles, D026). C'est la valeur `Points_finaux` qui figure sur la fiche d'unité imprimée ; `Points_bruts` reste un calcul intermédiaire, pas une valeur de jeu.
+>
+> ⚠️ **Effet de bord observé sur le roster Rohan (2026-07-19)** : la largeur des paliers de compression (chaque palier couvre 3 points de `Points_bruts`) fait qu'une petite règle ajoutée à une unité peu chère (coût brut ≤ 2-3) ne change parfois pas du tout `Points_finaux` — ex. [Mobilité 2] sur l'Éored d'éclaireur ou [Mobilité 1] sur les Archers liges, ajoutées « gratuitement » en points. Pas anormal en soi, mais à garder en tête : le système de points est peu sensible aux petits ajustements de règles sur les profils bon marché.
+>
+> ⚠️ **Même effet observé sur l'Aurige de Khand (2026-07-19)** : réduire les PV de 4 à 3 (bruts −1) et ajouter [Poursuite 1] (bruts +3) donne un solde net de +2 bruts (23 → 25), mais `Points_finaux` reste à **7** dans les deux cas (`round(23÷3)−1 = round(25÷3)−1 = 7`) — l'arrondi absorbe l'ajustement. Voir `02 - Factions/Khand.md` §2, profil 5, pour le détail.
 
 ---
 
@@ -69,7 +73,7 @@ Avantages : aucune table à consulter, cohérent avec le principe 1 du [[Documen
 
 ### Option B — Coût par catégorie ✅ retenue (validée par Emmanuel, 2026-07-19)
 
-Reprend les 4 catégories déjà utilisées dans [[Regles_Speciales]], avec un coût qui reflète l'impact typique de la catégorie :
+Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un coût qui reflète l'impact typique de la catégorie :
 
 | Règle | Coût | Catégorie |
 |---|---|---|
@@ -89,12 +93,18 @@ Reprend les 4 catégories déjà utilisées dans [[Regles_Speciales]], avec un c
 | [Poison] / [Souffle de feu] | 1 | Offensif — Distance |
 | [Mobilité X] | 1 × X | Manœuvre |
 | [Poursuite X] | 3 × X | Manœuvre *(mouvement + attaque supplémentaire)* |
+| [Déploiement avancé] | 2 *(forfaitaire)* | Manœuvre *(repositionnement unique avant le tour 1, indépendant de la valeur de Mouvement — provisoire, non testé, voir note ci-dessous)* |
 | [Terrain favori : X] | 1 | Manœuvre |
 | [Rechargement] | −2 | Manœuvre *(malus — restreint l'unité)* |
 | [Bête incontrôlable] | −1 | Manœuvre *(malus — risque propre au Mûmakil)* |
 | [Meute X] | +1 par PV supplémentaire accordé | Manœuvre |
+| [Horde] | 3 *(forfaitaire)* | Mixte — Offensif + Défensif *(+1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; provisoire, non testé, voir note ci-dessous)* |
 
 > 🎲 **Note de design** L'écart entre [Férocité] (1 point) et [Poursuite X] (3×X points) n'est pas arbitraire : les deux appartiennent à la même catégorie "Offensif — Mêlée / Manœuvre" mais [Férocité] ne s'active que dans une fenêtre étroite (contre-attaque, adversaire pas encore éliminé), alors que [Poursuite X] offre une action quasi-garantie chaque fois que l'unité charge. Un coût forfaitaire unique gommerait cet écart et pousserait toutes les listes vers les mêmes règles — c'est l'argument principal en faveur de l'Option B.
+>
+> ⚠️ **[Déploiement avancé] — coût provisoire (2026-07-19)** : première règle entièrement nouvelle depuis la validation du barème (créée pour l'Éored d'éclaireur, Rohan). Fixée à 2 points forfaitaires par analogie avec les autres règles de manœuvre à effet ponctuel ([Terrain favori] = 1, [Réception de charge] = 2), sans référence testée puisqu'aucune règle de « repositionnement pré-bataille » n'existait avant. À revoir après un premier usage à la table (voir `02 - Factions/Rohan.md` §5.5).
+>
+> ⚠️ **[Horde] — coût provisoire (2026-07-19, D032)** : première règle à cumuler un effet offensif et un effet défensif sous une seule condition (« indemne »), en dehors des catégories existantes. Par décomposition : le +1 dé s'apparente à [Réception de charge] (2 pts, bonus de dé conditionnel) et [Inébranlable 1] vaut 2 pts en continu dans la table Défensif — la somme brute des deux donnerait 4, mais ici les deux bonus s'éteignent **définitivement** à la toute première perte, une fenêtre plus courte que toute autre règle situationnelle du glossaire. Fixé à **3 points forfaitaires** (arbitrage d'Emmanuel entre 2/3/4 proposés) plutôt que la somme brute des composants. Non testé — à revoir après un premier usage à la table, probablement au Playtest #3 (roster Mordor, Orcs).
 
 **Décision (D026) :** Option B retenue. Le calcul reste simple à faire une fois par profil (pas à la volée en pleine partie, donc moins contraint par le principe de fluidité que les règles de jeu elles-mêmes) et évite qu'une poignée de règles dominent systématiquement les choix de liste.
 
@@ -106,7 +116,7 @@ Reprend les 4 catégories déjà utilisées dans [[Regles_Speciales]], avec un c
 |---|---|---|---|---|---|---|---|
 | 1 | Guerriers de Minas Tirith | 2 | 6 | 3×3=9 | Armure1 (2) | 19 | **5** |
 | 2 | Archers de Minas Tirith | 2 | 6 | 2×2=4 | Armure1 (2) | 14 | **4** |
-| 3 | Chevaliers de Minas Tirith | 3 | 3 | 3×3=9 | Armure1 (2) + Poursuite1 (3) | 20 | **6** |
+| 3 | Chevaliers de Minas Tirith | 3 | 3 | 3×3=9 | Armure1 (2) | 20 | **6** |
 | 4 | Rangers du Gondor | 2 | 6 | 2×2=4 | Double Tir (3) | 15 | **4** |
 | 5 | Gardes de la Citadelle | 2 | 6 | 3×3=9 | Armure1 (2) + Inébranlable1 (2) | 21 | **6** |
 | 6 | Hommes d'armes de Dol Amroth | 2 | 6 | 3×3=9 | Armure1 (2) + Réception de charge (2) | 21 | **6** |
@@ -129,6 +139,10 @@ Les deux dominances strictes actées "à assumer" en D025 restent donc lisibles 
 
 **Fourchette obtenue :** 4 à 7 points pour les profils "normaux", 8 pour la Compagnie Grise — échelle quasiment identique à celle de BattleLore V2 (4 à 8, voir §2bis). Une armée Normal tournerait autour de 25-40 points par camp selon ce calibrage (à l'aune d'un roster de 6-8 unités) — chiffre à confirmer par le Playtest #3, pas encore validé par le jeu réel.
 
+**Second point de calibrage — roster Rohan :** le trio équivalent au Playtest #1 de Gondor (Guerriers/Archers/Chevaliers de Minas Tirith, 15 points) donne, côté Rohan, Éored de cavalier + Milice lige + Archers liges = **13 points** — cohérent avec l'identité « moins armuré, plus mobile » actée pour ce peuple (voir `02 - Factions/Rohan.md` §4). Détail complet des 9 profils Rohan et de leurs coûts dans ce document.
+
+**Troisième point de calibrage — roster Khand (validé et clos) :** 5 profils, de 3 à 7 points — Mercenaires de Khand (hache/archer) : 5/3 ; Pillards de Khand (hache/archer) : 5/3 ; Aurige de Khand (pièce signature, 3 règles) : 7. Échelle cohérente avec Gondor (4-8) et Rohan (3-8), sans avoir eu besoin d'ajuster la formule. Détail complet dans `02 - Factions/Khand.md`.
+
 ---
 
 ## 5. Cas particulier — unités composites à figurines nommées (La Compagnie Grise)
@@ -137,7 +151,7 @@ La Compagnie Grise ne porte pas des règles fixes : Gimli, Legolas, Elrohir+Ella
 
 **Décision (D026) : pleine puissance, 26 points bruts → 8 points finaux.** On compte toutes les règles comme actives, comme si les 6 figurines étaient en vie — Mvt2 + PV6 + Atk3×3=9 + ArmeLourde1(2) + ArcherEnMêlée(2) + Férocité(1) + Inébranlable2(4) = **26 points bruts**, soit `round(26÷3)−1 = 9−1 = 8` points finaux (D027) — exactement l'échelon "Légende" repéré dans BattleLore V2 (voir §2bis), cohérent avec le statut d'unité sur-mesure de la Compagnie Grise. Cohérent avec le fait qu'aucune unité du jeu ne voit son coût recalculé en cours de partie à mesure qu'elle prend des pertes — une unité à 1 PV restant vaut déjà objectivement moins qu'à pleine forme sans qu'on retouche son prix. L'alternative (valeur moyenne pondérée selon l'ordre de retrait probable) a été écartée : trop de calcul pour un cas unique, contraire au principe de simplicité du [[Document de cadrage]] §3.1.
 
-> ⚠️ **Point ouvert pour vous, Emmanuel** — la Compagnie Grise sera-t-elle la seule unité de ce type dans le roster complet (6 peuples), ou d'autres composites nommés sont-ils prévus (par exemple côté Rohan ou Mordor) ? Si c'est un cas unique, "pleine puissance" reste la bonne règle par défaut. Si le mécanisme doit se généraliser, on formalisera une règle de calcul standard plutôt que de la retrancher au cas par cas.
+> ⚠️ **Point ouvert pour vous, Emmanuel** — la Compagnie Grise sera-t-elle la seule unité de ce type dans le roster complet (6 peuples), ou d'autres composites nommés sont-ils prévus (par exemple côté Mordor) ? Ni le roster Rohan ni le roster Khand n'en comportent finalement — la question reste ouverte pour Mordor et les peuples suivants.
 
 ---
 
@@ -152,15 +166,26 @@ La Compagnie Grise ne porte pas des règles fixes : Gimli, Legolas, Elrohir+Ella
 - Le socle Mouvement/PV de la formule brute est validé tel quel — comparaison à la durabilité effective en Mêlée : ratio Infanterie/Cavalerie 8:6 (socle) = 12:9 (durabilité), les deux à 1,33:1 (voir §1). Pas de retouche des poids.
 - Comparaison aux coûts réels de BattleLore V2 (échelle 4-8 pour l'essentiel du roster) → ajout d'une étape de compression finale `round(Points_bruts ÷ 3) − 1` (§2bis), qui ramène le roster Gondor sur la même échelle (4 à 8) tout en conservant les deux dominances D025. Ceci répond et clôt le point "Arrondi" laissé ouvert en v0.2.
 
+**Nouveau — voir D028 du [[Document de cadrage]] (2026-07-19) :**
+- Nouvelle règle [Déploiement avancé] créée pour l'Éored d'éclaireur (Rohan), coût provisoire de 2 points forfaitaires (catégorie Manœuvre) — non testé, à revoir après un premier usage à la table.
+
+**Nouveau — voir D031 du [[Document de cadrage]] (2026-07-19) :**
+- Roster Khand validé et clos : 5 profils chiffrés (3 à 7 points), troisième point de calibrage cohérent avec Gondor et Rohan (§4). Aurige de Khand : compromis PV 3 / [Poursuite 1] chiffré à coût final inchangé (7 points) grâce à l'arrondi — voir §2bis.
+
+**Nouveau — voir D032 du [[Document de cadrage]] (2026-07-19) :**
+- Nouvelle règle [Horde] créée sur proposition d'Emmanuel : +1 dé d'attaque + [Inébranlable 1] tant qu'aucun PV perdu, perdus définitivement à la première perte. Coût forfaitaire de 3 points (nouvelle catégorie Mixte, hors des 4 catégories existantes) — non testé, réservée aux Orcs (Mordor).
+
 **Encore ouvert :**
-1. **Généralisation des unités composites** — la Compagnie Grise sera-t-elle un cas unique dans le roster complet, ou d'autres peuples (Rohan, Mordor...) auront-ils des unités du même type ? Pas bloquant maintenant, à surveiller à la rédaction des prochains peuples.
+1. **Généralisation des unités composites** — aucune unité composite de type Compagnie Grise dans les rosters Rohan et Khand finalement rédigés. Reste à surveiller pour Mordor et les peuples suivants.
+2. **Coût de [Déploiement avancé]** — provisoire, jamais testé en partie réelle (voir D028 ci-dessus).
+3. **Coût de [Horde]** — provisoire, jamais testé en partie réelle (voir D032 ci-dessus) ; à surveiller en priorité sur le premier profil d'Orcs qui la portera.
 
 ---
 
 ## 7. Prochaine étape
 
-Une fois ces points tranchés, ce système peut être appliqué au roster Rohan dès sa rédaction — ce qui permettra un second point de calibrage (peuple différent, profils différents) avant de le considérer comme stable pour les 6 peuples V1.
+Les rosters Gondor, Rohan et Khand étant rédigés et validés, ce système a servi de trois points de calibrage cohérents — voir §4. Reste à l'appliquer aux peuples suivants (Mordor, Harad, Easterling), en particulier au premier profil d'Orcs qui portera [Horde] (D032), et à valider l'ensemble en conditions réelles au Playtest #3 (scénario Pelennor complet).
 
 ---
 
-*Version : 0.3 — Phase 1 (contenu Phase 3 anticipé) — 2026-07-19. Système de points validé par Emmanuel (D026) : coût par catégorie, pas de prime Tir, composites en pleine puissance. Compression finale de l'échelle validée (D027) après comparaison aux coûts réels de BattleLore V2 : `Points_finaux = round(Points_bruts ÷ 3) − 1`, échelle 4-8. Calibré et testé sur les 14 profils de [[Gondor_et_Fiefs]]. Non testé en partie réelle — à valider au Playtest #3.*
+*Version : 0.5 — Phase 1 (contenu Phase 3 anticipé) — 2026-07-19. Ajout du coût de [Horde] (D032, nouvelle règle réservée aux Orcs/Mordor) — 3 points forfaitaires, nouvelle catégorie Mixte dans le barème. Troisième point de calibrage effectué sur le roster Khand (5 profils, voir `02 - Factions/Khand.md`), y compris le cas du compromis PV/règle sur l'Aurige de Khand (§2bis).*
