@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - META/Document_de_cadrage.md",
+                "file": "02 - Factions/Mordor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Document_de_cadrage"
+              "title": "Mordor"
             }
           }
         ]
@@ -186,11 +186,14 @@
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
     "02 - Factions/Khand.md",
-    "01 - Règles/Regles_Speciales.md",
-    "02 - Factions/Rohan.md",
     "02 - Factions/Gondor_et_Fiefs.md",
-    "01 - Règles/Regles_Points.md",
+    "02 - Factions/Rohan.md",
+    "02 - Factions/Mordor.md",
     "00 - META/Document_de_cadrage.md",
+    "01 - Règles/Règles_Regles_Speciales.md",
+    "01 - Règles/Règles_Regles_Points.md",
+    "01 - Règles/Regles_Speciales.md",
+    "01 - Règles/Regles_Points.md",
     "00 - META/Templates/Tpl unite.md",
     "00 - META/Templates/Tpl scenario.md",
     "00 - META/Templates/Tpl regle.md",
@@ -210,10 +213,7 @@
     "01 - Règles/BdVM_Regles_Speciales.md",
     "01 - Règles/BdVM_Regles_Base.md",
     "01 - Règles",
-    "03 - Scénarios/BdVM_playtest2.md",
-    "03 - Scénarios/BdVM_Playtest3.md",
     "03 - Scénarios",
-    "02 - Factions/BdVM_Hommes_Lezards_Unites.md",
     "02 - Factions/fiche_hommes_lezards.html",
     "02 - Factions/fiche_empire.html",
     "02 - Factions",
