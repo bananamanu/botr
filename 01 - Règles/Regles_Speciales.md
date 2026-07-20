@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-07-20"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.7"
+version: "0.8"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -14,7 +14,7 @@ version: "0.7"
 > Aligné sur **Regles_Base** et **Terrain**.
 > Ce document ne couvre pas les règles universelles (Faible, contre-attaque, avance, Poursuite générique) ni les règles intrinsèques des types d'unités, qui sont définies dans [[Regles_Base]].
 >
-> **Statut des assignations :** Gondor et ses fiefs (14 unités, voir `02 - Factions/Gondor_et_Fiefs.md`), **Rohan** (9 unités, voir `02 - Factions/Rohan.md`) et **Khand** (5 unités, voir `02 - Factions/Khand.md`) sont rédigés et validés — prêts pour le Playtest #1. **Mordor** (6 unités, voir `02 - Factions/Mordor.md`) est rédigé et validé (D036) — prêt pour le Playtest #1. Harad, Easterling restent à faire. [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
+> **Statut des assignations :** Gondor et ses fiefs (14 unités), **Rohan** (9 unités), **Khand** (5 unités) et **Mordor** (6 unités, D036) sont rédigés et validés — prêts pour le Playtest #1. **Easterling** (4 unités, voir `02 - Factions/Easterling.md`) est rédigé et validé (D038) — prêt pour le Playtest #1. Harad reste à faire. [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
 >
 > **Nouvelle règle issue de Gondor :** [Archer en mêlée] a été créée pour le profil de la Compagnie Grise (Legolas) et généralisée volontairement pour pouvoir resservir sur d'autres profils/peuples (D024 du [[Document de cadrage]]).
 >
@@ -23,6 +23,8 @@ version: "0.7"
 > **Nouvelle règle issue de Khand → assignée à Mordor :** [Horde] a été créée sur proposition d'Emmanuel (D032 du [[Document de cadrage]]) — bonus offensif et défensif à pleine santé (+1 dé d'attaque + [Inébranlable 1]), perdu définitivement à la première perte. Réservée aux Orcs ; première assignation aux deux bandes d'orques du roster Mordor.
 >
 > **Nouvelle règle issue de Mordor :** [Peur X] a été créée pour le Troll du Mordor (D033 du [[Document de cadrage]]) — chaque face **Arcane** obtenue en attaque compte comme X Drapeaux contre la cible, au lieu d'un échec. Premier jalon de la future couche Leadership fondée sur la face Arcane (D034, Phase 2).
+>
+> **Nouvelle règle issue de Easterling :** [Mur de bouclier] a été créée pour la Cohorte d'orientaux et la Cohorte de piquiers orientaux (D037 du [[Document de cadrage]]) — accorde [Protection 1] tant que l'unité reste adjacente à une autre Infanterie amie. Version « conditionnelle à la formation » de [Protection X], distincte de la version liée au terrain.
 >
 > **Note pour le Mûmakil (tâche à venir) :** [Howdah], [Bête incontrôlable] et [Meute X] sont des candidates naturelles pour cette unité — une tour d'archers sur son dos, un risque d'affolement une fois les guides tués, ou une résistance répartie sur plusieurs points de vie. Emmanuel a déjà une idée de règle dédiée pour l'impact au contact du Mûmakil, distincte de [Charge écrasante] (assignée à la Garde du roi à cheval du Rohan et à l'Aurige de Khand, D029/D031) — à formaliser au moment de rédiger son profil. [Peur X]/[Terreur] (X élevé) est également candidate pour le Mûmakil, en Phase 2.
 
@@ -137,6 +139,19 @@ Lorsqu'une unité occupant une position protégée (bâtiment, fortification) re
 
 ---
 
+### [Mur de bouclier]
+
+Tant que cette unité est **adjacente à au moins une autre unité d'Infanterie amie**, elle bénéficie de **[Protection 1]** (ignore 1 touche après décompte des dégâts, quelle que soit la source — mêlée ou tir).
+
+> 💡 **Exemple de jeu**
+> Une Cohorte d'orientaux [Mur de bouclier] est adjacente à une autre unité d'Infanterie amie et reçoit une attaque qui inflige 2 touches. [Protection 1] (accordée par [Mur de bouclier]) en ignore 1 → seule 1 touche est appliquée. Si cette même Cohorte se retrouve isolée (plus aucune Infanterie amie adjacente), elle perd la protection et encaisse les 2 touches.
+
+> 🎲 **Note de design** Version « conditionnelle à la formation » de [Protection X] plutôt qu'une armure inconditionnelle — la discipline de la ligne qui referme ses boucliers, perdue dès que le rang se rompt. Créée pour distinguer l'Easterling de Gondor (armure inconditionnelle, [Armure X] sur le profil) tout en gardant la même identité de peuple "discipliné" : chez l'Easterling, la protection est une décision tactique de positionnement (rester groupé), pas un simple chiffre sur la fiche.
+
+> 🔄 **Nouvelle règle — 2026-07-20 (D037)** : créée et assignée dès sa création à la Cohorte d'orientaux et à la Cohorte de piquiers orientaux (`02 - Factions/Easterling.md`). Coût provisoire de 1 point forfaitaire (aligné sur [Protection 1]), non testé — à surveiller au Playtest #1 : en formation de ligne classique, la condition d'adjacence sera presque toujours vraie, ce qui pourrait sous-évaluer la règle par rapport à un [Armure 1] permanent (2 pts).
+
+---
+
 ## Règles offensives — Mêlée
 
 ---
@@ -225,6 +240,8 @@ Si cette unité **ne s'est pas déplacée** ce tour, elle peut effectuer une **s
 
 > 💡 **Exemple de jeu**
 > Une unité de tir immobile tire sur une cible à 3 hexagones : 2 dés, 1 touche. Grâce à [Double Tir], elle tire une seconde fois sur la même cible : 2 dés, 1 touche supplémentaire.
+
+> 🔄 **Assignée — 2026-07-20** : Cohorte d'archers orientaux (Easterling, `02 - Factions/Easterling.md`) — première assignation en V1. Contraste volontaire avec les archers mobiles ([Mobilité X]) de Rohan/Mordor : la discipline de la ligne d'Easterling vient de la position tenue, pas de la manœuvre.
 
 ---
 
@@ -363,7 +380,7 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Bête incontrôlable]** | Offensif — Distance | Sans guides : ne bouge plus, 1 touche pour éliminer |
 | **[Charge écrasante]** | Offensif — Mêlée | Si déplacé ce tour : Couronne → touche sur unité adjacente |
 | **[Déploiement avancé]** | Manœuvre | Repositionnement unique avant le tour 1, jusqu'à sa valeur de Mouvement, sans finir au contact ennemi |
-| **[Double Tir]** | Offensif — Distance | Seconde attaque si non déplacé ce tour |
+| **[Double Tir]** | Offensif — Distance | Seconde attaque si non déplacé ce tour *(assignée : Cohorte d'archers orientaux, Easterling)* |
 | **[Férocité]** | Offensif — Mêlée | Contre-attaque résolue avant les retraites adverses |
 | **[Horde]** | Mixte — Offensif + Défensif | +1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; perdus définitivement à la 1ère perte |
 | **[Howdah]** | Offensif — Distance | Attaque à distance en plus de la mêlée — 2 dés (1–3) + [Poison] |
@@ -373,6 +390,7 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Martyre]** | Offensif — Mêlée | Sacrifier 1 fig. pour convertir 1 Couronne en touche |
 | **[Meute X]** | Manœuvre | X PV par figurine — Faible à 1 figurine restante |
 | **[Mobilité X]** | Manœuvre | Déplacement supplémentaire de X hex après l'attaque |
+| **[Mur de bouclier]** | Défensif | [Protection 1] tant qu'adjacente à une autre Infanterie amie |
 | **[Peur X]** | Moral | Chaque face Arcane obtenue en attaque = X Drapeaux contre la cible (n'inflige pas de touche) |
 | **[Perforant X]** | Offensif — Distance | Relancer X dés après le lancer (attaque à distance) |
 | **[Poison]** | Offensif — Distance | Couronne → 1 touche sup. (sauf [Immunisé au poison]) |
@@ -409,4 +427,5 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 *0.4 — Roster Rohan validé et clos (D029) : [Charge écrasante] confirmée pour la Garde du roi à cheval — le Mûmakil aura sa propre règle dédiée, retirée de la liste des candidates pour cette règle.*
 *0.5 — Ouverture du roster Khand (`02 - Factions/Khand.md`) : type **Chars** tranché — Jamais Faible (D030). [Charge écrasante] et [Arme Lourde X] proposées comme règles transversales du peuple Khand (chariot et armes de hache), en cours de revue profil par profil.*
 *0.6 — Roster Khand validé et clos (D031) : [Arme Lourde 1] et [Charge écrasante] confirmées, [Poursuite 1] assignée à l'Aurige de Khand (3e règle signature, PV ramené à 3). Nouvelle règle hybride [Horde] ajoutée (D032), inspirée des Warriors de C&C Ancients — réservée aux Orcs (Mordor), non assignée à un profil, roster à venir. Nouvelle section « Règles hybrides — offensif + défensif » créée pour l'accueillir.*
-*0.7 — Ouverture du roster Mordor (`02 - Factions/Mordor.md`) : première assignation de [Horde] (Bande d'orques du Mordor, Bande d'orques du Morannon) ; Bande d'uruk-hai validée en exception steadfast, sans Horde (D035). Nouvelle règle [Peur X] créée pour le Troll du Mordor, déclenchée par la face Arcane plutôt que la Couronne (D033) — nouvelle section « Règles de moral » créée pour l'accueillir, priorité de résolution mise à jour en conséquence.*
+*0.7 — Ouverture du roster Mordor (`02 - Factions/Mordor.md`) : première assignation de [Horde] (Bande d'orques du Mordor, Bande d'orques du Morannon) ; Bande d'uruk-hai validée en exception steadfast, sans Horde (D035). Nouvelle règle [Peur X] créée pour le Troll du Mordor, déclenchée par la face Arcane plutôt que la Couronne (D033) — nouvelle section « Règles de moral » créée pour l'accueillir, priorité de résolution mise à jour en conséquence.
+*0.8 — Roster Mordor clos (D036). Roster Easterling rédigé et clos dès sa première session (`02 - Factions/Easterling.md`, D038) : nouvelle règle [Mur de bouclier] créée (D037, version conditionnelle-à-la-formation de [Protection X]), assignée à la Cohorte d'orientaux et à la Cohorte de piquiers orientaux. Première assignation réelle de [Double Tir] (Cohorte d'archers orientaux).*

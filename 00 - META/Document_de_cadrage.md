@@ -5,7 +5,7 @@ phase: "1"
 statut: "en-cours"
 date_maj: "2026-07-20"
 tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.11"
+version: "1.12"
 ---
 
 # Document de cadrage du projet
@@ -137,7 +137,7 @@ Pas de distinction Infanterie standard/élite par le nombre de figurines ou la b
 
 ### 5.3 Priorité basse — Contenu et scénarios
 
-- [ ] Peuples à couvrir en V1 : **Gondor et ses fiefs** (rédigé, voir `02 - Factions/Gondor_et_Fiefs.md`), **Rohan** (rédigé et validé, voir `02 - Factions/Rohan.md`), **Khand** (rédigé et validé, voir `02 - Factions/Khand.md`), **Mordor** (en cours de rédaction, voir `02 - Factions/Mordor.md`), Harad, Easterling
+- [ ] Peuples à couvrir en V1 : **Gondor et ses fiefs**, **Rohan**, **Khand**, **Mordor** (`02 - Factions/Mordor.md`, D036) et **Easterling** (`02 - Factions/Easterling.md`, D038) rédigés et validés — prêts pour le Playtest #1. Reste : **Harad**.
 - [ ] Scénarios : Pelennor comme référence Épique, autres affrontements en Normal/Escarmouche
 - [ ] Construction d'armée : valeurs en points par unité et héros
 
@@ -151,7 +151,7 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 
 - [ ] Formaliser le corps de règles de base (commandement, dés, types d'unités, Faible, contre-attaque, avance/poursuite, règles spéciales de base)
 - [ ] Choisir le format de travail initial : Normal (plus rapide à tester qu'Épique)
-- [ ] **Playtest #1** — Gondor (trio 15 pts), Rohan (trio 13 pts) et Khand (roster complet, 5 profils) prêts à être testés ; Mordor (trio 19 pts, `02 - Factions/Mordor.md`) en cours de repasse
+- [ ] **Playtest #1** — Gondor (trio 15 pts), Rohan (trio 13 pts), Khand (5 profils), Mordor (trio 19 pts) et Easterling (trio 16 pts) tous rédigés et validés, prêts à être testés. Seul Harad reste à rédiger.
 
 ### Phase 2 — Héros, cas Mûmakil, montée en Épique
 
@@ -263,8 +263,10 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 | 034 | 2026-07-20 | **Réorientation de la couche « Magie » vers une couche Leadership fondée sur la face Arcane** (Œil de Sauron / Rune de Gandalf), plutôt qu'un système de sorts | Décision d'Emmanuel, avis de Claude versé au dossier (pour/contre : fidélité à Tolkien — pouvoir de volonté/moral plutôt que pyrotechnie ; complexité concentrée sur les héros, piétaille inchangée, principe 1 ; ressuscite une face morte sans jeton, principe 4 ; asymétrie de camp gratuite, principe 6 — contre : dépendre du dé pour un commandement sonne faux, moment de déclenchement à définir, collision possible avec [Peur]). Reste en **Phase 2**. Deux points ouverts à traiter alors : (a) dé-randomiser l'accès des héros à l'Arcane ; (b) arbitrer la propriété de l'Arcane quand une unité [Peur] et un héros l'exploitent tous deux. Amende D001 et §5.2. |
 | 035 | 2026-07-20 | **Identité mécanique de Mordor actée** : [Horde] (D032) comme fil conducteur de la piétaille orque ; [Armure] en **signal d'échelon** (seulement Morannon/Uruk-hai, pas un trait de peuple comme chez Gondor) ; **Uruk-hai en exception steadfast** (Attaque 4 constante, sans Horde — validé) | Parallèle à D031 (identité de Khand). Donne à Mordor une signature distincte des trois peuples déjà cadrés : « nombreux et front-loaded, seule l'élite tient ». Roster : `02 - Factions/Mordor.md` (v0.2, Passe 1 partielle — Uruk-hai et [Peur]/Arcane validés, reste ouvert au §6 du document). |
 | 036 | 2026-07-20 | **Roster Mordor clos** : Uruk-hai confirmé avec [Férocité] (7 pts) ; Troll confirmé à [Peur 1] et 5 PV (7 pts) ; Pisteurs orques confirmés sans [Horde] (3 pts, profil de tir simple) | Les 4 derniers points ouverts tranchés avec Emmanuel — les 6 profils sont validés **tels que chiffrés dans l'ébauche initiale**, aucun recalcul nécessaire. Parallèle direct à D029 (clôture Rohan) et D031 (clôture Khand) : restent seulement les coûts de [Horde] et [Peur X] à confirmer au Playtest #1, non bloquants. Roster prêt pour le Playtest #1 (trio Bande d'orques + Uruk-hai + Troll, 19 pts) — voir `02 - Factions/Mordor.md` §3 et §6. Tâche Todoist « Rédiger les profils d'unités — Mordor » close. |
+| 037 | 2026-07-20 | **Nouvelle règle spéciale [Mur de bouclier] créée** : tant qu'une unité est adjacente à au moins une autre unité d'Infanterie amie, elle bénéficie de [Protection 1]. Version « conditionnelle à la formation » de [Protection X] (habituellement liée au terrain). Coût provisoire de 1 point forfaitaire | Créée pour la Cohorte d'orientaux et la Cohorte de piquiers orientaux (Easterling, `02 - Factions/Easterling.md`). Proposée par Emmanuel pour incarner « la discipline de la tortue » — une armure qui dépend de la formation tenue, pas un chiffre inconditionnel sur le profil comme [Armure X] chez Gondor. Distingue mécaniquement l'identité "empire discipliné" de l'Easterling de celle de Gondor, tout en gardant les deux peuples thématiquement proches (miroir Bien/Mal). Détail complet dans [[Regles_Speciales]] et [[Regles_Points]]. |
+| 038 | 2026-07-20 | **Roster Easterling rédigé et clos dès sa première session** : Cohorte d'orientaux (5 pts, [Mur de bouclier]) ; Cohorte de piquiers orientaux (6 pts, [Réception de charge] + [Mur de bouclier], Attaque relevée à 3 dés) ; Cohorte d'archers orientaux (4 pts, [Double Tir], première assignation de cette règle) ; Cataphractaires orientaux (7 pts, Mouvement réduit à 2 + [Armure 2], première armure doublée du jeu, + [Charge écrasante]) | Identité actée : l'Easterling est le miroir maléfique de Gondor — l'armée régulière et disciplinée du camp du Mal, face à la horde de Mordor (D032/D035) et au verre-canon de Khand (D031). Roster délibérément haut de gamme, assumé par Emmanuel : trio de base à 16 pts, plus cher que le trio Gondor (15) — la faction la plus chère du roster à ce stade. Aucune passe de repasse nécessaire : les 4 profils ont été tranchés en une seule session, contrairement à Mordor (D035→D036). Roster prêt pour le Playtest #1 (trio suggéré : Cohorte + Archers + Cataphractaires, 16 pts) — voir `02 - Factions/Easterling.md`. Tâche Todoist « Rédiger les profils d'unités — Easterling » (due 22/07) traitée en avance et close. |
 
 ---
 
-*Version : 1.11 — Phase 1 — 2026-07-20. Ajout D036 (clôture du roster Mordor, 6 profils validés, prêt pour le Playtest #1). Voir aussi D033-D035 (même journée) : [Peur X] par la face Arcane, couche Leadership, identité mécanique de Mordor.*
+*Version : 1.12 — Phase 1 — 2026-07-20. Ajout D037 (nouvelle règle [Mur de bouclier]) et D038 (roster Easterling rédigé et clos dès sa première session, 4 profils, trio 16 pts). Voir aussi D033-D036 (même journée) : [Peur X], couche Leadership, identité et clôture du roster Mordor. Cinq peuples sur six rédigés et validés pour le Playtest #1 — seul Harad reste à faire.*
 *Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique.*
