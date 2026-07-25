@@ -166,6 +166,7 @@ version: "1.1"
 ---
 
 ### 8. Chevaliers de Dol Amroth
+![[chevalier_dol_amroth-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|

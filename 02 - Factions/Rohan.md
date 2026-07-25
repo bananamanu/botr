@@ -68,6 +68,7 @@ version: "1.0"
 ## 2. Profils détaillés
 
 ### 1. Éored de cavalier du Rohan
+![[cavalier_rohan-page001.png]]
 
 |Type|Combat|Mouvement|Attaque|Portée|PV|**Points**|
 |---|---|---|---|---|---|---|
@@ -82,6 +83,7 @@ version: "1.0"
 ---
 
 ### 2. Milice lige
+![[guerrier_rohan-page001.png]]
 
 |Type|Combat|Mouvement|Attaque|Portée|PV|**Points**|
 |---|---|---|---|---|---|---|
@@ -96,6 +98,7 @@ version: "1.0"
 ---
 
 ### 3. Archers liges
+![[archer_rohan-page001.png]]
 
 |Type|Combat|Mouvement|Attaque|Portée|PV|**Points**|
 |---|---|---|---|---|---|---|
@@ -110,6 +113,7 @@ version: "1.0"
 ---
 
 ### 4. Éored d'éclaireur
+![[eclaireur_rohan-page001.png]]
 
 |Type|Combat|Mouvement|Attaque|Portée|PV|**Points**|
 |---|---|---|---|---|---|---|

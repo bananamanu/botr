@@ -74,6 +74,7 @@ version: "0.3"
 ---
 
 ### 2. Bande d'orques du Morannon
+![[orque_morannon-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
@@ -136,6 +137,7 @@ version: "0.3"
 ---
 
 ### 6. Troll du Mordor — *pièce signature*
+![[troll_mordor-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
