@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-20"
+date_maj: "2026-07-26"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.7"
+version: "0.9"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -96,7 +96,9 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 | [Poison] / [Souffle de feu] | 1 | Offensif — Distance |
 | [Mobilité X] | 1 × X | Manœuvre |
 | [Poursuite X] | 3 × X | Manœuvre *(mouvement + attaque supplémentaire)* |
-| [Déploiement avancé] | 2 *(forfaitaire)* | Manœuvre *(repositionnement unique avant le tour 1, indépendant de la valeur de Mouvement — provisoire, non testé)* |
+| [Déploiement avancé] | 2 *(forfaitaire)* | Manœuvre *(repositionnement unique avant le tour 1 — **retirée de la V1 le 2026-07-26, D047**, jamais testée en partie réelle ; ligne conservée pour mémoire)* |
+| [Prise de flanc] | 3 *(forfaitaire)* | Soutien *(+1 dé aux attaques des autres unités amies contre une cible adjacente à celle-ci — D047/D049, provisoire, non testée)* |
+| [Vigilant] | 2 *(forfaitaire)* | Offensif — Mêlée *(la cible de cette unité ne peut pas la contre-attaquer — nouvelle règle, D050, provisoire, non testée)* |
 | [Terrain favori : X] | 1 | Manœuvre |
 | [Rechargement] | −2 | Manœuvre *(malus — restreint l'unité)* |
 | [Bête incontrôlable] | −1 | Manœuvre *(malus — risque propre au Mûmakil)* |
@@ -107,6 +109,12 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 > 🎲 **Note de design** L'écart entre [Férocité] (1 point) et [Poursuite X] (3×X points) n'est pas arbitraire : les deux appartiennent à la même catégorie "Offensif — Mêlée / Manœuvre" mais [Férocité] ne s'active que dans une fenêtre étroite (contre-attaque, adversaire pas encore éliminé), alors que [Poursuite X] offre une action quasi-garantie chaque fois que l'unité charge. Un coût forfaitaire unique gommerait cet écart et pousserait toutes les listes vers les mêmes règles — c'est l'argument principal en faveur de l'Option B.
 >
 > ⚠️ **[Déploiement avancé] — coût provisoire (2026-07-19)** : première règle entièrement nouvelle depuis la validation du barème (créée pour l'Éored d'éclaireur, Rohan). Fixée à 2 points forfaitaires par analogie avec les autres règles de manœuvre à effet ponctuel ([Terrain favori] = 1, [Réception de charge] = 2), sans référence testée puisqu'aucune règle de « repositionnement pré-bataille » n'existait avant. À revoir après un premier usage à la table (voir `02 - Factions/Rohan.md` §5.5).
+>
+> ⚠️ **[Déploiement avancé] — retirée de la V1 (2026-07-26, D047)** : jamais testée en partie réelle (le centre-funnel du Playtest #1 ne lui a pas laissé l'occasion de s'exprimer). Retirée de l'Éored d'éclaireur, d'abord remplacée par [Flanking], elle-même désormais réassignée (voir note suivante). Ligne de coût conservée ci-dessus pour mémoire, mais la règle n'est plus assignée.
+>
+> ⚠️ **[Prise de flanc] — coût provisoire (2026-07-26, D047, renommée/réassignée D049)** : nouvelle règle (catégorie Soutien, créée en dehors des catégories existantes — elle ne modifie pas les dés de sa propre unité mais ceux des unités amies). Fixée à 3 points forfaitaires par analogie avec [Poursuite 1] (même ordre de grandeur d'impact potentiel, mais partagé entre plusieurs unités plutôt que concentré sur une seule), sans référence testée. Créée sous le nom « Flanking » pour l'Éored d'éclaireur, **renommée et réassignée à l'Éored de cavalier du Rohan** (profil 1, D049) — l'éclaireur reçoit [Vigilant] à la place.
+>
+> ⚠️ **[Vigilant] — coût provisoire (2026-07-26, D050)** : nouvelle règle (catégorie Offensif — Mêlée). Fixée à 2 points forfaitaires par analogie avec [Réception de charge] (même catégorie, effet de contre-attaque). Première assignation : Éored d'éclaireur (Rohan), en remplacement de [Prise de flanc]. Non testée.
 >
 > ⚠️ **[Horde] — coût provisoire (2026-07-19, D032)** : première règle à cumuler un effet offensif et un effet défensif sous une seule condition (« indemne »), en dehors des catégories existantes. Par décomposition : le +1 dé s'apparente à [Réception de charge] (2 pts, bonus de dé conditionnel) et [Inébranlable 1] vaut 2 pts en continu dans la table Défensif — la somme brute des deux donnerait 4, mais ici les deux bonus s'éteignent **définitivement** à la toute première perte, une fenêtre plus courte que toute autre règle situationnelle du glossaire. Fixé à **3 points forfaitaires** (arbitrage d'Emmanuel entre 2/3/4 proposés) plutôt que la somme brute des composants. **Première assignation — 2026-07-20** : Bande d'orques du Mordor et Bande d'orques du Morannon (`02 - Factions/Mordor.md`). Toujours non testé en partie réelle — à revoir après le Playtest #1.
 >
@@ -189,7 +197,7 @@ La Compagnie Grise ne porte pas des règles fixes : Gimli, Legolas, Elrohir+Ella
 
 **Encore ouvert :**
 1. **Généralisation des unités composites** — aucune unité composite de type Compagnie Grise dans les rosters Rohan, Khand, Mordor ou Easterling. Reste à surveiller pour Harad, le dernier peuple non rédigé.
-2. **Coût de [Déploiement avancé]** — provisoire, jamais testé en partie réelle (D028).
+2. ~~Coût de [Déploiement avancé]~~ — **sans objet : règle retirée de la V1 (D047, 2026-07-26)**. Deux nouveaux coûts à surveiller à sa place : **[Prise de flanc]** (3 pts forfaitaires, Éored de cavalier du Rohan, D049) et **[Vigilant]** (2 pts forfaitaires, Éored d'éclaireur, D050).
 3. **Coût de [Horde]** — provisoire, première assignation réelle mais pas encore jouée (D032).
 4. **Coût de [Peur X]** — provisoire, non testé (D033).
 5. **Coût de [Mur de bouclier]** — provisoire, non testé, risque de sous-évaluation identifié (D037).
@@ -204,3 +212,7 @@ Les rosters Gondor, Rohan, Khand, Mordor et Easterling étant tous rédigés et 
 ---
 
 *Version : 0.7 — Phase 1 (contenu Phase 3 anticipé) — 2026-07-20. Ajout de la ligne de coût [Mur de bouclier] (1 pt forfaitaire, provisoire, D037) et de sa note associée. Cinquième point de calibrage du système de points effectué sur le roster Easterling, validé et clos dès sa première session (`02 - Factions/Easterling.md`, D038).*
+
+*Version : 0.8 — Phase 1 — 2026-07-26. [Déploiement avancé] marquée retirée de la V1 (D047, jamais testée) ; nouvelle règle [Flanking] ajoutée à la table (3 pts forfaitaires, catégorie Soutien, D047), première assignation Éored d'éclaireur (Rohan). Coûts d'Aurige de Khand (6 pts) et Cataphractaires orientaux (6 pts) déjà répercutés par la logique de compression — pas de retouche de barème nécessaire, seulement de statut de règle.*
+
+*Version : 0.9 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'Éored de cavalier du Rohan (profil 1), qui passe de 6 à **7 pts**. Nouvelle règle **[Vigilant]** ajoutée (2 pts forfaitaires, catégorie Offensif — Mêlée, D050), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Prise de flanc], coût inchangé (4 pts).*

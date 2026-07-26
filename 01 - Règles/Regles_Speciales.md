@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-20"
+date_maj: "2026-07-26"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.8"
+version: "0.11"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -14,7 +14,7 @@ version: "0.8"
 > Aligné sur **Regles_Base** et **Terrain**.
 > Ce document ne couvre pas les règles universelles (Faible, contre-attaque, avance, Poursuite générique) ni les règles intrinsèques des types d'unités, qui sont définies dans [[Regles_Base]].
 >
-> **Statut des assignations :** Gondor et ses fiefs (14 unités), **Rohan** (9 unités), **Khand** (5 unités) et **Mordor** (6 unités, D036) sont rédigés et validés — prêts pour le Playtest #1. **Easterling** (4 unités, voir `02 - Factions/Easterling.md`) est rédigé et validé (D038) — prêt pour le Playtest #1. Harad reste à faire. [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
+> **Statut des assignations :** Gondor et ses fiefs (14 unités), **Rohan** (9 unités), **Khand** (5 unités) et **Mordor** (6 unités, D036) sont rédigés et validés — prêts pour le Playtest #1. **Easterling** (4 unités, voir `02 - Factions/Easterling.md`) est rédigé et validé (D038) — prêt pour le Playtest #1. Harad reste à faire. **Playtest #1 joué le 2026-07-25** (`[[Playtest1_Compte-rendu]]`) : deux règles neuves ajoutées — [Arme de jet X] (D044) et [Plateforme de tir X] (D045) — et [Charge écrasante] retirée de la V1 (D043). [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
 >
 > **Nouvelle règle issue de Gondor :** [Archer en mêlée] a été créée pour le profil de la Compagnie Grise (Legolas) et généralisée volontairement pour pouvoir resservir sur d'autres profils/peuples (D024 du [[Document de cadrage]]).
 >
@@ -26,7 +26,7 @@ version: "0.8"
 >
 > **Nouvelle règle issue de Easterling :** [Mur de bouclier] a été créée pour la Cohorte d'orientaux et la Cohorte de piquiers orientaux (D037 du [[Document de cadrage]]) — accorde [Protection 1] tant que l'unité reste adjacente à une autre Infanterie amie. Version « conditionnelle à la formation » de [Protection X], distincte de la version liée au terrain.
 >
-> **Note pour le Mûmakil (tâche à venir) :** [Howdah], [Bête incontrôlable] et [Meute X] sont des candidates naturelles pour cette unité — une tour d'archers sur son dos, un risque d'affolement une fois les guides tués, ou une résistance répartie sur plusieurs points de vie. Emmanuel a déjà une idée de règle dédiée pour l'impact au contact du Mûmakil, distincte de [Charge écrasante] (assignée à la Garde du roi à cheval du Rohan et à l'Aurige de Khand, D029/D031) — à formaliser au moment de rédiger son profil. [Peur X]/[Terreur] (X élevé) est également candidate pour le Mûmakil, en Phase 2.
+> **Note pour le Mûmakil (tâche à venir) :** [Howdah], [Bête incontrôlable] et [Meute X] sont des candidates naturelles pour cette unité — une tour d'archers sur son dos, un risque d'affolement une fois les guides tués, ou une résistance répartie sur plusieurs points de vie. Emmanuel a déjà une idée de règle dédiée pour l'impact au contact du Mûmakil, distincte de [Charge écrasante] (**retirée de tous les profils de la V1 au Playtest #1, D043**) — à formaliser au moment de rédiger son profil. [Peur X]/[Terreur] (X élevé) est également candidate pour le Mûmakil, en Phase 2.
 
 ---
 
@@ -37,10 +37,11 @@ version: "0.8"
 3. [[#Règles offensives — Mêlée]]
 4. [[#Règles offensives — Distance]]
 5. [[#Règles de mouvement et de manœuvre]]
-6. [[#Règles hybrides — offensif + défensif]]
-7. [[#Règles de moral]]
-8. [[#Récapitulatif alphabétique]]
-9. [[#Règles différées — Phase 2+]]
+6. [[#Règles de soutien]]
+7. [[#Règles hybrides — offensif + défensif]]
+8. [[#Règles de moral]]
+9. [[#Récapitulatif alphabétique]]
+10. [[#Règles différées — Phase 2+]]
 
 ---
 
@@ -167,6 +168,19 @@ Cette unité inflige aussi une touche sur chaque face **Cible** obtenue lors d'u
 
 ---
 
+### [Arme de jet X]
+
+Le tour où cette unité **s'est déplacée puis attaque en mêlée**, jusqu'à **X face(s) Cible** obtenue(s) compte(nt) comme **une touche supplémentaire** sur la cible (au lieu d'être inerte en mêlée, voir [[Regles_Base]] §7.2). Représente les javelots et haches de jet lancés en approche, juste avant le choc.
+
+> 💡 **Exemple de jeu**
+> Une Milice lige [Arme de jet 1] se déplace puis attaque : 2 dés. Résultat : Cible, Épée. L'Épée touche normalement ; grâce à [Arme de jet 1], la Cible compte aussi (jusqu'à 1) → **2 touches** au lieu d'une. Si l'unité n'avait pas bougé ce tour, la Cible resterait inerte.
+
+> 🎲 **Note de design** Version *conditionnelle et plafonnée* de [Archer en mêlée] : là où [Archer en mêlée] rend les Cible actives en permanence (précision d'élite, Legolas), [Arme de jet X] ne les active que le tour de la charge et seulement jusqu'à X — des projectiles à usage unique, pas un tir soutenu. Donne un rôle d'escarmouche à une levée médiocre sans en faire une ligne de front.
+
+> 🔄 **Nouvelle règle — 2026-07-25 (Playtest #1, D044)** : créée pour la Milice lige (Rohan), jugée « trop nulle » au test. Coût **1 × X** (moins cher que [Archer en mêlée] à 2, car conditionnel et plafonné) — voir [[Regles_Points]].
+
+---
+
 ### [Arme Lourde X]
 
 Après le lancer de dés, le joueur peut **relancer X dés** de son choix. Chaque dé ne peut être relancé qu'une seule fois.
@@ -174,7 +188,7 @@ Après le lancer de dés, le joueur peut **relancer X dés** de son choix. Chaqu
 > 💡 **Exemple de jeu**
 > Une unité [Arme Lourde 1] attaque une Cavalerie adjacente : 3 dés. Résultat : Épée, Drapeau, Arcane. Le joueur relance l'Arcane → obtient Épées croisées. Résultat final : Épée + Épées croisées = 2 touches.
 
-> 🔄 **Assignée — 2026-07-19** : Guerriers de Lossarnach (Gondor et fiefs), Compagnie Grise tant que Gimli est présent (Gondor et fiefs), Helmingas de Grimbolg (Rohan — haches à deux mains). **Khand** (`02 - Factions/Khand.md`) : marqueur transversal du peuple sur les unités armées de hache lourde (Mercenaires hache, Pillards hache, Aurige), en écho aux cleavers de Khand du matériel MESBG.
+> 🔄 **Assignée — 2026-07-19** : Guerriers de Lossarnach (Gondor et fiefs), Compagnie Grise tant que Gimli est présent (Gondor et fiefs), Helmingas de Grimbolg (Rohan — haches à deux mains). **Khand** (`02 - Factions/Khand.md`) : marqueur transversal du peuple sur les unités armées de hache lourde (Mercenaires hache, Pillards hache), en écho aux cleavers de Khand du matériel MESBG — *l'Aurige a perdu [Arme Lourde 1] au Playtest #1 (D046)*. **Mordor** : Troll du Mordor ([Arme Lourde 1], depuis le Playtest #1 — remplace [Charge écrasante], D043 ; ramenée de 2 à 1 le 2026-07-26, D048).
 
 ---
 
@@ -186,6 +200,8 @@ Lorsque cette unité a **effectué un déplacement ce tour** avant d'attaquer, c
 > Une Créature se déplace d'1 hexagone et attaque une unité d'Infanterie adjacente : 3 dés. Résultat : Épées croisées, Couronne, Drapeau. [Charge écrasante] : la Couronne inflige 1 touche sur une autre unité adjacente à la cible.
 
 > 🔄 **Assignée et confirmée — 2026-07-19 (D029)** : Garde du roi à cheval (Rohan) — la charge de la maison du roi qui déborde sur les rangs adverses. **Aurige de Khand** (`02 - Factions/Khand.md`, D031) : l'impact d'un char lancé dans une ligne d'infanterie. **Troll du Mordor** (`02 - Factions/Mordor.md`) : un revers de gourdin qui balaie plusieurs adversaires — règle générique de choc au contact, réutilisable par toute unité rapide et lourde, pas exclusive à un peuple.
+
+> 🔄 **Retirée de la V1 — 2026-07-25 (Playtest #1, D043)** : au test, le couple [Charge écrasante] + charge de cavalerie / [Poursuite] s'est révélé être une boucherie (l'Aurige de Khand et les Cataphractaires orientaux ont fait 4 pertes sur 6 à eux deux). [Charge écrasante] est **retirée de tous les profils de la V1** — Garde du roi à cheval (Rohan) ; Aurige de Khand ; Troll du Mordor ; Cataphractaires orientaux (Easterling). La règle reste au glossaire mais **n'est plus assignée en V1** ; l'effet de choc de masse est réservé aux grandes créatures via la règle d'impact dédiée du Mûmakil (Phase 2), distincte de [Charge écrasante].
 
 ---
 
@@ -222,6 +238,19 @@ Lorsque cette unité effectue une **contre-attaque** contre une unité qui s'est
 
 ---
 
+### [Vigilant]
+
+Lorsque cette unité **attaque**, la cible ne peut pas la **contre-attaquer** — quelle que soit l'issue du combat (même si la cible reste sur place et n'est pas éliminée). S'applique à toute attaque de cette unité, mêlée ou tir à bout portant (voir [[Regles_Base]] §7.3, une unité de tir peut cibler une unité adjacente).
+
+> 💡 **Exemple de jeu**
+> Un Éored d'éclaireur [Vigilant] tire sur une Cohorte de piquiers orientaux adjacente : 2 dés, 1 touche, aucun Drapeau. La Cohorte remplit normalement les conditions de contre-attaque (adjacente, pas de retraite, pas éliminée) — mais [Vigilant] l'en empêche : elle ne réplique pas.
+
+> 🎲 **Note de design** Adaptée des *Riverwatch Riders* de *BattleLore : Seconde Édition*, où ce mot-clé était combiné à « Flanking » sur la même unité (« Vigilant Flanking »). Emmanuel a choisi de séparer les deux effets entre deux unités du Rohan (voir [Prise de flanc] plus haut) : [Vigilant] va à l'éclaireur — une cavalerie légère qui frappe et se replace sans jamais laisser l'adversaire répliquer, l'esprit du hit-and-run plutôt que du soutien de groupe.
+
+> 🔄 **Nouvelle règle — 2026-07-26 (D050)** : créée pour l'Éored d'éclaireur (Rohan), en remplacement de [Prise de flanc] (réassignée à l'Éored de cavalier, D049). Coût provisoire **2 points forfaitaires** (catégorie Offensif — Mêlée, aligné sur [Réception de charge]) — non testé. Voir [[Regles_Points]].
+
+---
+
 ## Règles offensives — Distance
 
 ---
@@ -245,11 +274,24 @@ Si cette unité **ne s'est pas déplacée** ce tour, elle peut effectuer une **s
 
 ---
 
+### [Plateforme de tir X]
+
+En plus de son attaque normale, cette unité peut effectuer **une attaque de tir de X dés** contre une cible à **portée 1–3 hexagones** en ligne de vue, **qu'elle se soit déplacée ou non** ce tour. Une seule attaque de plateforme par activation — même si l'unité bénéficie de [Poursuite] (la volée ne se répète pas à chaque sous-attaque).
+
+> 💡 **Exemple de jeu**
+> Un Aurige de Khand [Plateforme de tir 2] se déplace, décoche sa volée embarquée (2 dés, portée 1–3) sur une unité voisine, puis attaque au contact avec ses 3 dés de mêlée. Les deux attaques peuvent viser des cibles différentes.
+
+> 🎲 **Note de design** Distincte de [Double Tir] (qui *double* le tir mais exige de ne pas s'être déplacé) : la plateforme tire **sur la lancée**, en plus de la mêlée — le tir depuis un véhicule ou une bête en mouvement (char, howdah). [Howdah] en est le cas particulier du Mûmakil : **[Howdah] = [Plateforme de tir 2] + [Poison]**.
+
+> 🔄 **Nouvelle règle — 2026-07-25 (Playtest #1, D045)** : créée pour l'Aurige de Khand reconçu ([Plateforme de tir 2]) après le retrait de [Charge écrasante]. Coût **2 × X** (chaque dé de tir vaut 2 points, comme dans la formule de [[Regles_Points]]).
+
+---
+
 ### [Howdah]
 
-Cette unité peut effectuer une **attaque à distance en plus de son attaque de mêlée**. Cette attaque utilise **2 dés**, une portée de **1 à 3 hexagones**, et bénéficie de la règle **[Poison]**.
+Cas particulier de [Plateforme de tir X] pour le Mûmakil : **[Howdah] = [Plateforme de tir 2] + [Poison]**. L'unité effectue une attaque de tir de **2 dés**, portée **1 à 3 hexagones**, en plus de son attaque de mêlée, et cette volée bénéficie de [Poison] (la tour d'archers Haradrim et leurs flèches empoisonnées).
 
-> *Candidate forte pour le Mûmakil (tour d'archers Haradrim sur son dos) — voir note en tête de document. La règle [Poison] associée est optionnelle et à retrancher si non pertinente pour cette unité.*
+> *Candidate forte pour le Mûmakil (tour d'archers Haradrim sur son dos) — voir note en tête de document. Depuis le Playtest #1, la couche générique « tir depuis une plateforme mobile » est portée par [Plateforme de tir X] (D045), dont [Howdah] est la déclinaison empoisonnée. Le [Poison] reste optionnel, à retrancher si non pertinent.*
 
 ---
 
@@ -282,6 +324,8 @@ Lorsque cette unité effectue une attaque, chaque face **Couronne** obtenue infl
 ---
 
 ### [Déploiement avancé]
+
+> ⚠️ **Retirée de la V1 — 2026-07-26 (D047)** : jamais éprouvée en partie réelle (le centre-funnel du Playtest #1 ne lui a pas laissé l'occasion de s'exprimer). Retirée de l'Éored d'éclaireur (Rohan, sa seule porteuse), remplacée par [Flanking] (voir §6). Conservée ci-dessous à titre de référence, mais **non assignée en V1**.
 
 Une fois que toutes les unités (amies et ennemies) sont déployées, avant le premier Ordre du tour 1, le joueur propriétaire de cette unité peut la **repositionner** : elle effectue un déplacement égal à sa valeur de Mouvement. Elle ne peut pas terminer ce déplacement au contact d'une unité ennemie.
 
@@ -332,6 +376,26 @@ Voir [[Terrain]] §11. Annule toutes les restrictions de mouvement et de combat 
 
 ---
 
+## Règles de soutien
+
+---
+
+### [Prise de flanc]
+
+Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre unité amie** qui attaque cette unité ennemie ajoute **1 dé** à son jet d'attaque (mêlée ou tir). Cette unité n'ajoute pas ce bonus à ses propres attaques.
+
+- Si plusieurs unités amies portant [Prise de flanc] sont adjacentes à la même cible, les bonus se **cumulent** (1 dé par source).
+- L'unité [Prise de flanc] elle-même doit être présente et adjacente au moment de l'attaque alliée — si elle recule ou est éliminée avant, le bonus ne s'applique plus.
+
+> 💡 **Exemple de jeu**
+> Un Éored de cavalier du Rohan [Prise de flanc] est adjacent à une Cohorte d'orientaux ennemie. Une unité de Chevaliers de Minas Tirith, également adjacente à cette Cohorte, l'attaque : elle lance ses 3 dés habituels + 1 dé de [Prise de flanc] = **4 dés**. Si un second cavalier [Prise de flanc] était aussi adjacent à la même cible, ce serait +2 dés au total.
+
+> 🎲 **Note de design** Adaptée des *Riverwatch Riders* de *BattleLore : Seconde Édition* (Fantasy Flight Games), dont le mot-clé d'origine combinait deux effets (« Vigilant Flanking »). Emmanuel a choisi de **séparer les deux effets** entre deux unités du Rohan à l'identité différente : [Prise de flanc] (soutien de groupe, sans dégât propre) va à la cavalerie de ligne qui se bat au contact ; l'immunité au contre (désormais [Vigilant], voir plus loin) va à l'éclaireur, taillé pour le harcèlement hit-and-run. Contraste volontaire avec [Poursuite X] (l'éored qui frappe lui-même deux fois) : [Prise de flanc] est un rôle de **soutien**, pas de dégât direct — le cavalier tient la faille ouverte, ce sont les lances plus lourdes qui l'exploitent.
+
+> 🔄 **Nouvelle règle — 2026-07-26 (D047)**, **renommée et réassignée — 2026-07-26 (D049)** : créée sous le nom « Flanking » pour l'Éored d'éclaireur (Rohan), en remplacement de [Déploiement avancé] (retirée de la V1, jamais éprouvée). Renommée **[Prise de flanc]** et réassignée à l'**Éored de cavalier du Rohan** (profil 1) sur arbitrage d'Emmanuel — l'éclaireur reçoit [Vigilant] à la place (voir §7, Règles offensives — Mêlée). Coût provisoire **3 points forfaitaires** (catégorie Soutien) — comparable à [Poursuite 1] en impact potentiel (peut bénéficier à plusieurs unités par tour), mais jamais testé en partie réelle. Voir [[Regles_Points]].
+
+---
+
 ## Règles hybrides — offensif + défensif
 
 ---
@@ -375,11 +439,13 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | Règle | Catégorie | Résumé |
 |---|---|---|
 | **[Archer en mêlée]** | Offensif — Mêlée | Les faces Cible touchent aussi en mêlée |
+| **[Arme de jet X]** | Offensif — Mêlée | Le tour où l'unité charge : jusqu'à X faces Cible comptent comme touches |
 | **[Arme Lourde X]** | Offensif — Mêlée | Relancer X dés après le lancer |
 | **[Armure X]** | Défensif | Retire X faces Épée des attaques de mêlée reçues |
 | **[Bête incontrôlable]** | Offensif — Distance | Sans guides : ne bouge plus, 1 touche pour éliminer |
-| **[Charge écrasante]** | Offensif — Mêlée | Si déplacé ce tour : Couronne → touche sur unité adjacente |
-| **[Déploiement avancé]** | Manœuvre | Repositionnement unique avant le tour 1, jusqu'à sa valeur de Mouvement, sans finir au contact ennemi |
+| **[Charge écrasante]** | Offensif — Mêlée | Si déplacé ce tour : Couronne → touche sur unité adjacente *(non assignée en V1 depuis le Playtest #1, D043)* |
+| **[Déploiement avancé]** | Manœuvre | Repositionnement unique avant le tour 1, jusqu'à sa valeur de Mouvement, sans finir au contact ennemi *(retirée de la V1, D047 — non assignée)* |
+| **[Prise de flanc]** | Soutien | +1 dé aux attaques des autres unités amies contre une unité ennemie adjacente à celle-ci |
 | **[Double Tir]** | Offensif — Distance | Seconde attaque si non déplacé ce tour *(assignée : Cohorte d'archers orientaux, Easterling)* |
 | **[Férocité]** | Offensif — Mêlée | Contre-attaque résolue avant les retraites adverses |
 | **[Horde]** | Mixte — Offensif + Défensif | +1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; perdus définitivement à la 1ère perte |
@@ -393,11 +459,13 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Mur de bouclier]** | Défensif | [Protection 1] tant qu'adjacente à une autre Infanterie amie |
 | **[Peur X]** | Moral | Chaque face Arcane obtenue en attaque = X Drapeaux contre la cible (n'inflige pas de touche) |
 | **[Perforant X]** | Offensif — Distance | Relancer X dés après le lancer (attaque à distance) |
+| **[Plateforme de tir X]** | Offensif — Distance | Attaque de tir de X dés (portée 1–3) en plus de l'attaque normale, 1×/activation |
 | **[Poison]** | Offensif — Distance | Couronne → 1 touche sup. (sauf [Immunisé au poison]) |
 | **[Poursuite X]** | Manœuvre | Alternative à l'avance : jusqu'à X hex + attaque sup. |
 | **[Protection X]** | Défensif | Ignore X touches (terrain : bâtiments, fortifications) |
 | **[Rechargement]** | Manœuvre | Ne peut pas attaquer si déplacé ce tour |
 | **[Réception de charge]** | Offensif — Mêlée | +1 dé en contre-attaque si l'adversaire s'est déplacé ce tour |
+| **[Vigilant]** | Offensif — Mêlée | La cible de cette unité ne peut pas la contre-attaquer |
 | **[Souffle de feu]** | Offensif — Distance | Couronne → 1 touche sup. (sauf [Immunisé au feu]) |
 | **[Terrain favori : X]** | Manœuvre | Ignore toutes les restrictions de mouvement et de combat du terrain X |
 
@@ -429,3 +497,6 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 *0.6 — Roster Khand validé et clos (D031) : [Arme Lourde 1] et [Charge écrasante] confirmées, [Poursuite 1] assignée à l'Aurige de Khand (3e règle signature, PV ramené à 3). Nouvelle règle hybride [Horde] ajoutée (D032), inspirée des Warriors de C&C Ancients — réservée aux Orcs (Mordor), non assignée à un profil, roster à venir. Nouvelle section « Règles hybrides — offensif + défensif » créée pour l'accueillir.*
 *0.7 — Ouverture du roster Mordor (`02 - Factions/Mordor.md`) : première assignation de [Horde] (Bande d'orques du Mordor, Bande d'orques du Morannon) ; Bande d'uruk-hai validée en exception steadfast, sans Horde (D035). Nouvelle règle [Peur X] créée pour le Troll du Mordor, déclenchée par la face Arcane plutôt que la Couronne (D033) — nouvelle section « Règles de moral » créée pour l'accueillir, priorité de résolution mise à jour en conséquence.
 *0.8 — Roster Mordor clos (D036). Roster Easterling rédigé et clos dès sa première session (`02 - Factions/Easterling.md`, D038) : nouvelle règle [Mur de bouclier] créée (D037, version conditionnelle-à-la-formation de [Protection X]), assignée à la Cohorte d'orientaux et à la Cohorte de piquiers orientaux. Première assignation réelle de [Double Tir] (Cohorte d'archers orientaux).*
+*0.9 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`) : deux règles neuves — [Arme de jet X] (D044, Milice lige) et [Plateforme de tir X] (D045, Aurige de Khand ; [Howdah] devient son cas particulier + [Poison]). [Charge écrasante] retirée de tous les profils de la V1 (D043), conservée au glossaire mais non assignée. [Arme Lourde 2] assignée au Troll du Mordor (remplace [Charge écrasante]). Récapitulatif alphabétique et priorité de résolution étendus en conséquence.*
+*0.10 — Phase 1 — 2026-07-26. Retour sur deux points : [Arme Lourde 2] du Troll du Mordor ramenée à **[Arme Lourde 1]** (D048). Nouvelle section « Règles de soutien » créée pour accueillir **[Flanking]** (D047, adaptée des Riverwatch Riders de BattleLore V2), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Déploiement avancé], retirée de la V1 (jamais éprouvée). Table des matières et récapitulatif alphabétique mis à jour.*
+*0.11 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'**Éored de cavalier du Rohan** (profil 1, au lieu de l'Éored d'éclaireur). Nouvelle règle **[Vigilant]** créée (D050, également adaptée de BattleLore V2 — les deux mots-clés « Vigilant Flanking » de l'unité d'origine sont désormais séparés entre deux unités du Rohan) et assignée à l'Éored d'éclaireur en remplacement de [Prise de flanc]. Récapitulatif alphabétique mis à jour.*

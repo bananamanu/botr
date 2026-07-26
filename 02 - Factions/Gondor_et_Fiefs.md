@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-19"
+date_maj: "2026-07-25"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "1.1"
+version: "1.2"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
@@ -22,7 +22,7 @@ version: "1.1"
 
 ## Conventions de ce roster
 
-- **Mouvement** : 2 pour toute Infanterie, 3 pour toute Cavalerie **par défaut**, sauf mention contraire explicite dans le profil (D022 du [[Document de cadrage]]). Une seule exception dans ce roster : Chevaliers à pied de Dol Amroth (Mouvement 1).
+- **Mouvement** : 2 pour toute Infanterie, 3 pour toute Cavalerie **par défaut**, sauf mention contraire explicite dans le profil (D022 du [[Document de cadrage]]). Deux exceptions dans ce roster (depuis le Playtest #1) : Chevaliers à pied de Dol Amroth (Mouvement 1) et Chevaliers de Dol Amroth montés (Mouvement 2, cavalerie lourde, D046). Ces exceptions sont désormais thématiques — l'armure ralentit.
 - **Portée de tir** : 4 hexagones pour toutes les unités de tir (D020).
 - **Règles spéciales** : 0 à 2 par défaut pour les troupes standard/élite ; les unités légendaires peuvent en cumuler davantage (D023).
 - **[Réception de charge]** assignée par équipement constaté sur la figurine (troupes effectivement armées de piques), pas par peuple entier (D021) — pour Gondor, seuls les Hommes d'armes de Dol Amroth en sont équipés.
@@ -53,13 +53,13 @@ version: "1.1"
 > 🎲 **Note de design — hiérarchie des profils**
 > Trois paliers, tous construits sur le même socle (Mouvement/Portée par défaut, PV standard du type) :
 > - **Ligne standard** (1, 2, 3, 6, 9, 10) : 0 à 2 règles spéciales selon ce que montre la figurine ou le texte.
-> - **Élite** (5, 7, 8) : 1 à 2 règles spéciales, dés ou trait renforcé — 7 est la seule exception de mouvement du roster.
+> - **Élite** (5, 7, 8) : 1 à 2 règles spéciales, dés ou trait renforcé. Deux exceptions de mouvement depuis le Playtest #1 : les Chevaliers à pied de Dol Amroth (7, Mvt 1) et les Chevaliers de Dol Amroth montés (8, Mvt 2, D046).
 > - **Légendaire** (11, 12, 13, 14) : peut dépasser 2 règles spéciales (D023). Choisies pour raconter un moment précis du texte : Ithilien = embuscade, Osgiliath = résistance acharnée, Compagnie Grise = mécanique sur mesure autour des cinq figures nommées, Racine Noire = la précision qui a fait leur réputation.
 >
 > L'armure lourde ([Armure 1]) s'est révélée être un vrai marqueur transversal en cours de revue : elle marque les troupes régulières bien équipées (Minas Tirith, Dol Amroth, et Lossarnach une fois la figurine vérifiée), par contraste avec les clans de Lamedon (10), seule troupe de mêlée standard du roster sans armure.
 >
 > ⚠️ **Deux dominances strictes assumées en V1** (D025) — désormais reflétées dans le coût en points (D026, D027) plutôt que par retouche de profil :
-> - Chevaliers de Dol Amroth (8, **7 pts**) sur Chevaliers de Minas Tirith (3, **6 pts**) — mêmes règles, +1 dé d'attaque, +1 point.
+> - ~~Chevaliers de Dol Amroth sur Chevaliers de Minas Tirith~~ — **dominance dissoute au Playtest #1 (D046)** : Dol Amroth est passé à Mvt 2 / [Armure 2], il échange donc la vitesse contre l'armure et un dé au lieu de dominer strictement. Ce n'est plus une dominance, c'est un arbitrage (rapide+léger vs lent+blindé). Reste 7 pts vs 6.
 > - Archers de la Racine Noire (14, **6 pts**) sur Rangers d'Ithilien (11, **5 pts**) — mêmes règles + [Perforant 1] en plus, +1 point.
 > Le profil le plus fort reste toujours meilleur à règles égales, mais coûte désormais plus cher à enrôler — l'écart de points remplace l'égalisation de profil comme mécanisme d'équilibrage. Reste un point ouvert : faut-il en plus une limite d'enrôlement dédiée aux unités légendaires (voir §5) ?
 
@@ -103,7 +103,7 @@ version: "1.1"
 
 **Règles spéciales :** [Armure 1] + [Poursuite 1]
 
-**Note narrative :** la cavalerie de la Cité elle-même — moins prestigieuse que les Chevaliers-Cygnes de Dol Amroth, mais une cavalerie plus lourde et résiliente : moins de dés que Dol Amroth (8), mais protégée par l'armure. Domination stricte assumée sur ce profil, voir D025 en tête de document.
+**Note narrative :** la cavalerie de la Cité elle-même — moins prestigieuse que les Chevaliers-Cygnes de Dol Amroth, mais une cavalerie plus lourde et résiliente : moins de dés et moins d'armure que Dol Amroth (8), mais plus rapide (Mvt 3 contre 2). Depuis le Playtest #1, ce n'est plus une infériorité stricte mais un arbitrage vitesse/poids (D046).
 
 > 🔗 **Voir aussi** [[Regles_Speciales]] — [Armure X] · [Poursuite X]
 
@@ -170,11 +170,15 @@ version: "1.1"
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 3 | 4 dés | — | 3 figurines | **7** |
+| Cavalerie | Mêlée | **2** | 4 dés | — | 3 figurines | **7** |
 
-**Règles spéciales :** [Armure 1] + [Poursuite 1]
+**Règles spéciales :** [Armure 2] + [Poursuite 1]
 
-**Note narrative :** les Chevaliers-Cygnes du prince Imrahil, la meilleure cavalerie de tout Gondor — 4 dés, armurés, et une charge qui ne s'arrête pas au premier contact. Domine strictement les Chevaliers de Minas Tirith (3), assumé pour l'instant (D025) : sera équilibré par un futur coût en points plutôt que par retouche de profil.
+**Note narrative :** les Chevaliers-Cygnes du prince Imrahil — la cavalerie la plus lourde et la mieux armée de tout Gondor. Cavaliers et destriers bardés d'acier ([Armure 2]), ils avancent plus lentement que les autres montés (Mouvement 2) mais frappent au maximum (4 dés) et exploitent une percée grâce à [Poursuite 1], qui compense en partie leur lenteur (deux enchaînements mouvement + attaque de 2 hexagones chacun). Le marteau blindé de Gondor, à l'opposé des Chevaliers de Minas Tirith (3), plus légers et plus rapides.
+
+> 🔄 **Modifié après playtest — 2026-07-25 (Playtest #1, D046)**
+> Mouvement 3 → 2 et [Armure 1] → [Armure 2]. Décision d'Emmanuel pour asseoir l'identité « cavalerie lourde » de Dol Amroth face à la cavalerie légère du Rohan. Recalcul : `Mvt 2 + PV 3 + 4×3 + [Armure 2](4) + [Poursuite 1](3) = 24 → round(24÷3)−1 = 7`. Coût **7 pts inchangé** (le −1 de Mouvement et le +2 d'Armure se compensent à la compression).
+> ✅ **Effet de bord — la dominance stricte D025 se dissout** : Dol Amroth (7) ne *domine* plus les Chevaliers de Minas Tirith (6) ; il échange désormais la vitesse (Mvt 2 vs 3) contre l'armure et un dé (Armure 2 + 4 dés vs Armure 1 + 3 dés). C'est un vrai arbitrage, pas une supériorité stricte réglée au prix. Le miroir maléfique existe côté Mal : les Cataphractaires orientaux (aussi Mvt 2 / [Armure 2] après le Playtest #1).
 
 > 🔗 **Voir aussi** [[Regles_Speciales]] — [Armure X] · [Poursuite X]
 
@@ -281,7 +285,8 @@ version: "1.1"
 
 | Règle | Unités qui la portent |
 |---|---|
-| [Armure 1] | Guerriers de Minas Tirith (1) · Archers de Minas Tirith (2) · Chevaliers de Minas Tirith (3) · Gardes de la Citadelle (5) · Hommes d'armes de Dol Amroth (6) · Chevaliers à pied de Dol Amroth (7) · Chevaliers de Dol Amroth (8) · Guerriers de Lossarnach (9) · Vétérans d'Osgiliath (12) |
+| [Armure 1] | Guerriers de Minas Tirith (1) · Archers de Minas Tirith (2) · Chevaliers de Minas Tirith (3) · Gardes de la Citadelle (5) · Hommes d'armes de Dol Amroth (6) · Chevaliers à pied de Dol Amroth (7) · Guerriers de Lossarnach (9) · Vétérans d'Osgiliath (12) |
+| [Armure 2] | Chevaliers de Dol Amroth (8) *(depuis le Playtest #1, D046)* |
 | [Poursuite 1] | Chevaliers de Minas Tirith (3) · Chevaliers de Dol Amroth (8) |
 | [Double Tir] | Rangers du Gondor (4) · Rangers d'Ithilien (11) · Archers de la Racine Noire (14) |
 | [Inébranlable 1] | Gardes de la Citadelle (5) · Vétérans d'Osgiliath (12) |
@@ -320,8 +325,10 @@ Les unités d'élite et légendaires prennent tout leur sens une fois ce socle v
 ## 5. Points ouverts transverses (hors profils, à traiter séparément)
 
 - **Limite d'enrôlement des unités légendaires par format** (Escarmouche/Normal/Épique) — idée d'Emmanuel. Le coût en points (D026, D027) traite déjà en partie l'équilibrage ; reste à trancher si une limite dédiée est encore utile en plus (ex. éviter une armée qui n'aligne que des légendaires), à formaliser en Phase 3 (voir [[Document de cadrage]] §6 Phase 3).
-- **Deux dominances strictes assumées en V1** (D025) : Chevaliers de Dol Amroth (8, 7 pts) sur Chevaliers de Minas Tirith (3, 6 pts) ; Archers de la Racine Noire (14, 6 pts) sur Rangers d'Ithilien (11, 5 pts). Résolues par l'écart de coût en points plutôt que par retouche de profil — voir §1.
+- **Dominances strictes assumées en V1** (D025) : il n'en reste qu'**une** depuis le Playtest #1 — Archers de la Racine Noire (14, 6 pts) sur Rangers d'Ithilien (11, 5 pts), résolue par l'écart de coût. La première (Chevaliers de Dol Amroth sur Chevaliers de Minas Tirith) a été **dissoute** par la reconception de Dol Amroth (Mvt 2 / [Armure 2], D046) : c'est maintenant un arbitrage vitesse/poids, plus une dominance — voir §1 et le profil 8.
 
 ---
 
 *Version : 1.1 — Phase 1 (contenu Phase 3 anticipé) — 2026-07-19. Roster complet Gondor et fiefs (14 unités), établi et revu profil par profil avec Emmanuel. Décisions transverses remontées dans [[Document de cadrage]] (D020-D025) et [[Regles_Speciales]] (nouvelle règle [Archer en mêlée]). Coût en points ajouté (D026, D027) — voir [[Regles_Points]]. Non testé — premier passage à la table prévu au Playtest #1.*
+
+*Version : 1.2 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`). Chevaliers de Dol Amroth : Mouvement 3 → 2 et [Armure 1] → [Armure 2] (D046), 7 pts inchangé. Effet : dissolution de la première dominance stricte D025 (Dol Amroth n'est plus strictement supérieur aux Chevaliers de Minas Tirith, mais un arbitrage vitesse/poids) ; ajout d'une seconde exception de mouvement (cavalerie lourde Mvt 2). Conventions, hiérarchie, récapitulatif et §5 mis à jour.*

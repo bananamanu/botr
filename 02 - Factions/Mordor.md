@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "valide"
-date_maj: "2026-07-20"
+date_maj: "2026-07-26"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/valide"]
-version: "0.3"
+version: "0.5"
 ---
 
 # Mordor — Profils d'unités
@@ -60,6 +60,7 @@ version: "0.3"
 ## 2. Profils détaillés
 
 ### 1. Bande d'orques du Mordor
+![[orque_mordor-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
@@ -143,18 +144,19 @@ version: "0.3"
 |---|---|---|---|---|---|---|
 | Créature | Mêlée | 2 | 4 dés | — | 5 | **7** |
 
-**Règles spéciales :** [Charge écrasante] + [Peur 1]
+**Règles spéciales :** [Arme Lourde 1] + [Peur 1]
 
 **Règle intrinsèque du type :** Jamais Faible (Créature) — 5 PV encaissés sans jamais subir la pénalité de dernière figurine.
 
-**Note narrative :** un Olog-hai tiré des fosses de Gorgoroth, une masse de muscle et de fer qui balaie les rangs d'un revers de gourdin ([Charge écrasante] : la Couronne inflige une touche à une unité adjacente à la cible) et dont la seule approche fait plier le courage des hommes ([Peur 1] : chaque **Arcane** obtenue compte comme 1 Drapeau contre la cible). Un Troll si terrible que même ses coups perdus sèment la terreur — l'Arcane, ailleurs un échec, devient chez lui une source d'effroi.
+**Note narrative :** un Olog-hai tiré des fosses de Gorgoroth, une masse de muscle et de fer dont le gourdin finit toujours par écraser ([Arme Lourde 1] : le joueur relance 1 dé raté) et dont la seule approche fait plier le courage des hommes ([Peur 1] : chaque **Arcane** obtenue compte comme 1 Drapeau contre la cible). Un Troll si terrible que même ses coups perdus sèment la terreur — l'Arcane, ailleurs un échec, devient chez lui une source d'effroi.
 
-> 🎲 **Note de design — plus de conflit de Couronne** : depuis que [Peur] passe par la face **Arcane** (D033), le Troll exploite deux faces distinctes — la Couronne pour [Charge écrasante], l'Arcane pour [Peur]. Les deux ne se marchent plus dessus.
+> 🔄 **Modifié après playtest — 2026-07-25 (Playtest #1, D043), révisé le 2026-07-26 (D048)**
+> [Charge écrasante] d'abord remplacée par [Arme Lourde 2] (D043), puis ramenée à **[Arme Lourde 1]** sur arbitrage d'Emmanuel (D048) — une seule relance suffit à représenter un gourdin qui finit par toucher, sans en faire un cogneur trop fiable. Recalcul : `Mvt 2 + PV 5 + 4×3 + [Arme Lourde 1](2) + [Peur 1](2) = 23 → round(23÷3)−1 = 7`. Coût **7 pts inchangé** (la compression absorbe l'écart, comme pour l'Aurige en son temps). Petite synergie conservée : un dé relancé qui tombe sur Arcane alimente [Peur].
 >
 > ✅ **Validé (2026-07-20)** : [Peur 1] (modéré — Peur 2/« Terreur » reste réservée aux Nazgûl et au Roi-Sorcier en Phase 2, pour garder une gradation) ; 5 PV (cohérent avec le reste du roster, pas une éponge hors-norme).
 > ⚠️ **Seul point encore provisoire (non bloquant)** : coût de [Peur X] fixé à 2×X — non testé en partie réelle, à surveiller au Playtest #1 (même statut que le coût de [Horde]). Note : les Drapeaux ne tuent pas (ils font reculer) — peut-être 1×X après un premier test.
 
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Charge écrasante] · [Peur X] · règle intrinsèque Créature
+> 🔗 **Voir aussi** [[Regles_Speciales]] — [Arme Lourde X] · [Peur X] · règle intrinsèque Créature
 
 ---
 
@@ -176,7 +178,7 @@ version: "0.3"
 | [Armure 1] | Bande d'orques du Morannon (2) · Bande d'uruk-hai (5) |
 | [Férocité] | Meute de cavaliers wargs (4) · Bande d'uruk-hai (5) |
 | [Mobilité 1] | Bande de pisteurs orques (3) |
-| [Charge écrasante] | Troll du Mordor (6) |
+| [Arme Lourde 1] | Troll du Mordor (6) |
 | [Peur 1] *(face Arcane)* | Troll du Mordor (6) |
 
 ---
@@ -207,3 +209,7 @@ Tout est validé pour lancer le Playtest #1. Rien ne bloque, mais deux choses à
 ---
 
 *Version : 0.3 — Phase 1 — 2026-07-20. **Roster validé et clos (D036)** : Uruk-hai confirmé avec [Férocité] (7 pts) ; Troll confirmé à [Peur 1] et 5 PV (7 pts) ; Pisteurs orques confirmés sans [Horde] (3 pts). Les 6 profils sont validés tels que chiffrés en Passe 0 — aucun recalcul nécessaire. Prêt pour le Playtest #1 (trio : Bande d'orques + Uruk-hai + Troll, 19 pts). Restent uniquement les coûts de [Horde] et [Peur X] à confirmer au playtest (§6, non bloquant).*
+
+*Version : 0.4 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`). Troll du Mordor : [Charge écrasante] remplacée par [Arme Lourde 2] (D043 — [Charge écrasante] retirée de toute la V1) ; 7 pts inchangé. Aucun autre profil du roster touché ; les coûts de [Horde] et [Peur X] restent non éprouvés (partie étranglée au centre).*
+
+*Version : 0.5 — Phase 1 — 2026-07-26. Troll du Mordor : [Arme Lourde 2] ramenée à **[Arme Lourde 1]** (D048, arbitrage d'Emmanuel) — 7 pts inchangé.*

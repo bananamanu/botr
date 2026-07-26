@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-18"
+date_maj: "2026-07-25"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.2"
+version: "0.3"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -332,10 +332,18 @@ Chaque face **Drapeau** obtenue par l'attaquant force la cible à reculer d'**1 
 
 > **[Inébranlable X]** est le seul modificateur : l'unité ignore X Drapeaux par attaque reçue, quelle qu'en soit la source.
 
-### 9.2 Direction de la retraite
+### 9.2 Direction de la retraite (recul façon Memoir '44)
 
-- **Mêlée :** la cible recule dans la direction **à l'opposé de l'unité attaquante**.
-- **Tir :** la cible recule dans la direction **à l'opposé du bord d'hexagone par lequel la ligne de vue a été tracée**.
+Quelle que soit la source de l'attaque (mêlée ou tir), la cible recule **toujours vers le bord de plateau de son propre camp** (celui depuis lequel elle a été déployée) — la direction ne dépend ni de la position de l'attaquant, ni de l'angle de tir.
+
+- Pour chaque hexagone de recul, **le joueur qui recule choisit** un hexagone voisin **strictement plus proche de son bord** que l'hexagone actuel (mesuré en nombre d'hexagones jusqu'au bord). S'il existe plusieurs hexagones valables à égale distance, il choisit librement parmi eux.
+- S'il n'existe **aucun** hexagone valable (l'unité est déjà sur son propre bord, ou tous les hexagones plus proches sont bloqués), ce hexagone de recul est **bloqué** — voir §9.3.
+
+> 💡 **Exemple de jeu**
+> Une unité du Rohan (déployée au sud) subit 2 Drapeaux, peu importe que l'attaque vienne de face, de flanc ou par une volée de tir en biais : elle recule de 2 hexagones vers le bord sud, en choisissant à chaque étape l'hexagone libre le plus proche de ce bord.
+
+> 🔄 **Modifié après playtest — 2026-07-25 (Playtest #1, D041)**
+> Adoption du recul façon *Memoir '44* (toujours vers le bord ami), en remplacement de la retraite directionnelle C&C classique (opposée à l'attaquant en mêlée, opposée à la ligne de vue au tir). Joué ainsi à la table et retenu : bien plus simple et mémorisable (principe 1 du [[Document de cadrage]]) — l'ancienne résolution était jugée « compliquée ou absurde à appliquer », en particulier pour arbitrer la direction exacte d'un tir en angle. Le nombre d'hexagones de recul (1 Drapeau = 1 hex) et les règles de blocage (§9.3) restent inchangés.
 
 ### 9.3 Obstacles sur le chemin
 
@@ -346,9 +354,10 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 | Obstacle rencontré | Effet |
 |---|---|
 | Forêt, gué, bâtiment, terrain surélevé, pont | Aucun — retraite continue normalement. |
-| Cours d'eau / bord du plateau | Bloqué — 1 touche par hexagone non résolu. |
-| Unité ennemie | Bloqué — 1 touche par hexagone non résolu. |
-| Unité amie | **Soutien** — tous les hex restants ignorés, 0 touche supplémentaire. |
+| Sortie du plateau (l'unité est déjà sur son propre bord et devrait en sortir) | Bloqué — 1 touche par hexagone non résolu. |
+| Cours d'eau infranchissable, ou aucun hexagone valable disponible (encerclement) | Bloqué — 1 touche par hexagone non résolu. |
+| Unité ennemie occupant le seul hexagone valable | Bloqué — 1 touche par hexagone non résolu. |
+| Unité amie occupant le seul hexagone valable | **Soutien** — tous les hex restants ignorés, 0 touche supplémentaire. |
 
 ### 9.4 Après la retraite
 
@@ -447,3 +456,5 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 ---
 
 *Version : 0.2 — Phase 1 — 2026-07-18. [Massif] retirée, commandement/terrain Pelennor clarifiés. Non testé.*
+
+*Version : 0.3 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (D041, `[[Playtest1_Compte-rendu]]`) : §9.2 réécrite — recul façon Memoir '44 (toujours vers le bord ami, le joueur qui recule choisit l'hexagone) en remplacement de la retraite directionnelle C&C. §9.3 (obstacles) reformulée en conséquence.*

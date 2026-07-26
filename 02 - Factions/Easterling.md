@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "valide"
-date_maj: "2026-07-20"
+date_maj: "2026-07-25"
 tags: [BdTdM, "type/faction", "peuple/easterling", "statut/valide"]
-version: "1.0"
+version: "1.1"
 ---
 
 # Easterling — Profils d'unités
@@ -16,8 +16,8 @@ version: "1.0"
 > - **L'Easterling est le miroir maléfique de Gondor** : là où Mordor est la horde ([Horde], D032) et Khand le verre-canon ([Arme Lourde], D031), l'Easterling occupe le créneau resté libre côté Mal — **l'armée régulière**, disciplinée, en rangs serrés. Complète la paire de miroirs Bien/Mal du roster (Gondor ↔ Easterling, deux empires disciplinés ; Rohan ↔ ? mobilité déjà propre au Rohan côté Bien).
 > - **La discipline n'est pas une armure inconditionnelle** (à la différence de Gondor, [Armure X] sur le profil), mais une **discipline de formation** : nouvelle règle **[Mur de bouclier]** (D037), qui n'accorde sa protection que si l'unité reste en ligne, adjacente à une autre Infanterie amie. Une vraie décision tactique (rester groupé vs se déployer) qu'aucun autre peuple ne porte.
 > - **Les piquiers réutilisent [Réception de charge]**, déjà au glossaire et déjà assignée par équipement constaté (D021, Hommes d'armes de Dol Amroth) plutôt que par peuple — une pique reste une pique. Le vrai nouveau, ici, c'est [Mur de bouclier] sur la cohorte de base.
-> - **Cataphractaires = pendant maléfique de la cavalerie du Rohan, à l'opposé mécanique** : là où le Rohan mise sur la vitesse ([Poursuite 2], peu armuré), les Cataphractaires misent sur le poids — Mouvement réduit à 2 (exception D022, comme l'Éored d'éclaireur), [Armure 2] (première unité du jeu à porter une armure doublée), et [Charge écrasante] pour le choc.
-> - **Roster délibérément haut de gamme** : trio de base (Cohorte + Archers + Cataphractaires) à 16 points, plus cher que le trio Gondor (15) ou Rohan (13) — cohérent avec « armée de métier professionnelle » plutôt que horde ou pillards légers. C'est l'armée la plus chère du roster à ce stade, choix assumé par Emmanuel.
+> - **Cataphractaires = pendant maléfique de la cavalerie du Rohan, à l'opposé mécanique** : là où le Rohan mise sur la vitesse ([Poursuite 2], peu armuré), les Cataphractaires misent sur le poids — Mouvement réduit à 2 (exception D022, comme l'Éored d'éclaireur), [Armure 2] (première unité du jeu à porter une armure doublée). *(À l'origine aussi porteuse de [Charge écrasante], retirée au Playtest #1 — D043 ; elles ne gardent que l'armure.)*
+> - **Roster de métier, plutôt haut de gamme** : trio de base (Cohorte + Archers + Cataphractaires) à **15 points** depuis le Playtest #1 (Cataphractaires ramenés à 6 pts, D043) — à égalité avec le trio Gondor (15), au-dessus de Rohan (13). Cohérent avec « armée régulière disciplinée » plutôt que horde ou pillards légers. *(Avant le Playtest #1, ce trio était à 16 pts — l'Easterling n'est donc plus strictement « l'armée la plus chère ».)*
 >
 > Aligné sur [[Regles_Base]] et [[Regles_Speciales]]. **Coût en points** calculé avec la formule validée dans [[Regles_Points]] : `Points_finaux = round((Mouvement + PV + Attaque×D + Σ coût des règles) ÷ 3) − 1`.
 
@@ -38,10 +38,10 @@ version: "1.0"
 | 1 | Cohorte d'orientaux | Infanterie | Mêlée | **5** |
 | 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | **6** |
 | 3 | Cohorte d'archers orientaux | Infanterie | Tir | **4** |
-| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | **7** |
+| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | **6** |
 
 > 🎲 **Note de design — lecture rapide du roster**
-> La Cohorte d'orientaux (1) coûte exactement comme les Guerriers de Minas Tirith de Gondor (5 pts) — un joli miroir : les deux incarnent la ligne d'infanterie disciplinée de leur camp, l'une par armure inconditionnelle, l'autre par formation. La Cohorte d'archers (3) est le jumeau exact des Rangers du Gondor (même profil, [Double Tir], 4 pts) — deux lignes qui déversent leurs volées sans reculer plutôt que de harceler en mouvement (à l'inverse des archers mobiles de Rohan/Mordor). Les piquiers (2) coûtent plus cher que la ligne de base (6 vs 5) : troupes spécialisées anti-cavalerie, pas de la simple masse. Les Cataphractaires (4) sont la pièce la plus chère du roster — le pendant lourd et lent de l'Éored du Rohan.
+> La Cohorte d'orientaux (1) coûte exactement comme les Guerriers de Minas Tirith de Gondor (5 pts) — un joli miroir : les deux incarnent la ligne d'infanterie disciplinée de leur camp, l'une par armure inconditionnelle, l'autre par formation. La Cohorte d'archers (3) est le jumeau exact des Rangers du Gondor (même profil, [Double Tir], 4 pts) — deux lignes qui déversent leurs volées sans reculer plutôt que de harceler en mouvement (à l'inverse des archers mobiles de Rohan/Mordor). Les piquiers (2) coûtent plus cher que la ligne de base (6 vs 5) : troupes spécialisées anti-cavalerie, pas de la simple masse. Les Cataphractaires (4), ramenés à 6 pts au Playtest #1, sont à égalité avec les piquiers en tête du roster — le pendant lourd et lent de l'Éored du Rohan (et le jumeau maléfique des Chevaliers de Dol Amroth).
 
 ---
 
@@ -95,19 +95,22 @@ version: "1.0"
 |---|---|---|---|---|---|---|
 | Cavalerie | Mêlée | **2** | 4 dés | — | 3 figurines | **7** |
 
-**Règles spéciales :** [Armure 2] + [Charge écrasante]
+**Règles spéciales :** [Armure 2]
 
-**Note narrative :** la cavalerie super-lourde de l'Est, cavaliers et montures bardés de fer des pieds à la tête — le pendant exact et opposé de la cavalerie du Rohan. Là où le Rohan mise tout sur la vitesse ([Poursuite 2], peu armuré), les Cataphractaires misent tout sur le poids : Mouvement réduit à 2 (une monture aussi lourde ne galope pas comme un cheval de la Marche), mais [Armure 2] — **première unité du jeu à porter une armure doublée** — et [Charge écrasante] pour un choc qui balaie plusieurs adversaires à la fois.
+**Note narrative :** la cavalerie super-lourde de l'Est, cavaliers et montures bardés de fer des pieds à la tête — le pendant exact et opposé de la cavalerie du Rohan. Là où le Rohan mise tout sur la vitesse ([Poursuite 2], peu armuré), les Cataphractaires misent tout sur le poids : Mouvement réduit à 2 (une monture aussi lourde ne galope pas comme un cheval de la Marche) et [Armure 2] — **première unité du jeu à porter une armure doublée**. Leur force est le poids et le blindage, pas l'éclaboussure : une enclume montée qui absorbe et broie, sans surcouche offensive.
 
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Armure X] · [Charge écrasante]
+> 🔄 **Modifié après playtest — 2026-07-25 (Playtest #1, D043)**
+> Retrait de [Charge écrasante], sans remplacement. Au test, les Cataphractaires et l'Aurige de Khand ont fait 4 pertes sur 6 grâce au combo [Charge écrasante] + charge — jugé trop punitif. [Charge écrasante] est retirée de toute la V1. Les Cataphractaires ne conservent que [Armure 2] : `Mvt 2 + PV 3 + 4×3 + [Armure 2](4) = 21 → round(21÷3)−1 = 6`. Coût **7 → 6 pts**. Ils deviennent le miroir exact des Chevaliers de Dol Amroth de Gondor (eux aussi passés à Mvt 2 / [Armure 2] au Playtest #1) : les deux cavaleries lourdes-lentes du jeu, une par camp.
+
+> 🔗 **Voir aussi** [[Regles_Speciales]] — [Armure X]
 
 ---
 
 ## 3. Trio suggéré pour le Playtest #1
 
-**Cohorte d'orientaux (5) + Cohorte d'archers orientaux (4) + Cataphractaires orientaux (7) = 16 points.**
+**Cohorte d'orientaux (5) + Cohorte d'archers orientaux (4) + Cataphractaires orientaux (6) = 15 points.**
 
-> 🎲 **Note de design** Trio « miroir » du trio Gondor (Guerriers + Archers + Chevaliers de Minas Tirith, 15 pts), pour un premier duel direct Bien/Mal entre les deux empires disciplinés — 1 point de plus, cohérent avec l'identité « armée la plus chère du roster » assumée par Emmanuel. Si tu préfères tester la spécialité anti-cavalerie du peuple, substitue la Cohorte de piquiers (6) à la Cohorte de base : Piquiers + Archers + Cataphractaires = 17 points.
+> 🎲 **Note de design** Trio « miroir » du trio Gondor (Guerriers + Archers + Chevaliers de Minas Tirith, 15 pts), pour un premier duel direct Bien/Mal entre les deux empires disciplinés — désormais **à parité de points** (15 = 15) depuis que les Cataphractaires sont passés à 6 pts au Playtest #1 (D043). Si tu préfères tester la spécialité anti-cavalerie du peuple, substitue la Cohorte de piquiers (6) à la Cohorte de base : Piquiers + Archers + Cataphractaires = 16 points.
 
 ---
 
@@ -119,7 +122,8 @@ version: "1.0"
 | [Réception de charge] | Cohorte de piquiers orientaux (2) |
 | [Double Tir] | Cohorte d'archers orientaux (3) *(première assignation en V1)* |
 | [Armure 2] | Cataphractaires orientaux (4) *(première armure doublée du jeu)* |
-| [Charge écrasante] | Cataphractaires orientaux (4) |
+
+*Depuis le Playtest #1 (D043) : [Charge écrasante] retirée des Cataphractaires — plus aucune unité d'Easterling ne la porte.*
 
 ---
 
@@ -145,3 +149,5 @@ Rien ne bloque le lancement du Playtest #1. À surveiller, même statut que [Hor
 ---
 
 *Version : 1.0 — Phase 1 — 2026-07-20. Roster validé et clos dès la première session (D038) : identité « miroir discipliné de Gondor » actée, nouvelle règle [Mur de bouclier] créée (D037), 4 profils chiffrés et validés sans repasse ultérieure. Prêt pour le Playtest #1 (trio suggéré : Cohorte + Archers + Cataphractaires, 16 pts).*
+
+*Version : 1.1 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`). Cataphractaires orientaux : retrait de [Charge écrasante] sans remplacement (D043 — règle retirée de toute la V1) ; coût 7 → 6 pts (D046). Le trio suggéré passe de 16 à 15 pts (parité avec Gondor). Le coût de [Mur de bouclier] (1 pt) reste non éprouvé (partie étranglée au centre).*
