@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-26"
+date_maj: "2026-07-27"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.11"
+version: "0.12"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -150,6 +150,8 @@ Tant que cette unité est **adjacente à au moins une autre unité d'Infanterie 
 > 🎲 **Note de design** Version « conditionnelle à la formation » de [Protection X] plutôt qu'une armure inconditionnelle — la discipline de la ligne qui referme ses boucliers, perdue dès que le rang se rompt. Créée pour distinguer l'Easterling de Gondor (armure inconditionnelle, [Armure X] sur le profil) tout en gardant la même identité de peuple "discipliné" : chez l'Easterling, la protection est une décision tactique de positionnement (rester groupé), pas un simple chiffre sur la fiche.
 
 > 🔄 **Nouvelle règle — 2026-07-20 (D037)** : créée et assignée dès sa création à la Cohorte d'orientaux et à la Cohorte de piquiers orientaux (`02 - Factions/Easterling.md`). Coût provisoire de 1 point forfaitaire (aligné sur [Protection 1]), non testé — à surveiller au Playtest #1 : en formation de ligne classique, la condition d'adjacence sera presque toujours vraie, ce qui pourrait sous-évaluer la règle par rapport à un [Armure 1] permanent (2 pts).
+
+> ✅ **Validée au Playtest #1b (2026-07-27, D053)** : a absorbé 2 touches sur la partie. La règle s'autolimite bien — un recul rompt l'adjacence et fait perdre la protection, la décision « tenir ou rompre » existe réellement. Coût de 1 pt confirmé. ⚠️ **Point de vigilance conservé** (pas de correctif) : le risque de sur-cumul reste ouvert si une liste empile plusieurs porteurs en formation permanente — à surveiller sur un roster Easterling plus étoffé, pas à corriger maintenant.
 
 ---
 
@@ -350,7 +352,9 @@ Cette unité est composée de **plusieurs figurines de X PV chacune**. Retirer u
 
 Après avoir effectué une attaque, cette unité peut se déplacer de **X hexagones supplémentaires**.
 
-> 🔄 **Assignée** : Rangers d'Ithilien, Archers de la Racine Noire (Gondor et fiefs). **Khand** : Pillards de Khand (archer). **Mordor** : Bande de pisteurs orques (`02 - Factions/Mordor.md`).
+> ⚠️ **Clarification — Playtest #1b (2026-07-27, D056)** : le bonus **exige d'avoir attaqué ce tour**. Modélise le tir-puis-décroche (identité harcèlement Rohan/Mordor/Fiefs), pas une mobilité brute. Sans attaque, l'unité se déplace de son Mouvement normal, sans bonus ni pénalité. Formule mémorisable pour l'aide de jeu : *« Mobilité = tu frappes, puis tu décroches. Pas d'attaque, pas de bonus. »*
+
+> 🔄 **Assignée** : Rangers d'Ithilien, Archers de la Racine Noire, **Rangers du Gondor** (D055, Playtest #1b) — Gondor et fiefs. **Khand** : Pillards de Khand (archer). **Mordor** : Bande de pisteurs orques (`02 - Factions/Mordor.md`).
 
 ---
 
@@ -410,6 +414,8 @@ Tant que cette unité **n'a perdu aucun PV**, elle bénéficie de **+1 dé d'att
 > 🎲 **Note de design** Inspirée de la règle *Warriors* de Commands & Colors: Ancients (bonus offensif à pleine force, perdu à la première perte). La condition (« n'a perdu aucun PV ») se lit directement sur le nombre de figurines encore présentes sur le socle — aucun jeton supplémentaire n'est nécessaire (principe 4 du [[Document de cadrage]]). Réservée aux Orcs (Mordor) plutôt qu'à Khand : le fil conducteur de Khand est déjà [Arme Lourde 1] (une relance permanente, D031), tout juste validé pour le Playtest #1 — superposer un second mécanisme offensif aurait dilué cette identité fraîchement close. Le pattern « très fort au premier contact, fragile ensuite » colle en revanche précisément à la horde d'Orcs du texte — nombreuse, féroce dans la charge, prompte à rompre une fois entamée.
 
 > 🔄 **Nouvelle règle — 2026-07-19 (D032)**, **première assignation — 2026-07-20** : Bande d'orques du Mordor et Bande d'orques du Morannon (`02 - Factions/Mordor.md`). Volontairement **retirée** de la Bande d'uruk-hai (l'élite qui ne rompt pas, contraste assumé, D035) et de la Bande de pisteurs orques (règle de mêlée de masse à 6 PV, pas de tir). Coût de 3 points forfaitaires — voir [[Regles_Points]].
+
+> ✅ **Validée au Playtest #1b (2026-07-27, D053)** : les orques du Morannon ont frappé à 4 dés à pleine force puis subi une contre-attaque leur faisant perdre le bonus — le surge-puis-effondrement se lit clairement à la table. Coût de 3 pts forfaitaires confirmé, plus de statut « non testé ».
 
 ---
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-25"
+date_maj: "2026-07-27"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.3"
+version: "0.4"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -300,6 +300,8 @@ Après avoir subi une attaque et résolu toutes les retraites, l'unité ciblée 
 - Elle **n'a pas été éliminée**.
 
 La contre-attaque est **universelle** — toute unité peut contre-attaquer sans règle spéciale. Elle s'effectue à la valeur d'attaque complète selon la séquence normale (étapes 1 à 8 uniquement — pas d'avance ni de nouvelle contre-attaque).
+
+> 🔄 **Convention de jeu recommandée — Playtest #1b (2026-07-27, D052)** : la contre-attaque universelle est la règle la plus oubliée à la table (constat du Playtest #1, D042). Dispositif validé pour y remédier, en particulier pour la table à 6 joueurs : poser un **jeton d'activation** sur chaque unité du camp actif au moment où elle joue, et un **jeton de cible** sur toute unité adverse qui subit une attaque et survit. Le jeton de cible rappelle qu'une contre-attaque est due ; il est retiré une fois celle-ci résolue. Testé avec succès au Playtest #1b — plus aucun oubli signalé. À intégrer à l'aide de jeu convention.
 
 ---
 

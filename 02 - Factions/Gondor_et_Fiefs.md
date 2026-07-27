@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-25"
+date_maj: "2026-07-27"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "1.2"
+version: "1.3"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
@@ -115,11 +115,13 @@ version: "1.2"
 |---|---|---|---|---|---|---|
 | Infanterie | Tir | 2 | 2 dés | 4 | 6 figurines | **4** |
 
-**Règles spéciales :** [Double Tir]
+**Règles spéciales :** [Double Tir] + [Mobilité 1]
 
-**Note narrative :** éclaireurs et tirailleurs qui opèrent en avant du gros de l'armée — une ligne de tir disciplinée qui décharge deux salves avant de laisser passer l'assaut. Version d'entrée de la « famille Rangers » : Rangers du Gondor (2 dés, [Double Tir] seul) → Rangers d'Ithilien (11, 3 dés, [Double Tir]+[Mobilité 1]).
+**Note narrative :** éclaireurs et tirailleurs qui opèrent en avant du gros de l'armée — une ligne de tir disciplinée qui décharge deux salves avant de laisser passer l'assaut, puis décroche avant la riposte. Version d'entrée de la « famille Rangers » : Rangers du Gondor (2 dés, [Double Tir]+[Mobilité 1]) → Rangers d'Ithilien (11, 3 dés, [Double Tir]+[Mobilité 1]) — dominance stricte de la version légendaire lisible au prix (4 vs 5 pts), pas au profil (D025).
 
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Double Tir]
+> 🔄 **Modifié après playtest — 2026-07-27 (Playtest #1b, D055)** : profil jugé en retrait par rapport au reste de sa famille. Ajout de **[Mobilité 1]**. Recalcul brut : `Mvt 2 + PV 6 + 2×2 + [Double Tir](3) + [Mobilité 1](1) = 16 → round(16÷3)−1 = 4`. **Coût inchangé (4 pts)** — même effet de palier « gratuit » déjà observé sur l'Éored d'éclaireur et les Archers liges (voir [[Regles_Points]] §2bis).
+
+> 🔗 **Voir aussi** [[Regles_Speciales]] — [Double Tir] · [Mobilité X]
 
 ---
 

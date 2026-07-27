@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "valide"
-date_maj: "2026-07-26"
+date_maj: "2026-07-27"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/valide"]
-version: "0.5"
+version: "0.6"
 ---
 
 # Mordor — Profils d'unités
@@ -142,11 +142,11 @@ version: "0.5"
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
-| Créature | Mêlée | 2 | 4 dés | — | 5 | **7** |
+| Créature | Mêlée | 2 | 4 dés | — | 4 | **7** |
 
 **Règles spéciales :** [Arme Lourde 1] + [Peur 1]
 
-**Règle intrinsèque du type :** Jamais Faible (Créature) — 5 PV encaissés sans jamais subir la pénalité de dernière figurine.
+**Règle intrinsèque du type :** Jamais Faible (Créature) — 4 PV encaissés sans jamais subir la pénalité de dernière figurine.
 
 **Note narrative :** un Olog-hai tiré des fosses de Gorgoroth, une masse de muscle et de fer dont le gourdin finit toujours par écraser ([Arme Lourde 1] : le joueur relance 1 dé raté) et dont la seule approche fait plier le courage des hommes ([Peur 1] : chaque **Arcane** obtenue compte comme 1 Drapeau contre la cible). Un Troll si terrible que même ses coups perdus sèment la terreur — l'Arcane, ailleurs un échec, devient chez lui une source d'effroi.
 
@@ -155,6 +155,8 @@ version: "0.5"
 >
 > ✅ **Validé (2026-07-20)** : [Peur 1] (modéré — Peur 2/« Terreur » reste réservée aux Nazgûl et au Roi-Sorcier en Phase 2, pour garder une gradation) ; 5 PV (cohérent avec le reste du roster, pas une éponge hors-norme).
 > ⚠️ **Seul point encore provisoire (non bloquant)** : coût de [Peur X] fixé à 2×X — non testé en partie réelle, à surveiller au Playtest #1 (même statut que le coût de [Horde]). Note : les Drapeaux ne tuent pas (ils font reculer) — peut-être 1×X après un premier test.
+
+> 🔄 **Modifié après playtest — 2026-07-27 (Playtest #1b, D054)** : le Troll a fini le re-run à 3/5 PV sans jamais tomber — pièce signature qui tient son rôle. PV ramenés de **5 à 4**. Recalcul brut : `Mvt 2 + PV 4 + 4×3 + [Arme Lourde 1](2) + [Peur 1](2) = 22 → round(22÷3)−1 = 6`. Coût maintenu à **7 pts** sur arbitrage d'Emmanuel — **prime de pièce signature assumée** (+1 au-dessus du calcul brut), cohérente avec son statut déjà dérogatoire (seul profil de la V1 à dépasser 2 règles spéciales, D023). Décision manuelle documentée, pas une correction de formule.
 
 > 🔗 **Voir aussi** [[Regles_Speciales]] — [Arme Lourde X] · [Peur X] · règle intrinsèque Créature
 
