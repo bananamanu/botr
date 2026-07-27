@@ -90,6 +90,7 @@ version: "0.6"
 ---
 
 ### 3. Bande de pisteurs orques
+![[archer_orque_mordor-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|

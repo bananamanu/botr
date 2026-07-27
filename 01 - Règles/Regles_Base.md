@@ -90,6 +90,18 @@ Le nombre de figurines retirées par touche dépend du **type de l'unité ciblé
 
 > Cette règle s'applique automatiquement à toutes les attaques. Elle n'est pas répétée dans les profils individuels.
 
+#### Règle générale des touches (généralisation, D053)
+
+Le tableau ci-dessus se lit en réalité comme un principe unique, valable pour **toute touche**, quelle que soit son origine (face de dé, capacité spéciale qui convertit une Couronne en touche, touche de recul bloqué, etc.) :
+
+> **Contre une cible Infanterie, chaque touche retire 2 figurines. Seule exception : la face Épée seule en retire 1. Contre toute autre cible (Cavalerie, Chars, Artillerie, Créature, Machine de guerre), chaque touche retire 1 figurine/PV.**
+
+Autrement dit, une unité d'Infanterie affiche **6 figurines** (habillage visuel plus imposant) mais vaut **3 « blocs » effectifs** — cohérent avec l'échelle BattleLore V2 qui a servi de référence à la compression des points ([[Regles_Points]] §2bis). Une touche ne peut jamais retirer plus de figurines qu'il n'en reste.
+
+> 🎲 **Note de design (D053)** Cette généralisation ne modifie **pas** le combat normal : Épées croisées (2), Épée (1) et Cible (2) sur infanterie étaient déjà au tableau. Elle **tranche l'ambiguïté** des touches « hors face » — les touches de [Poison]/[Souffle de feu] (Couronne → touche), le piétinement du Mûmakil (Couronne → touche) et les touches de recul bloqué comptent désormais explicitement **2 figurines contre l'infanterie**. La durabilité §1 de [[Regles_Points]] (Inf 12 dés / Cav 9 dés, ratio 1,33) et les rosters chiffrés restent donc valides tels quels.
+>
+> ⚠️ **Deux points de vigilance au Playtest** : (1) un recul bloqué contre un bord ou une unité amie fait fondre l'infanterie deux fois plus vite — à surveiller avec le Mûmakil qui pousse ; (2) [Poison] contre l'infanterie double aussi (Couronne = 2 figurines).
+
 > 💡 **Exemple de jeu**
 > Des Chevaliers de Dol Amroth (Cavalerie — Mêlée) attaquent des Épéistes de la Garde (Infanterie — Mêlée) adjacents : 4 dés. Résultat : Épées croisées, Épée, Épée, Drapeau. Les Épées croisées retirent **2 figurines**, chaque Épée retire **1 figurine** → 4 figurines retirées et 1 Drapeau.
 >

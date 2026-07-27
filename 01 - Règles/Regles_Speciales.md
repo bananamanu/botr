@@ -194,16 +194,13 @@ Après le lancer de dés, le joueur peut **relancer X dés** de son choix. Chaqu
 
 ---
 
-### [Charge écrasante]
+### [Charge écrasante] *(refonte dédiée Mûmakil, D054)*
 
-Lorsque cette unité a **effectué un déplacement ce tour** avant d'attaquer, chaque face **Couronne** obtenue inflige **1 touche supplémentaire** à une unité adjacente à la cible (au choix du joueur actif).
+> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1). Le joueur désigne l'hexagone de tête visé, **sans tenir compte** des figurines amies ou ennemies présentes là où le Mûmakil finirait. Chaque unité dont un hexagone est traversé par son corps subit une **attaque de 4 dés** où la **Couronne inflige aussi une touche** ; cela a lieu **en phase de mouvement — ce n'est pas un combat** : aucune contre-attaque ni règle de combat ne s'applique. Toute **cavalerie** repoussée par cette charge **recule du double**. Si toutes les unités qui gênaient le passage sont détruites ou repoussées, il termine ses 2 hexagones ; sinon il s'arrête au dernier hexagone libre. **Le Mûmakil ne fait aucune attaque de mêlée en phase d'attaque.**
 
-> 💡 **Exemple de jeu**
-> Une Créature se déplace d'1 hexagone et attaque une unité d'Infanterie adjacente : 3 dés. Résultat : Épées croisées, Couronne, Drapeau. [Charge écrasante] : la Couronne inflige 1 touche sur une autre unité adjacente à la cible.
+> 🎲 **Note de design** Règle **bespoke**, propre au Mûmakil — elle ne sera pas réassignée à d'autres profils. Pas de forfait de coût transférable : le Mûmakil est chiffré par **équivalence d'impact** (≈ 3 Éored → 21 pts, voir `02 - Factions/Harad.md`), pas par la formule additive. Les unités « affectées » = celles dont un hexagone est **nouvellement pénétré** par l'un des 4 hexagones du gabarit 1-2-1 pendant la translation (le Mûmakil ne pivote pas — D10 d'Emmanuel).
 
-> 🔄 **Assignée et confirmée — 2026-07-19 (D029)** : Garde du roi à cheval (Rohan) — la charge de la maison du roi qui déborde sur les rangs adverses. **Aurige de Khand** (`02 - Factions/Khand.md`, D031) : l'impact d'un char lancé dans une ligne d'infanterie. **Troll du Mordor** (`02 - Factions/Mordor.md`) : un revers de gourdin qui balaie plusieurs adversaires — règle générique de choc au contact, réutilisable par toute unité rapide et lourde, pas exclusive à un peuple.
-
-> 🔄 **Retirée de la V1 — 2026-07-25 (Playtest #1, D043)** : au test, le couple [Charge écrasante] + charge de cavalerie / [Poursuite] s'est révélé être une boucherie (l'Aurige de Khand et les Cataphractaires orientaux ont fait 4 pertes sur 6 à eux deux). [Charge écrasante] est **retirée de tous les profils de la V1** — Garde du roi à cheval (Rohan) ; Aurige de Khand ; Troll du Mordor ; Cataphractaires orientaux (Easterling). La règle reste au glossaire mais **n'est plus assignée en V1** ; l'effet de choc de masse est réservé aux grandes créatures via la règle d'impact dédiée du Mûmakil (Phase 2), distincte de [Charge écrasante].
+> 🔄 **Historique** — **Assignée D029** (Garde du roi à cheval, Aurige de Khand, Troll du Mordor) sous une forme générique « Couronne = touche d'éclaboussure ». **Retirée de toute la V1 le 2026-07-25 (Playtest #1, D043)** : le couple [Charge écrasante] + charge/[Poursuite] avait causé 4 pertes sur 6. **Refondue le 2026-07-27 (D054)** en règle d'impact dédiée à la seule grande créature, en phase de mouvement et sans contre-attaque — exactement l'usage « choc de masse réservé aux grandes créatures » annoncé lors du retrait.
 
 ---
 
@@ -257,11 +254,21 @@ Lorsque cette unité **attaque**, la cible ne peut pas la **contre-attaquer** �
 
 ---
 
-### [Bête incontrôlable]
+### [Bête incontrôlable] *(refonte dédiée Mûmakil, D054)*
 
-Lorsque **tous les servants/guides** de cette unité sont éliminés, elle **ne peut plus se déplacer** mais peut encore attaquer normalement. Une **touche supplémentaire** l'élimine définitivement.
+> À son activation, **s'il est blessé**, lancez autant de dés que ses **PV restants** : sans aucune Couronne, posez un **marqueur Furie** et l'adversaire dirige immédiatement son déplacement. Tant qu'il porte une Furie, le camp adverse peut l'activer comme une de ses propres figurines. À la **fin de chaque tour**, le propriétaire (camp du Mal) relance **(PV restants + 1)** dés : une Couronne retire la Furie.
 
-> *Candidate pour le Mûmakil (risque d'affolement une fois les cornacs tués) — voir note en tête de document.*
+> 🎲 **Note de design** Auto-équilibrage par les PV : plus la bête est blessée, plus elle s'affole (à 1 PV → 1 dé, ~17 % de garder le contrôle) et moins elle se calme (à 1 PV → 2 dés de récupération, ~31 %). **Précisions (Emmanuel, D054)** : le Mûmakil **doit** être activé chaque tour ; on vérifie **avant** l'activation qui le contrôle ; le test de reprise est **toujours** lancé par le camp du Mal, **même quand le Bien pilote la bête** — activer un Mûmakil en Furie est donc un pari à double tranchant, il peut être repris à tout moment. Règle bespoke, non transférable (chiffrée dans l'étiquette 21 du Mûmakil).
+
+> 🔄 **Refondue le 2026-07-27 (D054)** : remplace l'ancienne version « une fois les guides tués, ne peut plus se déplacer » — jamais assignée — par la mécanique d'affolement/Furie ci-dessus.
+
+---
+
+### [Inamovible] *(nouvelle règle, D054)*
+
+> Cette unité ne recule jamais : elle ignore tout Drapeau ou résultat de retraite qui la viserait.
+
+> 🎲 **Note de design** Équivaut à un [Inébranlable] absolu (∞). **Coût forfaitaire : 3 points** (catégorie Défensif) — seule des trois règles du Mûmakil à recevoir un forfait transférable, car c'est la seule susceptible de resservir (grandes créatures, machines de guerre ancrées). Première assignation : Mûmakil (`02 - Factions/Harad.md`). Non testée.
 
 ---
 
@@ -448,8 +455,8 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Arme de jet X]** | Offensif — Mêlée | Le tour où l'unité charge : jusqu'à X faces Cible comptent comme touches |
 | **[Arme Lourde X]** | Offensif — Mêlée | Relancer X dés après le lancer |
 | **[Armure X]** | Défensif | Retire X faces Épée des attaques de mêlée reçues |
-| **[Bête incontrôlable]** | Offensif — Distance | Sans guides : ne bouge plus, 1 touche pour éliminer |
-| **[Charge écrasante]** | Offensif — Mêlée | Si déplacé ce tour : Couronne → touche sur unité adjacente *(non assignée en V1 depuis le Playtest #1, D043)* |
+| **[Bête incontrôlable]** *(bespoke Mûmakil)* | Moral | Blessé : test de contrôle par PV restants ; échec → marqueur Furie, l'adversaire le dirige |
+| **[Charge écrasante]** *(bespoke Mûmakil, refonte D054)* | Offensif — Mêlée | Charge de 2 hex en phase de mouvement : attaque 4 dés (Couronne = touche) chaque unité du trajet, sans contre-attaque |
 | **[Déploiement avancé]** | Manœuvre | Repositionnement unique avant le tour 1, jusqu'à sa valeur de Mouvement, sans finir au contact ennemi *(retirée de la V1, D047 — non assignée)* |
 | **[Prise de flanc]** | Soutien | +1 dé aux attaques des autres unités amies contre une unité ennemie adjacente à celle-ci |
 | **[Double Tir]** | Offensif — Distance | Seconde attaque si non déplacé ce tour *(assignée : Cohorte d'archers orientaux, Easterling)* |
@@ -459,6 +466,7 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Immunisé au feu]** | Défensif | Ignore les touches de [Souffle de feu] |
 | **[Immunisé au poison]** | Défensif | Ignore les touches de [Poison] |
 | **[Inébranlable X]** | Défensif | Ignore X résultats de retraite par attaque reçue |
+| **[Inamovible]** *(nouvelle, D054)* | Défensif | Ne recule jamais (ignore tout Drapeau/retraite) — coût 3 forfaitaire |
 | **[Martyre]** | Offensif — Mêlée | Sacrifier 1 fig. pour convertir 1 Couronne en touche |
 | **[Meute X]** | Manœuvre | X PV par figurine — Faible à 1 figurine restante |
 | **[Mobilité X]** | Manœuvre | Déplacement supplémentaire de X hex après l'attaque |

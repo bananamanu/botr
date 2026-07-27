@@ -81,6 +81,7 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 |---|---|---|
 | [Armure X] | 2 × X | Défensif |
 | [Inébranlable X] | 2 × X | Défensif |
+| [Inamovible] | 3 *(forfaitaire)* | Défensif *(ne recule jamais = [Inébranlable ∞] — nouvelle règle D054, seule règle transférable des trois du Mûmakil ; non testée)* |
 | [Protection X] | 1 × X | Défensif *(déjà porté par le terrain la plupart du temps)* |
 | [Mur de bouclier] | 1 *(forfaitaire)* | Défensif *(version conditionnelle-à-la-formation de [Protection 1] — provisoire, non testée)* |
 | [Immunisé au poison/feu] | 1 | Défensif *(rare, situationnel)* |
@@ -88,7 +89,7 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 | [Perforant X] | 2 × X | Offensif — Distance |
 | [Réception de charge] | 2 | Offensif — Mêlée |
 | [Férocité] | 1 | Offensif — Mêlée *(situationnel : seulement en contre-attaque)* |
-| [Charge écrasante] | 2 | Offensif — Mêlée |
+| [Charge écrasante] | *bespoke* | Offensif — Mêlée *(refonte dédiée Mûmakil D054 — non transférable ; absorbée dans l'étiquette 21 pts du Mûmakil)* |
 | [Archer en mêlée] | 2 | Offensif — Mêlée |
 | [Martyre] | 1 | Offensif — Mêlée |
 | [Double Tir] | 3 | Offensif — Distance *(quasi une attaque complète en plus)* |
@@ -101,7 +102,7 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 | [Vigilant] | 2 *(forfaitaire)* | Offensif — Mêlée *(la cible de cette unité ne peut pas la contre-attaquer — nouvelle règle, D050, provisoire, non testée)* |
 | [Terrain favori : X] | 1 | Manœuvre |
 | [Rechargement] | −2 | Manœuvre *(malus — restreint l'unité)* |
-| [Bête incontrôlable] | −1 | Manœuvre *(malus — risque propre au Mûmakil)* |
+| [Bête incontrôlable] | *bespoke* | Moral *(refonte Furie D054 — non transférable ; absorbée dans l'étiquette 21 pts du Mûmakil)* |
 | [Meute X] | +1 par PV supplémentaire accordé | Manœuvre |
 | [Horde] | 3 *(forfaitaire)* | Mixte — Offensif + Défensif *(+1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; provisoire, non testé)* |
 | [Peur X] | 2 × X | Moral *(provisoire, non testé — voir note ci-dessous)* |
