@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Factions/Rohan.md",
+                "file": "02 - Factions/Mordor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rohan"
+              "title": "Mordor"
             }
           }
         ]
@@ -185,25 +185,29 @@
   },
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
+    "06 - Images/cartes unités/uruk_hai_mordor-page001.png",
+    "06 - Images/uruk_hai_mordor.sla.3658",
+    "06 - Images/uruk_hai_mordor.sla.3397",
+    "06 - Images/uruk_hai_mordor.sla",
+    "06 - Images/uruk_hai_mordor.sla.3313",
+    "02 - Factions/Rohan.md",
+    "06 - Images/uruk_hai_mordor.png",
+    "06 - Images/cartes unités/cavalier_royal_rohan-page001.png",
+    "06 - Images/cavalier_royal_rohan.sla.3132",
+    "06 - Images/cavalier_royal_rohan_autosave_27_07_2026_11_53.sla",
+    "06 - Images/cavalier_royal_rohan_autosave_27_07_2026_11_53.sla.3101",
+    "06 - Images/chevalier_dol_amroth.sla.3061",
+    "06 - Images/garde_royal_a_cheval.png",
+    "06 - Images/cavalier_royal_rohan.sla",
+    "06 - Images/cavalier_royal_rohan.sla.2731",
     "02 - Factions/Harad.md",
     "02 - Factions/Mordor.md",
-    "06 - Images/eclaireur_rohan_autosave_27_07_2026_08_51.sla",
-    "06 - Images/eclaireur_rohan_autosave_27_07_2026_08_51.sla.2228",
-    "02 - Factions/Rohan.md",
     "01 - Règles/Regles_Speciales.md",
-    "06 - Images/archer_orque_mordor.sla.1786",
     "06 - Images/cartes unités/archer_orque_mordor-page001.png",
-    "06 - Images/archer_orque_mordor.sla.203",
-    "06 - Images/archer_orque_mordor_autosave_27_07_2026_08_16.sla",
-    "06 - Images/archer_orque_mordor_autosave_27_07_2026_08_16.sla.151",
-    "06 - Images/eclaireur_rohan.sla.137",
     "06 - Images/archer_orque.png",
-    "06 - Images/archer_orque_mordor.sla",
     "05 - Playtest/Playtest1b_Addendum.md",
-    "06 - Images/orque_mordor.sla.4268",
     "06 - Images/cartes unités/orque_mordor-page001.png",
     "06 - Images/guerrier_orque.png",
-    "06 - Images/orque_mordor.sla",
     "05 - Playtest/Playtest1_Compte-rendu.md",
     "03 - Scénarios/Playtest1_Avant-garde_sur_le_Pelennor.md",
     "02 - Factions/Gondor_et_Fiefs.md",
@@ -214,9 +218,6 @@
     "06 - Images/cartes unités/guerrier_rohan-page001.png",
     "06 - Images/guerrier_rohan.png",
     "06 - Images/cartes unités/archer_rohan-page001.png",
-    "06 - Images/archer_rohan.png",
-    "06 - Images/cartes unités/eclaireur_rohan-page001.png",
-    "06 - Images/eclaireur_rohan.png",
     "Troll_.md",
     "00 - META/Document_de_cadrage.md",
     "04 - Composants/Cartes_Commandement.md",
@@ -229,7 +230,6 @@
     "00 - META/Templates/Tpl faction.md",
     "01 - Règles/Terrain.md",
     "05 - Playtest/BdVM_cloture_phase1.md",
-    "03 - Scénarios/BdVM_playtest1.md",
-    "02 - Factions/BdVM_Empire_Unites.md"
+    "03 - Scénarios/BdVM_playtest1.md"
   ]
 }

@@ -123,6 +123,7 @@ version: "0.6"
 ---
 
 ### 5. Bande d'uruk-hai du Mordor — *validée*
+![[uruk_hai_mordor-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|

@@ -141,6 +141,7 @@ version: "1.3"
 ---
 
 ### 5. Gardes royaux à cheval
+![[cavalier_royal_rohan-page001.png]]
 
 |Type|Combat|Mouvement|Attaque|Portée|PV|**Points**|
 |---|---|---|---|---|---|---|
