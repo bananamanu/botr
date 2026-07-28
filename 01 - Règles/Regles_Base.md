@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-27"
+date_maj: "2026-07-28"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.4"
+version: "0.5"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -456,7 +456,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
-| **[Férocité]** | Contre-attaque avant résolution des retraites |
+| **[Férocité]** | Contre-attaque même en cas de recul forcé, puis recule normalement |
 
 ---
 
@@ -472,3 +472,5 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.2 — Phase 1 — 2026-07-18. [Massif] retirée, commandement/terrain Pelennor clarifiés. Non testé.*
 
 *Version : 0.3 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (D041, `[[Playtest1_Compte-rendu]]`) : §9.2 réécrite — recul façon Memoir '44 (toujours vers le bord ami, le joueur qui recule choisit l'hexagone) en remplacement de la retraite directionnelle C&C. §9.3 (obstacles) reformulée en conséquence.*
+
+*Version : 0.5 — Phase 1 — 2026-07-28. Correction du récapitulatif : [Férocité] permet à l'unité de contre-attaquer même forcée de reculer (elle recule ensuite normalement), et non « avant les retraites adverses » comme écrit précédemment (D057, voir [[Regles_Speciales]]).*

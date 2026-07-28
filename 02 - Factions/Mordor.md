@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "valide"
-date_maj: "2026-07-27"
+date_maj: "2026-07-28"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/valide"]
-version: "0.6"
+version: "0.7"
 ---
 
 # Mordor — Profils d'unités
@@ -114,7 +114,7 @@ version: "0.6"
 
 **Règles spéciales :** [Férocité]
 
-**Note narrative :** des loups sauvages montés par des orques, qui déchirent et mordent sans lâcher prise. [Férocité] (la contre-attaque se résout avant les retraites adverses) traduit la bête qui claque des mâchoires même sous les coups. Volontairement en retrait de l'Éored du Rohan : la mobilité reste le domaine réservé du Rohan — les wargs sont *sauvages*, pas manœuvriers.
+**Note narrative :** des loups sauvages montés par des orques, qui déchirent et mordent sans lâcher prise. [Férocité] (l'unité contre-attaque même si elle est forcée de reculer, puis recule quand même) traduit la bête qui claque des mâchoires une dernière fois avant de rompre. Volontairement en retrait de l'Éored du Rohan : la mobilité reste le domaine réservé du Rohan — les wargs sont *sauvages*, pas manœuvriers.
 
 > 🎲 **Note de design** Pas de [Horde] : D032 la réserve aux Orcs (le warg est une bête), et la Cavalerie à 3 PV perdrait sa première figurine trop vite pour qu'un bonus « à pleine force » existe. [Horde] est structurellement une règle d'infanterie à 6 PV.
 
@@ -217,3 +217,5 @@ Tout est validé pour lancer le Playtest #1. Rien ne bloque, mais deux choses à
 *Version : 0.4 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`). Troll du Mordor : [Charge écrasante] remplacée par [Arme Lourde 2] (D043 — [Charge écrasante] retirée de toute la V1) ; 7 pts inchangé. Aucun autre profil du roster touché ; les coûts de [Horde] et [Peur X] restent non éprouvés (partie étranglée au centre).*
 
 *Version : 0.5 — Phase 1 — 2026-07-26. Troll du Mordor : [Arme Lourde 2] ramenée à **[Arme Lourde 1]** (D048, arbitrage d'Emmanuel) — 7 pts inchangé.*
+
+*Version : 0.7 — Phase 1 — 2026-07-28. Correction de la note narrative de la Meute de cavaliers wargs : l'explication de [Férocité] entre parenthèses inversait le sujet du recul concerné (D057, voir [[Regles_Speciales]]). Aucun changement de règle ni de coût.*

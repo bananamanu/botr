@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-26"
+date_maj: "2026-07-28"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.9"
+version: "0.10"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -71,7 +71,7 @@ Cette compression ramène le roster Gondor sur une échelle **4 à 8**, quasimen
 
 Chaque règle spéciale, quelle qu'elle soit, coûte **2 points** ; une règle avec valeur X coûte **2 × X**.
 
-Avantages : aucune table à consulter, cohérent avec le principe 1 du [[Document de cadrage]] (mémorisable). Inconvénient : ne distingue pas une règle à fort impact ([Poursuite X], quasi une attaque supplémentaire) d'une règle très situationnelle ([Férocité], qui ne s'active qu'en contre-attaque et seulement si l'adversaire n'est pas déjà éliminé) — au prix identique, [Poursuite X] devient systématiquement le meilleur choix, ce qui pousse toutes les armées vers les mêmes règles.
+Avantages : aucune table à consulter, cohérent avec le principe 1 du [[Document de cadrage]] (mémorisable). Inconvénient : ne distingue pas une règle à fort impact ([Poursuite X], quasi une attaque supplémentaire) d'une règle très situationnelle ([Férocité], qui ne change rien tant que l'unité n'est pas contrainte de reculer) — au prix identique, [Poursuite X] devient systématiquement le meilleur choix, ce qui pousse toutes les armées vers les mêmes règles.
 
 ### Option B — Coût par catégorie ✅ retenue (validée par Emmanuel, 2026-07-19)
 
@@ -88,7 +88,7 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 | [Arme Lourde X] | 2 × X | Offensif — Mêlée |
 | [Perforant X] | 2 × X | Offensif — Distance |
 | [Réception de charge] | 2 | Offensif — Mêlée |
-| [Férocité] | 1 | Offensif — Mêlée *(situationnel : seulement en contre-attaque)* |
+| [Férocité] | 1 | Offensif — Mêlée *(situationnel : ne s'applique que si l'unité est forcée de reculer suite à l'attaque subie)* |
 | [Charge écrasante] | *bespoke* | Offensif — Mêlée *(refonte dédiée Mûmakil D054 — non transférable ; absorbée dans l'étiquette 21 pts du Mûmakil)* |
 | [Archer en mêlée] | 2 | Offensif — Mêlée |
 | [Martyre] | 1 | Offensif — Mêlée |
@@ -107,7 +107,7 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 | [Horde] | 3 *(forfaitaire)* | Mixte — Offensif + Défensif *(+1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; provisoire, non testé)* |
 | [Peur X] | 2 × X | Moral *(provisoire, non testé — voir note ci-dessous)* |
 
-> 🎲 **Note de design** L'écart entre [Férocité] (1 point) et [Poursuite X] (3×X points) n'est pas arbitraire : les deux appartiennent à la même catégorie "Offensif — Mêlée / Manœuvre" mais [Férocité] ne s'active que dans une fenêtre étroite (contre-attaque, adversaire pas encore éliminé), alors que [Poursuite X] offre une action quasi-garantie chaque fois que l'unité charge. Un coût forfaitaire unique gommerait cet écart et pousserait toutes les listes vers les mêmes règles — c'est l'argument principal en faveur de l'Option B.
+> 🎲 **Note de design** L'écart entre [Férocité] (1 point) et [Poursuite X] (3×X points) n'est pas arbitraire : les deux appartiennent à la même catégorie "Offensif — Mêlée / Manœuvre" mais [Férocité] ne change rien la plupart du temps — elle ne s'active que dans la fenêtre étroite où l'unité vient justement d'être forcée de reculer (sans elle, l'unité ne pourrait pas contre-attaquer du tout dans ce cas) — alors que [Poursuite X] offre une action quasi-garantie chaque fois que l'unité charge. Un coût forfaitaire unique gommerait cet écart et pousserait toutes les listes vers les mêmes règles — c'est l'argument principal en faveur de l'Option B.
 >
 > ⚠️ **[Déploiement avancé] — coût provisoire (2026-07-19)** : première règle entièrement nouvelle depuis la validation du barème (créée pour l'Éored d'éclaireur, Rohan). Fixée à 2 points forfaitaires par analogie avec les autres règles de manœuvre à effet ponctuel ([Terrain favori] = 1, [Réception de charge] = 2), sans référence testée puisqu'aucune règle de « repositionnement pré-bataille » n'existait avant. À revoir après un premier usage à la table (voir `02 - Factions/Rohan.md` §5.5).
 >
@@ -217,3 +217,5 @@ Les rosters Gondor, Rohan, Khand, Mordor et Easterling étant tous rédigés et 
 *Version : 0.8 — Phase 1 — 2026-07-26. [Déploiement avancé] marquée retirée de la V1 (D047, jamais testée) ; nouvelle règle [Flanking] ajoutée à la table (3 pts forfaitaires, catégorie Soutien, D047), première assignation Éored d'éclaireur (Rohan). Coûts d'Aurige de Khand (6 pts) et Cataphractaires orientaux (6 pts) déjà répercutés par la logique de compression — pas de retouche de barème nécessaire, seulement de statut de règle.*
 
 *Version : 0.9 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'Éored de cavalier du Rohan (profil 1), qui passe de 6 à **7 pts**. Nouvelle règle **[Vigilant]** ajoutée (2 pts forfaitaires, catégorie Offensif — Mêlée, D050), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Prise de flanc], coût inchangé (4 pts).*
+
+*Version : 0.10 — Phase 1 — 2026-07-28. Correction des notes de justification de coût de [Férocité] (D057) : la règle est situationnelle parce qu'elle ne s'applique que si l'unité est elle-même forcée de reculer (sans elle, la contre-attaque serait impossible dans ce cas précis) — et non « seulement en contre-attaque si l'adversaire n'est pas éliminé » comme écrit précédemment. Coût inchangé (1 pt).*

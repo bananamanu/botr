@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "meta"
 phase: "1"
 statut: "en-cours"
-date_maj: "2026-07-27"
+date_maj: "2026-07-28"
 tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.17"
+version: "1.18"
 ---
 
 # Document de cadrage du projet
@@ -285,6 +285,7 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 | 054 | 2026-07-27 | **Troll du Mordor : PV 5→4, coût maintenu à 7 pts** (prime de pièce signature assumée, +1 au-dessus du calcul brut qui donnerait 6) | Le Troll a fini le Playtest #1b à 3/5 PV sans jamais tomber. Arbitrage d'Emmanuel : réduire l'encaissement plutôt que le prix, cohérent avec son statut déjà dérogatoire (seul profil de la V1 à dépasser 2 règles spéciales, D023). Voir `02 - Factions/Mordor.md`. |
 | 055 | 2026-07-27 | **Rangers du Gondor : ajout de [Mobilité 1]**, coût inchangé à 4 pts | Profil jugé en retrait par rapport au reste de la famille Rangers (Ithilien, Racine Noire). Recalcul brut 15→16, `Points_finaux` reste à 4 (effet de palier « gratuit », même phénomène que l'Éored d'éclaireur ou les Archers liges, voir §2bis de [[Regles_Points]]). Dominance stricte préservée face à Rangers d'Ithilien (4 vs 5 pts, D025). Voir `02 - Factions/Gondor_et_Fiefs.md`. |
 | 056 | 2026-07-27 | **Clarification de [Mobilité X]** : le bonus exige d'avoir effectué une attaque ce tour (déjà écrit ainsi, jamais formalisé pour la table) | Question posée par Emmanuel au Playtest #1b. Confirmé par le texte du glossaire : sans attaque, l'unité se déplace de son Mouvement normal, sans bonus. Modélise le tir-puis-décroche (identité harcèlement), pas une mobilité brute. Formule ajoutée à l'aide de jeu : « Mobilité = tu frappes, puis tu décroches. Pas d'attaque, pas de bonus. » Voir [[Regles_Speciales]]. |
+| 057 | 2026-07-28 | **Correction de [Férocité]** : la règle permet à l'unité de contre-attaquer même si l'attaque qu'elle subit la force à reculer (elle résout d'abord sa contre-attaque, puis recule normalement) — et non « avant que l'adversaire ne résout ses retraites » comme écrit précédemment. Clause « retraite annulée si l'adversaire est éliminé » retirée (non confirmée) | Erreur de sujet identifiée par Emmanuel puis vérifiée contre la règle *Ferocity* de *BattleLore : Seconde Édition* (FFG, portée par l'unité Obscene) : elle lève l'interdiction normale de contre-attaquer pour une unité qui doit reculer, elle ne touche pas au recul de l'adversaire. Coût inchangé (1 pt) — la situation d'activation reste aussi étroite qu'avant, juste correctement décrite. Corrigé dans [[Regles_Speciales]], [[Regles_Base]], [[Regles_Points]] et la note narrative de la Meute de cavaliers wargs (`02 - Factions/Mordor.md`). Aucun profil ne change de coût. |
 
 ---
 
@@ -293,4 +294,5 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 *Version : 1.15 — Phase 1 — 2026-07-26. Ajout D047 (Éored d'éclaireur : retour à 2 dés, retrait de [Déploiement avancé], nouvelle règle [Flanking]) et D048 (Troll du Mordor : [Arme Lourde 2] → [Arme Lourde 1]). Recul Memoir '44 (D041) formalisé dans [[Regles_Base]] (v0.3).*
 *Version : 1.16 — Phase 1 — 2026-07-26. Ajout D049 (« Flanking » renommée [Prise de flanc], réassignée à l'Éored de cavalier du Rohan, 6→7 pts) et D050 (nouvelle règle [Vigilant], assignée à l'Éored d'éclaireur en remplacement). Les deux mots-clés d'origine des Riverwatch Riders (BattleLore V2) sont désormais répartis sur deux unités distinctes.*
 *Version : 1.17 — Phase 1 — 2026-07-27. **Playtest #1b joué** (`[[Playtest1b_Addendum]]`) — ajout D051-D056 : résultat 6–4 Bien (quasi 6–6), équilibre validé ; jetons activation/cible adoptés (D052) ; [Horde], [Armure 2], [Mur de bouclier] validés, [Arme de jet X]/[Plateforme de tir X] éprouvées (D053) ; Troll (PV 4, 7 pts, D054) et Rangers du Gondor (+[Mobilité 1], 4 pts, D055) ajustés ; [Mobilité X] clarifiée comme dépendante de l'attaque (D056).*
+*Version : 1.18 — Phase 1 — 2026-07-28. Ajout D057 : correction de [Férocité], qui inversait le sujet du recul concerné (la règle protège le recul de sa propre unité, pas celui de l'adversaire). Aucun impact sur les coûts.*
 *Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique.*

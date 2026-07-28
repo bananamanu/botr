@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-27"
+date_maj: "2026-07-28"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.12"
+version: "0.13"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -206,12 +206,15 @@ Après le lancer de dés, le joueur peut **relancer X dés** de son choix. Chaqu
 
 ### [Férocité]
 
-Lorsque cette unité effectue une **contre-attaque**, celle-ci est résolue **avant** que l'adversaire ne résout ses retraites. Si l'adversaire est éliminé par la contre-attaque, ses retraites ne sont pas résolues.
+Cette unité peut effectuer sa contre-attaque **même si l'attaque qu'elle vient de subir la force à reculer** : elle résout d'abord sa contre-attaque, puis recule normalement (le recul n'est pas annulé). En temps normal, une unité forcée de reculer ne peut pas contre-attaquer (elle ne remplit plus la condition « restée sur son hexagone de départ », voir §7.6) — [Férocité] est l'exception qui casse cette règle.
 
 > 💡 **Exemple de jeu**
-> Une unité attaque une unité [Férocité] : 4 Drapeaux. La cible contre-attaque immédiatement ([Férocité]) avant de résoudre sa retraite. Si elle élimine l'attaquant, les Drapeaux ne sont plus appliqués.
+> Une unité attaque une unité [Férocité] : 3 Épées + 1 Drapeau. La cible encaisse les touches et devrait normalement reculer d'un hexagone sans pouvoir contre-attaquer (elle ne resterait pas sur sa case de départ). Grâce à [Férocité], elle contre-attaque quand même, immédiatement, puis résout son recul d'un hexagone comme prévu.
 
-> 🔄 **Assignée — 2026-07-19** : Vétérans d'Osgiliath, Compagnie Grise tant qu'Elrohir et Elladan sont présents (Gondor et fiefs). **Mordor** (`02 - Factions/Mordor.md`) : Meute de cavaliers wargs, Bande d'uruk-hai — la cruauté sauvage ou disciplinée qui riposte même sous les coups.
+> ⚠️ **Correction — 2026-07-28 (D057)**
+> Le texte précédent de cette règle (« la contre-attaque est résolue avant que l'adversaire ne résout ses retraites ») inversait le sujet : ce n'est pas le recul de l'**adversaire** qui est concerné, mais le recul de **l'unité qui possède [Férocité] elle-même**. Vérification faite sur la règle *Ferocity* de *BattleLore : Seconde Édition* (Fantasy Flight Games, portée par l'unité Obscene) : elle permet à une unité normalement empêchée de contre-attaquer parce qu'elle doit reculer de le faire quand même, avant de reculer. La clause « si l'adversaire est éliminé, ses retraites ne sont pas résolues » est retirée : elle ne correspond à aucune règle confirmée de la source, et complexifiait sans bénéfice de jeu identifié.
+
+> 🔄 **Assignée — 2026-07-19** : Vétérans d'Osgiliath, Compagnie Grise tant qu'Elrohir et Elladan sont présents (Gondor et fiefs). **Mordor** (`02 - Factions/Mordor.md`) : Meute de cavaliers wargs, Bande d'uruk-hai. **Rohan** (`02 - Factions/Rohan.md`) : Garde du Roi, Helmingas de Grimbolg — la cruauté sauvage ou disciplinée qui riposte même en pleine déroute.
 
 ---
 
@@ -460,7 +463,7 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Déploiement avancé]** | Manœuvre | Repositionnement unique avant le tour 1, jusqu'à sa valeur de Mouvement, sans finir au contact ennemi *(retirée de la V1, D047 — non assignée)* |
 | **[Prise de flanc]** | Soutien | +1 dé aux attaques des autres unités amies contre une unité ennemie adjacente à celle-ci |
 | **[Double Tir]** | Offensif — Distance | Seconde attaque si non déplacé ce tour *(assignée : Cohorte d'archers orientaux, Easterling)* |
-| **[Férocité]** | Offensif — Mêlée | Contre-attaque résolue avant les retraites adverses |
+| **[Férocité]** | Offensif — Mêlée | Contre-attaque même en cas de recul forcé, puis recule normalement |
 | **[Horde]** | Mixte — Offensif + Défensif | +1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; perdus définitivement à la 1ère perte |
 | **[Howdah]** | Offensif — Distance | Attaque à distance en plus de la mêlée — 2 dés (1–3) + [Poison] |
 | **[Immunisé au feu]** | Défensif | Ignore les touches de [Souffle de feu] |
@@ -514,3 +517,4 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 *0.9 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`) : deux règles neuves — [Arme de jet X] (D044, Milice lige) et [Plateforme de tir X] (D045, Aurige de Khand ; [Howdah] devient son cas particulier + [Poison]). [Charge écrasante] retirée de tous les profils de la V1 (D043), conservée au glossaire mais non assignée. [Arme Lourde 2] assignée au Troll du Mordor (remplace [Charge écrasante]). Récapitulatif alphabétique et priorité de résolution étendus en conséquence.*
 *0.10 — Phase 1 — 2026-07-26. Retour sur deux points : [Arme Lourde 2] du Troll du Mordor ramenée à **[Arme Lourde 1]** (D048). Nouvelle section « Règles de soutien » créée pour accueillir **[Flanking]** (D047, adaptée des Riverwatch Riders de BattleLore V2), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Déploiement avancé], retirée de la V1 (jamais éprouvée). Table des matières et récapitulatif alphabétique mis à jour.*
 *0.11 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'**Éored de cavalier du Rohan** (profil 1, au lieu de l'Éored d'éclaireur). Nouvelle règle **[Vigilant]** créée (D050, également adaptée de BattleLore V2 — les deux mots-clés « Vigilant Flanking » de l'unité d'origine sont désormais séparés entre deux unités du Rohan) et assignée à l'Éored d'éclaireur en remplacement de [Prise de flanc]. Récapitulatif alphabétique mis à jour.*
+*0.13 — Phase 1 — 2026-07-28. **Correction de [Férocité]** (D057) : le texte précédent inversait le sujet du recul concerné (« l'adversaire » au lieu de « cette unité elle-même »). Vérifiée contre la règle *Ferocity* de *BattleLore : Seconde Édition* (FFG, unité Obscene) : elle permet à une unité forcée de reculer de contre-attaquer quand même avant de reculer — elle ne « saute » pas le recul, elle contre-attaque juste avant. Clause « retraite annulée si l'adversaire est éliminé » retirée (non confirmée dans la source). Corrigée également dans [[Regles_Base]] (récapitulatif) et dans la note narrative de la Meute de cavaliers wargs (`02 - Factions/Mordor.md`).*
