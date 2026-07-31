@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-28"
+date_maj: "2026-07-29"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.10"
+version: "0.11"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -116,6 +116,8 @@ Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un co�
 > ⚠️ **[Prise de flanc] — coût provisoire (2026-07-26, D047, renommée/réassignée D049)** : nouvelle règle (catégorie Soutien, créée en dehors des catégories existantes — elle ne modifie pas les dés de sa propre unité mais ceux des unités amies). Fixée à 3 points forfaitaires par analogie avec [Poursuite 1] (même ordre de grandeur d'impact potentiel, mais partagé entre plusieurs unités plutôt que concentré sur une seule), sans référence testée. Créée sous le nom « Flanking » pour l'Éored d'éclaireur, **renommée et réassignée à l'Éored de cavalier du Rohan** (profil 1, D049) — l'éclaireur reçoit [Vigilant] à la place.
 >
 > ⚠️ **[Vigilant] — coût provisoire (2026-07-26, D050)** : nouvelle règle (catégorie Offensif — Mêlée). Fixée à 2 points forfaitaires par analogie avec [Réception de charge] (même catégorie, effet de contre-attaque). Première assignation : Éored d'éclaireur (Rohan), en remplacement de [Prise de flanc]. Non testée.
+>
+> ⚠️ **[Réception de charge] — coût maintenu à titre provisoire après refonte (2026-07-29, D058)** : la règle est devenue inconditionnelle (+1 dé en contre-attaque en toutes circonstances, au lieu de seulement contre un adversaire qui vient de se déplacer — voir [[Regles_Speciales]]). Mécaniquement plus forte que l'ancienne version, dont le prix de 2 pts avait été calibré sur la table Gondor (Hommes d'armes de Dol Amroth) et Easterling (Cohorte de piquiers orientaux) sous la forme conditionnelle. Coût laissé à 2 pts en l'absence de test de la version inconditionnelle — à revoir en priorité après le Playtest #2, où elle équipe pour la première fois plusieurs profils Harad (Lanciers du Harad, Gardes serpents).
 >
 > ⚠️ **[Horde] — coût provisoire (2026-07-19, D032)** : première règle à cumuler un effet offensif et un effet défensif sous une seule condition (« indemne »), en dehors des catégories existantes. Par décomposition : le +1 dé s'apparente à [Réception de charge] (2 pts, bonus de dé conditionnel) et [Inébranlable 1] vaut 2 pts en continu dans la table Défensif — la somme brute des deux donnerait 4, mais ici les deux bonus s'éteignent **définitivement** à la toute première perte, une fenêtre plus courte que toute autre règle situationnelle du glossaire. Fixé à **3 points forfaitaires** (arbitrage d'Emmanuel entre 2/3/4 proposés) plutôt que la somme brute des composants. **Première assignation — 2026-07-20** : Bande d'orques du Mordor et Bande d'orques du Morannon (`02 - Factions/Mordor.md`). Toujours non testé en partie réelle — à revoir après le Playtest #1.
 >

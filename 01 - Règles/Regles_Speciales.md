@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-28"
+date_maj: "2026-07-29"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.13"
+version: "0.14"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -231,12 +231,14 @@ Lorsque cette unité attaque, le joueur peut **sacrifier 1 figurine** de l'unit�
 
 ### [Réception de charge]
 
-Lorsque cette unité effectue une **contre-attaque** contre une unité qui s'est **déplacée ce tour**, elle lance **1 dé supplémentaire**.
+Lorsque cette unité effectue une **contre-attaque**, elle lance **1 dé supplémentaire** — en toutes circonstances, que l'attaquant se soit déplacé ce tour ou non.
 
 > 💡 **Exemple de jeu**
-> Une Cavalerie avance de 2 hexagones et charge une unité [Réception de charge] : 3 + 1 = **4 dés** en contre-attaque. Si la Cavalerie n'avait pas bougé ce tour, la cible n'aurait que 3 dés.
+> Une Cohorte de piquiers orientaux [Réception de charge] est attaquée par une Infanterie immobile depuis le début du tour : la Cohorte contre-attaque quand même à 3 + 1 = **4 dés**. Le bonus n'est plus réservé aux cibles qui viennent de charger.
 
-> 🔄 **Assignée — 2026-07-19** : Hommes d'armes de Dol Amroth (Gondor et fiefs), seule troupe de piquiers du peuple (D021 du [[Document de cadrage]] — assignée par équipement constaté sur la figurine, pas par peuple entier). Aucune unité du Rohan, de Khand ou de Mordor n'en est équipée à ce jour ; reste ouverte pour un futur profil de piquiers.
+> 🔄 **Assignée — 2026-07-19** : Hommes d'armes de Dol Amroth (Gondor et fiefs), seule troupe de piquiers du peuple (D021 du [[Document de cadrage]] — assignée par équipement constaté sur la figurine, pas par peuple entier). Cohorte de piquiers orientaux (Easterling, D038).
+>
+> 🔄 **Refondue — 2026-07-29 (D058)** : la condition « adversaire déplacé ce tour » est retirée — le bonus s'applique désormais à **toute** contre-attaque de l'unité, inconditionnellement. Décidé à l'ouverture du roster Harad complet : la règle passe de « réception de charge » (bracer contre un choc) à un bonus de contre-attaque générique, ce qui explique son extension à des porteurs non-piquiers (Lanciers du Harad, Gardes serpents — `02 - Factions/Harad.md`). Le nom garde son intitulé historique mais ne décrit plus littéralement le déclencheur ; à surveiller si un nom plus générique s'impose après le Playtest #2. Coût inchangé à 2 pts forfaitaires dans [[Regles_Points]] — mais la version inconditionnelle est strictement plus forte que l'ancienne, donc **provisoire** : à réévaluer après un premier usage à la table sous cette forme.
 
 ---
 
@@ -481,7 +483,7 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 | **[Poursuite X]** | Manœuvre | Alternative à l'avance : jusqu'à X hex + attaque sup. |
 | **[Protection X]** | Défensif | Ignore X touches (terrain : bâtiments, fortifications) |
 | **[Rechargement]** | Manœuvre | Ne peut pas attaquer si déplacé ce tour |
-| **[Réception de charge]** | Offensif — Mêlée | +1 dé en contre-attaque si l'adversaire s'est déplacé ce tour |
+| **[Réception de charge]** | Offensif — Mêlée | +1 dé en contre-attaque, inconditionnellement |
 | **[Vigilant]** | Offensif — Mêlée | La cible de cette unité ne peut pas la contre-attaquer |
 | **[Souffle de feu]** | Offensif — Distance | Couronne → 1 touche sup. (sauf [Immunisé au feu]) |
 | **[Terrain favori : X]** | Manœuvre | Ignore toutes les restrictions de mouvement et de combat du terrain X |
@@ -518,3 +520,4 @@ Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est co
 *0.10 — Phase 1 — 2026-07-26. Retour sur deux points : [Arme Lourde 2] du Troll du Mordor ramenée à **[Arme Lourde 1]** (D048). Nouvelle section « Règles de soutien » créée pour accueillir **[Flanking]** (D047, adaptée des Riverwatch Riders de BattleLore V2), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Déploiement avancé], retirée de la V1 (jamais éprouvée). Table des matières et récapitulatif alphabétique mis à jour.*
 *0.11 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'**Éored de cavalier du Rohan** (profil 1, au lieu de l'Éored d'éclaireur). Nouvelle règle **[Vigilant]** créée (D050, également adaptée de BattleLore V2 — les deux mots-clés « Vigilant Flanking » de l'unité d'origine sont désormais séparés entre deux unités du Rohan) et assignée à l'Éored d'éclaireur en remplacement de [Prise de flanc]. Récapitulatif alphabétique mis à jour.*
 *0.13 — Phase 1 — 2026-07-28. **Correction de [Férocité]** (D057) : le texte précédent inversait le sujet du recul concerné (« l'adversaire » au lieu de « cette unité elle-même »). Vérifiée contre la règle *Ferocity* de *BattleLore : Seconde Édition* (FFG, unité Obscene) : elle permet à une unité forcée de reculer de contre-attaquer quand même avant de reculer — elle ne « saute » pas le recul, elle contre-attaque juste avant. Clause « retraite annulée si l'adversaire est éliminé » retirée (non confirmée dans la source). Corrigée également dans [[Regles_Base]] (récapitulatif) et dans la note narrative de la Meute de cavaliers wargs (`02 - Factions/Mordor.md`).*
+*0.14 — Phase 1 — 2026-07-29. **[Réception de charge] refondue (D058)** : la condition « adversaire déplacé ce tour » est retirée — le bonus de +1 dé s'applique désormais à toute contre-attaque, inconditionnellement. Décidée à l'ouverture du roster Harad complet (`02 - Factions/Harad.md`), qui étend la règle à des porteurs non-piquiers (Lanciers du Harad, Gardes serpents, [Poison] compris — première assignation de [Poison] à des unités de mêlée). Coût provisoirement inchangé à 2 pts (voir [[Regles_Points]]) mais signalé à réévaluer. Récapitulatif alphabétique mis à jour.*

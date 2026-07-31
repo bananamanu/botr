@@ -25,7 +25,7 @@ version: "1.3"
 - **Mouvement** : 2 pour toute Infanterie, 3 pour toute Cavalerie **par défaut**, sauf mention contraire explicite dans le profil (D022 du [[Document de cadrage]]). Deux exceptions dans ce roster (depuis le Playtest #1) : Chevaliers à pied de Dol Amroth (Mouvement 1) et Chevaliers de Dol Amroth montés (Mouvement 2, cavalerie lourde, D046). Ces exceptions sont désormais thématiques — l'armure ralentit.
 - **Portée de tir** : 4 hexagones pour toutes les unités de tir (D020).
 - **Règles spéciales** : 0 à 2 par défaut pour les troupes standard/élite ; les unités légendaires peuvent en cumuler davantage (D023).
-- **[Réception de charge]** assignée par équipement constaté sur la figurine (troupes effectivement armées de piques), pas par peuple entier (D021) — pour Gondor, seuls les Hommes d'armes de Dol Amroth en sont équipés.
+- **[Réception de charge]** assignée par équipement constaté sur la figurine (troupes effectivement armées de piques), pas par peuple entier (D021) — pour Gondor, seuls les Hommes d'armes de Dol Amroth en sont équipés. *(Depuis D058, la règle a été refondue en bonus de contre-attaque inconditionnel et étendue à des porteurs non-piquiers chez Harad — la logique d'équipement de D021 reste vraie pour Gondor mais n'est plus une règle générale du glossaire, voir [[Regles_Speciales]].)*
 
 ---
 

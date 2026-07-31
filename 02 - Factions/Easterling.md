@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "valide"
-date_maj: "2026-07-25"
+date_maj: "2026-07-29"
 tags: [BdTdM, "type/faction", "peuple/easterling", "statut/valide"]
-version: "1.1"
+version: "1.2"
 ---
 
 # Easterling — Profils d'unités
@@ -33,12 +33,12 @@ version: "1.1"
 
 ## 1. Liste des troupes
 
-| # | Unité | Type | Combat | **Points** |
-|---|---|---|---|---|
-| 1 | Cohorte d'orientaux | Infanterie | Mêlée | **5** |
-| 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | **6** |
-| 3 | Cohorte d'archers orientaux | Infanterie | Tir | **4** |
-| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | **6** |
+| #   | Unité                         | Type       | Combat | **Points** |
+| --- | ----------------------------- | ---------- | ------ | ---------- |
+| 1   | Cohorte d'orientaux           | Infanterie | Mêlée  | **5**      |
+| 2   | Cohorte de piquiers orientaux | Infanterie | Mêlée  | **6**      |
+| 3   | Cohorte d'archers orientaux   | Infanterie | Tir    | **4**      |
+| 4   | Cataphractaires orientaux     | Cavalerie  | Mêlée  | **6**      |
 
 > 🎲 **Note de design — lecture rapide du roster**
 > La Cohorte d'orientaux (1) coûte exactement comme les Guerriers de Minas Tirith de Gondor (5 pts) — un joli miroir : les deux incarnent la ligne d'infanterie disciplinée de leur camp, l'une par armure inconditionnelle, l'autre par formation. La Cohorte d'archers (3) est le jumeau exact des Rangers du Gondor (même profil, [Double Tir], 4 pts) — deux lignes qui déversent leurs volées sans reculer plutôt que de harceler en mouvement (à l'inverse des archers mobiles de Rohan/Mordor). Les piquiers (2) coûtent plus cher que la ligne de base (6 vs 5) : troupes spécialisées anti-cavalerie, pas de la simple masse. Les Cataphractaires (4), ramenés à 6 pts au Playtest #1, sont à égalité avec les piquiers en tête du roster — le pendant lourd et lent de l'Éored du Rohan (et le jumeau maléfique des Chevaliers de Dol Amroth).
@@ -47,7 +47,8 @@ version: "1.1"
 
 ## 2. Profils détaillés
 
-### 1. Cohorte d'orientaux
+### 1. Cohorte de guerriers orientaux
+![[guerrier_orientaux-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
@@ -62,6 +63,7 @@ version: "1.1"
 ---
 
 ### 2. Cohorte de piquiers orientaux
+![[piquiers_orientaux-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
@@ -69,13 +71,14 @@ version: "1.1"
 
 **Règles spéciales :** [Réception de charge] + [Mur de bouclier]
 
-**Note narrative :** une compagnie de piquiers longs, postée pour briser les charges de cavalerie — [Réception de charge] : +1 dé en contre-attaque contre une unité qui vient de se déplacer. Comme leurs frères d'armes de la Cohorte, ils portent également le bouclier et referment le rang ([Mur de bouclier]). Deux règles qui racontent la même discipline sous deux formes : la lance tendue vers l'ennemi qui charge, le bouclier fermé contre celui qui frappe déjà au contact.
+**Note narrative :** une compagnie de piquiers longs, postée pour briser les charges de cavalerie — [Réception de charge] : +1 dé en contre-attaque, en toutes circonstances *(refondue en inconditionnelle depuis D058 — plus besoin que l'adversaire vienne de se déplacer)*. Comme leurs frères d'armes de la Cohorte, ils portent également le bouclier et referment le rang ([Mur de bouclier]). Deux règles qui racontent la même discipline sous deux formes : la lance tendue vers l'ennemi qui charge, le bouclier fermé contre celui qui frappe déjà au contact.
 
 > 🔗 **Voir aussi** [[Regles_Speciales]] — [Réception de charge] · [Mur de bouclier] (D037)
 
 ---
 
 ### 3. Cohorte d'archers orientaux
+![[archers_orientaux-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
@@ -90,6 +93,7 @@ version: "1.1"
 ---
 
 ### 4. Cataphractaires orientaux
+![[cataphractaires_orientaux-page001.png]]
 
 | Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|
@@ -151,3 +155,5 @@ Rien ne bloque le lancement du Playtest #1. À surveiller, même statut que [Hor
 *Version : 1.0 — Phase 1 — 2026-07-20. Roster validé et clos dès la première session (D038) : identité « miroir discipliné de Gondor » actée, nouvelle règle [Mur de bouclier] créée (D037), 4 profils chiffrés et validés sans repasse ultérieure. Prêt pour le Playtest #1 (trio suggéré : Cohorte + Archers + Cataphractaires, 16 pts).*
 
 *Version : 1.1 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`). Cataphractaires orientaux : retrait de [Charge écrasante] sans remplacement (D043 — règle retirée de toute la V1) ; coût 7 → 6 pts (D046). Le trio suggéré passe de 16 à 15 pts (parité avec Gondor). Le coût de [Mur de bouclier] (1 pt) reste non éprouvé (partie étranglée au centre).*
+
+*Version : 1.2 — Phase 1 — 2026-07-29. **[Réception de charge] refondue en inconditionnelle** (D058, voir [[Regles_Speciales]]) : la Cohorte de piquiers orientaux bénéficie désormais de +1 dé sur **toute** contre-attaque, plus seulement contre un adversaire qui vient de se déplacer. Note narrative corrigée en conséquence. Coût du profil inchangé (6 pts) ; le coût de la règle elle-même est signalé provisoire dans [[Regles_Points]].*
