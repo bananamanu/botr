@@ -3,14 +3,14 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-28"
+date_maj: "2026-08-03"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.5"
+version: "0.6"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
 
-> Ce document couvre les règles fondamentales de la Phase 1 : structure du tour, types d'unités, mouvement, combat, avance, poursuite et retraite. Les héros, la Peur/Terreur et les monstres avancés sont traités en Phase 2 (voir Document de cadrage §5.2 et §6). Premier brouillon à valider au Playtest #1.
+> Ce document couvre les règles fondamentales de la Phase 1 : structure du tour, types d'unités, mouvement, combat, avance, poursuite et retraite. Les héros, la Peur/Terreur et les monstres avancés sont traités en Phase 2 (voir Document de cadrage §5.2 et §6). **Refonte « taxonomie visuelle » (post-Playtest #2, D059/D060)** : l'identité d'une unité — classe, type, mode — se lit désormais sur son plateau, et les règles en découlent plutôt que d'être mémorisées profil par profil. Les règles spéciales intrinsèques par combinaison seront peuplées en P2 (tri du glossaire) ; le recalcul des coûts en P3.
 
 ---
 
@@ -44,84 +44,81 @@ Les règles de base couvrent les affrontements sans pouvoirs ni héros — le so
 - **Tapis de jeu hexagonal** : taille selon le format choisi — Escarmouche (10 × 7), Normal (13 × 9) ou Épique (16 × 13). Voir Document de cadrage §4.
 - **Tuiles de terrain** : bois, collines, cours d'eau, gués, ponts, bâtiments (règles détaillées à développer dans un document dédié — hors scope de cette première version)
 - **Deck de commandement** : cartes de section et cartes Tactiques
-- **Dés spéciaux** : 6 faces — Épées croisées / Épée / Cible / Drapeau / Couronne / Arcane
+- **Dés spéciaux** : 6 faces — Épées croisées / Épée / Cible / Drapeau / Couronne / Arcane (dé BattleLore V2, conservé tel quel)
 - **Figurines** : unités des peuples joués (MESBG)
-- **Marqueurs** : jetons PV, médailles objectif
+- **Plateaux de mouvement** (movement trays) **colorés par classe** : 🟢 vert (2 dés), 🔵 bleu (3 dés), 🔴 rouge (4 dés) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie
+- **Tokens de mode** collés sur les socles : **mêlée** ou **distance**
+- **Marqueurs** : compteurs de PV (Chars et Créatures uniquement), médailles objectif, jetons d'activation/cible (aide-mémoire de contre-attaque, §7.6)
 
-### 2.2 Unités et PV
+### 2.2 Le langage du socle : classe, type et mode
 
-Chaque unité est représentée par un groupe de figurines occupant un seul hexagone. Chaque figurine possède **1 PV**. Lorsqu'une figurine perd son dernier PV, elle est retirée du jeu.
+Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de profil. Trois informations y sont portées visuellement.
 
-Les touches s'accumulent au sein d'une même attaque. Les PV perdus ne se récupèrent pas.
+**La classe = la couleur du plateau = le nombre de dés d'attaque.**
+
+| Couleur | Classe | Dés |
+|---|---|---|
+| 🟢 **Vert** | Légère | **2** |
+| 🔵 **Bleu** | Standard | **3** |
+| 🔴 **Rouge** | Lourde / élite | **4** |
+
+**Le type**, donné par la forme du socle et le nombre de figurines :
+
+| Type | Représentation | Pertes suivies par |
+|---|---|---|
+| **Infanterie** | plateau de **4 figurines** | figurines retirées |
+| **Cavalerie** | plateau de **3 figurines** | figurines retirées |
+| **Créature / Monstre** | socle unique (65 mm) | **compteur de PV** |
+| **Char** | socle unique (65 mm) | **compteur de PV** |
+
+> **Seuls les Chars et les Créatures portent un compteur de PV.** L'Infanterie et la Cavalerie n'ont pas de PV chiffré : on retire simplement leurs figurines du plateau (1 figurine = 1 « point de vie » implicite).
+
+**Le mode = un token collé sur le socle : mêlée ou distance.** Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
+
+Une unité occupe toujours **un seul hexagone**. Les touches s'accumulent au sein d'une même attaque ; les pertes ne se récupèrent pas.
 
 #### Déroute
 
-Lorsqu'une unité atteint **0 figurine**, elle est **en déroute** : retirez-la du champ de bataille. L'adversaire marque **1 point de victoire**, sauf indication contraire du scénario.
+Lorsqu'une unité perd sa **dernière figurine** (ou son dernier PV, pour un Char ou une Créature), elle est **en déroute** : retirez-la du champ de bataille. L'adversaire marque **1 point de victoire**, sauf indication contraire du scénario.
 
 #### Unité Faible
 
-Une unité est **Faible** lorsqu'il ne lui reste qu'**une seule figurine**, quelle que soit la façon dont elle a perdu les précédentes.
+Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui reste qu'**une seule figurine**. Elle subit alors l'effet suivant :
 
-Une unité Faible subit l'effet suivant :
+- Ses faces **Épée** ne causent aucune touche en mêlée (seules les **Épées croisées** comptent).
 
-- Elle **ne peut pas causer de touche** sur une face **Épée** lors de ses attaques de mêlée.
-
-> 💡 **Exemple de jeu**
-> Des Piquiers de Gondor sont réduits à 1 figurine (Faibles). Lors de leur prochaine attaque en mêlée, les faces Épée n'infligent aucune touche — seules les Épées croisées comptent.
-
-### 2.3 Types d'unités et règle générale de dégâts
-
-Chaque unité est définie par **deux caractéristiques** indiquées dans son profil :
-
-| Caractéristique | Valeurs possibles |
-|---|---|
-| **Type** | Infanterie · Cavalerie · Chars · Artillerie · Créature · Machine de guerre |
-| **Combat** | Mêlée · À distance |
-
-#### Règle générale — Dégâts par type de cible
-
-Le nombre de figurines retirées par touche dépend du **type de l'unité ciblée** et de la **face de dé** obtenue :
-
-| Face de dé | Cible Infanterie | Cible Cavalerie / Chars / Artillerie / Machine de guerre / Créature |
-|---|---|---|
-| **Épées croisées** | **2 figurines** | 1 figurine |
-| **Épée** | 1 figurine | 1 figurine |
-| **Cible** | **2 figurines** | 1 figurine |
-
-> Cette règle s'applique automatiquement à toutes les attaques. Elle n'est pas répétée dans les profils individuels.
-
-#### Règle générale des touches (généralisation, D053)
-
-Le tableau ci-dessus se lit en réalité comme un principe unique, valable pour **toute touche**, quelle que soit son origine (face de dé, capacité spéciale qui convertit une Couronne en touche, touche de recul bloqué, etc.) :
-
-> **Contre une cible Infanterie, chaque touche retire 2 figurines. Seule exception : la face Épée seule en retire 1. Contre toute autre cible (Cavalerie, Chars, Artillerie, Créature, Machine de guerre), chaque touche retire 1 figurine/PV.**
-
-Autrement dit, une unité d'Infanterie affiche **6 figurines** (habillage visuel plus imposant) mais vaut **3 « blocs » effectifs** — cohérent avec l'échelle BattleLore V2 qui a servi de référence à la compression des points ([[Regles_Points]] §2bis). Une touche ne peut jamais retirer plus de figurines qu'il n'en reste.
-
-> 🎲 **Note de design (D053)** Cette généralisation ne modifie **pas** le combat normal : Épées croisées (2), Épée (1) et Cible (2) sur infanterie étaient déjà au tableau. Elle **tranche l'ambiguïté** des touches « hors face » — les touches de [Souffle de feu] (Couronne → touche) et de [Poison] (Arcane → touche, refonte D058), le piétinement du Mûmakil (Couronne → touche) et les touches de recul bloqué comptent désormais explicitement **2 figurines contre l'infanterie**. La durabilité §1 de [[Regles_Points]] (Inf 12 dés / Cav 9 dés, ratio 1,33) et les rosters chiffrés restent donc valides tels quels.
->
-> ⚠️ **Deux points de vigilance au Playtest** : (1) un recul bloqué contre un bord ou une unité amie fait fondre l'infanterie deux fois plus vite — à surveiller avec le Mûmakil qui pousse ; (2) [Poison] contre l'infanterie double aussi (Arcane → touche = 2 figurines, refonte D058).
+> Les Chars et Créatures, suivis en PV, **ne passent pas par l'état Faible** ; leur profil définit d'éventuels seuils (ex. Furie du Mûmakil).
 
 > 💡 **Exemple de jeu**
-> Des Chevaliers de Dol Amroth (Cavalerie — Mêlée) attaquent des Épéistes de la Garde (Infanterie — Mêlée) adjacents : 4 dés. Résultat : Épées croisées, Épée, Épée, Drapeau. Les Épées croisées retirent **2 figurines**, chaque Épée retire **1 figurine** → 4 figurines retirées et 1 Drapeau.
->
-> À l'inverse, si les Épéistes contre-attaquent les Chevaliers : Épées croisées → **1 figurine** retirée seulement (les Chevaliers sont Cavalerie, pas Infanterie).
+> Des Piquiers réduits à 1 figurine (Faibles) attaquent en mêlée : les faces Épée n'infligent rien, seules les Épées croisées touchent.
 
-#### Type Chars
+### 2.3 Attaque et dégâts
 
-Les **Chars** (ex. Char de Khand) occupent 1 hexagone et suivent les règles de dégâts standard des cibles non-Infanterie (1 figurine/véhicule par touche). Base 65 mm, identique aux Créatures/Trolls.
+Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur) : 2 (🟢), 3 (🔵) ou 4 (🔴), modifié le cas échéant par le terrain (§7.5) ou une capacité.
 
-#### Type Artillerie
+**Quelles faces touchent dépend du mode de l'unité** (son token) :
 
-Les unités de type Artillerie fonctionnent différemment des autres unités :
+| Mode | Faces qui touchent | Spéciale | Retraite |
+|---|---|---|---|
+| **Mêlée** | Épées croisées · Épée¹ | Couronne² | Drapeau |
+| **Distance** | Cible | Couronne² | Drapeau |
 
-- **PV = nombre de servants** : chaque servant est une figurine avec 1 PV.
-- **1 dégât par touche** quelle que soit la face obtenue et quelle que soit la cible.
-- Lorsque le **dernier servant est retiré**, l'unité est **détruite** — elle ne passe pas par l'état Faible.
-- La pièce d'artillerie elle-même n'est pas une figurine : elle est retirée avec les servants.
+*¹ Épée inactive si l'unité est Faible. — ² La Couronne déclenche la règle signature de l'unité, si elle en a une. La face **Arcane** est un échec (réservée à [Peur] et à la couche Leadership, Phase 2).*
+
+**Règle de dégâts — unique et universelle :**
+
+> **Chaque touche retire exactement 1 figurine — ou 1 PV pour un Char / une Créature — quelle que soit la cible.** Une touche ne retire jamais plus qu'il ne reste.
+
+Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche contre l'infanterie est supprimée, D059/D060). La durabilité d'une unité découle directement de son nombre de figurines/PV — **Infanterie 4, Cavalerie 3** (ratio 1,33, socle sur lequel repose le chiffrage des points, voir [[Regles_Points]]). Cette règle unique vaut aussi pour les touches « hors face » (Couronne convertie en touche, [Poison], recul bloqué, piétinement du Mûmakil…) : **1 touche = 1 figurine/PV**, sans exception.
 
 > 💡 **Exemple de jeu**
-> Une Baliste de Minas Tirith (Artillerie — 2 servants) reçoit 3 touches : les 2 servants sont retirés → la Baliste est détruite immédiatement. Il n'y a pas d'état Faible.
+> Des Chevaliers (Cavalerie, 🔴 4 dés, mêlée) chargent des Épéistes (Infanterie, mêlée) : 4 dés → Épées croisées, Épée, Épée, Drapeau = **3 touches** (3 figurines retirées) **+ 1 Drapeau** (1 hexagone de recul).
+
+#### Types particuliers
+
+Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occupent 1 hexagone sur socle 65 mm et se comptent en **PV**. Leur mouvement et leurs règles sont propres à leur profil (pièces signatures), hors de la grille standard (§6.1).
+
+> **Artillerie / Machine de guerre : hors périmètre de la v1.** Non utilisée au Pelennor ; ses règles sont mises de côté et pourront être réactivées ultérieurement si un scénario l'exige.
 
 ---
 
@@ -219,9 +216,23 @@ En Épique, chaque camp compte 3 joueurs, un par section. Répartition des carte
 
 ## 6. Mouvement
 
-### 6.1 Valeur de mouvement
+### 6.1 Mouvement par classe et type
 
-Chaque unité possède une **valeur de mouvement** définie dans son profil. Elle indique le nombre maximal d'hexagones qu'elle peut traverser lors de son activation. Une unité peut toujours choisir de se déplacer de moins que sa valeur maximale, ou de ne pas se déplacer.
+Le mouvement se lit **directement sur le plateau** (couleur + type), sans profil — inspiré de *C&C Medieval*. Principe : plus une unité frappe fort (rouge), moins elle est mobile ; les unités lourdes doivent choisir entre **bouger** et **frapper**.
+
+| | 🟢 Verte (2 dés) | 🔵 Bleue (3 dés) | 🔴 Rouge (4 dés) |
+|---|---|---|---|
+| **Infanterie** | 2 cases + combat | 2 cases + combat | 1 case + combat, **ou** 2 cases |
+| **Cavalerie** | 4 cases + combat | 3 cases + combat | 2 cases + combat, **ou** 3 cases |
+
+- « **X cases + combat** » : l'unité peut se déplacer jusqu'à X hexagones **puis** attaquer.
+- « **ou Y cases** » (unités rouges) : alternativement, elle **renonce à attaquer** pour se déplacer de Y hexagones.
+
+> À ce stade, **aucune règle spéciale n'est attachée d'office** à une classe ou un type. Les éventuels bonus intrinsèques (mobilité de l'infanterie légère, volume de tir des archers légers, etc.) seront décidés au **tri du glossaire (P2)**.
+
+**Créatures et Chars** conservent une valeur de mouvement **propre à leur profil** (pièces signatures) et ne suivent pas cette grille — le Mûmakil, par exemple, a son déplacement dédié (translation 1-2-1).
+
+> Une unité peut toujours se déplacer de moins que son maximum, ou ne pas bouger.
 
 ### 6.2 Règles de mouvement
 
@@ -264,7 +275,7 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 
 ### 7.2 Attaque de mêlée
 
-Une unité de mêlée peut attaquer une **unité ennemie adjacente** (dans l'un des 6 hexagones voisins).
+Une unité en **mode mêlée** (token mêlée) peut attaquer une **unité ennemie adjacente** (dans l'un des 6 hexagones voisins).
 
 Les faces actives en mêlée sont :
 - **Épées croisées** : touche inconditionnelle
@@ -275,7 +286,7 @@ Les faces actives en mêlée sont :
 
 ### 7.3 Attaque de tir
 
-Une unité à distance peut attaquer une unité ennemie **à portée et en ligne de vue**. Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
+Une unité en **mode distance** (token distance) peut attaquer une unité ennemie **à portée et en ligne de vue**. Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
 
 Les faces actives au tir sont :
 - **Cible** : touche inconditionnelle
@@ -301,7 +312,7 @@ Certains terrains modifient le nombre de dés lancés. Ces modificateurs s'appli
 | Attaquant ou cible en **gué** | Maximum **2 dés** |
 | Attaquant en **terrain surélevé**, cible en contrebas | **+1 dé** (mêlée et tir) |
 
-> ⚠️ **Rappel — Règle générale de dégâts :** le nombre de figurines retirées par touche dépend du **type de la cible**. Épées croisées et Cible retirent **2 figurines** sur une cible Infanterie, et **1 figurine** sur toutes les autres cibles. Voir §2.3.
+> ⚠️ **Rappel — Dégâts :** chaque touche retire **1 figurine/PV**, quelle que soit la cible (§2.3).
 
 ### 7.6 Contre-attaque
 
@@ -420,31 +431,27 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 4. Appliquer [Armure X] si applicable
 5. Compter les touches et les Drapeaux
 6. Appliquer [Protection X] si applicable
-7. Retirer les figurines (voir tableau de dégâts ci-dessous)
+7. Retirer **1 figurine/PV par touche** (§2.3)
 8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable)
 9. Contre-attaque si conditions réunies
 10. Avance si cible éliminée ou en retraite
 
-### Tableau de dégâts par type de cible
+### Dégâts
 
-| Face de dé | Cible Infanterie | Cible Cavalerie / Chars / Artillerie / Machine de guerre / Créature |
-|---|---|---|
-| **Épées croisées** | **2 figurines** | 1 figurine |
-| **Épée** | 1 figurine | 1 figurine |
-| **Cible** | **2 figurines** | 1 figurine |
+**1 touche = 1 figurine retirée** (ou 1 PV pour un Char / une Créature), **quelle que soit la cible**. Jamais plus qu'il ne reste.
 
 ### Résumé des faces de dés
 
-| Face | Mêlée | Tir |
+| Face | Mode mêlée | Mode distance |
 |---|---|---|
-| Épées croisées | 1 ou 2 touches* | Échec |
+| Épées croisées | 1 touche | Échec |
 | Épée | 1 touche (sauf si Faible) | Échec |
-| Cible | Échec | 1 ou 2 touches* |
+| Cible | Échec | 1 touche |
 | Drapeau | 1 hex de retraite | 1 hex de retraite |
-| Couronne | Capacité spéciale | Capacité spéciale |
-| Arcane | Échec (miss universel — V1, voir cadrage §5.2) | Échec (miss universel — V1) |
+| Couronne | Règle signature (si profil) | Règle signature (si profil) |
+| Arcane | Échec (réservée [Peur]/Leadership, Phase 2) | Échec (réservée [Peur]/Leadership, Phase 2) |
 
-*\* 1 touche sur Cavalerie/Chars/Artillerie/Créature/Machine de guerre — 2 touches sur Infanterie (sans [Massif]). Voir §2.3.*
+*Le **mode** (token mêlée/distance) détermine quelles faces l'unité lit. Chaque touche retire **1 figurine/PV** (§2.3).*
 
 ### Mémo règles spéciales de base
 
@@ -464,8 +471,12 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 
 | # | Sujet | Renvoi |
 |---|---|---|
-| 1 | Seuils de victoire par format, à valider au Playtest #1 | §10.2 |
+| 1 | Seuils de victoire par format, à revalider au playtest de la taxonomie | §10.2 / P7a |
 | 2 | Répartition des cartes et ordre de jeu à 3 joueurs par camp (format Épique) | §5.5 |
+| 3 | Règles spéciales **intrinsèques par combinaison** (classe × type × mode) à peupler | P2 (tri du glossaire) |
+| 4 | Recalcul des coûts sur la nouvelle base (durabilité 4:3, archerie affaiblie, passage en matrice) | P3 |
+| 5 | Bonus **intrinsèques par classe/type** (mobilité de l'infanterie légère, double tir des archers légers…) — **écartés pour l'instant**, à décider | P2 |
+| 6 | Mouvement et PV des **Créatures / Chars** (hors grille) à confirmer profil par profil | P4 / P5 |
 
 ---
 
@@ -474,3 +485,5 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.3 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (D041, `[[Playtest1_Compte-rendu]]`) : §9.2 réécrite — recul façon Memoir '44 (toujours vers le bord ami, le joueur qui recule choisit l'hexagone) en remplacement de la retraite directionnelle C&C. §9.3 (obstacles) reformulée en conséquence.*
 
 *Version : 0.5 — Phase 1 — 2026-07-28. Correction du récapitulatif : [Férocité] permet à l'unité de contre-attaquer même forcée de reculer (elle recule ensuite normalement), et non « avant les retraites adverses » comme écrit précédemment (D057, voir [[Regles_Speciales]]).*
+
+*Version : 0.6 — Phase 1 — 2026-08-03. **Refonte P1 « taxonomie visuelle » (D059/D060).** §2.1 (plateaux colorés, tokens de mode, compteurs de PV). §2.2 réécrite — classe (couleur = dés 2/3/4), type (Inf 4 fig / Cav 3 fig ; Chars et Créatures = PV), mode (token mêlée/distance) ; Faible limitée à Inf/Cav. §2.3 réécrite — **suppression de la double-touche** : règle unique « 1 touche = 1 figurine/PV, quelle que soit la cible » ; Artillerie mise hors périmètre v1. §6.1 réécrite — **grille de mouvement par classe × type** (inspirée C&C Medieval) ; aucune règle spéciale attachée d'office à une classe/type (les bonus intrinsèques éventuels — mobilité légère, double tir léger — sont écartés pour l'instant, décision reportée à P2) ; Créatures/Chars hors grille. §7.2/7.3 rattachées au token de mode ; récapitulatifs et rappels alignés. Reste à peupler en P2 (règles intrinsèques par combo) et à recalculer en P3 (coûts). Non testé — validation en P7a.*
