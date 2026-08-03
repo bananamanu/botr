@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Factions/Easterling.md",
+                "file": "05 - Playtest/Playtest2_Compte-rendu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Easterling"
+              "title": "Playtest2_Compte-rendu"
             }
           }
         ]
@@ -185,6 +185,9 @@
   },
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
+    "00 - META/Document_de_cadrage.md",
+    "02 - Factions/Easterling.md",
+    "05 - Playtest/Playtest2_Compte-rendu.md",
     "06 - Images/cataphractaires_orientaux.sla.3713",
     "06 - Images/cataphractaires_orientaux.sla.3664",
     "06 - Images/cataphractaires_orientaux_autosave_01_08_2026_09_02.sla",
@@ -198,14 +201,12 @@
     "06 - Images/piquiers_orientaux_autosave_01_08_2026_08_52.sla",
     "06 - Images/piquiers_orientaux_autosave_01_08_2026_08_52.sla.2845",
     "06 - Images/piquiers_orientaux.sla.4603",
-    "06 - Images/piquiers_orientaux.sla.4517",
     "06 - Images/cartes unités/piquiers_orientaux-page001.png",
     "06 - Images/piquier_oriental.png",
     "06 - Images/khand_flag.png",
     "01 - Règles/Regles_Speciales.md",
     "06 - Images/cartes unités/archers_orientaux-page001.png",
     "01 - Règles/Regles_Points.md",
-    "02 - Factions/Easterling.md",
     "06 - Images/archer_oriental.png",
     "06 - Images/cartes unités/guerrier_orientaux-page001.png",
     "02 - Factions/Harad.md",
@@ -221,7 +222,6 @@
     "01 - Règles/Regles_Base.md",
     "02 - Factions/Khand.md",
     "Troll_.md",
-    "00 - META/Document_de_cadrage.md",
     "04 - Composants/Cartes_Commandement.md",
     "01 - Règles/Règles_Regles_Speciales.md",
     "01 - Règles/Règles_Regles_Points.md",
