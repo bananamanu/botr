@@ -185,6 +185,8 @@
   },
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
+    "01 - Règles/Regles_Speciales (1).md",
+    "00 - META/Document_de_cadrage (1).md",
     "00 - META/Document_de_cadrage.md",
     "02 - Factions/Easterling.md",
     "05 - Playtest/Playtest2_Compte-rendu.md",
@@ -211,7 +213,6 @@
     "06 - Images/cartes unités/guerrier_orientaux-page001.png",
     "02 - Factions/Harad.md",
     "06 - Images/rhun.png",
-    "00 - META/Document_de_cadrage (1).md",
     "03 - Scénarios/Playtest2_La_grande_bete.md",
     "02 - Factions/Mordor.md",
     "02 - Factions/Rohan.md",
@@ -229,7 +230,6 @@
     "00 - META/Templates/Tpl scenario.md",
     "00 - META/Templates/Tpl regle.md",
     "00 - META/Templates/Tpl playtest.md",
-    "00 - META/Templates/Tpl faction.md",
-    "01 - Règles/Terrain.md"
+    "00 - META/Templates/Tpl faction.md"
   ]
 }

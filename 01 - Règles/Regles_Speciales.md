@@ -3,45 +3,36 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-29"
+date_maj: "2026-08-04"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.14"
+version: "0.15"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
 
-> **Objet de ce document :** Glossaire de référence de toutes les règles spéciales disponibles pour la Phase 1. Chaque règle est définie une seule fois ici ; les profils d'unités y renverront une fois rédigés.
-> Aligné sur **Regles_Base** et **Terrain**.
-> Ce document ne couvre pas les règles universelles (Faible, contre-attaque, avance, Poursuite générique) ni les règles intrinsèques des types d'unités, qui sont définies dans [[Regles_Base]].
+> **Objet de ce document (refonte P2, D062).** Depuis le pivot « taxonomie visuelle » (D059–D061), l'identité d'une unité — **classe** (couleur = dés), **type** (socle), **mode** (token mêlée/distance) — se lit sur le plateau, et l'essentiel des règles en **découle** au lieu d'être mémorisé profil par profil. Ce glossaire n'est donc plus un catalogue : c'est la **référence des signatures**, la courte liste des capacités marquantes qu'un adversaire doit pouvoir identifier **d'un coup d'œil**. Il conserve en tête le **socle générique** (vocabulaire défensif/offensif universel), renvoie à [[Regles_Base]] pour tout ce qui est intrinsèque à la taxonomie, et liste en fin de document ce qui a été retiré.
 >
-> **Statut des assignations :** Gondor et ses fiefs (14 unités), **Rohan** (9 unités), **Khand** (5 unités) et **Mordor** (6 unités, D036) sont rédigés et validés — prêts pour le Playtest #1. **Easterling** (4 unités, voir `02 - Factions/Easterling.md`) est rédigé et validé (D038) — prêt pour le Playtest #1. Harad reste à faire. **Playtest #1 joué le 2026-07-25** (`[[Playtest1_Compte-rendu]]`) : deux règles neuves ajoutées — [Arme de jet X] (D044) et [Plateforme de tir X] (D045) — et [Charge écrasante] retirée de la V1 (D043). [Massif] a été retirée du socle (D015 du [[Document de cadrage]]) : toute l'infanterie BdTdM partage la même base, le cas qu'elle traitait ne se présente plus.
->
-> **Nouvelle règle issue de Gondor :** [Archer en mêlée] a été créée pour le profil de la Compagnie Grise (Legolas) et généralisée volontairement pour pouvoir resservir sur d'autres profils/peuples (D024 du [[Document de cadrage]]).
->
-> **Nouvelle règle issue de Rohan :** [Déploiement avancé] a été créée pour l'Éored d'éclaireur (`02 - Factions/Rohan.md`) — un repositionnement unique avant le tour 1, plutôt qu'une capacité de combat classique (D028 du [[Document de cadrage]]).
->
-> **Nouvelle règle issue de Khand → assignée à Mordor :** [Horde] a été créée sur proposition d'Emmanuel (D032 du [[Document de cadrage]]) — bonus offensif et défensif à pleine santé (+1 dé d'attaque + [Inébranlable 1]), perdu définitivement à la première perte. Réservée aux Orcs ; première assignation aux deux bandes d'orques du roster Mordor.
->
-> **Nouvelle règle issue de Mordor :** [Peur X] a été créée pour le Troll du Mordor (D033 du [[Document de cadrage]]) — chaque face **Arcane** obtenue en attaque compte comme X Drapeaux contre la cible, au lieu d'un échec. Premier jalon de la future couche Leadership fondée sur la face Arcane (D034, Phase 2).
->
-> **Nouvelle règle issue de Easterling :** [Mur de bouclier] a été créée pour la Cohorte d'orientaux et la Cohorte de piquiers orientaux (D037 du [[Document de cadrage]]) — accorde [Protection 1] tant que l'unité reste adjacente à une autre Infanterie amie. Version « conditionnelle à la formation » de [Protection X], distincte de la version liée au terrain.
->
-> **Note pour le Mûmakil (tâche à venir) :** [Howdah], [Bête incontrôlable] et [Meute X] sont des candidates naturelles pour cette unité — une tour d'archers sur son dos, un risque d'affolement une fois les guides tués, ou une résistance répartie sur plusieurs points de vie. Emmanuel a déjà une idée de règle dédiée pour l'impact au contact du Mûmakil, distincte de [Charge écrasante] (**retirée de tous les profils de la V1 au Playtest #1, D043**) — à formaliser au moment de rédiger son profil. [Peur X]/[Terreur] (X élevé) est également candidate pour le Mûmakil, en Phase 2.
+> Aligné sur **[[Regles_Base]] v0.6** et **[[Terrain]]**. Les règles universelles (Faible, contre-attaque, avance, retraite, faces de dé) sont définies dans [[Regles_Base]], pas ici.
+
+> 🔄 **Tri du glossaire — 2026-08-04 (P2, D062)**
+> Le glossaire a fondu. En synthèse :
+> - **Intrinsèque à la taxonomie** (sort du profil, se lit au plateau) : [Mobilité 1] pour le 🟢 léger en mode distance (harceleur). *Le peuplement complet des intrinsèques par classe × type fait l'objet d'une revue dédiée (à venir).*
+> - **Fusions** : [Perforant X] → **[Arme Lourde X]** (une seule règle de relance, mêlée ou tir) · [Inamovible] → **[Inébranlable ∞]** (une valeur, pas un mot-clé de plus).
+> - **Coupées** : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Détail et renvois au §6.
+> - **Chaque peuple garde une signature identitaire** ; avec le badge **Élite**, la classe et le type, cela suffit à différencier les unités. Le plafond reste **1–2 règles spéciales par unité**.
+> - Répercussions sur les profils, les coûts et les scénarios **renvoyées à P3 (coûts) / P4 (re-expression des rosters)** — voir §6. Les comptes-rendus de playtest ne sont pas modifiés (historique).
 
 ---
 
 ## Table des matières
 
 1. [[#Conventions]]
-2. [[#Règles défensives]]
-3. [[#Règles offensives — Mêlée]]
-4. [[#Règles offensives — Distance]]
-5. [[#Règles de mouvement et de manœuvre]]
-6. [[#Règles de soutien]]
-7. [[#Règles hybrides — offensif + défensif]]
-8. [[#Règles de moral]]
-9. [[#Récapitulatif alphabétique]]
-10. [[#Règles différées — Phase 2+]]
+2. [[#Socle générique]]
+3. [[#Règles intrinsèques (dérivées de la taxonomie)]]
+4. [[#Signatures]]
+5. [[#Récapitulatif alphabétique]]
+6. [[#Retiré au tri P2]]
+7. [[#Différées — Phase 2+]]
 
 ---
 
@@ -52,472 +43,238 @@ version: "0.14"
 - **[Règle]** : nom entre crochets — standard dans tous les profils.
 - **[Règle X]** : règle avec une valeur numérique (ex. [Armure 1], [Arme Lourde 2]).
 
-### Règles intrinsèques des types d'unités
+### Trois familles
 
-Les règles suivantes ne sont **pas** des règles spéciales — elles sont portées directement par le type d'unité et s'appliquent à toutes les unités de ce type sans mention dans le profil :
+| Famille | Rôle | Où c'est défini |
+|---|---|---|
+| **Socle générique** | Vocabulaire universel disponible à tout profil (défense, relance, poursuite…) | §2 de ce document |
+| **Intrinsèque** | Découle de la combinaison classe × type × mode — **ne se note pas sur le profil**, se lit au plateau | [[Regles_Base]] (§2, §6) |
+| **Signature** | Capacité marquante, **1–2 max par unité**, réservée aux pièces d'identité de peuple et aux pièces uniques | §4 de ce document |
 
-| Type | Règle intrinsèque |
-|---|---|
-| **Infanterie** | Les faces Épées croisées et Cible infligent **2 PV** à la cible au lieu de 1 |
-| **Cavalerie** | Aucune règle intrinsèque — 1 touche = 1 PV |
-| **Chars** | Jamais Faible (véhicule unique, pas de groupe de figurines qui s'amenuise) |
-| **Créature** | Jamais Faible (sauf exception explicite dans le profil) |
-| **Machine de guerre** | Jamais Faible |
-| **Artillerie** | Jamais Faible · Perd ses servants en premier (ordre de pertes défini dans le profil) |
+### Où se résolvent les signatures
 
-> 🔄 **Tranché — 2026-07-19 (D030)** : le type **Chars** suit la même règle intrinsèque que Créature/Machine de guerre — **Jamais Faible**. Décision prise à l'ouverture du roster Khand (Aurige de Khand, `02 - Factions/Khand.md`) : cohérent avec le fait qu'il s'agit d'un seul véhicule et non d'un groupe de figurines, et évite un palier de dégradation supplémentaire à suivre en partie (principe 1 du [[Document de cadrage]], fluidité et mémorisation). Alternative envisagée et écartée : dégradation des dés d'attaque par palier de PV perdus — plus thématique mais contraire au principe de fluidité.
+L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signatures s'y insèrent ainsi :
 
-> 🔗 **Voir aussi** [[Regles_Base]] §2 — Types d'unités
+1. **Avant le décompte** — relances : [Arme Lourde X], [Horde] (+1 dé).
+2. **Au décompte des touches** — effets de **Couronne** : [Poison], [Charge écrasante], [Howdah]… (chaque Couronne devient une touche ou un effet, selon la règle).
+3. **Réductions défensives** — [Armure X] puis [Protection X].
+4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Arcane** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) absorbe le tout, quelle qu'en soit la source.
 
-### Priorité de résolution
+> 🎲 **Note** [Peur X] (Arcane) et les règles à **Couronne** vivent sur des faces différentes : elles ne se disputent jamais le même dé.
 
-Lors d'une attaque, les modificateurs s'appliquent dans l'ordre suivant :
-
-1. Relances et bonus de dés (avant résolution) — [Arme Lourde X], [Perforant X], [Réception de charge], [Horde]
-2. Décompte des touches
-3. Règle intrinsèque Infanterie (Épées croisées et Cible → 2 PV)
-4. Réductions défensives — [Armure X]
-5. Effets de Couronne — [Poison], [Souffle de feu], [Charge écrasante]
-6. Effets d'Arcane — [Peur X]
-7. Résistances spéciales — [Inébranlable X], [Horde]
-8. Drapeaux et retraites (après résolution des touches et des effets de Couronne/Arcane)
-
-> 🎲 **Note de design** [Peur X] (étape 6) se résout avant les résistances (étape 7) : une unité [Inébranlable X] peut donc absorber tout ou partie des Drapeaux générés par la Peur, exactement comme elle absorbe les Drapeaux du dé — la Peur est une source de retraite parmi d'autres, pas un canal séparé.
+> 🔗 **Voir aussi** [[Regles_Base]] §2 (types et faces de dé), §7 (combat), §9 (retraite). Les anciennes tables « règles intrinsèques des types » et « priorité de résolution » de ce document sont **supprimées** : périmées par [[Regles_Base]] v0.6 (jamais-Faible au socle, double-touche retirée, 1 touche = 1 figurine/PV).
 
 ---
 
-## Règles défensives
+## Socle générique
 
----
+Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une unité, mais reste soumis au bon sens de lisibilité.
 
 ### [Armure X]
 
-Lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Les faces **Épées croisées** ne sont jamais affectées par [Armure].
+Lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Les faces **Épées croisées** ne sont jamais affectées. Sans effet contre le **tir**.
 
-[Armure X] ne s'applique **pas** aux attaques à distance.
-
-> 💡 **Exemple de jeu**
-> Une unité d'Infanterie attaque une Cavalerie [Armure 1] adjacente : 3 dés. Résultat : Épées croisées, Épée, Drapeau. [Armure 1] retire 1 Épée → 1 touche restante (Épées croisées), soit 1 PV perdu (Cavalerie : pas de règle intrinsèque).
-
----
-
-### [Inébranlable X]
-
-Cette unité ignore **X résultats de retraite** par attaque reçue, quelle qu'en soit la source — dés, [Peur X], cartes tactiques ou sorts.
-
-> 💡 **Exemple de jeu**
-> Une unité [Inébranlable 2] reçoit une attaque dont le résultat produit 3 Drapeaux. Elle ignore 2 Drapeaux → ne recule que d'1 hexagone. Avec seulement 1 ou 2 Drapeaux obtenus, elle ne recule pas du tout.
-
----
-
-### [Immunisé au poison]
-
-Cette unité ignore les touches supplémentaires générées par la règle **[Poison]**, quelle qu'en soit la source. Les touches normales s'appliquent normalement.
-
-> *Non assignée en V1 — disponible si un peuple ultérieur porte [Poison].*
-
----
-
-### [Immunisé au feu]
-
-Cette unité ignore les touches supplémentaires générées par la règle **[Souffle de feu]**.
-
-> *Non assignée en V1.*
-
----
+> Remplace désormais l'ancienne [Mur de bouclier] sur les profils Easterling (coupée en P2, → [Armure 1], voir §6).
 
 ### [Protection X]
 
-Lorsqu'une unité occupant une position protégée (bâtiment, fortification) reçoit une attaque, elle ignore **X touches** après décompte des dégâts.
+Une unité en position protégée (terrain) ignore **X touches** après décompte des dégâts.
 
-| Type de position | Valeur |
+| Position | Valeur |
 |---|---|
 | Ruine | 1 |
 | Bâtiment solide | 2 |
 | Fortification | 3 |
 
-> 🔗 **Voir aussi** [[Terrain]] §9 — Bâtiment.
+> 🔗 **Voir aussi** [[Terrain]] §9.
 
----
+### [Inébranlable X]
 
-### [Mur de bouclier]
+Cette unité ignore **X résultats de retraite** par attaque reçue, quelle qu'en soit la source (dés, [Peur X], cartes, effets).
 
-Tant que cette unité est **adjacente à au moins une autre unité d'Infanterie amie**, elle bénéficie de **[Protection 1]** (ignore 1 touche après décompte des dégâts, quelle que soit la source — mêlée ou tir).
+- **Convention [Inébranlable ∞]** : une unité qui ne recule **jamais** (elle ignore tout Drapeau). Remplace l'ancienne règle [Inamovible] (fusionnée en P2). Réservée aux grandes créatures ancrées — premier porteur : le Mûmakil.
 
-> 💡 **Exemple de jeu**
-> Une Cohorte d'orientaux [Mur de bouclier] est adjacente à une autre unité d'Infanterie amie et reçoit une attaque qui inflige 2 touches. [Protection 1] (accordée par [Mur de bouclier]) en ignore 1 → seule 1 touche est appliquée. Si cette même Cohorte se retrouve isolée (plus aucune Infanterie amie adjacente), elle perd la protection et encaisse les 2 touches.
-
-> 🎲 **Note de design** Version « conditionnelle à la formation » de [Protection X] plutôt qu'une armure inconditionnelle — la discipline de la ligne qui referme ses boucliers, perdue dès que le rang se rompt. Créée pour distinguer l'Easterling de Gondor (armure inconditionnelle, [Armure X] sur le profil) tout en gardant la même identité de peuple "discipliné" : chez l'Easterling, la protection est une décision tactique de positionnement (rester groupé), pas un simple chiffre sur la fiche.
-
-> 🔄 **Nouvelle règle — 2026-07-20 (D037)** : créée et assignée dès sa création à la Cohorte d'orientaux et à la Cohorte de piquiers orientaux (`02 - Factions/Easterling.md`). Coût provisoire de 1 point forfaitaire (aligné sur [Protection 1]), non testé — à surveiller au Playtest #1 : en formation de ligne classique, la condition d'adjacence sera presque toujours vraie, ce qui pourrait sous-évaluer la règle par rapport à un [Armure 1] permanent (2 pts).
-
-> ✅ **Validée au Playtest #1b (2026-07-27, D053)** : a absorbé 2 touches sur la partie. La règle s'autolimite bien — un recul rompt l'adjacence et fait perdre la protection, la décision « tenir ou rompre » existe réellement. Coût de 1 pt confirmé. ⚠️ **Point de vigilance conservé** (pas de correctif) : le risque de sur-cumul reste ouvert si une liste empile plusieurs porteurs en formation permanente — à surveiller sur un roster Easterling plus étoffé, pas à corriger maintenant.
-
----
-
-## Règles offensives — Mêlée
-
----
-
-### [Archer en mêlée]
-
-Cette unité inflige aussi une touche sur chaque face **Cible** obtenue lors d'une attaque de **mêlée** (normalement inerte en mêlée, voir [[Regles_Base]] §7.2).
-
-> 💡 **Exemple de jeu**
-> Une unité [Archer en mêlée] attaque en mêlée : 3 dés. Résultat : Cible, Épée, Drapeau. Sans cette règle, seule l'Épée toucherait. Avec [Archer en mêlée], la Cible touche aussi → 2 touches au lieu d'une.
-
-> 🎲 **Note de design** Créée pour représenter une précision hors norme qui reste dangereuse même au corps à corps (Legolas, dans le profil de la Compagnie Grise — Gondor). Nommée de façon générique pour pouvoir être réattribuée à d'autres profils.
-
----
-
-### [Arme de jet X]
-
-Le tour où cette unité **s'est déplacée puis attaque en mêlée**, jusqu'à **X face(s) Cible** obtenue(s) compte(nt) comme **une touche supplémentaire** sur la cible (au lieu d'être inerte en mêlée, voir [[Regles_Base]] §7.2). Représente les javelots et haches de jet lancés en approche, juste avant le choc.
-
-> 💡 **Exemple de jeu**
-> Une Milice lige [Arme de jet 1] se déplace puis attaque : 2 dés. Résultat : Cible, Épée. L'Épée touche normalement ; grâce à [Arme de jet 1], la Cible compte aussi (jusqu'à 1) → **2 touches** au lieu d'une. Si l'unité n'avait pas bougé ce tour, la Cible resterait inerte.
-
-> 🎲 **Note de design** Version *conditionnelle et plafonnée* de [Archer en mêlée] : là où [Archer en mêlée] rend les Cible actives en permanence (précision d'élite, Legolas), [Arme de jet X] ne les active que le tour de la charge et seulement jusqu'à X — des projectiles à usage unique, pas un tir soutenu. Donne un rôle d'escarmouche à une levée médiocre sans en faire une ligne de front.
-
-> 🔄 **Nouvelle règle — 2026-07-25 (Playtest #1, D044)** : créée pour la Milice lige (Rohan), jugée « trop nulle » au test. Coût **1 × X** (moins cher que [Archer en mêlée] à 2, car conditionnel et plafonné) — voir [[Regles_Points]].
-
----
-
-### [Arme Lourde X]
-
-Après le lancer de dés, le joueur peut **relancer X dés** de son choix. Chaque dé ne peut être relancé qu'une seule fois.
-
-> 💡 **Exemple de jeu**
-> Une unité [Arme Lourde 1] attaque une Cavalerie adjacente : 3 dés. Résultat : Épée, Drapeau, Arcane. Le joueur relance l'Arcane → obtient Épées croisées. Résultat final : Épée + Épées croisées = 2 touches.
-
-> 🔄 **Assignée — 2026-07-19** : Guerriers de Lossarnach (Gondor et fiefs), Compagnie Grise tant que Gimli est présent (Gondor et fiefs), Helmingas de Grimbolg (Rohan — haches à deux mains). **Khand** (`02 - Factions/Khand.md`) : marqueur transversal du peuple sur les unités armées de hache lourde (Mercenaires hache, Pillards hache), en écho aux cleavers de Khand du matériel MESBG — *l'Aurige a perdu [Arme Lourde 1] au Playtest #1 (D046)*. **Mordor** : Troll du Mordor ([Arme Lourde 1], depuis le Playtest #1 — remplace [Charge écrasante], D043 ; ramenée de 2 à 1 le 2026-07-26, D048).
-
----
-
-### [Charge écrasante] *(refonte dédiée Mûmakil, D054)*
-
-> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1). Le joueur désigne l'hexagone de tête visé, **sans tenir compte** des figurines amies ou ennemies présentes là où le Mûmakil finirait. Chaque unité dont un hexagone est traversé par son corps subit une **attaque de 4 dés** où la **Couronne inflige aussi une touche** ; cela a lieu **en phase de mouvement — ce n'est pas un combat** : aucune contre-attaque ni règle de combat ne s'applique. Toute **cavalerie** repoussée par cette charge **recule du double**. Si toutes les unités qui gênaient le passage sont détruites ou repoussées, il termine ses 2 hexagones ; sinon il s'arrête au dernier hexagone libre. **Le Mûmakil ne fait aucune attaque de mêlée en phase d'attaque.**
-
-> 🎲 **Note de design** Règle **bespoke**, propre au Mûmakil — elle ne sera pas réassignée à d'autres profils. Pas de forfait de coût transférable : le Mûmakil est chiffré par **équivalence d'impact** (≈ 3 Éored → 21 pts, voir `02 - Factions/Harad.md`), pas par la formule additive. Les unités « affectées » = celles dont un hexagone est **nouvellement pénétré** par l'un des 4 hexagones du gabarit 1-2-1 pendant la translation (le Mûmakil ne pivote pas — D10 d'Emmanuel).
-
-> 🔄 **Historique** — **Assignée D029** (Garde du roi à cheval, Aurige de Khand, Troll du Mordor) sous une forme générique « Couronne = touche d'éclaboussure ». **Retirée de toute la V1 le 2026-07-25 (Playtest #1, D043)** : le couple [Charge écrasante] + charge/[Poursuite] avait causé 4 pertes sur 6. **Refondue le 2026-07-27 (D054)** en règle d'impact dédiée à la seule grande créature, en phase de mouvement et sans contre-attaque — exactement l'usage « choc de masse réservé aux grandes créatures » annoncé lors du retrait.
-
----
-
-### [Férocité]
-
-Cette unité peut effectuer sa contre-attaque **même si l'attaque qu'elle vient de subir la force à reculer** : elle résout d'abord sa contre-attaque, puis recule normalement (le recul n'est pas annulé). En temps normal, une unité forcée de reculer ne peut pas contre-attaquer (elle ne remplit plus la condition « restée sur son hexagone de départ », voir §7.6) — [Férocité] est l'exception qui casse cette règle.
-
-> 💡 **Exemple de jeu**
-> Une unité attaque une unité [Férocité] : 3 Épées + 1 Drapeau. La cible encaisse les touches et devrait normalement reculer d'un hexagone sans pouvoir contre-attaquer (elle ne resterait pas sur sa case de départ). Grâce à [Férocité], elle contre-attaque quand même, immédiatement, puis résout son recul d'un hexagone comme prévu.
-
-> ⚠️ **Correction — 2026-07-28 (D057)**
-> Le texte précédent de cette règle (« la contre-attaque est résolue avant que l'adversaire ne résout ses retraites ») inversait le sujet : ce n'est pas le recul de l'**adversaire** qui est concerné, mais le recul de **l'unité qui possède [Férocité] elle-même**. Vérification faite sur la règle *Ferocity* de *BattleLore : Seconde Édition* (Fantasy Flight Games, portée par l'unité Obscene) : elle permet à une unité normalement empêchée de contre-attaquer parce qu'elle doit reculer de le faire quand même, avant de reculer. La clause « si l'adversaire est éliminé, ses retraites ne sont pas résolues » est retirée : elle ne correspond à aucune règle confirmée de la source, et complexifiait sans bénéfice de jeu identifié.
-
-> 🔄 **Assignée — 2026-07-19** : Vétérans d'Osgiliath, Compagnie Grise tant qu'Elrohir et Elladan sont présents (Gondor et fiefs). **Mordor** (`02 - Factions/Mordor.md`) : Meute de cavaliers wargs, Bande d'uruk-hai. **Rohan** (`02 - Factions/Rohan.md`) : Garde du Roi, Helmingas de Grimbolg — la cruauté sauvage ou disciplinée qui riposte même en pleine déroute.
-
----
-
-### [Martyre]
-
-Lorsque cette unité attaque, le joueur peut **sacrifier 1 figurine** de l'unité pour convertir **1 face Couronne** en **1 touche supplémentaire**. La figurine sacrifiée est retirée immédiatement.
-
-> 💡 **Exemple de jeu**
-> Une unité [Martyre] attaque : 2 dés. Résultat : Couronne, Drapeau. Le joueur sacrifie 1 figurine → la Couronne devient 1 touche.
-
-> *Non assignée en V1.*
-
----
-
-### [Réception de charge]
-
-Lorsque cette unité effectue une **contre-attaque**, elle lance **1 dé supplémentaire** — en toutes circonstances, que l'attaquant se soit déplacé ce tour ou non.
-
-> 💡 **Exemple de jeu**
-> Une Cohorte de piquiers orientaux [Réception de charge] est attaquée par une Infanterie immobile depuis le début du tour : la Cohorte contre-attaque quand même à 3 + 1 = **4 dés**. Le bonus n'est plus réservé aux cibles qui viennent de charger.
-
-> 🔄 **Assignée — 2026-07-19** : Hommes d'armes de Dol Amroth (Gondor et fiefs), seule troupe de piquiers du peuple (D021 du [[Document de cadrage]] — assignée par équipement constaté sur la figurine, pas par peuple entier). Cohorte de piquiers orientaux (Easterling, D038).
->
-> 🔄 **Refondue — 2026-07-29 (D058)** : la condition « adversaire déplacé ce tour » est retirée — le bonus s'applique désormais à **toute** contre-attaque de l'unité, inconditionnellement. Décidé à l'ouverture du roster Harad complet : la règle passe de « réception de charge » (bracer contre un choc) à un bonus de contre-attaque générique, ce qui explique son extension à des porteurs non-piquiers (Lanciers du Harad, Gardes serpents — `02 - Factions/Harad.md`). Le nom garde son intitulé historique mais ne décrit plus littéralement le déclencheur ; à surveiller si un nom plus générique s'impose après le Playtest #2. Coût inchangé à 2 pts forfaitaires dans [[Regles_Points]] — mais la version inconditionnelle est strictement plus forte que l'ancienne, donc **provisoire** : à réévaluer après un premier usage à la table sous cette forme.
-
----
-
-### [Vigilant]
-
-Lorsque cette unité **attaque**, la cible ne peut pas la **contre-attaquer** — quelle que soit l'issue du combat (même si la cible reste sur place et n'est pas éliminée). S'applique à toute attaque de cette unité, mêlée ou tir à bout portant (voir [[Regles_Base]] §7.3, une unité de tir peut cibler une unité adjacente).
-
-> 💡 **Exemple de jeu**
-> Un Éored d'éclaireur [Vigilant] tire sur une Cohorte de piquiers orientaux adjacente : 2 dés, 1 touche, aucun Drapeau. La Cohorte remplit normalement les conditions de contre-attaque (adjacente, pas de retraite, pas éliminée) — mais [Vigilant] l'en empêche : elle ne réplique pas.
-
-> 🎲 **Note de design** Adaptée des *Riverwatch Riders* de *BattleLore : Seconde Édition*, où ce mot-clé était combiné à « Flanking » sur la même unité (« Vigilant Flanking »). Emmanuel a choisi de séparer les deux effets entre deux unités du Rohan (voir [Prise de flanc] plus haut) : [Vigilant] va à l'éclaireur — une cavalerie légère qui frappe et se replace sans jamais laisser l'adversaire répliquer, l'esprit du hit-and-run plutôt que du soutien de groupe.
-
-> 🔄 **Nouvelle règle — 2026-07-26 (D050)** : créée pour l'Éored d'éclaireur (Rohan), en remplacement de [Prise de flanc] (réassignée à l'Éored de cavalier, D049). Coût provisoire **2 points forfaitaires** (catégorie Offensif — Mêlée, aligné sur [Réception de charge]) — non testé. Voir [[Regles_Points]].
-
----
-
-## Règles offensives — Distance
-
----
-
-### [Bête incontrôlable] *(refonte dédiée Mûmakil, D054)*
-
-> À son activation, **s'il est blessé**, lancez autant de dés que ses **PV restants** : sans aucune Couronne, posez un **marqueur Furie** et l'adversaire dirige immédiatement son déplacement. Tant qu'il porte une Furie, le camp adverse peut l'activer comme une de ses propres figurines. À la **fin de chaque tour**, le propriétaire (camp du Mal) relance **(PV restants + 1)** dés : une Couronne retire la Furie.
-
-> 🎲 **Note de design** Auto-équilibrage par les PV : plus la bête est blessée, plus elle s'affole (à 1 PV → 1 dé, ~17 % de garder le contrôle) et moins elle se calme (à 1 PV → 2 dés de récupération, ~31 %). **Précisions (Emmanuel, D054)** : le Mûmakil **doit** être activé chaque tour ; on vérifie **avant** l'activation qui le contrôle ; le test de reprise est **toujours** lancé par le camp du Mal, **même quand le Bien pilote la bête** — activer un Mûmakil en Furie est donc un pari à double tranchant, il peut être repris à tout moment. Règle bespoke, non transférable (chiffrée dans l'étiquette 21 du Mûmakil).
-
-> 🔄 **Refondue le 2026-07-27 (D054)** : remplace l'ancienne version « une fois les guides tués, ne peut plus se déplacer » — jamais assignée — par la mécanique d'affolement/Furie ci-dessus.
-
----
-
-### [Inamovible] *(nouvelle règle, D054)*
-
-> Cette unité ne recule jamais : elle ignore tout Drapeau ou résultat de retraite qui la viserait.
-
-> 🎲 **Note de design** Équivaut à un [Inébranlable] absolu (∞). **Coût forfaitaire : 3 points** (catégorie Défensif) — seule des trois règles du Mûmakil à recevoir un forfait transférable, car c'est la seule susceptible de resservir (grandes créatures, machines de guerre ancrées). Première assignation : Mûmakil (`02 - Factions/Harad.md`). Non testée.
-
----
-
-### [Double Tir]
-
-Si cette unité **ne s'est pas déplacée** ce tour, elle peut effectuer une **seconde attaque à distance** après la première, en ciblant la même unité ou une unité différente à portée et en ligne de vue.
-
-> 💡 **Exemple de jeu**
-> Une unité de tir immobile tire sur une cible à 3 hexagones : 2 dés, 1 touche. Grâce à [Double Tir], elle tire une seconde fois sur la même cible : 2 dés, 1 touche supplémentaire.
-
-> 🔄 **Assignée — 2026-07-20** : Cohorte d'archers orientaux (Easterling, `02 - Factions/Easterling.md`) — première assignation en V1. Contraste volontaire avec les archers mobiles ([Mobilité X]) de Rohan/Mordor : la discipline de la ligne d'Easterling vient de la position tenue, pas de la manœuvre.
-
----
-
-### [Plateforme de tir X]
-
-En plus de son attaque normale, cette unité peut effectuer **une attaque de tir de X dés** contre une cible à **portée 1–3 hexagones** en ligne de vue, **qu'elle se soit déplacée ou non** ce tour. Une seule attaque de plateforme par activation — même si l'unité bénéficie de [Poursuite] (la volée ne se répète pas à chaque sous-attaque).
-
-> 💡 **Exemple de jeu**
-> Un Aurige de Khand [Plateforme de tir 2] se déplace, décoche sa volée embarquée (2 dés, portée 1–3) sur une unité voisine, puis attaque au contact avec ses 3 dés de mêlée. Les deux attaques peuvent viser des cibles différentes.
-
-> 🎲 **Note de design** Distincte de [Double Tir] (qui *double* le tir mais exige de ne pas s'être déplacé) : la plateforme tire **sur la lancée**, en plus de la mêlée — le tir depuis un véhicule ou une bête en mouvement (char, howdah). [Howdah] en est le cas particulier du Mûmakil : **[Howdah] = [Plateforme de tir 2] + [Poison]**.
-
-> 🔄 **Nouvelle règle — 2026-07-25 (Playtest #1, D045)** : créée pour l'Aurige de Khand reconçu ([Plateforme de tir 2]) après le retrait de [Charge écrasante]. Coût **2 × X** (chaque dé de tir vaut 2 points, comme dans la formule de [[Regles_Points]]).
-
----
-
-### [Howdah]
-
-Cas particulier de [Plateforme de tir X] pour le Mûmakil : **[Howdah] = [Plateforme de tir 2] + [Poison]**. L'unité effectue une attaque de tir de **2 dés**, portée **1 à 3 hexagones**, en plus de son attaque de mêlée, et cette volée bénéficie de [Poison] (la tour d'archers Haradrim et leurs flèches empoisonnées).
-
-> *Candidate forte pour le Mûmakil (tour d'archers Haradrim sur son dos) — voir note en tête de document. Depuis le Playtest #1, la couche générique « tir depuis une plateforme mobile » est portée par [Plateforme de tir X] (D045), dont [Howdah] est la déclinaison empoisonnée. Le [Poison] reste optionnel, à retrancher si non pertinent.*
-
----
-
-### [Perforant X]
-
-Après le lancer de dés d'une attaque à distance, le joueur peut **relancer X dés** de son choix. Chaque dé ne peut être relancé qu'une seule fois.
-
-> 🎲 **Note de design** [Perforant X] et [Arme Lourde X] partagent la même mécanique de relance. La distinction de nom reflète leur contexte d'usage : [Arme Lourde X] pour la mêlée, [Perforant X] pour le tir à distance.
-
----
-
-### [Poison]
-
-Lorsque cette unité effectue une attaque, chaque face **Couronne** obtenue inflige **1 touche supplémentaire**, sauf contre les unités **[Immunisées au poison]**.
-
-> *Non assignée en V1.*
-
----
-
-### [Souffle de feu]
-
-Lorsque cette unité effectue une attaque, chaque face **Couronne** obtenue inflige **1 touche supplémentaire**, sauf contre les unités **[Immunisées au feu]**.
-
-> *Non assignée en V1.*
-
----
-
-## Règles de mouvement et de manœuvre
-
----
-
-### [Déploiement avancé]
-
-> ⚠️ **Retirée de la V1 — 2026-07-26 (D047)** : jamais éprouvée en partie réelle (le centre-funnel du Playtest #1 ne lui a pas laissé l'occasion de s'exprimer). Retirée de l'Éored d'éclaireur (Rohan, sa seule porteuse), remplacée par [Flanking] (voir §6). Conservée ci-dessous à titre de référence, mais **non assignée en V1**.
-
-Une fois que toutes les unités (amies et ennemies) sont déployées, avant le premier Ordre du tour 1, le joueur propriétaire de cette unité peut la **repositionner** : elle effectue un déplacement égal à sa valeur de Mouvement. Elle ne peut pas terminer ce déplacement au contact d'une unité ennemie.
-
-> 💡 **Exemple de jeu**
-> Une unité [Déploiement avancé] (Mouvement 4) est déployée en retrait derrière la ligne de bataille. Une fois le déploiement terminé des deux côtés, son joueur la repositionne de 4 hexagones vers un flanc dégagé, sans finir au contact d'une unité ennemie — avant même que le premier Ordre du tour 1 ne soit joué.
-
-> 🎲 **Note de design** Créée pour l'Éored d'éclaireur (Rohan) — représente des éclaireurs qui repèrent le déploiement adverse et se replacent en conséquence avant que la bataille ne commence. Contrairement à [Mobilité X], ce redéploiement est unique (avant le tour 1), pas répété après chaque attaque.
-
-> 🔄 **Nouvelle règle — 2026-07-19** : créée et assignée pour l'Éored d'éclaireur (Rohan). Voir D028 du [[Document de cadrage]] et [[Regles_Points]] pour son coût provisoire.
-
----
-
-### [Meute X]
-
-Cette unité est composée de **plusieurs figurines de X PV chacune**. Retirer une figurine dès qu'elle atteint 0 PV. L'unité est **Faible** quand il ne reste qu'une seule figurine. *(Exception à la règle "jamais Faible" des Créatures.)*
-
-> *Non assignée en V1 — candidate pour un futur profil de créatures en petit groupe.*
-
----
-
-### [Mobilité X]
-
-Après avoir effectué une attaque, cette unité peut se déplacer de **X hexagones supplémentaires**.
-
-> ⚠️ **Clarification — Playtest #1b (2026-07-27, D056)** : le bonus **exige d'avoir attaqué ce tour**. Modélise le tir-puis-décroche (identité harcèlement Rohan/Mordor/Fiefs), pas une mobilité brute. Sans attaque, l'unité se déplace de son Mouvement normal, sans bonus ni pénalité. Formule mémorisable pour l'aide de jeu : *« Mobilité = tu frappes, puis tu décroches. Pas d'attaque, pas de bonus. »*
-
-> 🔄 **Assignée** : Rangers d'Ithilien, Archers de la Racine Noire, **Rangers du Gondor** (D055, Playtest #1b) — Gondor et fiefs. **Khand** : Pillards de Khand (archer). **Mordor** : Bande de pisteurs orques (`02 - Factions/Mordor.md`).
-
----
+> 💡 [Inébranlable 2] face à 3 Drapeaux → recule d'1 seul hexagone. [Inébranlable ∞] → ne recule pas.
 
 ### [Poursuite X]
 
-Alternative à l'avance (voir [[Regles_Base]] §8.2) : se déplacer d'au moins 1 et jusqu'à X hexagones, puis effectuer une attaque supplémentaire contre une unité adjacente à la nouvelle position. Une seule fois par tour.
+Alternative à l'avance (voir [[Regles_Base]] §8.2) : après avoir éliminé ou fait reculer une cible adjacente, se déplacer de 1 à X hexagones puis effectuer **une attaque supplémentaire** contre une unité adjacente à la nouvelle position. Une fois par tour.
 
-> 🔄 **Assignée — 2026-07-19** : Chevaliers de Minas Tirith, Chevaliers de Dol Amroth (Gondor et fiefs, [Poursuite 1]). Éored de cavalier, Gardes royaux à cheval, Garde du roi à cheval (Rohan, [Poursuite 2]). **Khand** : Aurige de Khand ([Poursuite 1]) — l'attelage enchaîne sur sa lancée après le premier choc ; le profil sacrifie 1 PV pour ce troisième atout signature.
+> Gradée selon la pièce (ex. 1 pour la cavalerie de ligne, 2 pour un éored). Reste un mot-clé de profil, **pas** un trait automatique de la Cavalerie (arbitrage D062, point 6).
 
----
+### [Férocité]
 
-### [Rechargement]
+Cette unité peut effectuer sa **contre-attaque même si l'attaque subie la force à reculer** : elle résout d'abord la contre-attaque, **puis** recule normalement. C'est l'exception à la condition « restée sur son hexagone » de [[Regles_Base]] §7.6.
 
-Cette unité **ne peut pas attaquer** lors d'un tour où elle s'est déplacée.
+> 💡 Attaquée avec 3 Épées + 1 Drapeau, une unité [Férocité] contre-attaque quand même, immédiatement, avant de reculer d'1 hexagone.
 
-> *Candidate pour une pièce d'artillerie de siège (trébuchet de Gondor, catapulte de Mordor) — à confirmer à la rédaction des profils.*
+### [Arme Lourde X]
 
----
+Après le lancer, le joueur peut **relancer X dés** de son choix (mêlée **ou** tir, selon le mode de l'unité). Chaque dé n'est relancé qu'une fois.
 
-### [Terrain favori : X]
-
-Voir [[Terrain]] §11. Annule toutes les restrictions de mouvement et de combat du terrain X pour cette unité — la ligne de vue du terrain reste bloquante. Aucun peuple de la V1 ne porte cette règle pour l'instant.
+> 🔄 **Fusion — P2 (D062)** : absorbe l'ancienne [Perforant X] (même mécanique de relance, jadis réservée au tir). Le **token de mode** indique quels dés sont relancés — un seul mot-clé à retenir. Nom historique conservé (le plus assigné). Porteurs : armes de hache lourde (Khand), gourdin du Troll, et l'archerie d'élite qui le portait sous [Perforant] (Racine Noire, Gondor).
 
 ---
 
-## Règles de soutien
+## Règles intrinsèques (dérivées de la taxonomie)
+
+Ces effets **ne se notent pas sur le profil** : ils découlent de la classe (couleur), du type (socle) et du mode (token), et se lisent au plateau. Leur peuplement complet (par combinaison classe × type × mode) fait l'objet d'une **revue dédiée à venir** ; ils seront écrits dans [[Regles_Base]]. Seul est acté à ce stade :
+
+### 🟢 Léger + mode distance → [Mobilité 1]
+
+Toute unité **légère (🟢, 2 dés) en mode distance** décroche après avoir tiré : **après son attaque**, elle peut se déplacer de **1 hexagone supplémentaire**. Sans attaque ce tour, pas de bonus (elle bouge de son Mouvement normal).
+
+> 🎲 Identité **harceleur** (tir-puis-décroche), lisible d'un coup d'œil (vert + token distance) — plus besoin d'écrire [Mobilité 1] sur ces profils. Formule pour l'aide de jeu : *« Tu frappes, puis tu décroches. Pas d'attaque, pas de bonus. »*
+
+> 🔄 **P2 (D062)** : absorbe les anciennes assignations éparses de [Mobilité 1] (Rangers du Gondor et famille, Pillards de Khand, pisteurs orques). L'écriture effective dans [[Regles_Base]] et l'éventuelle extension à d'autres cases (ex. 🟢 mêlée) relèvent de la revue classe × type. Contraste voulu avec [Double Tir] (§4), signature de l'archer **immobile** qui, lui, troque la mobilité contre le volume.
 
 ---
 
-### [Prise de flanc]
+## Signatures
 
-Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre unité amie** qui attaque cette unité ennemie ajoute **1 dé** à son jet d'attaque (mêlée ou tir). Cette unité n'ajoute pas ce bonus à ses propres attaques.
+Capacités marquantes. **1–2 maximum par unité.** Chaque peuple porte **une** signature identitaire ; les pièces uniques et les créations bespoke complètent la liste. L'objectif « **une seule** signature bien nette par peuple » se finalise à la re-expression des rosters (P4) ; certaines signatures ci-dessous coiffent encore plusieurs unités d'un même peuple.
 
-- Si plusieurs unités amies portant [Prise de flanc] sont adjacentes à la même cible, les bonus se **cumulent** (1 dé par source).
-- L'unité [Prise de flanc] elle-même doit être présente et adjacente au moment de l'attaque alliée — si elle recule ou est éliminée avant, le bonus ne s'applique plus.
+### Signatures de peuple
 
-> 💡 **Exemple de jeu**
-> Un Éored de cavalier du Rohan [Prise de flanc] est adjacent à une Cohorte d'orientaux ennemie. Une unité de Chevaliers de Minas Tirith, également adjacente à cette Cohorte, l'attaque : elle lance ses 3 dés habituels + 1 dé de [Prise de flanc] = **4 dés**. Si un second cavalier [Prise de flanc] était aussi adjacent à la même cible, ce serait +2 dés au total.
+#### [Horde]  — *Mordor*
 
-> 🎲 **Note de design** Adaptée des *Riverwatch Riders* de *BattleLore : Seconde Édition* (Fantasy Flight Games), dont le mot-clé d'origine combinait deux effets (« Vigilant Flanking »). Emmanuel a choisi de **séparer les deux effets** entre deux unités du Rohan à l'identité différente : [Prise de flanc] (soutien de groupe, sans dégât propre) va à la cavalerie de ligne qui se bat au contact ; l'immunité au contre (désormais [Vigilant], voir plus loin) va à l'éclaireur, taillé pour le harcèlement hit-and-run. Contraste volontaire avec [Poursuite X] (l'éored qui frappe lui-même deux fois) : [Prise de flanc] est un rôle de **soutien**, pas de dégât direct — le cavalier tient la faille ouverte, ce sont les lances plus lourdes qui l'exploitent.
+Tant que cette unité **n'a perdu aucun PV** : **+1 dé d'attaque** et **[Inébranlable 1]**. Les deux bonus disparaissent **définitivement** dès la première perte.
 
-> 🔄 **Nouvelle règle — 2026-07-26 (D047)**, **renommée et réassignée — 2026-07-26 (D049)** : créée sous le nom « Flanking » pour l'Éored d'éclaireur (Rohan), en remplacement de [Déploiement avancé] (retirée de la V1, jamais éprouvée). Renommée **[Prise de flanc]** et réassignée à l'**Éored de cavalier du Rohan** (profil 1) sur arbitrage d'Emmanuel — l'éclaireur reçoit [Vigilant] à la place (voir §7, Règles offensives — Mêlée). Coût provisoire **3 points forfaitaires** (catégorie Soutien) — comparable à [Poursuite 1] en impact potentiel (peut bénéficier à plusieurs unités par tour), mais jamais testé en partie réelle. Voir [[Regles_Points]].
+> 🎲 « Très fort au premier choc, fragile ensuite » : la horde d'orques nombreuse et prompte à rompre. Condition lisible au nombre de figurines, sans jeton. Inspirée des *Warriors* de C&C Ancients. Assignée aux bandes d'orques (pas à l'Uruk-hai, élite qui tient).
 
----
+#### [Poison]  — *Harad*
 
-## Règles hybrides — offensif + défensif
+Lorsque cette unité attaque, chaque face **Couronne** inflige **1 touche supplémentaire**.
 
----
+> 🎲 Fil conducteur du Harad (flèches et lames empoisonnées). Porté par les Lanciers, les Gardes serpents et la volée du Mûmakil ([Howdah]).
 
-### [Horde]
+#### [Double Tir]  — *Easterling*
 
-Tant que cette unité **n'a perdu aucun PV**, elle bénéficie de **+1 dé d'attaque** et de **[Inébranlable 1]**. Ces deux bonus disparaissent **définitivement** dès que l'unité perd son premier PV — même si elle en regagnait par la suite (aucun mécanisme de regain de PV n'existe actuellement dans le système).
+Si cette unité **ne s'est pas déplacée** ce tour, elle effectue une **seconde attaque à distance** (même cible ou une autre, à portée et en ligne de vue).
 
-> 💡 **Exemple de jeu**
-> Une unité de 3 dés [Horde], encore indemne, attaque à **4 dés** et ignore 1 Drapeau par attaque reçue. Dès qu'elle perd sa première figurine, elle retombe à son profil de base (3 dés, sans Inébranlable) pour le reste de la partie — même si l'ennemi ne la touche plus jamais après ça.
+> 🎲 La discipline de la ligne qui tient sa position et double la salve — signature glanceable de l'archer d'Easterling, miroir de l'archer **mobile** (intrinsèque [Mobilité 1], §3). Depuis la coupe de [Mur de bouclier] (P2), c'est [Double Tir] qui porte l'identité de tir discipliné du peuple ; sa protection passe par [Armure 1] (socle).
 
-> 🎲 **Note de design** Inspirée de la règle *Warriors* de Commands & Colors: Ancients (bonus offensif à pleine force, perdu à la première perte). La condition (« n'a perdu aucun PV ») se lit directement sur le nombre de figurines encore présentes sur le socle — aucun jeton supplémentaire n'est nécessaire (principe 4 du [[Document de cadrage]]). Réservée aux Orcs (Mordor) plutôt qu'à Khand : le fil conducteur de Khand est déjà [Arme Lourde 1] (une relance permanente, D031), tout juste validé pour le Playtest #1 — superposer un second mécanisme offensif aurait dilué cette identité fraîchement close. Le pattern « très fort au premier contact, fragile ensuite » colle en revanche précisément à la horde d'Orcs du texte — nombreuse, féroce dans la charge, prompte à rompre une fois entamée.
+*(Khand : sa signature identitaire est le char — voir [Plateforme de tir X] ci-dessous. Gondor : identité portée par l'armure lourde ([Armure X], socle) et ses pièces uniques.)*
 
-> 🔄 **Nouvelle règle — 2026-07-19 (D032)**, **première assignation — 2026-07-20** : Bande d'orques du Mordor et Bande d'orques du Morannon (`02 - Factions/Mordor.md`). Volontairement **retirée** de la Bande d'uruk-hai (l'élite qui ne rompt pas, contraste assumé, D035) et de la Bande de pisteurs orques (règle de mêlée de masse à 6 PV, pas de tir). Coût de 3 points forfaitaires — voir [[Regles_Points]].
+### Signatures de pièce unique
 
-> ✅ **Validée au Playtest #1b (2026-07-27, D053)** : les orques du Morannon ont frappé à 4 dés à pleine force puis subi une contre-attaque leur faisant perdre le bonus — le surge-puis-effondrement se lit clairement à la table. Coût de 3 pts forfaitaires confirmé, plus de statut « non testé ».
+#### [Peur X]  — *Troll du Mordor*
 
----
+Chaque face **Arcane** obtenue en attaque compte comme **X Drapeaux** contre la cible (au lieu d'un échec). N'inflige **aucune touche** : la Peur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
 
-## Règles de moral
+> 🎲 Réutilise la face Arcane (morte par défaut) et pose le premier jalon de la couche Leadership (Phase 2). Versions « Terreur » (X élevé, Nazgûl/Roi-Sorcier) différées (§7).
 
----
+#### [Archer en mêlée]  — *Compagnie Grise (Legolas)*
 
-### [Peur X]
+Les faces **Cible** infligent aussi une touche lors d'une attaque de **mêlée** (normalement inertes en mêlée).
 
-Lorsque cette unité effectue une attaque, chaque face **Arcane** obtenue est considérée comme **X Drapeaux (retraites)** contre la cible, au lieu d'être un échec universel (voir [[Regles_Base]], face Arcane).
+> 🎲 Précision hors norme, dangereuse jusqu'au corps à corps.
 
-- [Peur X] n'inflige **aucune touche** : la Peur fait **rompre** l'ennemi, elle ne le tue pas.
-- Les Drapeaux ainsi générés se résolvent comme des retraites normales et peuvent donc être annulés par l'[Inébranlable X] de la cible — un ennemi inébranlable **résiste à l'effroi**.
-- Se combine sans conflit avec les règles consommant la **Couronne** ([Charge écrasante], [Poison]…) : Peur (Arcane) et ces règles (Couronne) vivent sur des faces différentes.
+#### [Vigilant]  — *Éored d'éclaireur (Rohan)*
 
-> 💡 **Exemple de jeu**
-> Un Troll [Peur 1] attaque une unité d'Infanterie : 4 dés. Résultat : Épées croisées, Couronne, Arcane, Épée. Les touches (Épées croisées, Épée) et l'effet de Couronne se résolvent normalement ; l'**Arcane**, qui serait un échec, compte comme **1 Drapeau** → la cible recule d'1 hexagone en plus des pertes subies.
+La cible d'une attaque de cette unité **ne peut pas la contre-attaquer**, quelle que soit l'issue. Mêlée ou tir à bout portant.
 
-> 🎲 **Note de design** Créée pour le Troll du Mordor (`02 - Factions/Mordor.md`). Le choix de la face **Arcane** plutôt que de la Couronne (proposition d'Emmanuel, D033) fait d'une pierre trois coups : il réutilise une face jusque-là morte (échec universel, D001), il évite tout conflit avec les règles à Couronne (notamment [Charge écrasante], également portée par le Troll), et il pose le premier jalon concret de la couche **Leadership** (D034, Phase 2 — manœuvres de héros sur la face Arcane, Œil de Sauron / Rune de Gandalf). Nommée génériquement pour resservir aux Nazgûl / au Roi-Sorcier (versions « Terreur », X plus élevé) en Phase 2.
+> 🎲 Cavalerie légère de harcèlement : elle frappe et se replace sans jamais laisser l'adversaire répliquer. Adaptée des *Riverwatch Riders* (BattleLore V2).
 
-> 🔄 **Nouvelle règle — 2026-07-20 (D033)** : première assignation au Troll du Mordor ([Peur 1]). Coût provisoire 2×X — voir [[Regles_Points]].
+#### [Prise de flanc]  — *Éored de cavalier (Rohan)*
+
+Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre unité amie** attaquant cette ennemie ajoute **1 dé**. Cette unité n'en profite pas pour ses propres attaques. Les sources multiples se cumulent (1 dé chacune).
+
+> 🎲 Rôle de **soutien** (pas de dégât propre) : le cavalier tient la faille ouverte, les lances plus lourdes l'exploitent. Second mot-clé des *Riverwatch Riders*, séparé de [Vigilant].
+
+#### [Plateforme de tir X]  — *Aurige de Khand (char)*
+
+En plus de son attaque normale, cette unité effectue **une attaque de tir de X dés**, portée **1–3**, en ligne de vue, **qu'elle se soit déplacée ou non**. Une seule par activation.
+
+> 🎲 Le tir depuis un véhicule en mouvement (char, howdah). Distincte de [Double Tir] (qui exige l'immobilité). [Howdah] en est la déclinaison Mûmakil.
+
+### Signatures bespoke — Mûmakil
+
+Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par équivalence d'impact, pas à la formule). Le Mûmakil porte aussi **[Inébranlable ∞]** (socle, ex-[Inamovible]).
+
+#### [Charge écrasante]  *(bespoke)*
+
+À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où la **Couronne inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+
+> 🎲 Choc de masse réservé à la grande créature, en phase de mouvement (l'usage annoncé lors du retrait de l'ancienne [Charge écrasante] générique, D043→D054). Le gabarit 1-2-1 ne pivote pas (translation pure).
+
+#### [Bête incontrôlable]  *(bespoke)*
+
+À son activation, **s'il est blessé** : lancez autant de dés que ses **PV restants** ; **sans aucune Couronne**, posez un marqueur **Furie** — l'adversaire dirige immédiatement son déplacement et peut l'activer comme une de ses figurines tant que la Furie tient. À la **fin de chaque tour**, le camp du Mal relance **(PV restants + 1)** dés : une **Couronne** retire la Furie.
+
+> 🎲 Auto-équilibrage par les PV (plus blessé = plus affolé, moins récupérable). Le Mûmakil **doit** être activé chaque tour ; le contrôle se vérifie **avant** l'activation ; le test de reprise est **toujours** lancé par le camp du Mal. *(Refonte de la Furie prévue en P5.)*
+
+#### [Howdah]  *(bespoke)*
+
+**[Howdah] = [Plateforme de tir 2] + [Poison]** : une attaque de tir de **2 dés**, portée **1–3**, en plus de la mêlée, bénéficiant de [Poison] (tour d'archers Haradrim, flèches empoisonnées).
 
 ---
 
 ## Récapitulatif alphabétique
 
-| Règle | Catégorie | Résumé |
+| Règle | Famille | Résumé |
 |---|---|---|
-| **[Archer en mêlée]** | Offensif — Mêlée | Les faces Cible touchent aussi en mêlée |
-| **[Arme de jet X]** | Offensif — Mêlée | Le tour où l'unité charge : jusqu'à X faces Cible comptent comme touches |
-| **[Arme Lourde X]** | Offensif — Mêlée | Relancer X dés après le lancer |
-| **[Armure X]** | Défensif | Retire X faces Épée des attaques de mêlée reçues |
-| **[Bête incontrôlable]** *(bespoke Mûmakil)* | Moral | Blessé : test de contrôle par PV restants ; échec → marqueur Furie, l'adversaire le dirige |
-| **[Charge écrasante]** *(bespoke Mûmakil, refonte D054)* | Offensif — Mêlée | Charge de 2 hex en phase de mouvement : attaque 4 dés (Couronne = touche) chaque unité du trajet, sans contre-attaque |
-| **[Déploiement avancé]** | Manœuvre | Repositionnement unique avant le tour 1, jusqu'à sa valeur de Mouvement, sans finir au contact ennemi *(retirée de la V1, D047 — non assignée)* |
-| **[Prise de flanc]** | Soutien | +1 dé aux attaques des autres unités amies contre une unité ennemie adjacente à celle-ci |
-| **[Double Tir]** | Offensif — Distance | Seconde attaque si non déplacé ce tour *(assignée : Cohorte d'archers orientaux, Easterling)* |
-| **[Férocité]** | Offensif — Mêlée | Contre-attaque même en cas de recul forcé, puis recule normalement |
-| **[Horde]** | Mixte — Offensif + Défensif | +1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; perdus définitivement à la 1ère perte |
-| **[Howdah]** | Offensif — Distance | Attaque à distance en plus de la mêlée — 2 dés (1–3) + [Poison] |
-| **[Immunisé au feu]** | Défensif | Ignore les touches de [Souffle de feu] |
-| **[Immunisé au poison]** | Défensif | Ignore les touches de [Poison] |
-| **[Inébranlable X]** | Défensif | Ignore X résultats de retraite par attaque reçue |
-| **[Inamovible]** *(nouvelle, D054)* | Défensif | Ne recule jamais (ignore tout Drapeau/retraite) — coût 3 forfaitaire |
-| **[Martyre]** | Offensif — Mêlée | Sacrifier 1 fig. pour convertir 1 Couronne en touche |
-| **[Meute X]** | Manœuvre | X PV par figurine — Faible à 1 figurine restante |
-| **[Mobilité X]** | Manœuvre | Déplacement supplémentaire de X hex après l'attaque |
-| **[Mur de bouclier]** | Défensif | [Protection 1] tant qu'adjacente à une autre Infanterie amie |
-| **[Peur X]** | Moral | Chaque face Arcane obtenue en attaque = X Drapeaux contre la cible (n'inflige pas de touche) |
-| **[Perforant X]** | Offensif — Distance | Relancer X dés après le lancer (attaque à distance) |
-| **[Plateforme de tir X]** | Offensif — Distance | Attaque de tir de X dés (portée 1–3) en plus de l'attaque normale, 1×/activation |
-| **[Poison]** | Offensif — Distance | Couronne → 1 touche sup. (sauf [Immunisé au poison]) |
-| **[Poursuite X]** | Manœuvre | Alternative à l'avance : jusqu'à X hex + attaque sup. |
-| **[Protection X]** | Défensif | Ignore X touches (terrain : bâtiments, fortifications) |
-| **[Rechargement]** | Manœuvre | Ne peut pas attaquer si déplacé ce tour |
-| **[Réception de charge]** | Offensif — Mêlée | +1 dé en contre-attaque, inconditionnellement |
-| **[Vigilant]** | Offensif — Mêlée | La cible de cette unité ne peut pas la contre-attaquer |
-| **[Souffle de feu]** | Offensif — Distance | Couronne → 1 touche sup. (sauf [Immunisé au feu]) |
-| **[Terrain favori : X]** | Manœuvre | Ignore toutes les restrictions de mouvement et de combat du terrain X |
+| **[Archer en mêlée]** | Signature (Compagnie Grise) | Les faces Cible touchent aussi en mêlée |
+| **[Arme Lourde X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
+| **[Armure X]** | Socle | Retire X faces Épée des attaques de mêlée reçues |
+| **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | Blessé : test de contrôle par PV ; échec → Furie dirigée par l'adversaire |
+| **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Couronne = touche) sur le trajet, sans contre-attaque |
+| **[Double Tir]** | Signature (Easterling) | Seconde attaque à distance si non déplacé |
+| **[Férocité]** | Socle | Contre-attaque même en cas de recul forcé, puis recule |
+| **[Horde]** | Signature (Mordor) | +1 dé et [Inébranlable 1] à pleine santé ; perdus à la 1ʳᵉ perte |
+| **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] + [Poison] |
+| **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
+| **[Mobilité 1]** | Intrinsèque (🟢 distance) | Déplacement +1 hex après avoir attaqué — lu au plateau, non noté |
+| **[Peur X]** | Signature (Troll) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) |
+| **[Plateforme de tir X]** | Signature (char de Khand) | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
+| **[Poison]** | Signature (Harad) | Couronne → 1 touche supplémentaire |
+| **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
+| **[Prise de flanc]** | Signature (Éored de cavalier) | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
+| **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
+| **[Vigilant]** | Signature (Éored d'éclaireur) | La cible de cette unité ne peut pas la contre-attaquer |
 
 ---
 
-## Règles différées — Phase 2+
+## Retiré au tri P2
+
+Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
+
+| Règle | Sort | Renvoi / remplacement |
+|---|---|---|
+| **[Perforant X]** | Fusionnée | → **[Arme Lourde X]** (relance X, mêlée ou tir) |
+| **[Inamovible]** | Fusionnée | → **[Inébranlable ∞]** |
+| **[Mobilité X]** | Devenue intrinsèque | → 🟢 distance (§3) — plus un mot-clé de profil |
+| **[Mur de bouclier]** | Coupée | → **[Armure 1]** sur les profils Easterling (répercussion P4) |
+| **[Réception de charge]** | Coupée | — (bonus de contre-attaque accroché à l'action la plus oubliée à la table) |
+| **[Arme de jet X]** | Coupée | Buff de la Milice lige re-réglé à la re-expression (classe/dés), P4 |
+| **[Martyre]** | Coupée | Jamais assignée |
+| **[Meute X]** | Coupée | Candidate créature en Phase 2 |
+| **[Souffle de feu]** | Coupée | Ré-skinnable sur [Poison] si une unité de feu apparaît |
+| **[Immunisé au feu]** | Coupée | Sans objet ([Souffle de feu] coupée) |
+| **[Immunisé au poison]** | Coupée | Géré au cas par cas si nécessaire |
+| **[Terrain favori : X]** | Coupée | → document [[Terrain]] |
+| **[Rechargement]** | Coupée | Artillerie hors périmètre v1 ([[Regles_Base]]) |
+| **[Déploiement avancé]** | Coupée | Retrait déjà acté (D047), ici formalisé |
+
+> ⚠️ **Répercussions différées (conscientes, non omises).** Le retrait des règles coupées des **profils** (`02 - Factions/*`), le passage d'Easterling à [Armure 1], la mise à jour de **[[Regles_Points]]** (coûts des règles fusionnées/coupées) et l'ajustement des **scénarios** (`03 - Scénarios/*`) relèvent de **P3 (coûts)** et **P4 (re-expression des 6 rosters)**, conformément à D060 — pas de retouche piecemeal de fichiers voués à être réécrits. Les **comptes-rendus de playtest** (`05 - Playtest/*`) ne sont jamais modifiés (historique).
+
+---
+
+## Différées — Phase 2+
 
 | Règle | Description préliminaire | Statut |
 |---|---|---|
-| ~~[Peur]~~ | **Passée en V1 (D033)** — déclenchée par la face Arcane. Voir §Règles de moral. | ✅ V1 |
-| **[Terreur]** | Version renforcée de [Peur X] (X plus élevé) — candidate pour Nazgûl, Roi-Sorcier, Mûmakil | ⏳ Phase 2 |
-| **[Vol]** | L'unité peut traverser des hexagones occupés et ignorer certains terrains — candidate pour les créatures ailées (Nazgûl) | ⏳ Phase 2 |
-| **[Piétinement en zone]** | Attaque touchant plusieurs hexagones adjacents — candidate pour les grandes créatures (Mûmakil, Trolls) | ⏳ Phase 2 |
-| **Manœuvres de héros (face Arcane)** | Couche Leadership : les héros exploitent les Arcanes pour activer des manœuvres spéciales, esprit Espoir/Désespoir (Rune de Gandalf / Œil de Sauron). Voir D034 du [[Document de cadrage]]. | ⏳ Phase 2 |
+| **[Terreur]** | Version renforcée de [Peur X] (X élevé) — Nazgûl, Roi-Sorcier, Mûmakil | ⏳ Phase 2 |
+| **[Vol]** | Traverser des hexagones occupés, ignorer certains terrains — créatures ailées (Nazgûl) | ⏳ Phase 2 |
+| **[Piétinement en zone]** | Attaque touchant plusieurs hexagones adjacents — grandes créatures | ⏳ Phase 2 |
+| **Manœuvres de héros (face Arcane)** | Couche Leadership : héros activant des manœuvres via les Arcanes (Espoir/Désespoir). Voir D034. | ⏳ Phase 2 |
 
 ---
 
-> 🔗 **Voir aussi**
-> [[Regles_Base]] — [[Terrain]] — [[Document de cadrage]]
+> 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document de cadrage]]
 
 ---
 
-*Version : 0.7 — Phase 1 — 2026-07-20.*
-*Première adaptation de Batailles de la Terre du Milieu (BdTdM) : reprise du glossaire mécanique générique, sans reprise du contenu spécifique à l'autre projet dont il est issu. [Massif] retirée (D015). [Arme à feu] supprimée (spécifique aux armes à poudre, sans objet en Terre du Milieu). Index par faction retiré (aucune assignation encore faite). Renommé depuis `BdVM_Regles_Speciales.md`.*
-*0.2 — Rédaction des profils Gondor et fiefs (voir `02 - Factions/Gondor_et_Fiefs.md`) : nouvelle règle [Archer en mêlée] ajoutée (D024). [Réception de charge] assignée aux Hommes d'armes de Dol Amroth (D021).*
-*0.3 — Rédaction en cours des profils Rohan (voir `02 - Factions/Rohan.md`) : nouvelle règle [Déploiement avancé] ajoutée (D028), créée pour l'Éored d'éclaireur. [Charge écrasante] assignée pour la première fois (Garde du roi à cheval). [Arme Lourde 1] assignée aux Helmingas de Grimbolg.*
-*0.4 — Roster Rohan validé et clos (D029) : [Charge écrasante] confirmée pour la Garde du roi à cheval — le Mûmakil aura sa propre règle dédiée, retirée de la liste des candidates pour cette règle.*
-*0.5 — Ouverture du roster Khand (`02 - Factions/Khand.md`) : type **Chars** tranché — Jamais Faible (D030). [Charge écrasante] et [Arme Lourde X] proposées comme règles transversales du peuple Khand (chariot et armes de hache), en cours de revue profil par profil.*
-*0.6 — Roster Khand validé et clos (D031) : [Arme Lourde 1] et [Charge écrasante] confirmées, [Poursuite 1] assignée à l'Aurige de Khand (3e règle signature, PV ramené à 3). Nouvelle règle hybride [Horde] ajoutée (D032), inspirée des Warriors de C&C Ancients — réservée aux Orcs (Mordor), non assignée à un profil, roster à venir. Nouvelle section « Règles hybrides — offensif + défensif » créée pour l'accueillir.*
-*0.7 — Ouverture du roster Mordor (`02 - Factions/Mordor.md`) : première assignation de [Horde] (Bande d'orques du Mordor, Bande d'orques du Morannon) ; Bande d'uruk-hai validée en exception steadfast, sans Horde (D035). Nouvelle règle [Peur X] créée pour le Troll du Mordor, déclenchée par la face Arcane plutôt que la Couronne (D033) — nouvelle section « Règles de moral » créée pour l'accueillir, priorité de résolution mise à jour en conséquence.
-*0.8 — Roster Mordor clos (D036). Roster Easterling rédigé et clos dès sa première session (`02 - Factions/Easterling.md`, D038) : nouvelle règle [Mur de bouclier] créée (D037, version conditionnelle-à-la-formation de [Protection X]), assignée à la Cohorte d'orientaux et à la Cohorte de piquiers orientaux. Première assignation réelle de [Double Tir] (Cohorte d'archers orientaux).*
-*0.9 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`) : deux règles neuves — [Arme de jet X] (D044, Milice lige) et [Plateforme de tir X] (D045, Aurige de Khand ; [Howdah] devient son cas particulier + [Poison]). [Charge écrasante] retirée de tous les profils de la V1 (D043), conservée au glossaire mais non assignée. [Arme Lourde 2] assignée au Troll du Mordor (remplace [Charge écrasante]). Récapitulatif alphabétique et priorité de résolution étendus en conséquence.*
-*0.10 — Phase 1 — 2026-07-26. Retour sur deux points : [Arme Lourde 2] du Troll du Mordor ramenée à **[Arme Lourde 1]** (D048). Nouvelle section « Règles de soutien » créée pour accueillir **[Flanking]** (D047, adaptée des Riverwatch Riders de BattleLore V2), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Déploiement avancé], retirée de la V1 (jamais éprouvée). Table des matières et récapitulatif alphabétique mis à jour.*
-*0.11 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'**Éored de cavalier du Rohan** (profil 1, au lieu de l'Éored d'éclaireur). Nouvelle règle **[Vigilant]** créée (D050, également adaptée de BattleLore V2 — les deux mots-clés « Vigilant Flanking » de l'unité d'origine sont désormais séparés entre deux unités du Rohan) et assignée à l'Éored d'éclaireur en remplacement de [Prise de flanc]. Récapitulatif alphabétique mis à jour.*
-*0.13 — Phase 1 — 2026-07-28. **Correction de [Férocité]** (D057) : le texte précédent inversait le sujet du recul concerné (« l'adversaire » au lieu de « cette unité elle-même »). Vérifiée contre la règle *Ferocity* de *BattleLore : Seconde Édition* (FFG, unité Obscene) : elle permet à une unité forcée de reculer de contre-attaquer quand même avant de reculer — elle ne « saute » pas le recul, elle contre-attaque juste avant. Clause « retraite annulée si l'adversaire est éliminé » retirée (non confirmée dans la source). Corrigée également dans [[Regles_Base]] (récapitulatif) et dans la note narrative de la Meute de cavaliers wargs (`02 - Factions/Mordor.md`).*
-*0.14 — Phase 1 — 2026-07-29. **[Réception de charge] refondue (D058)** : la condition « adversaire déplacé ce tour » est retirée — le bonus de +1 dé s'applique désormais à toute contre-attaque, inconditionnellement. Décidée à l'ouverture du roster Harad complet (`02 - Factions/Harad.md`), qui étend la règle à des porteurs non-piquiers (Lanciers du Harad, Gardes serpents, [Poison] compris — première assignation de [Poison] à des unités de mêlée). Coût provisoirement inchangé à 2 pts (voir [[Regles_Points]]) mais signalé à réévaluer. Récapitulatif alphabétique mis à jour.*
+*Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Arme Lourde X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Arme Lourde X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
+
+*Historique antérieur (0.7 → 0.14) : reprise du glossaire générique BdVM ; assignations Gondor/Rohan/Khand/Mordor/Easterling/Harad ; règles [Archer en mêlée] (D024), [Déploiement avancé] (D028), [Horde] (D032), [Peur X] (D033), [Mur de bouclier] (D037), [Arme de jet X] (D044), [Plateforme de tir X]/[Howdah] (D045), [Prise de flanc]/[Vigilant] (D047–D050) ; refontes Mûmakil (D054), [Férocité] (D057), [Réception de charge] (D058). Détail dans le [[Document de cadrage]] §8.*
