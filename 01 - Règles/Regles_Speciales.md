@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-04"
+date_maj: "2026-08-05"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.15"
+version: "0.16"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -16,7 +16,7 @@ version: "0.15"
 
 > 🔄 **Tri du glossaire — 2026-08-04 (P2, D062)**
 > Le glossaire a fondu. En synthèse :
-> - **Intrinsèque à la taxonomie** (sort du profil, se lit au plateau) : [Mobilité 1] pour le 🟢 léger en mode distance (harceleur). *Le peuplement complet des intrinsèques par classe × type fait l'objet d'une revue dédiée (à venir).*
+> - **Intrinsèque à la taxonomie** (sort du profil, se lit au plateau) : [Mobilité], [Poursuite] et [Armure 1] dérivées de la case classe × type × mode. *Grille complète désormais écrite dans [[Regles_Base]] §2.4 (revue classe × type, D063) — source de vérité unique.*
 > - **Fusions** : [Perforant X] → **[Arme Lourde X]** (une seule règle de relance, mêlée ou tir) · [Inamovible] → **[Inébranlable ∞]** (une valeur, pas un mot-clé de plus).
 > - **Coupées** : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Détail et renvois au §6.
 > - **Chaque peuple garde une signature identitaire** ; avec le badge **Élite**, la classe et le type, cela suffit à différencier les unités. Le plafond reste **1–2 règles spéciales par unité**.
@@ -118,7 +118,7 @@ Après le lancer, le joueur peut **relancer X dés** de son choix (mêlée **ou*
 
 ## Règles intrinsèques (dérivées de la taxonomie)
 
-Ces effets **ne se notent pas sur le profil** : ils découlent de la classe (couleur), du type (socle) et du mode (token), et se lisent au plateau. Leur peuplement complet (par combinaison classe × type × mode) fait l'objet d'une **revue dédiée à venir** ; ils seront écrits dans [[Regles_Base]]. Seul est acté à ce stade :
+Ces effets **ne se notent pas sur le profil** : ils découlent de la classe (couleur), du type (socle) et du mode (token), et se lisent au plateau. Leur **définition de référence** — la grille complète classe × type × mode — vit dans **[[Regles_Base]] §2.4** (revue D063). Ce document n'en rappelle que le cas fondateur, à titre d'illustration :
 
 ### 🟢 Léger + mode distance → [Mobilité 1]
 
@@ -126,7 +126,7 @@ Toute unité **légère (🟢, 2 dés) en mode distance** décroche après avoir
 
 > 🎲 Identité **harceleur** (tir-puis-décroche), lisible d'un coup d'œil (vert + token distance) — plus besoin d'écrire [Mobilité 1] sur ces profils. Formule pour l'aide de jeu : *« Tu frappes, puis tu décroches. Pas d'attaque, pas de bonus. »*
 
-> 🔄 **P2 (D062)** : absorbe les anciennes assignations éparses de [Mobilité 1] (Rangers du Gondor et famille, Pillards de Khand, pisteurs orques). L'écriture effective dans [[Regles_Base]] et l'éventuelle extension à d'autres cases (ex. 🟢 mêlée) relèvent de la revue classe × type. Contraste voulu avec [Double Tir] (§4), signature de l'archer **immobile** qui, lui, troque la mobilité contre le volume.
+> 🔄 **P2 (D062) → revue classe × type (D063)** : absorbe les anciennes assignations éparses de [Mobilité 1] (Rangers du Gondor et famille, Pillards de Khand, pisteurs orques). La grille complète est désormais écrite dans **[[Regles_Base]] §2.4** — [Mobilité] est étendue à la cavalerie légère (**2**) et standard (**1**), et [Armure 1] / [Poursuite] ajoutées aux cases lourdes et de cavalerie de mêlée. Contraste voulu avec [Double Tir] (§4), signature de l'archer **immobile** qui, lui, troque la mobilité contre le volume.
 
 ---
 
@@ -224,7 +224,9 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 | **[Horde]** | Signature (Mordor) | +1 dé et [Inébranlable 1] à pleine santé ; perdus à la 1ʳᵉ perte |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] + [Poison] |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
-| **[Mobilité 1]** | Intrinsèque (🟢 distance) | Déplacement +1 hex après avoir attaqué — lu au plateau, non noté |
+| **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
+| **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
+| **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 |
 | **[Peur X]** | Signature (Troll) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) |
 | **[Plateforme de tir X]** | Signature (char de Khand) | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
 | **[Poison]** | Signature (Harad) | Couronne → 1 touche supplémentaire |
@@ -276,5 +278,7 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 ---
 
 *Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Arme Lourde X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Arme Lourde X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
+
+*Version 0.16 — Phase 1 — 2026-08-05. **Mise à jour de renvois seulement (pas de re-tri).** La revue classe × type est faite (D063) : les mentions « revue à venir » pointent désormais vers [[Regles_Base]] §2.4 (source de vérité unique des intrinsèques) ; §3 recadré en illustration ([Mobilité 1] cas fondateur) ; récapitulatif alphabétique complété ([Mobilité X], [Poursuite] et [Armure 1] intrinsèques). Aucune décision de tri modifiée.*
 
 *Historique antérieur (0.7 → 0.14) : reprise du glossaire générique BdVM ; assignations Gondor/Rohan/Khand/Mordor/Easterling/Harad ; règles [Archer en mêlée] (D024), [Déploiement avancé] (D028), [Horde] (D032), [Peur X] (D033), [Mur de bouclier] (D037), [Arme de jet X] (D044), [Plateforme de tir X]/[Howdah] (D045), [Prise de flanc]/[Vigilant] (D047–D050) ; refontes Mûmakil (D054), [Férocité] (D057), [Réception de charge] (D058). Détail dans le [[Document de cadrage]] §8.*

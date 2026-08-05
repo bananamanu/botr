@@ -3,14 +3,14 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-03"
+date_maj: "2026-08-05"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.6"
+version: "0.7"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
 
-> Ce document couvre les règles fondamentales de la Phase 1 : structure du tour, types d'unités, mouvement, combat, avance, poursuite et retraite. Les héros, la Peur/Terreur et les monstres avancés sont traités en Phase 2 (voir Document de cadrage §5.2 et §6). **Refonte « taxonomie visuelle » (post-Playtest #2, D059/D060)** : l'identité d'une unité — classe, type, mode — se lit désormais sur son plateau, et les règles en découlent plutôt que d'être mémorisées profil par profil. Les règles spéciales intrinsèques par combinaison seront peuplées en P2 (tri du glossaire) ; le recalcul des coûts en P3.
+> Ce document couvre les règles fondamentales de la Phase 1 : structure du tour, types d'unités, mouvement, combat, avance, poursuite et retraite. Les héros, la Peur/Terreur et les monstres avancés sont traités en Phase 2 (voir Document de cadrage §5.2 et §6). **Refonte « taxonomie visuelle » (post-Playtest #2, D059/D060)** : l'identité d'une unité — classe, type, mode — se lit désormais sur son plateau, et les règles en découlent plutôt que d'être mémorisées profil par profil. Les règles spéciales intrinsèques par combinaison sont désormais définies au **§2.4** (revue classe × type, D063) ; le recalcul des coûts suit en P3.
 
 ---
 
@@ -120,6 +120,30 @@ Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occu
 
 > **Artillerie / Machine de guerre : hors périmètre de la v1.** Non utilisée au Pelennor ; ses règles sont mises de côté et pourront être réactivées ultérieurement si un scénario l'exige.
 
+### 2.4 Règles intrinsèques par combinaison (classe × type × mode)
+
+Certaines règles spéciales ne se notent **pas** sur le profil : elles découlent directement de la **classe** (couleur), du **type** (socle) et du **mode** (token), et se lisent d'un coup d'œil au plateau. Une unité applique **toutes** les intrinsèques de sa case. Un profil ne mentionne une valeur que s'il **dépasse** le plancher intrinsèque (ex. [Armure 2]) ou porte en plus une **signature** (voir [[Regles_Speciales]]).
+
+| Type + mode | 🟢 Légère (2 dés) | 🔵 Standard (3 dés) | 🔴 Lourde (4 dés) |
+|---|---|---|---|
+| **Infanterie — mêlée** | — | — | **[Armure 1]** |
+| **Infanterie — distance** | **[Mobilité 1]** | — | *(n'existe pas)* |
+| **Cavalerie — mêlée** | **[Poursuite 2]** | **[Poursuite 2]** | **[Poursuite 1]** + **[Armure 1]** |
+| **Cavalerie — distance** | **[Mobilité 2]** | **[Mobilité 1]** | *(n'existe pas)* |
+
+Trois lignes de force, toutes lisibles à la couleur ou au socle :
+
+- **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure 1]** d'office : elle retire 1 face Épée des attaques de mêlée subies. C'est le **plancher** — un profil peut monter à [Armure 2] (Cataphractaires orientaux, lourds du Gondor), et la valeur du profil prime alors.
+- **Cavalerie de mêlée = elle enfonce et poursuit.** Après avoir éliminé ou fait reculer une cible adjacente, elle peut **poursuivre** (§8.2) au lieu d'avancer : **[Poursuite 2]** pour la légère et la standard (plus mobiles), **[Poursuite 1]** pour la lourde (qui traîne son armure). C'est la mécanique de percée du choc de cavalerie.
+- **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de la signature [Double Tir] de l'Easterling (l'archer immobile qui double la salve).
+
+> **Cases vides et cases absentes.** Un tiret « — » signifie *aucune intrinsèque* : l'unité est définie par ses seuls dés et son éventuelle signature. L'**infanterie de tir lourde** et la **cavalerie de tir lourde** *n'existent pas* dans le jeu (aucune combinaison 🔴 + distance) — un archer d'élite est une unité 🔵 portant une signature ou [Arme Lourde X] au profil, jamais une unité rouge.
+
+> 💡 **Exemple de jeu**
+> Des Chevaliers (Cavalerie 🔴, mêlée) enfoncent des Orques : lourds, ils portent **[Armure 1]** en défense et **[Poursuite 1]** — après avoir fait reculer les Orques, ils avancent d'1 hexagone et frappent une seconde cible adjacente. Un Éored du Rohan (Cavalerie 🔵) à leur place disposerait de **[Poursuite 2]** (jusqu'à 2 hexagones).
+
+> 🔗 Définitions complètes des mots-clés : [[Regles_Speciales]] (socle générique). Ces règles se lisent au plateau et **ne sont jamais réécrites sur le profil** tant que celui-ci ne dépasse pas le plancher.
+
 ---
 
 ## 3. Mise en place
@@ -228,7 +252,7 @@ Le mouvement se lit **directement sur le plateau** (couleur + type), sans profil
 - « **X cases + combat** » : l'unité peut se déplacer jusqu'à X hexagones **puis** attaquer.
 - « **ou Y cases** » (unités rouges) : alternativement, elle **renonce à attaquer** pour se déplacer de Y hexagones.
 
-> À ce stade, **aucune règle spéciale n'est attachée d'office** à une classe ou un type. Les éventuels bonus intrinsèques (mobilité de l'infanterie légère, volume de tir des archers légers, etc.) seront décidés au **tri du glossaire (P2)**.
+> **Règles intrinsèques liées au mouvement.** Plusieurs cases de la grille classe × type × mode portent des règles qui se lisent au plateau (voir §2.4) : **[Mobilité X]** — le tir léger ou monté décroche de X hexagones après avoir tiré — et **[Poursuite X]** — la cavalerie de mêlée enfonce puis frappe une seconde cible (§8.2). Elles ne se notent pas sur le profil.
 
 **Créatures et Chars** conservent une valeur de mouvement **propre à leur profil** (pièces signatures) et ne suivent pas cette grille — le Mûmakil, par exemple, a son déplacement dédié (translation 1-2-1).
 
@@ -465,6 +489,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
 | **[Férocité]** | Contre-attaque même en cas de recul forcé, puis recule normalement |
 
+> Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
+
 ---
 
 ## Points ouverts de ce document
@@ -473,10 +499,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 |---|---|---|
 | 1 | Seuils de victoire par format, à revalider au playtest de la taxonomie | §10.2 / P7a |
 | 2 | Répartition des cartes et ordre de jeu à 3 joueurs par camp (format Épique) | §5.5 |
-| 3 | Règles spéciales **intrinsèques par combinaison** (classe × type × mode) à peupler | P2 (tri du glossaire) |
-| 4 | Recalcul des coûts sur la nouvelle base (durabilité 4:3, archerie affaiblie, passage en matrice) | P3 |
-| 5 | Bonus **intrinsèques par classe/type** (mobilité de l'infanterie légère, double tir des archers légers…) — **écartés pour l'instant**, à décider | P2 |
-| 6 | Mouvement et PV des **Créatures / Chars** (hors grille) à confirmer profil par profil | P4 / P5 |
+| 3 | Recalcul des coûts sur la nouvelle base (durabilité 4:3, archerie affaiblie, **intrinsèques par case §2.4**, passage en matrice) | P3 |
+| 4 | Mouvement et PV des **Créatures / Chars** (hors grille) à confirmer profil par profil | P4 / P5 |
+
+> ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
 
@@ -487,3 +513,5 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.5 — Phase 1 — 2026-07-28. Correction du récapitulatif : [Férocité] permet à l'unité de contre-attaquer même forcée de reculer (elle recule ensuite normalement), et non « avant les retraites adverses » comme écrit précédemment (D057, voir [[Regles_Speciales]]).*
 
 *Version : 0.6 — Phase 1 — 2026-08-03. **Refonte P1 « taxonomie visuelle » (D059/D060).** §2.1 (plateaux colorés, tokens de mode, compteurs de PV). §2.2 réécrite — classe (couleur = dés 2/3/4), type (Inf 4 fig / Cav 3 fig ; Chars et Créatures = PV), mode (token mêlée/distance) ; Faible limitée à Inf/Cav. §2.3 réécrite — **suppression de la double-touche** : règle unique « 1 touche = 1 figurine/PV, quelle que soit la cible » ; Artillerie mise hors périmètre v1. §6.1 réécrite — **grille de mouvement par classe × type** (inspirée C&C Medieval) ; aucune règle spéciale attachée d'office à une classe/type (les bonus intrinsèques éventuels — mobilité légère, double tir léger — sont écartés pour l'instant, décision reportée à P2) ; Créatures/Chars hors grille. §7.2/7.3 rattachées au token de mode ; récapitulatifs et rappels alignés. Reste à peupler en P2 (règles intrinsèques par combo) et à recalculer en P3 (coûts). Non testé — validation en P7a.*
+
+*Version : 0.7 — Phase 1 — 2026-08-05. **Revue classe × type (D063).** Ajout du §2.4 « Règles intrinsèques par combinaison » : grille classe × type × mode peuplée. **[Armure 1]** intrinsèque à tout lourd 🔴 (plancher, un profil peut monter à [Armure 2]) ; **[Poursuite]** intrinsèque à la cavalerie de mêlée (2 pour 🟢/🔵, 1 pour 🔴) ; **[Mobilité]** intrinsèque au tir léger/monté (🟢 cavalerie 2 ; 🟢 infanterie et 🔵 cavalerie 1 ; 🔵 infanterie = rien, archer de ligne planté). Infanterie et cavalerie de tir lourdes actées inexistantes. Supersession de D062-6 (la [Poursuite] cavalerie était renvoyée au profil). §6.1 et le mémo renvoient au §2.4 ; points ouverts #3 et #5 fermés. Répercussions profils/coûts renvoyées à P3 (chiffrage par case) / P4 (nettoyage des redondances). Non testé — validation en P7a.*

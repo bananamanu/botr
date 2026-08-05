@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - Playtest/Playtest2_Compte-rendu.md",
+                "file": "01 - Règles/Regles_Base.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Playtest2_Compte-rendu"
+              "title": "Regles_Base"
             }
           }
         ]
@@ -185,11 +185,11 @@
   },
   "active": "9325cc91e8d65535",
   "lastOpenFiles": [
-    "01 - Règles/Regles_Speciales (1).md",
+    "05 - Playtest/Playtest2_Compte-rendu.md",
     "00 - META/Document_de_cadrage (1).md",
+    "01 - Règles/Regles_Speciales (1).md",
     "00 - META/Document_de_cadrage.md",
     "02 - Factions/Easterling.md",
-    "05 - Playtest/Playtest2_Compte-rendu.md",
     "06 - Images/cataphractaires_orientaux.sla.3713",
     "06 - Images/cataphractaires_orientaux.sla.3664",
     "06 - Images/cataphractaires_orientaux_autosave_01_08_2026_09_02.sla",
