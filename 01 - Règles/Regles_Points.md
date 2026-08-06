@@ -3,221 +3,172 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-29"
+date_maj: "2026-08-05"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.11"
+version: "0.13"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
 
-> **Objet de ce document :** Première proposition de formule de coût en points pour la construction d'armée (feuille de route Phase 3, [[Document de cadrage]] §6). Répond directement à D025 : les dominances strictes assumées en V1 (Chevaliers de Dol Amroth sur Chevaliers de Minas Tirith ; Archers de la Racine Noire sur Rangers d'Ithilien) doivent se refléter dans un écart de coût plutôt que dans une retouche de profil.
+> **Objet de ce document (refonte P3, D064).** Depuis le pivot « taxonomie visuelle » (D059–D063), une unité standard n'est plus un profil libre mais une **combinaison (type × classe × mode)**, complétée d'un éventuel **badge Élite** et de **0–2 signatures**. Le coût n'est donc plus un calcul profil par profil : c'est la **lecture d'une case de matrice** + les suppléments Élite/signature. Ce document donne la matrice, sa dérivation (auditée), et le barème des suppléments.
 >
-> Calibrée et testée sur les 14 profils de [[Gondor_et_Fiefs]], puis sur les rosters **Rohan** (9 profils), **Khand** (5 profils) et **Mordor** (6 profils, D036) comme points de calibrage successifs. Le roster **Easterling** (`02 - Factions/Easterling.md`, validé et clos, D038) sert de cinquième point de calibrage — première application réelle de la nouvelle règle [Mur de bouclier] (D037) et première assignation de [Double Tir].
+> Aligné sur **[[Regles_Base]] v0.8** (taxonomie, grille de mouvement §6.1, intrinsèques §2.4, badge Élite §2.2) et **[[Regles_Speciales]] v0.16** (socle générique + signatures survivantes de P2).
 
 ---
 
-## 1. Pourquoi cette forme de formule
+## 1. Du calcul par profil à la matrice
 
-Trois remarques structurantes avant la formule elle-même :
+Trois faits, hérités du pivot, rendent la matrice possible :
 
-**Le Mouvement et les PV ne varient quasiment pas entre profils d'un même Type.** Le [[Document de cadrage]] fixe PV et Mouvement par Type (Infanterie : 6 PV / Mvt 2 ; Cavalerie : 3 PV / Mvt 3), avec de rares exceptions (Chevaliers à pied de Dol Amroth, Mouvement 1 ; Éored d'éclaireur du Rohan, Mouvement 4 ; Aurige de Khand, PV ramené à 3 pour sa 3e règle signature). Concrètement, ces deux stats ne différencient presque jamais deux profils entre eux — ce qui varie vraiment, c'est l'**Attaque** (2 à 4 dés) et les **règles spéciales**. La formule ci-dessous en tient compte : Mouvement et PV forment un "socle" quasi fixe par Type, l'Attaque et les règles font tout le travail de différenciation.
+1. **La classe fixe l'attaque.** Le nombre de dés n'est plus libre (2–4) : il **est** la couleur — 🟢 2, 🔵 3, 🔴 4. Une variable de moins.
+2. **Le type fixe la durabilité et les PV.** Infanterie 4 figurines, Cavalerie 3. La double-touche ayant disparu (**1 touche = 1 figurine**, [[Regles_Base]] §2.3), la durabilité **est** le nombre de figurines : ratio Inf:Cav = **4:3 = 1,33** — identique à l'ancien ratio de durabilité (12:9), mais désormais lisible sans aucun calcul. *(L'ancien §1 « durabilité effective ÷ perte moyenne » est caduc : sans double-touche, il n'y a plus rien à corriger.)*
+3. **Le mode fixe le rendement du dé.** La mêlée touche sur deux faces (Épées croisées, Épée), le tir sur une (Cible) : un dé de mêlée vaut ~1,5× un dé de tir. On garde **D = 3 en mêlée, D = 2 au tir**.
 
-**L'Attaque vaut plus cher en Mêlée qu'au Tir, à dé égal.** Sur les 6 faces de dé, la Mêlée touche sur *deux* faces (Épées croisées, Épée) alors que le Tir n'en a qu'*une* (Cible) — voir [[Regles_Base]] §7.2-7.3. Un dé de Mêlée produit donc, en moyenne, environ 1,5× plus de dégâts attendus qu'un dé de Tir contre une cible d'Infanterie. La formule reflète ce ratio (3 points/dé en Mêlée contre 2 points/dé au Tir) plutôt que de traiter tous les dés pareil.
-
-**Les PV n'ont pas le même "poids" chez tous les Types — mais une fois le Mouvement ajouté, le socle se recale tout seul.** Un dé Épées croisées/Cible retire 2 PV à une cible Infanterie mais seulement 1 à une cible Cavalerie ([[Regles_Base]] §2.3) — la Cavalerie encaisse donc moins de PV bruts (3 contre 6) mais les perd moins vite par touche. **Vérification (2026-07-19) :** en calculant la durabilité effective en Mêlée (PV ÷ perte moyenne de PV par dé encaissé, faces Épée + Épées croisées), Infanterie = 6 ÷ 0,5 = 12 dés nécessaires pour l'éliminer, Cavalerie = 3 ÷ 0,333 ≈ 9 dés — soit un ratio de **12:9 = 1,33:1**. Comparé au socle Mouvement + PV de la formule (Infanterie 2+6=8, Cavalerie 3+3=6, ratio **8:6 = 1,33:1**), les deux ratios sont identiques. Le Mouvement plus coûteux de la Cavalerie compense exactement le fait que ses PV bruts semblent sous-évalués pris isolément — la pondération Mouvement=1/PV=1 n'était pas démontrée à l'origine, mais elle produit malgré tout un socle Infanterie/Cavalerie cohérent avec la durabilité réelle en jeu. Pas de correctif nécessaire sur ce point (confirmé suite à une comparaison avec les coûts réels de BattleLore Seconde Édition, voir §2bis).
-
-> 🔗 **Voir aussi** [[Document de cadrage]] D027 — le point encore ouvert n'est donc pas le poids des termes de la formule (validés ci-dessus), mais l'échelle finale des totaux, traitée au §2bis.
+**Conséquence directe du rebase de durabilité (Inf 6→4 PV).** Le terme PV de l'infanterie chute de 2 : l'infanterie à règles glisse d'environ **un palier vers le bas** (plus fragile, moins chère). C'est l'effet recherché. La cavalerie (PV inchangés à 3) bouge peu ; la cavalerie **lourde** perd un point de socle car la grille de mouvement lui donne Mvt 2 (elle troque désormais vitesse contre frappe, [[Regles_Base]] §6.1).
 
 ---
 
-## 2. La formule
+## 2. La matrice de base (unités standard)
 
-```
-Points_bruts(unité) = Mouvement + PV + (Attaque × D) + Σ Coût(règles spéciales)
+Le coût **de base** d'une unité standard se lit dans cette table, selon sa case (type × mode × classe). Les **intrinsèques de la case (§2.4) sont déjà incluses** — on ne les refacture **jamais**.
 
-D = 3 si Combat = Mêlée
-D = 2 si Combat = Tir
-```
+| Type + mode | 🟢 (2 dés) | 🔵 (3 dés) | 🔴 (4 dés) |
+|---|---|---|---|
+| **Infanterie — mêlée** | **3** | **4** | **5** |
+| **Infanterie — distance** | **3** | **3** | — |
+| **Cavalerie — mêlée** | **5** | **6** | **7** |
+| **Cavalerie — distance** | **3** | **3** | — |
 
-Rien d'autre n'entre dans le calcul de base — la Portée (fixée à 4 pour tout le monde en V1, D020) ne varie pas encore assez d'un profil à l'autre pour justifier un terme dédié ; à réintroduire si un futur peuple a des portées différentes.
+*(Valeurs **finales**, prêtes pour la fiche. 🔴 + distance n'existe pas, D063.)*
 
-> 🎲 **Note sur [Horde] et l'Attaque de base** : pour une unité [Horde], le terme `Attaque × D` de la formule utilise l'**Attaque de base** (après effondrement), pas la valeur "à pleine force". Le bonus +1 dé est déjà facturé dans le coût forfaitaire de la règle elle-même (§3) — le compter aussi dans le terme Attaque reviendrait à le payer deux fois.
+Rappel des intrinsèques incluses (pour mémoire, **pas** à ajouter) : 🔴 → [Armure 1] ; cavalerie de mêlée → [Poursuite 2] (🟢/🔵) ou [Poursuite 1] (🔴) ; tir léger/monté → [Mobilité] (🟢 cav 2 ; 🟢 inf et 🔵 cav 1).
 
----
-
-## 2bis. Compression de l'échelle (D027)
-
-**Constat (2026-07-19) :** en comparant au vrai système de coûts de BattleLore Seconde Édition (jeu FFG dont BdVM/BdTdM hérite le socle), les unités standards y tiennent sur une échelle très resserrée — 4 à 6 points pour l'essentiel du roster, 8 points pour les unités "Légende" à PV doublés. Sur le roster Gondor et fiefs, `Points_bruts` s'étale au contraire sur 12 valeurs quasiment uniques pour 14 profils (14 à 26) — pas un problème de pondération (voir §1, le socle Infanterie/Cavalerie est déjà cohérent), mais un problème de granularité, contraire au principe "règles mémorisables" ([[Document de cadrage]] §3.1).
-
-**Correctif : une étape de compression finale**, sans toucher aux poids de la formule brute :
-
-```
-Points_finaux(unité) = round(Points_bruts ÷ 3) − 1
-```
-
-Cette compression ramène le roster Gondor sur une échelle **4 à 8**, quasiment identique à celle de BattleLore V2, et regroupe les profils en une poignée de paliers mémorisables au lieu d'une valeur par unité (voir table complète au §4). Les deux dominances strictes actées en D025 restent lisibles après compression (vérifié au §4).
-
-> 🎲 **Note de design** Le calcul de compression reste un calcul fait une fois par profil, à la rédaction du roster — pas à la volée en pleine partie (même logique de fluidité que pour le coût des règles, D026). C'est la valeur `Points_finaux` qui figure sur la fiche d'unité imprimée ; `Points_bruts` reste un calcul intermédiaire, pas une valeur de jeu.
->
-> ⚠️ **Effet de bord observé sur le roster Rohan (2026-07-19)** : la largeur des paliers de compression (chaque palier couvre 3 points de `Points_bruts`) fait qu'une petite règle ajoutée à une unité peu chère (coût brut ≤ 2-3) ne change parfois pas du tout `Points_finaux` — ex. [Mobilité 2] sur l'Éored d'éclaireur ou [Mobilité 1] sur les Archers liges, ajoutées « gratuitement » en points. Pas anormal en soi, mais à garder en tête : le système de points est peu sensible aux petits ajustements de règles sur les profils bon marché.
->
-> ⚠️ **Même effet observé sur l'Aurige de Khand (2026-07-19)** : réduire les PV de 4 à 3 (bruts −1) et ajouter [Poursuite 1] (bruts +3) donne un solde net de +2 bruts (23 → 25), mais `Points_finaux` reste à **7** dans les deux cas (`round(23÷3)−1 = round(25÷3)−1 = 7`) — l'arrondi absorbe l'ajustement. Voir `02 - Factions/Khand.md` §2, profil 5, pour le détail.
+> **Prime de choc de la cavalerie lourde (D065).** La case **Cav 🔴 mêlée** porte **+1 brut** au-delà de sa dérivation mécanique : la charge blindée compounde plus que ne le dit le compte de dés linéaire, mais un dé entier de plus (dé lourd = 4) déborderait à 8 et toucherait aussi l'infanterie lourde. La prime est donc **réservée à la cavalerie** et dosée à **+1**, ce qui pose la case à **7** — et lui rend son ancien coût (Chevaliers de Dol Amroth). C'est le seul écart assumé entre la matrice et la formule brute.
 
 ---
 
-## 3. Coût des règles spéciales — deux options
+## 3. Suppléments : Élite et signatures
 
-### Option A — Coût forfaitaire unique (la plus simple)
+Le coût final d'un profil se construit ainsi :
 
-Chaque règle spéciale, quelle qu'elle soit, coûte **2 points** ; une règle avec valeur X coûte **2 × X**.
+```
+Brut = Brut_de_base (case, §5) + 2 si Élite + Σ Coût(signatures & règles de faction)
+Final = round(Brut ÷ 3) − 1
+```
 
-Avantages : aucune table à consulter, cohérent avec le principe 1 du [[Document de cadrage]] (mémorisable). Inconvénient : ne distingue pas une règle à fort impact ([Poursuite X], quasi une attaque supplémentaire) d'une règle très situationnelle ([Férocité], qui ne change rien tant que l'unité n'est pas contrainte de reculer) — au prix identique, [Poursuite X] devient systématiquement le meilleur choix, ce qui pousse toutes les armées vers les mêmes règles.
+La compression (§4) se fait **une fois**, à la rédaction du profil, après avoir additionné tous les suppléments au brut de la case — jamais à la volée en partie.
 
-### Option B — Coût par catégorie ✅ retenue (validée par Emmanuel, 2026-07-19)
+### 3.1 Badge Élite = [Inébranlable 1]
 
-Reprend les catégories déjà utilisées dans [[Regles_Speciales]], avec un coût qui reflète l'impact typique de la catégorie :
+Le badge **Élite** (marqueur lu au plateau, [[Regles_Base]] §2.2) confère **[Inébranlable 1]** : l'unité ignore 1 recul par attaque reçue. C'est le cran de granularité qui distingue, dans une même case, la troupe aguerrie de la troupe de ligne. **Coût : +2 brut** (tarif socle [Inébranlable X] = 2×X).
 
-| Règle | Coût | Catégorie |
+### 3.2 Barème des règles (signatures + socle explicite)
+
+Repris de l'Option B (D026), **élagué au tri P2** (D062). Les règles devenues **intrinsèques** ne se facturent qu'en **excédent au-dessus du plancher de la case**.
+
+| Règle | Coût | Note |
 |---|---|---|
-| [Armure X] | 2 × X | Défensif |
-| [Inébranlable X] | 2 × X | Défensif |
-| [Inamovible] | 3 *(forfaitaire)* | Défensif *(ne recule jamais = [Inébranlable ∞] — nouvelle règle D054, seule règle transférable des trois du Mûmakil ; non testée)* |
-| [Protection X] | 1 × X | Défensif *(déjà porté par le terrain la plupart du temps)* |
-| [Mur de bouclier] | 1 *(forfaitaire)* | Défensif *(version conditionnelle-à-la-formation de [Protection 1] — provisoire, non testée)* |
-| [Immunisé au poison/feu] | 1 | Défensif *(rare, situationnel)* |
-| [Arme Lourde X] | 2 × X | Offensif — Mêlée |
-| [Perforant X] | 2 × X | Offensif — Distance |
-| [Réception de charge] | 2 | Offensif — Mêlée |
-| [Férocité] | 1 | Offensif — Mêlée *(situationnel : ne s'applique que si l'unité est forcée de reculer suite à l'attaque subie)* |
-| [Charge écrasante] | *bespoke* | Offensif — Mêlée *(refonte dédiée Mûmakil D054 — non transférable ; absorbée dans l'étiquette 21 pts du Mûmakil)* |
-| [Archer en mêlée] | 2 | Offensif — Mêlée |
-| [Martyre] | 1 | Offensif — Mêlée |
-| [Double Tir] | 3 | Offensif — Distance *(quasi une attaque complète en plus)* |
-| [Howdah] | 3 | Offensif — Distance |
-| [Poison] / [Souffle de feu] | 1 | Offensif — Distance |
-| [Mobilité X] | 1 × X | Manœuvre |
-| [Poursuite X] | 3 × X | Manœuvre *(mouvement + attaque supplémentaire)* |
-| [Déploiement avancé] | 2 *(forfaitaire)* | Manœuvre *(repositionnement unique avant le tour 1 — **retirée de la V1 le 2026-07-26, D047**, jamais testée en partie réelle ; ligne conservée pour mémoire)* |
-| [Prise de flanc] | 3 *(forfaitaire)* | Soutien *(+1 dé aux attaques des autres unités amies contre une cible adjacente à celle-ci — D047/D049, provisoire, non testée)* |
-| [Vigilant] | 2 *(forfaitaire)* | Offensif — Mêlée *(la cible de cette unité ne peut pas la contre-attaquer — nouvelle règle, D050, provisoire, non testée)* |
-| [Terrain favori : X] | 1 | Manœuvre |
-| [Rechargement] | −2 | Manœuvre *(malus — restreint l'unité)* |
-| [Bête incontrôlable] | *bespoke* | Moral *(refonte Furie D054 — non transférable ; absorbée dans l'étiquette 21 pts du Mûmakil)* |
-| [Meute X] | +1 par PV supplémentaire accordé | Manœuvre |
-| [Horde] | 3 *(forfaitaire)* | Mixte — Offensif + Défensif *(+1 dé d'attaque et [Inébranlable 1] tant qu'aucun PV n'a été perdu ; provisoire, non testé)* |
-| [Peur X] | 2 × X | Moral *(provisoire, non testé — voir note ci-dessous)* |
+| **[Armure X]** | 2 × X | Règle de **faction**, disponible à toute classe (arbitrage D064). Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent ([Armure 2] = +2). |
+| **[Inébranlable X]** | 2 × X | Si l'unité est **Élite**, le premier point est déjà dans le badge → ne facturer que l'excédent. |
+| **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. |
+| **[Arme Lourde X]** | 2 × X | Relance X dés (mêlée ou tir) ; absorbe l'ex-[Perforant]. |
+| **[Poursuite X]** | 3 × X | Cavalerie de mêlée : plancher (2 ou 1) **inclus** → ne facturer que l'excédent. |
+| **[Mobilité X]** | 1 × X | Tir léger/monté : plancher **inclus** → excédent seul. |
+| **[Férocité]** | 1 | Situationnel (ne joue que si l'unité est forcée de reculer). |
+| **[Horde]** | 3 *(forfait)* | Signature Mordor (+1 dé et [Inébranlable 1] à pleine santé). Provisoire, D032. |
+| **[Poison]** | 1 | Signature Harad (Couronne → 1 touche). |
+| **[Double Tir]** | 3 | Signature Easterling (~une attaque de tir en plus). |
+| **[Prise de flanc]** | 3 *(forfait)* | Signature Éored de cavalier. Provisoire, D049. |
+| **[Vigilant]** | 2 *(forfait)* | Signature Éored d'éclaireur. Provisoire, D050. |
+| **[Archer en mêlée]** | 2 | Signature Compagnie Grise. |
+| **[Peur X]** | 2 × X | Signature Troll. Provisoire (peut-être 1×X — ne fait reculer, pas de touche), D033. |
 
-> 🎲 **Note de design** L'écart entre [Férocité] (1 point) et [Poursuite X] (3×X points) n'est pas arbitraire : les deux appartiennent à la même catégorie "Offensif — Mêlée / Manœuvre" mais [Férocité] ne change rien la plupart du temps — elle ne s'active que dans la fenêtre étroite où l'unité vient justement d'être forcée de reculer (sans elle, l'unité ne pourrait pas contre-attaquer du tout dans ce cas) — alors que [Poursuite X] offre une action quasi-garantie chaque fois que l'unité charge. Un coût forfaitaire unique gommerait cet écart et pousserait toutes les listes vers les mêmes règles — c'est l'argument principal en faveur de l'Option B.
->
-> ⚠️ **[Déploiement avancé] — coût provisoire (2026-07-19)** : première règle entièrement nouvelle depuis la validation du barème (créée pour l'Éored d'éclaireur, Rohan). Fixée à 2 points forfaitaires par analogie avec les autres règles de manœuvre à effet ponctuel ([Terrain favori] = 1, [Réception de charge] = 2), sans référence testée puisqu'aucune règle de « repositionnement pré-bataille » n'existait avant. À revoir après un premier usage à la table (voir `02 - Factions/Rohan.md` §5.5).
->
-> ⚠️ **[Déploiement avancé] — retirée de la V1 (2026-07-26, D047)** : jamais testée en partie réelle (le centre-funnel du Playtest #1 ne lui a pas laissé l'occasion de s'exprimer). Retirée de l'Éored d'éclaireur, d'abord remplacée par [Flanking], elle-même désormais réassignée (voir note suivante). Ligne de coût conservée ci-dessus pour mémoire, mais la règle n'est plus assignée.
->
-> ⚠️ **[Prise de flanc] — coût provisoire (2026-07-26, D047, renommée/réassignée D049)** : nouvelle règle (catégorie Soutien, créée en dehors des catégories existantes — elle ne modifie pas les dés de sa propre unité mais ceux des unités amies). Fixée à 3 points forfaitaires par analogie avec [Poursuite 1] (même ordre de grandeur d'impact potentiel, mais partagé entre plusieurs unités plutôt que concentré sur une seule), sans référence testée. Créée sous le nom « Flanking » pour l'Éored d'éclaireur, **renommée et réassignée à l'Éored de cavalier du Rohan** (profil 1, D049) — l'éclaireur reçoit [Vigilant] à la place.
->
-> ⚠️ **[Vigilant] — coût provisoire (2026-07-26, D050)** : nouvelle règle (catégorie Offensif — Mêlée). Fixée à 2 points forfaitaires par analogie avec [Réception de charge] (même catégorie, effet de contre-attaque). Première assignation : Éored d'éclaireur (Rohan), en remplacement de [Prise de flanc]. Non testée.
->
-> ⚠️ **[Réception de charge] — coût maintenu à titre provisoire après refonte (2026-07-29, D058)** : la règle est devenue inconditionnelle (+1 dé en contre-attaque en toutes circonstances, au lieu de seulement contre un adversaire qui vient de se déplacer — voir [[Regles_Speciales]]). Mécaniquement plus forte que l'ancienne version, dont le prix de 2 pts avait été calibré sur la table Gondor (Hommes d'armes de Dol Amroth) et Easterling (Cohorte de piquiers orientaux) sous la forme conditionnelle. Coût laissé à 2 pts en l'absence de test de la version inconditionnelle — à revoir en priorité après le Playtest #2, où elle équipe pour la première fois plusieurs profils Harad (Lanciers du Harad, Gardes serpents).
->
-> ⚠️ **[Horde] — coût provisoire (2026-07-19, D032)** : première règle à cumuler un effet offensif et un effet défensif sous une seule condition (« indemne »), en dehors des catégories existantes. Par décomposition : le +1 dé s'apparente à [Réception de charge] (2 pts, bonus de dé conditionnel) et [Inébranlable 1] vaut 2 pts en continu dans la table Défensif — la somme brute des deux donnerait 4, mais ici les deux bonus s'éteignent **définitivement** à la toute première perte, une fenêtre plus courte que toute autre règle situationnelle du glossaire. Fixé à **3 points forfaitaires** (arbitrage d'Emmanuel entre 2/3/4 proposés) plutôt que la somme brute des composants. **Première assignation — 2026-07-20** : Bande d'orques du Mordor et Bande d'orques du Morannon (`02 - Factions/Mordor.md`). Toujours non testé en partie réelle — à revoir après le Playtest #1.
->
-> ⚠️ **[Peur X] — coût provisoire (2026-07-20, D033)** : fixé à 2×X par analogie avec les autres règles offensives à valeur ([Armure X], [Arme Lourde X], [Perforant X]) — la face Arcane a la même probabilité qu'une autre face (1/6). Attention toutefois : [Peur X] génère des **Drapeaux, pas des touches** — l'effet fait reculer mais ne tue pas, et peut être annulé par [Inébranlable X] de la cible. Il se peut que **1×X** soit plus juste après un premier test. Première (et seule) assignation à ce jour : Troll du Mordor ([Peur 1], `02 - Factions/Mordor.md`). À caler au Playtest #1.
->
-> ⚠️ **[Mur de bouclier] — coût provisoire (2026-07-20, D037)** : fixé à 1 point forfaitaire, aligné sur le tarif de [Protection 1] dans la table. Point de vigilance : en formation de ligne classique (le cas d'usage normal pour une Infanterie disciplinée), la condition d'adjacence sera presque toujours vraie — ce qui pourrait sous-évaluer la règle par rapport à un [Armure 1] permanent (2 pts, toujours actif). Première assignation : Cohorte d'orientaux et Cohorte de piquiers orientaux (`02 - Factions/Easterling.md`). À surveiller au Playtest #1.
+> **Retirées au tri P2** (ne plus chiffrer) : [Mur de bouclier] (→ [Armure 1]), [Réception de charge], [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], immunités, [Terrain favori], [Rechargement], [Déploiement avancé]. Traçabilité : [[Regles_Speciales]] §6.
 
-**Décision (D026) :** Option B retenue. Le calcul reste simple à faire une fois par profil (pas à la volée en pleine partie, donc moins contraint par le principe de fluidité que les règles de jeu elles-mêmes) et évite qu'une poignée de règles dominent systématiquement les choix de liste.
+> **Pièces bespoke** (Mûmakil : [Charge écrasante], [Bête incontrôlable], [Howdah] ; char : [Plateforme de tir X]) : **hors barème**, absorbées dans le chiffrage par équivalence de la pièce (§6).
 
 ---
 
-## 4. Test sur le roster Gondor et fiefs (coûts calculés avec l'Option B, compression D027)
+## 4. Compression de l'échelle (D027, inchangée)
 
-| # | Unité | Mvt | PV | Atk×D | Règles | Brut | **Final** |
-|---|---|---|---|---|---|---|---|
-| 1 | Guerriers de Minas Tirith | 2 | 6 | 3×3=9 | Armure1 (2) | 19 | **5** |
-| 2 | Archers de Minas Tirith | 2 | 6 | 2×2=4 | Armure1 (2) | 14 | **4** |
-| 3 | Chevaliers de Minas Tirith | 3 | 3 | 3×3=9 | Armure1 (2) | 20 | **6** |
-| 4 | Rangers du Gondor | 2 | 6 | 2×2=4 | Double Tir (3) | 15 | **4** |
-| 5 | Gardes de la Citadelle | 2 | 6 | 3×3=9 | Armure1 (2) + Inébranlable1 (2) | 21 | **6** |
-| 6 | Hommes d'armes de Dol Amroth | 2 | 6 | 3×3=9 | Armure1 (2) + Réception de charge (2) | 21 | **6** |
-| 7 | Chevaliers à pied de Dol Amroth | **1** | 6 | 4×3=12 | Armure1 (2) | 21 | **6** |
-| 8 | Chevaliers de Dol Amroth | 3 | 3 | 4×3=12 | Armure1 (2) + Poursuite1 (3) | 23 | **7** |
-| 9 | Guerriers de Lossarnach | 2 | 6 | 3×3=9 | Armure1 (2) + Arme Lourde1 (2) | 21 | **6** |
-| 10 | Guerriers des clans de Lamedon | 2 | 6 | 3×3=9 | Arme Lourde1 (2) | 19 | **5** |
-| 11 | Rangers d'Ithilien 🌟 | 2 | 6 | 3×2=6 | Mobilité1 (1) + Double Tir (3) | 18 | **5** |
-| 12 | Vétérans d'Osgiliath 🌟 | 2 | 6 | 3×3=9 | Armure1 (2) + Inébranlable1 (2) + Férocité (1) | 22 | **6** |
-| 13 | La Compagnie Grise 🌟 | 2 | 6 | 3×3=9 | *(voir §5 — cas particulier)* | 26* | **8*** |
-| 14 | Archers de la Racine Noire 🌟 | 2 | 6 | 3×2=6 | Perforant1 (2) + Mobilité1 (1) + Double Tir (3) | 20 | **6** |
+```
+Points_finaux = round(Points_bruts ÷ 3) − 1
+```
 
-*(Colonne « Brut » = `Points_bruts` du §2 ; colonne « Final » = `round(Brut ÷ 3) − 1` du §2bis, D027. C'est la valeur « Final » qui figure sur la fiche imprimée.)*
-
-**Validation directe de D025 (sur la valeur finale, après compression) :**
-- Chevaliers de Dol Amroth (**7**) coûtent **1 point de plus** que Chevaliers de Minas Tirith (**6**) — écart conservé après compression.
-- Archers de la Racine Noire (**6**) coûtent **1 point de plus** que Rangers d'Ithilien (**5**) — écart conservé également.
-
-Les deux dominances strictes actées "à assumer" en D025 restent donc lisibles après compression, sans avoir eu besoin de retoucher un seul profil.
-
-**Fourchette obtenue :** 4 à 7 points pour les profils "normaux", 8 pour la Compagnie Grise — échelle quasiment identique à celle de BattleLore V2 (4 à 8, voir §2bis). Une armée Normal tournerait autour de 25-40 points par camp selon ce calibrage (à l'aune d'un roster de 6-8 unités) — chiffre à confirmer par le Playtest #3, pas encore validé par le jeu réel.
-
-**Second point de calibrage — roster Rohan (validé) :** le trio équivalent au Playtest #1 de Gondor (Guerriers/Archers/Chevaliers de Minas Tirith, 15 points) donne, côté Rohan, Éored de cavalier + Milice lige + Archers liges = **13 points** — cohérent avec l'identité « moins armuré, plus mobile » actée pour ce peuple (voir `02 - Factions/Rohan.md` §4). Détail complet des 9 profils Rohan dans ce document.
-
-**Troisième point de calibrage — roster Khand (validé et clos) :** 5 profils, de 3 à 7 points — Mercenaires de Khand (hache/archer) : 5/3 ; Pillards de Khand (hache/archer) : 5/3 ; Aurige de Khand (pièce signature, 3 règles, PV ramené à 3) : 7. Échelle cohérente avec Gondor (4-8) et Rohan (3-8), sans avoir eu besoin d'ajuster la formule. Détail complet dans `02 - Factions/Khand.md`.
-
-**Quatrième point de calibrage — roster Mordor (validé et clos) :** 6 profils, de 3 à 7 points — Bande d'orques (5, [Horde]) et Bande d'orques du Morannon (6, Armure1 + [Horde]) donnent le premier test en conditions réelles du coût forfaitaire de [Horde] (D032) ; le Troll (7, Charge écrasante + [Peur 1]) fait de même pour [Peur X] (D033). Détail complet dans `02 - Factions/Mordor.md`.
-
-**Cinquième point de calibrage — roster Easterling (validé et clos) :** 4 profils, de 4 à 7 points — Cohorte d'orientaux (5, [Mur de bouclier]) et Cohorte de piquiers (6, Réception de charge + [Mur de bouclier]) donnent le premier test en conditions réelles du coût forfaitaire de [Mur de bouclier] (D037) ; Cataphractaires (7, [Armure 2] + Charge écrasante) est la première unité du jeu à porter une armure doublée. Roster délibérément haut de gamme (trio de base à 16 pts, contre 15 pour Gondor) — cohérent avec l'identité « armée de métier » actée pour ce peuple. Détail complet dans `02 - Factions/Easterling.md`.
+Ramène le roster sur une échelle resserrée et mémorisable, calée sur BattleLore V2. Avec le rebase de durabilité, la fourchette standard est désormais **3 à 8** (le plancher descend à 3 pour l'infanterie légère et le tir léger — sain : ce sont les unités les plus jetables). L'effet d'absorption reste vrai : sur une case bon marché, un petit supplément (Élite, [Poison]) ne change parfois pas le final — normal, le système est peu sensible aux petits ajustements sur les unités peu chères.
 
 ---
 
-## 5. Cas particulier — unités composites à figurines nommées (La Compagnie Grise)
+## 5. Dérivation de la matrice (audit)
 
-La Compagnie Grise ne porte pas des règles fixes : Gimli, Legolas, Elrohir+Elladan et Halbarad n'apportent leur règle que tant qu'ils sont en vie, et l'unité s'affaiblit au fil de la partie. Deux façons de la chiffrer :
+Pour traçabilité — la matrice du §2 découle mécaniquement de la formule brute appliquée à chaque case.
 
-**Décision (D026) : pleine puissance, 26 points bruts → 8 points finaux.** On compte toutes les règles comme actives, comme si les 6 figurines étaient en vie — Mvt2 + PV6 + Atk3×3=9 + ArmeLourde1(2) + ArcherEnMêlée(2) + Férocité(1) + Inébranlable2(4) = **26 points bruts**, soit `round(26÷3)−1 = 9−1 = 8` points finaux (D027) — exactement l'échelon "Légende" repéré dans BattleLore V2 (voir §2bis), cohérent avec le statut d'unité sur-mesure de la Compagnie Grise. Cohérent avec le fait qu'aucune unité du jeu ne voit son coût recalculé en cours de partie à mesure qu'elle prend des pertes — une unité à 1 PV restant vaut déjà objectivement moins qu'à pleine forme sans qu'on retouche son prix. L'alternative (valeur moyenne pondérée selon l'ordre de retrait probable) a été écartée : trop de calcul pour un cas unique, contraire au principe de simplicité du [[Document de cadrage]] §3.1.
+**Socle = Mvt (grille §6.1) + PV (Inf 4 / Cav 3) :**
 
-> ⚠️ **Point ouvert pour vous, Emmanuel** — la Compagnie Grise sera-t-elle la seule unité de ce type dans le roster complet (6 peuples), ou d'autres composites nommés sont-ils prévus ? Ni le roster Rohan, ni le roster Khand, ni l'ébauche actuelle du roster Mordor n'en comportent — la question reste ouverte pour Harad et Easterling.
+| | 🟢 | 🔵 | 🔴 |
+|---|---|---|---|
+| **Infanterie** (PV 4) | 2+4 = 6 | 2+4 = 6 | 1+4 = 5 |
+| **Cavalerie** (PV 3) | 4+3 = 7 | 3+3 = 6 | 2+3 = 5 |
 
----
+**Attaque × D** (D = 3 mêlée / 2 tir) : 🟢 6/4 · 🔵 9/6 · 🔴 12/— (mêlée/tir).
 
-## 6. Décisions actées et points encore ouverts
+**Assemblage (Brut → Final) :**
 
-**Actés avec Emmanuel — voir D026 du [[Document de cadrage]] :**
-- Coût des règles spéciales par catégorie (Option B), pas de coût forfaitaire unique.
-- Pas de prime de sécurité pour le Tir en V1 — le ratio 3 pts/dé (Mêlée) contre 2 pts/dé (Tir) suffit pour l'instant. À revoir si le Playtest #3 montre que le Tir domine trop facilement.
-- La Compagnie Grise (et tout futur composite à figurines nommées) se chiffre en pleine puissance, pas en valeur moyenne pondérée.
+| Case | Socle | Atk×D | Intrinsèques | **Brut** | **Final** |
+|---|---|---|---|---|---|
+| Inf 🟢 mêlée | 6 | 6 | — | 12 | **3** |
+| Inf 🔵 mêlée | 6 | 9 | — | 15 | **4** |
+| Inf 🔴 mêlée | 5 | 12 | Armure 1 (2) | 19 | **5** |
+| Inf 🟢 distance | 6 | 4 | Mobilité 1 (1) | 11 | **3** |
+| Inf 🔵 distance | 6 | 6 | — | 12 | **3** |
+| Cav 🟢 mêlée | 7 | 6 | Poursuite 2 (6) | 19 | **5** |
+| Cav 🔵 mêlée | 6 | 9 | Poursuite 2 (6) | 21 | **6** |
+| Cav 🔴 mêlée | 5 | 12 | Pours. 1 + Arm. 1 (5) + choc (1) | 23 | **7** |
+| Cav 🟢 distance | 7 | 4 | Mobilité 2 (2) | 13 | **3** |
+| Cav 🔵 distance | 6 | 6 | Mobilité 1 (1) | 13 | **3** |
 
-**Actés avec Emmanuel — voir D027 du [[Document de cadrage]] :**
-- Le socle Mouvement/PV de la formule brute est validé tel quel — comparaison à la durabilité effective en Mêlée : ratio Infanterie/Cavalerie 8:6 (socle) = 12:9 (durabilité), les deux à 1,33:1 (voir §1). Pas de retouche des poids.
-- Comparaison aux coûts réels de BattleLore V2 (échelle 4-8 pour l'essentiel du roster) → ajout d'une étape de compression finale `round(Points_bruts ÷ 3) − 1` (§2bis), qui ramène le roster Gondor sur la même échelle (4 à 8) tout en conservant les deux dominances D025.
-
-**Actés — voir D032 du [[Document de cadrage]] :**
-- [Horde] chiffrée à 3 points forfaitaires (arbitrage entre 2/3/4). Première assignation réelle : roster Mordor (2026-07-20).
-
-**Nouveau — voir D033 du [[Document de cadrage]] (2026-07-20) :**
-- Nouvelle règle [Peur X] créée pour le Troll du Mordor, coût provisoire 2×X (catégorie Moral) — non testé, à revoir après un premier usage à la table. Possible correction vers 1×X si le Playtest #1 montre le coût trop élevé pour un effet qui ne fait que reculer (pas de touche).
-
-**Nouveau — voir D037 du [[Document de cadrage]] (2026-07-20) :**
-- Nouvelle règle [Mur de bouclier] créée pour la Cohorte d'orientaux et la Cohorte de piquiers orientaux (Easterling), coût provisoire 1 pt forfaitaire (catégorie Défensif) — non testé. Risque identifié : sous-évaluation possible si la condition d'adjacence est quasi toujours vraie en formation de ligne (voir note ci-dessus).
-
-**Encore ouvert :**
-1. **Généralisation des unités composites** — aucune unité composite de type Compagnie Grise dans les rosters Rohan, Khand, Mordor ou Easterling. Reste à surveiller pour Harad, le dernier peuple non rédigé.
-2. ~~Coût de [Déploiement avancé]~~ — **sans objet : règle retirée de la V1 (D047, 2026-07-26)**. Deux nouveaux coûts à surveiller à sa place : **[Prise de flanc]** (3 pts forfaitaires, Éored de cavalier du Rohan, D049) et **[Vigilant]** (2 pts forfaitaires, Éored d'éclaireur, D050).
-3. **Coût de [Horde]** — provisoire, première assignation réelle mais pas encore jouée (D032).
-4. **Coût de [Peur X]** — provisoire, non testé (D033).
-5. **Coût de [Mur de bouclier]** — provisoire, non testé, risque de sous-évaluation identifié (D037).
-6. **Compromis PV/règle de l'Aurige de Khand** (PV 3 + [Poursuite 1]) — chiffré mais jamais testé en partie réelle, à surveiller en priorité au Playtest #1.
+> 🎲 **Note.** Le terme Attaque utilise l'attaque **de base**. Pour une unité [Horde], le +1 dé est déjà payé dans le forfait de la règle — ne pas le compter deux fois. La ligne **Cav 🔴 mêlée** inclut la **prime de choc** (+1, D065) : seul écart assumé entre la dérivation et la formule brute.
 
 ---
 
-## 7. Prochaine étape
+## 6. Créatures, Chars et pièces uniques (hors matrice)
 
-Les rosters Gondor, Rohan, Khand, Mordor et Easterling étant tous rédigés et validés, ce système a servi de cinq points de calibrage cohérents — voir §4. Reste à l'appliquer à Harad, dernier peuple de la V1, et à valider l'ensemble (notamment [Horde], [Peur X] et [Mur de bouclier], jamais testés en partie réelle) au Playtest #1 puis au Playtest #3 (scénario Pelennor complet).
+Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent en PV, sortent de la grille type × classe, et sont chiffrés **par équivalence d'impact narratif**, pas à la formule (principe acté : le Mûmakil à 21 pts ≈ 3 Éored, pas un produit de cases). Leurs signatures bespoke sont absorbées dans l'étiquette de la pièce. Idem pour les **composites nommés** (La Compagnie Grise, chiffrée à pleine puissance — D026).
 
 ---
 
-*Version : 0.7 — Phase 1 (contenu Phase 3 anticipé) — 2026-07-20. Ajout de la ligne de coût [Mur de bouclier] (1 pt forfaitaire, provisoire, D037) et de sa note associée. Cinquième point de calibrage du système de points effectué sur le roster Easterling, validé et clos dès sa première session (`02 - Factions/Easterling.md`, D038).*
+## 7. Exemples travaillés
 
-*Version : 0.8 — Phase 1 — 2026-07-26. [Déploiement avancé] marquée retirée de la V1 (D047, jamais testée) ; nouvelle règle [Flanking] ajoutée à la table (3 pts forfaitaires, catégorie Soutien, D047), première assignation Éored d'éclaireur (Rohan). Coûts d'Aurige de Khand (6 pts) et Cataphractaires orientaux (6 pts) déjà répercutés par la logique de compression — pas de retouche de barème nécessaire, seulement de statut de règle.*
+**Guerriers de Minas Tirith** — 🔵 Infanterie, mêlée, armure de faction. Base 🔵 Inf mêlée (brut 15) + [Armure 1] faction (+2) = **17** → `round(17/3)−1` = **5**. *(Ancien coût : 5. Continuité conservée.)*
 
-*Version : 0.9 — Phase 1 — 2026-07-26. « Flanking » renommée **[Prise de flanc]** (D049) et réassignée à l'Éored de cavalier du Rohan (profil 1), qui passe de 6 à **7 pts**. Nouvelle règle **[Vigilant]** ajoutée (2 pts forfaitaires, catégorie Offensif — Mêlée, D050), assignée à l'Éored d'éclaireur (Rohan) en remplacement de [Prise de flanc], coût inchangé (4 pts).*
+**Gardes de la Citadelle** — 🔵 Infanterie, mêlée, **Élite**, armure de faction. Brut 15 + Élite (+2) + [Armure 1] (+2) = **19** → **5**. *(Ancien : 6 ; le rebase PV les fait glisser d'un palier — attendu.)*
 
-*Version : 0.10 — Phase 1 — 2026-07-28. Correction des notes de justification de coût de [Férocité] (D057) : la règle est situationnelle parce qu'elle ne s'applique que si l'unité est elle-même forcée de reculer (sans elle, la contre-attaque serait impossible dans ce cas précis) — et non « seulement en contre-attaque si l'adversaire n'est pas éliminé » comme écrit précédemment. Coût inchangé (1 pt).*
+**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23** → **7**, inclut [Armure 1] + [Poursuite 1] + prime de choc D065). Les monter à **[Armure 2]** (faction, +2 → 25) les laisse à **7** (la compression absorbe le cran à ce palier) ; il faut y ajouter le **badge Élite** (+2 → 27) pour atteindre **8**. *(Choix d'armure/Élite = décision de re-expression P4.)* La cavalerie lourde retrouve ainsi son ancien coût de 7 — meilleure continuité qu'avec D064.
+
+---
+
+## 8. Décisions actées et points ouverts
+
+**Actés (D064, 2026-08-05) :**
+- Passage à la **matrice** (type × mode × classe), intrinsèques incluses par case ; suppléments Élite + signatures ajoutés au brut avant compression.
+- **Rebase durabilité** : Inf 6→4 PV, Cav 3 ; socle Mvt+PV recalculé sur la grille §6.1.
+- **Élite = [Inébranlable 1]**, +2 brut.
+- **[Armure X] = règle de faction** ouverte à toute classe (pas verrouillée au rouge) ; sur 🔴, seul l'excédent au-dessus du plancher [Armure 1] est facturé.
+
+**Ajusté (D065, 2026-08-05) :**
+- **Prime de choc de la cavalerie lourde** : +1 brut sur la seule case **Cav 🔴 mêlée** (22→23 → final **6→7**). Supersède la valeur Cav 🔴 mêlée de D064. Réservée à la cavalerie et dosée à +1 (un dé lourd = 4 déborderait à 8 et toucherait l'infanterie). Rend son ancien coût de 7 à la cavalerie lourde.
+
+**Hérités, toujours provisoires (à caler en jeu) :** [Horde] (D032), [Peur X] (D033), [Prise de flanc] (D049), [Vigilant] (D050).
+
+**Ouverts :**
+1. **Bornes de l'échelle** — le plancher tombe à **3** (infanterie légère/tir léger) et le plafond monte à **~9** pour une cavalerie lourde maxée (Élite + [Armure 2] + signature, au-dessus de l'ancien 8 de BattleLore V2). À confirmer au playtest de la taxonomie (P7a) : bornes acceptables, ou faut-il resserrer la compression ?
+2. **Re-expression des 6 rosters (P4)** : appliquer la matrice, retirer les [Poursuite]/[Armure] écrits en dur (redondants), trancher les armures de faction (ex. [Armure 2] Dol Amroth / Cataphractaires), reconfirmer chaque case type × mode × classe.
+3. **Cartes bannière (vert/bleu/rouge)** — leur retour probable dans le deck de commandement active les unités **par couleur = classe**. Sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C), mais **point de veille** : un roster trop concentré sur une couleur devient dur à activer — à intégrer à la conception du deck, pas au chiffrage.
+
+---
+
+*Version : 0.12 — Phase 1 — 2026-08-05. **Refonte P3 (D064) : passage en matrice.** Réécriture complète autour de la matrice type × mode × classe (§2), intrinsèques incluses par case. Rebase durabilité (Inf 6→4, Cav 3) ; socle Mvt+PV recalculé sur la grille §6.1 ; ancien §1 (durabilité ÷ perte moyenne) caduc (double-touche supprimée). Badge Élite = [Inébranlable 1] (+2). [Armure X] rouverte à toute classe comme règle de faction (excédent seul sur rouge). Barème des règles élagué au tri P2 (retrait des règles coupées ; intrinsèques facturées en excédent). Dérivation auditée (§5), exemples (§7). Créatures/Chars/composites hors matrice (équivalence). Fourchette 3–8. Non testé — validation P7a puis Playtest Pelennor.*
+
+*Version : 0.13 — Phase 1 — 2026-08-05. **Prime de choc de la cavalerie lourde (D065).** +1 brut sur la seule case Cav 🔴 mêlée (22→23), portant son coût final de 6 à **7** (matrice §2, dérivation §5, exemple Dol Amroth §7). Supersède la valeur Cav 🔴 mêlée de D064. Réservée à la cavalerie et dosée à +1 (un dé lourd = 4 aurait débordé à 8 et touché aussi l'infanterie lourde). Rend son ancien coût de 7 à la cavalerie lourde. Nouveau plafond ~9 pour une pièce de choc maxée. Non testé.*
+
+*Historique antérieur (0.7 → 0.11) : formule brute par profil `Mvt + PV + Attaque×D + Σrègles` (D025) ; compression `round(÷3)−1` (D027) ; Option B du coût des règles (D026) ; cinq points de calibrage (Gondor, Rohan, Khand, Mordor, Easterling) ; coûts provisoires [Horde] (D032), [Peur X] (D033), [Mur de bouclier] (D037, coupée en P2), [Prise de flanc]/[Vigilant] (D049/D050), [Réception de charge] refondue puis coupée (D058/D062). Détail dans le [[Document de cadrage]] §8.*

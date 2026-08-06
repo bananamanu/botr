@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-05"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.7"
+version: "0.8"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -74,6 +74,8 @@ Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de prof
 > **Seuls les Chars et les Créatures portent un compteur de PV.** L'Infanterie et la Cavalerie n'ont pas de PV chiffré : on retire simplement leurs figurines du plateau (1 figurine = 1 « point de vie » implicite).
 
 **Le mode = un token collé sur le socle : mêlée ou distance.** Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
+
+**Le badge Élite (facultatif) = un marqueur sur le plateau.** Il confère **[Inébranlable 1]** : l'unité ignore 1 recul par attaque reçue (voir [[Regles_Speciales]] §Socle). C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe aguerrie qui tient la ligne de la troupe ordinaire. Une unité sans badge n'a pas cette résistance. *(Son coût est traité dans [[Regles_Points]] §3.1.)*
 
 Une unité occupe toujours **un seul hexagone**. Les touches s'accumulent au sein d'une même attaque ; les pertes ne se récupèrent pas.
 
@@ -488,6 +490,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
 | **[Férocité]** | Contre-attaque même en cas de recul forcé, puis recule normalement |
+| **Élite** (badge) | Marqueur au plateau : l'unité porte [Inébranlable 1] |
 
 > Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
 
@@ -515,3 +518,5 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.6 — Phase 1 — 2026-08-03. **Refonte P1 « taxonomie visuelle » (D059/D060).** §2.1 (plateaux colorés, tokens de mode, compteurs de PV). §2.2 réécrite — classe (couleur = dés 2/3/4), type (Inf 4 fig / Cav 3 fig ; Chars et Créatures = PV), mode (token mêlée/distance) ; Faible limitée à Inf/Cav. §2.3 réécrite — **suppression de la double-touche** : règle unique « 1 touche = 1 figurine/PV, quelle que soit la cible » ; Artillerie mise hors périmètre v1. §6.1 réécrite — **grille de mouvement par classe × type** (inspirée C&C Medieval) ; aucune règle spéciale attachée d'office à une classe/type (les bonus intrinsèques éventuels — mobilité légère, double tir léger — sont écartés pour l'instant, décision reportée à P2) ; Créatures/Chars hors grille. §7.2/7.3 rattachées au token de mode ; récapitulatifs et rappels alignés. Reste à peupler en P2 (règles intrinsèques par combo) et à recalculer en P3 (coûts). Non testé — validation en P7a.*
 
 *Version : 0.7 — Phase 1 — 2026-08-05. **Revue classe × type (D063).** Ajout du §2.4 « Règles intrinsèques par combinaison » : grille classe × type × mode peuplée. **[Armure 1]** intrinsèque à tout lourd 🔴 (plancher, un profil peut monter à [Armure 2]) ; **[Poursuite]** intrinsèque à la cavalerie de mêlée (2 pour 🟢/🔵, 1 pour 🔴) ; **[Mobilité]** intrinsèque au tir léger/monté (🟢 cavalerie 2 ; 🟢 infanterie et 🔵 cavalerie 1 ; 🔵 infanterie = rien, archer de ligne planté). Infanterie et cavalerie de tir lourdes actées inexistantes. Supersession de D062-6 (la [Poursuite] cavalerie était renvoyée au profil). §6.1 et le mémo renvoient au §2.4 ; points ouverts #3 et #5 fermés. Répercussions profils/coûts renvoyées à P3 (chiffrage par case) / P4 (nettoyage des redondances). Non testé — validation en P7a.*
+
+*Version : 0.8 — Phase 1 — 2026-08-05. **Définition mécanique du badge Élite (D064).** §2.2 : le badge Élite (marqueur au plateau, jusque-là seulement nommé en D060) confère **[Inébranlable 1]** — cran de granularité au sein d'une même case classe × type × mode. Mémo aligné. Son coût (+2) est traité dans [[Regles_Points]] (refonte P3, matrice). Non testé — validation en P7a.*
