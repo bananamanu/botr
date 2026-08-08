@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.14"
+version: "0.15"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -72,6 +72,7 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062). Les règles devenues
 | **[Inébranlable X]** | 2 × X | Si l'unité est **Élite**, le premier point est déjà dans le badge → ne facturer que l'excédent. |
 | **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. |
 | **[Relance X]** | 2 × X | Relance X dés (mêlée ou tir) ; absorbe l'ex-[Perforant]. |
+| **[Arme de jet X]** | 1 × X | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche. Restaurée au socle P4 (D068), coupure P2 caduque. |
 | **[Poursuite X]** | 3 × X | Cavalerie de mêlée : plancher (2 ou 1) **inclus** → ne facturer que l'excédent. |
 | **[Mobilité X]** | 1 × X | Tir léger/monté : plancher **inclus** → excédent seul. |
 | **[Férocité]** | 1 | Situationnel (ne joue que si l'unité est forcée de reculer). |
@@ -83,7 +84,7 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062). Les règles devenues
 | **[Archer en mêlée]** | 2 | Signature Compagnie Grise. |
 | **[Peur X]** | 2 × X | Signature Troll. Provisoire (peut-être 1×X — ne fait reculer, pas de touche), D033. |
 
-> **Retirées au tri P2** (ne plus chiffrer) : [Mur de bouclier] (→ [Armure 1]), [Réception de charge], [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], immunités, [Terrain favori], [Rechargement], [Déploiement avancé]. Traçabilité : [[Regles_Speciales]] §6.
+> **Retirées au tri P2** (ne plus chiffrer) : [Mur de bouclier] (→ [Armure 1]), [Réception de charge], [Martyre], [Meute X], [Souffle de feu], immunités, [Terrain favori], [Rechargement], [Déploiement avancé]. Traçabilité : [[Regles_Speciales]] §6. *([Arme de jet X] restaurée au barème ci-dessus, P4/D068.)*
 
 > **Pièces bespoke** (Mûmakil : [Charge écrasante], [Bête incontrôlable], [Howdah] ; char : [Plateforme de tir X]) : **hors barème**, absorbées dans le chiffrage par équivalence de la pièce (§6).
 
@@ -170,6 +171,8 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 *Version : 0.12 — Phase 1 — 2026-08-05. **Refonte P3 (D064) : passage en matrice.** Réécriture complète autour de la matrice type × mode × classe (§2), intrinsèques incluses par case. Rebase durabilité (Inf 6→4, Cav 3) ; socle Mvt+PV recalculé sur la grille §6.1 ; ancien §1 (durabilité ÷ perte moyenne) caduc (double-touche supprimée). Badge Élite = [Inébranlable 1] (+2). [Armure X] rouverte à toute classe comme règle de faction (excédent seul sur rouge). Barème des règles élagué au tri P2 (retrait des règles coupées ; intrinsèques facturées en excédent). Dérivation auditée (§5), exemples (§7). Créatures/Chars/composites hors matrice (équivalence). Fourchette 3–8. Non testé — validation P7a puis Playtest Pelennor.*
 
 *Version : 0.13 — Phase 1 — 2026-08-05. **Prime de choc de la cavalerie lourde (D065).** +1 brut sur la seule case Cav 🔴 mêlée (22→23), portant son coût final de 6 à **7** (matrice §2, dérivation §5, exemple Dol Amroth §7). Supersède la valeur Cav 🔴 mêlée de D064. Réservée à la cavalerie et dosée à +1 (un dé lourd = 4 aurait débordé à 8 et touché aussi l'infanterie lourde). Rend son ancien coût de 7 à la cavalerie lourde. Nouveau plafond ~9 pour une pièce de choc maxée. Non testé.*
+
+*Version : 0.15 — Phase 1 — 2026-08-08. **[Arme de jet X] restaurée au barème** (P4, D068), 1×X — coupure P2 caduque.*
 
 *Version : 0.14 — Phase 1 — 2026-08-08. **Renommage [Arme Lourde X] → [Relance X]** (P4, D066), répercuté dans le barème §3.2. Aucun changement de coût.*
 
