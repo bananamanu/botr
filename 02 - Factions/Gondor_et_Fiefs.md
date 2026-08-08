@@ -5,30 +5,31 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "2.0"
+version: "2.1"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
 
-> **Objet de ce document (refonte P4, D067).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Le système de règles écrites au profil est remplacé par **trois badges fixes**, lisibles au plateau sans consulter aucune fiche — simplification demandée par Emmanuel au-delà même du barème à valeur variable de P1-P3.
+> **Objet de ce document (refonte P4, D067 ; pivot badges universels D073).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Le système de règles écrites au profil est remplacé par **quatre badges fixes** (Faction/Spéciale/Élite/Légende), lisibles au plateau sans consulter aucune fiche — simplification demandée par Emmanuel au-delà même du barème à valeur variable de P1-P3, poussée plus loin par le pivot D073 (badge Spéciale universel, badge Légende pour les pièces uniques).
 >
 > Pas de héros — les unités dites « légendaires » ci-dessous sont des types de troupe d'élite au profil enrichi, pas des personnages individuels avec valeur de commandement (voir « Unité légendaire » dans la Terminologie fixée du [[Document de cadrage]] §7 ; distinction héros réservée à la Phase 2, §5.2).
 >
-> Aligné sur [[Regles_Base]] v0.9 et [[Regles_Speciales]] v0.17.
+> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.21, [[Regles_Points]] v0.19.
 
 ---
 
-## 1. Les trois badges de Gondor
+## 1. Les quatre badges de Gondor
 
-Gondor n'a pas de signature de peuple unique façon Mordor/Harad/Easterling ([[Regles_Speciales]] §Signatures : *« Gondor : identité portée par l'armure lourde et ses pièces uniques »*). À la place, trois marqueurs fixes suffisent à couvrir tout le roster standard — chacun se lit d'un coup d'œil au plateau, aucun n'a de valeur variable.
+Gondor n'a pas de signature de peuple unique façon Mordor/Harad ([[Regles_Speciales]] §Signatures : *« Gondor : identité portée par l'armure lourde et ses pièces uniques »*). À la place, trois marqueurs fixes suffisent à couvrir tout le roster standard — chacun se lit d'un coup d'œil au plateau, aucun n'a de valeur variable. *(Les Orientaux, ex-Easterling, rejoignent Gondor sur ce point depuis leur re-expression P4/D072 — miroir mécanique pur, mêmes deux badges Faction/Spéciale.)*
 
 | Badge | Effet | Coût brut | Porté par |
 |---|---|---|---|
 | **Faction** (Gondor) | **[Armure 1]** | +2 *(gratuit si déjà intrinsèque au 🔴)* | Troupes régulières, bien équipées |
-| **Spéciale** (unité) | **[Relance 1]** *(ex-[Arme Lourde 1]/[Perforant 1])* | +2 | Troupes à l'arme ou au tir remarquable |
-| **Élite** | **[Inébranlable 1]** | +2 *(défini dans [[Regles_Base]] §2.2)* | Troupes aguerries |
+| **Spéciale** (unité) | **[Relance 1]** *(badge universel depuis D073, ex-[Arme Lourde 1]/[Perforant 1])* | +2 | Troupes à l'arme ou au tir remarquable |
+| **Élite** | **[Inébranlable 1] + Jamais Faible** *(enrichi D073)* | +2 *(défini dans [[Regles_Base]] §2.2)* | Troupes aguerries |
+| **Légende** | **+1 dé de combat** *(nouveau D073, réservé aux unités uniques)* | +3 mêlée / +2 tir | La Compagnie Grise (13) |
 
-Une unité peut porter 0 à 3 badges. Pas de règle à valeur X, pas de note narrative à vérifier en cours de partie : trois pictos, trois effets fixes.
+Une unité peut porter 0 à 4 badges. Pas de règle à valeur X, pas de note narrative à vérifier en cours de partie : quatre pictos, quatre effets fixes.
 
 > ⚠️ **Deux profils strictement identiques en mécanique, distincts en narratif** — assumé, cohérent avec le principe d'asymétrie du projet (§6 du cadrage) : Hommes d'armes de Dol Amroth (piquiers) et Guerriers de Lossarnach (hallebardiers) partagent Faction + Spéciale, 5 pts chacun.
 >
@@ -52,7 +53,7 @@ Une unité peut porter 0 à 3 badges. Pas de règle à valeur X, pas de note nar
 | 10 | Rangers du Gondor | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
 | 11 | Rangers d'Ithilien | Infanterie | Distance | 🔵 | Spéciale | **4** |
 | 12 | Rangers du Nord — *nouvelle unité* | Infanterie | Distance | 🔵 | Spéciale + Élite | **4** |
-| 13 | La Compagnie Grise | Infanterie | Mêlée | 🔵 | *(hors matrice — voir §4)* | **6** |
+| 13 | La Compagnie Grise | Infanterie | Mêlée | 🔵 | Faction + Spéciale + Élite + Légende | **7** |
 
 *Roster resserré à 13 unités (contre 14) : Archers de la Racine Noire fusionnés dans Rangers d'Ithilien/Rangers du Nord (même niche tir-précision, différenciée par le badge Élite plutôt que par un profil séparé) ; Vétérans d'Osgiliath retirés du roster de base (aucun rôle mécanique distinct des Gardes de la Citadelle sous le nouveau système de badges — candidat à réintroduire en pièce unique si un scénario le demande).*
 
@@ -215,25 +216,19 @@ Une unité peut porter 0 à 3 badges. Pas de règle à valeur X, pas de note nar
 
 | Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
 |---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 *(hors matrice)* | 2 | 3 dés | — | **4 nommées** | **6** |
+| Infanterie | Mêlée | 🔵 | 2 | 4 dés *(3 + 1 Légende)* | — | **4 nommées** | **7** |
 
 **Composition :** 4 figurines individuelles et distinctes — Gimli, Legolas, Elrohir, Elladan.
 
-**Badges :** Élite ([Inébranlable 1]) — plus, **en permanence tant que l'unité compte au moins 1 figurine**, l'intégralité des règles suivantes :
+**Badges :** Faction ([Armure 1]) + Spéciale ([Relance 1]) + Élite ([Inébranlable 1] + Jamais Faible) + **Légende** (+1 dé de combat)
 
-| Règle | Origine |
-|---|---|
-| **[Relance 1]** | Gimli (hache) |
-| **[Archer en mêlée]** | Legolas (précision hors norme, les faces Cible touchent aussi en mêlée) |
-| **[Férocité]** | Elrohir et Elladan (contre-attaque même en cas de recul forcé) |
-
-**Refonte P4 (D067).** Simplification radicale par rapport à l'ancienne version : plus de suivi « telle figurine est-elle encore vivante » à chaque combat — toutes les règles sont actives **tant qu'il reste au moins 1 figurine** dans l'unité, quelle qu'elle soit. Perte de figurine = perte de dés, point ; aucune règle ne s'éteint avant la dernière perte. Halbarad et son [Inébranlable 2] conditionnel disparaissent du profil (remplacés par le badge Élite fixe, plus simple à lire) ; la composition passe de 6 à **4 figurines nommées**, alignée sur le socle standard Infanterie.
+**Refonte P4 (D073).** Simplification radicale : plus aucune règle bespoke par figurine ([Archer en mêlée] de Legolas et [Férocité] d'Elrohir/Elladan sont retirées). La Compagnie Grise devient une unité **standard**, chiffrée à la matrice comme n'importe quel profil du roster — quatre badges génériques au lieu d'un empilement de règles nommées. Elle **sort du régime « hors matrice »** : son coût n'est plus fixé par équivalence narrative, il se lit comme celui de n'importe quelle autre unité.
 
 **Règle de retrait (exception à la règle générale) :** lorsque l'unité subit une perte, c'est le joueur qui la contrôle qui choisit quelle figurine retirer.
 
-**Hors matrice** (composite nommé, [[Regles_Points]] §6) : coût fixé par équivalence narrative plutôt que calculé — **6 pts**, chiffré en pleine puissance (comme si les 4 figurines étaient vivantes) et ne diminue pas au fil des pertes.
+> 🎲 **Note de calcul.** Brut = 15 (Inf 🔵 mêlée) + [Armure 1] Faction (2) + [Relance 1] Spéciale (2) + [Inébranlable 1] Élite (2) + Légende mêlée (3) = 24 → round(24÷3)−1 = **7**. Devient l'une des unités d'infanterie les plus chères du roster (à égalité de méthode avec Chevaliers à pied de Dol Amroth, 6 pts, mais avec un badge de plus).
 
-**Note narrative :** les Rangers du Nord d'Aragorn, arrivés par les Chemins des Morts, aux côtés de Legolas et Gimli. Aucun héros individuel attaché avec valeur de commandement (conforme au périmètre « pas de héros » — voir Terminologie « Unité légendaire », [[Document de cadrage]] §7) ; si des héros sont développés en Phase 2, la Compagnie Grise sera le candidat naturel pour en accueillir un.
+**Note narrative :** les Rangers du Nord d'Aragorn, arrivés par les Chemins des Morts, aux côtés de Legolas et Gimli — quatre combattants exceptionnels, plus une addition de talents individuels qu'une entité identifiable figurine par figurine. Aucun héros individuel attaché avec valeur de commandement (conforme au périmètre « pas de héros » — voir Terminologie « Unité légendaire », [[Document de cadrage]] §7) ; si des héros sont développés en Phase 2, la Compagnie Grise sera le candidat naturel pour en accueillir un.
 
 ---
 
@@ -241,12 +236,13 @@ Une unité peut porter 0 à 3 badges. Pas de règle à valeur X, pas de note nar
 
 | Badge | Unités qui le portent |
 |---|---|
-| **Faction** ([Armure 1]) | Guerriers de Minas Tirith (1) · Archers de Minas Tirith (2) · Chevaliers de Minas Tirith (3, gratuit) · Chevaliers de Dol Amroth (4, gratuit) · Garde de la Citadelle (5) · Hommes d'armes de Dol Amroth (6) · Chevaliers à pied de Dol Amroth (7, gratuit) · Guerriers de Lossarnach (8) |
-| **Spéciale** ([Relance 1]) | Chevaliers de Dol Amroth (4) · Hommes d'armes de Dol Amroth (6) · Guerriers de Lossarnach (8) · Guerriers des clans de Lamedon (9) · Rangers d'Ithilien (11) · Rangers du Nord (12) · La Compagnie Grise (13, permanent — Gimli) |
-| **Élite** ([Inébranlable 1]) | Chevaliers de Dol Amroth (4) · Garde de la Citadelle (5) · Chevaliers à pied de Dol Amroth (7) · Rangers du Nord (12) · La Compagnie Grise (13) |
+| **Faction** ([Armure 1]) | Guerriers de Minas Tirith (1) · Archers de Minas Tirith (2) · Chevaliers de Minas Tirith (3, gratuit) · Chevaliers de Dol Amroth (4, gratuit) · Garde de la Citadelle (5) · Hommes d'armes de Dol Amroth (6) · Chevaliers à pied de Dol Amroth (7, gratuit) · Guerriers de Lossarnach (8) · La Compagnie Grise (13) |
+| **Spéciale** ([Relance 1]) | Chevaliers de Dol Amroth (4) · Hommes d'armes de Dol Amroth (6) · Guerriers de Lossarnach (8) · Guerriers des clans de Lamedon (9) · Rangers d'Ithilien (11) · Rangers du Nord (12) · La Compagnie Grise (13) |
+| **Élite** ([Inébranlable 1] + Jamais Faible) | Chevaliers de Dol Amroth (4) · Garde de la Citadelle (5) · Chevaliers à pied de Dol Amroth (7) · Rangers du Nord (12) · La Compagnie Grise (13) |
+| **Légende** (+1 dé de combat) | La Compagnie Grise (13) — seule unité unique du roster |
 | **Aucun badge** | Rangers du Gondor (10) — seule unité définie par sa classe légère seule |
 
-**Règles hors badges** (Compagnie Grise uniquement) : [Archer en mêlée] (Legolas), [Férocité] (Elrohir + Elladan) — signature bespoke de pièce unique, non réutilisable ailleurs dans le roster.
+**Compagnie Grise (13) : les quatre badges à la fois** — seul profil du roster à les cumuler tous, cohérent avec son statut de pièce la plus chère du roster (7 pts). Plus aucune règle hors badge dans ce document depuis D073.
 
 ---
 
@@ -257,5 +253,7 @@ Une unité peut porter 0 à 3 badges. Pas de règle à valeur X, pas de note nar
 - **[Réception de charge]** (Hommes d'armes de Dol Amroth) reste sans équivalent mécanique depuis sa coupe au tri du glossaire (P2) — l'identité anti-cavalerie de la pique est purement narrative dans cette version. Pas de remplacement proposé : à surveiller si un playtest révèle un vrai besoin de contre-charge dédiée.
 
 ---
+
+*Version : 2.1 — Phase 1 — 2026-08-08. **Pivot « badges universels » (D073).** Badge Élite enrichi (+ Jamais Faible, coût inchangé). Nouveau badge **Légende** (+1 dé de combat) : La Compagnie Grise (13) perd tout son empilement de règles bespoke ([Archer en mêlée], [Férocité]) au profit des quatre badges standard (Faction + Spéciale + Élite + Légende) — sort du régime « hors matrice », chiffrée à la matrice comme le reste du roster. Coût 6 → **7 pts**, devient l'une des unités d'infanterie les plus chères du roster. Profils 1-12 inchangés (Faction/Spéciale déjà conformes au nouveau standard). Non testé — validation P7a.*
 
 *Version : 2.0 — Phase 1 — 2026-08-08. **Refonte P4 (D067) : re-expression complète sur la taxonomie visuelle et le système de badges.** Roster resserré de 14 à 13 unités (Vétérans d'Osgiliath retirés, Archers de la Racine Noire fusionnés dans la famille Rangers, Rangers du Nord ajoutés). Trois badges fixes (Faction/Spéciale/Élite) remplacent le barème à valeur variable. Compagnie Grise refondue : 6→4 figurines, règles actives en permanence (fin du suivi conditionnel par figurine), badge Élite ajouté. Renommage [Arme Lourde X]→[Relance X] (D066) répercuté. Non testé — validation P7a.*

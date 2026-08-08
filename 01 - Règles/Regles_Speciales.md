@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.20"
+version: "0.25"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -74,7 +74,7 @@ Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une uni
 
 Lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Les faces **Épées croisées** ne sont jamais affectées. Sans effet contre le **tir**.
 
-> Remplace désormais l'ancienne [Mur de bouclier] sur les profils Easterling (coupée en P2, → [Armure 1], voir §6).
+> 🔄 **Restaurée au socle générique — D077** : brièvement remplacée par [Armure 1] sur les profils Orientaux (P2→D072), [Mur de bouclier] est réintroduite sous une forme conditionnelle et refondue — voir §Signatures de peuple ci-dessous. [Armure 1] reste disponible comme badge Faction pour tout autre peuple (Gondor).
 
 ### [Protection X]
 
@@ -118,7 +118,7 @@ Après le lancer, le joueur peut **relancer X dés** de son choix (mêlée **ou*
 
 Le tour où cette unité **s'est déplacée puis attaque en mêlée**, chaque face **Cible** obtenue compte comme **une touche supplémentaire** (au lieu d'un échec) — les projectiles lancés avant le choc.
 
-> 🔄 **Restaurée — P4 (D068)**, après avoir été coupée au tri P2 (D062) faute de porteur en attente de re-expression. Réintégrée au socle générique à l'occasion de la re-expression du Rohan : porteur d'origine (Milice lige, D044), désormais généralisable à toute unité de mêlée dont l'équipement le justifie.
+> 🔄 **Restaurée — P4 (D068)**, après avoir été coupée au tri P2 (D062) faute de porteur en attente de re-expression, puis réintégrée à l'occasion de la re-expression du Rohan (porteur d'origine : Milice lige, D044). **Sans porteur actif depuis D074** : le Rohan migre son badge Faction vers [Férocité] (pivot « badges universels »). Conservée au socle générique, réutilisable si un futur profil de mêlée veut l'identité « projectile lancé avant le choc ».
 
 ### [Mercenaire]  *(coût négatif)*
 
@@ -150,11 +150,13 @@ Capacités marquantes. **1–2 maximum par unité.** Chaque peuple porte **une**
 
 #### [Horde]  — *Mordor*
 
-Tant que cette unité **n'a perdu aucun PV** : **+1 dé d'attaque**. Ce bonus disparaît **définitivement** dès la première perte.
+Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d'attaque**. Dès qu'elle subit sa **première touche**, elle perd ce bonus **et** passe immédiatement en **état Faible** ([[Regles_Base]] §2.2 : ses faces Épée cessent de toucher) — **quel que soit le nombre de figurines qu'il lui reste**, pas seulement à la dernière.
 
-> 🎲 « Très fort au premier choc, fragile ensuite » : la horde d'orques nombreuse et prompte à rompre. Condition lisible au nombre de figurines, sans jeton. Inspirée des *Warriors* de C&C Ancients. Assignée aux bandes d'orques d'infanterie de mêlée uniquement (pas à l'Uruk-hai, élite qui tient ; pas au tir, D032 ; pas à la cavalerie/aux bêtes).
+> 🎲 « Très fort au premier choc, s'effondre au premier sang » : la horde d'orques nombreuse, redoutable en masse et vite débandée dès qu'elle encaisse. Condition lisible au nombre de figurines, sans jeton. Inspirée des *Warriors* de C&C Ancients.
 >
-> 🔄 **Nerfée — P4 (D071)** : perd le volet **[Inébranlable 1]** à pleine santé, conservé uniquement pour le badge Élite générique. Coût ramené de 3 à **2** (forfait), en cohérence avec le retrait d'un des deux effets — voir [[Regles_Points]] §3.2. Toujours provisoire, non testé sous cette forme.
+> 🔄 **Refondue — P4 (D075)** : ajoute l'entrée en état Faible **immédiate** (dès la première touche, plus seulement à la dernière figurine) à l'ancien effet (+1 dé à pleine santé, D032 ; perte de [Inébranlable 1], D071). Coût ramené de 2 à **1** (forfait) — le nouveau malus (Faible prématuré) est une contrepartie réelle, pas seulement la perte d'un bonus. Toujours provisoire, non testé sous cette forme.
+>
+> 🔄 **Restriction de portée levée (D075)** : jusqu'ici réservée à l'infanterie orque de mêlée (D032, jamais la cavalerie ni les bêtes), la règle est désormais aussi assignée à la Meute de cavaliers wargs de Mordor — la restriction D032 est supersédée pour ce cas précis, à l'appréciation de chaque peuple.
 
 #### [Poison]  — *Harad*
 
@@ -162,13 +164,21 @@ Lorsque cette unité attaque, chaque face **Couronne** inflige **1 touche suppl�
 
 > 🎲 Fil conducteur du Harad (flèches et lames empoisonnées). Porté par les Lanciers, les Gardes serpents et la volée du Mûmakil ([Howdah]).
 
-#### [Double Tir]  — *Easterling*
+#### [Mur de bouclier]  — *Orientaux*
+
+Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **[Protection 1]** (ignore 1 touche par attaque reçue, mêlée ou tir). Dès qu'elle subit sa **première touche**, la formation est rompue : la protection disparaît **définitivement**.
+
+> 🎲 Le mur tient tant que la ligne n'est pas percée, puis s'effondre d'un coup — même patron que [Horde] (condition liée à l'état de l'unité, pas à son voisinage), appliqué à une protection plutôt qu'à un bonus offensif.
+>
+> 🔄 **Restaurée et refondue — P4 (D077)**, après avoir été coupée au tri P2 (D062) faute d'une version assez simple pour la table (l'ancienne mouture exigeait de vérifier l'adjacence à une autre unité d'Infanterie amie à chaque combat). Cette version ne dépend plus que du nombre de touches subies, lisible au même coup d'œil que [Horde]. **[Protection 1] à plat jugé trop fort** (retour d'Emmanuel) : la version conditionnelle s'auto-limite au premier choc, ce qui justifie de garder le même coût que la version à plat malgré la puissance ponctuelle.
+
+#### [Double Tir]  — *sans porteur actif*
 
 Si cette unité **ne s'est pas déplacée** ce tour, elle effectue une **seconde attaque à distance** (même cible ou une autre, à portée et en ligne de vue).
 
-> 🎲 La discipline de la ligne qui tient sa position et double la salve — signature glanceable de l'archer d'Easterling, miroir de l'archer **mobile** (intrinsèque [Mobilité 1], §3). Depuis la coupe de [Mur de bouclier] (P2), c'est [Double Tir] qui porte l'identité de tir discipliné du peuple ; sa protection passe par [Armure 1] (socle).
+> 🎲 La discipline de la ligne qui tient sa position et double la salve — miroir de l'archer **mobile** (intrinsèque [Mobilité 1], §3). **Sans porteur depuis P4/D072** : à la re-expression des Orientaux (ex-Easterling), Emmanuel choisit un **miroir mécanique pur de Gondor** (badge Faction [Armure 1] + badge Spéciale [Relance 1]) plutôt que de reconduire cette signature — l'archer orientaux redevient un profil standard (classe 🟢, [Mobilité 1] intrinsèque gratuite), sans règle bespoke. Conservée au glossaire — réutilisable si un futur profil veut l'identité « archer immobile qui double la salve ».
 
-*(Khand : identité portée par le badge Faction [Mercenaire] (moral fragile, coût réduit) et le badge Spéciale [Relance 1] (hache lourde) — voir §2. Gondor : identité portée par l'armure lourde ([Armure X], socle) et ses pièces uniques.)*
+*(Khand : identité portée par le badge Faction [Mercenaire] (moral fragile, coût réduit) et le badge Spéciale [Relance 1] (hache lourde) — voir §2. Gondor et Orientaux : identité portée par l'armure lourde ([Armure X], socle) et le badge Spéciale [Relance 1], en miroir mécanique exact l'un de l'autre.)*
 
 ### Signatures de pièce unique
 
@@ -180,11 +190,11 @@ Chaque face **Arcane** obtenue en attaque compte comme **X Drapeaux** contre la 
 >
 > 🔄 **Devenue intrinsèque au type Créature — P4 (D071)** : **toute créature porte [Peur 1] et [Armure 1] sans supplément de coût** — ce n'est plus une signature à assigner unité par unité (voir [[Regles_Base]] §2.3, à ajouter). Première application : Troll du Mordor. S'appliquera au Mûmakil (Harad) à sa propre re-expression P4/P5, sans redondance avec ses règles bespoke déjà en place ([Howdah], [Charge écrasante], [Inébranlable ∞]).
 
-#### [Archer en mêlée]  — *Compagnie Grise (Legolas)*
+#### [Archer en mêlée]  — *sans porteur actif*
 
 Les faces **Cible** infligent aussi une touche lors d'une attaque de **mêlée** (normalement inertes en mêlée).
 
-> 🎲 Précision hors norme, dangereuse jusqu'au corps à corps.
+> 🎲 Précision hors norme, dangereuse jusqu'au corps à corps. **Sans porteur depuis P4/D073** : la Compagnie Grise (Legolas), seule pièce à l'avoir jamais portée, passe au badge **Légende** (+1 dé de combat) plutôt qu'à une règle bespoke par figurine. Conservée au glossaire — réutilisable si un futur profil veut l'identité « tireur d'élite qui touche aussi au contact ».
 
 #### [Vigilant]  — *Éored d'éclaireur (Rohan)*
 
@@ -230,19 +240,20 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 
 | Règle | Famille | Résumé |
 |---|---|---|
-| **[Archer en mêlée]** | Signature (Compagnie Grise) | Les faces Cible touchent aussi en mêlée |
-| **[Arme de jet X]** | Socle | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche |
+| **[Archer en mêlée]** | Sans porteur actif | Les faces Cible touchent aussi en mêlée |
+| **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche |
 | **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
 | **[Armure X]** | Socle | Retire X faces Épée des attaques de mêlée reçues |
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | Blessé : test de contrôle par PV ; échec → Furie dirigée par l'adversaire |
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Couronne = touche) sur le trajet, sans contre-attaque |
-| **[Double Tir]** | Signature (Easterling) | Seconde attaque à distance si non déplacé |
+| **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
 | **[Férocité]** | Socle | Contre-attaque même en cas de recul forcé, puis recule |
-| **[Horde]** | Signature (Mordor) | +1 dé à pleine santé (perdu à la 1ʳᵉ perte) — nerfée P4/D071, ne donne plus Inébranlable |
+| **[Horde]** | Signature (Mordor) | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] + [Poison] |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
 | **[Mercenaire]** | Socle *(coût négatif)* | Chaque retrait forcé compte double — badge Faction Khand |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
+| **[Mur de bouclier]** | Signature (Orientaux) | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 ; toute créature en porte aussi (D071) |
 | **[Peur X]** | Intrinsèque (type Créature) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
@@ -264,7 +275,7 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 | **[Perforant X]** | Fusionnée | → **[Relance X]** (relance X, mêlée ou tir) |
 | **[Inamovible]** | Fusionnée | → **[Inébranlable ∞]** |
 | **[Mobilité X]** | Devenue intrinsèque | → 🟢 distance (§3) — plus un mot-clé de profil |
-| **[Mur de bouclier]** | Coupée | → **[Armure 1]** sur les profils Easterling (répercussion P4) |
+| **[Mur de bouclier]** | **Restaurée (D077)** | → refondue en signature conditionnelle Orientaux, voir §Signatures de peuple |
 | **[Réception de charge]** | Coupée | — (bonus de contre-attaque accroché à l'action la plus oubliée à la table) |
 | **[Arme de jet X]** | Coupée puis **restaurée** | → socle générique (P4, D068), voir §2 — coupure P2 caduque |
 | **[Martyre]** | Coupée | Jamais assignée |
@@ -298,6 +309,16 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 *Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Relance X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Relance X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
 
 *Version 0.16 — Phase 1 — 2026-08-05. **Mise à jour de renvois seulement (pas de re-tri).** La revue classe × type est faite (D063) : les mentions « revue à venir » pointent désormais vers [[Regles_Base]] §2.4 (source de vérité unique des intrinsèques) ; §3 recadré en illustration ([Mobilité 1] cas fondateur) ; récapitulatif alphabétique complété ([Mobilité X], [Poursuite] et [Armure 1] intrinsèques). Aucune décision de tri modifiée.*
+
+*Version 0.25 — Phase 1 — 2026-08-08. **[Mur de bouclier] restaurée et refondue (D077).** Nouvelle mécanique conditionnelle : [Protection 1] tant qu'aucune touche subie, perdue définitivement à la première — même patron que [Horde]. Redevient le badge Faction des Orientaux, à la place d'[Armure 1] (D072 caduque).*
+
+*Version 0.24 — Phase 1 — 2026-08-08. **[Horde] refondue (D075).** Ajoute l'entrée en état Faible immédiate dès la première touche (plus seulement à la dernière figurine), coût 2→1. Restriction D032 (jamais la cavalerie) levée pour la Meute de cavaliers wargs (Mordor). Migration Mordor du badge Spéciale vers [Relance 1] — dernière répercussion de D073.*
+
+*Version 0.23 — Phase 1 — 2026-08-08. **Migration Rohan (D074).** [Arme de jet X] devient sans porteur actif — le Rohan migre son badge Faction vers [Férocité] (pivot badges universels, D073). Conservée au socle générique.*
+
+*Version 0.22 — Phase 1 — 2026-08-08. **Pivot transverse « badges universels » (D073).** [Archer en mêlée] devient sans porteur actif — la Compagnie Grise (Gondor) passe au badge Légende plutôt qu'à une règle bespoke par figurine. Badges Élite (+Jamais Faible) et Légende (nouveau) définis dans [[Regles_Base]] §2.2 ; badge Spéciale universel ([Relance 1] pour tous) défini dans [[Regles_Points]] §3.2.*
+
+*Version 0.21 — Phase 1 — 2026-08-08. **P4 — Orientaux (ex-Easterling) re-exprimés** (`02 - Factions/Orientaux.md` v2.0) : miroir mécanique pur de Gondor, Faction=[Armure 1] / Spéciale=[Relance 1]. **[Double Tir] devient sans porteur actif** — ancienne signature de peuple, conservée au glossaire, réutilisable.*
 
 *Version 0.20 — Phase 1 — 2026-08-08. **[Horde] nerfée** (P4, D071) : perd le volet [Inébranlable 1] à pleine santé, coût ramené de 3 à 2. **[Peur X] et [Armure 1] deviennent intrinsèques au type Créature** (toute créature en porte sans supplément, plus une signature à assigner unité par unité) — première application Troll du Mordor, s'étendra au Mûmakil à sa re-expression.*
 

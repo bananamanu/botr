@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.17"
+version: "0.22"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -52,17 +52,25 @@ Rappel des intrinsèques incluses (pour mémoire, **pas** à ajouter) : 🔴 →
 Le coût final d'un profil se construit ainsi :
 
 ```
-Brut = Brut_de_base (case, §5) + 2 si Élite + Σ Coût(signatures & règles de faction)
+Brut = Brut_de_base (case, §5) + 2 si Élite + 3 (mêlée) ou 2 (tir) si Légende + Σ Coût(signatures & règles de faction)
 Final = round(Brut ÷ 3) − 1
 ```
 
 La compression (§4) se fait **une fois**, à la rédaction du profil, après avoir additionné tous les suppléments au brut de la case — jamais à la volée en partie.
 
-### 3.1 Badge Élite = [Inébranlable 1]
+### 3.1 Badge Élite = [Inébranlable 1] + Jamais Faible
 
-Le badge **Élite** (marqueur lu au plateau, [[Regles_Base]] §2.2) confère **[Inébranlable 1]** : l'unité ignore 1 recul par attaque reçue. C'est le cran de granularité qui distingue, dans une même case, la troupe aguerrie de la troupe de ligne. **Coût : +2 brut** (tarif socle [Inébranlable X] = 2×X).
+Le badge **Élite** (marqueur lu au plateau, [[Regles_Base]] §2.2) confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue) **et Jamais Faible** (D073 : l'unité ignore l'état Faible, ses faces Épée touchent toujours). C'est le cran de granularité qui distingue, dans une même case, la troupe aguerrie de la troupe de ligne. **Coût : +2 brut**, inchangé malgré l'enrichissement (tarif socle [Inébranlable X] = 2×X ; Jamais Faible n'ajoute rien au forfait — provisoire, à surveiller au playtest).
 
-### 3.2 Barème des règles (signatures + socle explicite)
+### 3.1bis Badge Légende = +1 dé de combat *(D073)*
+
+Le badge **Légende** (marqueur lu au plateau, réservé aux unités uniques, [[Regles_Base]] §2.2) ajoute **+1 dé** à l'attaque de l'unité, dans son mode. Remplace l'ancienne approche « pièce hors matrice, coût par équivalence narrative » pour toute unité unique dont les règles se ramènent à un empilement de badges standard plutôt qu'à une mécanique bespoke. **Coût : +3 brut en mêlée (D=3), +2 brut au tir (D=2)** — dérivé de la même méthode que le reste de la matrice (§5) : un dé de plus vaut ce que vaut un dé de la classe, au mode près.
+
+### 3.2 Badge Spéciale = [Relance 1] pour tout le monde *(D073)*
+
+Le badge **Spéciale** n'a plus de contenu variable par peuple : **[Relance 1]** pour tous les rosters, standard/hache lourde/lance ou tout autre habillage narratif. **Coût inchangé : +2 brut** (tarif socle [Relance X] = 2×X). *(Rohan migré D074, Mordor migré D075 — tous les peuples re-exprimés sont désormais conformes.)*
+
+### 3.3 Barème des règles (signatures + socle explicite)
 
 Repris de l'Option B (D026), **élagué au tri P2** (D062). Les règles devenues **intrinsèques** ne se facturent qu'en **excédent au-dessus du plancher de la case**.
 
@@ -71,15 +79,17 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062). Les règles devenues
 | **[Armure X]** | 2 × X | Règle de **faction**, disponible à toute classe (arbitrage D064). Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent ([Armure 2] = +2). |
 | **[Inébranlable X]** | 2 × X | Si l'unité est **Élite**, le premier point est déjà dans le badge → ne facturer que l'excédent. |
 | **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. |
-| **[Relance X]** | 2 × X | Relance X dés (mêlée ou tir) ; absorbe l'ex-[Perforant]. |
-| **[Arme de jet X]** | 1 × X | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche. Restaurée au socle P4 (D068), coupure P2 caduque. |
+| **[Relance X]** | 2 × X | Relance X dés (mêlée ou tir) ; absorbe l'ex-[Perforant]. Badge Spéciale universel depuis D073. |
+| **Légende** *(badge)* | 3 (mêlée) / 2 (tir) *(forfait, +1 dé)* | Réservé aux unités uniques, D073 — voir §3.1bis. |
+| **[Arme de jet X]** | 1 × X | Sans porteur actif depuis D074 (Rohan migré vers [Férocité]). Conservée au barème, réutilisable. |
 | **[Mercenaire]** | **−2** *(forfait, coût négatif)* | Chaque retrait forcé compte double. Badge Faction Khand, P4/D070 — premier badge à coût négatif du barème. |
 | **[Poursuite X]** | 3 × X | Cavalerie de mêlée : plancher (2 ou 1) **inclus** → ne facturer que l'excédent. |
 | **[Mobilité X]** | 1 × X | Tir léger/monté : plancher **inclus** → excédent seul. |
 | **[Férocité]** | 1 | Situationnel (ne joue que si l'unité est forcée de reculer). |
-| **[Horde]** | **2** *(forfait)* | Signature Mordor (+1 dé à pleine santé). Nerfée P4/D071 (perd [Inébranlable 1]), coût ramené de 3 à 2. Provisoire, D032. |
+| **[Horde]** | **1** *(forfait)* | Signature Mordor (+1 dé à pleine santé, Faible dès la 1ʳᵉ touche). Refondue P4/D075, coût ramené de 2 à 1. Provisoire. |
+| **[Mur de bouclier]** | **1** *(forfait)* | Signature Orientaux — [Protection 1] tant qu'aucune touche subie, perdue à la 1ʳᵉ. Restaurée et refondue P4/D077, remplace [Armure 1] comme badge Faction. Provisoire. |
 | **[Poison]** | 1 | Signature Harad (Couronne → 1 touche). |
-| **[Double Tir]** | 3 | Signature Easterling (~une attaque de tir en plus). |
+| **[Double Tir]** | 3 | Sans porteur actif depuis P4/D072 (Orientaux passés en miroir pur de Gondor). Conservée au barème, réutilisable. |
 | **[Prise de flanc]** | 3 *(forfait)* | Signature Éored de cavalier. Provisoire, D049. |
 | **[Vigilant]** | 2 *(forfait)* | Signature Éored d'éclaireur. Provisoire, D050. |
 | **[Archer en mêlée]** | 2 | Signature Compagnie Grise. |
@@ -172,6 +182,16 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 *Version : 0.12 — Phase 1 — 2026-08-05. **Refonte P3 (D064) : passage en matrice.** Réécriture complète autour de la matrice type × mode × classe (§2), intrinsèques incluses par case. Rebase durabilité (Inf 6→4, Cav 3) ; socle Mvt+PV recalculé sur la grille §6.1 ; ancien §1 (durabilité ÷ perte moyenne) caduc (double-touche supprimée). Badge Élite = [Inébranlable 1] (+2). [Armure X] rouverte à toute classe comme règle de faction (excédent seul sur rouge). Barème des règles élagué au tri P2 (retrait des règles coupées ; intrinsèques facturées en excédent). Dérivation auditée (§5), exemples (§7). Créatures/Chars/composites hors matrice (équivalence). Fourchette 3–8. Non testé — validation P7a puis Playtest Pelennor.*
 
 *Version : 0.13 — Phase 1 — 2026-08-05. **Prime de choc de la cavalerie lourde (D065).** +1 brut sur la seule case Cav 🔴 mêlée (22→23), portant son coût final de 6 à **7** (matrice §2, dérivation §5, exemple Dol Amroth §7). Supersède la valeur Cav 🔴 mêlée de D064. Réservée à la cavalerie et dosée à +1 (un dé lourd = 4 aurait débordé à 8 et touché aussi l'infanterie lourde). Rend son ancien coût de 7 à la cavalerie lourde. Nouveau plafond ~9 pour une pièce de choc maxée. Non testé.*
+
+*Version : 0.22 — Phase 1 — 2026-08-08. **[Mur de bouclier] ajoutée au barème (D077)**, 1 pt forfait — redevient le badge Faction des Orientaux, remplace [Armure 1] (D072 caduque).*
+
+*Version : 0.21 — Phase 1 — 2026-08-08. **[Horde] refondue (D075)** : coût 2→1 (forfait). Migration Mordor du badge Spéciale vers [Relance 1] actée — tous les peuples déjà re-exprimés sont désormais conformes au badge Spéciale universel (D073).*
+
+*Version : 0.20 — Phase 1 — 2026-08-08. **Migration Rohan actée** (D074) : Rohan retiré de la liste des peuples en attente de badge Spéciale universel. Seul Mordor reste à migrer.*
+
+*Version : 0.19 — Phase 1 — 2026-08-08. **Pivot transverse « badges universels » (D073).** §3.1 : badge Élite enrichi (+ Jamais Faible), coût inchangé (+2). Nouveau **§3.1bis badge Légende** (+1 dé de combat, +3 brut mêlée / +2 tir), réservé aux unités uniques — remplace le régime « hors matrice, équivalence narrative » pour les pièces dont les règles se ramènent à un empilement de badges. Nouveau **§3.2 badge Spéciale universel** : [Relance 1] pour tous les peuples (ancien §3.2 renuméroté §3.3). Répercussions sur Rohan/Mordor (badge Spéciale à migrer) renvoyées à leur propre passage.*
+
+*Version : 0.18 — Phase 1 — 2026-08-08. **[Double Tir] sans porteur actif** (P4/D072, Orientaux passés en miroir mécanique pur de Gondor — Faction [Armure 1] + Spéciale [Relance 1] plutôt que la signature de peuple). Barème inchangé, conservé pour réutilisation future.*
 
 *Version : 0.17 — Phase 1 — 2026-08-08. **[Horde] nerfée** (P4, D071), forfait 3→2. **[Peur X] devenue intrinsèque au type Créature** (toute créature en porte 1 sans supplément), retirée du barème à cocher au profil.*
 

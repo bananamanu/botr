@@ -5,16 +5,18 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.0"
+version: "2.1"
 ---
 
 # Khand — Profils d'unités
 
-> **Objet de ce document (refonte P4, D070).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Repositionnement d'identité complet par rapport aux versions précédentes : Khand n'est plus « le peuple sans armure qui frappe à la hache » avec une pièce signature (l'Aurige, char de choc puis char-plateforme) — c'est désormais **une faction mercenaire à moral fragile et prix cassé**, dont le seul atout structurel est sa cavalerie de raid.
+> **Objet de ce document (refonte P4, D070 ; confirmé conforme au système « badges universels », D076).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Repositionnement d'identité complet par rapport aux versions précédentes : Khand n'est plus « le peuple sans armure qui frappe à la hache » avec une pièce signature (l'Aurige, char de choc puis char-plateforme) — c'est désormais **une faction mercenaire à moral fragile et prix cassé**, dont le seul atout structurel est sa cavalerie de raid.
 >
-> **Le type Chars est abandonné.** L'Aurige de Khand, seule pièce à l'avoir jamais utilisé (D030), devient cavalerie standard — plus de compteur de PV dédié, plus de statut « Jamais Faible », plus de règle bespoke ([Poursuite 1] + [Plateforme de tir 2], retirées). Le type reste défini dans [[Regles_Base]] pour un usage futur éventuel, mais n'a plus de porteur actif dans ce projet.
+> **Le type Chars est abandonné.** L'Aurige de Khand, seule pièce à l'avoir jamais utilisé (D030), devient cavalerie standard — plus de compteur de PV dédié, plus de statut « Jamais Faible » de char, plus de règle bespoke ([Poursuite 1] + [Plateforme de tir 2], retirées). Le type reste défini dans [[Regles_Base]] pour un usage futur éventuel, mais n'a plus de porteur actif dans ce projet.
 >
-> Aligné sur [[Regles_Base]] v0.9 et [[Regles_Speciales]] v0.19.
+> **Revue D076 (pivot badges universels, D073-D075) : aucun changement nécessaire.** [Mercenaire] reste le badge Faction — identité propre du peuple, pas un candidat à l'universalisation façon Rohan/Mordor, puisque l'exclusion de l'Aurige (le seul corps régulier) *est* le point de la règle. [Relance 1] est déjà le badge Spéciale depuis D070 : Khand anticipait sans le savoir le badge Spéciale universel. Aucune unité Élite ni Légende dans ce roster resserré — cohérent avec « bon marché et peu fiable », pas de tronc d'élite à afficher.
+>
+> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.24, [[Regles_Points]] v0.21.
 
 ---
 
@@ -125,10 +127,12 @@ version: "2.0"
 ## 5. Points ouverts transverses
 
 - **[Mercenaire] est une règle neuve, jamais testée** : son effet (retrait forcé doublé) n'a d'impact que si l'unité subit effectivement des reculs de combat répétés — son poids réel à la table reste à observer au prochain playtest, comme toute règle P4 non éprouvée.
-- **Abandon du type Chars** : structure encore présente dans [[Regles_Base]] (§2.1, §2.3, §6.1) mais sans porteur actif dans tout le projet. À surveiller si un futur peuple (Easterling, Harad ?) veut réintroduire une pièce à char — le type reste disponible, [Plateforme de tir X] aussi.
+- **Abandon du type Chars** : structure encore présente dans [[Regles_Base]] (§2.1, §2.3, §6.1) mais sans porteur actif dans tout le projet. À surveiller si un futur peuple (Orientaux, Harad ?) veut réintroduire une pièce à char — le type reste disponible, [Plateforme de tir X] aussi.
 - **Pas de piquiers dans ce roster** — [Réception de charge] reste ouverte pour un futur profil de Khand si le matériel s'y prête (inchangé depuis la Passe 0).
 - **Aucune unité légendaire au sens strict** (D023) — roster confirmé plat, 5 profils, sans palier standard/élite/légendaire. Choix assumé pour une faction mercenaire : pas de hiérarchie de prestige à représenter.
 
 ---
+
+*Version : 2.1 — Phase 1 — 2026-08-08. **Revue de conformité au pivot « badges universels » (D073-D075) — D076.** Aucun changement de badge ni de coût : [Mercenaire] reste le badge Faction (identité propre, l'exclusion de l'Aurige est le point de la règle, pas un oubli à corriger) ; [Relance 1] est déjà le badge Spéciale depuis D070. Roster confirmé conforme sans modification.*
 
 *Version : 2.0 — Phase 1 — 2026-08-08. **Refonte P4 (D070) : repositionnement complet d'identité — Khand devient une faction mercenaire à moral fragile.** Système à deux badges : **Faction** = [Mercenaire] (premier badge à coût négatif du projet, −2 brut, chaque retrait forcé compte double) · **Spéciale** = [Relance 1] (hache lourde, inchangée). **Abandon du type Chars** : l'Aurige de Khand devient cavalerie 🔵 standard (badge Spéciale seul, pas de Faction — seul corps régulier du peuple), perd son statut Jamais Faible et ses règles bespoke ([Poursuite 1]/[Plateforme de tir 2], D045/D046). Roster inchangé à 5 profils, tous en classe 🟢 sauf l'Aurige. Non testé — validation P7a.*

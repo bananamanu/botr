@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.10"
+version: "0.12"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -77,7 +77,9 @@ Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de prof
 
 **Le mode = un token collé sur le socle : mêlée ou distance.** Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
 
-**Le badge Élite (facultatif) = un marqueur sur le plateau.** Il confère **[Inébranlable 1]** : l'unité ignore 1 recul par attaque reçue (voir [[Regles_Speciales]] §Socle). C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe aguerrie qui tient la ligne de la troupe ordinaire. Une unité sans badge n'a pas cette résistance. *(Son coût est traité dans [[Regles_Points]] §3.1.)*
+**Le badge Élite (facultatif) = un marqueur sur le plateau.** Il confère **[Inébranlable 1]** : l'unité ignore 1 recul par attaque reçue (voir [[Regles_Speciales]] §Socle). Il confère aussi **Jamais Faible** *(D073)* : l'unité **ignore l'état Faible** (§2.2 ci-dessous) — ses faces Épée continuent de toucher même à sa dernière figurine. C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe aguerrie qui tient la ligne de la troupe ordinaire. Une unité sans badge n'a ni l'un ni l'autre. *(Son coût est traité dans [[Regles_Points]] §3.1.)*
+
+**Le badge Légende (facultatif, réservé aux unités uniques) = un marqueur sur le plateau** *(D073)*. Il confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance). Réservé aux pièces nommées/signature du roster — un seul badge de plus dans le vocabulaire commun, à la place d'un empilement de règles bespoke propres à la pièce. *(Son coût est traité dans [[Regles_Points]] §3.1.)*
 
 Une unité occupe toujours **un seul hexagone**. Les touches s'accumulent au sein d'une même attaque ; les pertes ne se récupèrent pas.
 
@@ -91,7 +93,7 @@ Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui 
 
 - Ses faces **Épée** ne causent aucune touche en mêlée (seules les **Épées croisées** comptent).
 
-> Les Chars et Créatures, suivis en PV, **ne passent pas par l'état Faible** ; leur profil définit d'éventuels seuils (ex. Furie du Mûmakil).
+> Les Chars et Créatures, suivis en PV, **ne passent pas par l'état Faible** ; leur profil définit d'éventuels seuils (ex. Furie du Mûmakil). Une unité portant le **badge Élite** est également exemptée (Jamais Faible, §2.2) — ses faces Épée continuent de toucher.
 
 > 💡 **Exemple de jeu**
 > Des Piquiers réduits à 1 figurine (Faibles) attaquent en mêlée : les faces Épée n'infligent rien, seules les Épées croisées touchent.
@@ -139,7 +141,7 @@ Trois lignes de force, toutes lisibles à la couleur ou au socle :
 
 - **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure 1]** d'office : elle retire 1 face Épée des attaques de mêlée subies. C'est le **plancher** — un profil peut monter à [Armure 2] (Cataphractaires orientaux, lourds du Gondor), et la valeur du profil prime alors.
 - **Cavalerie de mêlée = elle enfonce et poursuit.** Après avoir éliminé ou fait reculer une cible adjacente, elle peut **poursuivre** (§8.2) au lieu d'avancer : **[Poursuite 2]** pour la légère et la standard (plus mobiles), **[Poursuite 1]** pour la lourde (qui traîne son armure). C'est la mécanique de percée du choc de cavalerie.
-- **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de la signature [Double Tir] de l'Easterling (l'archer immobile qui double la salve).
+- **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de l'ancienne signature [Double Tir] (l'archer immobile qui double la salve — sans porteur actif depuis P4/D072, [[Regles_Speciales]]).
 
 > **Cases vides et cases absentes.** Un tiret « — » signifie *aucune intrinsèque* : l'unité est définie par ses seuls dés et son éventuelle signature. L'**infanterie de tir lourde** et la **cavalerie de tir lourde** *n'existent pas* dans le jeu (aucune combinaison 🔴 + distance) — un archer d'élite est une unité 🔵 portant une signature ou [Relance X] au profil, jamais une unité rouge.
 
@@ -485,14 +487,15 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 
 | Règle | Résumé |
 |---|---|
-| **Faible** | Dernière figurine : Épée inactive en attaque |
+| **Faible** | Dernière figurine : Épée inactive en attaque *(sauf badge Élite, Jamais Faible)* |
 | **[Armure X]** | Retire X faces Épée des attaques de mêlée reçues |
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
 | **[Férocité]** | Contre-attaque même en cas de recul forcé, puis recule normalement |
-| **Élite** (badge) | Marqueur au plateau : l'unité porte [Inébranlable 1] |
+| **Élite** (badge) | Marqueur au plateau : l'unité porte [Inébranlable 1] + Jamais Faible |
+| **Légende** (badge) | Marqueur au plateau, réservé aux unités uniques : +1 dé de combat |
 
 > Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
 
@@ -522,6 +525,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.7 — Phase 1 — 2026-08-05. **Revue classe × type (D063).** Ajout du §2.4 « Règles intrinsèques par combinaison » : grille classe × type × mode peuplée. **[Armure 1]** intrinsèque à tout lourd 🔴 (plancher, un profil peut monter à [Armure 2]) ; **[Poursuite]** intrinsèque à la cavalerie de mêlée (2 pour 🟢/🔵, 1 pour 🔴) ; **[Mobilité]** intrinsèque au tir léger/monté (🟢 cavalerie 2 ; 🟢 infanterie et 🔵 cavalerie 1 ; 🔵 infanterie = rien, archer de ligne planté). Infanterie et cavalerie de tir lourdes actées inexistantes. Supersession de D062-6 (la [Poursuite] cavalerie était renvoyée au profil). §6.1 et le mémo renvoient au §2.4 ; points ouverts #3 et #5 fermés. Répercussions profils/coûts renvoyées à P3 (chiffrage par case) / P4 (nettoyage des redondances). Non testé — validation en P7a.*
 
 *Version : 0.8 — Phase 1 — 2026-08-05. **Définition mécanique du badge Élite (D064).** §2.2 : le badge Élite (marqueur au plateau, jusque-là seulement nommé en D060) confère **[Inébranlable 1]** — cran de granularité au sein d'une même case classe × type × mode. Mémo aligné. Son coût (+2) est traité dans [[Regles_Points]] (refonte P3, matrice). Non testé — validation en P7a.*
+
+*Version : 0.12 — Phase 1 — 2026-08-08. **Pivot transverse « badges universels » (D073).** §2.2 : le badge Élite gagne **Jamais Faible** (exempte l'unité de l'état Faible, en plus de [Inébranlable 1]) ; nouveau badge **Légende** créé (+1 dé de combat), réservé aux unités uniques, remplace l'empilement de règles bespoke sur les pièces signature. Le badge Spéciale devient **[Relance 1] pour tout le monde** (décision actée au niveau du barème, [[Regles_Points]] ; aucune mention dans ce document, qui ne fixait déjà pas le contenu du badge Spéciale). Mémo §2.2 et récapitulatif mis à jour. Répercussions sur les rosters déjà re-exprimés (Rohan, Mordor — Spéciale à migrer) renvoyées à leur propre passage.*
+
+*Version : 0.11 — Phase 1 — 2026-08-08. **P4 — Orientaux re-exprimés** (D072) : mention de [Double Tir] en §2.4 mise à jour, règle sans porteur actif depuis ce passage. Aucun changement de mécanique.*
 
 *Version : 0.10 — Phase 1 — 2026-08-08. **Intrinsèque du type Créature ajoutée** (P4, D071) : [Armure 1] et [Peur 1] sans supplément de coût, au même titre que le compteur de PV. §2.1.*
 
