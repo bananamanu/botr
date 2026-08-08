@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-05"
+date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.16"
+version: "0.17"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -17,7 +17,7 @@ version: "0.16"
 > 🔄 **Tri du glossaire — 2026-08-04 (P2, D062)**
 > Le glossaire a fondu. En synthèse :
 > - **Intrinsèque à la taxonomie** (sort du profil, se lit au plateau) : [Mobilité], [Poursuite] et [Armure 1] dérivées de la case classe × type × mode. *Grille complète désormais écrite dans [[Regles_Base]] §2.4 (revue classe × type, D063) — source de vérité unique.*
-> - **Fusions** : [Perforant X] → **[Arme Lourde X]** (une seule règle de relance, mêlée ou tir) · [Inamovible] → **[Inébranlable ∞]** (une valeur, pas un mot-clé de plus).
+> - **Fusions** : [Perforant X] → **[Relance X]** (une seule règle de relance, mêlée ou tir) · [Inamovible] → **[Inébranlable ∞]** (une valeur, pas un mot-clé de plus).
 > - **Coupées** : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Détail et renvois au §6.
 > - **Chaque peuple garde une signature identitaire** ; avec le badge **Élite**, la classe et le type, cela suffit à différencier les unités. Le plafond reste **1–2 règles spéciales par unité**.
 > - Répercussions sur les profils, les coûts et les scénarios **renvoyées à P3 (coûts) / P4 (re-expression des rosters)** — voir §6. Les comptes-rendus de playtest ne sont pas modifiés (historique).
@@ -41,7 +41,7 @@ version: "0.16"
 ### Notation
 
 - **[Règle]** : nom entre crochets — standard dans tous les profils.
-- **[Règle X]** : règle avec une valeur numérique (ex. [Armure 1], [Arme Lourde 2]).
+- **[Règle X]** : règle avec une valeur numérique (ex. [Armure 1], [Relance 2]).
 
 ### Trois familles
 
@@ -55,7 +55,7 @@ version: "0.16"
 
 L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signatures s'y insèrent ainsi :
 
-1. **Avant le décompte** — relances : [Arme Lourde X], [Horde] (+1 dé).
+1. **Avant le décompte** — relances : [Relance X], [Horde] (+1 dé).
 2. **Au décompte des touches** — effets de **Couronne** : [Poison], [Charge écrasante], [Howdah]… (chaque Couronne devient une touche ou un effet, selon la règle).
 3. **Réductions défensives** — [Armure X] puis [Protection X].
 4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Arcane** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) absorbe le tout, quelle qu'en soit la source.
@@ -108,7 +108,7 @@ Cette unité peut effectuer sa **contre-attaque même si l'attaque subie la forc
 
 > 💡 Attaquée avec 3 Épées + 1 Drapeau, une unité [Férocité] contre-attaque quand même, immédiatement, avant de reculer d'1 hexagone.
 
-### [Arme Lourde X]
+### [Relance X]
 
 Après le lancer, le joueur peut **relancer X dés** de son choix (mêlée **ou** tir, selon le mode de l'unité). Chaque dé n'est relancé qu'une fois.
 
@@ -215,7 +215,7 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 | Règle | Famille | Résumé |
 |---|---|---|
 | **[Archer en mêlée]** | Signature (Compagnie Grise) | Les faces Cible touchent aussi en mêlée |
-| **[Arme Lourde X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
+| **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
 | **[Armure X]** | Socle | Retire X faces Épée des attaques de mêlée reçues |
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | Blessé : test de contrôle par PV ; échec → Furie dirigée par l'adversaire |
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Couronne = touche) sur le trajet, sans contre-attaque |
@@ -243,7 +243,7 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 
 | Règle | Sort | Renvoi / remplacement |
 |---|---|---|
-| **[Perforant X]** | Fusionnée | → **[Arme Lourde X]** (relance X, mêlée ou tir) |
+| **[Perforant X]** | Fusionnée | → **[Relance X]** (relance X, mêlée ou tir) |
 | **[Inamovible]** | Fusionnée | → **[Inébranlable ∞]** |
 | **[Mobilité X]** | Devenue intrinsèque | → 🟢 distance (§3) — plus un mot-clé de profil |
 | **[Mur de bouclier]** | Coupée | → **[Armure 1]** sur les profils Easterling (répercussion P4) |
@@ -277,8 +277,10 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 
 ---
 
-*Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Arme Lourde X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Arme Lourde X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
+*Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Relance X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Relance X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
 
 *Version 0.16 — Phase 1 — 2026-08-05. **Mise à jour de renvois seulement (pas de re-tri).** La revue classe × type est faite (D063) : les mentions « revue à venir » pointent désormais vers [[Regles_Base]] §2.4 (source de vérité unique des intrinsèques) ; §3 recadré en illustration ([Mobilité 1] cas fondateur) ; récapitulatif alphabétique complété ([Mobilité X], [Poursuite] et [Armure 1] intrinsèques). Aucune décision de tri modifiée.*
+
+*Version 0.17 — Phase 1 — 2026-08-08. **Renommage global [Arme Lourde X] → [Relance X]** (P4, D066) : nom plus direct pour la table à 6 joueurs — la relance est l'unique effet de la règle, plus besoin de retenir un nom hérité. Répercuté dans ce document, [[Regles_Points]] et [[Regles_Base]] ; les profils de peuples migreront à leur propre passage P4 (Gondor fait, D067).*
 
 *Historique antérieur (0.7 → 0.14) : reprise du glossaire générique BdVM ; assignations Gondor/Rohan/Khand/Mordor/Easterling/Harad ; règles [Archer en mêlée] (D024), [Déploiement avancé] (D028), [Horde] (D032), [Peur X] (D033), [Mur de bouclier] (D037), [Arme de jet X] (D044), [Plateforme de tir X]/[Howdah] (D045), [Prise de flanc]/[Vigilant] (D047–D050) ; refontes Mûmakil (D054), [Férocité] (D057), [Réception de charge] (D058). Détail dans le [[Document de cadrage]] §8.*

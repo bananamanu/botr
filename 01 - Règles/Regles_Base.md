@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-05"
+date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.8"
+version: "0.9"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -139,7 +139,7 @@ Trois lignes de force, toutes lisibles à la couleur ou au socle :
 - **Cavalerie de mêlée = elle enfonce et poursuit.** Après avoir éliminé ou fait reculer une cible adjacente, elle peut **poursuivre** (§8.2) au lieu d'avancer : **[Poursuite 2]** pour la légère et la standard (plus mobiles), **[Poursuite 1]** pour la lourde (qui traîne son armure). C'est la mécanique de percée du choc de cavalerie.
 - **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de la signature [Double Tir] de l'Easterling (l'archer immobile qui double la salve).
 
-> **Cases vides et cases absentes.** Un tiret « — » signifie *aucune intrinsèque* : l'unité est définie par ses seuls dés et son éventuelle signature. L'**infanterie de tir lourde** et la **cavalerie de tir lourde** *n'existent pas* dans le jeu (aucune combinaison 🔴 + distance) — un archer d'élite est une unité 🔵 portant une signature ou [Arme Lourde X] au profil, jamais une unité rouge.
+> **Cases vides et cases absentes.** Un tiret « — » signifie *aucune intrinsèque* : l'unité est définie par ses seuls dés et son éventuelle signature. L'**infanterie de tir lourde** et la **cavalerie de tir lourde** *n'existent pas* dans le jeu (aucune combinaison 🔴 + distance) — un archer d'élite est une unité 🔵 portant une signature ou [Relance X] au profil, jamais une unité rouge.
 
 > 💡 **Exemple de jeu**
 > Des Chevaliers (Cavalerie 🔴, mêlée) enfoncent des Orques : lourds, ils portent **[Armure 1]** en défense et **[Poursuite 1]** — après avoir fait reculer les Orques, ils avancent d'1 hexagone et frappent une seconde cible adjacente. Un Éored du Rohan (Cavalerie 🔵) à leur place disposerait de **[Poursuite 2]** (jusqu'à 2 hexagones).
@@ -520,3 +520,5 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.7 — Phase 1 — 2026-08-05. **Revue classe × type (D063).** Ajout du §2.4 « Règles intrinsèques par combinaison » : grille classe × type × mode peuplée. **[Armure 1]** intrinsèque à tout lourd 🔴 (plancher, un profil peut monter à [Armure 2]) ; **[Poursuite]** intrinsèque à la cavalerie de mêlée (2 pour 🟢/🔵, 1 pour 🔴) ; **[Mobilité]** intrinsèque au tir léger/monté (🟢 cavalerie 2 ; 🟢 infanterie et 🔵 cavalerie 1 ; 🔵 infanterie = rien, archer de ligne planté). Infanterie et cavalerie de tir lourdes actées inexistantes. Supersession de D062-6 (la [Poursuite] cavalerie était renvoyée au profil). §6.1 et le mémo renvoient au §2.4 ; points ouverts #3 et #5 fermés. Répercussions profils/coûts renvoyées à P3 (chiffrage par case) / P4 (nettoyage des redondances). Non testé — validation en P7a.*
 
 *Version : 0.8 — Phase 1 — 2026-08-05. **Définition mécanique du badge Élite (D064).** §2.2 : le badge Élite (marqueur au plateau, jusque-là seulement nommé en D060) confère **[Inébranlable 1]** — cran de granularité au sein d'une même case classe × type × mode. Mémo aligné. Son coût (+2) est traité dans [[Regles_Points]] (refonte P3, matrice). Non testé — validation en P7a.*
+
+*Version : 0.9 — Phase 1 — 2026-08-08. **Renommage [Arme Lourde X] → [Relance X]** (P4, D066), répercuté §2.4.*
