@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.19"
+version: "0.20"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -150,9 +150,11 @@ Capacités marquantes. **1–2 maximum par unité.** Chaque peuple porte **une**
 
 #### [Horde]  — *Mordor*
 
-Tant que cette unité **n'a perdu aucun PV** : **+1 dé d'attaque** et **[Inébranlable 1]**. Les deux bonus disparaissent **définitivement** dès la première perte.
+Tant que cette unité **n'a perdu aucun PV** : **+1 dé d'attaque**. Ce bonus disparaît **définitivement** dès la première perte.
 
-> 🎲 « Très fort au premier choc, fragile ensuite » : la horde d'orques nombreuse et prompte à rompre. Condition lisible au nombre de figurines, sans jeton. Inspirée des *Warriors* de C&C Ancients. Assignée aux bandes d'orques (pas à l'Uruk-hai, élite qui tient).
+> 🎲 « Très fort au premier choc, fragile ensuite » : la horde d'orques nombreuse et prompte à rompre. Condition lisible au nombre de figurines, sans jeton. Inspirée des *Warriors* de C&C Ancients. Assignée aux bandes d'orques d'infanterie de mêlée uniquement (pas à l'Uruk-hai, élite qui tient ; pas au tir, D032 ; pas à la cavalerie/aux bêtes).
+>
+> 🔄 **Nerfée — P4 (D071)** : perd le volet **[Inébranlable 1]** à pleine santé, conservé uniquement pour le badge Élite générique. Coût ramené de 3 à **2** (forfait), en cohérence avec le retrait d'un des deux effets — voir [[Regles_Points]] §3.2. Toujours provisoire, non testé sous cette forme.
 
 #### [Poison]  — *Harad*
 
@@ -170,11 +172,13 @@ Si cette unité **ne s'est pas déplacée** ce tour, elle effectue une **seconde
 
 ### Signatures de pièce unique
 
-#### [Peur X]  — *Troll du Mordor*
+#### [Peur X]  — *intrinsèque du type Créature*
 
 Chaque face **Arcane** obtenue en attaque compte comme **X Drapeaux** contre la cible (au lieu d'un échec). N'inflige **aucune touche** : la Peur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
 
 > 🎲 Réutilise la face Arcane (morte par défaut) et pose le premier jalon de la couche Leadership (Phase 2). Versions « Terreur » (X élevé, Nazgûl/Roi-Sorcier) différées (§7).
+>
+> 🔄 **Devenue intrinsèque au type Créature — P4 (D071)** : **toute créature porte [Peur 1] et [Armure 1] sans supplément de coût** — ce n'est plus une signature à assigner unité par unité (voir [[Regles_Base]] §2.3, à ajouter). Première application : Troll du Mordor. S'appliquera au Mûmakil (Harad) à sa propre re-expression P4/P5, sans redondance avec ses règles bespoke déjà en place ([Howdah], [Charge écrasante], [Inébranlable ∞]).
 
 #### [Archer en mêlée]  — *Compagnie Grise (Legolas)*
 
@@ -234,14 +238,14 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Couronne = touche) sur le trajet, sans contre-attaque |
 | **[Double Tir]** | Signature (Easterling) | Seconde attaque à distance si non déplacé |
 | **[Férocité]** | Socle | Contre-attaque même en cas de recul forcé, puis recule |
-| **[Horde]** | Signature (Mordor) | +1 dé et [Inébranlable 1] à pleine santé ; perdus à la 1ʳᵉ perte |
+| **[Horde]** | Signature (Mordor) | +1 dé à pleine santé (perdu à la 1ʳᵉ perte) — nerfée P4/D071, ne donne plus Inébranlable |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] + [Poison] |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
 | **[Mercenaire]** | Socle *(coût négatif)* | Chaque retrait forcé compte double — badge Faction Khand |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
-| **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 |
-| **[Peur X]** | Signature (Troll) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) |
+| **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 ; toute créature en porte aussi (D071) |
+| **[Peur X]** | Intrinsèque (type Créature) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
 | **[Plateforme de tir X]** | Signature (char de Khand) | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
 | **[Poison]** | Signature (Harad) | Couronne → 1 touche supplémentaire |
 | **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
@@ -294,6 +298,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 *Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Relance X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Relance X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
 
 *Version 0.16 — Phase 1 — 2026-08-05. **Mise à jour de renvois seulement (pas de re-tri).** La revue classe × type est faite (D063) : les mentions « revue à venir » pointent désormais vers [[Regles_Base]] §2.4 (source de vérité unique des intrinsèques) ; §3 recadré en illustration ([Mobilité 1] cas fondateur) ; récapitulatif alphabétique complété ([Mobilité X], [Poursuite] et [Armure 1] intrinsèques). Aucune décision de tri modifiée.*
+
+*Version 0.20 — Phase 1 — 2026-08-08. **[Horde] nerfée** (P4, D071) : perd le volet [Inébranlable 1] à pleine santé, coût ramené de 3 à 2. **[Peur X] et [Armure 1] deviennent intrinsèques au type Créature** (toute créature en porte sans supplément, plus une signature à assigner unité par unité) — première application Troll du Mordor, s'étendra au Mûmakil à sa re-expression.*
 
 *Version 0.19 — Phase 1 — 2026-08-08. **[Mercenaire] créée** (P4, D070) : premier badge/règle à coût négatif du projet (−2 brut), badge Faction de Khand. **[Plateforme de tir X] sans porteur actif** : l'Aurige de Khand, seule pièce à l'avoir portée, abandonne le type Chars pour devenir cavalerie standard — règle conservée au glossaire, réutilisable pour un futur char. Identité de Khand reformulée §Signatures (mercenaire + hache lourde, non plus « le char »).*
 

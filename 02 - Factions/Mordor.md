@@ -2,220 +2,154 @@
 projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
-statut: "valide"
-date_maj: "2026-07-28"
-tags: [BdTdM, "type/faction", "peuple/mordor", "statut/valide"]
-version: "0.7"
+statut: "brouillon-a-tester"
+date_maj: "2026-08-08"
+tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
+version: "1.1"
 ---
 
 # Mordor — Profils d'unités
 
-> **Objet de ce document :** Profils de troupes pour le peuple Mordor (6 unités, liste fournie par Emmanuel), en réponse à la tâche Todoist « Rédiger les profils d'unités — Mordor » (due 20/07, P1). **Roster validé et clos (D036 du [[Document de cadrage]]).** Prêt pour le Playtest #1.
+> **Objet de ce document (refonte P4, D071).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Système à deux badges fixes, miroir des autres peuples : **[Horde]** devient le badge Faction (nerfé au passage — perd son volet [Inébranlable 1]), **[Férocité]** devient le badge Spéciale.
 >
-> Historique de la revue :
-> - **Passe 0 (ébauche)** : identité cadrée — [Horde] (D032) comme fil conducteur de la piétaille orque ; chiffrage initial proposé par Claude.
-> - **Passe 1 partielle (2026-07-20)** : Uruk-hai validé (Attaque 4 constante, sans Horde — l'élite qui ne rompt pas) ; [Peur] rebasculée sur la face Arcane au lieu de la Couronne (résout le conflit de Couronne du Troll, réutilise une face morte, ouvre la couche Leadership — voir D033/D034 du cadrage).
-> - **Clôture (2026-07-20, D036)** : les 4 derniers points ouverts tranchés avec Emmanuel — Uruk-hai garde [Férocité] (7 pts) ; Troll à [Peur 1] et 5 PV (7 pts) ; Pisteurs orques restent sans [Horde] (3 pts, profil simple). **Les 6 profils sont validés tels que chiffrés dans l'ébauche initiale — aucun recalcul nécessaire.** Restent uniquement des points « à surveiller au playtest, non bloquants » (§6), même statut que [Déploiement avancé] pour Rohan ou le compromis PV de l'Aurige pour Khand à leur clôture.
+> **[Peur X] et [Armure 1] deviennent intrinsèques au type Créature** (D071) — plus des règles à assigner, un trait du type lui-même, comme le compteur de PV. Le Troll en bénéficie sans supplément de coût ; la même règle s'appliquera au Mûmakil (Harad) à sa propre re-expression.
 >
-> **Choix d'identité actés (2026-07-20) :**
-> - **[Horde] comme fil conducteur du peuple** (D032, réservée aux Orcs) : la piétaille de Mordor est terrible au premier choc (+1 dé + [Inébranlable 1] à pleine force) puis s'effondre dès la première perte — nombreuse et féroce dans la charge, prompte à rompre une fois entamée. Aussi lisible que « armure » pour Gondor, « hache lourde » pour Khand ou « mobilité » pour Rohan.
-> - **L'armure comme signal d'échelon**, pas comme trait de peuple : seuls les gros orques mailés (Morannon, Uruk-hai) portent [Armure 1]. Contraste net avec Gondor ([Armure] partout) et Khand (aucune armure).
-> - **L'Uruk-hai est la seule infanterie orque SANS [Horde]** (validé) : l'élite noire de Barad-dûr est l'orque qui *ne rompt pas*. Attaque 4 constante là où le reste de la horde surgit puis s'effondre.
-> - **[Peur X] déclenchée par la face Arcane** (D033) : chaque Arcane obtenue en attaque compte comme X Drapeaux contre la cible. Débute sur le Troll ; premier jalon de la future couche Leadership (Œil de Sauron / Rune de Gandalf, D034), candidate pour les Nazgûl / le Roi-Sorcier en Phase 2 (versions « Terreur »).
-> - **Troll traité comme pièce signature** : seul profil autorisé à dépasser 2 règles spéciales (D023).
->
-> Aligné sur [[Regles_Base]] et [[Regles_Speciales]]. **Coût en points** : `Points_finaux = round((Mouvement + PV + Attaque×D + Σ coût des règles) ÷ 3) − 1`.
+> Aligné sur [[Regles_Base]] v0.10 et [[Regles_Speciales]] v0.20.
 
 ---
 
-## Conventions de ce roster
+## 1. Les deux badges de Mordor
 
-- **Mouvement** : 2 pour l'Infanterie et la Créature (le Troll lambine), 3 pour la Cavalerie (D022).
-- **Portée de tir** : 4 hexagones pour l'unité de tir (D020).
-- **Attaque des unités [Horde]** : la valeur inscrite au profil est la valeur **de base** (après effondrement) ; le « +1 dé à pleine force » vient de [Horde]. On note « 2 dés (3 à pleine force) » et « 3 dés (4 à pleine force) ».
-- **Chiffrage de [Horde]** : la formule utilise l'**Attaque de base** (2 orques, 3 Morannon), et [Horde] est facturé **3 pts forfaitaires** — le +1 dé *est* la règle, jamais compté deux fois. Première assignation de [Horde] : convention à valider.
-- **Règles spéciales** : 1 par profil standard, jusqu'à 2 pour le Troll (pièce signature).
-- **Roster de 6 profils** correspondant à la liste fournie pour le Playtest #1.
+| Badge | Effet | Coût brut | Porté par |
+|---|---|---|---|
+| **Faction** (Mordor) | **[Horde]** *(nerfée D071 — +1 dé à pleine santé seulement, plus d'Inébranlable)* | +2 *(forfait)* | Infanterie orque de mêlée uniquement — jamais le tir, jamais la cavalerie/les bêtes (D032) |
+| **Élite** | **[Inébranlable 1]** | +2 | Réservé à l'Uruk-hai — l'élite qui ne rompt pas |
+| **Spéciale** (unité) | **[Férocité]** | +1 | Troupes qui rendent coup pour coup, même en reculant |
 
----
-
-## 1. Liste des troupes
-
-| # | Unité | Type | Combat | **Points** |
-|---|---|---|---|---|
-| 1 | Bande d'orques du Mordor | Infanterie | Mêlée | **5** |
-| 2 | Bande d'orques du Morannon | Infanterie | Mêlée | **6** |
-| 3 | Bande de pisteurs orques | Infanterie | Tir | **3** |
-| 4 | Meute de cavaliers wargs | Cavalerie | Mêlée | **4** |
-| 5 | Bande d'uruk-hai du Mordor | Infanterie | Mêlée | **7** |
-| 6 | Troll du Mordor | Créature | Mêlée | **7** |
-
-> 🎲 **Note de design — lecture rapide du roster**
-> Le cœur de l'armée, ce sont les deux bandes d'orques (1, 2), toutes deux [Horde] : elles frappent au-dessus de leur poids au premier contact puis retombent. Les pisteurs (3) et les wargs (4) sont les pièces mobiles/bon marché. L'Uruk-hai (5) est le pilier d'élite qui *ne rompt pas*. Le Troll (6) est la pièce signature, la seule à porter [Peur].
->
-> **Comparaison utile :** l'orque du Mordor (5 pts, [Horde]) coûte comme le Guerrier de Minas Tirith (5 pts, [Armure 1]) et le Mercenaire de Khand (5 pts, [Arme Lourde 1]) — trois routes opposées vers le même total : durer (Gondor), taper fort en continu (Khand), submerger au premier choc puis s'effondrer (Mordor). Illustration du principe 6 (asymétrie assumée).
+**[Horde] reste réservée aux Orcs de mêlée**, exactement comme avant la refonte : l'Uruk-hai (l'élite qui ne rompt pas) n'en porte jamais, ni les pisteurs (le tir), ni les wargs (des bêtes, pas des orques).
 
 ---
 
-## 2. Profils détaillés
+## 2. Liste des troupes
+
+| # | Unité | Type | Combat | Classe | Badges | **Points** |
+|---|---|---|---|---|---|---|
+| 1 | Bande d'orques du Mordor | Infanterie | Mêlée | 🟢 | Faction | **4** |
+| 2 | Bande d'orques du Morannon | Infanterie | Mêlée | 🔵 | Faction + Spéciale | **5** |
+| 3 | Bande de pisteurs orques | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
+| 4 | Meute de cavaliers wargs | Cavalerie | Mêlée | 🔵 | Spéciale | **6** |
+| 5 | Bande d'uruk-hai du Mordor | Infanterie | Mêlée | 🔴 | Spéciale + Élite | **6** |
+| 6 | Troll du Mordor | Créature | Mêlée | 🔴 | Spéciale *(+ Peur 1/Armure 1 intrinsèques)* | **6** |
+
+> ⚠️ **Meute de cavaliers wargs : hausse de coût réelle, non compensée.** Toute cavalerie 🟢/🔵 de mêlée porte désormais [Poursuite 2] intrinsèque, gratuit, quel que soit le peuple — les wargs en héritent sans qu'aucun badge Mordor ne vienne compenser (contrairement à Khand, où [Mercenaire] absorbe l'effet). Coût réel : **4 → 6 pts**, assumé comme conséquence de la taxonomie plutôt que corrigé par une règle ad hoc.
+
+---
+
+## 3. Profils détaillés
 
 ### 1. Bande d'orques du Mordor
-![[orque_mordor-page001.png]]
 
-| Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
-|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 2 | 2 dés *(3 à pleine force)* | — | 6 figurines | **5** |
+| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
+|---|---|---|---|---|---|---|---|
+| Infanterie | Mêlée | 🟢 | 2 | 2 dés *(3 à pleine force)* | — | 4 | **4** |
 
-**Règles spéciales :** [Horde]
+**Badges :** Faction ([Horde])
 
-**Note narrative :** la piétaille de Sauron, jetée en masse contre les lignes. Féroce tant que le nombre la porte ([Horde] : 3 dés + [Inébranlable 1] à pleine force), elle rompt et s'égaille dès qu'elle est entamée (retour à 2 dés, plus d'Inébranlable, pour le reste de la partie). L'orque ne se lit pas au dé près : il se lit à la vague.
-
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Horde] (D032)
+**Note narrative :** la piétaille de Sauron, jetée en masse contre les lignes. Féroce tant que le nombre la porte (3 dés à pleine force), elle rompt et retombe à 2 dés dès la première perte — pour le reste de la partie. L'orque ne se lit pas au dé près : il se lit à la vague.
 
 ---
 
 ### 2. Bande d'orques du Morannon
-![[orque_morannon-page001.png]]
 
-| Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
-|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 2 | 3 dés *(4 à pleine force)* | — | 6 figurines | **6** |
+| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
+|---|---|---|---|---|---|---|---|
+| Infanterie | Mêlée | 🔵 | 2 | 3 dés *(4 à pleine force)* | — | 4 | **5** |
 
-**Règles spéciales :** [Armure 1] + [Horde]
+**Badges :** Faction ([Horde]) + Spéciale ([Férocité])
 
-**Note narrative :** les orques-soldats de la Porte Noire, plus grands que la piétaille et bardés de fer noir. Même dynamique de horde que la Bande du Mordor (1), mais une crête plus haute (4 dés à pleine force) et une armure qui les fait durer un peu au-delà du premier choc. C'est le « vrai » soldat orque : la ligne sur laquelle Mordor s'appuie.
-
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Armure X] · [Horde]
+**Note narrative :** les orques-soldats de la Porte Noire, plus grands et mieux armés que la piétaille — pas blindés (l'armure n'est plus leur trait, contrairement aux versions précédentes de ce roster), mais rendent coup pour coup même en cédant du terrain. C'est le « vrai » soldat orque : la ligne sur laquelle Mordor s'appuie.
 
 ---
 
 ### 3. Bande de pisteurs orques
-![[archer_orque_mordor-page001.png]]
 
-| Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
-|---|---|---|---|---|---|---|
-| Infanterie | Tir | 2 | 2 dés | 4 | 6 figurines | **3** |
+| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
+|---|---|---|---|---|---|---|---|
+| Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
 
-**Règles spéciales :** [Mobilité 1]
+**Badges :** *(aucun)*
 
-**Note narrative :** les traqueurs à l'arc de la Terre de l'Ombre — des orques d'un genre plus fureteur, envoyés en avant pour flécher et harceler. [Mobilité 1] leur permet de se replacer après avoir tiré.
-
-> ✅ **Validé (2026-07-20)** : [Horde] volontairement retirée — règle réservée à la mêlée de masse à 6 PV (D032), pas au tir. Profil confirmé tel quel.
-
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Mobilité X]
+**Note narrative :** les traqueurs à l'arc de la Terre de l'Ombre — des orques d'un genre plus fureteur, envoyés en avant pour flécher et harceler. Décroche après avoir tiré ([Mobilité 1] intrinsèque, gratuite, classe 🟢). Pas de [Horde] : la règle reste réservée à la mêlée de masse (D032, confirmé depuis la Passe 0).
 
 ---
 
 ### 4. Meute de cavaliers wargs
 
-| Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
-|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 3 | 3 dés | — | 3 figurines | **4** |
+| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
+|---|---|---|---|---|---|---|---|
+| Cavalerie | Mêlée | 🔵 | 3 | 3 dés | — | 3 | **6** |
 
-**Règles spéciales :** [Férocité]
+**Badges :** Spéciale ([Férocité])
 
-**Note narrative :** des loups sauvages montés par des orques, qui déchirent et mordent sans lâcher prise. [Férocité] (l'unité contre-attaque même si elle est forcée de reculer, puis recule quand même) traduit la bête qui claque des mâchoires une dernière fois avant de rompre. Volontairement en retrait de l'Éored du Rohan : la mobilité reste le domaine réservé du Rohan — les wargs sont *sauvages*, pas manœuvriers.
-
-> 🎲 **Note de design** Pas de [Horde] : D032 la réserve aux Orcs (le warg est une bête), et la Cavalerie à 3 PV perdrait sa première figurine trop vite pour qu'un bonus « à pleine force » existe. [Horde] est structurellement une règle d'infanterie à 6 PV.
-
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Férocité]
+**Note narrative :** des loups sauvages montés par des orques, qui déchirent et mordent sans lâcher prise ([Férocité] : contre-attaque même forcée de reculer). Porte [Poursuite 2] intrinsèque comme toute cavalerie 🔵 — Mordor n'a jamais prétendu avoir la meilleure cavalerie du jeu (identité réservée au Rohan), mais en hérite mécaniquement comme tout le monde depuis la refonte de la taxonomie. Pas de badge Faction : ce sont des bêtes, pas des orques (D032).
 
 ---
 
-### 5. Bande d'uruk-hai du Mordor — *validée*
-![[uruk_hai_mordor-page001.png]]
+### 5. Bande d'uruk-hai du Mordor
 
-| Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
-|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 2 | 4 dés *(constante)* | — | 6 figurines | **7** |
+| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
+|---|---|---|---|---|---|---|---|
+| Infanterie | Mêlée | 🔴 | 1 ou 2 | 4 dés *(constante)* | — | 4 | **6** |
 
-**Règles spéciales :** [Armure 1] + [Férocité]
+**Badges :** Spéciale ([Férocité]) + Élite ([Inébranlable 1])
 
-**Note narrative :** les grands Uruks noirs de Barad-dûr, la haute stature bréée par Sauron pour tenir là où la piétaille rompt. C'est **l'exception du roster** : pas de [Horde], mais une Attaque 4 **constante** — l'élite qui ne s'effondre pas au premier sang. [Armure 1] (mailles noires) et [Férocité] (la cruauté d'élite qui riposte avant de reculer) en font le pilier autour duquel la horde se rassemble.
+**Note narrative :** les grands Uruks noirs de Barad-dûr, la haute stature bréée par Sauron pour tenir là où la piétaille rompt. C'est **l'exception du roster** : pas de [Horde], une Attaque 4 **constante**. [Armure 1] (mailles noires) vient gratuitement de la classe 🔴, plus besoin de la mentionner explicitement ; [Férocité] (badge Spéciale) traduit la cruauté d'élite qui riposte avant de reculer ; [Inébranlable 1] (badge Élite) confirme mécaniquement ce que dit le texte depuis l'origine — « l'orque qui ne rompt pas ».
 
-> ✅ **Validé (2026-07-20)** : Attaque 4 constante, sans Horde. [Férocité] confirmée (7 pts) — l'élite qui riposte férocement même sous les coups.
-
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Armure X] · [Férocité]
+> 🎲 **Note de calcul.** Brut = 19 (Inf 🔴 mêlée, Armure 1 incluse) + Férocité (1) + Élite (2) = 22 → round(22÷3)−1 = 6. La compression absorbe le badge Élite au même palier — coût inchangé malgré la règle en plus.
 
 ---
 
-### 6. Troll du Mordor — *pièce signature*
-![[troll_mordor-page001.png]]
+### 6. Troll du Mordor
 
-| Type | Combat | Mouvement | Attaque | Portée | PV | **Points** |
-|---|---|---|---|---|---|---|
-| Créature | Mêlée | 2 | 4 dés | — | 4 | **7** |
+| Type | Combat | Classe | Mouvement | Attaque | Portée | PV | **Points** |
+|---|---|---|---|---|---|---|---|
+| Créature | Mêlée | 🔴 | 2 | 4 dés | — | 4 | **6** |
 
-**Règles spéciales :** [Arme Lourde 1] + [Peur 1]
+**Badges :** Spéciale ([Férocité])
 
-**Règle intrinsèque du type :** Jamais Faible (Créature) — 4 PV encaissés sans jamais subir la pénalité de dernière figurine.
+**Intrinsèques du type Créature (D071) :** **[Armure 1]** + **[Peur 1]** *(chaque Arcane obtenue en attaque compte comme 1 Drapeau contre la cible)*, sans supplément de coût — plus besoin de les chiffrer, ce sont des traits du type lui-même.
 
-**Note narrative :** un Olog-hai tiré des fosses de Gorgoroth, une masse de muscle et de fer dont le gourdin finit toujours par écraser ([Arme Lourde 1] : le joueur relance 1 dé raté) et dont la seule approche fait plier le courage des hommes ([Peur 1] : chaque **Arcane** obtenue compte comme 1 Drapeau contre la cible). Un Troll si terrible que même ses coups perdus sèment la terreur — l'Arcane, ailleurs un échec, devient chez lui une source d'effroi.
+**Note narrative :** un Olog-hai tiré des fosses de Gorgoroth, une masse de muscle et de fer dont la seule approche fait plier le courage des hommes ([Peur], désormais un trait de toute créature, pas une exclusivité du Troll) et dont la peau épaisse encaisse ce que l'acier ne saurait percer ([Armure], idem). [Férocité] (badge Spéciale) ajoute la cruauté brute : même blessé, il rend coup pour coup avant de reculer.
 
-> 🔄 **Modifié après playtest — 2026-07-25 (Playtest #1, D043), révisé le 2026-07-26 (D048)**
-> [Charge écrasante] d'abord remplacée par [Arme Lourde 2] (D043), puis ramenée à **[Arme Lourde 1]** sur arbitrage d'Emmanuel (D048) — une seule relance suffit à représenter un gourdin qui finit par toucher, sans en faire un cogneur trop fiable. Recalcul : `Mvt 2 + PV 5 + 4×3 + [Arme Lourde 1](2) + [Peur 1](2) = 23 → round(23÷3)−1 = 7`. Coût **7 pts inchangé** (la compression absorbe l'écart, comme pour l'Aurige en son temps). Petite synergie conservée : un dé relancé qui tombe sur Arcane alimente [Peur].
->
-> ✅ **Validé (2026-07-20)** : [Peur 1] (modéré — Peur 2/« Terreur » reste réservée aux Nazgûl et au Roi-Sorcier en Phase 2, pour garder une gradation) ; 5 PV (cohérent avec le reste du roster, pas une éponge hors-norme).
-> ⚠️ **Seul point encore provisoire (non bloquant)** : coût de [Peur X] fixé à 2×X — non testé en partie réelle, à surveiller au Playtest #1 (même statut que le coût de [Horde]). Note : les Drapeaux ne tuent pas (ils font reculer) — peut-être 1×X après un premier test.
+**Simplification par rapport aux versions précédentes** : perd [Relance 1] *(ex-[Arme Lourde 1])*, qui n'a plus de rôle distinctif une fois [Peur]/[Armure] rendues gratuites — le profil se resserre sur une seule règle explicite (Férocité) plus les deux intrinsèques.
 
-> 🔄 **Modifié après playtest — 2026-07-27 (Playtest #1b, D054)** : le Troll a fini le re-run à 3/5 PV sans jamais tomber — pièce signature qui tient son rôle. PV ramenés de **5 à 4**. Recalcul brut : `Mvt 2 + PV 4 + 4×3 + [Arme Lourde 1](2) + [Peur 1](2) = 22 → round(22÷3)−1 = 6`. Coût maintenu à **7 pts** sur arbitrage d'Emmanuel — **prime de pièce signature assumée** (+1 au-dessus du calcul brut), cohérente avec son statut déjà dérogatoire (seul profil de la V1 à dépasser 2 règles spéciales, D023). Décision manuelle documentée, pas une correction de formule.
-
-> 🔗 **Voir aussi** [[Regles_Speciales]] — [Arme Lourde X] · [Peur X] · règle intrinsèque Créature
+> 🎲 **Note de calcul.** Brut = Mvt 2 + PV 4 + Atk 4×3(12) + Férocité(1) = 19 → round(19÷3)−1 = 5. **Prime de pièce signature assumée (+1)**, cohérente avec le traitement déjà appliqué à ce profil (D054) : coût final **6**, en baisse par rapport à l'ancien 7 — la simplification (Peur/Armure gratuites, Relance abandonnée) fait plus que compenser le badge Férocité ajouté.
 
 ---
 
-## 3. Trio du Playtest #1 (choix d'Emmanuel)
+## 4. Récapitulatif des badges portés
 
-**Bande d'orques du Mordor (5) + Bande d'uruk-hai (7) + Troll du Mordor (7) = 19 points.**
-
-> 🎲 **Note de design** Trio volontairement **haut de gamme** (19 pts, contre 15 Gondor / 13 Rohan) : il teste en priorité les deux mécaniques neuves — [Horde] (orques de base) et [Peur] (Troll, face Arcane) — plus la pièce signature. Il ne met pas en avant l'identité « nombre » du peuple, mais c'est le bon choix pour un rodage de règles.
->
-> ⚠️ **À noter** : la description de la tâche Todoist visait « infanterie orque, tir » — ce trio n'a pas d'unité de tir (pisteurs absents). Si tu veux valider le tir au Playtest #1, ajoute les pisteurs en 4ᵉ slot.
-
----
-
-## 4. Récapitulatif des règles spéciales utilisées
-
-| Règle | Unités qui la portent |
+| Badge | Unités qui le portent |
 |---|---|
-| [Horde] | Bande d'orques du Mordor (1) · Bande d'orques du Morannon (2) |
-| [Armure 1] | Bande d'orques du Morannon (2) · Bande d'uruk-hai (5) |
-| [Férocité] | Meute de cavaliers wargs (4) · Bande d'uruk-hai (5) |
-| [Mobilité 1] | Bande de pisteurs orques (3) |
-| [Arme Lourde 1] | Troll du Mordor (6) |
-| [Peur 1] *(face Arcane)* | Troll du Mordor (6) |
+| **Faction** ([Horde]) | Bande d'orques du Mordor (1) · Bande d'orques du Morannon (2) |
+| **Spéciale** ([Férocité]) | Bande d'orques du Morannon (2) · Meute de cavaliers wargs (4) · Bande d'uruk-hai (5) · Troll du Mordor (6) |
+| **Élite** ([Inébranlable 1]) | Bande d'uruk-hai (5) |
+| **Aucun badge** | Bande de pisteurs orques (3) — tir, exclu de Horde par principe (D032) |
+
+**Intrinsèques hors badges** : [Armure 1] (classe 🔴, sur Uruk-hai et Troll) · [Peur 1] (type Créature, sur Troll uniquement pour l'instant).
 
 ---
 
-## 5. Règle à répercuter dans le socle — [Peur X]
+## 5. Points ouverts transverses
 
-Voir le doc de mise à jour du socle (blocs à insérer dans [[Regles_Speciales]], [[Regles_Points]] et [[Document de cadrage]]). Résumé :
-
-**[Peur X]** *(Offensif — Mêlée/Distance)* : lorsque cette unité attaque, chaque face **Arcane** obtenue compte comme **X Drapeaux (retraites)** contre la cible, au lieu d'être un échec. N'inflige pas de touche : la Peur fait rompre, elle ne tue pas. Peut être annulée par l'[Inébranlable X] de la cible (un ennemi inébranlable résiste à l'effroi).
-
-- **Première assignation** : Troll du Mordor.
-- **Déclencheur** : la face **Arcane** (D033) — premier usage concret de la future couche Leadership (Œil de Sauron / Rune de Gandalf, D034).
-- **Coût provisoire** : 2 × X. Non testé — à caler après un premier usage (comme [Déploiement avancé] et [Horde]).
+- **Coût de [Horde] (2, nerfée)** — jamais testé sous cette forme allégée (l'ancien forfait à 3, avec Inébranlable inclus, n'avait lui-même jamais été validé en partie). À surveiller en priorité au prochain playtest.
+- **Meute de cavaliers wargs (6 pts, hausse non compensée)** — voir l'avertissement §2. Pas de solution retenue pour l'instant ; à observer à la table avant d'envisager un correctif dédié.
+- **Intrinsèque Créature (Peur 1 + Armure 1)** — nouvelle règle transverse, first appliquée au Troll seul dans ce projet. À vérifier à la re-expression du Mûmakil (Harad, P4/P5) qu'elle ne fait pas doublon avec ses règles bespoke existantes ([Howdah], [Inébranlable ∞]).
+- **[Réception de charge]** reste sans porteur à Mordor (inchangé depuis la Passe 0).
+- **Couche Leadership (Phase 2)** — dé-randomiser l'accès des héros à la face Arcane, hors scope de cette repasse.
 
 ---
 
-## 6. Points restants — non bloquants pour le Playtest #1
+*Version : 1.1 — Phase 1 — 2026-08-08. **Élite ajouté à l'Uruk-hai** (oubli de la repasse initiale) : badge Élite ([Inébranlable 1]) en plus de Spéciale ([Férocité]). Coût inchangé (6 pts) — la compression absorbe le badge au même palier.*
 
-Tout est validé pour lancer le Playtest #1. Rien ne bloque, mais deux choses à garder en tête (même statut que [Déploiement avancé] pour Rohan ou le compromis PV de l'Aurige pour Khand à leur clôture) :
-
-1. **Coût de [Horde]** (3 pts forfaitaires, D032) — première assignation réelle (Bande d'orques du Mordor, Bande d'orques du Morannon) mais jamais testée en partie. À surveiller en priorité au Playtest #1.
-2. **Coût de [Peur X]** (2×X, D033) — première assignation (Troll, [Peur 1]) également non testée. Piste de correction si trop cher : 1×X, puisque l'effet ne fait que reculer (pas de touche).
-
-**Aucune unité composite** nommée dans ce roster (type Compagnie Grise) — le point ouvert de [[Regles_Points]] §5 reste sans objet pour Mordor.
-
-**Couche Leadership (Phase 2)** — dé-randomiser l'accès des héros à la face Arcane ; arbitrer la propriété de l'Arcane quand une unité [Peur] et un héros coïncident (D034). Hors scope de ce roster, mais à garder en tête pour la suite.
-
----
-
-*Version : 0.3 — Phase 1 — 2026-07-20. **Roster validé et clos (D036)** : Uruk-hai confirmé avec [Férocité] (7 pts) ; Troll confirmé à [Peur 1] et 5 PV (7 pts) ; Pisteurs orques confirmés sans [Horde] (3 pts). Les 6 profils sont validés tels que chiffrés en Passe 0 — aucun recalcul nécessaire. Prêt pour le Playtest #1 (trio : Bande d'orques + Uruk-hai + Troll, 19 pts). Restent uniquement les coûts de [Horde] et [Peur X] à confirmer au playtest (§6, non bloquant).*
-
-*Version : 0.4 — Phase 1 — 2026-07-25. **Mise à jour post-Playtest #1** (`[[Playtest1_Compte-rendu]]`). Troll du Mordor : [Charge écrasante] remplacée par [Arme Lourde 2] (D043 — [Charge écrasante] retirée de toute la V1) ; 7 pts inchangé. Aucun autre profil du roster touché ; les coûts de [Horde] et [Peur X] restent non éprouvés (partie étranglée au centre).*
-
-*Version : 0.5 — Phase 1 — 2026-07-26. Troll du Mordor : [Arme Lourde 2] ramenée à **[Arme Lourde 1]** (D048, arbitrage d'Emmanuel) — 7 pts inchangé.*
-
-*Version : 0.7 — Phase 1 — 2026-07-28. Correction de la note narrative de la Meute de cavaliers wargs : l'explication de [Férocité] entre parenthèses inversait le sujet du recul concerné (D057, voir [[Regles_Speciales]]). Aucun changement de règle ni de coût.*
+*Version : 1.0 — Phase 1 — 2026-08-08. **Refonte P4 (D071) : re-expression complète sur la taxonomie visuelle et le système de badges.** [Horde] devient le badge Faction, nerfée (perd [Inébranlable 1], coût 3→2) ; [Férocité] devient le badge Spéciale. **[Peur X] et [Armure 1] rendues intrinsèques au type Créature** — transverse, s'appliquera au Mûmakil. Troll simplifié : perd [Relance 1], conserve la prime de pièce signature (+1). Meute de cavaliers wargs : hausse de coût non compensée (4→6 pts), assumée. Roster inchangé à 6 profils. Non testé — validation P7a.*

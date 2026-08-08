@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.9"
+version: "0.10"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -72,6 +72,8 @@ Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de prof
 | **Char** | socle unique (65 mm) | **compteur de PV** |
 
 > **Seuls les Chars et les Créatures portent un compteur de PV.** L'Infanterie et la Cavalerie n'ont pas de PV chiffré : on retire simplement leurs figurines du plateau (1 figurine = 1 « point de vie » implicite).
+
+> **Intrinsèque du type Créature (D071).** Toute Créature porte **[Armure 1]** et **[Peur 1]** sans supplément de coût — ce ne sont plus des signatures à assigner unité par unité, mais des traits du type lui-même, au même titre que le compteur de PV. Une pièce peut dépasser ce plancher (ex. [Peur 2]) moyennant le tarif socle habituel de l'excédent. Première application : Troll du Mordor. *(Le type Char n'a pas cette intrinsèque — sans porteur actif depuis P4/D070.)*
 
 **Le mode = un token collé sur le socle : mêlée ou distance.** Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
 
@@ -520,5 +522,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.7 — Phase 1 — 2026-08-05. **Revue classe × type (D063).** Ajout du §2.4 « Règles intrinsèques par combinaison » : grille classe × type × mode peuplée. **[Armure 1]** intrinsèque à tout lourd 🔴 (plancher, un profil peut monter à [Armure 2]) ; **[Poursuite]** intrinsèque à la cavalerie de mêlée (2 pour 🟢/🔵, 1 pour 🔴) ; **[Mobilité]** intrinsèque au tir léger/monté (🟢 cavalerie 2 ; 🟢 infanterie et 🔵 cavalerie 1 ; 🔵 infanterie = rien, archer de ligne planté). Infanterie et cavalerie de tir lourdes actées inexistantes. Supersession de D062-6 (la [Poursuite] cavalerie était renvoyée au profil). §6.1 et le mémo renvoient au §2.4 ; points ouverts #3 et #5 fermés. Répercussions profils/coûts renvoyées à P3 (chiffrage par case) / P4 (nettoyage des redondances). Non testé — validation en P7a.*
 
 *Version : 0.8 — Phase 1 — 2026-08-05. **Définition mécanique du badge Élite (D064).** §2.2 : le badge Élite (marqueur au plateau, jusque-là seulement nommé en D060) confère **[Inébranlable 1]** — cran de granularité au sein d'une même case classe × type × mode. Mémo aligné. Son coût (+2) est traité dans [[Regles_Points]] (refonte P3, matrice). Non testé — validation en P7a.*
+
+*Version : 0.10 — Phase 1 — 2026-08-08. **Intrinsèque du type Créature ajoutée** (P4, D071) : [Armure 1] et [Peur 1] sans supplément de coût, au même titre que le compteur de PV. §2.1.*
 
 *Version : 0.9 — Phase 1 — 2026-08-08. **Renommage [Arme Lourde X] → [Relance X]** (P4, D066), répercuté §2.4.*
