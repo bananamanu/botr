@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-08"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.18"
+version: "0.19"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -120,6 +120,12 @@ Le tour où cette unité **s'est déplacée puis attaque en mêlée**, chaque fa
 
 > 🔄 **Restaurée — P4 (D068)**, après avoir été coupée au tri P2 (D062) faute de porteur en attente de re-expression. Réintégrée au socle générique à l'occasion de la re-expression du Rohan : porteur d'origine (Milice lige, D044), désormais généralisable à toute unité de mêlée dont l'équipement le justifie.
 
+### [Mercenaire]  *(coût négatif)*
+
+Chaque **retrait forcé** (recul de combat) de cette unité compte **double** (déplacement de recul et éventuels dégâts de collision doublés, selon la règle qui déclenche le retrait).
+
+> 🔄 **Créée — P4 (D070)**, premier badge/règle à **coût négatif** du projet : **−2 brut**, symétrique au coût des badges positifs existants. Traduit un moral fragile et une motivation strictement pécuniaire — l'unité cède plus volontiers le terrain qu'une troupe régulière ou fidèle. Porteuse d'origine : Khand (badge Faction, D070) — généralisable à toute future troupe mercenaire d'un autre peuple.
+
 ---
 
 ## Règles intrinsèques (dérivées de la taxonomie)
@@ -160,7 +166,7 @@ Si cette unité **ne s'est pas déplacée** ce tour, elle effectue une **seconde
 
 > 🎲 La discipline de la ligne qui tient sa position et double la salve — signature glanceable de l'archer d'Easterling, miroir de l'archer **mobile** (intrinsèque [Mobilité 1], §3). Depuis la coupe de [Mur de bouclier] (P2), c'est [Double Tir] qui porte l'identité de tir discipliné du peuple ; sa protection passe par [Armure 1] (socle).
 
-*(Khand : sa signature identitaire est le char — voir [Plateforme de tir X] ci-dessous. Gondor : identité portée par l'armure lourde ([Armure X], socle) et ses pièces uniques.)*
+*(Khand : identité portée par le badge Faction [Mercenaire] (moral fragile, coût réduit) et le badge Spéciale [Relance 1] (hache lourde) — voir §2. Gondor : identité portée par l'armure lourde ([Armure X], socle) et ses pièces uniques.)*
 
 ### Signatures de pièce unique
 
@@ -188,11 +194,11 @@ Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre
 
 > 🎲 Rôle de **soutien** (pas de dégât propre) : le cavalier tient la faille ouverte, les lances plus lourdes l'exploitent. Second mot-clé des *Riverwatch Riders*, séparé de [Vigilant].
 
-#### [Plateforme de tir X]  — *Aurige de Khand (char)*
+#### [Plateforme de tir X]  — *sans porteur actif*
 
 En plus de son attaque normale, cette unité effectue **une attaque de tir de X dés**, portée **1–3**, en ligne de vue, **qu'elle se soit déplacée ou non**. Une seule par activation.
 
-> 🎲 Le tir depuis un véhicule en mouvement (char, howdah). Distincte de [Double Tir] (qui exige l'immobilité). [Howdah] en est la déclinaison Mûmakil.
+> 🎲 Le tir depuis un véhicule en mouvement (char, howdah). Distincte de [Double Tir] (qui exige l'immobilité). [Howdah] en est la déclinaison Mûmakil. **Sans porteur depuis P4/D070** : l'Aurige de Khand, seul profil à l'avoir jamais portée, devient cavalerie standard (abandon du type Chars pour cette pièce). Conservée au glossaire — réutilisable si un futur char apparaît au roster d'un autre peuple.
 
 ### Signatures bespoke — Mûmakil
 
@@ -231,6 +237,7 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 | **[Horde]** | Signature (Mordor) | +1 dé et [Inébranlable 1] à pleine santé ; perdus à la 1ʳᵉ perte |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] + [Poison] |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
+| **[Mercenaire]** | Socle *(coût négatif)* | Chaque retrait forcé compte double — badge Faction Khand |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 |
@@ -287,6 +294,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 *Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Relance X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Relance X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
 
 *Version 0.16 — Phase 1 — 2026-08-05. **Mise à jour de renvois seulement (pas de re-tri).** La revue classe × type est faite (D063) : les mentions « revue à venir » pointent désormais vers [[Regles_Base]] §2.4 (source de vérité unique des intrinsèques) ; §3 recadré en illustration ([Mobilité 1] cas fondateur) ; récapitulatif alphabétique complété ([Mobilité X], [Poursuite] et [Armure 1] intrinsèques). Aucune décision de tri modifiée.*
+
+*Version 0.19 — Phase 1 — 2026-08-08. **[Mercenaire] créée** (P4, D070) : premier badge/règle à coût négatif du projet (−2 brut), badge Faction de Khand. **[Plateforme de tir X] sans porteur actif** : l'Aurige de Khand, seule pièce à l'avoir portée, abandonne le type Chars pour devenir cavalerie standard — règle conservée au glossaire, réutilisable pour un futur char. Identité de Khand reformulée §Signatures (mercenaire + hache lourde, non plus « le char »).*
 
 *Version 0.18 — Phase 1 — 2026-08-08. **[Arme de jet X] restaurée au socle générique** (P4, D068) — coupée à P2 faute de porteur en attente, réintégrée à l'occasion de la re-expression du Rohan (Milice lige, porteur d'origine D044). Ajoutée §2 et au récapitulatif alphabétique ; retirée de la liste des coupures §6.*
 
