@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-08"
+date_maj: "2026-08-09"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "1.0"
+version: "1.1"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -14,9 +14,9 @@ version: "1.0"
 >
 > **Terminologie mise à jour** (héritée d'un roster jamais retouché depuis le Playtest #2) : [Arme Lourde 1] → [Relance 1] (D066, badge Spéciale universel) ; [Inamovible] → [Inébranlable ∞] (D062).
 >
-> **Mûmakil inchangé dans ses règles bespoke** (charge, Furie, Howdah — spécifiées par Emmanuel le 2026-07-27, D054), mais bénéficie désormais des **intrinsèques du type Créature** ([Armure 1] + [Peur 1], D071) sans supplément de coût — vérifié sans redondance avec [Howdah]/[Inébranlable ∞] (aucun chevauchement : l'un est une plateforme de tir, l'autre une immunité au recul).
+> **Mûmakil refondu — P5 (D079).** La Furie ([Bête incontrôlable]) était jugée trop punitive à la lecture (spirale PV-sur-PV, jamais déclenchée en partie) : elle devient un état d'agonie **déterministe** à 1 PV, fini le test de probabilité. **PV portés de 6 à 8**, nouveau **[Protection 1]** contre le tir (formalise le houserule PT2 — la bête traitée en cible molle). Conserve les intrinsèques du type Créature ([Armure 1] + [Peur 1], D071).
 >
-> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.25, [[Regles_Points]] v0.22.
+> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.26, [[Regles_Points]] v0.22.
 
 ---
 
@@ -42,7 +42,7 @@ version: "1.0"
 | 4 | Gardes serpent à cheval | Cavalerie | Mêlée | 🔵 | Faction + Spéciale | **7** |
 | 5 | **Pillards haradrim (mêlée)** — *nouveau* | Cavalerie | Mêlée | 🟢 | Faction + Spéciale | **6** |
 | 6 | **Pillards haradrim (archers)** — *nouveau* | Cavalerie | Distance | 🟢 | Faction | **4** |
-| 7 | Mûmakil | Créature | Mêlée *(charge)* | 🔴 *(nominal)* | *(hors matrice — voir §4)* | **21** |
+| 7 | Mûmakil | Créature | Mêlée *(charge)* | 🔴 *(nominal)* | *(hors matrice — voir §4)* | **15** |
 
 **Total escorte + Pillards : 28 points** (hors Mûmakil, hors matrice par équivalence).
 
@@ -136,27 +136,45 @@ version: "1.0"
 
 ---
 
-### 7. Mûmakil — *pièce unique, spécifiée par Emmanuel (2026-07-27, D054)*
+### 7. Mûmakil — *pièce unique, spécifiée par Emmanuel (2026-07-27, D054 ; refondue P5/D079)*
 
 | Type | Combat | Classe | Mouvement | Attaque | Portée | PV | **Points** |
 |---|---|---|---|---|---|---|---|
-| Créature | Mêlée *(par charge)* | 🔴 *(nominal)* | 2 *(translation 1-2-1)* | 4 dés *(charge)* / 2 dés *(tir)* | 1–3 *(tir)* | 6 | **21** |
+| Créature | Mêlée *(par charge)* | 🔴 *(nominal)* | 2 *(translation 1-2-1)* | 4 dés *(charge)* / 2 dés *(tir)* | 1–3 *(tir)* | **8** | **15** |
 
-**Règles spéciales :** [Charge écrasante] *(bespoke)* · [Howdah] *(= [Plateforme de tir 2] + [Poison])* · [Inébranlable ∞] *(ex-[Inamovible])* · [Bête incontrôlable] *(bespoke, Furie)*
+**Règles spéciales :** [Charge écrasante] *(bespoke)* · [Howdah] *(= [Plateforme de tir 2] + [Poison])* · [Inébranlable ∞] *(ex-[Inamovible])* · [Protection 1] *(contre le tir uniquement — nouveau, D079)* · [Bête incontrôlable] *(bespoke, Furie — refondue D079)*
 
 **Intrinsèques du type Créature (D071) :** **[Armure 1]** + **[Peur 1]**, sans supplément de coût — vérifié sans redondance avec les règles bespoke ci-dessus : [Howdah] est une plateforme de tir (aucun chevauchement avec l'armure), [Inébranlable ∞] porte sur le recul (aucun chevauchement avec la peur, qui inflige des Drapeaux via l'Arcane plutôt que d'agir sur la résistance au recul elle-même).
 
 **Occupation :** 4 hexagones en colonne **1–2–1**. **Pas de pivot** : le gabarit reste toujours orienté pointe vers le haut, son déplacement est une **translation pure**. **Direction de translation : libre** (Emmanuel, D058).
 
-**Coût : 21 points, par équivalence d'impact (D054)** — le système additif atteint sa limite sur une pièce hors norme. Analyse d'équivalence (dé uniforme B4) : ≈3,3 figurines par unité d'infanterie traversée lors d'une charge, sans contre-attaque possible ; ≈2 figurines sur 3 contre la cavalerie, avec recul doublé. Équivalence retenue : **3 × Éored de cavalier du Rohan (7 pts) = 21 pts**. Inchangé malgré le gain gratuit d'[Armure 1]/[Peur 1] (D071) — **point de veille**, voir §5.
+**Coût : 15 points — recalculé au barème normal (D079)**, en remplacement de l'ancienne équivalence narrative pure (21 pts, D054). Détail du calcul :
+
+| Élément | Valeur brute |
+|---|---|
+| Socle (Mvt 2 + PV 8) | 10 |
+| Charge principale (4 dés mêlée, D=3) | 12 |
+| Howdah (tir 2 dés, D=2) | 4 |
+| [Poison] (badge Faction) | 1 |
+| [Protection 1] *(nouveau, contre le tir)* | 1 |
+| [Bête incontrôlable] (malus résiduel) | −1 |
+| **Sous-total tarifable au barème standard** | **27** |
+| [Charge écrasante] *(bespoke, jugement — équivaut à une attaque complète supplémentaire gratuite, sans contre-attaque)* | 15 |
+| [Inébranlable ∞] *(bespoke, jugement — ≈3× le forfait standard [Inébranlable 1])* | 6 |
+| **Brut total** | **48** |
+| **Final = round(48÷3)−1** | **15** |
+
+Tombe sur la cible d'Emmanuel : **≈3 × unité standard** (5 pts). Les deux lignes bespoke (Charge écrasante, Inébranlable ∞) restent des jugements par analogie, jamais tarifées avant P5 — à surveiller au playtest comme tout le reste du barème.
 
 #### [Charge écrasante] *(bespoke)*
 
 > À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où la **Couronne inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
-#### [Bête incontrôlable] *(bespoke)*
+#### [Bête incontrôlable] *(bespoke, refondue P5/D079)*
 
-> À son activation, **s'il est blessé** : lancez autant de dés que ses **PV restants** ; **sans aucune Couronne**, posez un marqueur **Furie** — l'adversaire dirige immédiatement son déplacement et peut l'activer comme une de ses figurines tant que la Furie tient. À la **fin de chaque tour**, le camp du Mal relance **(PV restants + 1)** dés : une **Couronne** retire la Furie.
+> Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1 PV)** — état d'agonie, plus de test de déclenchement. Tant qu'il est à 1 PV : **chaque tour, un tirage à pile ou face détermine qui contrôle la bête** ce tour-là (Mal ou Bien). Quel que soit le résultat, **le Mûmakil s'active obligatoirement au tour du Mal, sans consommer de carte de commandement** (activation gratuite) ; si le tirage désigne le Bien, c'est lui qui dirige alors le mouvement et l'attaque de la bête ce tour-là, comme une de ses propres figurines. Pas de reprise de contrôle à tester : la Furie dure jusqu'à la mort du Mûmakil.
+
+> 🎲 Ancienne version (jusqu'à 21 pts) : test de déclenchement et de reprise tous deux indexés aux PV restants — spirale jugée trop punitive à la lecture (jamais déclenchée en PT2). La refonte D079 remplace la probabilité graduelle par un état binaire au seuil critique : plus simple, plus mémorisable, et cohérent avec l'image d'une bête à l'agonie qui ne se calme plus.
 
 #### [Howdah]
 
@@ -179,12 +197,15 @@ version: "1.0"
 ## 5. Points ouverts transverses
 
 - **Coût de [Poison] en badge Faction (1, forfait)** — jamais testé sous cette forme généralisée à tout le roster (auparavant assignée profil par profil). À surveiller comme tout badge Faction nouvellement créé.
-- **Gain gratuit d'[Armure 1]/[Peur 1] sur le Mûmakil (D071)** sans repricing — la pièce est mécaniquement plus dure à tuer et plus effrayante qu'au moment où les 21 pts ont été fixés (D054, avant l'intrinsèque Créature). Le chiffrage par équivalence absorbe mal ce genre d'ajout transverse ; à réévaluer explicitement au playtest de validation (P7a) plutôt que par calcul.
+- ~~**Gain gratuit d'[Armure 1]/[Peur 1] sur le Mûmakil (D071)** sans repricing~~ — **résolu P5/D079** : le Mûmakil est repricé au barème normal (21→15 pts), ce gain est désormais absorbé dans le calcul plutôt que laissé en point de veille.
 - **Gardes serpent à cheval (7 pts) vs Pillards mêlée (6 pts)** — écart d'1 pt pour Élite-vs-Spéciale sur classe différente (🔵 vs 🟢) : à confirmer que l'écart de puissance perçu à la table correspond à l'écart de prix.
 - **[Réception de charge]** reste coupée du système entier (inchangé depuis P2, D062) — plus aucun porteur nulle part dans le projet.
-- **Furie du Mûmakil** — refonte complète prévue en P5 (jugée trop punitive au Playtest #2, point noir identifié). Ce document ne la retouche pas.
+- ~~**Furie du Mûmakil** — refonte complète prévue en P5~~ — **résolu P5/D079**, voir §3.7.
+- **Nouveau (P5/D079) : [Charge écrasante] (+15 brut) et [Inébranlable ∞] (+6 brut)** — premières valeurs jamais assignées à ces règles bespoke, par jugement analogique plutôt que par calcul. À confirmer au playtest de validation (P7a).
 
 ---
+
+*Version : 1.1 — Phase 1 — 2026-08-09. **Refonte P5 du Mûmakil (D079).** [Bête incontrôlable] refondue : la Furie devient un état déterministe à 1 PV (fini le test PV-scaling jugé trop punitif), contrôle tiré à pile ou face chaque tour, activation garantie et gratuite au tour du Mal. PV 6→8. Nouveau [Protection 1] contre le tir (formalise le houserule PT2). Coût recalculé au barème normal : 21→**15 pts** (détail du calcul dans le profil, bespoke Charge écrasante/Inébranlable ∞ chiffrées par jugement analogique, jamais tarifées avant P5).
 
 *Version : 1.0 — Phase 1 — 2026-08-08. **Refonte P4 (D078) : première re-expression complète du roster Harad, sixième et dernier peuple.** Badge Faction = [Poison] (fil conducteur déjà acté, désormais universel sur tout le roster) ; Badge Spéciale = [Relance 1] (ex-[Arme Lourde 1], Gardes serpent à cheval) ; Badge Élite = [Inébranlable 1] + Jamais Faible (Gardes serpents). **Deux nouveaux profils : Pillards haradrim**, cavalerie légère 🟢 de raid, en version mêlée (Faction+Spéciale, 6 pts) et tir (Faction seule, 4 pts). Escorte reclassée sur la taxonomie (Archers/Lanciers 🟢, Gardes serpents/à cheval 🔵) ; [Réception de charge] et l'ancienne valeur X d'[Arme Lourde 1] abandonnées avec le reste du système pré-taxonomie. Mûmakil : règles bespoke inchangées, terminologie mise à jour ([Inamovible]→[Inébranlable ∞]), gagne [Armure 1]/[Peur 1] intrinsèques (D071) sans repricing — point de veille signalé. Roster porté à 6 profils + Mûmakil. Non testé — validation P7a. **Sixième et dernier roster du sprint P4 : le mandat de re-expression est complet.***
 

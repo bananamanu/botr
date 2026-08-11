@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-08"
+date_maj: "2026-08-09"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.22"
+version: "0.23"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -145,7 +145,7 @@ Pour traçabilité — la matrice du §2 découle mécaniquement de la formule b
 
 ## 6. Créatures, Chars et pièces uniques (hors matrice)
 
-Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent en PV, sortent de la grille type × classe, et sont chiffrés **par équivalence d'impact narratif**, pas à la formule (principe acté : le Mûmakil à 21 pts ≈ 3 Éored, pas un produit de cases). Leurs signatures bespoke sont absorbées dans l'étiquette de la pièce. Idem pour les **composites nommés** (La Compagnie Grise, chiffrée à pleine puissance — D026).
+Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent en PV, sortent de la grille type × classe. **Depuis P5 (D079)**, le Mûmakil applique la dérivation brute standard (socle Mvt+PV, Attaque×D, signatures tarifées) à tout ce qui est chiffrable au barème, et ne réserve le jugement par équivalence qu'aux règles réellement bespoke ([Charge écrasante], [Inébranlable ∞]) — voir le détail du calcul dans `02 - Factions/Harad.md` §3.7. Nouveau coût : **15 pts** (ancien : 21 pts, pure équivalence narrative). Le Troll et l'Aurige de Khand restent chiffrés par équivalence narrative pure, non revus à ce stade. Idem pour les **composites nommés** (La Compagnie Grise, chiffrée à pleine puissance — D026).
 
 ---
 
@@ -182,6 +182,8 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 *Version : 0.12 — Phase 1 — 2026-08-05. **Refonte P3 (D064) : passage en matrice.** Réécriture complète autour de la matrice type × mode × classe (§2), intrinsèques incluses par case. Rebase durabilité (Inf 6→4, Cav 3) ; socle Mvt+PV recalculé sur la grille §6.1 ; ancien §1 (durabilité ÷ perte moyenne) caduc (double-touche supprimée). Badge Élite = [Inébranlable 1] (+2). [Armure X] rouverte à toute classe comme règle de faction (excédent seul sur rouge). Barème des règles élagué au tri P2 (retrait des règles coupées ; intrinsèques facturées en excédent). Dérivation auditée (§5), exemples (§7). Créatures/Chars/composites hors matrice (équivalence). Fourchette 3–8. Non testé — validation P7a puis Playtest Pelennor.*
 
 *Version : 0.13 — Phase 1 — 2026-08-05. **Prime de choc de la cavalerie lourde (D065).** +1 brut sur la seule case Cav 🔴 mêlée (22→23), portant son coût final de 6 à **7** (matrice §2, dérivation §5, exemple Dol Amroth §7). Supersède la valeur Cav 🔴 mêlée de D064. Réservée à la cavalerie et dosée à +1 (un dé lourd = 4 aurait débordé à 8 et touché aussi l'infanterie lourde). Rend son ancien coût de 7 à la cavalerie lourde. Nouveau plafond ~9 pour une pièce de choc maxée. Non testé.*
+
+*Version : 0.23 — Phase 1 — 2026-08-09. **Repricing du Mûmakil (D079, P5).** §6 : le Mûmakil applique désormais la dérivation brute standard partout où c'est calculable, et ne réserve le jugement d'équivalence qu'aux deux règles réellement bespoke (Charge écrasante, Inébranlable ∞). Coût 21→**15 pts**. Détail du calcul dans `02 - Factions/Harad.md`.*
 
 *Version : 0.22 — Phase 1 — 2026-08-08. **[Mur de bouclier] ajoutée au barème (D077)**, 1 pt forfait — redevient le badge Faction des Orientaux, remplace [Armure 1] (D072 caduque).*
 

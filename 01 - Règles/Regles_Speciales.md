@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-08"
+date_maj: "2026-08-09"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.25"
+version: "0.26"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -216,7 +216,7 @@ En plus de son attaque normale, cette unité effectue **une attaque de tir de X 
 
 ### Signatures bespoke — Mûmakil
 
-Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par équivalence d'impact, pas à la formule). Le Mûmakil porte aussi **[Inébranlable ∞]** (socle, ex-[Inamovible]).
+Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par équivalence d'impact, pas à la formule). Le Mûmakil porte aussi **[Inébranlable ∞]** (socle, ex-[Inamovible]) et, depuis P5 (D079), **[Protection 1] contre le tir uniquement** (formalise le houserule appliqué au Playtest #2, où la bête avait été traitée comme cible molle).
 
 #### [Charge écrasante]  *(bespoke)*
 
@@ -224,11 +224,11 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 
 > 🎲 Choc de masse réservé à la grande créature, en phase de mouvement (l'usage annoncé lors du retrait de l'ancienne [Charge écrasante] générique, D043→D054). Le gabarit 1-2-1 ne pivote pas (translation pure).
 
-#### [Bête incontrôlable]  *(bespoke)*
+#### [Bête incontrôlable]  *(bespoke, refondue P5/D079)*
 
-À son activation, **s'il est blessé** : lancez autant de dés que ses **PV restants** ; **sans aucune Couronne**, posez un marqueur **Furie** — l'adversaire dirige immédiatement son déplacement et peut l'activer comme une de ses figurines tant que la Furie tient. À la **fin de chaque tour**, le camp du Mal relance **(PV restants + 1)** dés : une **Couronne** retire la Furie.
+Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1 PV)** — pas de test de déclenchement, l'état est automatique. Tant qu'il est à 1 PV : **chaque tour, un tirage à pile ou face détermine qui contrôle la bête** ce tour-là (Mal ou Bien). Quel que soit le résultat, **le Mûmakil s'active obligatoirement au tour du Mal, sans consommer de carte de commandement** (activation gratuite) ; si le tirage désigne le Bien, c'est lui qui dirige le mouvement et l'attaque ce tour-là, comme une de ses propres figurines. Pas de test de reprise : la Furie dure jusqu'à la mort de la bête.
 
-> 🎲 Auto-équilibrage par les PV (plus blessé = plus affolé, moins récupérable). Le Mûmakil **doit** être activé chaque tour ; le contrôle se vérifie **avant** l'activation ; le test de reprise est **toujours** lancé par le camp du Mal. *(Refonte de la Furie prévue en P5.)*
+> 🎲 **Refonte D079.** L'ancienne version (test de déclenchement ET de reprise indexés aux PV restants) créait une spirale jugée trop punitive à la lecture (jamais déclenchée au Playtest #2) : plus la bête était blessée, moins elle avait de dés pour se reprendre. La refonte remplace la probabilité graduelle par un état binaire au seuil critique — plus simple, plus mémorisable, et cohérent avec l'image d'une bête à l'agonie qui ne se calme plus.
 
 #### [Howdah]  *(bespoke)*
 
@@ -244,7 +244,7 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 | **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche |
 | **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
 | **[Armure X]** | Socle | Retire X faces Épée des attaques de mêlée reçues |
-| **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | Blessé : test de contrôle par PV ; échec → Furie dirigée par l'adversaire |
+| **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | À 1 PV (dernier point) : Furie automatique, contrôle à pile ou face chaque tour, activation gratuite garantie au tour du Mal (refondue D079) |
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Couronne = touche) sur le trajet, sans contre-attaque |
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
 | **[Férocité]** | Socle | Contre-attaque même en cas de recul forcé, puis recule |
@@ -305,6 +305,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document de cadrage]]
 
 ---
+
+*Version 0.26 — Phase 1 — 2026-08-09. **Refonte P5 du Mûmakil (D079).** [Bête incontrôlable] réécrite : la Furie devient un état déterministe déclenché à 1 PV (dernier point de vie), fini le test de probabilité indexé aux PV restants jugé trop punitif (spirale, jamais déclenchée en PT2). Contrôle tiré à pile ou face chaque tour ; activation garantie et gratuite au tour du Mal (sans carte de commandement). Le Mûmakil porte désormais aussi [Protection 1] contre le tir uniquement (formalise le houserule PT2).*
 
 *Version 0.15 — Phase 1 — 2026-08-04. **Tri du glossaire (P2, D062).** Le document devient la référence des signatures. Créé un socle générique ([Armure X], [Protection X], [Inébranlable X] + convention ∞, [Poursuite X], [Férocité], [Relance X]) et une section « intrinsèques » (🟢 distance → [Mobilité 1], à écrire dans [[Regles_Base]] à la revue classe × type). Fusions : [Perforant X] → [Relance X] ; [Inamovible] → [Inébranlable ∞]. Coupées : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Arme de jet X], [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Signatures conservées, groupées par peuple / pièce unique / bespoke Mûmakil. Supprimé les tables « intrinsèques des types » et « priorité de résolution » (périmées par [[Regles_Base]] v0.6). Répercussions profils/coûts/scénarios renvoyées à P3–P4.*
 
