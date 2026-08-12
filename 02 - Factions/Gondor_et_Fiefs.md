@@ -39,21 +39,21 @@ Une unité peut porter 0 à 4 badges. Pas de règle à valeur X, pas de note nar
 
 ## 2. Liste des troupes
 
-| # | Unité | Type | Combat | Classe | Badges | **Points** |
-|---|---|---|---|---|---|---|
-| 1 | Guerriers de Minas Tirith | Infanterie | Mêlée | 🔵 | Faction | **5** |
-| 2 | Archers de Minas Tirith | Infanterie | Distance | 🟢 | Faction | **3** |
-| 3 | Chevaliers de Minas Tirith | Cavalerie | Mêlée | 🔴 | Faction | **7** |
-| 4 | Chevaliers de Dol Amroth | Cavalerie | Mêlée | 🔴 | Faction + Spéciale + Élite | **8** |
-| 5 | Garde de la Citadelle | Infanterie | Mêlée | 🔵 | Faction + Élite | **5** |
-| 6 | Hommes d'armes de Dol Amroth | Infanterie | Mêlée | 🔵 | Faction + Spéciale | **5** |
-| 7 | Chevaliers à pied de Dol Amroth | Infanterie | Mêlée | 🔴 | Faction + Élite | **6** |
-| 8 | Guerriers de Lossarnach | Infanterie | Mêlée | 🔵 | Faction + Spéciale | **5** |
-| 9 | Guerriers des clans de Lamedon | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
-| 10 | Rangers du Gondor | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
-| 11 | Rangers d'Ithilien | Infanterie | Distance | 🔵 | Spéciale | **4** |
-| 12 | Rangers du Nord — *nouvelle unité* | Infanterie | Distance | 🔵 | Spéciale + Élite | **4** |
-| 13 | La Compagnie Grise | Infanterie | Mêlée | 🔵 | Faction + Spéciale + Élite + Légende | **7** |
+| #   | Unité                              | Type       | Combat   | Classe | Badges                               | **Points** |
+| --- | ---------------------------------- | ---------- | -------- | ------ | ------------------------------------ | ---------- |
+| 1   | Guerriers de Minas Tirith          | Infanterie | Mêlée    | 🔵     | Faction                              | **5**      |
+| 2   | Archers de Minas Tirith            | Infanterie | Distance | 🟢     | Faction                              | **3**      |
+| 3   | Chevaliers de Minas Tirith         | Cavalerie  | Mêlée    | 🔴     | Faction                              | **7**      |
+| 4   | Chevaliers de Dol Amroth           | Cavalerie  | Mêlée    | 🔴     | Faction + Spéciale + Élite           | **8**      |
+| 5   | Garde de la Citadelle              | Infanterie | Mêlée    | 🔵     | Faction + Élite                      | **5**      |
+| 6   | Hommes d'armes de Dol Amroth       | Infanterie | Mêlée    | 🔵     | Faction + Spéciale                   | **5**      |
+| 7   | Chevaliers à pied de Dol Amroth    | Infanterie | Mêlée    | 🔴     | Faction + Élite                      | **6**      |
+| 8   | Guerriers de Lossarnach            | Infanterie | Mêlée    | 🔵     | Faction + Spéciale                   | **5**      |
+| 9   | Guerriers des clans de Lamedon     | Infanterie | Mêlée    | 🔵     | Spéciale                             | **5**      |
+| 10  | Rangers du Gondor                  | Infanterie | Distance | 🟢     | *(aucun)*                            | **3**      |
+| 11  | Rangers d'Ithilien                 | Infanterie | Distance | 🔵     | Spéciale                             | **4**      |
+| 12  | Rangers du Nord — *nouvelle unité* | Infanterie | Distance | 🔵     | Spéciale + Élite                     | **4**      |
+| 13  | La Compagnie Grise                 | Infanterie | Mêlée    | 🔵     | Faction + Spéciale + Élite + Légende | **7**      |
 
 *Roster resserré à 13 unités (contre 14) : Archers de la Racine Noire fusionnés dans Rangers d'Ithilien/Rangers du Nord (même niche tir-précision, différenciée par le badge Élite plutôt que par un profil séparé) ; Vétérans d'Osgiliath retirés du roster de base (aucun rôle mécanique distinct des Gardes de la Citadelle sous le nouveau système de badges — candidat à réintroduire en pièce unique si un scénario le demande).*
 

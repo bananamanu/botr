@@ -34,15 +34,15 @@ version: "1.1"
 
 ## 2. Liste des troupes
 
-| # | Unité | Type | Combat | Classe | Badges | **Points** |
-|---|---|---|---|---|---|---|
-| 1 | Archers du Harad | Infanterie | Distance | 🟢 | Faction | **3** |
-| 2 | Lanciers du Harad | Infanterie | Mêlée | 🟢 | Faction | **3** |
-| 3 | Gardes serpents | Infanterie | Mêlée | 🔵 | Faction + Élite | **5** |
-| 4 | Gardes serpent à cheval | Cavalerie | Mêlée | 🔵 | Faction + Spéciale | **7** |
-| 5 | **Pillards haradrim (mêlée)** — *nouveau* | Cavalerie | Mêlée | 🟢 | Faction + Spéciale | **6** |
-| 6 | **Pillards haradrim (archers)** — *nouveau* | Cavalerie | Distance | 🟢 | Faction | **4** |
-| 7 | Mûmakil | Créature | Mêlée *(charge)* | 🔴 *(nominal)* | *(hors matrice — voir §4)* | **15** |
+| #   | Unité                                       | Type       | Combat           | Classe         | Badges                     | **Points** |
+| --- | ------------------------------------------- | ---------- | ---------------- | -------------- | -------------------------- | ---------- |
+| 1   | Archers du Harad                            | Infanterie | Distance         | 🟢             | Faction                    | **3**      |
+| 2   | Lanciers du Harad                           | Infanterie | Mêlée            | 🟢             | Faction                    | **3**      |
+| 3   | Gardes serpents                             | Infanterie | Mêlée            | 🔵             | Faction + Élite            | **5**      |
+| 4   | Gardes serpent à cheval                     | Cavalerie  | Mêlée            | 🔵             | Faction + Spéciale         | **7**      |
+| 5   | **Pillards haradrim (mêlée)** — *nouveau*   | Cavalerie  | Mêlée            | 🟢             | Faction + Spéciale         | **6**      |
+| 6   | **Pillards haradrim (archers)** — *nouveau* | Cavalerie  | Distance         | 🟢             | Faction                    | **4**      |
+| 7   | Mûmakil                                     | Créature   | Mêlée *(charge)* | 🔴 *(nominal)* | *(hors matrice — voir §4)* | **15**     |
 
 **Total escorte + Pillards : 28 points** (hors Mûmakil, hors matrice par équivalence).
 

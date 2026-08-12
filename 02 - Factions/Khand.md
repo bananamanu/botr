@@ -35,13 +35,13 @@ version: "2.1"
 
 ## 2. Liste des troupes
 
-| # | Unité | Type | Combat | Classe | Badges | **Points** |
-|---|---|---|---|---|---|---|
-| 1 | Mercenaire de Khand | Infanterie | Mêlée | 🟢 | Faction + Spéciale | **3** |
-| 2 | Mercenaire archer de Khand | Infanterie | Distance | 🟢 | Faction | **2** |
-| 3 | Pillards de Khand (hache) | Cavalerie | Mêlée | 🟢 | Faction + Spéciale | **5** |
-| 4 | Pillards de Khand (archer) | Cavalerie | Distance | 🟢 | Faction | **3** |
-| 5 | Aurige de Khand | Cavalerie | Mêlée | 🔵 | Spéciale seule | **7** |
+| #   | Unité                      | Type       | Combat   | Classe | Badges             | **Points** |
+| --- | -------------------------- | ---------- | -------- | ------ | ------------------ | ---------- |
+| 1   | Mercenaire de Khand        | Infanterie | Mêlée    | 🟢     | Faction + Spéciale | **3**      |
+| 2   | Mercenaire archer de Khand | Infanterie | Distance | 🟢     | Faction            | **2**      |
+| 3   | Pillards de Khand (hache)  | Cavalerie  | Mêlée    | 🟢     | Faction + Spéciale | **5**      |
+| 4   | Pillards de Khand (archer) | Cavalerie  | Distance | 🟢     | Faction            | **3**      |
+| 5   | Aurige de Khand            | Cavalerie  | Mêlée    | 🔵     | Spéciale seule     | **7**      |
 
 **Total roster : 20 points** — le roster le moins cher des peuples re-exprimés à ce stade (Gondor 13 unités, Rohan 9), cohérent avec une faction qui compense son manque d'élite par le nombre.
 

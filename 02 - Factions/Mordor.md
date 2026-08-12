@@ -34,14 +34,14 @@ version: "1.2"
 
 ## 2. Liste des troupes
 
-| # | Unité | Type | Combat | Classe | Badges | **Points** |
-|---|---|---|---|---|---|---|
-| 1 | Bande d'orques du Mordor | Infanterie | Mêlée | 🔵 *(reclassée)* | Faction | **4** |
-| 2 | Bande d'orques du Morannon | Infanterie | Mêlée | 🔵 | Faction + Spéciale | **5** |
-| 3 | Bande de pisteurs orques | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
-| 4 | Meute de cavaliers wargs | Cavalerie | Mêlée | 🔵 | **Faction** *(remplace Spéciale)* | **6** |
-| 5 | Bande d'uruk-hai du Mordor | Infanterie | Mêlée | 🔴 | Spéciale + Élite | **7** |
-| 6 | Troll du Mordor | Créature | Mêlée | 🔴 | Spéciale *(+ Peur 1/Armure 1 intrinsèques)* | **7** |
+| #   | Unité                      | Type       | Combat   | Classe           | Badges                                      | **Points** |
+| --- | -------------------------- | ---------- | -------- | ---------------- | ------------------------------------------- | ---------- |
+| 1   | Bande d'orques du Mordor   | Infanterie | Mêlée    | 🔵 *(reclassée)* | Faction                                     | **4**      |
+| 2   | Bande d'orques du Morannon | Infanterie | Mêlée    | 🔵               | Faction + Spéciale                          | **5**      |
+| 3   | Bande de pisteurs orques   | Infanterie | Distance | 🟢               | *(aucun)*                                   | **3**      |
+| 4   | Meute de cavaliers wargs   | Cavalerie  | Mêlée    | 🔵               | **Faction** *(remplace Spéciale)*           | **6**      |
+| 5   | Bande d'uruk-hai du Mordor | Infanterie | Mêlée    | 🔴               | Spéciale + Élite                            | **7**      |
+| 6   | Troll du Mordor            | Créature   | Mêlée    | 🔴               | Spéciale *(+ Peur 1/Armure 1 intrinsèques)* | **7**      |
 
 > 🎲 **Les deux bandes d'orques passent en classe 🔵 (3 dés).** Auparavant seule la bande du Morannon portait 3 dés ; la bande de base rejoint désormais la même classe. La différence entre les deux profils n'est plus dans les dés, mais dans le badge Spéciale (Morannon seul) — plus simple à lire, l'écart de qualité se voit au picto, pas au nombre de dés lancés.
 >

@@ -35,12 +35,12 @@ Le badge **Élite** ([Inébranlable 1] + Jamais Faible) reste disponible au syst
 
 ## 2. Liste des troupes
 
-| # | Unité | Type | Combat | Classe | Badges | **Points** |
-|---|---|---|---|---|---|---|
-| 1 | Cohorte d'orientaux | Infanterie | Mêlée | 🔵 | Faction | **4** |
-| 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | 🔵 | Faction + Spéciale | **5** |
-| 3 | Cohorte d'archers orientaux | Infanterie | Distance | 🟢 | Spéciale | **3** |
-| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | 🔴 | *(aucun)* | **7** |
+| #   | Unité                         | Type       | Combat   | Classe | Badges             | **Points** |
+| --- | ----------------------------- | ---------- | -------- | ------ | ------------------ | ---------- |
+| 1   | Cohorte d'orientaux           | Infanterie | Mêlée    | 🔵     | Faction            | **4**      |
+| 2   | Cohorte de piquiers orientaux | Infanterie | Mêlée    | 🔵     | Faction + Spéciale | **5**      |
+| 3   | Cohorte d'archers orientaux   | Infanterie | Distance | 🟢     | Spéciale           | **3**      |
+| 4   | Cataphractaires orientaux     | Cavalerie  | Mêlée    | 🔴     | *(aucun)*          | **7**      |
 
 **Total roster : 19 points** *(21 dans la version miroir pur D072, 22 dans l'originale)*.
 
