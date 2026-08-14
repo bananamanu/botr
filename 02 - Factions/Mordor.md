@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-08"
+date_maj: "2026-08-13"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.2"
+version: "1.3"
 ---
 
 # Mordor — Profils d'unités
@@ -18,34 +18,36 @@ version: "1.2"
 
 ---
 
-## 1. Les deux badges de Mordor
+## 1. Faction de Mordor et badge secondaire
 
-| Badge | Effet | Coût brut | Porté par |
+*(Collapse de badges — D080/D081, tâche P7c.)* Mordor portait déjà [Horde] sur la plupart de son infanterie et de sa cavalerie de mêlée, mais l'Uruk-hai en était explicitement exclu (« exception steadfast », D035). Le collapse de badges revient sur cette exclusion : **[Horde] devient un trait de Faction porté par toute l'infanterie de mêlée du roster, Uruk-hai compris** — seule la Bande de pisteurs orques (tir) et le Troll (type Créature, hors périmètre de la règle) en restent exclus.
+
+| Niveau | Effet | Coût brut | Porté par |
 |---|---|---|---|
-| **Faction** (Mordor) | **[Horde]** *(refondue D075 — +1 dé à pleine santé, Faible dès la 1ʳᵉ touche)* | +1 *(forfait, provisoire)* | Bande d'orques du Mordor · Bande d'orques du Morannon · **Meute de cavaliers wargs** |
-| **Spéciale** (unité) | **[Relance 1]** *(badge universel depuis D073)* | +2 | Bande d'orques du Morannon · Bande d'uruk-hai · Troll du Mordor |
-| **Élite** | **[Inébranlable 1] + Jamais Faible** *(enrichi D073)* | +2 | Bande d'uruk-hai uniquement |
+| **Faction** (infanterie de mêlée + cavalerie de choc) | **[Horde]** *(+1 dé à pleine santé, Faible dès la 1ʳᵉ touche)* | +1 *(forfait, provisoire)* | Bande d'orques du Mordor · Bande d'orques du Morannon · Meute de cavaliers wargs · **Bande d'uruk-hai** *(P7c)* |
+| **Badge secondaire** (1 max) — **Spéciale** | **[Relance 1]** | +2 | Bande d'orques du Morannon · Troll du Mordor |
+| **Badge secondaire** (1 max) — **Élite** | **[Inébranlable 1] + Jamais Faible** | +2 | Bande d'uruk-hai |
 
-**[Horde], nouvelle mouture (D075) : frappe fort, s'effondre vite.** Tant que l'unité n'a subi aucune touche, elle lance **+1 dé**. Dès la première touche encaissée, elle perd ce bonus **et** passe immédiatement en état **Faible** — ses faces Épée cessent de toucher, quel que soit le nombre de figurines restantes, pas seulement à la dernière. Une armée du Mordor qui domine les premiers échanges puis s'effrite d'un coup, sans palier intermédiaire.
+**[Horde] : frappe fort, s'effondre vite.** Tant que l'unité n'a subi aucune touche, elle lance **+1 dé**. Dès la première touche encaissée, elle perd ce bonus **et** passe immédiatement en état **Faible** — ses faces Épée cessent de toucher, quel que soit le nombre de figurines restantes.
 
-**La règle s'étend désormais à la cavalerie.** La Meute de cavaliers wargs porte [Horde] à la place de son ancien badge Spéciale — la restriction historique « jamais la cavalerie » (D032) est levée pour ce cas (voir [[Regles_Speciales]] §Signatures). L'Uruk-hai (l'élite qui ne rompt pas) et les pisteurs (le tir) restent exclus, comme depuis l'origine.
+> 🔄 **P7c (D081) — l'Uruk-hai gagne [Horde].** Auparavant l'unique profil du roster à y échapper explicitement (« Attaque 4 constante, sans Horde », D035), l'Uruk-hai la porte désormais comme toute l'infanterie de mêlée. **Il garde le badge Élite** (et non Spéciale) : Jamais Faible neutralise le volet « Faible immédiate » de [Horde], si bien que l'Uruk-hai profite du **+1 dé à pleine santé sans jamais en subir la contrepartie** — cohérent avec son statut d'élite qui ne rompt pas, désormais retrouvé par la combinaison des deux règles plutôt que par une exemption dédiée. **Reste exclu : la Bande de pisteurs orques** (tir — le volet Faible de [Horde] ne mordrait pas sur une unité sans faces Épée actives, ce serait un bonus sans contrepartie) et **le Troll** (type Créature, hors du périmètre « infanterie » de la règle).
 
 ---
 
 ## 2. Liste des troupes
 
-| #   | Unité                      | Type       | Combat   | Classe           | Badges                                      | **Points** |
-| --- | -------------------------- | ---------- | -------- | ---------------- | ------------------------------------------- | ---------- |
-| 1   | Bande d'orques du Mordor   | Infanterie | Mêlée    | 🔵 *(reclassée)* | Faction                                     | **4**      |
-| 2   | Bande d'orques du Morannon | Infanterie | Mêlée    | 🔵               | Faction + Spéciale                          | **5**      |
-| 3   | Bande de pisteurs orques   | Infanterie | Distance | 🟢               | *(aucun)*                                   | **3**      |
-| 4   | Meute de cavaliers wargs   | Cavalerie  | Mêlée    | 🔵               | **Faction** *(remplace Spéciale)*           | **6**      |
-| 5   | Bande d'uruk-hai du Mordor | Infanterie | Mêlée    | 🔴               | Spéciale + Élite                            | **7**      |
-| 6   | Troll du Mordor            | Créature   | Mêlée    | 🔴               | Spéciale *(+ Peur 1/Armure 1 intrinsèques)* | **7**      |
+| #   | Unité                      | Type       | Combat   | Classe           | Faction | Badge secondaire | **Points** |
+| --- | -------------------------- | ---------- | -------- | ---------------- | --- | --- | ---------- |
+| 1   | Bande d'orques du Mordor   | Infanterie | Mêlée    | 🔵 *(reclassée)* | Horde | *(aucun)* | **4**      |
+| 2   | Bande d'orques du Morannon | Infanterie | Mêlée    | 🔵               | Horde | Spéciale | **5**      |
+| 3   | Bande de pisteurs orques   | Infanterie | Distance | 🟢               | *(aucune — tir)* | *(aucun)* | **3**      |
+| 4   | Meute de cavaliers wargs   | Cavalerie  | Mêlée    | 🔵               | Horde | *(aucun)* | **6**      |
+| 5   | Bande d'uruk-hai du Mordor | Infanterie | Mêlée    | 🔴               | Horde *(P7c)* | Élite | **6**      |
+| 6   | Troll du Mordor            | Créature   | Mêlée    | 🔴               | *(aucune — Créature)* | Spéciale *(+ Peur 1/Armure 1 intrinsèques)* | **7**      |
 
-> 🎲 **Les deux bandes d'orques passent en classe 🔵 (3 dés).** Auparavant seule la bande du Morannon portait 3 dés ; la bande de base rejoint désormais la même classe. La différence entre les deux profils n'est plus dans les dés, mais dans le badge Spéciale (Morannon seul) — plus simple à lire, l'écart de qualité se voit au picto, pas au nombre de dés lancés.
+> 🎲 **Les deux bandes d'orques passent en classe 🔵 (3 dés).** Auparavant seule la bande du Morannon portait 3 dés ; la bande de base rejoint désormais la même classe. La différence entre les deux profils n'est plus dans les dés, mais dans le badge secondaire (Morannon seul) — plus simple à lire, l'écart de qualité se voit au picto, pas au nombre de dés lancés.
 >
-> ⚠️ **Uruk-hai et Troll : +1 pt chacun** (6→7), effet de bord de la migration du badge Spéciale ([Férocité], 1 pt → [Relance 1], 2 pts). Aucun changement de contenu demandé pour ces deux profils ; la hausse est mécanique, pas un choix de design du jour.
+> 🔄 **P7c (D081) — Uruk-hai gagne [Horde], perd Spéciale.** Plafond à 1 badge secondaire : Élite retenu (neutralise le volet Faible de Horde, voir §1). Coût 7→**6 pts** (le badge Spéciale abandonné coûtait plus que le Horde gagné). Troll : aucun changement (type Créature, hors périmètre de Horde).
 
 ---
 
@@ -87,7 +89,7 @@ version: "1.2"
 
 **Badges :** *(aucun)*
 
-**Note narrative :** les traqueurs à l'arc de la Terre de l'Ombre — des orques d'un genre plus fureteur, envoyés en avant pour flécher et harceler. Décroche après avoir tiré ([Mobilité 1] intrinsèque, gratuite, classe 🟢). Pas de [Horde] : la règle reste réservée à la mêlée et à la cavalerie de choc (D032, désormais étendue aux wargs par D075, mais toujours pas au tir).
+**Note narrative :** les traqueurs à l'arc de la Terre de l'Ombre — des orques d'un genre plus fureteur, envoyés en avant pour flécher et harceler. Décroche après avoir tiré ([Mobilité 1] intrinsèque, gratuite, classe 🟢). Pas de [Horde] : confirmé exclu à P7c (D081) — sur une unité de tir, le volet Faible de la règle ne mordrait pas (pas de faces Épée à perdre), ce serait un bonus sans contrepartie.
 
 ---
 
@@ -109,13 +111,13 @@ version: "1.2"
 
 | Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
 |---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔴 | 1 ou 2 | 4 dés *(constante)* | — | 4 | **7** |
+| Infanterie | Mêlée | 🔴 | 1 ou 2 | 4 dés *(5 tant qu'aucune touche subie, Horde)* | — | 4 | **6** |
 
-**Badges :** Spéciale ([Relance 1]) + Élite ([Inébranlable 1] + Jamais Faible)
+**Badges :** Faction ([Horde]) + Élite ([Inébranlable 1] + Jamais Faible)
 
-**Note narrative :** les grands Uruks noirs de Barad-dûr, la haute stature bréée par Sauron pour tenir là où la piétaille rompt. C'est **l'exception du roster** : pas de [Horde], une Attaque 4 **constante**, aucun effondrement au premier sang. [Armure 1] (mailles noires) vient gratuitement de la classe 🔴 ; [Relance 1] (badge Spéciale, ex-[Férocité]) traduit une arme qui ne rate pas deux fois ; [Inébranlable 1] + Jamais Faible (badge Élite) confirment mécaniquement ce que dit le texte depuis l'origine — « l'orque qui ne rompt pas », jusqu'à sa dernière figurine.
+**Note narrative :** les grands Uruks noirs de Barad-dûr, la haute stature bréée par Sauron pour tenir là où la piétaille rompt. [Armure 1] (mailles noires) vient gratuitement de la classe 🔴 ; [Horde] frappe un premier coup dévastateur (5 dés) ; [Inébranlable 1] + Jamais Faible (badge Élite) empêchent l'Uruk-hai de jamais passer Faible — **le volet le plus punitif de [Horde] ne mord donc jamais sur lui**. C'est mécaniquement « l'orque qui ne rompt pas » (le texte depuis l'origine), désormais obtenu par la combinaison de deux règles générales plutôt que par une exemption dédiée.
 
-> 🎲 **Note de calcul.** Brut = 19 (Inf 🔴 mêlée, Armure 1 incluse) + [Relance 1] Spéciale (2) + Élite (2) = 23 → round(23÷3)−1 = **7**. Effet de bord de la migration du badge Spéciale ([Férocité], 1 pt → [Relance 1], 2 pts) — +1 pt sans changement de design demandé.
+> 🔄 **P7c (D081).** L'Uruk-hai gagne [Horde] (auparavant l'exception explicite du roster, D035) et perd son badge Spéciale ([Relance 1]) pour tenir le plafond à 1 badge secondaire — Élite retenu, seul choix qui neutralise la pénalité de Horde. Brut = 19 (Inf 🔴 mêlée, Armure 1 incluse) + Horde Faction (1) + Élite (2) = 22 → round(22÷3)−1 = **6**. *(Ancien coût : 7.)*
 
 ---
 
@@ -139,10 +141,10 @@ version: "1.2"
 
 | Badge | Unités qui le portent |
 |---|---|
-| **Faction** ([Horde]) | Bande d'orques du Mordor (1) · Bande d'orques du Morannon (2) · **Meute de cavaliers wargs (4)** |
-| **Spéciale** ([Relance 1]) | Bande d'orques du Morannon (2) · Bande d'uruk-hai (5) · Troll du Mordor (6) |
+| **Faction** ([Horde]) | Bande d'orques du Mordor (1) · Bande d'orques du Morannon (2) · Meute de cavaliers wargs (4) · **Bande d'uruk-hai (5)** *(P7c)* |
+| **Spéciale** ([Relance 1]) | Bande d'orques du Morannon (2) · Troll du Mordor (6) |
 | **Élite** ([Inébranlable 1] + Jamais Faible) | Bande d'uruk-hai (5) |
-| **Aucun badge** | Bande de pisteurs orques (3) — tir, toujours exclu de Horde |
+| **Aucune Faction** | Bande de pisteurs orques (3, tir) · Troll (6, type Créature) |
 
 **Intrinsèques hors badges** : [Armure 1] (classe 🔴, sur Uruk-hai et Troll) · [Peur 1] (type Créature, sur Troll uniquement pour l'instant).
 
@@ -150,14 +152,16 @@ version: "1.2"
 
 ## 5. Points ouverts transverses
 
-- **Coût de [Horde] (1, refondue D075)** — jamais testé sous cette forme (ni la précédente, ni celle-ci). L'entrée en état Faible immédiate est un vrai changement de comportement à la table : à surveiller en priorité au prochain playtest, en particulier si elle rend les bandes d'orques trop fragiles dès le premier échange.
-- **Uruk-hai et Troll : hausse de +1 pt chacun**, effet de bord de la migration du badge Spéciale ([Férocité] 1 pt → [Relance 1] 2 pts) plutôt qu'un choix de design — voir avertissement §2. À surveiller si ça déséquilibre leur rapport qualité/prix face au reste du roster.
-- **Meute de cavaliers wargs** : coût inchangé (6 pts) par le remplacement Spéciale→Faction (même coût brut, 1 pt dans les deux cas) — mais premier profil de cavalerie du projet à porter [Horde], comportement jamais testé à la table.
-- **Intrinsèque Créature (Peur 1 + Armure 1)** — nouvelle règle transverse, appliquée au Troll seul dans ce projet. À vérifier à la re-expression du Mûmakil (Harad, P4/P5) qu'elle ne fait pas doublon avec ses règles bespoke existantes ([Howdah], [Inébranlable ∞]).
+- **Coût de [Horde] (1, refondue D075)** — jamais testé sous cette forme sur l'infanterie de base ; **désormais aussi sur l'Uruk-hai (P7c, D081)**, jamais testé du tout sur ce profil. À surveiller en priorité au prochain playtest.
+- **Uruk-hai : coût 7→6 pts** (P7c, D081) — gagne Horde, perd Spéciale. Le badge Élite neutralise la pénalité Faible de Horde ; reste à vérifier au playtest si le bonus +1 dé sans contrepartie rend le profil trop efficace pour son nouveau prix.
+- **Meute de cavaliers wargs** : inchangée par P7c — premier profil de cavalerie du projet à porter [Horde] (depuis D075), comportement toujours non éprouvé à la table.
+- **Intrinsèque Créature (Peur 1 + Armure 1)** — nouvelle règle transverse, appliquée au Troll seul dans ce projet et au Mûmakil (Harad).
 - **[Réception de charge]** reste sans porteur à Mordor (inchangé depuis la Passe 0).
 - **Couche Leadership (Phase 2)** — dé-randomiser l'accès des héros à la face Arcane, hors scope de cette repasse.
 
 ---
+
+*Version : 1.3 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** [Horde] devient un trait de Faction porté par toute l'infanterie de mêlée, **Uruk-hai compris** (auparavant exception explicite, D035) ; reste exclu : pisteurs orques (tir) et Troll (Créature). Plafond à 1 badge secondaire : Uruk-hai perd Spéciale, garde Élite (neutralise la pénalité Faible de Horde) — coût 7→**6 pts**. Récapitulatif (§4) et points ouverts (§5) mis à jour.*
 
 *Version : 1.2 — Phase 1 — 2026-08-08. **Refonte de [Horde] (D075) et migration badges universels.** [Horde] gagne l'entrée en état Faible immédiate dès la première touche (plus seulement à la dernière figurine), coût 2→1 ; sa portée s'étend à la cavalerie — la Meute de cavaliers wargs l'adopte en badge Faction et perd son ancien badge Spéciale (coût inchangé, 6 pts). Les deux bandes d'orques passent en classe 🔵 (3 dés) ; seule la bande du Morannon garde le badge Spéciale, migré vers [Relance 1] (universel, D073) — [Férocité] disparaît entièrement du roster. Uruk-hai et Troll suivent la même migration Spéciale, +1 pt chacun (6→7) en effet de bord non demandé. Roster inchangé à 6 profils. Non testé — validation P7a.*
 

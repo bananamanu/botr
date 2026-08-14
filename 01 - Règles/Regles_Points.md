@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-09"
+date_maj: "2026-08-13"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.23"
+version: "0.24"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -47,55 +47,67 @@ Rappel des intrinsèques incluses (pour mémoire, **pas** à ajouter) : 🔴 →
 
 ---
 
-## 3. Suppléments : Élite et signatures
+## 3. Suppléments : Faction, badge secondaire et signatures
 
-Le coût final d'un profil se construit ainsi :
+*(Collapse de badges — D080/D081, tâche P7c.)* Le coût final d'un profil **standard** (hors pièces Signature, §6) se construit ainsi :
 
 ```
-Brut = Brut_de_base (case, §5) + 2 si Élite + 3 (mêlée) ou 2 (tir) si Légende + Σ Coût(signatures & règles de faction)
+Brut = Brut_de_base (case, §5) + Coût(Faction du peuple) + Coût(badge secondaire, si porté) 
 Final = round(Brut ÷ 3) − 1
 ```
 
+**Faction n'est plus optionnelle : c'est un trait de peuple**, présent (ou non, cas rares documentés par peuple) sur **toute** unité standard sans que ce soit un choix de construction d'armée — son coût s'ajoute donc systématiquement pour les unités qui la portent, exactement comme avant, seule la présentation change (plus de case à cocher). **Le badge secondaire est plafonné à 1 par unité**, choisi parmi Spéciale/Élite/Légende — fini le cumul jusqu'à 3 badges secondaires (D073).
+
 La compression (§4) se fait **une fois**, à la rédaction du profil, après avoir additionné tous les suppléments au brut de la case — jamais à la volée en partie.
 
-### 3.1 Badge Élite = [Inébranlable 1] + Jamais Faible
+### 3.1 Le badge secondaire — un seul par unité
 
-Le badge **Élite** (marqueur lu au plateau, [[Regles_Base]] §2.2) confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue) **et Jamais Faible** (D073 : l'unité ignore l'état Faible, ses faces Épée touchent toujours). C'est le cran de granularité qui distingue, dans une même case, la troupe aguerrie de la troupe de ligne. **Coût : +2 brut**, inchangé malgré l'enrichissement (tarif socle [Inébranlable X] = 2×X ; Jamais Faible n'ajoute rien au forfait — provisoire, à surveiller au playtest).
+- **Spéciale** confère **[Relance 1]**, universel depuis D073. **Coût : +2 brut** (tarif socle [Relance X] = 2×X).
+- **Élite** confère **[Inébranlable 1] + Jamais Faible** (D073 : l'unité ignore l'état Faible, ses faces Épée touchent toujours). **Coût : +2 brut**, inchangé malgré l'enrichissement (Jamais Faible n'ajoute rien au forfait — provisoire, à surveiller au playtest).
+- **Légende** (réservé aux unités uniques) ajoute **+1 dé** à l'attaque, dans son mode. **Coût : +3 brut en mêlée (D=3), +2 brut au tir (D=2)** — dérivé de la même méthode que le reste de la matrice (§5).
 
-### 3.1bis Badge Légende = +1 dé de combat *(D073)*
+Une unité porte l'un des trois, ou aucun — jamais deux à la fois. Les collisions de coût que ce resserrement recrée localement (deux profils qui retombent au même palier) sont **acceptées par construction du système**, au même titre que les égalités déjà existantes ailleurs dans les rosters (ex. Hommes d'armes de Dol Amroth / Guerriers de Lossarnach, Gondor).
 
-Le badge **Légende** (marqueur lu au plateau, réservé aux unités uniques, [[Regles_Base]] §2.2) ajoute **+1 dé** à l'attaque de l'unité, dans son mode. Remplace l'ancienne approche « pièce hors matrice, coût par équivalence narrative » pour toute unité unique dont les règles se ramènent à un empilement de badges standard plutôt qu'à une mécanique bespoke. **Coût : +3 brut en mêlée (D=3), +2 brut au tir (D=2)** — dérivé de la même méthode que le reste de la matrice (§5) : un dé de plus vaut ce que vaut un dé de la classe, au mode près.
+### 3.2 Le trait de Faction — coût par peuple
 
-### 3.2 Badge Spéciale = [Relance 1] pour tout le monde *(D073)*
+Chaque peuple a sa propre règle de Faction, définie une fois pour tout le roster ([[Regles_Speciales]] §4a) et son coût s'ajoute au brut de **toute** unité qui la porte :
 
-Le badge **Spéciale** n'a plus de contenu variable par peuple : **[Relance 1]** pour tous les rosters, standard/hache lourde/lance ou tout autre habillage narratif. **Coût inchangé : +2 brut** (tarif socle [Relance X] = 2×X). *(Rohan migré D074, Mordor migré D075 — tous les peuples re-exprimés sont désormais conformes.)*
+| Peuple | Faction | Coût brut |
+|---|---|---|
+| Gondor, Orientaux | [Défense 1] *(= [Armure 1], nom d'usage)* | +2, **gratuit sur 🔴** (déjà au plancher intrinsèque) |
+| Rohan | [Férocité] | +1 |
+| Khand | [Mercenaire] | **−2** *(coût négatif)* |
+| Mordor | [Horde] | +1 |
+| Harad | [Poison] | +1 |
 
-### 3.3 Barème des règles (signatures + socle explicite)
+Cas particuliers sans Faction (documentés par peuple, [[Regles_Speciales]] §4a) : la Bande de pisteurs orques (Mordor, tir — le volet Faible de [Horde] ne mordrait pas sur une unité sans faces Épée actives) et l'Aurige de Khand (seul corps régulier du peuple, pas un mercenaire).
 
-Repris de l'Option B (D026), **élagué au tri P2** (D062). Les règles devenues **intrinsèques** ne se facturent qu'en **excédent au-dessus du plancher de la case**.
+### 3.3 Barème des règles (Faction, badges, socle explicite)
+
+Repris de l'Option B (D026), **élagué au tri P2** (D062), **réorganisé au collapse de badges P7c** (D081) : la colonne Note précise désormais si la règle est une **Faction** (peuple entier, §3.2), un **badge secondaire** (§3.1) ou du **socle libre**. Les règles devenues **intrinsèques** ne se facturent qu'en **excédent au-dessus du plancher de la case**.
 
 | Règle | Coût | Note |
 |---|---|---|
-| **[Armure X]** | 2 × X | Règle de **faction**, disponible à toute classe (arbitrage D064). Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent ([Armure 2] = +2). |
-| **[Inébranlable X]** | 2 × X | Si l'unité est **Élite**, le premier point est déjà dans le badge → ne facturer que l'excédent. |
+| **[Armure X] / [Défense X]** | 2 × X | Socle libre / **Faction Gondor-Orientaux** (nom [Défense X] en Faction). Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent. |
+| **[Inébranlable X]** | 2 × X | Socle libre. Si l'unité est **Élite** (badge), le premier point est déjà dans le badge → ne facturer que l'excédent. |
 | **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. |
-| **[Relance X]** | 2 × X | Relance X dés (mêlée ou tir) ; absorbe l'ex-[Perforant]. Badge Spéciale universel depuis D073. |
-| **Légende** *(badge)* | 3 (mêlée) / 2 (tir) *(forfait, +1 dé)* | Réservé aux unités uniques, D073 — voir §3.1bis. |
+| **[Relance X]** | 2 × X | Socle libre / **badge Spéciale** (universel depuis D073, plafonné à 1 badge secondaire depuis D081). |
+| **Légende** *(badge secondaire)* | 3 (mêlée) / 2 (tir) *(forfait, +1 dé)* | Réservé aux unités uniques, D073 — voir §3.1. |
 | **[Arme de jet X]** | 1 × X | Sans porteur actif depuis D074 (Rohan migré vers [Férocité]). Conservée au barème, réutilisable. |
-| **[Mercenaire]** | **−2** *(forfait, coût négatif)* | Chaque retrait forcé compte double. Badge Faction Khand, P4/D070 — premier badge à coût négatif du barème. |
+| **[Mercenaire]** | **−2** *(forfait, coût négatif)* | **Faction Khand**, P4/D070 — premier badge/trait à coût négatif du barème. |
 | **[Poursuite X]** | 3 × X | Cavalerie de mêlée : plancher (2 ou 1) **inclus** → ne facturer que l'excédent. |
 | **[Mobilité X]** | 1 × X | Tir léger/monté : plancher **inclus** → excédent seul. |
-| **[Férocité]** | 1 | Situationnel (ne joue que si l'unité est forcée de reculer). |
-| **[Horde]** | **1** *(forfait)* | Signature Mordor (+1 dé à pleine santé, Faible dès la 1ʳᵉ touche). Refondue P4/D075, coût ramené de 2 à 1. Provisoire. |
-| **[Mur de bouclier]** | **1** *(forfait)* | Signature Orientaux — [Protection 1] tant qu'aucune touche subie, perdue à la 1ʳᵉ. Restaurée et refondue P4/D077, remplace [Armure 1] comme badge Faction. Provisoire. |
-| **[Poison]** | 1 | Signature Harad (Couronne → 1 touche). |
-| **[Double Tir]** | 3 | Sans porteur actif depuis P4/D072 (Orientaux passés en miroir pur de Gondor). Conservée au barème, réutilisable. |
+| **[Férocité]** | 1 | **Faction Rohan** — universelle sur tout le roster depuis D074. |
+| **[Horde]** | **1** *(forfait)* | **Faction Mordor** (+1 dé à pleine santé, Faible dès la 1ʳᵉ touche). Refondue P4/D075 ; étendue à l'Uruk-hai P7c/D081, exclut la Bande de pisteurs orques (tir). Provisoire. |
+| **[Mur de bouclier]** | **1** *(forfait)* | Sans porteur actif depuis P7c/D081 — [Protection 1] tant qu'aucune touche subie, perdue à la 1ʳᵉ. Conservée au barème, réutilisable. |
+| **[Poison]** | 1 | **Faction Harad** — universelle sur tout le roster d'escorte. |
+| **[Double Tir]** | 3 | Sans porteur actif depuis P4/D072. Conservée au barème, réutilisable. |
 | **[Prise de flanc]** | 3 *(forfait)* | Signature Éored de cavalier. Provisoire, D049. |
 | **[Vigilant]** | 2 *(forfait)* | Signature Éored d'éclaireur. Provisoire, D050. |
 | **[Archer en mêlée]** | 2 | Signature Compagnie Grise. |
 | **[Peur X]** | *(intrinsèque Créature — voir note)* | Devenue intrinsèque au type Créature (P4/D071), plus une signature au barème. Toute créature en porte 1 sans supplément. |
 
-> **Retirées au tri P2** (ne plus chiffrer) : [Mur de bouclier] (→ [Armure 1]), [Réception de charge], [Martyre], [Meute X], [Souffle de feu], immunités, [Terrain favori], [Rechargement], [Déploiement avancé]. Traçabilité : [[Regles_Speciales]] §6. *([Arme de jet X] restaurée au barème ci-dessus, P4/D068.)*
+> **Retirées au tri P2** (ne plus chiffrer) : [Réception de charge], [Martyre], [Meute X], [Souffle de feu], immunités, [Terrain favori], [Rechargement], [Déploiement avancé]. Traçabilité : [[Regles_Speciales]] §6. *([Arme de jet X] restaurée au barème ci-dessus, P4/D068.)*
 
 > **Pièces bespoke** (Mûmakil : [Charge écrasante], [Bête incontrôlable], [Howdah]) : **hors barème**, absorbées dans le chiffrage par équivalence de la pièce (§6). *(Le type Chars et [Plateforme de tir X] n'ont plus de porteur depuis P4/D070 — l'Aurige de Khand devient cavalerie standard, chiffrée à la matrice comme toute autre unité.)*
 
@@ -151,11 +163,11 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 
 ## 7. Exemples travaillés
 
-**Guerriers de Minas Tirith** — 🔵 Infanterie, mêlée, armure de faction. Base 🔵 Inf mêlée (brut 15) + [Armure 1] faction (+2) = **17** → `round(17/3)−1` = **5**. *(Ancien coût : 5. Continuité conservée.)*
+**Guerriers de Minas Tirith** — 🔵 Infanterie, mêlée, Faction [Défense 1]. Base 🔵 Inf mêlée (brut 15) + [Défense 1] Faction (+2) = **17** → `round(17/3)−1` = **5**. *(Inchangé.)*
 
-**Gardes de la Citadelle** — 🔵 Infanterie, mêlée, **Élite**, armure de faction. Brut 15 + Élite (+2) + [Armure 1] (+2) = **19** → **5**. *(Ancien : 6 ; le rebase PV les fait glisser d'un palier — attendu.)*
+**Gardes de la Citadelle** — 🔵 Infanterie, mêlée, Faction [Défense 1] + badge **Élite**. Brut 15 + [Défense 1] (+2) + Élite (+2) = **19** → **5**. *(Inchangé.)*
 
-**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23** → **7**, inclut [Armure 1] + [Poursuite 1] + prime de choc D065). Les monter à **[Armure 2]** (faction, +2 → 25) les laisse à **7** (la compression absorbe le cran à ce palier) ; il faut y ajouter le **badge Élite** (+2 → 27) pour atteindre **8**. *(Choix d'armure/Élite = décision de re-expression P4.)* La cavalerie lourde retrouve ainsi son ancien coût de 7 — meilleure continuité qu'avec D064.
+**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23**, inclut [Armure 1] + [Poursuite 1] + prime de choc D065 — Faction [Défense 1] **gratuite**, déjà au plancher 🔴). **Depuis P7c (D081) : un seul badge secondaire.** Élite retenu (+2 → 25) → `round(25/3)−1` = **7**. *(Ancien coût : 8, avec Spéciale+Élite cumulés — perd 1 pt avec le plafond à 1 badge. Retombe à égalité avec Chevaliers de Minas Tirith, 7 pts — collision acceptée par Emmanuel, cf. Hommes d'armes/Lossarnach.)*
 
 ---
 
@@ -178,6 +190,8 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 3. **Cartes bannière (vert/bleu/rouge)** — leur retour probable dans le deck de commandement active les unités **par couleur = classe**. Sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C), mais **point de veille** : un roster trop concentré sur une couleur devient dur à activer — à intégrer à la conception du deck, pas au chiffrage.
 
 ---
+
+*Version : 0.24 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** §3 réécrite : Faction (§3.2) devient un trait de peuple systématique par unité (barème inchangé par peuple), badge secondaire (§3.1) plafonné à **1** parmi Spéciale/Élite/Légende (fin du cumul jusqu'à 3, D073). Barème §3.3 réorganisé avec la colonne Note distinguant Faction / badge secondaire / socle libre ; [Défense X] ajoutée (= [Armure X], nom Faction Gondor-Orientaux) ; [Mur de bouclier] repasse sans porteur actif. Exemple Dol Amroth (§7) recalculé : 8→**7 pts** (perd le cumul Spéciale+Élite, un seul badge retenu — Élite). Collisions de coût locales acceptées par construction.*
 
 *Version : 0.12 — Phase 1 — 2026-08-05. **Refonte P3 (D064) : passage en matrice.** Réécriture complète autour de la matrice type × mode × classe (§2), intrinsèques incluses par case. Rebase durabilité (Inf 6→4, Cav 3) ; socle Mvt+PV recalculé sur la grille §6.1 ; ancien §1 (durabilité ÷ perte moyenne) caduc (double-touche supprimée). Badge Élite = [Inébranlable 1] (+2). [Armure X] rouverte à toute classe comme règle de faction (excédent seul sur rouge). Barème des règles élagué au tri P2 (retrait des règles coupées ; intrinsèques facturées en excédent). Dérivation auditée (§5), exemples (§7). Créatures/Chars/composites hors matrice (équivalence). Fourchette 3–8. Non testé — validation P7a puis Playtest Pelennor.*
 

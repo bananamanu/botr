@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-08"
+date_maj: "2026-08-13"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.12"
+version: "0.13"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -77,9 +77,17 @@ Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de prof
 
 **Le mode = un token collé sur le socle : mêlée ou distance.** Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
 
-**Le badge Élite (facultatif) = un marqueur sur le plateau.** Il confère **[Inébranlable 1]** : l'unité ignore 1 recul par attaque reçue (voir [[Regles_Speciales]] §Socle). Il confère aussi **Jamais Faible** *(D073)* : l'unité **ignore l'état Faible** (§2.2 ci-dessous) — ses faces Épée continuent de toucher même à sa dernière figurine. C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe aguerrie qui tient la ligne de la troupe ordinaire. Une unité sans badge n'a ni l'un ni l'autre. *(Son coût est traité dans [[Regles_Points]] §3.1.)*
+**Le badge Faction n'est plus un marqueur de plateau — c'est un trait de peuple** *(collapse D080/D081)*. Chaque peuple a **une** règle de Faction, imprimée une fois dans son roster et appliquée automatiquement à **toutes** ses unités standard, sans exception et sans rien à poser sur le plateau pour le signaler — un seul effet à retenir par camp, valable pour toute la partie. Les pièces signature (§ badge Signature ci-dessous) n'en portent pas : elles ont leurs propres règles bespoke. *(Détail par peuple dans chaque fichier `02 - Factions/*.md` ; coût traité dans [[Regles_Points]] §3.2.)*
 
-**Le badge Légende (facultatif, réservé aux unités uniques) = un marqueur sur le plateau** *(D073)*. Il confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance). Réservé aux pièces nommées/signature du roster — un seul badge de plus dans le vocabulaire commun, à la place d'un empilement de règles bespoke propres à la pièce. *(Son coût est traité dans [[Regles_Points]] §3.1.)*
+**Une unité porte au maximum un second badge, choisi parmi Spéciale / Élite / Légende** *(collapse D080/D081, resserre le cumul introduit par D073)* :
+
+- **Spéciale** confère **[Relance 1]** (badge universel depuis D073).
+- **Élite** confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle) **et Jamais Faible** *(D073)* : l'unité ignore l'état Faible (§2.2 ci-dessous) — ses faces Épée continuent de toucher même à sa dernière figurine.
+- **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
+
+Une unité peut donc porter **0, 1 (Faction seule) ou 2 badges** (Faction + un badge parmi Spéciale/Élite/Légende) — jamais plus. C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe remarquable de la troupe de ligne, sans empiler plusieurs lignes de règles à retenir par figurine. *(Coûts traités dans [[Regles_Points]] §3.1.)*
+
+**Le badge Signature (facultatif, réservé aux pièces marquantes) = règles bespoke propres, hors de la matrice de badges.** Une poignée de pièces (La Compagnie Grise, le Mûmakil…) sortent entièrement du système Faction/Spéciale/Élite/Légende : leurs règles sont écrites au profil, comme des créations uniques. *(Coûts traités par équivalence, [[Regles_Points]] §6.)*
 
 Une unité occupe toujours **un seul hexagone**. Les touches s'accumulent au sein d'une même attaque ; les pertes ne se récupèrent pas.
 
@@ -494,8 +502,9 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
 | **[Férocité]** | Contre-attaque même en cas de recul forcé, puis recule normalement |
-| **Élite** (badge) | Marqueur au plateau : l'unité porte [Inébranlable 1] + Jamais Faible |
-| **Légende** (badge) | Marqueur au plateau, réservé aux unités uniques : +1 dé de combat |
+| **Faction** (trait de peuple) | Imprimé une fois par peuple, appliqué à toutes ses unités standard — plus de marqueur |
+| **Élite** (badge, max 1 avec Spéciale/Légende) | Marqueur au plateau : l'unité porte [Inébranlable 1] + Jamais Faible |
+| **Légende** (badge, max 1 avec Spéciale/Élite) | Marqueur au plateau, réservé aux unités uniques : +1 dé de combat |
 
 > Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
 
@@ -513,6 +522,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 > ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
+
+*Version : 0.13 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** §2.2 réécrite : le badge **Faction** cesse d'être un marqueur de plateau et devient un **trait de peuple**, imprimé une fois et appliqué automatiquement à toutes les unités standard du roster. Nouveau plafond : **une unité porte au maximum un second badge**, choisi parmi Spéciale/Élite/Légende (fin du cumul jusqu'à 3 introduit par D073). Nouveau badge **Signature** formalisé pour les pièces bespoke (Compagnie Grise, Mûmakil) qui sortent entièrement de la matrice. Mémo aligné. Détail par peuple dans chaque roster ; coûts dans [[Regles_Points]] §3.*
 
 *Version : 0.2 — Phase 1 — 2026-07-18. [Massif] retirée, commandement/terrain Pelennor clarifiés. Non testé.*
 

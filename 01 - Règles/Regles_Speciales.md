@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-09"
+date_maj: "2026-08-13"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.26"
+version: "0.27"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -29,10 +29,11 @@ version: "0.26"
 1. [[#Conventions]]
 2. [[#Socle générique]]
 3. [[#Règles intrinsèques (dérivées de la taxonomie)]]
-4. [[#Signatures]]
-5. [[#Récapitulatif alphabétique]]
-6. [[#Retiré au tri P2]]
-7. [[#Différées — Phase 2+]]
+4. [[#4a. Faction — traits de peuple]]
+5. [[#4b. Signature — pièces bespoke]]
+6. [[#Récapitulatif alphabétique]]
+7. [[#Retiré au tri P2]]
+8. [[#Différées — Phase 2+]]
 
 ---
 
@@ -43,13 +44,16 @@ version: "0.26"
 - **[Règle]** : nom entre crochets — standard dans tous les profils.
 - **[Règle X]** : règle avec une valeur numérique (ex. [Armure 1], [Relance 2]).
 
-### Trois familles
+### Quatre familles *(collapse de badges, D080/D081, P7c)*
 
 | Famille | Rôle | Où c'est défini |
 |---|---|---|
 | **Socle générique** | Vocabulaire universel disponible à tout profil (défense, relance, poursuite…) | §2 de ce document |
 | **Intrinsèque** | Découle de la combinaison classe × type × mode — **ne se note pas sur le profil**, se lit au plateau | [[Regles_Base]] (§2, §6) |
-| **Signature** | Capacité marquante, **1–2 max par unité**, réservée aux pièces d'identité de peuple et aux pièces uniques | §4 de ce document |
+| **Faction** | **Trait de peuple**, imprimé une fois, appliqué automatiquement à **toutes** les unités standard du roster — plus un badge, plus de marqueur à poser | §4a de ce document |
+| **Signature** | Capacité(s) marquante(s), réservée aux **pièces bespoke uniquement** (Compagnie Grise, Mûmakil), hors matrice de badges | §4b de ce document |
+
+> **Badge secondaire (Spéciale/Élite/Légende) : 1 maximum par unité standard**, en plus de sa Faction de peuple (D080/D081, resserre le cumul jusqu'à 3 introduit par D073). Défini dans [[Regles_Base]] §2.2 ; coûts dans [[Regles_Points]] §3.1.
 
 ### Où se résolvent les signatures
 
@@ -74,7 +78,7 @@ Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une uni
 
 Lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Les faces **Épées croisées** ne sont jamais affectées. Sans effet contre le **tir**.
 
-> 🔄 **Restaurée au socle générique — D077** : brièvement remplacée par [Armure 1] sur les profils Orientaux (P2→D072), [Mur de bouclier] est réintroduite sous une forme conditionnelle et refondue — voir §Signatures de peuple ci-dessous. [Armure 1] reste disponible comme badge Faction pour tout autre peuple (Gondor).
+> 🔄 **Nom d'usage [Défense X] pour la Faction Gondor/Orientaux — D080/D081.** Quand [Armure X] sert de trait de Faction (imprimé pour tout un peuple, plutôt que dérivé de la classe), elle est désignée **[Défense X]** dans les rosters Gondor et Orientaux — mécanique strictement identique, nom distinct pour ne jamais la confondre avec le plancher [Armure 1] intrinsèque au 🔴 ([[Regles_Base]] §2.4). *(Historique : [Mur de bouclier], identité propre des Orientaux depuis D077, redevient sans porteur actif à P7c — les Orientaux reviennent au miroir mécanique de Gondor, [Défense 1] partout.)*
 
 ### [Protection X]
 
@@ -142,11 +146,9 @@ Toute unité **légère (🟢, 2 dés) en mode distance** décroche après avoir
 
 ---
 
-## Signatures
+## 4a. Faction — traits de peuple
 
-Capacités marquantes. **1–2 maximum par unité.** Chaque peuple porte **une** signature identitaire ; les pièces uniques et les créations bespoke complètent la liste. L'objectif « **une seule** signature bien nette par peuple » se finalise à la re-expression des rosters (P4) ; certaines signatures ci-dessous coiffent encore plusieurs unités d'un même peuple.
-
-### Signatures de peuple
+*(Collapse D080/D081, P7c.)* Chaque peuple porte **une seule** règle de Faction, imprimée une fois dans son roster et appliquée **automatiquement à toutes ses unités standard**, sans marqueur à poser en jeu. Ce n'est plus un badge parmi d'autres : c'est ce qui reste, désormais, l'essentiel de l'identité mécanique d'un peuple (§6, [[Playtest3_Compte-rendu]]).
 
 #### [Horde]  — *Mordor*
 
@@ -157,28 +159,52 @@ Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d
 > 🔄 **Refondue — P4 (D075)** : ajoute l'entrée en état Faible **immédiate** (dès la première touche, plus seulement à la dernière figurine) à l'ancien effet (+1 dé à pleine santé, D032 ; perte de [Inébranlable 1], D071). Coût ramené de 2 à **1** (forfait) — le nouveau malus (Faible prématuré) est une contrepartie réelle, pas seulement la perte d'un bonus. Toujours provisoire, non testé sous cette forme.
 >
 > 🔄 **Restriction de portée levée (D075)** : jusqu'ici réservée à l'infanterie orque de mêlée (D032, jamais la cavalerie ni les bêtes), la règle est désormais aussi assignée à la Meute de cavaliers wargs de Mordor — la restriction D032 est supersédée pour ce cas précis, à l'appréciation de chaque peuple.
+>
+> 🔄 **Étendue à toute l'infanterie de mêlée du roster, Uruk-hai compris — P7c (D081).** Auparavant l'Uruk-hai en était explicitement exclu (« exception steadfast », D035) : il porte désormais [Horde] comme trait de Faction, badge Élite en plus (Jamais Faible neutralise le volet Faible-immédiate de la règle — l'Uruk-hai profite du +1 dé à pleine santé sans jamais en subir la contrepartie, cohérent avec son statut d'élite qui ne rompt pas). **Reste hors périmètre : la Bande de pisteurs orques** (tir) — sur une unité qui ne porte pas de faces Épée actives, le volet Faible de [Horde] ne mord pas, ce qui en ferait un bonus sans contrepartie ; exclue par choix, pas par oubli.
 
 #### [Poison]  — *Harad*
 
 Lorsque cette unité attaque, chaque face **Couronne** inflige **1 touche supplémentaire**.
 
-> 🎲 Fil conducteur du Harad (flèches et lames empoisonnées). Porté par les Lanciers, les Gardes serpents et la volée du Mûmakil ([Howdah]).
+> 🎲 Fil conducteur du Harad (flèches et lames empoisonnées). Porté par tout le roster d'escorte et la volée du Mûmakil ([Howdah]).
 
-#### [Mur de bouclier]  — *Orientaux*
+#### [Défense X]  — *Gondor et Orientaux*
 
-Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **[Protection 1]** (ignore 1 touche par attaque reçue, mêlée ou tir). Dès qu'elle subit sa **première touche**, la formation est rompue : la protection disparaît **définitivement**.
+Nom d'usage d'[Armure X] (§2, socle générique) quand la règle sert de trait de Faction plutôt que d'être dérivée de la classe : lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Sans effet contre le tir.
 
-> 🎲 Le mur tient tant que la ligne n'est pas percée, puis s'effondre d'un coup — même patron que [Horde] (condition liée à l'état de l'unité, pas à son voisinage), appliqué à une protection plutôt qu'à un bonus offensif.
+> 🎲 Miroir mécanique exact entre les deux peuples : troupes régulières et bien équipées, quel que soit le camp. Nom distinct d'[Armure X] pour ne jamais le confondre avec le plancher [Armure 1] intrinsèque au 🔴 ([[Regles_Base]] §2.4) — sur un profil 🔴, [Défense 1] est donc **gratuit** (déjà inclus), seul l'excédent ([Défense 2]) se facture.
 >
-> 🔄 **Restaurée et refondue — P4 (D077)**, après avoir été coupée au tri P2 (D062) faute d'une version assez simple pour la table (l'ancienne mouture exigeait de vérifier l'adjacence à une autre unité d'Infanterie amie à chaque combat). Cette version ne dépend plus que du nombre de touches subies, lisible au même coup d'œil que [Horde]. **[Protection 1] à plat jugé trop fort** (retour d'Emmanuel) : la version conditionnelle s'auto-limite au premier choc, ce qui justifie de garder le même coût que la version à plat malgré la puissance ponctuelle.
+> 🔄 **Étendue à tout le roster — P7c (D081).** Jusqu'ici cantonnée aux profils lourds chez Gondor et absente chez les Orientaux (badge [Mur de bouclier], D077), la Faction couvre désormais **toutes** les unités standard des deux peuples, sans exception. **[Mur de bouclier] redevient sans porteur actif** (voir ci-dessous) : les Orientaux reviennent au miroir mécanique de Gondor.
+
+#### [Férocité]  — *Rohan*
+
+Cette unité peut effectuer sa contre-attaque même si l'attaque subie la force à reculer (voir §2, socle générique) — l'exception à la condition « restée sur son hexagone ».
+
+> 🎲 Porté par les 9 profils du roster sans exception depuis D074 (premier peuple à universaliser sa Faction). Traduit la vaillance désespérée du Rohan mieux qu'une arme ou une armure — « personne au Rohan ne cède un pouce de terrain sans rendre un coup ».
+
+#### [Mercenaire]  — *Khand*  *(coût négatif)*
+
+Chaque retrait forcé (recul de combat) de cette unité compte double (voir §2, socle générique).
+
+> 🎲 Porté par toutes les troupes mercenaires et pillards de Khand. **L'Aurige de Khand ne le porte pas** : seul corps régulier du peuple, pas un mercenaire — exclusion par identité, pas un oubli (D070).
+
+*(Cas particuliers : la Bande de pisteurs orques (Mordor, tir) et l'Aurige de Khand (seul corps régulier) restent sans Faction par choix de design — voir leurs entrées respectives. Les pièces Signature, §4b, n'en portent pas non plus.)*
+
+#### [Mur de bouclier]  — *sans porteur actif*
+
+Tant que cette unité n'a subi aucune touche, elle bénéficie de [Protection 1] (ignore 1 touche par attaque reçue, mêlée ou tir). Dès qu'elle subit sa première touche, la formation est rompue : la protection disparaît définitivement.
+
+> 🎲 Le mur tient tant que la ligne n'est pas percée, puis s'effondre d'un coup — même patron que [Horde]. **Sans porteur depuis P7c (D081)** : identité propre des Orientaux depuis D077, elle cède la place au miroir mécanique de Gondor ([Défense 1], universel sur les deux rosters). Conservée au glossaire — réutilisable si un futur profil ou peuple veut l'identité « formation qui tient tant qu'elle n'est pas percée ».
 
 #### [Double Tir]  — *sans porteur actif*
 
 Si cette unité **ne s'est pas déplacée** ce tour, elle effectue une **seconde attaque à distance** (même cible ou une autre, à portée et en ligne de vue).
 
-> 🎲 La discipline de la ligne qui tient sa position et double la salve — miroir de l'archer **mobile** (intrinsèque [Mobilité 1], §3). **Sans porteur depuis P4/D072** : à la re-expression des Orientaux (ex-Easterling), Emmanuel choisit un **miroir mécanique pur de Gondor** (badge Faction [Armure 1] + badge Spéciale [Relance 1]) plutôt que de reconduire cette signature — l'archer orientaux redevient un profil standard (classe 🟢, [Mobilité 1] intrinsèque gratuite), sans règle bespoke. Conservée au glossaire — réutilisable si un futur profil veut l'identité « archer immobile qui double la salve ».
+> 🎲 La discipline de la ligne qui tient sa position et double la salve — miroir de l'archer **mobile** (intrinsèque [Mobilité 1], §3). Sans porteur depuis P4/D072 (les Orientaux redeviennent un profil standard, sans règle bespoke). Conservée au glossaire — réutilisable si un futur profil veut l'identité « archer immobile qui double la salve ».
 
-*(Khand : identité portée par le badge Faction [Mercenaire] (moral fragile, coût réduit) et le badge Spéciale [Relance 1] (hache lourde) — voir §2. Gondor et Orientaux : identité portée par l'armure lourde ([Armure X], socle) et le badge Spéciale [Relance 1], en miroir mécanique exact l'un de l'autre.)*
+## 4b. Signature — pièces bespoke
+
+Règles propres, **hors matrice de badges**, réservées aux pièces qui ne se ramènent pas à une combinaison classe × type × mode + Faction + 1 badge. Deux porteuses actives à ce stade : **La Compagnie Grise** (Gondor) et **le Mûmakil** (Harad). *(Troll du Mordor et Aurige de Khand : candidats évoqués au Playtest #3, confirmés en matrice standard — D081/P7c, pas de statut bespoke.)*
 
 ### Signatures de pièce unique
 
@@ -247,18 +273,19 @@ Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | À 1 PV (dernier point) : Furie automatique, contrôle à pile ou face chaque tour, activation gratuite garantie au tour du Mal (refondue D079) |
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Couronne = touche) sur le trajet, sans contre-attaque |
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
-| **[Férocité]** | Socle | Contre-attaque même en cas de recul forcé, puis recule |
-| **[Horde]** | Signature (Mordor) | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
+| **[Défense X]** | Faction (Gondor, Orientaux) | = [Armure X], nom d'usage quand la règle est trait de peuple — universel P7c/D081 |
+| **[Férocité]** | Faction (Rohan) *(aussi disponible au socle)* | Contre-attaque même en cas de recul forcé, puis recule |
+| **[Horde]** | Faction (Mordor) | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075, étendue à l'Uruk-hai P7c/D081 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] + [Poison] |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
-| **[Mercenaire]** | Socle *(coût négatif)* | Chaque retrait forcé compte double — badge Faction Khand |
+| **[Mercenaire]** | Faction (Khand) *(coût négatif)* | Chaque retrait forcé compte double |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
-| **[Mur de bouclier]** | Signature (Orientaux) | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
+| **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 ; toute créature en porte aussi (D071) |
 | **[Peur X]** | Intrinsèque (type Créature) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
-| **[Plateforme de tir X]** | Signature (char de Khand) | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
-| **[Poison]** | Signature (Harad) | Couronne → 1 touche supplémentaire |
+| **[Plateforme de tir X]** | Sans porteur actif | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
+| **[Poison]** | Faction (Harad) | Couronne → 1 touche supplémentaire |
 | **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Prise de flanc]** | Signature (Éored de cavalier) | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
 | **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
@@ -305,6 +332,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document de cadrage]]
 
 ---
+
+*Version 0.27 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** Nouvelle famille **Faction** (§4a) séparée de **Signature** (§4b) : la Faction devient un trait de peuple imprimé une fois, plus un badge ; la Signature se réserve désormais aux seules pièces bespoke (Compagnie Grise, Mûmakil). [Horde] étendue à l'Uruk-hai (Mordor), exclut toujours la Bande de pisteurs orques. Nouvelle entrée **[Défense X]**, nom d'usage d'[Armure X] en Faction Gondor/Orientaux, universel sur les deux rosters. **[Mur de bouclier] redevient sans porteur actif** (les Orientaux reviennent au miroir mécanique de Gondor). Table des matières, conventions et récapitulatif alphabétique alignés.*
 
 *Version 0.26 — Phase 1 — 2026-08-09. **Refonte P5 du Mûmakil (D079).** [Bête incontrôlable] réécrite : la Furie devient un état déterministe déclenché à 1 PV (dernier point de vie), fini le test de probabilité indexé aux PV restants jugé trop punitif (spirale, jamais déclenchée en PT2). Contrôle tiré à pile ou face chaque tour ; activation garantie et gratuite au tour du Mal (sans carte de commandement). Le Mûmakil porte désormais aussi [Protection 1] contre le tir uniquement (formalise le houserule PT2).*
 

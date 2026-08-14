@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-08"
+date_maj: "2026-08-13"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.1"
+version: "2.2"
 ---
 
 # Khand — Profils d'unités
@@ -20,30 +20,32 @@ version: "2.1"
 
 ---
 
-## 1. Les deux badges de Khand
+## 1. Faction de Khand et badge secondaire
 
-| Badge | Effet | Coût brut | Porté par |
+*(Collapse de badges — D080/D081, tâche P7c.)* Khand était déjà conforme au nouveau système avant même qu'il n'existe (D076) : [Mercenaire] couvrait déjà tout le roster mercenaire (sauf l'Aurige, par identité), et aucun profil ne portait plus d'un badge secondaire. Le collapse P7c ne change donc **aucun coût** ici — seule la présentation passe de « badge Faction » à « trait de peuple ».
+
+| Niveau | Effet | Coût brut | Porté par |
 |---|---|---|---|
-| **Faction** (Khand) | **[Mercenaire]** *(chaque retrait forcé compte double)* | **−2** *(coût négatif)* | Toutes les troupes de mercenaires et de pillards |
-| **Spéciale** (unité) | **[Relance 1]** *(hache lourde)* | +2 | Troupes équipées de hache |
+| **Faction** (troupes mercenaires) | **[Mercenaire]** *(chaque retrait forcé compte double)* | **−2** *(coût négatif)* | Mercenaire de Khand (1) · Mercenaire archer (2) · Pillards hache (3) · Pillards archer (4) |
+| **Badge secondaire** (1 max) — **Spéciale** | **[Relance 1]** *(hache lourde)* | +2 | Troupes équipées de hache |
 
-**[Mercenaire] est le premier badge à coût négatif du projet** ([[Regles_Speciales]] §Socle générique, D070) : une troupe motivée par la solde plutôt que par la loyauté cède plus facilement le terrain — mécaniquement, ses reculs de combat comptent double. Ça traduit un moral fragile sans complexifier la règle de recul elle-même (aucune nouvelle mécanique à apprendre, juste un multiplicateur sur une situation déjà existante), et ça fait de Khand la faction la moins chère à l'unité du projet, cohérent avec le principe de départ.
+**[Mercenaire] est le premier badge/trait à coût négatif du projet** ([[Regles_Speciales]] §4a, D070) : une troupe motivée par la solde plutôt que par la loyauté cède plus facilement le terrain — mécaniquement, ses reculs de combat comptent double. Ça traduit un moral fragile sans complexifier la règle de recul elle-même, et ça fait de Khand la faction la moins chère à l'unité du projet, cohérent avec le principe de départ.
 
-**L'Aurige de Khand ne porte pas le badge Faction.** C'est le seul corps qui échappe au statut mercenaire — l'unique force que Khand entraîne et possède en propre plutôt que loue au plus offrant. Son moral est celui d'une troupe régulière, pas d'un ramassis de reîtres.
+**L'Aurige de Khand ne porte pas la Faction.** C'est le seul corps qui échappe au statut mercenaire — l'unique force que Khand entraîne et possède en propre plutôt que loue au plus offrant. Son moral est celui d'une troupe régulière, pas d'un ramassis de reîtres.
 
 ---
 
 ## 2. Liste des troupes
 
-| #   | Unité                      | Type       | Combat   | Classe | Badges             | **Points** |
-| --- | -------------------------- | ---------- | -------- | ------ | ------------------ | ---------- |
-| 1   | Mercenaire de Khand        | Infanterie | Mêlée    | 🟢     | Faction + Spéciale | **3**      |
-| 2   | Mercenaire archer de Khand | Infanterie | Distance | 🟢     | Faction            | **2**      |
-| 3   | Pillards de Khand (hache)  | Cavalerie  | Mêlée    | 🟢     | Faction + Spéciale | **5**      |
-| 4   | Pillards de Khand (archer) | Cavalerie  | Distance | 🟢     | Faction            | **3**      |
-| 5   | Aurige de Khand            | Cavalerie  | Mêlée    | 🔵     | Spéciale seule     | **7**      |
+| #   | Unité                      | Type       | Combat   | Classe | Faction | Badge secondaire | **Points** |
+| --- | -------------------------- | ---------- | -------- | ------ | ------------------ | ---- | ---------- |
+| 1   | Mercenaire de Khand        | Infanterie | Mêlée    | 🟢     | Mercenaire | Spéciale | **3**      |
+| 2   | Mercenaire archer de Khand | Infanterie | Distance | 🟢     | Mercenaire | *(aucun)* | **2**      |
+| 3   | Pillards de Khand (hache)  | Cavalerie  | Mêlée    | 🟢     | Mercenaire | Spéciale | **5**      |
+| 4   | Pillards de Khand (archer) | Cavalerie  | Distance | 🟢     | Mercenaire | *(aucun)* | **3**      |
+| 5   | Aurige de Khand            | Cavalerie  | Mêlée    | 🔵     | *(aucune — seul corps régulier)* | Spéciale | **7**      |
 
-**Total roster : 20 points** — le roster le moins cher des peuples re-exprimés à ce stade (Gondor 13 unités, Rohan 9), cohérent avec une faction qui compense son manque d'élite par le nombre.
+**Total roster : 20 points, inchangé — P7c (D081) sans effet sur Khand.**
 
 > 🎲 **Note de design — un roster entièrement 🟢, sauf l'Aurige**
 > Toute l'infanterie et la cavalerie de ligne de Khand est en classe légère (🟢, 2 dés) — un peuple de mercenaires n'a ni l'équipement ni l'entraînement pour porter des dés lourds. L'Aurige (🔵, 3 dés) est la seule pièce à sortir de ce plancher : c'est son avantage de classe, pas une règle spéciale de plus.
@@ -132,6 +134,8 @@ version: "2.1"
 - **Aucune unité légendaire au sens strict** (D023) — roster confirmé plat, 5 profils, sans palier standard/élite/légendaire. Choix assumé pour une faction mercenaire : pas de hiérarchie de prestige à représenter.
 
 ---
+
+*Version : 2.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c) — sans effet sur les coûts.** Khand était déjà conforme (D076) : [Mercenaire] devient un trait de peuple plutôt qu'un badge, présentation seule mise à jour (§1, §2). Aucun changement de points.*
 
 *Version : 2.1 — Phase 1 — 2026-08-08. **Revue de conformité au pivot « badges universels » (D073-D075) — D076.** Aucun changement de badge ni de coût : [Mercenaire] reste le badge Faction (identité propre, l'exclusion de l'Aurige est le point de la règle, pas un oubli à corriger) ; [Relance 1] est déjà le badge Spéciale depuis D070. Roster confirmé conforme sans modification.*
 

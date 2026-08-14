@@ -25,12 +25,14 @@
             "id": "615b2779f8225468",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.6"
+                "file": "02 - Factions/Gondor_et_Fiefs.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Notes de version 1.13.6"
+              "icon": "lucide-file",
+              "title": "Gondor_et_Fiefs"
             }
           }
         ],
@@ -200,15 +202,19 @@
   },
   "active": "615b2779f8225468",
   "lastOpenFiles": [
-    "00 - META/Document_de_cadrage (1).md",
-    "05 - Playtest/Playtest3_Compte-rendu.md",
+    "02 - Factions/Rohan.md",
+    "02 - Factions/Orientaux.md",
     "02 - Factions/Mordor.md",
     "02 - Factions/Khand.md",
     "02 - Factions/Harad.md",
     "02 - Factions/Gondor_et_Fiefs.md",
+    "01 - Règles/Regles_Speciales.md",
+    "01 - Règles/Regles_Points.md",
+    "01 - Règles/Regles_Base.md",
+    "00 - META/Document_de_cadrage.md",
+    "00 - META/Document_de_cadrage (1).md",
+    "05 - Playtest/Playtest3_Compte-rendu.md",
     "02 - Factions/Rohan (1).md",
-    "02 - Factions/Rohan.md",
-    "02 - Factions/Orientaux.md",
     "06 - Images/pions/traits de coupe recto.pdf",
     "06 - Images/pions/verso.pdf",
     "06 - Images/pions/recto.pdf",
@@ -229,13 +235,9 @@
     "06 - Images/pions/dice.png",
     "06 - Images/pions/palantir.png",
     "06 - Images/badges/badge_doree.png",
-    "01 - Règles/Regles_Base.md",
     "05 - Playtest/Playtest2_Compte-rendu.md",
     "01 - Règles/Regles_Speciales (1).md",
-    "00 - META/Document_de_cadrage.md",
     "02 - Factions/Easterling.md",
-    "01 - Règles/Regles_Speciales.md",
-    "01 - Règles/Regles_Points.md",
     "03 - Scénarios/Playtest2_La_grande_bete.md",
     "05 - Playtest/Playtest1b_Addendum.md",
     "05 - Playtest/Playtest1_Compte-rendu.md",
