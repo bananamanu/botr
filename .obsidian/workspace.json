@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Orientaux"
             }
+          },
+          {
+            "id": "615b2779f8225468",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notes de version 1.13.6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,8 +198,10 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "9325cc91e8d65535",
+  "active": "615b2779f8225468",
   "lastOpenFiles": [
+    "00 - META/Document_de_cadrage (1).md",
+    "05 - Playtest/Playtest3_Compte-rendu.md",
     "02 - Factions/Mordor.md",
     "02 - Factions/Khand.md",
     "02 - Factions/Harad.md",
@@ -216,7 +231,6 @@
     "06 - Images/badges/badge_doree.png",
     "01 - Règles/Regles_Base.md",
     "05 - Playtest/Playtest2_Compte-rendu.md",
-    "00 - META/Document_de_cadrage (1).md",
     "01 - Règles/Regles_Speciales (1).md",
     "00 - META/Document_de_cadrage.md",
     "02 - Factions/Easterling.md",
@@ -231,7 +245,6 @@
     "01 - Règles/Règles_Regles_Speciales.md",
     "01 - Règles/Règles_Regles_Points.md",
     "00 - META/Templates/Tpl unite.md",
-    "00 - META/Templates/Tpl scenario.md",
-    "00 - META/Templates/Tpl regle.md"
+    "00 - META/Templates/Tpl scenario.md"
   ]
 }
