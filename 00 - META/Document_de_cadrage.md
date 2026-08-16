@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "meta"
 phase: "1"
 statut: "en-cours"
-date_maj: "2026-08-13"
+date_maj: "2026-08-15"
 tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.39"
+version: "1.41"
 ---
 
 # Document de cadrage du projet
@@ -71,11 +71,12 @@ Figurines MESBG, collection très complète.
 
 1. **Priorité à la fluidité et à l'accessibilité** : les règles ne doivent jamais ralentir le jeu ni demander de consulter un livre en pleine partie. Contrainte forte : les joueurs sont expérimentés mais de moins en moins à l'aise avec les systèmes complexes — toute règle qui génère une question à chaque résolution est à réviser.
 2. **Émotion et narration avant la profondeur tactique** : privilégier les moments marquants (charge des Rohirrim, duel Éowyn/Roi-Sorcier) plutôt que l'optimisation. Conditions de victoire narratives, propres à chaque scénario, fidèles au texte de Tolkien (pas aux films).
-3. **Profils comme vecteurs de règles** : les règles spéciales vivent dans les profils d'unités, pas dans un livre de règles à consulter. Un joueur connaît son armée, pas le manuel.
+3. **Identité lisible au plateau avant identité écrite au profil** : classe (couleur = nombre de dés), type (forme et taille du socle) et mode (token mêlée/distance) se lisent sans consulter de fiche. Le profil d'unité ne porte plus que l'exception à ce socle commun — un badge, au maximum deux (Faction et un second parmi Spéciale/Élite/Légende) — jamais la règle de base elle-même.
 4. **Lisibilité sur la table** : l'état du jeu doit être lisible d'un coup d'œil. Jetons acceptés pour PV et effets temporaires, jamais pour les règles permanentes.
 5. **Scalabilité par le format, pas par la complexité** : un même socle de règles doit fonctionner en Escarmouche, Normal et Épique — on ajuste le nombre d'unités et la taille de table, jamais la complexité des règles de base.
-6. **Asymétrie assumée** : chaque peuple (Gondor, Rohan, Mordor, Harad...) doit se jouer différemment. L'équilibre se fait par la diversité tactique, pas par la similitude des profils.
+6. **Asymétrie assumée, portée par une signature unique** : chaque peuple se joue différemment, mais cette différence tient dans **une seule règle de Faction**, imprimée une fois pour tout le roster (trait de peuple, pas un marqueur à poser), plutôt que dans une prolifération de règles bespoke par unité. L'équilibre se fait par la diversité de cette signature d'un peuple à l'autre, pas par la similitude des profils.
 7. **Minimalisme des règles de terrain** : le terrain crée de la tension, pas de la complexité. Chaque type de terrain a un effet simple et mémorable.
+8. **La simplification radicale comme réflexe, pas comme exception** : à trois reprises dans ce projet (bascule vers la taxonomie visuelle au Playtest #2, collapse du système de badges au Playtest #3), la même alerte est venue du même endroit — la charge cognitive à la table, ressentie jusque dans le chef du concepteur en solo. Quand les règles s'empilent au point de dépasser sa propre limite, ce n'est pas un signal à documenter davantage : c'est un signal à couper. Ce principe prime sur tous les autres en cas de conflit — y compris sur le principe 6, si une signature de peuple s'avérait un jour de trop.
 
 ---
 
@@ -95,7 +96,7 @@ Divisé verticalement en 3 sections (Gauche / Centre / Droite), quel que soit le
 
 ### Dés
 
-6 faces : Épées croisées (1-2 touches mêlée), Épée (1 touche mêlée), Cible (1-2 touches tir), Drapeau (retraite), Couronne (capacité spéciale), **Arcane** (échec universel par défaut, D001 — deux exceptions croissantes en V1/Phase 2, voir §5.2).
+6 faces : Épées croisées (1 touche en mêlée), Épée (1 touche en mêlée, sauf unité Faible), Cible (1 touche à distance), Drapeau (retraite), Couronne (capacité spéciale), **Arcane** (échec universel par défaut, D001 — deux exceptions croissantes en V1/Phase 2, voir §5.2).
 
 ### Unités
 
@@ -109,22 +110,19 @@ Divisé verticalement en 3 sections (Gauche / Centre / Droite), quel que soit le
 
 Pas de distinction Infanterie standard/élite par le nombre de figurines ou la base (cohérent avec le principe 3 : la différenciation élite/standard passe par le profil, pas par l'effectif).
 
-> ⚠️ **Point ouvert critique — Mûmakil**
-> La figurine ne tient pas sur un hex standard (10 cm). Sujet sensible à traiter en profondeur, hors de ce document de cadrage. Pistes possibles : hex agrandi dédié, occupation de plusieurs hexes, ou gabarit hors-grille avec règles de zone d'effet. À planifier comme tâche de conception à part entière. Emmanuel a déjà une idée de règle dédiée pour l'impact au contact (distincte de [Charge écrasante] — D029) ; à formaliser au moment de rédiger ce profil.
-
 ---
 
 ## 5. Axes d'adaptation — BLv2 vers la Terre du Milieu
 
 ### 5.1 Priorité haute — Cœur de règles
 
-- [ ] Système de commandement : deck de cartes C&C (cartes de section + Tactiques). En Épique (3v3), chaque joueur contrôle une Section (Gauche/Centre/Droite) plutôt qu'une armée nommée — pas de sous-force nominative par joueur (D016)
-- [ ] Dés : reprise des faces BLv2 (mêlée/tir/retraite/capacité/miss)
-- [ ] Types d'unités : Infanterie, Cavalerie, Chars, Créature, Machine de guerre, Artillerie
-- [ ] Règle Faible (dernière figurine), Contre-attaque universelle, Avance et Poursuite
-- [ ] Règles spéciales de base : [Armure X], [Protection X], [Férocité], [Mobilité X]
-- [ ] Formats Escarmouche / Normal / Épique — tables et volumes d'unités par format
-- [ ] **Cas Mûmakil** : règle et gabarit dédiés (point ouvert critique, §4)
+- [x] Système de commandement : deck de cartes C&C (cartes de section + Tactiques). En Épique (3v3), chaque joueur contrôle une Section (Gauche/Centre/Droite) plutôt qu'une armée nommée — pas de sous-force nominative par joueur (D016). Voir `[[Cartes_Commandement]]`.
+- [x] Dés : reprise des faces BLv2 (mêlée/tir/retraite/capacité/miss), stabilisées depuis la refonte taxonomie (D059/D060, suppression de la double-touche)
+- [x] Types d'unités : Infanterie, Cavalerie, Créature définis et éprouvés (Playtest #3) ; Chars et Artillerie définis mais **hors périmètre V1** (aucun porteur actif)
+- [x] Règle Faible (dernière figurine), Contre-attaque universelle, Avance et Poursuite
+- [x] Règles spéciales de base : [Armure X], [Protection X], [Férocité], [Mobilité X]
+- [x] Formats Escarmouche / Normal / Épique — Normal testé au Playtest #1, Épique (6 joueurs, 3v3) testé au Playtest #3
+- [x] **Cas Mûmakil** : règle et gabarit mécanique dédiés (D079, `02 - Factions/Harad.md`). Gabarit physique (plateau 65 mm) en cours de fabrication — suivi en §6, production.
 
 ### 5.2 Priorité moyenne — Héros et monstres avancés
 
@@ -137,50 +135,40 @@ Pas de distinction Infanterie standard/élite par le nombre de figurines ou la b
 
 ### 5.3 Priorité basse — Contenu et scénarios
 
-- [x] Peuples à couvrir en V1 : **Gondor et ses fiefs**, **Rohan**, **Khand**, **Mordor** (`02 - Factions/Mordor.md`, D036), **Orientaux** (`02 - Factions/Orientaux.md`, ex-Easterling D038, renommé D072) et **Harad** (`02 - Factions/Harad.md`, D078) — **les 6 rosters sont désormais re-exprimés sous le système de badges universels (D073-D078).**
+- [x] Peuples à couvrir en V1 : **Gondor et ses fiefs**, **Rohan**, **Khand**, **Mordor** (`02 - Factions/Mordor.md`, D036), **Orientaux** (`02 - Factions/Orientaux.md`, ex-Easterling D038, renommé D072) et **Harad** (`02 - Factions/Harad.md`, D078) — **les 6 rosters sont désormais re-exprimés sous le système de badges collapsés (D080/D081, P7c).**
 - [ ] Scénarios : Pelennor comme référence Épique, autres affrontements en Normal/Escarmouche
-- [ ] Construction d'armée : valeurs en points par unité et héros
+- [x] Construction d'armée : valeurs en points par unité — barème matriciel complet (`[[Regles_Points]]`), les 6 rosters chiffrés
+- [ ] Construction d'armée : valeurs en points pour les héros (dépend des règles de héros, Phase 2)
 
 ---
 
 ## 6. Feuille de route
 
-Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 semaines.
+Convention fin septembre 2026 — cadrage lancé le 18 juillet. Verrouillage du système visé au 18 août, laissant environ six semaines pour la couche héros, le scénario Pelennor et la production physique avant la convention.
 
-### Phase 1 — Fondations (cœur de règles) ← EN COURS
+### Sprint « big bang » (P1-P7, 2-18 août) — clos
 
-> 🔄 **Pivot majeur — refonte en cours (2026-08-02, Playtest #2, D059/D060).**
-> Le _easy-to-play_ n'étant pas atteint (joueurs neufs incapables de distinguer les unités et de retenir les règles), les fondations passent au **C&C pur à taxonomie visuelle** : couleur = classe = nombre de dés, règles dérivées de _classe × type × attaque_, badge **Élite**, rares **unités signature**. Un sprint de refonte **P1→P7** court jusqu'au 18/08 (voir `[[Playtest2_Compte-rendu]]` et Todoist) — **P1 fait** (`[[Regles_Base]]` v0.6, D061). La réécriture propre de ces principes et de la feuille de route ci-dessous est planifiée en fin de sprint (**P7b**) — cette section sera alors remise à plat.
+Refonte complète du socle de règles, déclenchée par l'échec de l'objectif *easy-to-play* au Playtest #2 (joueurs neufs incapables de distinguer les unités ou de retenir les règles). Rétrospective courte — le détail décision par décision (D059 à D085) vit au §8 Journal de décisions.
 
-- [ ] Formaliser le corps de règles de base (commandement, dés, types d'unités, Faible, contre-attaque, avance/poursuite, règles spéciales de base)
-- [ ] Choisir le format de travail initial : Normal (plus rapide à tester qu'Épique)
-- [x] **Playtest #1 joué (2026-07-25)** — Camp Bien (Rohan + Gondor + fiefs) vs Camp Mal (Khand + Easterling + Mordor), 1v1 Normal. Résultat 6–2 Mal en 7 tours. Débrief complet : `[[Playtest1_Compte-rendu]]` (D040-D046). Bilan : moteur de base fonctionnel, mais **partie étranglée au centre** — la plupart des règles neuves non éprouvées.
-- [ ] **Playtest #1b** — rejouer les règles non testées ([Horde], [Peur X], [Mur de bouclier], [Déploiement avancé]) dans un dispositif forçant l'engagement des ailes ; auditer le deck de commandement (répartition Gauche/Centre/Droite) pour éviter le centre-funnel avant tout passage à l'Épique. Seul Harad reste à rédiger côté profils.
+- **P1-P2** — Bascule vers la **taxonomie visuelle pure** (couleur = classe = nombre de dés, type lu au socle, mode au token) en remplacement de l'ancien système de profils écrits (D059/D060).
+- **P3-P4** — Chiffrage en matrice de points (`[[Regles_Points]]`) et re-expression des 6 rosters V1 sous badges Faction/Spéciale/Élite/Légende (D064-D078).
+- **P5** — Refonte du Mûmakil et de sa règle de Furie.
+- **P6** — Composants visuels (plateaux de mouvement colorés, tokens de mode).
+- **P7** — **Playtest #3** (D080-D084) : taxonomie visuelle validée sans réserve, mais empilement de badges jugé trop lourd même en solo par le concepteur → **collapse du système de badges** (D080/D081) : Faction devient un trait de peuple sans marqueur, badge secondaire plafonné à 1. Répercuté dans les 3 documents de règles et les 6 rosters (**P7c**, D085), puis réécriture de ce document (**P7d**, ce chantier).
 
-### Phase 2 — Héros, cas Mûmakil, montée en Épique
+### Jalon actuel — Verrouillage v1.0 jouable (18/08)
 
-- [ ] Développer les règles de héros (profils Standard/Majeur)
-- [ ] Développer la couche Leadership (manœuvres de héros sur la face Arcane, D034) et [Terreur] (X élevé)
-- [ ] Résoudre le cas Mûmakil (gabarit/règle dédiée)
-- [ ] Passer au format Épique (16×13), premier test à cette échelle
-- [ ] **Playtest #2**
+Revue de finalisation : cohérence croisée entre la grille de règles, le glossaire, le barème de points, les 6 rosters et les composants physiques ; ce document à jour ; aucun renvoi cassé entre fichiers. Marque la fin de la Phase 1 (fondations) et l'ouverture de la Phase 2 (héros).
 
-### Phase 3 — Contenu Pelennor
+### D'ici la convention (fin septembre)
 
-- [x] Profils d'unités pour les 6 peuples V1 (Gondor et fiefs, Rohan, Mordor, Harad, Khand, Orientaux)
-- [ ] Reprise et adaptation du travail déjà fait en cadrage 5 (forces, héros, objectifs narratifs) au nouveau système — répartition des peuples par Section plutôt que par sous-force nominative (D016)
-- [ ] Valeurs en points, équilibrage Bien/Mal, et limite d'enrôlement des unités légendaires par format (Escarmouche/Normal/Épique) — nécessaire pour arbitrer les quelques dominances strictes assumées en V1 entre profils d'un même peuple (D025)
-- [ ] **Playtest #3** (scénario Pelennor complet)
+- **Héros / Leadership** (Phase 2) : profils Standard/Majeur, couche Leadership sur la face Arcane (D034), [Terreur] (version renforcée de [Peur X], pour Nazgûl/Rois-Sorciers/Trolls majeurs).
+- **Scénario Pelennor** : rédaction des conditions de victoire narratives fidèles au texte de Tolkien, répartition des 6 peuples par Section (Gauche/Centre/Droite) plutôt que par sous-force nominative (D016).
+- **Production physique** : tokens de badge et de classe à commander chez Azaogames après prototypage ; plateaux de mouvement MDF colorés déjà réalisés pour Infanterie et Cavalerie, plateaux 65 mm et gabarit Mûmakil en cours.
+- **Playtest de validation finale** en configuration complète (6 joueurs, 3v3, Épique) puis **répétition générale** avant fin septembre.
 
-### Phase 4 — Finalisation convention
-
-- [ ] Livret de règles complet + aide de jeu imprimable
-- [ ] Fiches unités/héros imprimables
-- [ ] Répétition générale avant fin septembre
-
-> ⚠️ **Points ouverts**
-> - Calendrier resserré (10 semaines) — le découpage tient si chaque phase reste ~2-3 semaines max.
-> - **Commandement / centre-funnel (issu du Playtest #1, D040)** : le deck de section a concentré l'action au centre et laissé les ailes inactives. À résoudre (audit/rééquilibrage du deck, `[[Cartes_Commandement]]`) **avant** le passage à l'Épique 3v3, sous peine d'avoir des joueurs d'aile inactifs à la convention. Le commandement Épique multi-joueurs (Phase 2) doit garantir une activation régulière par section.
+> ⚠️ **Point ouvert**
+> Piste évoquée par Emmanuel (2026-08-15) : simplifier encore davantage en **abandonnant purement et simplement le badge Faction**, l'identité de peuple reposant alors sur les seuls badges Spéciale/Élite/Légende et sur les figurines elles-mêmes. Non tranché — cohérent avec le principe 8 (§3) si la charge résiduelle du trait de peuple se confirme comme un frein à l'usage. À évaluer en Phase 2, sans revenir sur le collapse déjà acté (D080/D081) tant que ce n'est pas décidé.
 
 ---
 
@@ -358,5 +346,9 @@ Convention fin septembre 2026 — cadrage lancé le 18 juillet, soit environ 10 
 *Version : 1.39 — Phase 1 — 2026-08-13. **P7c close — collapse de badges répercuté** (D085). `[[Regles_Base]]`, `[[Regles_Speciales]]`, `[[Regles_Points]]` et les 6 rosters (`02 - Factions/*.md`) réécrits pour appliquer D081 : Faction devient un trait de peuple imprimé une fois, badge secondaire plafonné à 1 (Spéciale/Élite/Légende), nouvelle famille Signature formalisée pour les pièces bespoke (Compagnie Grise, Mûmakil). Changements de coût localisés : Rohan (Garde du Roi à cheval 9→8), Mordor (Uruk-hai 7→6), Gondor (Chevaliers de Dol Amroth 8→7), Orientaux (total roster 19→21, retour au miroir de Gondor — [Mur de bouclier] D077 redevient sans porteur). Harad et Khand inchangés. Détail complet en D085. **Reste avant le jalon « Verrouillage v1.0 » (18/08) : réécriture du §3 (principes) et de la feuille de route (§6), fin de P7b.***
 
 *Version : 1.38 — Phase 1 — 2026-08-13. **Playtest #3 joué** (`[[Playtest3_Compte-rendu]]`) — solo, Emmanuel MJ des deux camps, six peuples déployés simultanément (Harad/Mûmakil compris). Résultat 11–9 Mal. Ajout D080-D084 : **taxonomie couleur = classe = dés validée sans réserve** (D080), clôt la question ouverte depuis D059 ; **collapse du système de badges** (D081) — Faction devient un trait de peuple (plus de token), chaque unité porte au maximum un badge (Spéciale/Élite/Légende), les pièces signature (Compagnie Grise, Mûmakil…) restent hors matrice — révise le cumul introduit par D073, répercussion mécanique renvoyée à **P7c** ; Furie du Mûmakil confirmée sans correctif (D082) ; contre-attaque du Mûmakil en point de vigilance (D083) ; équilibre de points confirmé, aucun déséquilibre à corriger (D084). Ce document journalise seulement — `[[Regles_Base]]`, `[[Regles_Speciales]]`, `[[Regles_Points]]` et les 6 rosters restent au système D073 (badges cumulables) tant que P7c n'est pas close. Réécriture du §3 (principes) et de la feuille de route (§6) différée à la clôture de P7c.*
+
+*Version : 1.40 — Phase 1 — 2026-08-15. **P7d — Réécriture du §3 (principes) et du §6 (feuille de route)**, solde de P7b différé jusqu'à la clôture de P7c pour n'écrire ce texte qu'une fois sur le système stabilisé. §3 : principe 3 reformulé (« identité lisible au plateau avant identité écrite au profil », reflète D059/D060) ; principe 6 précisé (asymétrie portée par une signature de peuple unique, trait de Faction, D080/D081) ; nouveau **principe 8** formalisant le pattern de simplification radicale observé à trois reprises (Playtest #2, Playtest #3), posé comme prioritaire sur les autres principes en cas de conflit. §6 entièrement réécrite : l'ancien suivi phase par phase (cases à cocher au fil de l'eau) remplacé par une rétrospective compacte du sprint P1-P7 (renvoi au §8 pour le détail), le jalon Verrouillage v1.0 (18/08), et les quatre chantiers restants jusqu'à la convention (héros/Leadership, scénario Pelennor, production physique, playtest final + répétition générale). Point ouvert ajouté : piste d'abandon complet du badge Faction évoquée par Emmanuel, non tranchée, renvoyée à la Phase 2. Aucune décision mécanique nouvelle — pas de numéro D, exécution de D080/D081/D084 déjà actées. **P7d close — dernière tâche avant le jalon « Verrouillage v1.0 » du 18/08.***
+
+*Version : 1.41 — Phase 1 — 2026-08-15. **Corrections de relecture sur P7d.** §4 : description des faces de dés corrigée (« 1-2 touches » sur Épées croisées/Cible était un résidu de l'ancienne règle de double-touche, supprimée depuis D060 — désormais 1 touche par face, cohérent avec `[[Regles_Base]]`). §4 : point ouvert critique Mûmakil supprimé — traité depuis D079 (refonte Mûmakil/Furie, `02 - Factions/Harad.md`). §5.1/5.3 : cases à cocher mises à jour pour refléter l'état réel du projet (cœur de règles, formats, points par unité tous acquis ; seuls les héros et la rédaction du scénario Pelennor restent ouverts). Aucune décision mécanique — pas de numéro D.*
 
 *Document de cadrage initial de Batailles de la Terre du Milieu (BdTdM), établi par adaptation de la structure de cadrage d'un projet jumeau, sans reprise de son contenu mécanique spécifique.*
