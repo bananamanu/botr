@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-16"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.25"
+version: "0.26"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -187,9 +187,13 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 **Ouverts :**
 1. **Bornes de l'échelle** — le plancher tombe à **3** (infanterie légère/tir léger) et le plafond monte à **~9** pour une cavalerie lourde maxée (Élite + [Armure 2] + signature, au-dessus de l'ancien 8 de BattleLore V2). À confirmer au playtest de la taxonomie (P7a) : bornes acceptables, ou faut-il resserrer la compression ?
 2. **Re-expression des 6 rosters (P4)** : appliquer la matrice, retirer les [Poursuite]/[Armure] écrits en dur (redondants), trancher les armures de faction (ex. [Armure 2] Dol Amroth / Cataphractaires), reconfirmer chaque case type × mode × classe.
-3. **Cartes bannière (vert/bleu/rouge)** — leur retour probable dans le deck de commandement active les unités **par couleur = classe**. Sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C), mais **point de veille** : un roster trop concentré sur une couleur devient dur à activer — à intégrer à la conception du deck, pas au chiffrage.
+3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
 
 ---
+
+*Version : 0.26 — Phase 1 — 2026-08-16. **D088 — clôture du point de veille D064 sur les cartes bannière.** §8 : point ouvert #3 marqué résolu — les cartes bannière reviennent sous le nom Classe Verte/Bleue/Rouge dans `[[Cartes_Commandement]]` §4.2, activation par couleur = classe, sans impact sur le chiffrage. Aucun changement de coût dans ce document.*
+
+*Version : 0.25 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Lien `[[Document de cadrage]]` corrigé en `[[Document_de_cadrage]]` (nom réel du fichier). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 0.24 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** §3 réécrite : Faction (§3.2) devient un trait de peuple systématique par unité (barème inchangé par peuple), badge secondaire (§3.1) plafonné à **1** parmi Spéciale/Élite/Légende (fin du cumul jusqu'à 3, D073). Barème §3.3 réorganisé avec la colonne Note distinguant Faction / badge secondaire / socle libre ; [Défense X] ajoutée (= [Armure X], nom Faction Gondor-Orientaux) ; [Mur de bouclier] repasse sans porteur actif. Exemple Dol Amroth (§7) recalculé : 8→**7 pts** (perd le cumul Spéciale+Élite, un seul badge retenu — Élite). Collisions de coût locales acceptées par construction.*
 
@@ -212,8 +216,6 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 *Version : 0.17 — Phase 1 — 2026-08-08. **[Horde] nerfée** (P4, D071), forfait 3→2. **[Peur X] devenue intrinsèque au type Créature** (toute créature en porte 1 sans supplément), retirée du barème à cocher au profil.*
 
 *Version : 0.16 — Phase 1 — 2026-08-08. **[Mercenaire] ajoutée au barème** (P4, D070), −2 forfait — premier coût négatif du système. Type Chars et [Plateforme de tir X] retirés des pièces bespoke (sans porteur, l'Aurige de Khand devient cavalerie standard).*
-
-*Version : 0.25 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Lien `[[Document de cadrage]]` corrigé en `[[Document_de_cadrage]]` (nom réel du fichier). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 0.15 — Phase 1 — 2026-08-08. **[Arme de jet X] restaurée au barème** (P4, D068), 1×X — coupure P2 caduque.*
 

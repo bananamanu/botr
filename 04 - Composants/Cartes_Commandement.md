@@ -5,7 +5,7 @@ phase: "1"
 statut: "brouillon-a-tester"
 date_maj: "2026-08-16"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.5"
+version: "0.8"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -97,23 +97,23 @@ Chaque carte de commandement comporte les informations suivantes, du haut vers l
 
 | Format | Plateau | Sections | Main de départ | Taille du deck |
 |---|---|---|---|---|
-| **Escarmouche** | 10 × 7 | 3 (G / C / D) | 4 cartes | 43 cartes |
+| **Escarmouche** | 10 × 7 | 3 (G / C / D) | 4 cartes | 45 cartes |
 | **Normal** | 13 × 9 | 3 (G / C / D) | 5 cartes | 60 cartes |
-| **Épique** | 16 × 13 | 3 (G / C / D) | _À définir_ | _À définir_ |
+| **Épique** | 13 × 17 | 3 (G / C / D) | 5 cartes (main de camp, tenue par le joueur Centre) | 60 cartes (deck Normal réutilisé tel quel) |
 
-> ⚠️ **Point ouvert**
-> La composition du deck Épique (taille, éventuel découpage supplémentaire des sections pour 6 joueurs) est réservée à la Phase 2, après le Playtest #1 en format Normal. Voir aussi §7.
+> 🔄 **Résolu (D087)**
+> Le format Épique réutilise le deck Normal sans modification — même 60 cartes, même main de départ. La montée en puissance à 6 joueurs vient du **râtelier de Commandement** partagé (§7), pas d'un deck dédié. Adapté d'*Epic BattleLore* (Days of Wonder, V1, 2007).
 
 ### 3.2 Logique de différenciation des decks
 
 Le deck Escarmouche est un **sous-ensemble strict** du deck Normal. On retire les cartes qui activeraient proportionnellement trop d'unités sur un plateau 10×7 et réduiraient la tension tactique :
 
-- Les **Attaque** (G / C / D) : 3 unités par section — trop fort sur un front réduit. **−15 cartes.**
+- Les **Attaque** (G / C / D) : 3 unités par section — trop fort sur un front réduit. **−13 cartes.**
 - Les **En avant** : 2 unités dans chaque section, soit 6 activations — disproportionné. **−2 cartes.**
 
-**Total retiré : 17 cartes. Deck Escarmouche : 43 cartes.**
+**Total retiré : 15 cartes. Deck Escarmouche : 45 cartes.**
 
-Toutes les autres cartes, y compris les Percées (activation variable selon la main), sont conservées. Sur un plateau réduit avec une main de 4 cartes, la valeur de commandement est naturellement plus basse qu'en Normal, ce qui calibre automatiquement leur puissance.
+Toutes les autres cartes, y compris les Percées (activation variable selon la main) et les cartes Classe (activation variable par couleur), sont conservées. Sur un plateau réduit avec une main de 4 cartes, la valeur de commandement est naturellement plus basse qu'en Normal, ce qui calibre automatiquement leur puissance.
 
 ### 3.3 La valeur de commandement par format
 
@@ -134,15 +134,18 @@ Les cartes se répartissent en deux catégories :
 
 **A — Cartes de section** : activent un nombre défini d'unités dans une ou plusieurs sections du champ de bataille.
 
-**B — Cartes tactiques** : activent des unités selon leur **type** (cavalerie, infanterie, unités à distance) plutôt que leur position, ou produisent des effets spéciaux.
+**B — Cartes tactiques** : activent des unités selon leur **type** (cavalerie, infanterie, unités à distance) ou leur **classe** (couleur) plutôt que leur position, ou produisent des effets spéciaux.
 
 ---
 
 ### 4.2 Deck Normal — 60 cartes
 
-#### Cartes de section (48 cartes)
+> 🔄 **Résolu (D088)**
+> Le deck Normal reprend désormais le deck de *BattleLore* (Days of Wonder, V1, 2006) à la lettre — composition et quantités identiques, carte pour carte. Les cartes bannière (Vert/Bleu/Rouge) redeviennent jouables telles quelles depuis la réintroduction de la classe = couleur du plateau (D059-D061) : leur mécanisme d'activation « par couleur » colle exactement à notre taxonomie. Seule « Battlelore » a nécessité une adaptation (nos dés n'ont pas de faces bannière) — elle est notre « Cri de guerre » depuis D019.
 
-Ces cartes activent des unités selon leur position sur le plateau.
+#### Cartes de section (42 cartes)
+
+Ces cartes activent des unités selon leur position sur le plateau. Le Centre reçoit systématiquement plus de cartes Attaque et Patrouille que les ailes (5 contre 4 et 5 contre 3) — répartition héritée telle quelle de *BattleLore* V1, pas une invention locale.
 
 **Éclaireur** — Section unique, 1 unité + avantage de pioche _(6 cartes — présentes en Escarmouche)_
 
@@ -152,21 +155,21 @@ Ces cartes activent des unités selon leur position sur le plateau.
 | Éclaireur Centre | 2 | Activez 1 unité dans la section centrale. Au lieu de piocher normalement en fin de tour, piochez 2 cartes et défaussez-en 1. |
 | Éclaireur Droite | 2 | Activez 1 unité dans la section droite. Au lieu de piocher normalement en fin de tour, piochez 2 cartes et défaussez-en 1. |
 
-**Patrouille** — Section unique, 2 unités _(15 cartes — présentes en Escarmouche)_
+**Patrouille** — Section unique, 2 unités _(11 cartes — présentes en Escarmouche)_
 
 | Carte | Nb | Effet |
 |---|---|---|
-| Patrouille Gauche | 5 | Activez 2 unités dans la section gauche. |
+| Patrouille Gauche | 3 | Activez 2 unités dans la section gauche. |
 | Patrouille Centre | 5 | Activez 2 unités dans la section centrale. |
-| Patrouille Droite | 5 | Activez 2 unités dans la section droite. |
+| Patrouille Droite | 3 | Activez 2 unités dans la section droite. |
 
-**Attaque** — Section unique, 3 unités _(15 cartes — **absentes du deck Escarmouche**)_
+**Attaque** — Section unique, 3 unités _(13 cartes — **absentes du deck Escarmouche**)_
 
 | Carte | Nb | Effet |
 |---|---|---|
-| Attaque Gauche | 5 | Activez 3 unités dans la section gauche. |
+| Attaque Gauche | 4 | Activez 3 unités dans la section gauche. |
 | Attaque Centre | 5 | Activez 3 unités dans la section centrale. |
-| Attaque Droite | 5 | Activez 3 unités dans la section droite. |
+| Attaque Droite | 4 | Activez 3 unités dans la section droite. |
 
 **Percée** — Section unique, activation variable _(6 cartes — présentes en Escarmouche)_
 
@@ -186,45 +189,56 @@ Ces cartes activent des unités selon leur position sur le plateau.
 
 ---
 
-#### Cartes tactiques (12 cartes — toutes présentes en Escarmouche)
+#### Cartes tactiques (18 cartes — toutes présentes en Escarmouche)
 
-Ces cartes activent des unités selon leur type ou produisent des effets spéciaux.
+Ces cartes activent des unités selon leur classe ou leur type, ou produisent des effets spéciaux.
 
 > ⚠️ **Note terminologique**
 > La carte "Contre-attaque" décrite ci-dessous est une **carte de commandement** jouée volontairement depuis la main. Elle est distincte de la **règle universelle de contre-attaque** (réaction automatique disponible pour toute unité survivante après avoir subi une attaque au corps-à-corps). Voir [[Regles_Base]] §7.
 
+**Classe** — activation par couleur de classe _(6 cartes, 3 nouvelles — anciennement les cartes bannière de BattleLore V1)_
+
 | Carte | Nb | Effet |
 |---|---|---|
-| Charge de cavalerie | 3 | Activez autant d'unités de Cavalerie que votre valeur de commandement, dans n'importe quelle section. Toutes les unités activées combattent à **+1 dé** en mêlée. Elles ne peuvent pas tirer à distance. |
-| Assaut d'infanterie | 2 | Activez autant d'unités d'Infanterie que votre valeur de commandement, dans n'importe quelle section. Ces unités doivent être adjacentes entre elles, formant un groupe continu. Elles peuvent se déplacer de 2 hexagones et combattre en mêlée. Elles ne peuvent pas tirer à distance. |
-| Pluie de flèches | 2 | Activez toutes vos unités capables de tirer à distance, dans n'importe quelle section. Ces unités tirent deux fois ce tour, mais ne peuvent pas se déplacer ni tirer à bout portant. |
+| Classe Verte | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🟢 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🟢, activez 1 unité de votre choix. |
+| Classe Bleue | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🔵 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🔵, activez 1 unité de votre choix. |
+| Classe Rouge | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🔴 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🔴, activez 1 unité de votre choix. |
+
+**Autres cartes Tactiques** _(12 cartes)_
+
+| Carte | Nb | Effet |
+|---|---|---|
+| Charge de cavalerie | 3 | Activez autant d'unités de Cavalerie que votre valeur de commandement, dans n'importe quelle section. Les unités 🔴 ainsi activées peuvent se déplacer de 3 cases et batailler quand même (exception à la règle « bouger ou frapper » du 🔴, §6.1). Toutes les unités activées combattent à **+1 dé** en mêlée pour toute la durée du tour. Elles ne peuvent pas tirer à distance. Si vous ne contrôlez aucune unité de Cavalerie, activez 1 unité de votre choix. |
+| Assaut d'infanterie | 2 | Activez autant d'unités d'Infanterie que votre valeur de commandement, dans n'importe quelle section. Ces unités doivent être adjacentes entre elles, formant un groupe continu. Elles peuvent se déplacer de 2 hexagones et combattre en mêlée. Elles ne peuvent pas tirer à distance. Si vous ne contrôlez aucune unité d'Infanterie, activez 1 unité de votre choix. |
+| Pluie de flèches | 2 | Activez toutes vos unités capables de tirer à distance, dans n'importe quelle section. Ces unités tirent deux fois ce tour, mais ne peuvent pas se déplacer ni tirer à bout portant. Si vous ne contrôlez aucune unité à distance, activez 1 unité de votre choix. |
 | Ordre direct | 2 | Activez 1 unité de votre choix, dans n'importe quelle section. Cette unité combat à **+1 dé** pour toute la durée du tour. |
 | Contre-attaque | 2 | Jouez cette carte en réponse à la carte que vient de jouer votre adversaire. Vous exécutez le même ordre que lui : si c'est une carte de section, la section gauche devient la droite et vice-versa. Si c'est une carte tactique, appliquez l'effet identique. |
 | Cri de guerre | 1 | Lancez autant de dés de bataille que votre valeur de commandement. Pour chaque face **Épée** ou **Épées croisées** obtenue, activez 1 unité de mêlée de votre choix. Pour chaque face **Cible** obtenue, activez 1 unité à distance de votre choix. Pour chaque face **Couronne** obtenue, activez 1 unité de votre choix. Toutes les unités ainsi activées combattent à **+1 dé** pour ce tour. Puis mélangez la défausse avec la pioche. |
 
 > 🎲 **Note de design — Cri de guerre**
-> La carte utilise les faces des dés comme mécanisme de sélection d'unités : Épée et Épées croisées → mêlée, Cible → distance, Couronne → libre. Les faces Drapeau et Arcane n'activent aucune unité. La pioche est mélangée immédiatement, quel que soit le résultat des dés. Renommée depuis "Arcanes de guerre" (hérité de BattleLore V1) : le nom d'origine évoquait une magie de bataille incompatible avec l'absence de couche pouvoirs/magie en V1 (D001, D010) — le mécanisme lui-même n'a jamais invoqué de sort, c'est une simple activation aléatoire par dés.
+> La carte utilise les faces des dés comme mécanisme de sélection d'unités : Épée et Épées croisées → mêlée, Cible → distance, Couronne → libre. Les faces Drapeau et Arcane n'activent aucune unité. La pioche est mélangée immédiatement, quel que soit le résultat des dés. Adaptée de la carte éponyme « Battlelore » (BattleLore V1) — celle-ci active par **couleur de dé obtenue** (nos dés BattleLore V2 n'ont pas de faces bannière), remplacée ici par une activation par **symbole de dé**, seule modification nécessaire à la reprise du deck V1 (D088). Le nom "Cri de guerre" date de D019 (étape intermédiaire "Ruée générale", depuis "Arcanes de guerre" jugé trop connoté magie).
 
 ---
 
 ### 4.3 Récapitulatif comparatif
 
-| Catégorie | Normal (60) | Escarmouche (43) |
+| Catégorie | Normal (60) | Escarmouche (45) |
 |---|---|---|
 | Éclaireur (G / C / D) | 6 | 6 |
-| Patrouille (G / C / D) | 15 | 15 |
-| **Attaque (G / C / D)** | **15** | **—** |
+| **Patrouille (G / C / D)** | **11** | **11** |
+| **Attaque (G / C / D)** | **13** | **—** |
 | Percée (G / C / D) | 6 | 6 |
 | En marche | 2 | 2 |
 | **En avant** | **2** | **—** |
 | Encerclement | 2 | 2 |
+| **Classe (Verte/Bleue/Rouge)** | **6** | **6** |
 | Charge de cavalerie | 3 | 3 |
 | Assaut d'infanterie | 2 | 2 |
 | Pluie de flèches | 2 | 2 |
 | Ordre direct | 2 | 2 |
 | Contre-attaque | 2 | 2 |
 | Cri de guerre | 1 | 1 |
-| **Total** | **60** | **43** |
+| **Total** | **60** | **45** |
 
 ---
 
@@ -272,12 +286,51 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 
 ## 7. Commandement à plusieurs joueurs — format Épique
 
-> ⚠️ **Point ouvert — non requis avant la Phase 2**
-> Le Playtest #1 et le Playtest #2 se jouent tous les deux en format Normal, à 1 joueur par camp (voir [[Regles_Base]] §5.5). Cette section reste à concevoir avant le premier test en format Épique (6 joueurs, 3v3), prévu en Phase 2 — tâche "Passer au format Épique" du plan de projet.
->
-> Ce qui est déjà tranché (D016 du [[Document_de_cadrage]]) : en Épique, chaque joueur contrôle une **Section** (Gauche/Centre/Droite) plutôt qu'une armée nommée — pas de sous-force nominative par joueur. La répartition des peuples entre sections est une décision de scénario (Phase 3), pas une règle de commandement.
->
-> Reste à trancher le jour venu : les 3 joueurs d'un même camp jouent-ils une main commune (décidée ensemble) ou une sous-main individuelle par section ? Comment se répartissent les cartes multi-sections (En marche, En avant, Encerclement) ou les cartes tactiques qui ne visent pas une section précise (Charge de cavalerie, Cri de guerre) entre les 3 joueurs d'un camp ? Ces questions seront rouvertes avant ce test, pas avant.
+> 🔄 **Résolu (D087, note mise à jour D088)**
+> Adapté d'*Epic BattleLore* (Days of Wonder, extension V1, 2007), avec une seule simplification restante : pas de cartes Lore (pas de couche magie en V1, D001/D010). Les cartes Classe (ex-bannières, D088) sont incluses comme le reste du deck Normal réutilisé tel quel — aucune règle Épique spécifique ne les concerne. Déjà tranché en amont (D016) : chaque joueur contrôle une **Section** (Gauche/Centre/Droite), pas de sous-force nominative.
+
+### 7.1 Rôles
+
+Chaque camp compte 3 joueurs, un par Section. Le camp ne tient qu'**une seule main**, comme en format Normal (§5.1-§5.4 de [[Regles_Base]]) — c'est le **joueur Centre** qui la tient et qui décide, à chaque tour de son camp, quelle(s) carte(s) jouer, en concertation avec ses deux coéquipiers Gauche et Droite.
+
+Une fois la carte choisie, chaque joueur déplace et fait combattre les unités de **sa propre** Section : le joueur Centre ne joue pas à la place de ses coéquipiers, il choisit seulement quel ordre est donné. Sur une carte multi-sections (En marche, En avant, Encerclement) ou une carte Tactique touchant plusieurs sections (Charge de cavalerie, Cri de guerre, etc.), chaque joueur résout l'activation de ses propres unités concernées.
+
+> 💡 **Exemple de jeu**
+> Le camp Bien joue « En avant » (2 unités par section). Le joueur Centre annonce la carte ; chacun des 3 joueurs déplace et fait combattre 2 de ses propres unités, dans sa propre Section.
+
+**Transfert de contrôle en cours de tour.** Si une unité franchit la ligne séparant deux Sections au cours d'un même tour, le joueur qui a initié son mouvement la contrôle jusqu'à la fin du tour. Au tour suivant, elle passe sous le contrôle du joueur de la Section où elle se trouve désormais.
+
+### 7.2 Le râtelier de Commandement
+
+En plus de sa main, chaque camp peut piocher dans un **râtelier commun** de 3 cartes, visibles des deux camps, posé à côté de la pioche. Avant le premier tour, remplir le râtelier avec les 3 cartes du dessus du deck Normal (§3, 60 cartes — deck unique, partagé entre les deux camps comme en Normal, §1.3).
+
+À la fin de son tour, si une carte a été prélevée dans le râtelier, un camp pioche une carte de remplacement depuis la pioche et la place dans le râtelier (visible des deux camps) — le râtelier doit toujours compter 3 cartes en début de tour. Si les 3 cartes du râtelier sont un jour toutes des cartes Tactiques, défaussez-les et repiochez 3 nouvelles cartes : le râtelier doit toujours contenir au moins une carte de section une fois reconstitué. Si la pioche s'épuise, mélangez la défausse pour former une nouvelle pioche.
+
+### 7.3 Déroulement du tour
+
+À son tour, un camp joue **soit** :
+
+- **jusqu'à 2 cartes de section** — si 2 cartes sont jouées, l'une doit venir de sa main, l'autre du râtelier (si une seule est jouée, elle peut venir indifféremment de la main ou du râtelier) ;
+- **soit une seule carte Tactique**, venant de sa main ou du râtelier.
+
+Un camp ne peut jamais combiner une carte de section et une carte Tactique dans le même tour, ni jouer deux cartes Tactiques dans le même tour.
+
+Si un camp joue une carte Tactique **prise dans le râtelier**, il ne pioche **pas** de carte de remplacement pour sa main en fin de tour — seul le râtelier est reconstitué (§7.2). S'il joue une carte Tactique **de sa main**, il pioche normalement en fin de tour, comme en Normal.
+
+> 💡 **Exemple de jeu** *(adapté d'Epic BattleLore)*
+> Le camp Mal joue « Attaque Gauche » (sa main) et « Patrouille Droite » (le râtelier) : 3 unités activées à gauche, 2 à droite, dans le même tour.
+
+### 7.4 Valeur de commandement
+
+La valeur de commandement reste égale au nombre de cartes dans la **main du camp** (celle du joueur Centre) — les cartes présentes dans le râtelier ne comptent jamais dans ce calcul, même si le camp vient d'en jouer une.
+
+### 7.5 Erratum Épique — Contre-attaque
+
+Si l'adversaire vient de jouer 2 cartes de section (§7.3), « Contre-attaque » n'en contre qu'**une seule**, au choix du camp qui contre.
+
+### 7.6 Ordre de jeu
+
+L'alternance des tours entre les deux camps reste celle du format Normal — un camp joue, puis l'autre, sans changement lié au nombre de joueurs. Le premier camp à jouer est déterminé par le scénario (voir le document de scénario concerné), pas par une règle de commandement.
 
 ---
 
@@ -285,6 +338,12 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.8 — Phase 1 — 2026-08-16. **Correction de cohérence — note d'intro §7.** La note D087 mentionnait encore « pas de bannières de couleur » comme simplification Épique, périmée depuis D088 (cartes Classe réintégrées au deck Normal, donc au râtelier Épique sans traitement spécial). Repérée en répondant à une question directe sur l'emplacement des règles Épique — aucune décision mécanique, pas de nouveau numéro D.*
+
+*Version : 0.7 — Phase 1 — 2026-08-16. **D088 — reprise littérale du deck de commandement de BattleLore V1**, en réponse à la réintroduction de la classe = couleur du plateau (D059-D061). **Supersède la note de D087** qui donnait les cartes bannière pour non intégrées : elles reviennent bel et bien, sous le nom **Classe Verte/Bleue/Rouge**, avec un texte identique à l'original (activation par couleur de classe, jamais de carte morte). §3.1, §3.2, §4.1, §4.2 et §4.3 réécrits : **Attaque** et **Patrouille** perdent leur symétrie (Centre renforcé : Attaque 5/4/4 au lieu de 5/5/5, Patrouille 5/3/3 au lieu de 5/5/5 — total cartes de section 48→**42**) ; 3 nouvelles cartes Classe ajoutées (6 cartes, total cartes Tactiques 12→**18**) ; deck Normal toujours à **60** cartes, calibrage exact retrouvé carte pour carte. Deck Escarmouche recalculé en conséquence (43→**45**, retrait Attaque 15→13). « Charge de cavalerie » gagne la clause Bannière Rouge d'origine (les 🔴 activés peuvent se déplacer 3 cases et batailler quand même) ; « Assaut d'infanterie » et « Pluie de flèches » gagnent leur clause de repli (« si vous ne contrôlez aucune unité éligible, activez 1 unité de votre choix »), comme dans le texte d'origine. « Cri de guerre » reste la seule carte modifiée par rapport à V1 (nos dés n'ont pas de faces bannière) — confirmé, aucun autre changement nécessaire.*
+
+*Version : 0.6 — Phase 1 — 2026-08-16. **D086 (format Épique corrigé, 13×17) et D087 (commandement à plusieurs joueurs en Épique).** §3.1 : plateau corrigé, deck/main Épique fixés (deck Normal réutilisé tel quel, 60 cartes/main de 5), point ouvert levé. **§7 entièrement réécrit**, adapté d'*Epic BattleLore* (Days of Wonder, V1, 2007) : rôle décisionnel du joueur Centre (main unique par camp, exécution distribuée par Section), râtelier de Commandement partagé (3 cartes, alimenté par le deck Normal), déroulement du tour (jusqu'à 2 cartes de section ou 1 carte Tactique, sources main/râtelier), règle de transfert de contrôle d'unité en cours de tour, valeur de commandement (râtelier hors calcul), erratum Contre-attaque (ne contre qu'une des deux cartes de section adverses), ordre de jeu (inchangé par rapport au Normal). Cartes bannière (D064) confirmées non intégrées, hors périmètre de cette passe.*
 
 *Version : 0.5 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Liens `[[Document de cadrage]]` corrigés en `[[Document_de_cadrage]]` (nom réel du fichier, 2 occurrences). Aucune décision mécanique — pas de numéro D.*
 
