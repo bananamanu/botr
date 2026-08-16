@@ -3,18 +3,18 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "2.2"
+version: "2.3"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
 
 > **Objet de ce document (refonte P4, D067 ; pivot badges universels D073).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Le système de règles écrites au profil est remplacé par **quatre badges fixes** (Faction/Spéciale/Élite/Légende), lisibles au plateau sans consulter aucune fiche — simplification demandée par Emmanuel au-delà même du barème à valeur variable de P1-P3, poussée plus loin par le pivot D073 (badge Spéciale universel, badge Légende pour les pièces uniques).
 >
-> Pas de héros — les unités dites « légendaires » ci-dessous sont des types de troupe d'élite au profil enrichi, pas des personnages individuels avec valeur de commandement (voir « Unité légendaire » dans la Terminologie fixée du [[Document de cadrage]] §7 ; distinction héros réservée à la Phase 2, §5.2).
+> Pas de héros — les unités dites « légendaires » ci-dessous sont des types de troupe d'élite au profil enrichi, pas des personnages individuels avec valeur de commandement (voir « Unité légendaire » dans la Terminologie fixée du [[Document_de_cadrage]] §7 ; distinction héros réservée à la Phase 2, §5.2).
 >
-> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.21, [[Regles_Points]] v0.19.
+> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
 
 ---
 
@@ -240,7 +240,7 @@ Une unité porte donc **Faction seule**, ou **Faction + un badge secondaire** �
 
 > 🎲 **Note de calcul.** Brut = 15 (Inf 🔵 mêlée) + [Défense 1] Faction (2) + [Relance 1] Spéciale (2) + [Inébranlable 1] Élite (2) + Légende mêlée (3) = 24 → round(24÷3)−1 = **7**. *(Inchangé — pièce exemptée du plafond à 1 badge secondaire, P7c.)*
 
-**Note narrative :** les Rangers du Nord d'Aragorn, arrivés par les Chemins des Morts, aux côtés de Legolas et Gimli — quatre combattants exceptionnels, plus une addition de talents individuels qu'une entité identifiable figurine par figurine. Aucun héros individuel attaché avec valeur de commandement (conforme au périmètre « pas de héros » — voir Terminologie « Unité légendaire », [[Document de cadrage]] §7) ; si des héros sont développés en Phase 2, la Compagnie Grise sera le candidat naturel pour en accueillir un.
+**Note narrative :** les Rangers du Nord d'Aragorn, arrivés par les Chemins des Morts, aux côtés de Legolas et Gimli — quatre combattants exceptionnels, plus une addition de talents individuels qu'une entité identifiable figurine par figurine. Aucun héros individuel attaché avec valeur de commandement (conforme au périmètre « pas de héros » — voir Terminologie « Unité légendaire », [[Document_de_cadrage]] §7) ; si des héros sont développés en Phase 2, la Compagnie Grise sera le candidat naturel pour en accueillir un.
 
 ---
 
@@ -265,6 +265,8 @@ Une unité porte donc **Faction seule**, ou **Faction + un badge secondaire** �
 - **[Réception de charge]** (Hommes d'armes de Dol Amroth) reste sans équivalent mécanique depuis sa coupe au tri du glossaire (P2) — l'identité anti-cavalerie de la pique est purement narrative dans cette version. Pas de remplacement proposé : à surveiller si un playtest révèle un vrai besoin de contre-charge dédiée.
 
 ---
+
+*Version : 2.3 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Liens `[[Document de cadrage]]` corrigés en `[[Document_de_cadrage]]` (nom réel du fichier, 2 occurrences). En-tête « Aligné sur » rafraîchi (v0.12/v0.21/v0.19 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 2.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** Faction ([Armure 1] renommée [Défense 1]) devient un trait de peuple universel — étendue à Lamedon (9) et toute la famille Rangers (10-12), auparavant sans Faction. Plafond à 1 badge secondaire (Spéciale/Élite/Légende) : Chevaliers de Dol Amroth (4) perd Spéciale, garde Élite, 8→**7 pts** (collision assumée avec Chevaliers de Minas Tirith) ; Rangers du Nord (12) perd Spéciale, garde Élite, coût inchangé (4). La Compagnie Grise (13), confirmée pièce Signature, est exemptée du plafond — inchangée. Récapitulatif des badges (§4) et points ouverts (§5) mis à jour.*
 

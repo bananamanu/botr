@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "meta"
 phase: "1"
 statut: "en-cours"
-date_maj: "2026-08-15"
+date_maj: "2026-08-16"
 tags: [BdTdM, type/meta, statut/en-cours]
-version: "1.41"
+version: "1.42"
 ---
 
 # Document de cadrage du projet
@@ -102,7 +102,7 @@ Divisé verticalement en 3 sections (Gauche / Centre / Droite), quel que soit le
 
 | Type | Figurines/hex | PV | Base |
 |---|---|---|---|
-| Infanterie | 6 | 1/fig. | 25 mm |
+| Infanterie | 4 | 1/fig. | 25 mm |
 | Cavalerie | 3 | 1/fig. | 40 mm |
 | Chars | 1 | Variable | 65 mm |
 | Créature / Machine de guerre | 1 | Variable | 65 mm (ex. Troll du Mordor) |
@@ -206,7 +206,7 @@ Revue de finalisation : cohérence croisée entre la grille de règles, le gloss
 | **Drapeau** | Face de dé forçant une retraite | "Bannière", "Étendard" |
 | **Faible** | Unité à 1 PV restant (dernière figurine) | "Blessé", "En déroute" |
 | **PV** | Points de Vie — une figurine = 1 PV | "Figurine" (dans un contexte de règle) |
-| **Infanterie** | 6 fig., base 25 mm | "Fantassin", "Piéton" |
+| **Infanterie** | 4 fig., base 25 mm | "Fantassin", "Piéton" |
 | **Cavalerie** | 3 fig., base 40 mm | "Cavalier", "Monture" |
 | **Chars** | 1/hex, base 65 mm | "Chariot" |
 | **Créature** | PV variables, jamais Faible | "Monstre", "Bête" |
@@ -348,6 +348,8 @@ Revue de finalisation : cohérence croisée entre la grille de règles, le gloss
 *Version : 1.38 — Phase 1 — 2026-08-13. **Playtest #3 joué** (`[[Playtest3_Compte-rendu]]`) — solo, Emmanuel MJ des deux camps, six peuples déployés simultanément (Harad/Mûmakil compris). Résultat 11–9 Mal. Ajout D080-D084 : **taxonomie couleur = classe = dés validée sans réserve** (D080), clôt la question ouverte depuis D059 ; **collapse du système de badges** (D081) — Faction devient un trait de peuple (plus de token), chaque unité porte au maximum un badge (Spéciale/Élite/Légende), les pièces signature (Compagnie Grise, Mûmakil…) restent hors matrice — révise le cumul introduit par D073, répercussion mécanique renvoyée à **P7c** ; Furie du Mûmakil confirmée sans correctif (D082) ; contre-attaque du Mûmakil en point de vigilance (D083) ; équilibre de points confirmé, aucun déséquilibre à corriger (D084). Ce document journalise seulement — `[[Regles_Base]]`, `[[Regles_Speciales]]`, `[[Regles_Points]]` et les 6 rosters restent au système D073 (badges cumulables) tant que P7c n'est pas close. Réécriture du §3 (principes) et de la feuille de route (§6) différée à la clôture de P7c.*
 
 *Version : 1.40 — Phase 1 — 2026-08-15. **P7d — Réécriture du §3 (principes) et du §6 (feuille de route)**, solde de P7b différé jusqu'à la clôture de P7c pour n'écrire ce texte qu'une fois sur le système stabilisé. §3 : principe 3 reformulé (« identité lisible au plateau avant identité écrite au profil », reflète D059/D060) ; principe 6 précisé (asymétrie portée par une signature de peuple unique, trait de Faction, D080/D081) ; nouveau **principe 8** formalisant le pattern de simplification radicale observé à trois reprises (Playtest #2, Playtest #3), posé comme prioritaire sur les autres principes en cas de conflit. §6 entièrement réécrite : l'ancien suivi phase par phase (cases à cocher au fil de l'eau) remplacé par une rétrospective compacte du sprint P1-P7 (renvoi au §8 pour le détail), le jalon Verrouillage v1.0 (18/08), et les quatre chantiers restants jusqu'à la convention (héros/Leadership, scénario Pelennor, production physique, playtest final + répétition générale). Point ouvert ajouté : piste d'abandon complet du badge Faction évoquée par Emmanuel, non tranchée, renvoyée à la Phase 2. Aucune décision mécanique nouvelle — pas de numéro D, exécution de D080/D081/D084 déjà actées. **P7d close — dernière tâche avant le jalon « Verrouillage v1.0 » du 18/08.***
+
+*Version : 1.42 — Phase 1 — 2026-08-16. **Revue de finalisation « Verrouillage v1.0 jouable » — corrections croisées.** Trois écarts trouvés par grep systématique du dépôt : **(1)** lien `[[Document de cadrage]]` (espaces) corrigé en `[[Document_de_cadrage]]` (nom réel du fichier) dans 8 documents vivants (`Regles_Base`, `Regles_Speciales`, `Regles_Points`, `Terrain`, `Cartes_Commandement`, `Gondor_et_Fiefs`) plus 2 documents historiques (`Playtest1_Avant-garde_sur_le_Pelennor`, `Playtest1_Compte-rendu`, sans bump de version — documents historiques non retouchés au fond) — lien mort depuis la création du projet, non détecté faute d'audit systématique. **(2)** §4 (table Unités) et §7 (Terminologie) corrigés : « Infanterie 6 fig. » → **4 fig.**, désynchronisé du rebase de durabilité D064 (P3) — seuls §3 et §6 avaient été révisés à P7d. **(3)** En-tête « Aligné sur » de 5 des 6 rosters (Gondor, Rohan, Khand, Mordor, Harad) rafraîchi vers les versions réelles post-P7c de `Regles_Base`/`Regles_Speciales`/`Regles_Points` (v0.13/v0.27/v0.24) — seul Orientaux était déjà à jour. Aucune décision mécanique, aucun impact sur les coûts ou les règles — corrections de forme uniquement. **Jalon « Verrouillage v1.0 » clos : grille ↔ glossaire ↔ points ↔ 6 rosters ↔ cadrage cohérents, aucun renvoi cassé restant.***
 
 *Version : 1.41 — Phase 1 — 2026-08-15. **Corrections de relecture sur P7d.** §4 : description des faces de dés corrigée (« 1-2 touches » sur Épées croisées/Cible était un résidu de l'ancienne règle de double-touche, supprimée depuis D060 — désormais 1 touche par face, cohérent avec `[[Regles_Base]]`). §4 : point ouvert critique Mûmakil supprimé — traité depuis D079 (refonte Mûmakil/Furie, `02 - Factions/Harad.md`). §5.1/5.3 : cases à cocher mises à jour pour refléter l'état réel du projet (cœur de règles, formats, points par unité tous acquis ; seuls les héros et la rédaction du scénario Pelennor restent ouverts). Aucune décision mécanique — pas de numéro D.*
 

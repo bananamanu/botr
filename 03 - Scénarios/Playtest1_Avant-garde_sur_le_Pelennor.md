@@ -10,7 +10,7 @@ version: "1.0"
 
 # Playtest #1 — « Avant-garde sur le Pelennor »
 
-> **Objet de ce document :** Scénario du premier test du cœur de règles, en réponse à la tâche Todoist « Rédiger le scénario de Playtest #1 » (due 24/07). Cadre de test **générique** en format Normal — *pas* le scénario canonique de la Bataille des Champs du Pelennor (celui-ci est le Playtest #3, `[[Document de cadrage]]` §6). But recherché : roder le moteur (commandement, dés, mêlée/tir, recul, contre-attaque, avance/poursuite) et **faire tomber un maximum de règles à la table**, avec 5 des 6 peuples du Pelennor (seul Harad manque — repoussé au Playtest #2 avec le Mûmakil).
+> **Objet de ce document :** Scénario du premier test du cœur de règles, en réponse à la tâche Todoist « Rédiger le scénario de Playtest #1 » (due 24/07). Cadre de test **générique** en format Normal — *pas* le scénario canonique de la Bataille des Champs du Pelennor (celui-ci est le Playtest #3, `[[Document_de_cadrage]]` §6). But recherché : roder le moteur (commandement, dés, mêlée/tir, recul, contre-attaque, avance/poursuite) et **faire tomber un maximum de règles à la table**, avec 5 des 6 peuples du Pelennor (seul Harad manque — repoussé au Playtest #2 avec le Mûmakil).
 >
 > Aligné sur `[[Regles_Base]]`, `[[Regles_Speciales]]`, `[[Cartes_Commandement]]` et `[[Regles_Points]]`. Rosters : `[[Gondor_et_Fiefs]]`, `[[Rohan]]`, `[[Khand]]`, `[[Mordor]]`, `[[Easterling]]`.
 
@@ -61,7 +61,7 @@ Avant que les deux ost ne s'ébranlent pour la grande bataille, leurs avant-gard
 | 🏚 **Ruine** | col. 3, rgée D | L'unité qui l'occupe gagne **[Protection 1]** (ignore 1 touche). → teste [Protection X]. |
 | 🌲 **Bois** | col. 11–12, rgée F | **Bloque la ligne de vue** ; l'Infanterie s'y arrête en entrant ; la Cavalerie n'y pénètre pas. |
 
-> ⚠️ **Point ouvert** — effets exacts du terrain à caler sur `[[Terrain]]` (doc non encore ouvert lors de la rédaction). Les trois effets ci-dessus sont ceux attendus d'après `[[Document de cadrage]]` §2 (terrain surélevé = +1 dé, réf. *Battle of Westeros*) et la table [Protection X] de `[[Regles_Speciales]]`.
+> ⚠️ **Point ouvert** — effets exacts du terrain à caler sur `[[Terrain]]` (doc non encore ouvert lors de la rédaction). Les trois effets ci-dessus sont ceux attendus d'après `[[Document_de_cadrage]]` §2 (terrain surélevé = +1 dé, réf. *Battle of Westeros*) et la table [Protection X] de `[[Regles_Speciales]]`.
 
 ---
 
@@ -150,7 +150,7 @@ Les cinq coûts jamais éprouvés en partie réelle, tous présents dans ce scé
 ---
 
 > 🔗 **Voir aussi**
-> `[[Document de cadrage]]` · `[[Regles_Base]]` · `[[Regles_Speciales]]` · `[[Cartes_Commandement]]` · `[[Regles_Points]]` · rosters des 5 peuples
+> `[[Document_de_cadrage]]` · `[[Regles_Base]]` · `[[Regles_Speciales]]` · `[[Cartes_Commandement]]` · `[[Regles_Points]]` · rosters des 5 peuples
 
 ---
 

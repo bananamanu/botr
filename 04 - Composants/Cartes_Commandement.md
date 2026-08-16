@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-19"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.4"
+version: "0.5"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -275,16 +275,18 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 > ⚠️ **Point ouvert — non requis avant la Phase 2**
 > Le Playtest #1 et le Playtest #2 se jouent tous les deux en format Normal, à 1 joueur par camp (voir [[Regles_Base]] §5.5). Cette section reste à concevoir avant le premier test en format Épique (6 joueurs, 3v3), prévu en Phase 2 — tâche "Passer au format Épique" du plan de projet.
 >
-> Ce qui est déjà tranché (D016 du [[Document de cadrage]]) : en Épique, chaque joueur contrôle une **Section** (Gauche/Centre/Droite) plutôt qu'une armée nommée — pas de sous-force nominative par joueur. La répartition des peuples entre sections est une décision de scénario (Phase 3), pas une règle de commandement.
+> Ce qui est déjà tranché (D016 du [[Document_de_cadrage]]) : en Épique, chaque joueur contrôle une **Section** (Gauche/Centre/Droite) plutôt qu'une armée nommée — pas de sous-force nominative par joueur. La répartition des peuples entre sections est une décision de scénario (Phase 3), pas une règle de commandement.
 >
 > Reste à trancher le jour venu : les 3 joueurs d'un même camp jouent-ils une main commune (décidée ensemble) ou une sous-main individuelle par section ? Comment se répartissent les cartes multi-sections (En marche, En avant, Encerclement) ou les cartes tactiques qui ne visent pas une section précise (Charge de cavalerie, Cri de guerre) entre les 3 joueurs d'un camp ? Ces questions seront rouvertes avant ce test, pas avant.
 
 ---
 
 > 🔗 **Voir aussi**
-> [[Regles_Base]] — [[Regles_Speciales]] — [[Document de cadrage]]
+> [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.5 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Liens `[[Document de cadrage]]` corrigés en `[[Document_de_cadrage]]` (nom réel du fichier, 2 occurrences). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 0.4 — Phase 1 — 2026-07-19.*
 *Première adaptation de Batailles de la Terre du Milieu (BdTdM) : reprise du système de deck générique, sans reprise du contenu spécifique à l'autre projet dont il est issu. Renommage "Bataille" → "Normal" (même plateau 13×9, mêmes decks). Dimensions du format Épique alignées sur le document de cadrage (16×13, D005). Annexe de correspondance BattleLore V1 retirée (plus nécessaire — terminologie déjà fixée). Carte "Arcanes de guerre" renommée en "Cri de guerre" (D019, via l'étape intermédiaire "Ruée générale") — connotation magique incompatible avec l'absence de couche pouvoirs en V1 (D001, D010) ; nom final choisi pour son ancrage Terre du Milieu, neutre entre les deux camps ; mécanisme de dés inchangé. Ajout d'une section dédiée au commandement multi-joueurs, explicitement différée à la Phase 2. Renommé depuis `BdVM_Cartes_Commandement.md`. **Correction** : "Charge de cavalerie", "Ordre direct" et "Cri de guerre" indiquaient un bonus **+2 dés**, reliquat d'une ancienne calibration de BdVM (abandonnée dans ce projet jumeau) — corrigé en **+1 dé**, cohérent avec le reste du système.*

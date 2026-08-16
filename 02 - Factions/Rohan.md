@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.2"
+version: "2.3"
 ---
 
 # Rohan — Profils d'unités
@@ -14,7 +14,7 @@ version: "2.2"
 >
 > [Prise de flanc] et [Vigilant] (signatures pièce-unique de l'Éored de cavalier et de l'Éored d'éclaireur, D049/D050) restent **abandonnées** (D069) — remplacées par le système de badges pur.
 >
-> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.22, [[Regles_Points]] v0.19.
+> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
 
 ---
 
@@ -205,6 +205,8 @@ version: "2.2"
 - **[Férocité] doublement utilisée** — badge Faction du Rohan (ce document) et ancien badge Spéciale de Mordor (à migrer vers [Relance 1] à son propre passage P4, D073). Aucun conflit mécanique (chaque peuple assigne ses propres badges), mais à garder en tête pour la cohérence narrative du glossaire une fois Mordor migré.
 
 ---
+
+*Version : 2.3 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** En-tête « Aligné sur » rafraîchi (v0.12/v0.22/v0.19 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 2.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** Faction déjà universelle depuis D074 : rien à changer à ce niveau. Plafond à 1 badge secondaire : Garde du Roi (8, 9), seul profil du roster à cumuler Élite+Légende, ne garde que **Légende**. À pied : coût inchangé (7, absorbé par la compression). À cheval : 9→**8 pts**. Récapitulatif (§4) et points ouverts (§5) mis à jour.*
 

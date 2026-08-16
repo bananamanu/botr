@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "1.2"
+version: "1.3"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -16,7 +16,7 @@ version: "1.2"
 >
 > **Mûmakil refondu — P5 (D079).** La Furie ([Bête incontrôlable]) était jugée trop punitive à la lecture (spirale PV-sur-PV, jamais déclenchée en partie) : elle devient un état d'agonie **déterministe** à 1 PV, fini le test de probabilité. **PV portés de 6 à 8**, nouveau **[Protection 1]** contre le tir (formalise le houserule PT2 — la bête traitée en cible molle). Conserve les intrinsèques du type Créature ([Armure 1] + [Peur 1], D071).
 >
-> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.26, [[Regles_Points]] v0.22.
+> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
 
 ---
 
@@ -206,6 +206,8 @@ Tombe sur la cible d'Emmanuel : **≈3 × unité standard** (5 pts). Les deux li
 - **Nouveau (P5/D079) : [Charge écrasante] (+15 brut) et [Inébranlable ∞] (+6 brut)** — premières valeurs jamais assignées à ces règles bespoke, par jugement analogique plutôt que par calcul. À confirmer au playtest de validation (P7a).
 
 ---
+
+*Version : 1.3 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** En-tête « Aligné sur » rafraîchi (v0.12/v0.26/v0.22 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 1.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c) — sans effet sur les coûts.** Harad était déjà conforme : [Poison] devient un trait de peuple plutôt qu'un badge (§1, §2 réécrits) ; le Mûmakil est confirmé pièce **Signature**, exemptée du plafond à 1 badge secondaire. Aucun changement de points.*
 

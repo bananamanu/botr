@@ -3,16 +3,16 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-07-19"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.1"
+version: "0.2"
 ---
 
 # Batailles de la Terre du Milieu — Règles de terrain
 
 > Ce document définit les règles de terrain de la Phase 1. Il couvre six types de terrain : campagne, terrain boisé, terrain surélevé (colline), cours d'eau, gué, pont et bâtiment. Les terrains fantastiques ou spéciaux propres à certains lieux de la Terre du Milieu sont réservés à une phase ultérieure, si besoin s'en fait sentir.
 >
-> Ce document est un complément détaillé à [[Regles_Base]] §6 (Mouvement) et §7.5 (Modificateurs de dés liés au terrain), qui donnent déjà la version condensée nécessaire au Playtest #1. Pas de terrain spécifique développé pour le scénario du Pelennor (D017 du [[Document de cadrage]]) : le champ de bataille y est majoritairement plat. Ces règles génériques couvrent les éléments ponctuels qu'un scénario pourrait vouloir introduire (bosquet, talus, cours d'eau, ruines).
+> Ce document est un complément détaillé à [[Regles_Base]] §6 (Mouvement) et §7.5 (Modificateurs de dés liés au terrain), qui donnent déjà la version condensée nécessaire au Playtest #1. Pas de terrain spécifique développé pour le scénario du Pelennor (D017 du [[Document_de_cadrage]]) : le champ de bataille y est majoritairement plat. Ces règles génériques couvrent les éléments ponctuels qu'un scénario pourrait vouloir introduire (bosquet, talus, cours d'eau, ruines).
 
 ---
 
@@ -271,9 +271,11 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 ---
 
 > 🔗 **Voir aussi**
-> [[Regles_Base]] — [[Regles_Speciales]] — [[Document de cadrage]]
+> [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.2 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Liens `[[Document de cadrage]]` corrigés en `[[Document_de_cadrage]]` (nom réel du fichier, 2 occurrences). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 0.1 — Phase 1 — 2026-07-19.*
 *Première adaptation de Batailles de la Terre du Milieu (BdTdM) : reprise du corps de règles générique (campagne, bois, colline, cours d'eau, gué, pont, bâtiment), sans reprise du contenu spécifique à l'autre projet dont il est issu. Retrait des exemples et références liés à cet autre univers, des notes de changelog propres à son historique de phases, et de toute mention de faction. Renommé depuis `BdVM_Terrain.md`.*

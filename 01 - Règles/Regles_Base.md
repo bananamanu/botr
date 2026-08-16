@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.13"
+version: "0.14"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -406,7 +406,7 @@ Quelle que soit la source de l'attaque (mêlée ou tir), la cible recule **toujo
 > Une unité du Rohan (déployée au sud) subit 2 Drapeaux, peu importe que l'attaque vienne de face, de flanc ou par une volée de tir en biais : elle recule de 2 hexagones vers le bord sud, en choisissant à chaque étape l'hexagone libre le plus proche de ce bord.
 
 > 🔄 **Modifié après playtest — 2026-07-25 (Playtest #1, D041)**
-> Adoption du recul façon *Memoir '44* (toujours vers le bord ami), en remplacement de la retraite directionnelle C&C classique (opposée à l'attaquant en mêlée, opposée à la ligne de vue au tir). Joué ainsi à la table et retenu : bien plus simple et mémorisable (principe 1 du [[Document de cadrage]]) — l'ancienne résolution était jugée « compliquée ou absurde à appliquer », en particulier pour arbitrer la direction exacte d'un tir en angle. Le nombre d'hexagones de recul (1 Drapeau = 1 hex) et les règles de blocage (§9.3) restent inchangés.
+> Adoption du recul façon *Memoir '44* (toujours vers le bord ami), en remplacement de la retraite directionnelle C&C classique (opposée à l'attaquant en mêlée, opposée à la ligne de vue au tir). Joué ainsi à la table et retenu : bien plus simple et mémorisable (principe 1 du [[Document_de_cadrage]]) — l'ancienne résolution était jugée « compliquée ou absurde à appliquer », en particulier pour arbitrer la direction exacte d'un tir en angle. Le nombre d'hexagones de recul (1 Drapeau = 1 hex) et les règles de blocage (§9.3) restent inchangés.
 
 ### 9.3 Obstacles sur le chemin
 
@@ -538,6 +538,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.8 — Phase 1 — 2026-08-05. **Définition mécanique du badge Élite (D064).** §2.2 : le badge Élite (marqueur au plateau, jusque-là seulement nommé en D060) confère **[Inébranlable 1]** — cran de granularité au sein d'une même case classe × type × mode. Mémo aligné. Son coût (+2) est traité dans [[Regles_Points]] (refonte P3, matrice). Non testé — validation en P7a.*
 
 *Version : 0.12 — Phase 1 — 2026-08-08. **Pivot transverse « badges universels » (D073).** §2.2 : le badge Élite gagne **Jamais Faible** (exempte l'unité de l'état Faible, en plus de [Inébranlable 1]) ; nouveau badge **Légende** créé (+1 dé de combat), réservé aux unités uniques, remplace l'empilement de règles bespoke sur les pièces signature. Le badge Spéciale devient **[Relance 1] pour tout le monde** (décision actée au niveau du barème, [[Regles_Points]] ; aucune mention dans ce document, qui ne fixait déjà pas le contenu du badge Spéciale). Mémo §2.2 et récapitulatif mis à jour. Répercussions sur les rosters déjà re-exprimés (Rohan, Mordor — Spéciale à migrer) renvoyées à leur propre passage.*
+
+*Version : 0.14 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Lien `[[Document de cadrage]]` corrigé en `[[Document_de_cadrage]]` (nom réel du fichier) — lien mort depuis la création du document. Aucune décision mécanique — pas de numéro D.*
 
 *Version : 0.11 — Phase 1 — 2026-08-08. **P4 — Orientaux re-exprimés** (D072) : mention de [Double Tir] en §2.4 mise à jour, règle sans porteur actif depuis ce passage. Aucun changement de mécanique.*
 

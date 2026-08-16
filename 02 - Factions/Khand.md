@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.2"
+version: "2.3"
 ---
 
 # Khand — Profils d'unités
@@ -16,7 +16,7 @@ version: "2.2"
 >
 > **Revue D076 (pivot badges universels, D073-D075) : aucun changement nécessaire.** [Mercenaire] reste le badge Faction — identité propre du peuple, pas un candidat à l'universalisation façon Rohan/Mordor, puisque l'exclusion de l'Aurige (le seul corps régulier) *est* le point de la règle. [Relance 1] est déjà le badge Spéciale depuis D070 : Khand anticipait sans le savoir le badge Spéciale universel. Aucune unité Élite ni Légende dans ce roster resserré — cohérent avec « bon marché et peu fiable », pas de tronc d'élite à afficher.
 >
-> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.24, [[Regles_Points]] v0.21.
+> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
 
 ---
 
@@ -134,6 +134,8 @@ version: "2.2"
 - **Aucune unité légendaire au sens strict** (D023) — roster confirmé plat, 5 profils, sans palier standard/élite/légendaire. Choix assumé pour une faction mercenaire : pas de hiérarchie de prestige à représenter.
 
 ---
+
+*Version : 2.3 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** En-tête « Aligné sur » rafraîchi (v0.12/v0.24/v0.21 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 2.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c) — sans effet sur les coûts.** Khand était déjà conforme (D076) : [Mercenaire] devient un trait de peuple plutôt qu'un badge, présentation seule mise à jour (§1, §2). Aucun changement de points.*
 

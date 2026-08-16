@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.24"
+version: "0.25"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -213,8 +213,10 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 
 *Version : 0.16 — Phase 1 — 2026-08-08. **[Mercenaire] ajoutée au barème** (P4, D070), −2 forfait — premier coût négatif du système. Type Chars et [Plateforme de tir X] retirés des pièces bespoke (sans porteur, l'Aurige de Khand devient cavalerie standard).*
 
+*Version : 0.25 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Lien `[[Document de cadrage]]` corrigé en `[[Document_de_cadrage]]` (nom réel du fichier). Aucune décision mécanique — pas de numéro D.*
+
 *Version : 0.15 — Phase 1 — 2026-08-08. **[Arme de jet X] restaurée au barème** (P4, D068), 1×X — coupure P2 caduque.*
 
 *Version : 0.14 — Phase 1 — 2026-08-08. **Renommage [Arme Lourde X] → [Relance X]** (P4, D066), répercuté dans le barème §3.2. Aucun changement de coût.*
 
-*Historique antérieur (0.7 → 0.11) : formule brute par profil `Mvt + PV + Attaque×D + Σrègles` (D025) ; compression `round(÷3)−1` (D027) ; Option B du coût des règles (D026) ; cinq points de calibrage (Gondor, Rohan, Khand, Mordor, Easterling) ; coûts provisoires [Horde] (D032), [Peur X] (D033), [Mur de bouclier] (D037, coupée en P2), [Prise de flanc]/[Vigilant] (D049/D050), [Réception de charge] refondue puis coupée (D058/D062). Détail dans le [[Document de cadrage]] §8.*
+*Historique antérieur (0.7 → 0.11) : formule brute par profil `Mvt + PV + Attaque×D + Σrègles` (D025) ; compression `round(÷3)−1` (D027) ; Option B du coût des règles (D026) ; cinq points de calibrage (Gondor, Rohan, Khand, Mordor, Easterling) ; coûts provisoires [Horde] (D032), [Peur X] (D033), [Mur de bouclier] (D037, coupée en P2), [Prise de flanc]/[Vigilant] (D049/D050), [Réception de charge] refondue puis coupée (D058/D062). Détail dans le [[Document_de_cadrage]] §8.*

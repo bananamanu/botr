@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-16"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.3"
+version: "1.4"
 ---
 
 # Mordor — Profils d'unités
@@ -14,7 +14,7 @@ version: "1.3"
 >
 > **[Peur X] et [Armure 1] restent intrinsèques au type Créature** (D071) — inchangé.
 >
-> Aligné sur [[Regles_Base]] v0.12 et [[Regles_Speciales]] v0.24, [[Regles_Points]] v0.21.
+> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
 
 ---
 
@@ -160,6 +160,8 @@ version: "1.3"
 - **Couche Leadership (Phase 2)** — dé-randomiser l'accès des héros à la face Arcane, hors scope de cette repasse.
 
 ---
+
+*Version : 1.4 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** En-tête « Aligné sur » rafraîchi (v0.12/v0.24/v0.21 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 
 *Version : 1.3 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** [Horde] devient un trait de Faction porté par toute l'infanterie de mêlée, **Uruk-hai compris** (auparavant exception explicite, D035) ; reste exclu : pisteurs orques (tir) et Troll (Créature). Plafond à 1 badge secondaire : Uruk-hai perd Spéciale, garde Élite (neutralise la pénalité Faible de Horde) — coût 7→**6 pts**. Récapitulatif (§4) et points ouverts (§5) mis à jour.*
 

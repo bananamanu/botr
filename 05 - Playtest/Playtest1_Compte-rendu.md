@@ -10,7 +10,7 @@ version: "1.1"
 
 # Playtest #1 — Compte rendu
 
-> **Objet de ce document :** débrief de la première partie de test de *Batailles de la Terre du Milieu*, jouée le 2026-07-25 sur le scénario `[[Playtest1_Avant-garde_sur_le_Pelennor]]` (format Normal, 1 joueur par camp, D039). Analyse des enseignements, décisions de design prises en conséquence (D040-D046) et points reportés. Les modifications de profils et de règles décrites ici sont **déjà appliquées** dans les fichiers concernés (Rohan v1.1, Gondor v1.2, Khand v1.1, Mordor v0.4, Easterling v1.1, [[Regles_Speciales]] v0.9, [[Document de cadrage]] v1.14).
+> **Objet de ce document :** débrief de la première partie de test de *Batailles de la Terre du Milieu*, jouée le 2026-07-25 sur le scénario `[[Playtest1_Avant-garde_sur_le_Pelennor]]` (format Normal, 1 joueur par camp, D039). Analyse des enseignements, décisions de design prises en conséquence (D040-D046) et points reportés. Les modifications de profils et de règles décrites ici sont **déjà appliquées** dans les fichiers concernés (Rohan v1.1, Gondor v1.2, Khand v1.1, Mordor v0.4, Easterling v1.1, [[Regles_Speciales]] v0.9, [[Document_de_cadrage]] v1.14).
 
 ---
 
@@ -108,7 +108,7 @@ Faute d'engagement des ailes, restent **non éprouvés** : [Horde] (D032), [Peur
 
 ## 7. Suivi documentaire
 
-**Fichiers déjà mis à jour** (2026-07-25) : `02 - Factions/Rohan.md` (v1.1), `Gondor_et_Fiefs.md` (v1.2), `Khand.md` (v1.1), `Mordor.md` (v0.4), `Easterling.md` (v1.1), `[[Regles_Speciales]]` (v0.9), `[[Document de cadrage]]` (v1.14, D040-D046).
+**Fichiers déjà mis à jour** (2026-07-25) : `02 - Factions/Rohan.md` (v1.1), `Gondor_et_Fiefs.md` (v1.2), `Khand.md` (v1.1), `Mordor.md` (v0.4), `Easterling.md` (v1.1), `[[Regles_Speciales]]` (v0.9), `[[Document_de_cadrage]]` (v1.14, D040-D046).
 
 **Restent à mettre à jour (non traités dans cette passe) :**
 - **[[Regles_Base]]** : formaliser le recul Memoir '44 (D041) et le jeton contre-attaque (D042).
@@ -125,7 +125,7 @@ Après relecture, Emmanuel est revenu sur deux points de ce débrief :
 - **Troll du Mordor (D048)** : [Arme Lourde 2] ramenée à **[Arme Lourde 1]** — une seule relance suffit, coût inchangé (7 pts).
 - **Riverwatch Riders scindés en deux (D049, D050)** : le mot-clé d'origine « Vigilant Flanking » (BattleLore V2) combinait deux effets sur une seule unité. Emmanuel les répartit sur deux unités distinctes du Rohan : « Flanking » est renommée **[Prise de flanc]** et réassignée à l'**Éored de cavalier du Rohan** (profil 1, qui passe de 6 à **7 pts** — premier cas où la compression n'absorbe pas l'ajout) ; une nouvelle règle **[Vigilant]** (la cible ne peut jamais contre-attaquer, 2 pts) est créée et assignée à l'**Éored d'éclaireur** à la place. Coût de l'éclaireur inchangé (4 pts).
 
-Les fichiers `02 - Factions/Rohan.md` (v1.3), `02 - Factions/Mordor.md` (v0.5), `02 - Factions/Khand.md` (v1.3), `[[Regles_Speciales]]` (v0.11), `[[Regles_Points]]` (v0.9) et `[[Document de cadrage]]` (v1.16) reflètent l'ensemble de ces révisions (D041, D043-D050). Le recul façon Memoir '44 (D041, §3.1 ci-dessus) a par ailleurs été formalisé dans **`[[Regles_Base]]` (v0.3)**.
+Les fichiers `02 - Factions/Rohan.md` (v1.3), `02 - Factions/Mordor.md` (v0.5), `02 - Factions/Khand.md` (v1.3), `[[Regles_Speciales]]` (v0.11), `[[Regles_Points]]` (v0.9) et `[[Document_de_cadrage]]` (v1.16) reflètent l'ensemble de ces révisions (D041, D043-D050). Le recul façon Memoir '44 (D041, §3.1 ci-dessus) a par ailleurs été formalisé dans **`[[Regles_Base]]` (v0.3)**.
 
 ---
 
