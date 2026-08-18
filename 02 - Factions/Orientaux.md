@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-13"
+date_maj: "2026-08-18"
 tags: [BdTdM, "type/faction", "peuple/orientaux", "statut/brouillon"]
-version: "2.2"
+version: "2.3"
 ---
 
 # Orientaux — Profils d'unités
@@ -18,29 +18,29 @@ version: "2.2"
 
 ---
 
-## 1. Faction des Orientaux et badge secondaire
+## 1. Badges des Orientaux *(Faction retirée, D090)*
 
-*(Collapse de badges — D080/D081, tâche P7c.)* Comme Gondor, les Orientaux ont un trait de Faction universel, plus un éventuel badge secondaire.
+*(Pivot jeton/badges — D089/D090.)* [Défense 1] n'est plus imprimé pour tout le roster : l'asymétrie des Orientaux sera portée par leurs cartes de commandement propres (P8). Reste au niveau de l'unité : **jusqu'à deux badges secondaires**, choisis parmi Spéciale/Élite/Légende (1 max) et Leader (1 max, réservé — Phase 2).
 
-| Niveau | Effet | Coût brut | Porté par |
-|---|---|---|---|
-| **Faction** (tout le roster, sans exception) | **[Défense 1]** *(= [Armure 1], nom d'usage — [[Regles_Speciales]] §4a)* | +2 *(gratuit sur 🔴, déjà au plancher intrinsèque)* | **Les 4 unités du roster** |
-| **Badge secondaire** (1 max) — **Spéciale** | **[Relance 1]** | +2 | Cohorte de piquiers |
+| Badge | Effet | Porté par |
+|---|---|---|
+| **Spéciale** | **[Relance 1]** | Cohorte de piquiers |
+| **Leader** *(slot réservé, Phase 2)* | Touche aussi sur Couronne | — |
 
-Le badge **Élite** reste disponible au système mais n'est porté par **aucune** unité de ce roster resserré à 4 profils — même situation que Khand.
+Le badge **Élite** reste disponible au système mais n'est porté par **aucune** unité de ce roster resserré à 4 profils.
 
-> 🔄 **P7c (D081) — retour au miroir de Gondor.** [Mur de bouclier] (D077) couvrait Cohorte + Piquiers seulement, en excluait Archers et Cataphractaires par construction. [Défense 1] s'applique désormais **partout**, sans exception de type ou de mode — Archers (3) et Cataphractaires (4) gagnent la Faction qu'ils n'avaient jamais eue.
+> ⚠️ **Recalcul des points en attente (P8).** Coûts affichés inchangés en attendant la passe P8.
 
 ---
 
 ## 2. Liste des troupes
 
-| #   | Unité                         | Type       | Combat   | Classe | Faction | Badge secondaire | **Points** |
-| --- | ----------------------------- | ---------- | -------- | ------ | --- | --- | ---------- |
-| 1   | Cohorte d'orientaux           | Infanterie | Mêlée    | 🔵     | Défense 1 | *(aucun)* | **5**      |
-| 2   | Cohorte de piquiers orientaux | Infanterie | Mêlée    | 🔵     | Défense 1 | Spéciale | **5**      |
-| 3   | Cohorte d'archers orientaux   | Infanterie | Distance | 🟢     | Défense 1 | Spéciale | **4**      |
-| 4   | Cataphractaires orientaux     | Cavalerie  | Mêlée    | 🔴     | Défense 1 *(gratuite)* | *(aucun)* | **7**      |
+| # | Unité | Type | Combat | Classe | Badge secondaire | **Points** |
+|---|-----------------------------|----------|--------|------|---|----------|
+| 1 | Cohorte d'orientaux | Infanterie | Mêlée | 🔵 | *(aucun)* | **5** |
+| 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
+| 3 | Cohorte d'archers orientaux | Infanterie | Distance | 🟢 | Spéciale | **4** |
+| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | 🔴 | *(aucun)* | **7** |
 
 **Total roster : 21 points** *(19 avec [Mur de bouclier] partiel D077, 21 dans la version miroir pur D072, 22 dans l'originale)*.
 
@@ -56,7 +56,7 @@ Le badge **Élite** reste disponible au système mais n'est porté par **aucune*
 |---|---|---|---|---|---|---|---|
 | Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **4** |
 
-**Badges :** Faction ([Défense 1])
+**Badges :** *(aucun — ex-Faction retirée, D090)*
 
 **Note narrative :** l'infanterie de ligne régulière des peuples de l'Est, alliés de longue date de Sauron — rangs serrés, cottes de mailles renforcées, aussi bien équipée que son miroir de Gondor.
 
@@ -70,7 +70,7 @@ Le badge **Élite** reste disponible au système mais n'est porté par **aucune*
 |---|---|---|---|---|---|---|---|
 | Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
 
-**Badges :** Faction ([Défense 1]) + Spéciale ([Relance 1])
+**Badges :** Spéciale ([Relance 1])
 
 **Note narrative :** une compagnie de piquiers longs, aussi bien protégée que la Cohorte de base ([Défense 1]), avec une arme qui ne rate pas deux fois une fois la ligne engagée ([Relance 1]).
 
@@ -84,7 +84,7 @@ Le badge **Élite** reste disponible au système mais n'est porté par **aucune*
 |---|---|---|---|---|---|---|---|
 | Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
 
-**Badges :** Faction ([Défense 1]) + Spéciale ([Relance 1])
+**Badges :** Spéciale ([Relance 1])
 
 **Note narrative :** des archers de l'Est, tirailleurs mobiles — ils décrochent après avoir tiré ([Mobilité 1] intrinsèque, gratuite, classe 🟢), une flèche qui ne rate pas deux fois ([Relance 1]), et portent désormais la même protection que le reste du roster.
 
@@ -98,7 +98,7 @@ Le badge **Élite** reste disponible au système mais n'est porté par **aucune*
 |---|---|---|---|---|---|---|---|
 | Cavalerie | Mêlée | 🔴 | 2 | 4 dés | — | 3 | **7** |
 
-**Badges :** Faction ([Défense 1] — gratuite)
+**Badges :** *(aucun — ex-Faction retirée, D090)*
 
 **Note narrative :** la cavalerie lourde de l'Est. [Armure 1] et [Poursuite 1] intrinsèques à la classe 🔴 couvrent déjà le plancher de [Défense 1] — la Faction ne coûte donc rien de plus ici. S'aligne mécaniquement sur les Chevaliers de Minas Tirith de Gondor (même classe, même Faction gratuite, même coût) — la distinction reste narrative.
 
@@ -110,10 +110,10 @@ Le badge **Élite** reste disponible au système mais n'est porté par **aucune*
 
 | Badge | Unités qui le portent |
 |---|---|
-| **Faction** ([Défense 1]) | **Les 4 unités du roster, sans exception** — gratuite sur les Cataphractaires (4, 🔴) |
 | **Spéciale** ([Relance 1]) | Cohorte de piquiers (2) · Cohorte d'archers (3) |
 | **Élite** | *(aucune unité)* |
-| **Aucun badge secondaire** | Cohorte d'orientaux (1) · Cataphractaires orientaux (4) |
+| **Leader** *(slot réservé, Phase 2)* | — aucune assignation avant les règles Héros/Leadership |
+| **Aucun badge** | Cohorte d'orientaux (1) · Cataphractaires orientaux (4) |
 
 ---
 
@@ -125,6 +125,8 @@ Le badge **Élite** reste disponible au système mais n'est porté par **aucune*
 - **Hausse de coût du roster (19→21 pts, P7c)** — non testée sous cette forme : le Playtest #3 a joué les Orientaux à l'ancien barème [Mur de bouclier]. À surveiller au prochain test, en particulier l'équilibre général Bien/Mal (D084) qui s'appuyait sur les anciens totaux.
 
 ---
+
+*Version : 2.3 — Phase 1 — 2026-08-18. **Retrait du trait de Faction (D089/D090).** [Défense 1] n'est plus imprimé pour tout le roster ; asymétrie reportée sur les cartes de commandement (P8). Lignes « Badges » nettoyées. §1 et §4 réécrits. Ajout du badge **Leader** (slot réservé, Phase 2). Coûts inchangés en attendant P8.*
 
 *Version : 2.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c) — retour au miroir de Gondor.** [Mur de bouclier] (D077) redevient sans porteur actif ; la Faction devient **[Défense 1]** (= [Armure 1]), universelle sur les 4 unités. Cohorte (1) : 4→**5 pts**. Cohorte d'archers (3) : 3→**4 pts** (gagne Faction). Piquiers (2) et Cataphractaires (4) : coût inchangé. Total roster 19→**21 pts**.*
 

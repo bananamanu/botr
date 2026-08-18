@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-16"
+date_maj: "2026-08-18"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.15"
+version: "0.16"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -46,15 +46,15 @@ Les règles de base couvrent les affrontements sans pouvoirs ni héros — le so
 - **Deck de commandement** : cartes de section et cartes Tactiques
 - **Dés spéciaux** : 6 faces — Épées croisées / Épée / Cible / Drapeau / Couronne / Arcane (dé BattleLore V2, conservé tel quel)
 - **Figurines** : unités des peuples joués (MESBG)
-- **Plateaux de mouvement** (movement trays) **colorés par classe** : 🟢 vert (2 dés), 🔵 bleu (3 dés), 🔴 rouge (4 dés) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie
-- **Tokens de mode** collés sur les socles : **mêlée** ou **distance**
+- **Plateaux de mouvement** (movement trays), **neutres** (peints marron/vert, se fondent dans le décor) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie
+- **Jeton classe/mode** (20mm, posé à côté du plateau ou du socle) : couleur = classe (🟢 vert 2 dés / 🔵 bleu 3 dés / 🔴 rouge 4 dés), symbole = mode (épées croisées = mêlée / arc = distance) — un seul marqueur, remplace l'ancien token de mode collé sur le socle
 - **Marqueurs** : compteurs de PV (Chars et Créatures uniquement), médailles objectif, jetons d'activation/cible (aide-mémoire de contre-attaque, §7.6)
 
 ### 2.2 Le langage du socle : classe, type et mode
 
-Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de profil. Trois informations y sont portées visuellement.
+Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois informations sont portées visuellement — deux sur le **jeton classe/mode** (20mm, posé à côté du plateau ou du socle), une sur la **forme du plateau/socle lui-même**.
 
-**La classe = la couleur du plateau = le nombre de dés d'attaque.**
+**La classe = la couleur du jeton = le nombre de dés d'attaque.**
 
 | Couleur | Classe | Dés |
 |---|---|---|
@@ -62,7 +62,9 @@ Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de prof
 | 🔵 **Bleu** | Standard | **3** |
 | 🔴 **Rouge** | Lourde / élite | **4** |
 
-**Le type**, donné par la forme du socle et le nombre de figurines :
+**Le mode = le symbole du jeton : épées croisées (mêlée) ou arc (distance).** *(Pivot D089 — fusionne l'ancien token de mode, désormais un seul jeton pour classe + mode.)* Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
+
+**Le type**, donné par la forme du plateau/socle et le nombre de figurines — indépendant de la couleur, donc inchangé par le retrait de la coloration des plateaux :
 
 | Type | Représentation | Pertes suivies par |
 |---|---|---|
@@ -75,19 +77,18 @@ Toute unité se lit **d'un coup d'œil sur son plateau**, sans consulter de prof
 
 > **Intrinsèque du type Créature (D071).** Toute Créature porte **[Armure 1]** et **[Peur 1]** sans supplément de coût — ce ne sont plus des signatures à assigner unité par unité, mais des traits du type lui-même, au même titre que le compteur de PV. Une pièce peut dépasser ce plancher (ex. [Peur 2]) moyennant le tarif socle habituel de l'excédent. Première application : Troll du Mordor. *(Le type Char n'a pas cette intrinsèque — sans porteur actif depuis P4/D070.)*
 
-**Le mode = un token collé sur le socle : mêlée ou distance.** Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
+**Le badge Faction est retiré (D090).** L'asymétrie de peuple n'est plus imprimée sur les profils : elle sera portée par des **cartes de commandement propres à chaque faction** (chantier P8). Aucune unité ne porte plus de trait de Faction ; voir chaque fichier `02 - Factions/*.md` pour l'état des coûts en attente de recalcul.
 
-**Le badge Faction n'est plus un marqueur de plateau — c'est un trait de peuple** *(collapse D080/D081)*. Chaque peuple a **une** règle de Faction, imprimée une fois dans son roster et appliquée automatiquement à **toutes** ses unités standard, sans exception et sans rien à poser sur le plateau pour le signaler — un seul effet à retenir par camp, valable pour toute la partie. Les pièces signature (§ badge Signature ci-dessous) n'en portent pas : elles ont leurs propres règles bespoke. *(Détail par peuple dans chaque fichier `02 - Factions/*.md` ; coût traité dans [[Regles_Points]] §3.2.)*
-
-**Une unité porte au maximum un second badge, choisi parmi Spéciale / Élite / Légende** *(collapse D080/D081, resserre le cumul introduit par D073)* :
+**Une unité porte au maximum deux badges secondaires** *(D089, remplace le plafond « Faction + 1 » de D080/D081)* :
 
 - **Spéciale** confère **[Relance 1]** (badge universel depuis D073).
 - **Élite** confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle) **et Jamais Faible** *(D073)* : l'unité ignore l'état Faible (§2.2 ci-dessous) — ses faces Épée continuent de toucher même à sa dernière figurine.
 - **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
+- **Leader** *(nouveau, D089 — slot réservé, règles complètes en Phase 2 Héros/Leadership)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7).
 
-Une unité peut donc porter **0, 1 (Faction seule) ou 2 badges** (Faction + un badge parmi Spéciale/Élite/Légende) — jamais plus. C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe remarquable de la troupe de ligne, sans empiler plusieurs lignes de règles à retenir par figurine. *(Coûts traités dans [[Regles_Points]] §3.1.)*
+Une unité porte donc **0, 1 (Spéciale/Élite/Légende seul) ou 2 badges** (un badge parmi Spéciale/Élite/Légende **+** Leader) — jamais plus. C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe remarquable de la troupe de ligne, sans empiler plusieurs lignes de règles à retenir par figurine. *(Coûts traités dans [[Regles_Points]] §3.1.)*
 
-**Le badge Signature (facultatif, réservé aux pièces marquantes) = règles bespoke propres, hors de la matrice de badges.** Une poignée de pièces (La Compagnie Grise, le Mûmakil…) sortent entièrement du système Faction/Spéciale/Élite/Légende : leurs règles sont écrites au profil, comme des créations uniques. *(Coûts traités par équivalence, [[Regles_Points]] §6.)*
+**Le badge Signature (facultatif, réservé aux pièces marquantes) = règles bespoke propres, hors de la matrice de badges.** Une poignée de pièces (La Compagnie Grise, le Mûmakil…) sortent entièrement du système de badges standard : leurs règles sont écrites au profil, comme des créations uniques. *(Coûts traités par équivalence, [[Regles_Points]] §6.)*
 
 Une unité occupe toujours **un seul hexagone**. Les touches s'accumulent au sein d'une même attaque ; les pertes ne se récupèrent pas.
 
@@ -110,20 +111,20 @@ Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui 
 
 Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur) : 2 (🟢), 3 (🔵) ou 4 (🔴), modifié le cas échéant par le terrain (§7.5) ou une capacité.
 
-**Quelles faces touchent dépend du mode de l'unité** (son token) :
+**Quelles faces touchent dépend du mode de l'unité** (son jeton classe/mode) :
 
-| Mode | Faces qui touchent | Spéciale | Retraite |
-|---|---|---|---|
-| **Mêlée** | Épées croisées · Épée¹ | Couronne² | Drapeau |
-| **Distance** | Cible | Couronne² | Drapeau |
+| Mode | Faces qui touchent | Couronne | Arcane | Retraite |
+|---|---|---|---|---|
+| **Mêlée** | Épées croisées · Épée¹ | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
+| **Distance** | Cible | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
 
-*¹ Épée inactive si l'unité est Faible. — ² La Couronne déclenche la règle signature de l'unité, si elle en a une. La face **Arcane** est un échec (réservée à [Peur] et à la couche Leadership, Phase 2).*
+*¹ Épée inactive si l'unité est Faible. — ² La **Couronne** ne fait rien par défaut ; elle inflige **1 touche supplémentaire** uniquement si l'unité porte le badge **Leader** (D089, §2.2). — ³ La face **Arcane** déclenche la règle spéciale/signature de l'unité si elle en porte une (ex. [Peur X]) ; sinon c'est un échec.*
 
 **Règle de dégâts — unique et universelle :**
 
 > **Chaque touche retire exactement 1 figurine — ou 1 PV pour un Char / une Créature — quelle que soit la cible.** Une touche ne retire jamais plus qu'il ne reste.
 
-Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche contre l'infanterie est supprimée, D059/D060). La durabilité d'une unité découle directement de son nombre de figurines/PV — **Infanterie 4, Cavalerie 3** (ratio 1,33, socle sur lequel repose le chiffrage des points, voir [[Regles_Points]]). Cette règle unique vaut aussi pour les touches « hors face » (Couronne convertie en touche, [Poison], recul bloqué, piétinement du Mûmakil…) : **1 touche = 1 figurine/PV**, sans exception.
+Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche contre l'infanterie est supprimée, D059/D060). La durabilité d'une unité découle directement de son nombre de figurines/PV — **Infanterie 4, Cavalerie 3** (ratio 1,33, socle sur lequel repose le chiffrage des points, voir [[Regles_Points]]). Cette règle unique vaut aussi pour les touches « hors face » (Couronne convertie en touche sur badge Leader, [Charge écrasante] sur Arcane, recul bloqué, piétinement du Mûmakil…) : **1 touche = 1 figurine/PV**, sans exception.
 
 > 💡 **Exemple de jeu**
 > Des Chevaliers (Cavalerie, 🔴 4 dés, mêlée) chargent des Épéistes (Infanterie, mêlée) : 4 dés → Épées croisées, Épée, Épée, Drapeau = **3 touches** (3 figurines retirées) **+ 1 Drapeau** (1 hexagone de recul).
@@ -136,7 +137,7 @@ Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occu
 
 ### 2.4 Règles intrinsèques par combinaison (classe × type × mode)
 
-Certaines règles spéciales ne se notent **pas** sur le profil : elles découlent directement de la **classe** (couleur), du **type** (socle) et du **mode** (token), et se lisent d'un coup d'œil au plateau. Une unité applique **toutes** les intrinsèques de sa case. Un profil ne mentionne une valeur que s'il **dépasse** le plancher intrinsèque (ex. [Armure 2]) ou porte en plus une **signature** (voir [[Regles_Speciales]]).
+Certaines règles spéciales ne se notent **pas** sur le profil : elles découlent directement de la **classe** (couleur du jeton), du **type** (plateau/socle) et du **mode** (symbole du jeton), et se lisent d'un coup d'œil. Une unité applique **toutes** les intrinsèques de sa case. Un profil ne mentionne une valeur que s'il **dépasse** le plancher intrinsèque (ex. [Armure 2]) ou porte en plus une **signature** (voir [[Regles_Speciales]]).
 
 | Type + mode | 🟢 Légère (2 dés) | 🔵 Standard (3 dés) | 🔴 Lourde (4 dés) |
 |---|---|---|---|
@@ -257,7 +258,7 @@ Si aucune unité éligible ne peut être activée avec la carte jouée (ex. aucu
 
 ### 6.1 Mouvement par classe et type
 
-Le mouvement se lit **directement sur le plateau** (couleur + type), sans profil — inspiré de *C&C Medieval*. Principe : plus une unité frappe fort (rouge), moins elle est mobile ; les unités lourdes doivent choisir entre **bouger** et **frapper**.
+Le mouvement se lit **directement au jeton + au plateau** (couleur du jeton + type du plateau), sans profil — inspiré de *C&C Medieval*. Principe : plus une unité frappe fort (rouge), moins elle est mobile ; les unités lourdes doivent choisir entre **bouger** et **frapper**.
 
 | | 🟢 Verte (2 dés) | 🔵 Bleue (3 dés) | 🔴 Rouge (4 dés) |
 |---|---|---|---|
@@ -314,24 +315,26 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 
 ### 7.2 Attaque de mêlée
 
-Une unité en **mode mêlée** (token mêlée) peut attaquer une **unité ennemie adjacente** (dans l'un des 6 hexagones voisins).
+Une unité en **mode mêlée** (jeton épées croisées) peut attaquer une **unité ennemie adjacente** (dans l'un des 6 hexagones voisins).
 
 Les faces actives en mêlée sont :
 - **Épées croisées** : touche inconditionnelle
 - **Épée** : touche — **inactive si l'unité est Faible**
 - **Drapeau** : retraite
-- **Couronne** : capacité spéciale (si profil)
-- **Cible** et **Arcane** : échec en mêlée
+- **Couronne** : touche supplémentaire si l'unité porte le badge Leader (sinon sans effet)
+- **Arcane** : règle spéciale/signature (si profil), sinon échec
+- **Cible** : échec en mêlée
 
 ### 7.3 Attaque de tir
 
-Une unité en **mode distance** (token distance) peut attaquer une unité ennemie **à portée et en ligne de vue**. Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
+Une unité en **mode distance** (jeton arc) peut attaquer une unité ennemie **à portée et en ligne de vue**. Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
 
 Les faces actives au tir sont :
 - **Cible** : touche inconditionnelle
 - **Drapeau** : retraite
-- **Couronne** : capacité spéciale (si profil)
-- **Épées croisées**, **Épée** et **Arcane** : échec au tir
+- **Couronne** : touche supplémentaire si l'unité porte le badge Leader (sinon sans effet)
+- **Arcane** : règle spéciale/signature (si profil), sinon échec
+- **Épées croisées** et **Épée** : échec au tir
 
 ### 7.4 Ligne de vue
 
@@ -487,10 +490,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | Épée | 1 touche (sauf si Faible) | Échec |
 | Cible | Échec | 1 touche |
 | Drapeau | 1 hex de retraite | 1 hex de retraite |
-| Couronne | Règle signature (si profil) | Règle signature (si profil) |
-| Arcane | Échec (réservée [Peur]/Leadership, Phase 2) | Échec (réservée [Peur]/Leadership, Phase 2) |
+| Couronne | 1 touche si badge Leader, sinon sans effet | 1 touche si badge Leader, sinon sans effet |
+| Arcane | Règle spéciale/signature (si profil), sinon échec | Règle spéciale/signature (si profil), sinon échec |
 
-*Le **mode** (token mêlée/distance) détermine quelles faces l'unité lit. Chaque touche retire **1 figurine/PV** (§2.3).*
+*Le **jeton classe/mode** (couleur + symbole, §2.1-2.2) détermine quelles faces l'unité lit. Chaque touche retire **1 figurine/PV** (§2.3).*
 
 ### Mémo règles spéciales de base
 
@@ -502,10 +505,11 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
-| **[Férocité]** | Contre-attaque même en cas de recul forcé, puis recule normalement |
-| **Faction** (trait de peuple) | Imprimé une fois par peuple, appliqué à toutes ses unités standard — plus de marqueur |
-| **Élite** (badge, max 1 avec Spéciale/Légende) | Marqueur au plateau : l'unité porte [Inébranlable 1] + Jamais Faible |
-| **Légende** (badge, max 1 avec Spéciale/Élite) | Marqueur au plateau, réservé aux unités uniques : +1 dé de combat |
+| **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — contre-attaque même en cas de recul forcé, puis recule normalement |
+| **Spéciale** (badge, max 1 avec Élite/Légende) | Marqueur : l'unité porte [Relance 1] |
+| **Élite** (badge, max 1 avec Spéciale/Légende) | Marqueur : l'unité porte [Inébranlable 1] + Jamais Faible |
+| **Légende** (badge, max 1 avec Spéciale/Élite) | Marqueur, réservé aux unités uniques : +1 dé de combat |
+| **Leader** (badge, max 1, en plus du précédent) | Marqueur, slot réservé (Phase 2) : touche aussi sur Couronne |
 
 > Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
 
@@ -539,6 +543,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 *Version : 0.8 — Phase 1 — 2026-08-05. **Définition mécanique du badge Élite (D064).** §2.2 : le badge Élite (marqueur au plateau, jusque-là seulement nommé en D060) confère **[Inébranlable 1]** — cran de granularité au sein d'une même case classe × type × mode. Mémo aligné. Son coût (+2) est traité dans [[Regles_Points]] (refonte P3, matrice). Non testé — validation en P7a.*
 
 *Version : 0.12 — Phase 1 — 2026-08-08. **Pivot transverse « badges universels » (D073).** §2.2 : le badge Élite gagne **Jamais Faible** (exempte l'unité de l'état Faible, en plus de [Inébranlable 1]) ; nouveau badge **Légende** créé (+1 dé de combat), réservé aux unités uniques, remplace l'empilement de règles bespoke sur les pièces signature. Le badge Spéciale devient **[Relance 1] pour tout le monde** (décision actée au niveau du barème, [[Regles_Points]] ; aucune mention dans ce document, qui ne fixait déjà pas le contenu du badge Spéciale). Mémo §2.2 et récapitulatif mis à jour. Répercussions sur les rosters déjà re-exprimés (Rohan, Mordor — Spéciale à migrer) renvoyées à leur propre passage.*
+
+*Version : 0.16 — Phase 1 — 2026-08-18. **Pivot jeton/badges (D089) et retrait du trait de Faction (D090).** §2.1 : plateaux neutres (marron/vert), token de mode et coloration par classe fusionnés en un **jeton classe/mode** unique (20mm, couleur = classe, symbole = mode). §2.2 réécrite : classe portée par le jeton (plus le plateau), type inchangé (forme/nb figurines), badge Faction retiré (asymétrie reportée sur cartes de commandement, P8), badge **Leader** ajouté (slot réservé, touche sur Couronne). §2.3/§7.2/§7.3/résumé des faces : la face **Couronne** devient le déclencheur du bonus Leader (sinon sans effet) ; la face **Arcane** devient le déclencheur unique des règles spéciales/signature (migration depuis Couronne). Azaogames ne produisant pas de jeton < 20mm, abandon du petit jeton collé au socle initialement prévu.*
 
 *Version : 0.15 — Phase 1 — 2026-08-16. **D086 (format Épique corrigé, 13×17) et D087 (commandement à plusieurs joueurs en Épique, adapté d'Epic BattleLore V1).** §4 (plateau) corrigé. §5.5 réécrit : main unique par camp tenue par le joueur Centre, exécution distribuée par Section, renvoi vers [[Cartes_Commandement]] §7 pour le détail.*
 

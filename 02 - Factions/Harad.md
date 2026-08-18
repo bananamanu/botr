@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-16"
+date_maj: "2026-08-18"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "1.3"
+version: "1.4"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -20,31 +20,31 @@ version: "1.3"
 
 ---
 
-## 1. Faction du Harad et badge secondaire
+## 1. Badges du Harad *(Faction retirée, D090)*
 
-*(Collapse de badges — D080/D081, tâche P7c.)* Harad était déjà conforme au nouveau système avant même le Playtest #3 : [Poison] couvrait déjà tout le roster d'escorte sans exception, et aucun profil ne portait plus d'un badge secondaire. **Aucun changement de coût** ici — seule la présentation passe de « badge Faction » à « trait de peuple ».
+*(Pivot jeton/badges — D089/D090.)* [Poison] n'est plus imprimé pour tout le roster d'escorte, ni sur le Mûmakil (son [Howdah] perd le volet Poison, voir §3) : l'identité du Harad sera portée par ses cartes de commandement propres (P8), pas par un trait de peuple. [Poison] reste au glossaire ([[Regles_Speciales]]), disponible pour réassignation en P8. Reste au niveau de l'unité : **jusqu'à deux badges secondaires**, choisis parmi Spéciale/Élite/Légende (1 max) et Leader (1 max, réservé — Phase 2).
 
-| Niveau | Effet | Coût brut | Porté par |
-|---|---|---|---|
-| **Faction** (tout le roster d'escorte) | **[Poison]** | +1 | **Les 6 unités d'escorte, sans exception** — plus le Mûmakil via [Howdah] |
-| **Badge secondaire** (1 max) — **Spéciale** | **[Relance 1]** | +2 | Gardes serpent à cheval · Pillards haradrim (mêlée) |
-| **Badge secondaire** (1 max) — **Élite** | **[Inébranlable 1] + Jamais Faible** | +2 | Gardes serpents uniquement |
+| Badge | Effet | Porté par |
+|---|---|---|
+| **Spéciale** | **[Relance 1]** | Gardes serpent à cheval · Pillards haradrim (mêlée) |
+| **Élite** | **[Inébranlable 1] + Jamais Faible** | Gardes serpents uniquement |
+| **Leader** *(slot réservé, Phase 2)* | Touche aussi sur Couronne | — |
 
-**[Poison] reste le fil conducteur du peuple**, inchangé depuis la Passe 0 : chaque Couronne obtenue en attaque inflige une touche supplémentaire — flèches et lames haradrim également enduites du même venin.
+> ⚠️ **Recalcul des points en attente (P8).** [Poison] était le fil conducteur mécanique du peuple (flèches et lames empoisonnées) — sa disparition laisse le roster d'escorte sans différenciation propre jusqu'aux cartes de commandement P8. Coûts affichés inchangés.
 
 ---
 
 ## 2. Liste des troupes
 
-| #   | Unité                                       | Type       | Combat           | Classe         | Faction | Badge secondaire | **Points** |
-| --- | ------------------------------------------- | ---------- | ---------------- | -------------- | --- | --- | ---------- |
-| 1   | Archers du Harad                            | Infanterie | Distance         | 🟢             | Poison | *(aucun)* | **3**      |
-| 2   | Lanciers du Harad                           | Infanterie | Mêlée            | 🟢             | Poison | *(aucun)* | **3**      |
-| 3   | Gardes serpents                             | Infanterie | Mêlée            | 🔵             | Poison | Élite | **5**      |
-| 4   | Gardes serpent à cheval                     | Cavalerie  | Mêlée            | 🔵             | Poison | Spéciale | **7**      |
-| 5   | **Pillards haradrim (mêlée)** — *nouveau*   | Cavalerie  | Mêlée            | 🟢             | Poison | Spéciale | **6**      |
-| 6   | **Pillards haradrim (archers)** — *nouveau* | Cavalerie  | Distance         | 🟢             | Poison | *(aucun)* | **4**      |
-| 7   | Mûmakil — *signature*                       | Créature   | Mêlée *(charge)* | 🔴 *(nominal)* | *(hors matrice)* | *(hors matrice)* | **15**     |
+| # | Unité | Type | Combat | Classe | Badge secondaire | **Points** |
+|---|-------------------------------------------|----------|----------------|--------------|---|----------|
+| 1 | Archers du Harad | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
+| 2 | Lanciers du Harad | Infanterie | Mêlée | 🟢 | *(aucun)* | **3** |
+| 3 | Gardes serpents | Infanterie | Mêlée | 🔵 | Élite | **5** |
+| 4 | Gardes serpent à cheval | Cavalerie | Mêlée | 🔵 | Spéciale | **7** |
+| 5 | **Pillards haradrim (mêlée)** — *nouveau* | Cavalerie | Mêlée | 🟢 | Spéciale | **6** |
+| 6 | **Pillards haradrim (archers)** — *nouveau* | Cavalerie | Distance | 🟢 | *(aucun)* | **4** |
+| 7 | Mûmakil — *signature* | Créature | Mêlée *(charge)* | 🔴 *(nominal)* | *(hors matrice)* | **15** |
 
 **Total escorte + Pillards : 28 points** (hors Mûmakil, hors matrice par équivalence).
 
@@ -60,7 +60,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
 
-**Badges :** Faction ([Poison])
+**Badges :** *(aucun — ex-Faction retirée, D090)*
 
 **Note narrative :** les archers du désert, flèches traitées au venin — le fil conducteur du peuple porté par sa forme la plus ancienne. Décroche après avoir tiré ([Mobilité 1] intrinsèque, gratuite, classe 🟢).
 
@@ -74,7 +74,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Infanterie | Mêlée | 🟢 | 2 | 2 dés | — | 4 | **3** |
 
-**Badges :** Faction ([Poison])
+**Badges :** *(aucun — ex-Faction retirée, D090)*
 
 **Note narrative :** l'escorte au sol du Mûmakil, lances enduites du même poison que les archers — la piétaille légère qui referme la marche autour de la bête. Perd son ancienne [Réception de charge] (coupée du système entier depuis P2, sans remplacement) : reste une ligne légère, pas un mur anti-charge au sens mécanique.
 
@@ -88,7 +88,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
 
-**Badges :** Faction ([Poison]) + Élite ([Inébranlable 1] + Jamais Faible)
+**Badges :** Élite ([Inébranlable 1] + Jamais Faible)
 
 **Note narrative :** la garde d'élite du Harad, lames traitées au venin, formée pour tenir le contact plutôt que le harceler — l'échelon au-dessus des Lanciers (classe 🔵 contre 🟢), et la seule unité du roster à porter le badge Élite : ce sont eux qui referment le dernier cercle autour de la bête quand la ligne plie.
 
@@ -102,7 +102,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Cavalerie | Mêlée | 🔵 | 3 | 3 dés | — | 3 | **7** |
 
-**Badges :** Faction ([Poison]) + Spéciale ([Relance 1])
+**Badges :** Spéciale ([Relance 1])
 
 **Note narrative :** la version montée des Gardes serpents — une arme qui ne rate pas deux fois ([Relance 1], ex-[Arme Lourde 1]) plutôt que le statut Élite de leurs homologues à pied, cohérent avec une cavalerie qui frappe et poursuit plutôt qu'elle n'encaisse en formation. Porte [Poursuite 2] intrinsèque comme toute cavalerie 🔵 de mêlée. Poison conservé : même venin, porté à cheval.
 
@@ -116,7 +116,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Cavalerie | Mêlée | 🟢 | 4 | 2 dés | — | 3 | **6** |
 
-**Badges :** Faction ([Poison]) + Spéciale ([Relance 1])
+**Badges :** Spéciale ([Relance 1])
 
 **Note narrative :** des raiders montés du désert, lames empoisonnées et armes de jet légères — la mobilité avant tout (classe légère, la plus rapide du roster : 4 cases + combat). [Relance 1] marque une arme qui frappe deux fois plutôt qu'une, malgré le faible gabarit de la monture. Porte [Poursuite 2] intrinsèque comme toute cavalerie légère de mêlée.
 
@@ -130,7 +130,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Cavalerie | Distance | 🟢 | 4 | 2 dés | 4 | 3 | **4** |
 
-**Badges :** Faction ([Poison])
+**Badges :** *(aucun — ex-Faction retirée, D090)*
 
 **Note narrative :** la version tir des Pillards — harcèlement à cheval, flèches empoisonnées tirées puis décrochage immédiat ([Mobilité 2] intrinsèque, cavalerie légère de tir, gratuite). Pas de badge Spéciale : le venin suffit à porter l'identité, l'arc reste standard.
 
@@ -144,7 +144,7 @@ version: "1.3"
 |---|---|---|---|---|---|---|---|
 | Créature | Mêlée *(par charge)* | 🔴 *(nominal)* | 2 *(translation 1-2-1)* | 4 dés *(charge)* / 2 dés *(tir)* | 1–3 *(tir)* | **8** | **15** |
 
-**Règles spéciales :** [Charge écrasante] *(bespoke)* · [Howdah] *(= [Plateforme de tir 2] + [Poison])* · [Inébranlable ∞] *(ex-[Inamovible])* · [Protection 1] *(contre le tir uniquement — nouveau, D079)* · [Bête incontrôlable] *(bespoke, Furie — refondue D079)*
+**Règles spéciales :** [Charge écrasante] *(bespoke)* · [Howdah] *(= [Plateforme de tir 2] — [Poison] retiré, D090)* · [Inébranlable ∞] *(ex-[Inamovible])* · [Protection 1] *(contre le tir uniquement — nouveau, D079)* · [Bête incontrôlable] *(bespoke, Furie — refondue D079)*
 
 **Intrinsèques du type Créature (D071) :** **[Armure 1]** + **[Peur 1]**, sans supplément de coût — vérifié sans redondance avec les règles bespoke ci-dessus : [Howdah] est une plateforme de tir (aucun chevauchement avec l'armure), [Inébranlable ∞] porte sur le recul (aucun chevauchement avec la peur, qui inflige des Drapeaux via l'Arcane plutôt que d'agir sur la résistance au recul elle-même).
 
@@ -157,7 +157,7 @@ version: "1.3"
 | Socle (Mvt 2 + PV 8) | 10 |
 | Charge principale (4 dés mêlée, D=3) | 12 |
 | Howdah (tir 2 dés, D=2) | 4 |
-| [Poison] (badge Faction) | 1 |
+| [Poison] *(badge Faction, retiré D090 — ligne conservée, recalcul complet en P8)* | 1 |
 | [Protection 1] *(nouveau, contre le tir)* | 1 |
 | [Bête incontrôlable] (malus résiduel) | −1 |
 | **Sous-total tarifable au barème standard** | **27** |
@@ -170,7 +170,7 @@ Tombe sur la cible d'Emmanuel : **≈3 × unité standard** (5 pts). Les deux li
 
 #### [Charge écrasante] *(bespoke)*
 
-> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où la **Couronne inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Arcane inflige aussi une touche** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)* ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 #### [Bête incontrôlable] *(bespoke, refondue P5/D079)*
 
@@ -180,7 +180,7 @@ Tombe sur la cible d'Emmanuel : **≈3 × unité standard** (5 pts). Les deux li
 
 #### [Howdah]
 
-> **[Howdah] = [Plateforme de tir 2] + [Poison]** : une attaque de tir de **2 dés**, portée **1–3**, en plus de la mêlée, bénéficiant de [Poison].
+> **[Howdah] = [Plateforme de tir 2]** : une attaque de tir de **2 dés**, portée **1–3**, en plus de la mêlée. *([Poison] retiré — c'était le trait de Faction du Harad, abandonné D090 ; plus de collision possible avec [Peur 1] sur l'Arcane, puisque Howdah ne porte plus de règle sur cette face.)*
 
 ---
 
@@ -188,9 +188,9 @@ Tombe sur la cible d'Emmanuel : **≈3 × unité standard** (5 pts). Les deux li
 
 | Badge | Unités qui le portent |
 |---|---|
-| **Faction** ([Poison]) | **Toutes les unités d'escorte (1 à 6), sans exception** — plus le Mûmakil via [Howdah] |
 | **Spéciale** ([Relance 1]) | Gardes serpent à cheval (4) · Pillards haradrim mêlée (5) |
 | **Élite** ([Inébranlable 1] + Jamais Faible) | Gardes serpents (3) uniquement |
+| **Leader** *(slot réservé, Phase 2)* | — aucune assignation avant les règles Héros/Leadership |
 
 **Hors matrice (Mûmakil, 7)** : confirmé pièce **Signature** (D081/P7c) — [Charge écrasante], [Bête incontrôlable], exemptée du plafond à 1 badge secondaire comme la Compagnie Grise (Gondor).
 
@@ -206,6 +206,8 @@ Tombe sur la cible d'Emmanuel : **≈3 × unité standard** (5 pts). Les deux li
 - **Nouveau (P5/D079) : [Charge écrasante] (+15 brut) et [Inébranlable ∞] (+6 brut)** — premières valeurs jamais assignées à ces règles bespoke, par jugement analogique plutôt que par calcul. À confirmer au playtest de validation (P7a).
 
 ---
+
+*Version : 1.4 — Phase 1 — 2026-08-18. **Retrait du trait de Faction (D089/D090).** [Poison] n'est plus imprimé pour tout le roster ni sur le Mûmakil ([Howdah] perd le volet Poison) ; identité Harad reportée sur les cartes de commandement (P8). [Charge écrasante] du Mûmakil migre de Couronne à Arcane (D089). Lignes « Badges » nettoyées. §1, §3 (Mûmakil) et §4 réécrits. Ajout du badge **Leader** (slot réservé, Phase 2). Coûts inchangés en attendant P8.*
 
 *Version : 1.3 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** En-tête « Aligné sur » rafraîchi (v0.12/v0.26/v0.22 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 

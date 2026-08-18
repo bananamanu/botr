@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "17",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -91,7 +91,8 @@
               "title": "Signets"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -200,7 +201,7 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "615b2779f8225468",
+  "active": "dbedb28cc1ddb3a9",
   "lastOpenFiles": [
     "01 - Règles/Regles_Base (1).md",
     "04 - Composants/Cartes_Commandement (1).md",
