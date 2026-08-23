@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-18"
+date_maj: "2026-08-22"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.16"
+version: "0.17"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -77,16 +77,26 @@ Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois inform
 
 > **Intrinsèque du type Créature (D071).** Toute Créature porte **[Armure 1]** et **[Peur 1]** sans supplément de coût — ce ne sont plus des signatures à assigner unité par unité, mais des traits du type lui-même, au même titre que le compteur de PV. Une pièce peut dépasser ce plancher (ex. [Peur 2]) moyennant le tarif socle habituel de l'excédent. Première application : Troll du Mordor. *(Le type Char n'a pas cette intrinsèque — sans porteur actif depuis P4/D070.)*
 
-**Le badge Faction est retiré (D090).** L'asymétrie de peuple n'est plus imprimée sur les profils : elle sera portée par des **cartes de commandement propres à chaque faction** (chantier P8). Aucune unité ne porte plus de trait de Faction ; voir chaque fichier `02 - Factions/*.md` pour l'état des coûts en attente de recalcul.
+**Badges — troisième refonte, Playtest #4 (D092/D093).** Les badges **Spéciale** et **Élite** (D073) sont **abandonnés**. Le badge **Faction** (retiré en D090, un temps renvoyé aux cartes de commandement de P8) **revient**, mais change de nature : ce n'est plus un trait de peuple imprimé automatiquement sur tout un roster (D081/D085), c'est un **badge assigné unité par unité**, à la discrétion du concepteur — fluff (« toute unité autour d'Éomer porte [Férocité] ») ou distinction tactique au sein d'un même peuple (« les orques du Morannon portent [Horde] pour se distinguer des orques normaux »). Nouveau badge **Bannière**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton dédié) : confère **[Inébranlable 1]**.
 
-**Une unité porte au maximum deux badges secondaires** *(D089, remplace le plafond « Faction + 1 » de D080/D081)* :
+**Les badges sont cumulables librement, sans plafond de 1** *(amende le plafond D081/D089)* :
 
-- **Spéciale** confère **[Relance 1]** (badge universel depuis D073).
-- **Élite** confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle) **et Jamais Faible** *(D073)* : l'unité ignore l'état Faible (§2.2 ci-dessous) — ses faces Épée continuent de toucher même à sa dernière figurine.
+- **Faction** confère la règle propre à l'unité assignée — reprend le vocabulaire socle existant ([Férocité], [Horde], [Relance X], [Défense X]/[Armure X], [Mercenaire]…) ou une règle neuve si besoin. Voir [[Regles_Speciales]] §4a.
+- **Bannière** confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
 - **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
-- **Leader** *(nouveau, D089 — slot réservé, règles complètes en Phase 2 Héros/Leadership)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7).
+- **Leader** *(formalisé D093, sort de la réserve Phase 2 posée en D089)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7) ; confère aussi **[Inébranlable 1]** à son unité **et** à toute unité amie **adjacente** (cumulable avec un Inébranlable déjà présent) ; peut porter en plus le statut **Général** et une valeur de **Destin** — mécanique complète en §2.2bis.
 
-Une unité porte donc **0, 1 (Spéciale/Élite/Légende seul) ou 2 badges** (un badge parmi Spéciale/Élite/Légende **+** Leader) — jamais plus. C'est le cran de granularité qui, dans une même case (classe × type × mode), distingue la troupe remarquable de la troupe de ligne, sans empiler plusieurs lignes de règles à retenir par figurine. *(Coûts traités dans [[Regles_Points]] §3.1.)*
+Une unité peut donc porter 0 à 4 badges (Faction, Bannière, Légende, Leader) selon ce que le concepteur juge lisible pour cette unité précise — la limite n'est plus un plafond de comptage mais le jugement éditorial au cas par cas. *(Coûts traités dans [[Regles_Points]] §3.1 — Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8.)*
+
+### 2.2bis Le badge Leader — Général et Destin (D093)
+
+Un badge **Leader** est toujours rattaché à une **unité porteuse** (jamais une figurine libre sur le plateau) :
+
+- **Retrait** : la figurine du Leader est toujours la **dernière** retirée de son unité.
+- **Effet permanent** : [Inébranlable 1] sur son unité et sur toute unité amie **adjacente** ; touche supplémentaire sur Couronne (§2.3).
+- **Statut Général** *(optionnel, une partie des Leaders seulement)* : la main de commandement du joueur passe de 4 cartes à **4 + nombre de Généraux vivants dans son camp**. Si un Général est éliminé, la main redescend **immédiatement**.
+- **Valeur de Destin** *(1 à 4, propre à chaque Leader)* : lorsque l'unité porteuse du Leader est éliminée, celui-ci tente de trouver refuge dans une unité amie **de sa faction**, à **3 hexagones ou moins**. Le joueur lance autant de dés que la valeur de Destin du Leader : **au moins une Couronne** sauve le Leader, qui rejoint l'unité choisie (sa valeur de Destin **diminue de 1** pour la suite de la partie) ; sans Couronne, ou s'il n'y a **aucune unité de sa faction** à portée, le Leader est **éliminé définitivement**.
+- **Leaders universels** *(exception nommée, à documenter par leader)* : certains Leaders peuvent rejoindre **n'importe quelle faction de leur camp** plutôt que la leur seulement, quand leur statut narratif le justifie (ex. un roi qui commande l'ensemble de son camp). Réservé aux figures dont le texte de Tolkien justifie une autorité transversale — voir `[[Playtest4_Compte-rendu]]` pour les cas tranchés au Pelennor.
 
 **Le badge Signature (facultatif, réservé aux pièces marquantes) = règles bespoke propres, hors de la matrice de badges.** Une poignée de pièces (La Compagnie Grise, le Mûmakil…) sortent entièrement du système de badges standard : leurs règles sont écrites au profil, comme des créations uniques. *(Coûts traités par équivalence, [[Regles_Points]] §6.)*
 
@@ -506,10 +516,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
 | **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — contre-attaque même en cas de recul forcé, puis recule normalement |
-| **Spéciale** (badge, max 1 avec Élite/Légende) | Marqueur : l'unité porte [Relance 1] |
-| **Élite** (badge, max 1 avec Spéciale/Légende) | Marqueur : l'unité porte [Inébranlable 1] + Jamais Faible |
-| **Légende** (badge, max 1 avec Spéciale/Élite) | Marqueur, réservé aux unités uniques : +1 dé de combat |
-| **Leader** (badge, max 1, en plus du précédent) | Marqueur, slot réservé (Phase 2) : touche aussi sur Couronne |
+| **Faction** (badge, cumulable, D092) | Marqueur : règle assignée à cette unité précise (fluff ou distinction tactique) — plus un trait de peuple universel |
+| **Bannière** (badge, cumulable, D092) | Marqueur, figurine porte-étendard visible : l'unité porte [Inébranlable 1] |
+| **Légende** (badge, cumulable, réservé aux unités uniques) | Marqueur : +1 dé de combat |
+| **Leader** (badge, cumulable, D093) | Marqueur : touche aussi sur Couronne, [Inébranlable 1] à son unité + unités amies adjacentes, statut Général et Destin possibles (§2.2bis) |
 
 > Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
 
@@ -527,6 +537,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 > ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
+
+*Version : 0.17 — Phase 1 — 2026-08-22. **Playtest #4 joué — troisième refonte du système de badges (D092) et formalisation du badge Leader (D093).** §2.2 réécrite : badges **Spéciale** et **Élite** abandonnés ; le badge **Faction**, retiré en D090, **revient** mais comme badge assigné **unité par unité** (fluff ou distinction tactique) plutôt que trait de peuple universel ; nouveau badge **Bannière** (figurine porte-étendard, = [Inébranlable 1]) ; tous les badges (Faction/Bannière/Légende/Leader) **cumulables sans plafond**, amende D081/D089. Nouveau **§2.2bis** : le badge Leader sort de la réserve Phase 2 (D089) — rattachement à une unité (dernière figurine retirée), [Inébranlable 1] à son unité et aux unités amies adjacentes, statut **Général** (carte de commandement bonus, main = 4 + Généraux vivants), valeur de **Destin** (jet de sauvetage vers une unité alliée à ≤3 hexagones, ≥1 Couronne sauve). Tableau résumé §7 mis à jour. Coûts (Bannière, Leader/Général) renvoyés à [[Regles_Points]] et au chantier P8. Voir `[[Playtest4_Compte-rendu]]`.*
 
 *Version : 0.13 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c).** §2.2 réécrite : le badge **Faction** cesse d'être un marqueur de plateau et devient un **trait de peuple**, imprimé une fois et appliqué automatiquement à toutes les unités standard du roster. Nouveau plafond : **une unité porte au maximum un second badge**, choisi parmi Spéciale/Élite/Légende (fin du cumul jusqu'à 3 introduit par D073). Nouveau badge **Signature** formalisé pour les pièces bespoke (Compagnie Grise, Mûmakil) qui sortent entièrement de la matrice. Mémo aligné. Détail par peuple dans chaque roster ; coûts dans [[Regles_Points]] §3.*
 

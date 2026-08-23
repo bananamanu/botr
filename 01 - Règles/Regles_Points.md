@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-16"
+date_maj: "2026-08-22"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.26"
+version: "0.27"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -60,7 +60,9 @@ Final = round(Brut ÷ 3) − 1
 
 La compression (§4) se fait **une fois**, à la rédaction du profil, après avoir additionné tous les suppléments au brut de la case — jamais à la volée en partie.
 
-### 3.1 Le badge secondaire — un seul par unité
+> ⚠️ **Playtest #4 (D092/D093) — pivot en cours, non répercuté ci-dessous.** Les badges Spéciale et Élite décrits en §3.1 sont **abandonnés** ; Faction redevient un badge assigné **par unité** plutôt qu'un trait de peuple systématique (§3.2 devient donc caduque dans sa forme actuelle) ; nouveau badge **Bannière** = tarif [Inébranlable 1] existant (**+2 brut**, provisoire). Le badge **Leader**/statut **Général** n'a **pas de coût chiffré** — Emmanuel juge que l'impact (carte de commandement bonus) doit se traduire par un coût significatif, pas anecdotique. **Le recalcul complet des 6 rosters sur cette base, la refonte de §3, et le chiffrage de Leader/Général sont le chantier P8** (fusionné avec l'intégration des héros aux rosters) — §3.1/§3.2 ci-dessous restent affichées pour mémoire de la logique de dérivation, mais leurs badges (Spéciale/Élite) et la lecture « Faction universelle » ne sont plus la référence courante.
+
+### 3.1 Le badge secondaire — un seul par unité *(historique, D073/D081 — voir avertissement ci-dessus)*
 
 - **Spéciale** confère **[Relance 1]**, universel depuis D073. **Coût : +2 brut** (tarif socle [Relance X] = 2×X).
 - **Élite** confère **[Inébranlable 1] + Jamais Faible** (D073 : l'unité ignore l'état Faible, ses faces Épée touchent toujours). **Coût : +2 brut**, inchangé malgré l'enrichissement (Jamais Faible n'ajoute rien au forfait — provisoire, à surveiller au playtest).
@@ -68,7 +70,7 @@ La compression (§4) se fait **une fois**, à la rédaction du profil, après av
 
 Une unité porte l'un des trois, ou aucun — jamais deux à la fois. Les collisions de coût que ce resserrement recrée localement (deux profils qui retombent au même palier) sont **acceptées par construction du système**, au même titre que les égalités déjà existantes ailleurs dans les rosters (ex. Hommes d'armes de Dol Amroth / Guerriers de Lossarnach, Gondor).
 
-### 3.2 Le trait de Faction — coût par peuple
+### 3.2 Le trait de Faction — coût par peuple *(historique, D080/D085 — Faction n'est plus un trait de peuple depuis D092, voir avertissement ci-dessus)*
 
 Chaque peuple a sa propre règle de Faction, définie une fois pour tout le roster ([[Regles_Speciales]] §4a) et son coût s'ajoute au brut de **toute** unité qui la porte :
 
@@ -190,6 +192,8 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
 
 ---
+
+*Version : 0.27 — Phase 1 — 2026-08-22. **Playtest #4 joué — pivot badges signalé, non répercuté (D092/D093).** Avertissement ajouté en tête de §3 : Spéciale/Élite abandonnés, Faction redevient un badge par unité (§3.1/§3.2 marquées historiques), nouveau badge Bannière au tarif [Inébranlable 1] (+2, provisoire), coût de Leader/Général non chiffré (Emmanuel : doit être significatif). Recalcul complet des 6 rosters et refonte de ce document renvoyés au chantier **P8**. Voir `[[Playtest4_Compte-rendu]]`.*
 
 *Version : 0.26 — Phase 1 — 2026-08-16. **D088 — clôture du point de veille D064 sur les cartes bannière.** §8 : point ouvert #3 marqué résolu — les cartes bannière reviennent sous le nom Classe Verte/Bleue/Rouge dans `[[Cartes_Commandement]]` §4.2, activation par couleur = classe, sans impact sur le chiffrage. Aucun changement de coût dans ce document.*
 

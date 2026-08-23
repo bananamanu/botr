@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-18"
+date_maj: "2026-08-22"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.29"
+version: "0.30"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -29,7 +29,7 @@ version: "0.29"
 1. [[#Conventions]]
 2. [[#Socle générique]]
 3. [[#Règles intrinsèques (dérivées de la taxonomie)]]
-4. [[#4a. Anciennes règles de Faction — retirées (D090)]]
+4. [[#4a. Badges Faction et Bannière (D092)]]
 5. [[#4b. Signature — pièces bespoke]]
 6. [[#Récapitulatif alphabétique]]
 7. [[#Retiré au tri P2]]
@@ -44,17 +44,18 @@ version: "0.29"
 - **[Règle]** : nom entre crochets — standard dans tous les profils.
 - **[Règle X]** : règle avec une valeur numérique (ex. [Armure 1], [Relance 2]).
 
-### Trois familles *(D089/D090 — retrait de la famille Faction)*
+### Quatre familles *(D092/D093 — Playtest #4, troisième refonte des badges)*
 
 | Famille | Rôle | Où c'est défini |
 |---|---|---|
 | **Socle générique** | Vocabulaire universel disponible à tout profil (défense, relance, poursuite…) | §2 de ce document |
 | **Intrinsèque** | Découle de la combinaison classe × type × mode — **ne se note pas sur le profil**, se lit au jeton/plateau | [[Regles_Base]] (§2, §6) |
-| **Signature** | Capacité(s) marquante(s), réservée aux **pièces bespoke uniquement** (Compagnie Grise, Mûmakil), hors matrice de badges | §4b de ce document |
+| **Badge** | Faction / Bannière / Légende / Leader — assignés **unité par unité**, cumulables sans plafond | §4a de ce document, [[Regles_Base]] §2.2/§2.2bis |
+| **Signature** | Capacité(s) marquante(s), réservée aux **pièces bespoke uniquement** (Compagnie Grise, Mûmakil, Roi-Sorcier), hors matrice de badges | §4b de ce document |
 
-> **Faction retirée (D090).** L'ancienne famille « Faction — trait de peuple imprimé sur tout le roster » n'existe plus ; l'asymétrie de chaque peuple sera portée par des cartes de commandement dédiées (chantier P8). Ses anciennes règles ([Horde], [Poison], [Défense X], [Férocité], [Mercenaire]) restent au glossaire, sans porteur actif — voir §4a.
+> **Faction restaurée, changée de nature (D092).** Retirée en D090 (renvoyée aux cartes de commandement de P8), elle revient au Playtest #4 mais **plus comme trait de peuple universel** (D081/D085) : c'est désormais un **badge assigné unité par unité**, à la discrétion du concepteur (fluff — « toute unité autour d'Éomer porte [Férocité] » — ou distinction tactique — « les orques du Morannon portent [Horde] pour se distinguer des orques normaux »). Elle reprend le vocabulaire déjà existant ci-dessous (ex-§4a).
 >
-> **Badges secondaires : jusqu'à 2 maximum par unité standard** — un badge parmi Spéciale/Élite/Légende (1 max) **+** le badge Leader (1 max, D089). Défini dans [[Regles_Base]] §2.2 ; coûts dans [[Regles_Points]] §3.1.
+> **Badges : cumulables librement, sans plafond** (amende D081/D089). Une unité peut porter Faction, Bannière, Légende et Leader simultanément si le concepteur le juge lisible pour cette unité. Les badges **Spéciale** et **Élite** (D073) sont **abandonnés** — plus de [Relance 1]/[Inébranlable 1]+Jamais Faible génériques attachés à un badge de ce nom. Nouveau badge **Bannière** = **[Inébranlable 1]**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton). Défini dans [[Regles_Base]] §2.2 ; coûts dans [[Regles_Points]] §3.1 (Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8).
 
 ### Où se résolvent les signatures
 
@@ -147,11 +148,17 @@ Toute unité **légère (🟢, 2 dés) en mode distance** décroche après avoir
 
 ---
 
-## 4a. Anciennes règles de Faction — retirées (D090)
+## 4a. Badges Faction et Bannière (D092)
 
-*(Retrait D089/D090, pivot jeton/badges.)* Ces règles étaient jusqu'ici imprimées une fois par peuple et appliquées automatiquement à toutes ses unités standard. **Ce mécanisme n'existe plus** : l'asymétrie de chaque peuple sera portée par des cartes de commandement dédiées (chantier P8). Les règles elles-mêmes restent définies ci-dessous, **sans porteur actif**, conservées au glossaire pour une éventuelle réassignation en P8 (carte de commandement ou signature bespoke).
+*(Faction retirée en D090, restaurée en D092 sous une nature différente — badge assigné unité par unité, plus un trait de peuple universel automatique.)* Ces règles ne se lisent plus au niveau du roster mais au niveau du **profil** : le concepteur les assigne à l'unité qui les mérite, par fluff (« les compagnons d'Éomer portent [Férocité] ») ou pour distinguer deux unités autrement identiques (« les orques du Morannon portent [Horde], pas les orques de base »). Cumulables avec Bannière, Légende et Leader sans plafond. Réassignation formelle par roster (`02 - Factions/*.md`) renvoyée à **P8**.
 
-#### [Horde]  — *sans porteur actif (ex-Faction Mordor)*
+#### [Bannière]  — *badge, nouveau (D092)*
+
+L'unité porte **[Inébranlable 1]** (ignore 1 résultat de retraite par attaque reçue, cumulable avec un autre Inébranlable déjà présent). Incarnée par une figurine porte-étendard visible sur le socle — **pas de jeton dédié**, contrairement aux autres badges.
+
+> 🎲 Repris du jeu de plateau MESBG (bannières visibles sur les unités) : une pièce identifiable à la table sans consulter de fiche, cohérent avec le principe de lisibilité au plateau (principe 3). Coût : tarif [Inébranlable 1] existant (+2 brut, [[Regles_Points]] §3.1), à confirmer en P8.
+
+#### [Horde]  — *badge Faction, réactivée (D092) — Mordor*
 
 Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d'attaque**. Dès qu'elle subit sa **première touche**, elle perd ce bonus **et** passe immédiatement en **état Faible** ([[Regles_Base]] §2.2 : ses faces Épée cessent de toucher) — **quel que soit le nombre de figurines qu'il lui reste**, pas seulement à la dernière.
 
@@ -163,13 +170,13 @@ Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d
 >
 > 🔄 **Étendue à toute l'infanterie de mêlée du roster, Uruk-hai compris — P7c (D081).** Auparavant l'Uruk-hai en était explicitement exclu (« exception steadfast », D035) : il porte désormais [Horde] comme trait de Faction, badge Élite en plus (Jamais Faible neutralise le volet Faible-immédiate de la règle — l'Uruk-hai profite du +1 dé à pleine santé sans jamais en subir la contrepartie, cohérent avec son statut d'élite qui ne rompt pas). **Reste hors périmètre : la Bande de pisteurs orques** (tir) — sur une unité qui ne porte pas de faces Épée actives, le volet Faible de [Horde] ne mord pas, ce qui en ferait un bonus sans contrepartie ; exclue par choix, pas par oubli.
 
-#### [Poison]  — *sans porteur actif (ex-Faction Harad)*
+#### [Poison]  — *badge Faction, réactivée (D092) — Harad*
 
 Lorsque cette unité attaque, chaque face **Arcane** inflige **1 touche supplémentaire** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)*.
 
 > 🎲 Ancien fil conducteur du Harad (flèches et lames empoisonnées). Porté par tout le roster d'escorte et la volée du Mûmakil ([Howdah]) jusqu'à D090 — retiré des deux, y compris du Mûmakil (`02 - Factions/Harad.md`).
 
-#### [Défense X]  — *sans porteur actif (ex-Faction Gondor et Orientaux)*
+#### [Défense X]  — *badge Faction, réactivée (D092) — Gondor et Orientaux*
 
 Nom d'usage d'[Armure X] (§2, socle générique) quand la règle sert de trait de Faction plutôt que d'être dérivée de la classe : lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Sans effet contre le tir.
 
@@ -177,25 +184,23 @@ Nom d'usage d'[Armure X] (§2, socle générique) quand la règle sert de trait 
 >
 > 🔄 **Étendue à tout le roster — P7c (D081).** Jusqu'ici cantonnée aux profils lourds chez Gondor et absente chez les Orientaux (badge [Mur de bouclier], D077), la Faction couvre désormais **toutes** les unités standard des deux peuples, sans exception. **[Mur de bouclier] redevient sans porteur actif** (voir ci-dessous) : les Orientaux reviennent au miroir mécanique de Gondor.
 
-#### [Férocité]  — *sans porteur actif (ex-Faction Rohan)*
+#### [Férocité]  — *badge Faction, réactivée (D092) — Rohan*
 
 Cette unité peut effectuer sa contre-attaque même si l'attaque subie la force à reculer (voir §2, socle générique) — l'exception à la condition « restée sur son hexagone ».
 
-> 🎲 Porté par les 9 profils du roster sans exception depuis D074 (premier peuple à universaliser sa Faction). Traduit la vaillance désespérée du Rohan mieux qu'une arme ou une armure — « personne au Rohan ne cède un pouce de terrain sans rendre un coup ».
+> 🎲 Au Playtest #4, assignée par fluff aux unités entourant Éomer plutôt qu'à tout le roster — reflète le retour au principe « badge par unité », pas trait de peuple. Traduit la vaillance désespérée du Rohan mieux qu'une arme ou une armure.
 
-#### [Mercenaire]  — *sans porteur actif (ex-Faction Khand)*  *(coût négatif)*
+#### [Mercenaire]  — *badge Faction, réactivée (D092) — Khand*  *(coût négatif)*
 
 Chaque retrait forcé (recul de combat) de cette unité compte double (voir §2, socle générique).
 
-> 🎲 Porté par toutes les troupes mercenaires et pillards de Khand. **L'Aurige de Khand ne le porte pas** : seul corps régulier du peuple, pas un mercenaire — exclusion par identité, pas un oubli (D070).
-
-*(Historique : la Bande de pisteurs orques (Mordor, tir) et l'Aurige de Khand (seul corps régulier) étaient les seules unités **sans** Faction avant son retrait généralisé (D090) — la distinction n'a plus d'effet mécanique aujourd'hui.)*
+> 🎲 Assignable aux troupes mercenaires et pillards de Khand. **L'Aurige de Khand ne le porte pas** : seul corps régulier du peuple, pas un mercenaire — exclusion par identité (D070).
 
 #### [Mur de bouclier]  — *sans porteur actif*
 
 Tant que cette unité n'a subi aucune touche, elle bénéficie de [Protection 1] (ignore 1 touche par attaque reçue, mêlée ou tir). Dès qu'elle subit sa première touche, la formation est rompue : la protection disparaît définitivement.
 
-> 🎲 Le mur tient tant que la ligne n'est pas percée, puis s'effondre d'un coup — même patron que [Horde]. **Sans porteur depuis P7c (D081)** : identité propre des Orientaux depuis D077, elle cède la place au miroir mécanique de Gondor ([Défense 1], universel sur les deux rosters). Conservée au glossaire — réutilisable si un futur profil ou peuple veut l'identité « formation qui tient tant qu'elle n'est pas percée ».
+> 🎲 Le mur tient tant que la ligne n'est pas percée, puis s'effondre d'un coup — même patron que [Horde]. **Sans porteur depuis P7c (D081)**, toujours sans porteur au Playtest #4 (les Orientaux ont utilisé [Défense X] à la place). Conservée au glossaire — réutilisable si un futur profil ou peuple veut l'identité « formation qui tient tant qu'elle n'est pas percée ».
 
 #### [Double Tir]  — *sans porteur actif*
 
@@ -213,9 +218,15 @@ Règles propres, **hors matrice de badges**, réservées aux pièces qui ne se r
 
 Chaque face **Arcane** obtenue en attaque compte comme **X Drapeaux** contre la cible (au lieu d'un échec). N'inflige **aucune touche** : la Peur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
 
-> 🎲 Réutilise la face Arcane (morte par défaut) et pose le premier jalon de la couche Leadership (Phase 2). Versions « Terreur » (X élevé, Nazgûl/Roi-Sorcier) différées (§7).
+> 🎲 Réutilise la face Arcane (morte par défaut) et pose le premier jalon de la couche Leadership (Phase 2, formalisée D093).
 >
-> 🔄 **Devenue intrinsèque au type Créature — P4 (D071)** : **toute créature porte [Peur 1] et [Armure 1] sans supplément de coût** — ce n'est plus une signature à assigner unité par unité (voir [[Regles_Base]] §2.3, à ajouter). Première application : Troll du Mordor. S'appliquera au Mûmakil (Harad) à sa propre re-expression P4/P5, sans redondance avec ses règles bespoke déjà en place ([Howdah], [Charge écrasante], [Inébranlable ∞]).
+> 🔄 **Devenue intrinsèque au type Créature — P4 (D071)** : **toute créature porte [Peur 1] et [Armure 1] sans supplément de coût** — ce n'est plus une signature à assigner unité par unité (voir [[Regles_Base]] §2.3, à ajouter). Première application : Troll du Mordor. S'applique aussi au Mûmakil (Harad), sans redondance avec ses règles bespoke déjà en place ([Howdah], [Charge écrasante], [Inébranlable ∞]).
+
+#### [Terreur]  — *signature, créée au Playtest #4 (D094)*
+
+Chaque face **Arcane** obtenue en attaque compte comme **2 Drapeaux** contre la cible (au lieu d'un échec). Comme [Peur X], n'inflige **aucune touche** — la Terreur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
+
+> 🎲 **Version renforcée de [Peur X]**, X fixé à 2 plutôt que gradué — sort de la différée « Terreur (X élevé) » évoquée depuis D062 §7. Réservée aux figures de terreur pure du récit (Nazgûl, Roi-Sorcier) : premier porteur, le **Roi-Sorcier sur l'ombre ailée** (§4b), validé au Playtest #4.
 
 #### [Archer en mêlée]  — *sans porteur actif*
 
@@ -261,6 +272,18 @@ Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1
 
 **[Howdah] = [Plateforme de tir 2]** : une attaque de tir de **2 dés**, portée **1–3**, en plus de la mêlée. *([Poison] retiré, D090 — c'était le trait de Faction du Harad, désormais sans porteur ; aucune collision avec [Peur 1] du Mûmakil, puisque Peur ne s'applique qu'à son attaque de charge, un jet distinct du tir de Howdah.)*
 
+### Signatures bespoke — Roi-Sorcier sur l'ombre ailée *(nouveau, D095)*
+
+Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor). Non encore chiffré ni intégré à `02 - Factions/Mordor.md` — repricing et intégration formelle renvoyés à **P8**.
+
+- **6 PV**, **4 dés d'attaque** (classe 🔴).
+- **[Terreur]** (voir ci-dessus) : chaque Arcane = 2 Drapeaux.
+- **[Vigilant]** (socle, §2) : ne peut jamais être contre-attaqué.
+- **[Vol]** *(bespoke, première application)* : à son activation, se déplace de **4 hexagones** sans tenir compte des figurines présentes sur le trajet (traverse librement unités et terrain).
+- **Intrinsèques Créature** (D071) : [Armure 1], [Peur 1] — coexistent avec [Terreur] ; en pratique [Terreur] est la version employée en attaque, [Peur 1] reste la valeur plancher du type.
+
+> 🎲 **« Machine de terreur »** (verdict du Playtest #4) — a joué son rôle de pièce de rupture, mobile et intouchable au contre. Porte, en plus de ce profil générique, une règle strictement propre au scénario Pelennor (bonus contre l'unité de Théoden) : voir `[[Playtest4_Compte-rendu]]` et le document de scénario `03 - Scénarios/`, pas ce glossaire.
+
 ---
 
 ## Récapitulatif alphabétique
@@ -271,24 +294,27 @@ Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1
 | **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche |
 | **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
 | **[Armure X]** | Socle | Retire X faces Épée des attaques de mêlée reçues |
+| **[Bannière]** | Badge *(nouveau, D092)* | [Inébranlable 1], incarné par une figurine porte-étendard visible (pas de jeton) |
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | À 1 PV (dernier point) : Furie automatique, contrôle à pile ou face chaque tour, activation gratuite garantie au tour du Mal (refondue D079) |
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Arcane = touche, migré depuis Couronne D089) sur le trajet, sans contre-attaque |
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
-| **[Défense X]** | Sans porteur actif *(ex-Faction Gondor/Orientaux, retiré D090)* | = [Armure X], nom d'usage quand la règle était trait de peuple |
-| **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090 — aussi disponible au socle)* | Contre-attaque même en cas de recul forcé, puis recule |
-| **[Horde]** | Sans porteur actif *(ex-Faction Mordor, retiré D090)* | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
+| **[Défense X]** | Badge Faction, réactivée (D092) — Gondor/Orientaux | = [Armure X], nom d'usage quand la règle sert de badge Faction |
+| **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Contre-attaque même en cas de recul forcé, puis recule |
+| **[Horde]** | Badge Faction, réactivée (D092) — Mordor | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] *([Poison] retiré, D090)* |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
-| **[Leader]** | Badge *(D089, slot réservé — Phase 2)* | Touche aussi sur Couronne, en plus des faces normales du mode |
-| **[Mercenaire]** | Sans porteur actif *(ex-Faction Khand, retiré D090)* *(coût négatif)* | Chaque retrait forcé compte double |
+| **[Leader]** | Badge *(formalisé D093, sort de la réserve Phase 2)* | Touche aussi sur Couronne ; [Inébranlable 1] à son unité + unités amies adjacentes ; statut Général et valeur de Destin possibles — [[Regles_Base]] §2.2bis |
+| **[Mercenaire]** | Badge Faction, réactivée (D092) — Khand *(coût négatif)* | Chaque retrait forcé compte double |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
-| **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
+| **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081, confirmé au Playtest #4)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 ; toute créature en porte aussi (D071) |
 | **[Peur X]** | Intrinsèque (type Créature) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
 | **[Plateforme de tir X]** | Sans porteur actif | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
-| **[Poison]** | Sans porteur actif *(ex-Faction Harad, retiré D090)* | Arcane → 1 touche supplémentaire (migré depuis Couronne, D089) |
+| **[Poison]** | Sans porteur actif *(ex-badge Faction Harad, retiré D090, non réactivé au Playtest #4)* | Arcane → 1 touche supplémentaire (migré depuis Couronne, D089) |
 | **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
+| **[Terreur]** | Signature *(créée D094)* | Chaque Arcane = 2 Drapeaux — version renforcée de [Peur X], porteur : Roi-Sorcier sur l'ombre ailée |
+| **[Vol]** | Bespoke *(première application, D095)* | Déplacement de X hex ignorant les figurines sur le trajet — porteur : Roi-Sorcier sur l'ombre ailée |
 | **[Prise de flanc]** | Signature (Éored de cavalier) | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
 | **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
 | **[Vigilant]** | Signature (Éored d'éclaireur) | La cible de cette unité ne peut pas la contre-attaquer |
@@ -324,16 +350,18 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 
 | Règle | Description préliminaire | Statut |
 |---|---|---|
-| **[Terreur]** | Version renforcée de [Peur X] (X élevé) — Nazgûl, Roi-Sorcier, Mûmakil | ⏳ Phase 2 |
-| **[Vol]** | Traverser des hexagones occupés, ignorer certains terrains — créatures ailées (Nazgûl) | ⏳ Phase 2 |
 | **[Piétinement en zone]** | Attaque touchant plusieurs hexagones adjacents — grandes créatures | ⏳ Phase 2 |
-| **Manœuvres de héros (face Arcane)** | Couche Leadership : héros activant des manœuvres via les Arcanes (Espoir/Désespoir). Voir D034. | ⏳ Phase 2 |
+| **Générosité/malus Espoir-Désespoir sur l'Arcane** | Piste initiale de D001/D034 (dé custom par camp) — non retenue, remplacée par le badge Leader (D093) | Abandonnée |
+
+> ✅ **[Terreur]** (D094) et **[Vol]** (D095, bespoke Roi-Sorcier) sont sorties de cette table — actives depuis le Playtest #4, voir §4b. La couche **Leadership** (D012/D034) est désormais couverte par le badge **Leader** (D093, [[Regles_Base]] §2.2bis) : Général, Destin — pas de dé-randomisation ni de mécanique Espoir/Désespoir séparée, le badge Leader ferme directement les deux points ouverts laissés par D034.
 
 ---
 
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.30 — Phase 1 — 2026-08-22. **Playtest #4 joué — troisième refonte des badges (D092) et formalisation du badge Leader (D093).** §4a renommé « Badges Faction et Bannière » : Faction revient (retirée D090) mais comme badge assigné **unité par unité**, plus un trait de peuple ; Spéciale et Élite (D073) abandonnés ; nouveau badge **Bannière** ([Inébranlable 1], figurine porte-étendard). Tous les badges cumulables sans plafond. Badge **Leader** sort de la réserve Phase 2 : mécanique complète en [[Regles_Base]] §2.2bis (Général, Destin). Nouvelle règle **[Terreur]** (D094, Arcane = 2 Drapeaux) et nouveau profil bespoke **Roi-Sorcier sur l'ombre ailée** (D095, première application de [Vol]) ajoutés en §4b. Table « Différées Phase 2+ » allégée (Terreur/Vol activées, couche Leadership couverte par le badge Leader). Récapitulatif alphabétique et table des quatre familles mis à jour. Réassignation formelle des badges dans les 6 rosters renvoyée à **P8**. Voir `[[Playtest4_Compte-rendu]]`.*
 
 *Version 0.29 — Phase 1 — 2026-08-18. **Pivot jeton/badges (D089) et retrait de la famille Faction (D090).** §4a renommé « Anciennes règles de Faction — retirées » : [Horde], [Poison], [Défense X], [Férocité], [Mercenaire] passent sans porteur actif, conservées pour réassignation en P8 (cartes de commandement par faction). Table « Quatre familles » → « Trois familles ». Migration Couronne→Arcane pour toutes les règles spéciales/signature à déclenchement par face ([Charge écrasante], [Poison]) — la Couronne est réservée au nouveau badge **Leader** (D089, slot réservé Phase 2). [Howdah] (Mûmakil) perd son volet Poison. Récapitulatif alphabétique et ordre de résolution des signatures mis à jour.*
 
