@@ -3,270 +3,127 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-18"
+date_maj: "2026-08-23"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "2.4"
+version: "3.1"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
 
-> **Objet de ce document (refonte P4, D067 ; pivot badges universels D073).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Le système de règles écrites au profil est remplacé par **quatre badges fixes** (Faction/Spéciale/Élite/Légende), lisibles au plateau sans consulter aucune fiche — simplification demandée par Emmanuel au-delà même du barème à valeur variable de P1-P3, poussée plus loin par le pivot D073 (badge Spéciale universel, badge Légende pour les pièces uniques).
+> **Objet de ce document (P8 — simplification radicale, arbitrage Emmanuel).** Retour au principe 8 (simplification radicale) poussé à son terme : une unité de base ne porte **plus aucun badge d'office**. Le profil se résume à **Type + Combat + Classe**. Deux options existent, jamais imposées : **Bannière** (là où une figurine porte-étendard a un sens narratif) et **Faction** (« Défenseur de la Terre du Milieu », désormais **[Relance 1]** plutôt que [Défense X] — un outil à disposition du concepteur de scénario pour marquer ponctuellement une troupe comme vétérante, pas un supplément systématique). Le roster se resserre en conséquence : les anciennes familles distinguées uniquement par un badge (Rangers du Gondor/Ithilien/Nord, Guerriers de Minas Tirith/Garde de la Citadelle…) fusionnent en profils uniques.
 >
-> Pas de héros — les unités dites « légendaires » ci-dessous sont des types de troupe d'élite au profil enrichi, pas des personnages individuels avec valeur de commandement (voir « Unité légendaire » dans la Terminologie fixée du [[Document_de_cadrage]] §7 ; distinction héros réservée à la Phase 2, §5.2).
+> La Compagnie Grise redevient une pièce **entièrement bespoke** : six figurines nommées (Aragorn, Gimli, Legolas, Elrohir, Elladan, Halbarad), chacune apportant sa propre règle tant qu'elle est présente — retour à l'esprit d'origine plutôt qu'un empilement de badges génériques.
 >
-> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
+> Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.30, [[Regles_Points]] v0.29.
 
 ---
 
-## 1. Badges de Gondor *(Faction retirée, D090)*
+## 1. Faction de Gondor — « Défenseur de la Terre du Milieu »
 
-*(Pivot jeton/badges — D089/D090.)* Le trait de Faction (**[Défense 1]** appliqué à tout le roster) est retiré : l'asymétrie de Gondor sera portée par ses **cartes de commandement propres** plutôt que par une règle imprimée sur chaque profil (chantier P8). Ce qui reste au niveau de l'unité : **jusqu'à deux badges secondaires**, choisis parmi Spéciale/Élite/Légende (1 max) et Leader (1 max, réservé — Phase 2 Héros/Leadership).
+> Les troupes du Gondor combattent les forces de Sauron depuis des siècles et sont aguerries. **Effet : [Relance 1].**
 
-| Badge | Effet | Porté par |
-|---|---|---|
-| **Spéciale** | **[Relance 1]** | Troupes à l'arme ou au tir remarquable |
-| **Élite** | **[Inébranlable 1] + Jamais Faible** | Troupes aguerries |
-| **Légende** *(réservé aux unités uniques)* | **+1 dé de combat** | La Compagnie Grise (13) |
-| **Leader** *(slot réservé, Phase 2)* | Touche aussi sur Couronne | — |
+**Ce n'est plus un trait de peuple, ni même un trait lié à un Leader — c'est un outil disponible**, à poser sur une unité éligible (voir tableau §2) quand un scénario veut en faire une troupe vétérante. Coût : **+2 brut**, jamais gratuit (contrairement à l'ancien [Défense X], la nouvelle règle [Relance 1] n'a pas de plancher intrinsèque à absorber).
 
-Une unité porte donc **0, 1 ou 2 badges** au maximum (un badge Spéciale/Élite/Légende + un badge Leader) — jamais plus. Le jeton classe/mode (couleur + symbole, [[Regles_Base]] §2.1-2.2) reste obligatoire et ne compte pas comme un badge.
-
-> ⚠️ **Deux profils strictement identiques en mécanique, distincts en narratif** — assumé, cohérent avec le principe d'asymétrie du projet (§6 du cadrage) : Hommes d'armes de Dol Amroth (piquiers) et Guerriers de Lossarnach (hallebardiers) partagent le badge Spéciale, 5 pts chacun *(coût affiché avant recalcul P8)*.
->
-> ⚠️ **Recalcul des points en attente (P8).** Les coûts ci-dessous incluaient jusqu'ici la valeur du trait de Faction (+2, souvent gratuit sur 🔴) — ils restent affichés tels quels en attendant la passe de recalcul complet prévue en P8, avec la conception des cartes de commandement par faction. Ne pas considérer ces chiffres comme définitifs d'ici là.
+**Bannière** reste un badge optionnel indépendant : **[Inébranlable 1]**, +2 brut, incarné par une figurine porte-étendard — disponible seulement là où c'est narrativement cohérent (pas sur les troupes légères qui ne portent pas d'étendard en formation).
 
 ---
 
 ## 2. Liste des troupes
 
-| # | Unité | Type | Combat | Classe | Badge secondaire | **Points** |
-|---|----------------------------------|----------|--------|------|----|----------|
-| 1 | Guerriers de Minas Tirith | Infanterie | Mêlée | 🔵 | *(aucun)* | **5** |
-| 2 | Archers de Minas Tirith | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
-| 3 | Chevaliers de Minas Tirith | Cavalerie | Mêlée | 🔴 | *(aucun)* | **7** |
-| 4 | Chevaliers de Dol Amroth | Cavalerie | Mêlée | 🔴 | Élite | **7** |
-| 5 | Garde de la Citadelle | Infanterie | Mêlée | 🔵 | Élite | **5** |
-| 6 | Hommes d'armes de Dol Amroth | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
-| 7 | Chevaliers à pied de Dol Amroth | Infanterie | Mêlée | 🔴 | Élite | **6** |
-| 8 | Guerriers de Lossarnach | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
-| 9 | Guerriers des clans de Lamedon | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
-| 10 | Rangers du Gondor | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
-| 11 | Rangers d'Ithilien | Infanterie | Distance | 🔵 | Spéciale | **4** |
-| 12 | Rangers du Nord — *nouvelle unité* | Infanterie | Distance | 🔵 | Élite | **4** |
-| 13 | La Compagnie Grise — *signature* | Infanterie | Mêlée | 🔵 | *(hors matrice)* | **7** |
+| # | Unité(s) | Type | Combat | Classe | Options disponibles | **Points (base)** |
+|---|---|---|---|---|---|---|
+| 1 | Rangers *(du Gondor, d'Ithilien, du Nord — même profil)* | Infanterie | Distance | 🟢 | Faction | **3** |
+| 2 | Archers de Minas Tirith | Infanterie | Distance | 🟢 | Faction, Bannière | **3** |
+| 3 | Troupes régulières de Minas Tirith *(Garde de la Citadelle, Guerriers de Minas Tirith)* | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
+| 4 | Troupes des Fiefs *(Guerriers de Lossarnach, Guerriers des clans de Lamedon)* | Infanterie | Mêlée | 🔵 | Faction | **4** |
+| 5 | Troupes lourdes des Fiefs *(Chevaliers à pied de Dol Amroth)* | Infanterie | Mêlée | 🔴 | Bannière | **5** |
+| 6 | Cavalerie du Gondor *(Chevaliers de Dol Amroth, Chevaliers de Minas Tirith)* | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
+| 7 | La Compagnie Grise — *signature* | Infanterie | Mêlée | 🔵 | *(hors matrice, voir §3)* | **15** |
 
-*Roster resserré à 13 unités (contre 14) : Archers de la Racine Noire fusionnés dans Rangers d'Ithilien/Rangers du Nord (même niche tir-précision, différenciée par le badge Élite plutôt que par un profil séparé) ; Vétérans d'Osgiliath retirés du roster de base (aucun rôle mécanique distinct des Gardes de la Citadelle sous le nouveau système de badges — candidat à réintroduire en pièce unique si un scénario le demande).*
+**Coûts avec options :**
 
-> 🔄 **P7c (D081) — Faction étendue à tout le roster.** Avant ce collapse, [Défense 1] (alors [Armure 1]) manquait sur Lamedon (9) et toute la famille Rangers (10-12) — désormais universelle, comme chez les autres peuples. **Coût inchangé pour ces 4 profils** : la compression absorbe l'ajout à ces paliers bas. Guerriers des clans de Lamedon perd son statut de « seule unité du roster sans Faction » (voir §5) ; Chevaliers de Dol Amroth (4) et Rangers du Nord (12) perdent leur second badge secondaire — 1 seul retenu chacun (Élite dans les deux cas), voir §1.
+| # | Unité | Base | +Faction | +Bannière | +les deux |
+|---|---|---|---|---|---|
+| 1 | Rangers | 3 | 3 *(absorbé)* | — | — |
+| 2 | Archers de Minas Tirith | 3 | 3 *(absorbé)* | 3 *(absorbé)* | **4** |
+| 3 | Troupes régulières MT | 4 | **5** | **5** | **5** *(absorbé)* |
+| 4 | Troupes des Fiefs | 4 | **5** | — | — |
+| 5 | Troupes lourdes des Fiefs | 5 | — | **6** | — |
+| 6 | Cavalerie du Gondor | 7 | 7 *(absorbé)* | 7 *(absorbé)* | **8** |
 
-> 🎲 **Note de design — pourquoi ce resserrement**
-> L'ancien roster distinguait Rangers du Gondor / Rangers d'Ithilien / Archers de la Racine Noire par un empilement de règles à valeur variable ([Mobilité 1], [Double Tir], [Perforant 1]). Deux de ces trois règles ont disparu du vocabulaire de Gondor : [Mobilité 1] est maintenant **gratuite et automatique** sur tout 🟢 distance (Rangers du Gondor l'a sans rien écrire), et [Double Tir] est devenu la signature **exclusive** de l'Easterling. Il ne restait plus qu'un seul levier de différenciation utile : Élite. D'où la famille resserrée à trois paliers **classe + badge secondaire**, sans aucune règle à valeur dans le texte : Rangers du Gondor (🟢, aucun) → Rangers d'Ithilien (🔵 + Spéciale) → Rangers du Nord (🔵 + Élite, P7c — Spéciale abandonnée pour tenir le plafond à 1 badge).
+> 🎲 **Note sur les paliers absorbés.** Sur plusieurs cases (Rangers, Archers, Cavalerie), une seule option ne change pas le coût final — la compression `round(brut÷3)−1` l'absorbe. C'est un effet de palier assumé (déjà rencontré ailleurs dans le projet, ex. Rangers du Gondor/Mobilité) : l'option reste un vrai outil narratif et tactique (donne une vraie règle en jeu) même quand elle ne coûte rien sur cette case précise.
 
----
+> ✅ **Correction (D110) : les Chevaliers à pied de Dol Amroth restent en 🔴**, pas 🔵 — erreur de Claude dans la v3.0. Conservent [Armure 1]/[Poursuite 1] intrinsèques de la classe lourde. Coût de base **5** (au lieu de 4), avec Bannière **6** (au lieu de 5).
 
-## 3. Profils détaillés
-
-### 1. Guerriers de Minas Tirith
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** la garnison de base de la Cité Blanche, en cotte de mailles renforcée d'un plastron métallique, l'arbre blanc sur leur surcot. Gondor est le peuple de l'armure lourde par excellence — ça se justifie dès la ligne standard plutôt que d'être réservé à l'élite.
+**Roster resserré de 13 lignes à 7** (Rangers 10-12 fusionnés en 1 ; Guerriers de Minas Tirith/Garde de la Citadelle fusionnés en 1 ; Lossarnach/Lamedon fusionnés en 1 ; Chevaliers de Minas Tirith/Dol Amroth fusionnés en 1).
 
 ---
 
-### 2. Archers de Minas Tirith
+## 3. La Compagnie Grise — pièce bespoke
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
+| Type | Combat | Classe | Mouvement | Attaque | PV | **Points** |
+|---|---|---|---|---|---|---|
+| Infanterie | Mêlée | 🔵 | 2 | 3 dés *(+1 avec Gimli présent)* | **6** | **15** |
 
-**Badges :** *(aucun — ex-Faction retirée, D090)*
+**Composition :** 6 figurines nommées — Aragorn, Gimli, Legolas, Elrohir, Elladan, Halbarad. Le joueur qui contrôle l'unité choisit quelle figurine retirer à chaque perte (règle héritée, inchangée).
 
-**Note narrative :** les arcs de la Cité, postés sur les remparts avant le siège puis alignés en rase campagne pour le Pelennor. L'armure ne change rien à leur tir mais les protège s'ils se retrouvent chargés au corps à corps. Classe légère (🟢) : contrairement à l'ancien profil, cette unité peut désormais décrocher après avoir tiré ([Mobilité 1], gratuite et automatique sur tout 🟢 distance) — un léger changement de lecture (moins « figée sur les remparts », plus mobile en rase campagne) que la baisse de coût (5→3) accompagne.
+**Règles — chacune active tant que la figurine correspondante est présente :**
 
----
-
-### 3. Chevaliers de Minas Tirith
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 🔴 | 2 ou 3 | 4 dés | — | 3 | **7** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** la cavalerie de la Cité elle-même — moins prestigieuse que les Chevaliers-Cygnes de Dol Amroth. Passe en classe lourde (🔴, 4 dés) : porte déjà [Armure 1] et [Poursuite 1] intrinsèques sans qu'aucun badge ne soit nécessaire pour ça — le badge Faction ici est donc gratuit (le plancher [Armure 1] intrinsèque couvre déjà la règle de faction). Distinction avec Dol Amroth (4) portée par les badges Spéciale + Élite de ce dernier, plus que par la classe.
-
----
-
-### 4. Chevaliers de Dol Amroth
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 🔴 | 2 ou 3 | 4 dés | — | 3 | **7** |
-
-**Badges :** Élite ([Inébranlable 1] + Jamais Faible)
-
-**Note narrative :** les Chevaliers-Cygnes du prince Imrahil, la meilleure cavalerie de tout Gondor — armurés, une charge qui ne s'arrête pas au premier contact ([Poursuite 1] intrinsèque), un moral qui ne cède jamais ([Inébranlable 1] + Jamais Faible).
-
-> 🎲 **Note de calcul (P7c).** Plafond à 1 badge secondaire (D081) : Spéciale ([Relance 1]) abandonné, Élite retenu — l'identité « ne cède pas » plutôt que « ne rate jamais deux fois ». Faction gratuite (🔴) + Élite (+2) = brut 25 → `round(25/3)−1` = **7**. *(Ancien coût : 8, avec les deux badges cumulés.)* Retombe à égalité avec les Chevaliers de Minas Tirith (3) — collision assumée par Emmanuel, du même ordre que Hommes d'armes de Dol Amroth (6) / Guerriers de Lossarnach (8).
-
----
-
-### 5. Garde de la Citadelle
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** Élite ([Inébranlable 1])
-
-**Note narrative :** la garde de cérémonie et de dernier rempart de la Citadelle — noir et argent, hallebardes hautes. Même socle défensif que les Guerriers de Minas Tirith (1), avec le badge Élite en plus : cette garde ne recule pas facilement.
-
----
-
-### 6. Hommes d'armes de Dol Amroth
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** l'infanterie de ligne du fief de Dol Amroth, armée de piques — aussi bien armurée que Minas Tirith, et le badge Spéciale traduit ici l'impact de la pique reçue en formation plutôt qu'une arme à deux mains (cf. Lossarnach, 8). *(L'ancien [Réception de charge], coupé au tri du glossaire P2, n'a pas d'équivalent direct — l'identité anti-cavalerie de la pique reste narrative.)*
-
----
-
-### 7. Chevaliers à pied de Dol Amroth
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔴 | 1 ou 2 | 4 dés | — | 4 | **6** |
-
-**Badges :** Élite ([Inébranlable 1])
-
-**Note narrative :** des chevaliers de la maison d'Imrahil, démontés pour combattre à pied en armure complète — un mur blindé, lent mais redoutable. Leur lenteur (1 case + combat, ou 2 cases sans combattre) n'est plus une exception à noter : c'est désormais le mouvement par défaut de toute infanterie 🔴, cohérent avec le poids de leur équipement.
-
----
-
-### 8. Guerriers de Lossarnach
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** des hommes des collines armurés comme ceux de Minas Tirith, armés de hallebardes à deux mains — le badge Spéciale traduit la puissance de cette arme plutôt qu'une compétence martiale d'élite.
-
----
-
-### 9. Guerriers des clans de Lamedon
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** les clans montagnards de Lamedon, plus rustiques et moins bien équipés que Lossarnach (8), mais tout aussi bien protégés depuis P7c. Le badge Spéciale (relance) représente des armes frustes mais un entêtement à toucher.
-
-> 🔄 **P7c (D081).** Gagne [Défense 1] comme tout le roster — perd son ancien statut de « seule unité sans Faction ». Coût inchangé (5 pts, absorbé par la compression) : brut 15 + Spéciale (2) + Défense 1 (2) = 19 → `round(19/3)−1` = 5.
-
----
-
-### 10. Rangers du Gondor
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** éclaireurs et tirailleurs qui opèrent en avant du gros de l'armée. La classe légère porte déjà [Mobilité 1] intrinsèque — tirer puis décrocher est désormais la définition même de leur case, pas une règle à écrire ; seule la Faction s'ajoute, sans badge secondaire. Entrée de gamme de la famille Rangers.
-
-> 🔄 **P7c (D081).** Gagne [Défense 1] comme tout le roster. Coût inchangé (3 pts) : brut 11 + Défense 1 (2) = 13 → `round(13/3)−1` = 3.
-
----
-
-### 11. Rangers d'Ithilien
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Distance | 🔵 | 2 | 3 dés | 4 | 4 | **4** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** les hommes de Faramir, maîtres de l'embuscade en Ithilien. Passage en classe standard (🔵) : perdent le décrochage automatique du 🟢 (leur identité n'est plus la fuite après le tir, mais la précision qui ne rate pas deux fois — [Relance 1]). Version intermédiaire de la famille Rangers, entre Rangers du Gondor (10) et Rangers du Nord (12).
-
-> 🔄 **P7c (D081).** Gagne [Défense 1] comme tout le roster. Coût inchangé (4 pts) : brut 12 + Spéciale (2) + Défense 1 (2) = 16 → `round(16/3)−1` = 4.
-
----
-
-### 12. Rangers du Nord — *nouvelle unité*
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Distance | 🔵 | 2 | 3 dés | 4 | 4 | **4** |
-
-**Badges :** Élite ([Inébranlable 1] + Jamais Faible)
-
-**Note narrative :** les Rangers du Nord d'Aragorn, arrivés par les Chemins des Morts en éclaireurs — la version aguerrie de la famille, endurcie par des années de traque solitaire au-delà des frontières connues.
-
-> 🔄 **P7c (D081).** Plafond à 1 badge secondaire : Spéciale abandonné, Élite retenu (garde une distinction mécanique nette avec Rangers d'Ithilien, qui garde Spéciale — sans quoi les deux profils deviendraient de purs doublons). Coût inchangé (4 pts) : brut 12 + Élite (2) + Défense 1 (2) = 16 → `round(16/3)−1` = 4. Toujours absorbé par la compression au même palier qu'Ithilien — avantage gratuit assumé, comme avant P7c.
-
-> 🔗 **Lien avec la Compagnie Grise (13)** : cette unité type représente le corps dont sont issus Halbarad et les Rangers du Nord génériques de la Compagnie — utile si un scénario veut aligner des renforts du Nord au-delà des cinq figures nommées.
-
----
-
-### 13. La Compagnie Grise — *unité unique*
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 4 dés *(3 + 1 Légende)* | — | **4 nommées** | **7** |
-
-**Composition :** 4 figurines individuelles et distinctes — Gimli, Legolas, Elrohir, Elladan.
-
-**Badges :** Spéciale ([Relance 1]) + Élite ([Inébranlable 1] + Jamais Faible) + **Légende** (+1 dé de combat)
-
-**Refonte P4 (D073).** Simplification radicale : plus aucune règle bespoke par figurine ([Archer en mêlée] de Legolas et [Férocité] d'Elrohir/Elladan sont retirées). La Compagnie Grise devient une unité **standard**, chiffrée à la matrice comme n'importe quel profil du roster — quatre badges génériques au lieu d'un empilement de règles nommées.
-
-> 🔄 **P7c (D081) — exemptée du plafond à 1 badge.** La Compagnie Grise est confirmée pièce **Signature** (au même titre que le Mûmakil, [[Regles_Speciales]] §4b) : elle sort de la matrice standard et n'est donc **pas soumise** au plafond « 1 badge secondaire » qui s'applique au reste du roster. Ses quatre badges sont conservés tels quels — aucun changement de coût.
-
-**Règle de retrait (exception à la règle générale) :** lorsque l'unité subit une perte, c'est le joueur qui la contrôle qui choisit quelle figurine retirer.
-
-> 🎲 **Note de calcul.** Brut = 15 (Inf 🔵 mêlée) + [Défense 1] Faction (2) + [Relance 1] Spéciale (2) + [Inébranlable 1] Élite (2) + Légende mêlée (3) = 24 → round(24÷3)−1 = **7**. *(Inchangé — pièce exemptée du plafond à 1 badge secondaire, P7c.)*
-
-**Note narrative :** les Rangers du Nord d'Aragorn, arrivés par les Chemins des Morts, aux côtés de Legolas et Gimli — quatre combattants exceptionnels, plus une addition de talents individuels qu'une entité identifiable figurine par figurine. Aucun héros individuel attaché avec valeur de commandement (conforme au périmètre « pas de héros » — voir Terminologie « Unité légendaire », [[Document_de_cadrage]] §7) ; si des héros sont développés en Phase 2, la Compagnie Grise sera le candidat naturel pour en accueillir un.
-
----
-
-## 4. Récapitulatif des badges portés
-
-| Badge | Unités qui le portent |
+| Figurine | Règle |
 |---|---|
-| **Spéciale** ([Relance 1]) | Hommes d'armes de Dol Amroth (6) · Guerriers de Lossarnach (8) · Guerriers des clans de Lamedon (9) · Rangers d'Ithilien (11) · La Compagnie Grise (13) |
-| **Élite** ([Inébranlable 1] + Jamais Faible) | Chevaliers de Dol Amroth (4) · Garde de la Citadelle (5) · Chevaliers à pied de Dol Amroth (7) · Rangers du Nord (12) · La Compagnie Grise (13) |
-| **Légende** (+1 dé de combat) | La Compagnie Grise (13) — seule unité unique du roster |
-| **Leader** *(slot réservé, Phase 2)* | — aucune assignation avant les règles Héros/Leadership |
-| **Aucun badge** | Guerriers de Minas Tirith (1) · Archers de Minas Tirith (2) · Chevaliers de Minas Tirith (3) · Rangers du Gondor (10) |
+| **Gimli** | +1 dé de combat |
+| **Legolas** | [Archer en mêlée] (les faces Cible touchent aussi en mêlée) |
+| **Elrohir** | [Férocité] |
+| **Elladan** | [Défense 1] *(= [Armure 1], règle socle générique — pas la Faction du peuple)* |
+| **Halbarad** | [Inébranlable 1] |
+| **Aragorn** | Badge **Leader** — Général universel, Destin 4 (voir [[Regles_Points]] §3.3). Son Leader confère aussi [Inébranlable 1] à l'unité, qui **s'additionne** à celui de Halbarad quand les deux sont présents → **[Inébranlable 2]**. |
 
-**Compagnie Grise (13) : seule pièce à cumuler plus d'un badge secondaire** — exemptée du plafond « 1 badge » car confirmée pièce Signature (P7c/D081), hors matrice standard. C'est la pièce la plus chère du roster (7 pts), à égalité de méthode avec Chevaliers de Dol Amroth (4) et Chevaliers de Minas Tirith (3).
+**Chiffrage (méthode bespoke, comme le Mûmakil D079) :**
+
+| Élément | Brut |
+|---|---|
+| Socle (Mvt 2 + PV 6) | 8 |
+| Attaque (3 dés mêlée, D=3) | 9 |
+| Gimli (+1 dé, forfait mêlée) | 3 |
+| Legolas ([Archer en mêlée]) | 2 |
+| Elrohir ([Férocité]) | 1 |
+| Elladan ([Défense 1]) | 2 |
+| Halbarad ([Inébranlable 1]) | 2 |
+| Aragorn — Leader | 4 |
+| Aragorn — Général | 9 |
+| Aragorn — Destin 4 | 8 |
+| **Brut total** | **48** |
+| **Final = round(48÷3)−1** | **15** |
+
+*(Pour référence, sans le statut Général/Destin d'Aragorn — Leader seul : brut 31 → **9** pts. La quasi-totalité de l'écart avec la version complète vient du forfait Général, cohérent avec D097.)*
+
+**Note narrative :** six figures exceptionnelles réunies pour l'assaut final — chacune reconnaissable par sa règle propre plutôt que par un empilement de badges génériques, cohérent avec ce que la pièce a toujours représenté dans le projet.
+
+---
+
+## 4. Récapitulatif
+
+| Option | Disponible sur |
+|---|---|
+| **Faction (Relance 1)** | Rangers (1) · Archers de Minas Tirith (2) · Troupes régulières MT (3) · Troupes des Fiefs (4) · Cavalerie du Gondor (6) |
+| **Bannière** | Archers de Minas Tirith (2) · Troupes régulières MT (3) · Troupes lourdes des Fiefs (5) · Cavalerie du Gondor (6) |
+| **Hors matrice** | La Compagnie Grise (7) |
 
 ---
 
 ## 5. Points ouverts transverses
 
-- **Vétérans d'Osgiliath retirés du roster de base** — aucune combinaison de badges ne les distinguait plus des Gardes de la Citadelle sous le nouveau système. Candidat naturel si un scénario veut une garnison "acharnée" distincte (ex. reprise d'Osgiliath) : à réintroduire en pièce unique hors matrice si besoin, plutôt que de forcer un badge secondaire supplémentaire dans le système.
-- **Archers de la Racine Noire absorbés** dans Rangers d'Ithilien/Rangers du Nord — même niche (tir de précision, classe 🔵), différenciée uniquement par le badge secondaire (Spéciale vs Élite depuis P7c). Si Emmanuel veut les deux identités narratives distinctes à la table (Ithilien = embuscade, Racine Noire = précision de tir), les deux profils actuels (11 et 12) peuvent être renommés en conséquence sans changer les chiffres.
-- **[Réception de charge]** (Hommes d'armes de Dol Amroth) reste sans équivalent mécanique depuis sa coupe au tri du glossaire (P2) — l'identité anti-cavalerie de la pique est purement narrative dans cette version. Pas de remplacement proposé : à surveiller si un playtest révèle un vrai besoin de contre-charge dédiée.
+- **Rangers, un seul profil pour trois anciennes identités** (Gondor/Ithilien/Nord) — si Emmanuel veut préserver une distinction narrative à la table (ex. « ces Rangers sont d'Ithilien »), c'est désormais purement cosmétique (même profil, même coût), l'option Faction pouvant marquer ponctuellement les plus aguerris pour un scénario donné.
+- **Compagnie Grise, seule pièce à conserver des règles nommées par figurine** — cohérent avec le statut Signature, mais à re-vérifier si Emmanuel veut appliquer ce même traitement (règles par figure plutôt que badges génériques) à d'autres pièces uniques du projet (Mûmakil, futur Roi-Sorcier).
+- **Options « absorbées » par la compression** (Rangers+Faction, Archers+Faction seule, Cavalerie+Faction seule) — à surveiller : est-ce acceptable qu'un outil narratif ne change parfois rien au prix, ou faut-il revoir le tarif de Faction à la hausse pour que l'option pèse toujours ?
 
 ---
 
-*Version : 2.4 — Phase 1 — 2026-08-18. **Retrait du trait de Faction (D089/D090).** [Défense 1] n'est plus imprimé pour tout le roster ; l'asymétrie de Gondor sera portée par des cartes de commandement dédiées (P8). Toutes les lignes « Badges » nettoyées de la mention Faction. §1 et §4 réécrits. Ajout du badge **Leader** (slot réservé, touche sur Couronne, Phase 2). Coûts inchangés en attendant le recalcul P8.*
+*Version : 3.1 — Phase 1 — 2026-08-23. **Correction (D110) — Chevaliers à pied de Dol Amroth restent 🔴, pas 🔵.** Erreur de classe introduite en v3.0 : ils gardent leur classe lourde d'origine (Armure 1 + Poursuite 1 intrinsèques). Coût de base corrigé 4→**5**, avec Bannière 5→**6**. Note de reclassement erronée retirée.*
+
+*Version : 3.0 — Phase 1 — 2026-08-23. **Simplification radicale (arbitrage Emmanuel) — refonte complète.** Roster resserré de 13 à 7 lignes : plus aucun badge par défaut, profil de base = Type+Combat+Classe seul. Faction devient un outil optionnel (« Défenseur de la Terre du Milieu » = [Relance 1], remplace [Défense X]), disponible sur les unités marquées éligibles, jamais un supplément systématique. Bannière reste optionnelle, disponible sélectivement. Familles fusionnées : Rangers (ex-10/11/12), Troupes régulières de Minas Tirith (ex-1/5), Troupes des Fiefs (ex-8/9), Cavalerie du Gondor (ex-3/4). Compagnie Grise entièrement bespoke : six figurines nommées, chacune sa propre règle tant qu'elle est présente (retour à l'esprit pré-D073) ; chiffrée à **15** pts (méthode barème+bespoke, cohérente avec le Mûmakil).*
+
+*Version : 2.5 — Phase 1 — 2026-08-23. **P8 — recalcul complet (D097/D098).** Faction ciblée : retirée par défaut de tout le roster, réapparaît sur toute unité avec Leader. Anciens badges Spéciale/Élite renommés « règles socle », coûts inchangés. Guerriers de Minas Tirith 5→**4** (seul changement de coût de base). Nouvelles variantes chiffrées : Chevaliers de Dol Amroth avec Imrahil = **14** ; Compagnie Grise avec Aragorn = **14** ; Lossarnach avec Forlong = **8** ; Lamedon avec Angbor = **8**. §4 (nouveau) récapitule les variantes Leader du Playtest #4.*
 
 *Version : 2.3 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Liens `[[Document de cadrage]]` corrigés en `[[Document_de_cadrage]]` (nom réel du fichier, 2 occurrences). En-tête « Aligné sur » rafraîchi (v0.12/v0.21/v0.19 → v0.13/v0.27/v0.24, versions réelles depuis P7c). Aucune décision mécanique — pas de numéro D.*
 

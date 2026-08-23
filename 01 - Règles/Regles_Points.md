@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-22"
+date_maj: "2026-08-23"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.27"
+version: "0.30"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -47,60 +47,92 @@ Rappel des intrinsèques incluses (pour mémoire, **pas** à ajouter) : 🔴 →
 
 ---
 
-## 3. Suppléments : Faction, badge secondaire et signatures
+## 3. Suppléments : Faction, Bannière, Leader/Général/Destin, règles socle
 
-*(Collapse de badges — D080/D081, tâche P7c.)* Le coût final d'un profil **standard** (hors pièces Signature, §6) se construit ainsi :
+*(Troisième refonte des badges — D092/D093, Playtest #4 — architecture actée P8/D097.)* Le coût final d'un profil **standard** (hors pièces Signature, §6) se construit ainsi :
 
 ```
-Brut = Brut_de_base (case, §5) + Coût(Faction du peuple) + Coût(badge secondaire, si porté) 
+Brut = Brut_de_base (case, §5) + Σ Coût(chaque badge/règle porté)
 Final = round(Brut ÷ 3) − 1
 ```
 
-**Faction n'est plus optionnelle : c'est un trait de peuple**, présent (ou non, cas rares documentés par peuple) sur **toute** unité standard sans que ce soit un choix de construction d'armée — son coût s'ajoute donc systématiquement pour les unités qui la portent, exactement comme avant, seule la présentation change (plus de case à cocher). **Le badge secondaire est plafonné à 1 par unité**, choisi parmi Spéciale/Élite/Légende — fini le cumul jusqu'à 3 badges secondaires (D073).
+**Plus de plafond.** Une unité additionne librement : une éventuelle règle **socle générique** ([Relance X], [Inébranlable X]… — voir §3.1), le badge **Faction** de son peuple si elle est assignée à en porter une (§3.2, désormais ciblé plutôt qu'universel), le badge **Bannière** si une figurine porte-étendard l'incarne, le badge **Légende** si c'est une pièce unique, et le badge **Leader** (avec ses composantes Général/Destin optionnelles, §3.3) si un personnage nommé y est attaché. La compression (§4) se fait **une fois**, après avoir additionné tous les suppléments — jamais à la volée en partie.
 
-La compression (§4) se fait **une fois**, à la rédaction du profil, après avoir additionné tous les suppléments au brut de la case — jamais à la volée en partie.
+### 3.1 Règles socle portées directement au profil *(ex-badges Spéciale/Élite, D073 — noms de badge abandonnés D092, effets et coûts inchangés)*
 
-> ⚠️ **Playtest #4 (D092/D093) — pivot en cours, non répercuté ci-dessous.** Les badges Spéciale et Élite décrits en §3.1 sont **abandonnés** ; Faction redevient un badge assigné **par unité** plutôt qu'un trait de peuple systématique (§3.2 devient donc caduque dans sa forme actuelle) ; nouveau badge **Bannière** = tarif [Inébranlable 1] existant (**+2 brut**, provisoire). Le badge **Leader**/statut **Général** n'a **pas de coût chiffré** — Emmanuel juge que l'impact (carte de commandement bonus) doit se traduire par un coût significatif, pas anecdotique. **Le recalcul complet des 6 rosters sur cette base, la refonte de §3, et le chiffrage de Leader/Général sont le chantier P8** (fusionné avec l'intégration des héros aux rosters) — §3.1/§3.2 ci-dessous restent affichées pour mémoire de la logique de dérivation, mais leurs badges (Spéciale/Élite) et la lecture « Faction universelle » ne sont plus la référence courante.
+Ces deux effets restent au vocabulaire socle générique ([[Regles_Speciales]] §2) et se notent directement sur le profil qui les mérite, sans être rattachés à une catégorie de badge nommée :
 
-### 3.1 Le badge secondaire — un seul par unité *(historique, D073/D081 — voir avertissement ci-dessus)*
+- **[Relance 1]** *(ex-badge « Spéciale »)* : arme ou tir remarquable. **Coût : +2 brut.**
+- **[Inébranlable 1] + Jamais Faible** *(ex-badge « Élite »)* : troupe aguerrie qui ne rompt jamais. **Coût : +2 brut.**
 
-- **Spéciale** confère **[Relance 1]**, universel depuis D073. **Coût : +2 brut** (tarif socle [Relance X] = 2×X).
-- **Élite** confère **[Inébranlable 1] + Jamais Faible** (D073 : l'unité ignore l'état Faible, ses faces Épée touchent toujours). **Coût : +2 brut**, inchangé malgré l'enrichissement (Jamais Faible n'ajoute rien au forfait — provisoire, à surveiller au playtest).
-- **Légende** (réservé aux unités uniques) ajoute **+1 dé** à l'attaque, dans son mode. **Coût : +3 brut en mêlée (D=3), +2 brut au tir (D=2)** — dérivé de la même méthode que le reste de la matrice (§5).
+Rien ne change dans la façon dont les profils existants les portent (Gardes de la Citadelle, Chevaliers de Dol Amroth, Uruk-hai…) — seule la présentation (« badge » → « règle de profil ») est mise à jour.
 
-Une unité porte l'un des trois, ou aucun — jamais deux à la fois. Les collisions de coût que ce resserrement recrée localement (deux profils qui retombent au même palier) sont **acceptées par construction du système**, au même titre que les égalités déjà existantes ailleurs dans les rosters (ex. Hommes d'armes de Dol Amroth / Guerriers de Lossarnach, Gondor).
+### 3.2 Le badge Faction — outil optionnel à disposition, jamais un défaut (D101)
 
-### 3.2 Le trait de Faction — coût par peuple *(historique, D080/D085 — Faction n'est plus un trait de peuple depuis D092, voir avertissement ci-dessus)*
+> ⚠️ **Correction D101 (sur D098) — simplification radicale poussée plus loin.** D098 liait encore l'apparition de Faction à la présence d'un badge Leader. Emmanuel a tranché plus loin : **aucune unité de base ne porte de badge d'office.** Faction est un **outil à disposition du concepteur de scénario/liste**, à poser sur une unité **éligible** (marquée au roster) pour créer ponctuellement un effet « troupe vétérante/élite » — indépendamment de la présence d'un Leader, et jamais un supplément automatique. Chaque roster indique désormais, ligne par ligne, si Faction et/ou Bannière sont des options disponibles pour cette unité. **Chantier en cours (P8)** : seul Gondor (`Gondor_et_Fiefs.md` v3.0) applique ce principe à ce stade — Rohan, Khand, Mordor, Orientaux, Harad restent au régime D097/D098 (Faction ciblée sur Leader) en attendant l'arbitrage du périmètre exact par peuple.
 
-Chaque peuple a sa propre règle de Faction, définie une fois pour tout le roster ([[Regles_Speciales]] §4a) et son coût s'ajoute au brut de **toute** unité qui la porte :
+Chaque peuple garde sa règle de Faction propre, son tarif, et son **nom d'usage narratif** :
 
 | Peuple | Faction | Coût brut |
 |---|---|---|
-| Gondor, Orientaux | [Défense 1] *(= [Armure 1], nom d'usage)* | +2, **gratuit sur 🔴** (déjà au plancher intrinsèque) |
+| **Gondor** *(à jour, D101)* | « Défenseur de la Terre du Milieu » = [Relance 1] | **+2**, jamais gratuit *(remplace [Défense 1] — plus de plancher 🔴 à absorber)* |
+| Orientaux | [Défense 1] *(= [Armure 1])* | +2, gratuit sur 🔴 — **à reconfirmer si le peuple suit Gondor vers [Relance 1]** |
 | Rohan | [Férocité] | +1 |
 | Khand | [Mercenaire] | **−2** *(coût négatif)* |
 | Mordor | [Horde] | +1 |
 | Harad | [Poison] | +1 |
 
-Cas particuliers sans Faction (documentés par peuple, [[Regles_Speciales]] §4a) : la Bande de pisteurs orques (Mordor, tir — le volet Faible de [Horde] ne mordrait pas sur une unité sans faces Épée actives) et l'Aurige de Khand (seul corps régulier du peuple, pas un mercenaire).
+**Où Faction reste utilisable, par roster :**
+- **Gondor, Rohan, Khand, Harad** *(à jour, D101/D102)* : marquée disponible unité par unité au roster, jamais automatique — y compris pour les traits matériels (Poison, Mercenaire), sur arbitrage d'Emmanuel : même logique partout.
+- **Orientaux, Mordor** : en attente de la nouvelle définition de la règle de Faction/[Horde] (Emmanuel doit préciser le texte) avant recalcul.
 
-### 3.3 Barème des règles (Faction, badges, socle explicite)
+Cas particuliers sans Faction, inchangés : la Bande de pisteurs orques (Mordor, tir) et l'Aurige de Khand (seul corps régulier, pas un mercenaire).
 
-Repris de l'Option B (D026), **élagué au tri P2** (D062), **réorganisé au collapse de badges P7c** (D081) : la colonne Note précise désormais si la règle est une **Faction** (peuple entier, §3.2), un **badge secondaire** (§3.1) ou du **socle libre**. Les règles devenues **intrinsèques** ne se facturent qu'en **excédent au-dessus du plancher de la case**.
+### 3.3 Le badge Leader — Général et Destin (D093/D097)
+
+Rattaché à une unité (jamais une figurine libre), le badge **Leader** ([[Regles_Base]] §2.2bis) se chiffre en trois composantes indépendantes, cumulables :
+
+| Composante | Effet | Coût brut |
+|---|---|---|
+| **Leader** (toujours présente) | [Inébranlable 1] à soi **+ unités amies adjacentes**, touche supplémentaire sur Couronne | **+4** |
+| **Général** *(optionnel)* | Main de commandement du camp +1 par Général vivant | **+9** *(forfait)* |
+| **Destin** *(optionnel, 1 à 4)* | Jet de sauvetage à l'élimination de l'unité porteuse | **+2 par point** |
+
+**Dérivation (palier « Marqué », validé Emmanuel, P8) :**
+- Leader seul (+4) : la zone d'effet (soi + adjacentes) vaut environ le double de Bannière (+2, soi seul) ; la touche sur Couronne, comparable à la conversion d'une face jusque-là inerte, est incluse dans ce forfait plutôt que facturée à part (à la différence de [Poison], qui reste un cas socle indépendant).
+- Général (+9) : le seul supplément du barème qui n'agit pas sur l'unité porteuse mais sur **tout le camp**, chaque tour, toute la partie — un point de main en plus vaut largement plus qu'un dé de combat en plus sur une seule unité. Prix délibérément lourd : à ce tarif, un Général bien équipé (Leader + Général + Destin moyen) coûte environ le **double** du coût de base de l'unité qui le porte.
+- Destin (+2/point) : assurance-vie graduée, dans la même logique tarifaire que [Protection X] (+1×X) mais un cran au-dessus car elle porte sur l'élimination complète, pas une simple touche.
+
+Un Leader qui ne prend pas le statut Général (les « Leaders mineurs » du Pelennor — Suladan, le Roi de Khand, Angbor le Brave, Forlong le Gros) ne paie que Leader + Destin, sensiblement moins cher qu'un Général en pleine tenue.
+
+> ⚠️ **Roi-Sorcier sur l'ombre ailée — cas extrême signalé.** Général universel + Destin 4 sur un profil bespoke déjà coûteux (§6, `02 - Factions/Mordor.md`) fait grimper la pièce à **17 pts**, au-dessus du Mûmakil (15). Défendable narrativement (le chef des Nazgûl est la pièce la plus dangereuse du Pelennor) mais c'est le prix le plus élevé du projet à ce jour — à confirmer avec Emmanuel, sans quoi il faudra soit plafonner les pièces bespoke les plus chargées, soit accepter ce nouveau sommet d'échelle.
+
+### 3.4 Barème des règles (Faction, socle, signatures)
+
+Repris de l'Option B (D026), **élagué au tri P2** (D062), **réaligné P8** (D097/D098) : la colonne Note précise désormais si la règle est une **Faction** (ciblée par unité, §3.2), une **règle socle libre** (§3.1) ou un badge de la famille **Leader** (§3.3). Les règles devenues **intrinsèques** ne se facturent qu'en **excédent au-dessus du plancher de la case**.
 
 | Règle | Coût | Note |
 |---|---|---|
-| **[Armure X] / [Défense X]** | 2 × X | Socle libre / **Faction Gondor-Orientaux** (nom [Défense X] en Faction). Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent. |
-| **[Inébranlable X]** | 2 × X | Socle libre. Si l'unité est **Élite** (badge), le premier point est déjà dans le badge → ne facturer que l'excédent. |
-| **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. |
-| **[Relance X]** | 2 × X | Socle libre / **badge Spéciale** (universel depuis D073, plafonné à 1 badge secondaire depuis D081). |
-| **Légende** *(badge secondaire)* | 3 (mêlée) / 2 (tir) *(forfait, +1 dé)* | Réservé aux unités uniques, D073 — voir §3.1. |
+| **[Armure X] / [Défense X]** | 2 × X | Socle libre / **Faction Orientaux** *(Gondor a migré vers [Relance 1], voir `Gondor_et_Fiefs.md`)*. Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent. |
+| **[Armure]** *(sans X, Créatures)* | **0** *(intrinsèque)* | D103, P8 — remplace [Armure 1]+[Protection 1] pour le type Créature. Jet de sauvetage 1d6 (Arcane annule, +Couronne si Leader), toujours gratuit comme l'ancien [Armure 1]. |
+| **[Inébranlable X]** | 2 × X | Socle libre. Si l'unité porte déjà [Inébranlable 1] via Bannière ou Leader, le premier point est inclus → ne facturer que l'excédent. |
+| **[Inébranlable ∞]** | 6 *(forfait, bespoke)* | ≈3× le forfait standard [Inébranlable 1] — jugement par analogie (D079). Porteurs : Mûmakil, Garde du Roi (Rohan, P8). |
+| **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. *(Sur les Créatures, supersedée par [Armure] — D103.)* |
+| **[Relance X]** | 2 × X | Socle libre — ex-badge « Spéciale » (D073), nom de badge abandonné D092, coût inchangé. |
+| **Légende** *(badge, pièces uniques)* | 3 (mêlée) / 2 (tir) *(forfait, +1 dé)* | D073 — voir [[Regles_Speciales]] §Conventions. |
+| **[Inébranlable 1] + Jamais Faible** | 2 *(forfait)* | Socle libre — ex-badge « Élite » (D073), nom de badge abandonné D092, coût inchangé. **Ne fait plus partie du menu d'options standard depuis P8 (D101/D102)** — ne survit que dans les pièces signature. |
+| **[Bannière]** | 2 *(forfait, [Inébranlable 1])* | Badge, D092 — figurine porte-étendard, cumulable avec tout le reste. **Jamais disponible chez Khand** (D102bis, arbitrage Emmanuel — troupes trop disparates pour porter un étendard commun). |
+| **[Leader]** | 4 *(forfait)* | Badge, D093/D097 — Inébranlable 1 (soi + adjacentes) + touche sur Couronne. |
+| **[Général]** *(add-on de Leader)* | 9 *(forfait)* | D093/D097 — main de camp +1 par Général vivant. Prix délibérément lourd, effet de camp. |
+| **[Destin X]** *(add-on de Leader)* | 2 × X | D093/D097 — X de 1 à 4, jet de sauvetage à l'élimination. |
 | **[Arme de jet X]** | 1 × X | Sans porteur actif depuis D074 (Rohan migré vers [Férocité]). Conservée au barème, réutilisable. |
-| **[Mercenaire]** | **−2** *(forfait, coût négatif)* | **Faction Khand**, P4/D070 — premier badge/trait à coût négatif du barème. |
+| **[Mercenaire]** | **−2** *(forfait, coût négatif)* | **Faction Khand**, P4/D070 — devenu option (D102), jamais un défaut. |
 | **[Poursuite X]** | 3 × X | Cavalerie de mêlée : plancher (2 ou 1) **inclus** → ne facturer que l'excédent. |
 | **[Mobilité X]** | 1 × X | Tir léger/monté : plancher **inclus** → excédent seul. |
-| **[Férocité]** | 1 | **Faction Rohan** — universelle sur tout le roster depuis D074. |
-| **[Horde]** | **1** *(forfait)* | **Faction Mordor** (+1 dé à pleine santé, Faible dès la 1ʳᵉ touche). Refondue P4/D075 ; étendue à l'Uruk-hai P7c/D081, exclut la Bande de pisteurs orques (tir). Provisoire. |
+| **[Férocité]** | 1 | **Faction Rohan** — devenue option (D101), disponible sur 1-7 ; en dur sur la Garde du Roi jusqu'à P8 (retirée, voir D107). |
+| **[Discipline de cohorte]** | **2** *(forfait)* | **Faction Orientaux**, D104, P8 — remplace [Défense X]. Posture activée : renonce à la riposte, gagne [Défense 1]+[Inébranlable 1]. Disponible sur les Cohortes (guerriers, piquiers) uniquement. |
+| **[Horde]** *(troisième version)* | **3** *(forfait)* | **Faction Mordor**, D105, P8 — +1 dé et Inébranlable 1 à pleine santé, aucun effet négatif ensuite. Disponible sur tous les orques (bandes, Uruk-hai, Piétaille orque, wargs). |
+| **[Peur 1 contre les bannières vertes]** | **2** *(forfait, bespoke)* | D106, P8 — signature Aurige de Khand. Cible uniquement la classe 🟢. |
 | **[Mur de bouclier]** | **1** *(forfait)* | Sans porteur actif depuis P7c/D081 — [Protection 1] tant qu'aucune touche subie, perdue à la 1ʳᵉ. Conservée au barème, réutilisable. |
 | **[Poison]** | 1 | **Faction Harad** — universelle sur tout le roster d'escorte. |
 | **[Double Tir]** | 3 | Sans porteur actif depuis P4/D072. Conservée au barème, réutilisable. |
@@ -165,11 +197,13 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 
 ## 7. Exemples travaillés
 
-**Guerriers de Minas Tirith** — 🔵 Infanterie, mêlée, Faction [Défense 1]. Base 🔵 Inf mêlée (brut 15) + [Défense 1] Faction (+2) = **17** → `round(17/3)−1` = **5**. *(Inchangé.)*
+**Guerriers de Minas Tirith** — 🔵 Infanterie, mêlée, aucune Faction assignée (ciblage D098 : pas de Leader dans cette unité, pas un trait matériel). Base 🔵 Inf mêlée (brut 15) = **15** → `round(15/3)−1` = **4**. *(Baisse de 5→4 : Faction n'étant plus universelle, l'unité de ligne « propre » redescend à son coût de matrice nu.)*
 
-**Gardes de la Citadelle** — 🔵 Infanterie, mêlée, Faction [Défense 1] + badge **Élite**. Brut 15 + [Défense 1] (+2) + Élite (+2) = **19** → **5**. *(Inchangé.)*
+**Gardes de la Citadelle** — 🔵 Infanterie, mêlée, [Inébranlable 1] + Jamais Faible (règle socle, ex-badge Élite). Brut 15 + (+2) = **17** → `round(17/3)−1` = **5**. *(Inchangé — la règle socle est indépendante du ciblage de Faction.)*
 
-**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23**, inclut [Armure 1] + [Poursuite 1] + prime de choc D065 — Faction [Défense 1] **gratuite**, déjà au plancher 🔴). **Depuis P7c (D081) : un seul badge secondaire.** Élite retenu (+2 → 25) → `round(25/3)−1` = **7**. *(Ancien coût : 8, avec Spéciale+Élite cumulés — perd 1 pt avec le plafond à 1 badge. Retombe à égalité avec Chevaliers de Minas Tirith, 7 pts — collision acceptée par Emmanuel, cf. Hommes d'armes/Lossarnach.)*
+**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23**, inclut [Armure 1] + [Poursuite 1] + prime de choc D065 — Faction [Défense 1] **gratuite** de toute façon sur 🔴). [Inébranlable 1] + Jamais Faible (+2 → 25) → `round(25/3)−1` = **7**. *(Coût de base inchangé par rapport à l'ère P7c — Faction n'y coûtait déjà rien.)*
+
+**Chevaliers de Dol Amroth — variante avec Imrahil** (Général, Destin 3, Playtest #4) : brut 23 + Élite (2) + [Défense 1] Faction (0, gratuite 🔴) + Leader (4) + Général (9) + Destin 3 (6) = **44** → `round(44/3)−1` = **14**. *(La composante Général domine largement le calcul — cohérent avec le tarif délibérément lourd de §3.3.)*
 
 ---
 
@@ -186,12 +220,22 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 
 **Hérités, toujours provisoires (à caler en jeu) :** [Horde] (D032), [Peur X] (D033), [Prise de flanc] (D049), [Vigilant] (D050).
 
+**Actés (D097/D098, P8, 2026-08-23) :**
+- **Architecture badges troisième refonte répercutée** : plus de plafond, Faction ciblée par unité (§3.2), règles socle ex-Spéciale/Élite renommées sans changement de coût (§3.1), Leader/Général/Destin chiffrés (§3.3, palier « Marqué » validé Emmanuel).
+- **Bornes de l'échelle** — dépassées volontairement par le haut : un Général en pleine tenue peut atteindre 12-14 pts, le Roi-Sorcier culmine à 17 (au-dessus du Mûmakil, 15) — nouveau sommet du projet, signalé §3.3. Les bornes 3-9 restent valables pour les unités **standard** (sans Leader).
+
 **Ouverts :**
-1. **Bornes de l'échelle** — le plancher tombe à **3** (infanterie légère/tir léger) et le plafond monte à **~9** pour une cavalerie lourde maxée (Élite + [Armure 2] + signature, au-dessus de l'ancien 8 de BattleLore V2). À confirmer au playtest de la taxonomie (P7a) : bornes acceptables, ou faut-il resserrer la compression ?
-2. **Re-expression des 6 rosters (P4)** : appliquer la matrice, retirer les [Poursuite]/[Armure] écrits en dur (redondants), trancher les armures de faction (ex. [Armure 2] Dol Amroth / Cataphractaires), reconfirmer chaque case type × mode × classe.
+1. **Roi-Sorcier à 17 pts** — au-dessus du Mûmakil, à confirmer avec Emmanuel (voir avertissement §3.3) : accepter ce nouveau sommet, ou plafonner les pièces bespoke les plus chargées ?
+2. **Équilibre du scénario Pelennor** — le recalcul complet des deux camps (`02 - Factions/*.md`, P8) donne un total très proche (219 Bien / 220 Mal, voir compte-rendu P8) : l'ancien gap de 9 pts semble largement résorbé par le nouveau chiffrage Leader/Général plutôt que par un ajustement volontaire d'effectifs. À confirmer si ce résultat est jugé suffisant ou s'il appelle un ajustement fin.
 3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
 
 ---
+
+*Version : 0.30 — Phase 1 — 2026-08-23. **P8 — Retouches de barème (D103-D107).** Nouvelle règle [Armure] (Créatures, D103) intrinsèque, remplace [Armure 1]+[Protection 1]. [Discipline de cohorte] (D104, Faction Orientaux, +2) et [Horde] troisième version (D105, Faction Mordor, +3, plus d'effet négatif) ajoutées au barème. Nouvelle signature bespoke [Peur 1 contre les bannières vertes] (D106, Aurige de Khand, +2). Bannière retirée du barème disponible chez Khand (jamais). [Inébranlable ∞] entre au barème (6, bespoke) avec un second porteur (Garde du Roi, Rohan).*
+
+*Version : 0.29 — Phase 1 — 2026-08-23. **Correction D101 (simplification radicale, sur D098).** §3.2 réécrite : Faction n'est plus liée à la présence d'un Leader — c'est un **outil optionnel** à disposition, marqué disponible unité par unité au roster, jamais un supplément automatique. Gondor appliqué à ce principe (`Gondor_et_Fiefs.md` v3.0, Faction devient « Défenseur de la Terre du Milieu » = [Relance 1], +2 brut toujours). Rohan/Khand/Mordor/Orientaux/Harad restent au régime transitoire D097/D098 en attendant l'arbitrage du périmètre par peuple — signalé explicitement dans le texte.*
+
+*Version : 0.28 — Phase 1 — 2026-08-23. **P8 — Chantier de recalcul complet (D097/D098).** §3 entièrement réécrite : plus de plafond de badge, Faction ciblée par unité (§3.2, principe D098 — traits matériels universels vs traits de prestige réservés aux porteurs de Leader), règles ex-Spéciale/Élite renommées « socle » sans changement de coût (§3.1), badge Leader chiffré en trois composantes Leader/Général/Destin (§3.3, palier « Marqué » validé Emmanuel : +4/+9/+2 par point). Barème §3.4 mis à jour. Exemples §7 recalculés (Guerriers de Minas Tirith 5→4 ; Chevaliers de Dol Amroth avec Imrahil, nouvel exemple à 14 pts). §8 : point ouvert sur le prix du Roi-Sorcier (17 pts, nouveau sommet) et sur l'équilibre Pelennor (recalcul donnant 219/220, quasi-parité). Détail du recalcul des 6 rosters dans `02 - Factions/*.md` et le nouveau profil Roi-Sorcier dans `Mordor.md`.*
 
 *Version : 0.27 — Phase 1 — 2026-08-22. **Playtest #4 joué — pivot badges signalé, non répercuté (D092/D093).** Avertissement ajouté en tête de §3 : Spéciale/Élite abandonnés, Faction redevient un badge par unité (§3.1/§3.2 marquées historiques), nouveau badge Bannière au tarif [Inébranlable 1] (+2, provisoire), coût de Leader/Général non chiffré (Emmanuel : doit être significatif). Recalcul complet des 6 rosters et refonte de ce document renvoyés au chantier **P8**. Voir `[[Playtest4_Compte-rendu]]`.*
 

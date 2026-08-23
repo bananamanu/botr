@@ -3,208 +3,108 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-18"
+date_maj: "2026-08-23"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.4"
+version: "2.7"
 ---
 
 # Rohan — Profils d'unités
 
-> **Objet de ce document (refonte P4, D069 ; migration badges universels D074).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Le pivot D073 (Spéciale universel [Relance 1], Élite enrichi, badge Légende) rebat la façon dont Rohan se distinguait de Gondor : plus de miroir inversé armure/jet, mais une identité propre — **[Férocité] en badge Faction**, portée par tout le roster sans exception.
+> **Objet de ce document (P8 — simplification radicale, D101/D102, retouches D107).** Même principe qu'à Gondor : une unité de base ne porte **plus aucun badge d'office**. Profil = Type + Combat + Classe. Seules options possibles : **Faction** ([Férocité], toujours disponible en tant qu'outil, jamais un supplément systématique) et **Bannière**, marquées ligne par ligne. Pas de fusion de familles nécessaire ici (arbitrage Emmanuel) — les 9 lignes historiques restent distinctes, différenciées par leur classe.
 >
-> [Prise de flanc] et [Vigilant] (signatures pièce-unique de l'Éored de cavalier et de l'Éored d'éclaireur, D049/D050) restent **abandonnées** (D069) — remplacées par le système de badges pur.
+> **La Garde du Roi (8, 9) devient une pièce entièrement signature (D107)** : elle abandonne Faction et se définit désormais par **Légende** (+1 dé) + **[Inébranlable ∞]** — elle ne recule jamais, donc [Férocité] (contre-attaquer malgré un recul) n'a plus de sens et disparaît.
 >
-> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
+> Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
 
 ---
 
-## 1. Les badges de Rohan *(Faction retirée, D090)*
+## 1. Faction du Rohan — [Férocité]
 
-*(Pivot jeton/badges — D089/D090.)* [Férocité] n'est plus imprimé pour tout le roster : l'asymétrie du Rohan sera portée par ses cartes de commandement propres (P8), pas par un trait de peuple. Reste au niveau de l'unité : **jusqu'à deux badges secondaires**, choisis parmi Spéciale/Élite/Légende (1 max) et Leader (1 max, réservé — Phase 2).
+Contre-attaque même repoussé. **Outil optionnel**, +1 brut, disponible sur les unités marquées éligibles ci-dessous — jamais automatique.
 
-| Badge | Effet | Porté par |
-|---|---|---|
-| **Spéciale** | **[Relance 1]** | Helmingas de Grimbolg uniquement |
-| **Élite** | **[Inébranlable 1] + Jamais Faible** | Gardes royaux (à cheval et à pied) |
-| **Légende** *(réservé aux unités uniques)* | **+1 dé de combat** | Garde du Roi, les deux versions |
-| **Leader** *(slot réservé, Phase 2)* | Touche aussi sur Couronne | — |
-
-**Armure et relance ne sont plus des marqueurs de peuple.** Les Gardes royaux (5, 6) montent en **classe 🔴** au lieu de porter un badge Armure dédié — l'armure lourde vient gratuitement du plancher intrinsèque. Helmingas de Grimbolg (7) est la seule unité à porter [Relance 1] (arme remarquable). La Garde du Roi (8, 9) garde Légende seul, comme avant.
-
-> ⚠️ **Recalcul des points en attente (P8).** Les coûts ci-dessous incluaient la valeur du trait de Faction (+1) — affichés tels quels jusqu'au recalcul complet en P8, avec la conception des cartes de commandement par faction.
+**Bannière** : [Inébranlable 1], +2 brut, figurine porte-étendard — disponible sur les formations réglées, **y compris désormais la Milice lige** (D107 : une milice peut très bien se rallier à un étendard local).
 
 ---
 
-## 2. Liste des troupes
+## 2. Liste des troupes (coûts de base — sans option)
 
-| # | Unité | Type | Combat | Classe | Badge secondaire | **Points** |
+| # | Unité | Type | Combat | Classe | Options disponibles | **Points** |
 |---|---|---|---|---|---|---|
-| 1 | Éored de cavalier du Rohan | Cavalerie | Mêlée | 🔵 | *(aucun)* | **6** |
-| 2 | Milice lige | Infanterie | Mêlée | 🟢 | *(aucun)* | **3** |
-| 3 | Archers liges | Infanterie | Distance | 🟢 | *(aucun)* | **3** |
-| 4 | Éored d'éclaireur | Cavalerie | Distance | 🔵 | *(aucun)* | **4** |
-| 5 | Gardes royaux à cheval | Cavalerie | Mêlée | 🔴 *(reclassée)* | Élite | **8** |
-| 6 | Gardes Royaux du Rohan | Infanterie | Mêlée | 🔴 *(reclassée)* | Élite | **6** |
-| 7 | Helmingas de Grimbolg | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
-| 8 | Garde du Roi *(à pied)* | Infanterie | Mêlée | 🔴 | **Légende** | **7** |
-| 9 | Garde du Roi *(à cheval)* | Cavalerie | Mêlée | 🔴 | **Légende** | **8** |
+| 1 | Éored de cavalier du Rohan | Cavalerie | Mêlée | 🔵 | Faction, Bannière | **6** |
+| 2 | Milice lige | Infanterie | Mêlée | 🟢 | Faction, **Bannière** | **3** |
+| 3 | Archers liges | Infanterie | Distance | 🟢 | Faction | **3** |
+| 4 | Éored d'éclaireur | Cavalerie | Distance | 🔵 | Faction | **3** |
+| 5 | Gardes royaux à cheval | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
+| 6 | Gardes Royaux du Rohan | Infanterie | Mêlée | 🔴 | Faction, Bannière | **5** |
+| 7 | Helmingas de Grimbolg | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
+| 8 | Garde du Roi *(à pied)* — *signature* | Infanterie | Mêlée | 🔴 | *(hors matrice, voir §3)* | **8** |
+| 9 | Garde du Roi *(à cheval)* — *signature* | Cavalerie | Mêlée | 🔴 | *(hors matrice, voir §3)* | **10** |
 
-> 🔄 **P7c (D081) — plafond à 1 badge secondaire.** La Garde du Roi (8, 9) portait Élite **et** Légende ; elle ne garde que **Légende**. À pied, le coût reste **7** (la compression absorbe la perte d'Élite à ce palier) ; à cheval, il descend de **9 à 8**. Aucun autre profil du roster n'était concerné (Rohan avait déjà 0-1 badge secondaire partout ailleurs).
+**Coûts avec options :**
 
-> ⚠️ **Garde du Roi — pièce unique à deux incarnations, pas deux unités.** Les profils 8 et 9 représentent **le même corps signature** (l'escorte rapprochée de Théoden) sous deux formes de déploiement — à pied ou monté. **Une seule des deux versions est alignée par bataille**, jamais les deux ensemble : c'est un choix de composition d'armée, pas un doublon de roster.
->
-> 🎲 **Progression propre et lisible.** Éored de cavalier (6, simple Faction) reste la porte d'entrée du roster ; Garde du Roi à cheval (9→**8** avec P7c) en devient le sommet — la pièce la plus chère du roster.
+| # | Unité | Base | +Faction | +Bannière |
+|---|---|---|---|---|
+| 1 | Éored de cavalier | 6 | 6 *(absorbé)* | **7** |
+| 2 | Milice lige | 3 | 3 *(absorbé)* | 3 *(absorbé)* |
+| 5 | Gardes royaux à cheval | 7 | 7 *(absorbé)* | 7 *(absorbé)* |
+| 6 | Gardes Royaux du Rohan | 5 | **6** | **6** |
+| 7 | Helmingas de Grimbolg | 4 | **5** | **5** |
 
----
-
-## 3. Profils détaillés
-
-### 1. Éored de cavalier du Rohan
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 🔵 | 3 | 3 dés | — | 3 | **6** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** le cœur de la cavalerie du Rohan — les cavaliers de la Marche, dont la charge a brisé le siège de Minas Tirith. Porte déjà [Poursuite 2] intrinsèque (cavalerie 🔵 de mêlée) sans aucun badge : « le Rohan a la meilleure cavalerie » est désormais la définition même de sa case, pas une règle à écrire. Le badge Faction traduit l'acharnement plutôt que l'équipement : cet éored contre-attaque même repoussé, avant de céder le terrain.
+> 🔄 **Baisses par rapport à l'ancien roster (P7c) :** 5, 6, 7 perdent leur badge Élite/Spéciale par défaut — Gardes royaux du Rohan 6→**5**, Helmingas 5→**4** ; Gardes royaux à cheval reste **7** (absorbé par la compression). Ces règles (Inébranlable, Relance) ne sont plus disponibles comme options génériques du roster — le menu se réduit à Faction/Bannière, cohérent avec la simplification radicale.
 
 ---
 
-### 2. Milice lige
+## 3. Garde du Roi — pièce entièrement signature (D107)
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🟢 | 2 | 2 dés | — | 4 | **3** |
+Infanterie ou Cavalerie (au choix, jamais les deux simultanément), Mêlée, 🔴.
 
-**Badges :** *(aucun — ex-Faction retirée, D090)*
+**Règles :** **Légende** (+1 dé) + **[Inébranlable ∞]** (ne recule jamais, quel que soit le nombre de Drapeaux subis).
 
-**Note narrative :** la levée du Rohan — paysans et hommes de ferme convoqués par devoir de « lige », armés de ce qu'ils ont sous la main. Peu d'équipement, mais un entêtement qui ne cède pas au premier recul forcé — le badge Faction porte cet acharnement plutôt qu'une arme en particulier. Un cran en dessous des troupes régulières de Gondor, mais jamais sans ressource.
+> 🎲 **Pourquoi plus de Férocité ?** [Férocité] permet de contre-attaquer *malgré* un recul forcé. Une unité qui ne recule **jamais** n'a strictement rien à gagner de cette règle — elle contre-attaque de toute façon, dans tous les cas. La retirer est une simplification pure, pas une perte de puissance.
 
----
+**Chiffrage (D107, [Inébranlable ∞] au tarif bespoke établi par le Mûmakil — voir [[Regles_Points]] §3.4) :**
 
-### 3. Archers liges
+- À pied : brut = 19 (Inf🔴 mêlée) + 3 (Légende mêlée) + 6 (Inébranlable ∞) = 28 → round(28÷3)−1 = **8**.
+- À cheval : brut = 23 (Cav🔴 mêlée) + 3 (Légende) + 6 (Inébranlable ∞) = 32 → round(32÷3)−1 = **10**.
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** chasseurs et archers de village mobilisés aux côtés de la milice — même compétence de tir que les Archers de Minas Tirith, sans la cotte de mailles de leurs homologues de Gondor. Classe légère : décroche après avoir tiré ([Mobilité 1] intrinsèque, gratuite) sans effort supplémentaire. Contrairement à l'ancien [Arme de jet 1] (pensé pour la mêlée), [Férocité] leur va très bien : même acculés, ils rendent un dernier tir avant de reculer.
-
-> 🎲 **Note de calcul.** Le badge Faction ne change pas le coût final : brut 11 (Inf 🟢 distance) + Férocité (1) = 12 → round(12÷3)−1 = **3**, identique au coût sans badge. La compression absorbe l'ajout à ce palier.
+*(Hausse par rapport à l'ancienne version avec Férocité en dur — 7→**8** et 8→**10** — cohérente avec la puissance réelle d'une unité totalement increvable au recul.)*
 
 ---
 
-### 4. Éored d'éclaireur
+## 4. Variantes avec Leader — Playtest #4 (Pelennor)
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Distance | 🔵 | 3 | 3 dés | 4 | 3 | **4** |
+| Unité porteuse | Leader | Général | Destin | Options prises | **Points** |
+|---|---|---|---|---|---|
+| Éored de cavalier | **Éomer** | Oui | 3 | Faction | **13** *(brut 21+1+4+9+6=41)* |
+| Gardes royaux à cheval | **Théoden** | Oui | 1 | Faction | **12** *(brut 23+1+4+9+2=39)* |
 
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** les éclaireurs qui patrouillent les frontières de la Marche — le même éored que l'unité 1, tourné vers le harcèlement à distance. Porte [Mobilité 1] intrinsèque (cavalerie 🔵 distance) sans badge : tire puis décroche, gratuitement. Le badge Faction traduit ici le même acharnement que le reste du peuple, jusque dans la retraite.
-
----
-
-### 5. Gardes royaux à cheval
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 🔴 | 2 ou 3 | 4 dés | — | 3 | **8** |
-
-**Badges :** Élite ([Inébranlable 1] + Jamais Faible)
-
-**Note narrative :** l'escorte montée de la maison du roi — mieux protégée et mieux disciplinée que les éoreds ordinaires. Passe en classe lourde (🔴) : porte déjà [Armure 1] et [Poursuite 1] intrinsèques sans qu'aucun badge Spéciale ne soit nécessaire pour ça — l'armure vient de la classe, pas d'un badge dédié. Premier profil du roster à porter le badge Élite : cette garde ne recule pas facilement, et ne rompt jamais tout à fait.
-
-> 🎲 **Note de calcul.** Brut = 23 (Cav 🔴 mêlée) + Férocité Faction (1) + Élite (2) = 26 → round(26÷3)−1 = **8**.
+Bannière portée au Playtest #4 par 2 éoreds (+1 → **7** chacun) et 1 garde royal à cheval (base 7, absorbé, reste **7**).
 
 ---
 
-### 6. Gardes Royaux du Rohan
+## 5. Récapitulatif
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔴 | 1 ou 2 | 4 dés | — | 4 | **6** |
-
-**Badges :** Élite ([Inébranlable 1] + Jamais Faible)
-
-**Note narrative :** les gardiens de Meduseld, la salle dorée d'Edoras — la garde d'honneur du roi, bien équipée et disciplinée. Miroir direct des Gardes de la Citadelle de Gondor, mais l'armure vient ici de la classe lourde plutôt que d'un badge dédié. Mouvement réduit (1 case + combat, ou 2 sans combattre) : le prix du blindage complet, cohérent avec toute infanterie 🔴 du projet.
-
-> 🎲 **Note de calcul.** Brut = 19 (Inf 🔴 mêlée) + Férocité Faction (1) + Élite (2) = 22 → round(22÷3)−1 = **6**.
-
----
-
-### 7. Helmingas de Grimbolg
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** les hommes du Pays de Norfolde restés fidèles à Grimbold, qui a tenu les Gués de l'Isen face aux forces de Saroumane avant de mourir plus tard sur le Pelennor — une résistance acharnée (Faction), armée de haches et de lances lourdes qui ne ratent pas deux fois (Spéciale). Pas la garde d'élite du roi, mais un armement qui compense l'absence de blindage.
-
-> 🎲 **Note de calcul.** Brut = 15 (Inf 🔵 mêlée) + Férocité Faction (1) + Relance 1 Spéciale (2) = 18 → round(18÷3)−1 = **5** — coût strictement inchangé : Élite(+2) et Spéciale(+2) coûtent pareil, et l'ancien Faction [Arme de jet 1] coûtait déjà 1, comme [Férocité] aujourd'hui.
-
----
-
-### 8. Garde du Roi — *à pied*
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔴 | 1 ou 2 | 5 dés *(4 + 1 Légende)* | — | 4 | **7** |
-
-**Badges :** **Légende** (+1 dé de combat)
-
-**Note narrative :** les hommes de la maison du roi qui se battent à pied autour de Théoden lorsque Grisenel tombe sur les Champs du Pelennor — un cercle qui contre-attaque même forcé de reculer ([Férocité], comme tout le Rohan) et qui frappe d'un dé de combat supplémentaire ([Légende]) : la Garde du Roi se distingue par ce cinquième dé, pas par une règle que personne d'autre ne connaît.
-
-> 🎲 **Note de calcul (P7c, D081).** Plafond à 1 badge secondaire : Élite abandonné, Légende retenu (le cinquième dé de combat plutôt que l'inébranlabilité — arbitrage d'Emmanuel). Brut = 19 (Inf 🔴 mêlée) + Férocité Faction (1) + Légende mêlée (3) = 23 → round(23÷3)−1 = **7**. *(Coût inchangé — la compression absorbe la perte du badge Élite à ce palier.)*
-
----
-
-### 9. Garde du Roi — *à cheval*
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 🔴 | 2 ou 3 | 5 dés *(4 + 1 Légende)* | — | 3 | **8** |
-
-**Badges :** **Légende** (+1 dé de combat)
-
-**Note narrative :** les chevaliers de la maison du roi qui chevauchent à ses côtés depuis Edoras jusqu'au Pelennor — la meilleure cavalerie du Rohan, montée. [Charge écrasante], portée par ce profil avant le Playtest #1, reste retirée de toute la V1 (D043) ; le badge **Légende** en tient lieu, un cinquième dé de combat plutôt qu'une règle bespoke.
-
-> 🎲 **Note de calcul (P7c, D081).** Plafond à 1 badge secondaire : Élite abandonné, Légende retenu. Brut = 23 (Cav 🔴 mêlée) + Férocité Faction (1) + Légende mêlée (3) = 27 → round(27÷3)−1 = **8**. *(Ancien coût : 9, avec Élite+Légende cumulés — perd 1 pt avec le plafond à 1 badge.)* Reste la pièce la plus chère du roster.
-
----
-
-## 4. Récapitulatif des badges portés
-
-| Badge | Unités qui le portent |
+| Option | Disponible sur |
 |---|---|
-| **Spéciale** ([Relance 1]) | Helmingas de Grimbolg (7) — seul porteur du roster |
-| **Élite** ([Inébranlable 1] + Jamais Faible) | Gardes royaux à cheval (5) · Gardes Royaux du Rohan (6) |
-| **Légende** (+1 dé de combat) | Garde du Roi, les deux versions (8, 9) — seule pièce unique du roster |
-| **Leader** *(slot réservé, Phase 2)* | — aucune assignation avant les règles Héros/Leadership |
-
-**Reclassées en 🔴** (D074) : Gardes royaux à cheval (5) et Gardes Royaux du Rohan (6) — l'armure vient désormais de la classe, plus d'un badge Spéciale dédié.
-
-**Abandonnées** (D069) : [Prise de flanc] et [Vigilant] — les deux éoreds (1, 4) portent uniquement leurs intrinsèques de classe (Poursuite 2 / Mobilité 1) + le badge Faction.
-
-**Garde du Roi (8, 9) : Élite abandonné au profit de Légende — P7c (D081).** Seul cas du roster où le plafond à 1 badge secondaire a forcé un arbitrage (Emmanuel tranche pour le cinquième dé de combat plutôt que l'inébranlabilité).
+| **Faction [Férocité]** | 1-7 (optionnelle) |
+| **Bannière** | 1, 2, 5, 6, 7 |
+| **Hors matrice, signature** | Garde du Roi (8, 9) — Légende + [Inébranlable ∞] |
+| **Leader/Général/Destin** | Éomer (Éored), Théoden (Gardes royaux à cheval) au Pelennor |
 
 ---
 
-## 5. Points ouverts transverses
+## 6. Points ouverts transverses
 
-- **[Réception de charge]** reste sans porteur au Rohan (D021 : jamais assignée hors équipement de pique constaté) — aucun profil de piquiers dans ce roster resserré. Ouvert si une future unité de piquiers du Rohan est ajoutée.
-- **[Prise de flanc]/[Vigilant] abandonnées** : ces deux règles restent au glossaire général ([[Regles_Speciales]] §Signatures) mais n'ont plus de porteur. À réattribuer ailleurs ou à retirer formellement du glossaire lors d'un futur tri, si aucun autre peuple ne les réclame.
-- **Garde du Roi, pièce unique à deux incarnations** (§2) : ce n'est pas encore formalisé comme une règle générale de composition d'armée (limite d'enrôlement, cf. Compagnie Grise et le point ouvert §5 de Gondor) — à traiter transversalement en Phase 3 si d'autres peuples adoptent le même patron.
-- **Garde du Roi à cheval, plafond de coût atteint (8 pts)** — non testé sous cette forme (le Playtest #3 l'a jouée à l'ancien coût de 9), à surveiller en priorité au prochain playtest comme pièce la plus chère du roster.
-- **[Férocité] doublement utilisée** — badge Faction du Rohan (ce document) et ancien badge Spéciale de Mordor (à migrer vers [Relance 1] à son propre passage P4, D073). Aucun conflit mécanique (chaque peuple assigne ses propres badges), mais à garder en tête pour la cohérence narrative du glossaire une fois Mordor migré.
+- **Menu réduit à Faction/Bannière seulement** — les anciennes règles socle (Relance 1, Inébranlable+JF) disparaissent des options standard, ne survivent que dans les pièces signature (Garde du Roi, Compagnie Grise, futures pièces bespoke).
+- **Garde du Roi à 8/10 pts** — hausse sensible par rapport à l'ancienne version (7/8), à surveiller au prochain playtest : une pièce increvable au recul, avec 5 dés (Légende), à ce tarif, doit rester utilisable dans un format 3v3 sans écraser la ligne.
 
 ---
+
+*Version : 2.7 — Phase 1 — 2026-08-23. **Retouches Emmanuel (D107).** Bannière ajoutée en option sur la Milice lige (2). Garde du Roi (8, 9) devient une pièce **entièrement signature**, hors matrice : Légende + [Inébranlable ∞], Férocité retirée (une unité qui ne recule jamais n'a rien à gagner de la contre-attaque-malgré-recul). Nouveaux coûts : à pied 7→**8**, à cheval 8→**10** (tarif [Inébranlable ∞] repris du Mûmakil, +6 brut bespoke).*
+
+*Version : 2.6 — Phase 1 — 2026-08-23. **Simplification radicale généralisée (D101).** Plus aucun badge par défaut : Faction et Bannière deviennent les deux seules options, marquées ligne par ligne, jamais automatiques — y compris sur les unités auparavant Élite/Spéciale (5, 6, 7), dont le coût de base baisse en conséquence (6→5, 5→4). Garde du Roi (8, 9) conservée en exception (Légende + Férocité en dur, signature). Variantes Leader recalculées sur les nouvelles bases : Éored+Éomer **13**, Gardes royaux+Théoden **12**.*
+
+*Version : 2.5 — Phase 1 — 2026-08-23. **P8 — recalcul complet (D097/D098).** Faction ciblée : retirée par défaut (1-4), conservée en dur sur la Garde du Roi (8, 9), réapparaît sur toute unité avec Leader. Anciens badges Spéciale/Élite renommés « règles socle », coûts inchangés. Éored d'éclaireur 4→**3** pts (seul changement de coût de base). Nouvelles variantes chiffrées : Éored avec Éomer (Général, Destin 3) = **13** pts ; Gardes royaux à cheval avec Théoden (Général, Destin 1) = **12** pts ; variantes Bannière ajoutées. §4 (nouveau) récapitule les variantes Leader du Playtest #4.*
 
 *Version : 2.4 — Phase 1 — 2026-08-18. **Retrait du trait de Faction (D089/D090).** [Férocité] n'est plus imprimé pour tout le roster ; asymétrie reportée sur les cartes de commandement (P8). Lignes « Badges » nettoyées. §1 et §4 réécrits. Ajout du badge **Leader** (slot réservé, Phase 2). Coûts inchangés en attendant P8.*
 

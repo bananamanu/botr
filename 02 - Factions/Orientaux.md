@@ -3,130 +3,78 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-18"
+date_maj: "2026-08-23"
 tags: [BdTdM, "type/faction", "peuple/orientaux", "statut/brouillon"]
-version: "2.3"
+version: "3.0"
 ---
 
 # Orientaux — Profils d'unités
 
-> **Objet de ce document (refonte P4, D072 ; miroir Gondor rétabli P7c, D081).** Re-expression complète du roster sur la taxonomie visuelle (classe × type × mode, [[Regles_Base]] §2.4) et la matrice de points ([[Regles_Points]] §2). Renommage du peuple : **Easterling → Orientaux** (le nom des unités utilisait déjà « orientaux » depuis la Passe 0 ; seul le nom de peuple/fichier a suivi, D072).
+> **Objet de ce document (P8 — simplification radicale D101/D102, nouvelle Faction D104).** Même principe que les autres peuples : plus aucun badge d'office. La Faction des Orientaux change complètement : elle abandonne [Défense X] (miroir de Gondor) pour une identité propre, **[Discipline de cohorte]** — une posture défensive activée plutôt qu'un bonus permanent.
 >
-> **Le collapse de badges (D081) revient sur le repositionnement D077.** Au Playtest #3, le constat de terrain a été que la Faction de Gondor comme des Orientaux ne couvrait pas tout le roster ; l'houserule l'a étendue partout sous un nom commun, **[Défense 1]** (= [Armure 1]), distinct de l'intrinsèque du 🔴. **[Mur de bouclier]** (identité propre des Orientaux depuis D077) redevient sans porteur actif — les Orientaux reviennent au **miroir mécanique exact de Gondor**.
->
-> Aligné sur [[Regles_Base]] v0.13 et [[Regles_Speciales]] v0.27, [[Regles_Points]] v0.24.
+> Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
 
 ---
 
-## 1. Badges des Orientaux *(Faction retirée, D090)*
+## 1. Faction des Orientaux — [Discipline de cohorte]
 
-*(Pivot jeton/badges — D089/D090.)* [Défense 1] n'est plus imprimé pour tout le roster : l'asymétrie des Orientaux sera portée par leurs cartes de commandement propres (P8). Reste au niveau de l'unité : **jusqu'à deux badges secondaires**, choisis parmi Spéciale/Élite/Légende (1 max) et Leader (1 max, réservé — Phase 2).
+> À la fin de son activation, l'unité peut se mettre en **position défensive** (marqueur à poser). Elle **renonce** à sa riposte éventuelle jusqu'à sa prochaine activation, et gagne **[Défense 1]** + **[Inébranlable 1]** tant que le marqueur est en place.
 
-| Badge | Effet | Porté par |
-|---|---|---|
-| **Spéciale** | **[Relance 1]** | Cohorte de piquiers |
-| **Leader** *(slot réservé, Phase 2)* | Touche aussi sur Couronne | — |
-
-Le badge **Élite** reste disponible au système mais n'est porté par **aucune** unité de ce roster resserré à 4 profils.
-
-> ⚠️ **Recalcul des points en attente (P8).** Coûts affichés inchangés en attendant la passe P8.
+**Outil optionnel**, +2 brut. Disponible uniquement sur les **Cohortes** (guerriers et piquiers) — pas les archers, pas les Cataphractaires, dont l'identité ne repose pas sur la formation serrée.
 
 ---
 
-## 2. Liste des troupes
+## 2. Liste des troupes (coûts de base — sans option)
 
-| # | Unité | Type | Combat | Classe | Badge secondaire | **Points** |
-|---|-----------------------------|----------|--------|------|---|----------|
-| 1 | Cohorte d'orientaux | Infanterie | Mêlée | 🔵 | *(aucun)* | **5** |
-| 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | 🔵 | Spéciale | **5** |
-| 3 | Cohorte d'archers orientaux | Infanterie | Distance | 🟢 | Spéciale | **4** |
-| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | 🔴 | *(aucun)* | **7** |
+| # | Unité | Type | Combat | Classe | Options disponibles | **Points** |
+|---|---|---|---|---|---|---|
+| 1 | Cohorte d'orientaux | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
+| 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
+| 3 | Cohorte d'archers orientaux | Infanterie | Distance | 🟢 | *(aucune)* | **3** |
+| 4 | Cataphractaires orientaux | Cavalerie | Mêlée | 🔴 | Bannière | **7** |
 
-**Total roster : 21 points** *(19 avec [Mur de bouclier] partiel D077, 21 dans la version miroir pur D072, 22 dans l'originale)*.
+**Coûts avec option Discipline de cohorte (+2 brut) :**
 
-> 🔄 **P7c (D081) — Faction étendue à tout le roster.** Cohorte (1) : 4→**5 pts** ([Défense 1] coûte plus que l'ancien [Mur de bouclier]). Archers (3) : 3→**4 pts** (gagnent Faction, n'en avaient jamais eu). Piquiers (2) et Cataphractaires (4) : coût inchangé (la compression absorbe l'écart, et Défense 1 est gratuite sur les Cataphractaires 🔴).
+| # | Unité | Base | +Faction |
+|---|---|---|---|
+| 1 | Cohorte d'orientaux | 4 | **5** |
+| 2 | Cohorte de piquiers | 4 | **5** |
 
----
+**Coûts avec Bannière (+2 brut) :**
 
-## 3. Profils détaillés
-
-### 1. Cohorte d'orientaux
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **4** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** l'infanterie de ligne régulière des peuples de l'Est, alliés de longue date de Sauron — rangs serrés, cottes de mailles renforcées, aussi bien équipée que son miroir de Gondor.
-
-> 🎲 **Note de calcul (P7c, D081).** Brut = 15 (Inf 🔵 mêlée) + [Défense 1] Faction (2) = 17 → round(17÷3)−1 = **5**. *(Ancien coût : 4, avec [Mur de bouclier] à 1 pt — [Défense 1] coûte plus cher.)*
+| # | Unité | Base | +Bannière |
+|---|---|---|---|
+| 1 | Cohorte d'orientaux | 4 | **5** |
+| 2 | Cohorte de piquiers | 4 | **5** |
+| 4 | Cataphractaires | 7 | 7 *(absorbé)* |
 
 ---
 
-### 2. Cohorte de piquiers orientaux
+## 3. Variantes avec Leader — Playtest #4
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Mêlée | 🔵 | 2 | 3 dés | — | 4 | **5** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** une compagnie de piquiers longs, aussi bien protégée que la Cohorte de base ([Défense 1]), avec une arme qui ne rate pas deux fois une fois la ligne engagée ([Relance 1]).
-
-> 🎲 **Note de calcul.** Brut = 15 (Inf 🔵 mêlée) + [Défense 1] Faction (2) + [Relance 1] Spéciale (2) = 19 → round(19÷3)−1 = **5**. *(Inchangé.)*
+Aucun Leader nommé côté Orientaux au Playtest #4. Badge **Bannière** porté par 1 Cohorte (→**5**) et 1 Cataphractaire (→7, absorbé).
 
 ---
 
-### 3. Cohorte d'archers orientaux
+## 4. Récapitulatif
 
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Infanterie | Distance | 🟢 | 2 | 2 dés | 4 | 4 | **3** |
-
-**Badges :** Spéciale ([Relance 1])
-
-**Note narrative :** des archers de l'Est, tirailleurs mobiles — ils décrochent après avoir tiré ([Mobilité 1] intrinsèque, gratuite, classe 🟢), une flèche qui ne rate pas deux fois ([Relance 1]), et portent désormais la même protection que le reste du roster.
-
-> 🔄 **P7c (D081).** Gagne [Défense 1] — n'avait jamais porté de Faction sous [Mur de bouclier] (D077, réservé à l'infanterie de ligne massée). Brut = 11 (Inf 🟢 distance, [Mobilité 1] incluse) + [Relance 1] Spéciale (2) + [Défense 1] Faction (2) = 15 → round(15÷3)−1 = **4**. *(Ancien coût : 3.)*
-
----
-
-### 4. Cataphractaires orientaux
-
-| Type | Combat | Classe | Mouvement | Attaque | Portée | Figurines | **Points** |
-|---|---|---|---|---|---|---|---|
-| Cavalerie | Mêlée | 🔴 | 2 | 4 dés | — | 3 | **7** |
-
-**Badges :** *(aucun — ex-Faction retirée, D090)*
-
-**Note narrative :** la cavalerie lourde de l'Est. [Armure 1] et [Poursuite 1] intrinsèques à la classe 🔴 couvrent déjà le plancher de [Défense 1] — la Faction ne coûte donc rien de plus ici. S'aligne mécaniquement sur les Chevaliers de Minas Tirith de Gondor (même classe, même Faction gratuite, même coût) — la distinction reste narrative.
-
-> 🔄 **P7c (D081).** Gagne [Défense 1], gratuite (déjà au plancher 🔴). Brut = 23 (Cav 🔴 mêlée, [Armure 1] + [Poursuite 1] + prime de choc déjà inclus) → round(23÷3)−1 = **7**. *(Coût inchangé.)*
-
----
-
-## 4. Récapitulatif des badges portés
-
-| Badge | Unités qui le portent |
+| Option | Disponible sur |
 |---|---|
-| **Spéciale** ([Relance 1]) | Cohorte de piquiers (2) · Cohorte d'archers (3) |
-| **Élite** | *(aucune unité)* |
-| **Leader** *(slot réservé, Phase 2)* | — aucune assignation avant les règles Héros/Leadership |
-| **Aucun badge** | Cohorte d'orientaux (1) · Cataphractaires orientaux (4) |
+| **Faction [Discipline de cohorte]** | Cohorte (1), Cohorte de piquiers (2) — uniquement |
+| **Bannière** | 1, 2, 4 |
 
 ---
 
 ## 5. Points ouverts transverses
 
-- **[Mur de bouclier] redevient sans porteur actif** (P7c, D081) — conservée au glossaire, réutilisable pour un futur profil ou peuple voulant l'identité « formation qui tient tant qu'elle n'est pas percée ».
-- **[Double Tir] toujours sans porteur** — abandonnée depuis D072, jamais ressuscitée.
-- **Réception de charge** reste coupée du système entier (inchangé depuis P2, D062) — aucun porteur nulle part dans le projet à ce stade.
-- **Hausse de coût du roster (19→21 pts, P7c)** — non testée sous cette forme : le Playtest #3 a joué les Orientaux à l'ancien barème [Mur de bouclier]. À surveiller au prochain test, en particulier l'équilibre général Bien/Mal (D084) qui s'appuyait sur les anciens totaux.
+- **[Discipline de cohorte] jamais testée** — première règle du projet à demander un marqueur physique dédié en jeu (au-delà des jetons d'activation/cible déjà existants) ; à vérifier que ça ne surcharge pas la table à 6 joueurs.
+- **Roster sans Leader nommé à ce stade** — si un futur scénario attache un chef oriental, il faudra définir comment [Discipline de cohorte] interagit avec Leader/Général (cumul libre, a priori, comme tout le reste).
 
 ---
 
-*Version : 2.3 — Phase 1 — 2026-08-18. **Retrait du trait de Faction (D089/D090).** [Défense 1] n'est plus imprimé pour tout le roster ; asymétrie reportée sur les cartes de commandement (P8). Lignes « Badges » nettoyées. §1 et §4 réécrits. Ajout du badge **Leader** (slot réservé, Phase 2). Coûts inchangés en attendant P8.*
+*Version : 3.0 — Phase 1 — 2026-08-23. **Nouvelle Faction (D104) + simplification radicale (D101/D102).** [Discipline de cohorte] remplace [Défense X] : posture défensive activée (renonce à la riposte, gagne Défense 1 + Inébranlable 1), +2 brut, disponible seulement sur les deux Cohortes (guerriers, piquiers) — pas les archers ni les Cataphractaires. Plus aucun badge par défaut ailleurs sur le roster.*
+
+*Version : 2.4 — Phase 1 — 2026-08-23. **P8 — recalcul complet (D097/D098).** Faction ciblée : retirée par défaut. Cohorte 5→**4**, Archers 4→**3** ; Piquiers et Cataphractaires inchangés. Total roster 21→**19** pts. Aucune variante Leader à ce stade (aucun chef oriental nommé au Playtest #4).*
 
 *Version : 2.2 — Phase 1 — 2026-08-13. **Collapse du système de badges (D080/D081, tâche P7c) — retour au miroir de Gondor.** [Mur de bouclier] (D077) redevient sans porteur actif ; la Faction devient **[Défense 1]** (= [Armure 1]), universelle sur les 4 unités. Cohorte (1) : 4→**5 pts**. Cohorte d'archers (3) : 3→**4 pts** (gagne Faction). Piquiers (2) et Cataphractaires (4) : coût inchangé. Total roster 19→**21 pts**.*
 

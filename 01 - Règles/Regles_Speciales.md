@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-22"
+date_maj: "2026-08-23"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.30"
+version: "0.31"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -80,7 +80,21 @@ Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une uni
 
 Lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Les faces **Épées croisées** ne sont jamais affectées. Sans effet contre le **tir**.
 
-> 🔄 **Nom d'usage [Défense X] pour la Faction Gondor/Orientaux — D080/D081.** Quand [Armure X] sert de trait de Faction (imprimé pour tout un peuple, plutôt que dérivé de la classe), elle est désignée **[Défense X]** dans les rosters Gondor et Orientaux — mécanique strictement identique, nom distinct pour ne jamais la confondre avec le plancher [Armure 1] intrinsèque au 🔴 ([[Regles_Base]] §2.4). *(Historique : [Mur de bouclier], identité propre des Orientaux depuis D077, redevient sans porteur actif à P7c — les Orientaux reviennent au miroir mécanique de Gondor, [Défense 1] partout.)*
+> 🔄 **Nom d'usage [Défense X] pour la Faction Gondor/Orientaux — D080/D081.** Quand [Armure X] sert de trait de Faction (imprimé pour tout un peuple, plutôt que dérivé de la classe), elle est désignée **[Défense X]** dans les rosters Gondor et Orientaux — mécanique strictement identique, nom distinct pour ne jamais la confondre avec le plancher [Armure 1] intrinsèque au 🔴 ([[Regles_Base]] §2.4). *(Historique : [Mur de bouclier], identité propre des Orientaux depuis D077, redevient sans porteur actif à P7c — les Orientaux reviennent au miroir mécanique de Gondor, [Défense 1] partout. Depuis P8, Gondor a migré vers [Relance 1] — voir [[Gondor_et_Fiefs]] — ce nom d'usage ne concerne plus qu'Orientaux le temps de son propre recalcul.)*
+
+> ⚠️ **[Armure X] reste réservée aux unités standard (matrice).** Pour les Créatures, voir **[Armure] (sans X)** ci-dessous — refonte P8, D103 — qui remplace [Armure X]+[Protection X] pour ce type de profil.
+
+### [Armure]  *(sans valeur X — refonte Créatures, D103)*
+
+Remplace, pour le seul **type Créature**, l'ancien duo [Armure 1] intrinsèque (mêlée) + [Protection 1] payant (tir, D079). Mécanique unifiée, valable contre **toute** attaque reçue (mêlée et distance) :
+
+> Pour chaque touche subie, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Arcane** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093).
+
+Probabilité de base : 1 face sur 6 (Arcane) annule chaque touche, soit environ 1 touche sur 6 absorbée en moyenne. Avec un Leader porté par l'unité, la fenêtre de sauvetage s'élargit à 2 faces sur 6 (Arcane + Couronne) — synergie gratuite avec le badge Leader déjà payé séparément (aucun supplément de coût propre à cette synergie).
+
+**Statut de coût :** reste **intrinsèque au type Créature**, comme l'était [Armure 1] avant refonte — pas de supplément de brut à part pour la porter. Remplace la ligne [Protection 1] (+1 brut) qui existait sur le Mûmakil : voir recalcul dans `Harad.md` §3.
+
+> 🔄 **Créée — P8 (D103), arbitrage Emmanuel.** Simplifie deux mécaniques disjointes (réduction déterministe de faces en mêlée / absorption de touches au tir) en une seule mécanique de jet de sauvetage, valable dans les deux cas. Porteuses : Mûmakil, Troll du Mordor, Roi-Sorcier sur l'ombre ailée. Non testée au playtest — à surveiller (la probabilité de 1/6 est-elle satisfaisante en jeu, ou trop faible pour se sentir « armuré » ?).
 
 ### [Protection X]
 
@@ -98,7 +112,7 @@ Une unité en position protégée (terrain) ignore **X touches** après décompt
 
 Cette unité ignore **X résultats de retraite** par attaque reçue, quelle qu'en soit la source (dés, [Peur X], cartes, effets).
 
-- **Convention [Inébranlable ∞]** : une unité qui ne recule **jamais** (elle ignore tout Drapeau). Remplace l'ancienne règle [Inamovible] (fusionnée en P2). Réservée aux grandes créatures ancrées — premier porteur : le Mûmakil.
+- **Convention [Inébranlable ∞]** : une unité qui ne recule **jamais** (elle ignore tout Drapeau). Remplace l'ancienne règle [Inamovible] (fusionnée en P2). Réservée aux grandes créatures ancrées et aux pièces signature — premier porteur : le Mûmakil ; **second porteur, P8 : la Garde du Roi (Rohan)**, devenue pièce entièrement signature — voir [[Rohan]] §3.
 
 > 💡 [Inébranlable 2] face à 3 Drapeaux → recule d'1 seul hexagone. [Inébranlable ∞] → ne recule pas.
 
@@ -131,6 +145,18 @@ Le tour où cette unité **s'est déplacée puis attaque en mêlée**, chaque fa
 Chaque **retrait forcé** (recul de combat) de cette unité compte **double** (déplacement de recul et éventuels dégâts de collision doublés, selon la règle qui déclenche le retrait).
 
 > 🔄 **Créée — P4 (D070)**, premier badge/règle à **coût négatif** du projet : **−2 brut**, symétrique au coût des badges positifs existants. Traduit un moral fragile et une motivation strictement pécuniaire — l'unité cède plus volontiers le terrain qu'une troupe régulière ou fidèle. Porteuse d'origine : Khand (badge Faction, D070) — généralisable à toute future troupe mercenaire d'un autre peuple.
+
+### [Discipline de cohorte]  *(nouveau, D104 — Faction Orientaux)*
+
+> À la fin de son activation, l'unité peut se mettre en **position défensive** (poser un marqueur dédié). Elle **renonce** à toute contre-attaque jusqu'à sa prochaine activation, mais gagne **[Défense 1]** et **[Inébranlable 1]** tant que le marqueur est en place. Le marqueur est retiré au début de l'activation suivante de l'unité (avant qu'elle n'agisse).
+
+> 🔄 **Créée — P8 (D104), Faction Orientaux.** Remplace [Défense 1] comme trait de peuple des Orientaux — pas une posture passive gratuite : le compromis (perte de la riposte) est le prix de la solidité. Disponible en option sur les **Cohortes** (guerriers et piquiers) uniquement — ni les archers, ni les Cataphractaires, dont l'identité de peuple ne repose pas sur la formation serrée. **Coût : +2 brut** (forfait, sous la somme brute de [Défense 1]+[Inébranlable 1] = 4, remise pour la contrepartie de jeu — jugement, à confirmer au playtest).
+
+### [Horde]  *(troisième version, D105 — Faction Mordor)*
+
+> Tant que l'unité est à **pleine santé** (aucune figurine perdue), elle porte **[+1 dé de combat]** et **[Inébranlable 1]**. Dès la première perte, ces deux effets disparaissent — **sans aucun effet négatif** en contrepartie (pas de passage en Faible anticipé, pas de pénalité résiduelle).
+
+> 🔄 **Troisième version — P8 (D105).** Remplace la version D075/D081 (+1 dé à pleine santé, Faible dès la première touche — un vrai risque à double tranchant). Cette version ne punit plus, elle **récompense uniquement** la formation intacte : la horde frappe fort et ne cède pas tant qu'elle est au complet, puis retombe simplement à son profil nu — cohérent avec l'esprit « masse qui charge en bloc, se disperse sans drame une fois entamée ». Disponible en option sur **tous les orques** du roster Mordor (bandes d'orques, Uruk-hai, la nouvelle Piétaille orque — voir `Mordor.md`), y compris la Meute de cavaliers wargs par extension. **Coût : +3 brut** (forfait — sous la somme brute d'un +1 dé standard (~2-3 selon le mode) + [Inébranlable 1] (2), remise pour la conditionnalité « pleine santé seulement » — jugement, à confirmer au playtest).
 
 ---
 
@@ -228,11 +254,11 @@ Chaque face **Arcane** obtenue en attaque compte comme **2 Drapeaux** contre la 
 
 > 🎲 **Version renforcée de [Peur X]**, X fixé à 2 plutôt que gradué — sort de la différée « Terreur (X élevé) » évoquée depuis D062 §7. Réservée aux figures de terreur pure du récit (Nazgûl, Roi-Sorcier) : premier porteur, le **Roi-Sorcier sur l'ombre ailée** (§4b), validé au Playtest #4.
 
-#### [Archer en mêlée]  — *sans porteur actif*
+#### [Archer en mêlée]  — *Compagnie Grise (Legolas), redevenu actif P8*
 
 Les faces **Cible** infligent aussi une touche lors d'une attaque de **mêlée** (normalement inertes en mêlée).
 
-> 🎲 Précision hors norme, dangereuse jusqu'au corps à corps. **Sans porteur depuis P4/D073** : la Compagnie Grise (Legolas), seule pièce à l'avoir jamais portée, passe au badge **Légende** (+1 dé de combat) plutôt qu'à une règle bespoke par figurine. Conservée au glossaire — réutilisable si un futur profil veut l'identité « tireur d'élite qui touche aussi au contact ».
+> 🎲 Précision hors norme, dangereuse jusqu'au corps à corps. **Sans porteur de P4/D073 à P8** (la Compagnie Grise l'avait remplacé par le badge Légende) — **redevient actif P8** : la Compagnie Grise repasse en pièce bespoke à règles nommées par figurine, et Legolas la porte à nouveau tant qu'il est présent (voir [[Gondor_et_Fiefs]] §3).
 
 #### [Vigilant]  — *Éored d'éclaireur (Rohan)*
 
@@ -245,6 +271,12 @@ La cible d'une attaque de cette unité **ne peut pas la contre-attaquer**, quell
 Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre unité amie** attaquant cette ennemie ajoute **1 dé**. Cette unité n'en profite pas pour ses propres attaques. Les sources multiples se cumulent (1 dé chacune).
 
 > 🎲 Rôle de **soutien** (pas de dégât propre) : le cavalier tient la faille ouverte, les lances plus lourdes l'exploitent. Second mot-clé des *Riverwatch Riders*, séparé de [Vigilant].
+
+#### [Peur 1 contre les bannières vertes]  — *Aurige de Khand, nouveau P8 (D106)*
+
+Contre une unité de classe **🟢** uniquement, chaque face **Arcane** obtenue en attaque compte comme **1 Drapeau** (au lieu d'un échec). Sans effet contre les classes 🔵/🔴. N'inflige aucune touche — comme [Peur X], ça fait rompre, pas mourir.
+
+> 🎲 **Créée — P8, arbitrage Emmanuel.** Le fracas du char devant des troupes légères, peu aguerries, qui n'ont jamais affronté ça — sans effet sur des troupes plus lourdes, habituées au choc. Bespoke, ciblée sur une classe plutôt que sur toute cible — **coût : +2 brut**, en dessous du tarif d'un [Peur X] universel puisque la portée est restreinte à un tiers du roster adverse (jugement, à confirmer au playtest).
 
 #### [Plateforme de tir X]  — *sans porteur actif*
 
@@ -360,6 +392,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.31 — Phase 1 — 2026-08-23. **P8 — Simplification radicale (D103-D106), retouches de rosters.** Nouvelle règle **[Armure]** (sans X, D103) : remplace [Armure 1]+[Protection 1] pour le seul type Créature — jet de sauvetage 1d6, annule sur Arcane (+Couronne si Leader), reste intrinsèque (gratuit). Nouvelle **[Discipline de cohorte]** (D104, Faction Orientaux) : posture défensive activée, renonce à la riposte contre [Défense 1]+[Inébranlable 1], +2 brut. **[Horde]** troisième version (D105, Faction Mordor) : +1 dé et Inébranlable 1 à pleine santé seulement, plus aucun effet négatif ensuite, +3 brut. Nouvelle signature bespoke **[Peur 1 contre les bannières vertes]** (D106, Aurige de Khand), +2 brut. [Archer en mêlée] redevient actif (Legolas, Compagnie Grise repassée en pièce bespoke à règles nommées). [Inébranlable ∞] gagne un second porteur (Garde du Roi, Rohan, devenue pièce signature).*
 
 *Version 0.30 — Phase 1 — 2026-08-22. **Playtest #4 joué — troisième refonte des badges (D092) et formalisation du badge Leader (D093).** §4a renommé « Badges Faction et Bannière » : Faction revient (retirée D090) mais comme badge assigné **unité par unité**, plus un trait de peuple ; Spéciale et Élite (D073) abandonnés ; nouveau badge **Bannière** ([Inébranlable 1], figurine porte-étendard). Tous les badges cumulables sans plafond. Badge **Leader** sort de la réserve Phase 2 : mécanique complète en [[Regles_Base]] §2.2bis (Général, Destin). Nouvelle règle **[Terreur]** (D094, Arcane = 2 Drapeaux) et nouveau profil bespoke **Roi-Sorcier sur l'ombre ailée** (D095, première application de [Vol]) ajoutés en §4b. Table « Différées Phase 2+ » allégée (Terreur/Vol activées, couche Leadership couverte par le badge Leader). Récapitulatif alphabétique et table des quatre familles mis à jour. Réassignation formelle des badges dans les 6 rosters renvoyée à **P8**. Voir `[[Playtest4_Compte-rendu]]`.*
 
