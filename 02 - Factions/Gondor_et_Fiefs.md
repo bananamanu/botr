@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "3.1"
+version: "3.2"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
@@ -35,7 +35,7 @@ version: "3.1"
 | 1 | Rangers *(du Gondor, d'Ithilien, du Nord — même profil)* | Infanterie | Distance | 🟢 | Faction | **3** |
 | 2 | Archers de Minas Tirith | Infanterie | Distance | 🟢 | Faction, Bannière | **3** |
 | 3 | Troupes régulières de Minas Tirith *(Garde de la Citadelle, Guerriers de Minas Tirith)* | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
-| 4 | Troupes des Fiefs *(Guerriers de Lossarnach, Guerriers des clans de Lamedon)* | Infanterie | Mêlée | 🔵 | Faction | **4** |
+| 4 | Troupes des Fiefs *(Guerriers de Lossarnach, Guerriers des clans de Lamedon, **Hommes d'armes de Dol Amroth**)* | Infanterie | Mêlée | 🔵 | Faction | **4** |
 | 5 | Troupes lourdes des Fiefs *(Chevaliers à pied de Dol Amroth)* | Infanterie | Mêlée | 🔴 | Bannière | **5** |
 | 6 | Cavalerie du Gondor *(Chevaliers de Dol Amroth, Chevaliers de Minas Tirith)* | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
 | 7 | La Compagnie Grise — *signature* | Infanterie | Mêlée | 🔵 | *(hors matrice, voir §3)* | **15** |
@@ -118,6 +118,8 @@ version: "3.1"
 - **Options « absorbées » par la compression** (Rangers+Faction, Archers+Faction seule, Cavalerie+Faction seule) — à surveiller : est-ce acceptable qu'un outil narratif ne change parfois rien au prix, ou faut-il revoir le tarif de Faction à la hausse pour que l'option pèse toujours ?
 
 ---
+
+*Version : 3.2 — Phase 1 — 2026-08-30. **D116 — les Hommes d'armes de Dol Amroth rejoignent la ligne 4 (Troupes des Fiefs).** L'unité figurait dans l'ordre de bataille du Pelennor sous le nom trompeur de « Piquiers de Dol Amroth » sans exister au roster. Dol Amroth étant un fief au même titre que Lossarnach et le Lamedon, elle prend place sur la ligne des Troupes des Fiefs : 🔵 mêlée, 4 pts, Faction disponible (5 pts), pas de Bannière. Aucun coût modifié, aucune ligne créée.*
 
 *Version : 3.1 — Phase 1 — 2026-08-23. **Correction (D110) — Chevaliers à pied de Dol Amroth restent 🔴, pas 🔵.** Erreur de classe introduite en v3.0 : ils gardent leur classe lourde d'origine (Armure 1 + Poursuite 1 intrinsèques). Coût de base corrigé 4→**5**, avec Bannière 5→**6**. Note de reclassement erronée retirée.*
 

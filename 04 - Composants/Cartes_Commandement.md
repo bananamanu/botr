@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-16"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.8"
+version: "0.9"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -298,6 +298,8 @@ Une fois la carte choisie, chaque joueur déplace et fait combattre les unités 
 > 💡 **Exemple de jeu**
 > Le camp Bien joue « En avant » (2 unités par section). Le joueur Centre annonce la carte ; chacun des 3 joueurs déplace et fait combattre 2 de ses propres unités, dans sa propre Section.
 
+**Hexagones de frontière.** Une limite de Section peut couper des hexagones en deux plutôt que suivre leurs arêtes — c'est le cas de quatorze cases au Pelennor (colonnes F et L des lignes impaires, voir `[[Pelennor_Epique]]` §2.1). Un hexagone ainsi coupé **appartient aux deux Sections voisines** : l'unité qui s'y trouve peut être activée par l'un **ou** l'autre des deux joueurs concernés, mais **jamais par les deux dans le même tour**. Elle compte pour une seule unité ordonnée, à porter au décompte de la Section du joueur qui l'active.
+
 **Transfert de contrôle en cours de tour.** Si une unité franchit la ligne séparant deux Sections au cours d'un même tour, le joueur qui a initié son mouvement la contrôle jusqu'à la fin du tour. Au tour suivant, elle passe sous le contrôle du joueur de la Section où elle se trouve désormais.
 
 ### 7.2 Le râtelier de Commandement
@@ -338,6 +340,8 @@ L'alternance des tours entre les deux camps reste celle du format Normal — un 
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.9 — Phase 1 — 2026-08-30. **D119 — règle des hexagones de frontière ajoutée au §7.1.** Lacune réelle du document : le transfert de contrôle traitait le cas d'une unité qui *franchit* une limite de Section en cours de tour, mais rien ne disait ce qu'il advenait d'une unité *posée à cheval* sur une limite qui coupe l'hexagone. Un tel hexagone appartient désormais explicitement aux deux Sections voisines, activable par l'un ou l'autre joueur mais jamais par les deux dans le même tour. Aucune autre modification.*
 
 *Version : 0.8 — Phase 1 — 2026-08-16. **Correction de cohérence — note d'intro §7.** La note D087 mentionnait encore « pas de bannières de couleur » comme simplification Épique, périmée depuis D088 (cartes Classe réintégrées au deck Normal, donc au râtelier Épique sans traitement spécial). Repérée en répondant à une question directe sur l'emplacement des règles Épique — aucune décision mécanique, pas de nouveau numéro D.*
 

@@ -2,10 +2,10 @@
 projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
-statut: "brouillon-a-tester"
+statut: "superseded" #ancien: "brouillon-a-tester"
 date_maj: "2026-08-22"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/brouillon", "playtest/4", "epique"]
-version: "0.1"
+version: "0.2"
 ---
 
 # Playtest #4 — Scénario Épique du Pelennor (version quasi finale)
@@ -17,6 +17,8 @@ version: "0.1"
 > Aligné sur `[[Regles_Base]]` v0.17, `[[Regles_Speciales]]` v0.30, `[[Cartes_Commandement]]`, `[[Regles_Points]]` v0.27. Rosters : `[[Gondor_et_Fiefs]]`, `[[Rohan]]`, `[[Khand]]`, `[[Mordor]]`, `[[Harad]]`, `[[Orientaux]]`.
 
 ---
+
+> ⛔ **Document superseded (2026-08-30, D115-D122).** Le scénario de référence est désormais `[[Pelennor_Epique]]` v1.0. Ce document est conservé comme document de travail du Playtest #4 et **n'est plus à jour** : il porte notamment l'erreur Merry/Pippin corrigée par D115, un ordre de bataille antérieur aux renforts de Pelargir (D117), et des conditions de victoire à 4 points remplacées par le barème à 8 points (D121). Ne pas l'utiliser pour jouer.
 
 ## 1. Cadre
 
@@ -135,5 +137,7 @@ Lorsque le Roi-Sorcier **attaque l'unité où se trouve Théoden**, il bénéfic
 > 🔗 **Voir aussi** `[[Playtest4_Compte-rendu]]` · `[[Document_de_cadrage]]` (D091-D096) · `[[Regles_Speciales]]` §4a/§4b · `[[Regles_Base]]` §2.2bis
 
 ---
+
+*Version : 0.2 — Phase 1 — 2026-08-30. **Document marqué superseded (D115-D122).** Remplacé par `[[Pelennor_Epique]]` v1.0. Conservé sans retouche de fond, conformément au principe du projet de ne pas amputer les documents historiques — le corps du texte garde donc l'erreur Merry/Pippin et l'ancien barème de victoire, désormais faux.*
 
 *Version : 0.1 — Phase 1 — 2026-08-22. Création du document, à partir du débrief du Playtest #4 (`[[Playtest4_Compte-rendu]]`). Ordre de bataille complet, 4 conditions de victoire, règles de scénario Éowyn/Pippin et bonus Roi-Sorcier vs Théoden (D096). Non testé pour les points — badges et coûts en attente du chantier P8.*

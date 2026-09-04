@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/faction", "peuple/orientaux", "statut/brouillon"]
-version: "3.0"
+version: "3.1"
 ---
 
 # Orientaux — Profils d'unités
@@ -29,6 +29,8 @@ version: "3.0"
 | # | Unité | Type | Combat | Classe | Options disponibles | **Points** |
 |---|---|---|---|---|---|---|
 | 1 | Cohorte d'orientaux | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
+
+> 🎲 **Cases comblées (D124).** Cohorte 🔵 (brut 15) : **+ Faction [Défense 1]** = 17 → **5** · **+ Bannière** = 17 → **5** · **+ Faction + Bannière** = 19 → **5**. Les deux badges ensemble ne coûtent pas plus qu'un seul.
 | 2 | Cohorte de piquiers orientaux | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
 | 3 | Cohorte d'archers orientaux | Infanterie | Distance | 🟢 | *(aucune)* | **3** |
 | 4 | Cataphractaires orientaux | Cavalerie | Mêlée | 🔴 | Bannière | **7** |
@@ -71,6 +73,8 @@ Aucun Leader nommé côté Orientaux au Playtest #4. Badge **Bannière** porté 
 - **Roster sans Leader nommé à ce stade** — si un futur scénario attache un chef oriental, il faudra définir comment [Discipline de cohorte] interagit avec Leader/Général (cumul libre, a priori, comme tout le reste).
 
 ---
+
+*Version : 3.1 — Phase 1 — 2026-08-30. **D124 — cases de coût comblées.** Les combinaisons de badges sur les Cohortes 🔵 sont explicitées : Faction seule, Bannière seule et les deux ensemble coûtent toutes **5** (brut 17, 17 et 19, tous compressés vers 5). La case Faction + Bannière manquait et faussait le chiffrage du Pelennor d'un point.*
 
 *Version : 3.0 — Phase 1 — 2026-08-23. **Nouvelle Faction (D104) + simplification radicale (D101/D102).** [Discipline de cohorte] remplace [Défense X] : posture défensive activée (renonce à la riposte, gagne Défense 1 + Inébranlable 1), +2 brut, disponible seulement sur les deux Cohortes (guerriers, piquiers) — pas les archers ni les Cataphractaires. Plus aucun badge par défaut ailleurs sur le roster.*
 

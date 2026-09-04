@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.7"
+version: "1.9"
 ---
 
 # Mordor — Profils d'unités
@@ -32,6 +32,8 @@ version: "1.7"
 |---|---|---|---|---|---|---|
 | 1 | Bande d'orques du Mordor | Infanterie | Mêlée | 🔵 | Horde, Bannière | **4** |
 | 2 | Bande d'orques du Morannon | Infanterie | Mêlée | 🔵 | Horde, Bannière | **4** |
+
+> 🎲 **Cases comblées (D124).** Bande d'orques 🔵 (Mordor ou Morannon, brut 15) : **+ [Horde]** = 16 → **4** *(absorbé, gratuit)* · **+ Bannière** = 17 → **5** · **+ [Horde] + Bannière** = 18 → **5**. La combinaison des deux badges ne coûte donc rien de plus que la Bannière seule.
 | 3 | **Piétaille orque du Mordor** — *nouveau* | Infanterie | Mêlée | 🟢 | Horde, Bannière | **3** |
 | 4 | Bande de pisteurs orques | Infanterie | Distance | 🟢 | *(aucune)* | **3** |
 | 5 | Meute de cavaliers wargs | Cavalerie | Mêlée | 🔵 | Horde, Bannière | **6** |
@@ -49,7 +51,7 @@ version: "1.7"
 | 5 | Meute de cavaliers wargs | 6 | **7** |
 | 6 | Bande d'uruk-hai | 5 | **6** |
 
-> 🎲 **Nouvelle unité : « Piétaille orque du Mordor » (D105).** Proposition de nom — orques légers, classe 🟢, moins bien équipés que les bandes existantes (🔵), pour donner du volume bon marché au roster. À valider ou renommer selon préférence (alternatives : « Racaille orque », « Traînards du Mordor »).
+> 🎲 **Nouvelle unité : « Piétaille orque du Mordor » (D106).** Orques légers, classe 🟢, moins bien équipés que les bandes existantes (🔵), pour donner du volume bon marché au roster. **Nom validé (D113)** — les alternatives envisagées (« Racaille orque », « Traînards du Mordor ») sont écartées.
 >
 > 🔄 **Baisses par rapport à l'ancien roster.** Bande d'orques du Morannon perd son [Relance 1] par défaut (5→**4**, identique à la Bande du Mordor — coïncidence de coût acceptée, cf. précédents du projet). Uruk-hai perd [Inébranlable 1]+JF par défaut (6→**5**).
 
@@ -93,7 +95,7 @@ version: "1.7"
 
 **Avec Général (universel) + Destin 4** : brut = 34 + 4 + 9 + 8 = 55 → round(55÷3)−1 = **17**.
 
-> ⚠️ **17 pts — toujours le sommet du projet, au-dessus du Mûmakil (15).** Non tranché par Emmanuel à ce stade — je le laisse en l'état, signalé.
+> 🎲 **17 pts — sommet du projet, au-dessus du Mûmakil (15), confirmé (D112).** Le prix est assumé : pas de plafonnement des pièces bespoke. Le chef des Nazgûl est la pièce la plus dangereuse du Pelennor.
 
 ---
 
@@ -116,11 +118,15 @@ version: "1.7"
 
 ## 7. Points ouverts transverses
 
-- **Nom de la Piétaille orque du Mordor** — proposition à valider ou remplacer.
-- **Roi-Sorcier à 17 pts avec Général** — toujours en attente d'arbitrage.
+- ~~**Nom de la Piétaille orque du Mordor**~~ — **validé (D113)**, nom définitif.
+- ~~**Roi-Sorcier à 17 pts avec Général**~~ — **confirmé (D112)**, sommet assumé sans plafonnement.
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change nettement le ressenti par rapport aux deux versions précédentes, à surveiller au prochain playtest.
 
 ---
+
+*Version : 1.9 — Phase 1 — 2026-08-30. **D124 — cases de coût comblées.** Les combinaisons de badges sur les bandes d'orques 🔵 sont explicitées : [Horde] seul est absorbé (4), Bannière seule coûte +1 (5), et [Horde] + Bannière ne coûte pas plus que la Bannière seule (5). Ces cases manquaient et faussaient le chiffrage du Pelennor, où le Morannon avait été surévalué d'un point par unité.*
+
+*Version : 1.8 — Phase 1 — 2026-08-30. **P9 — clôture des points ouverts du roster (D112/D113).** Nom « Piétaille orque du Mordor » validé sans modification (D113) ; la note de proposition devient une note d'entérinement et corrige au passage un renvoi erroné à D105 (la nouvelle unité est D106, D105 étant [Horde] v3). Roi-Sorcier confirmé à 17 pts (D112) : l'avertissement ⚠️ devient une note 🎲, le sommet tarifaire est assumé sans plafonnement des pièces bespoke. §7 : les deux points ouverts correspondants passent en résolus ; seul reste **[Horde] v3 jamais testée**, à surveiller au Playtest #5 du 12 septembre. Aucun coût modifié, aucun profil touché.*
 
 *Version : 1.7 — Phase 1 — 2026-08-23. **Simplification radicale généralisée (D101/D102) + [Horde] troisième version (D105) + nouvelle unité + refonte défense créature (D103).** Plus aucun badge par défaut : Horde et Bannière deviennent des options, disponibles sur tous les orques. [Horde] réécrite : +1 dé et Inébranlable 1 à pleine santé, plus d'effet négatif (+3 brut). Nouvelle unité **Piétaille orque du Mordor** (Inf 🟢 mêlée, **3** pts base, nom à valider). Troll et Roi-Sorcier passent à la nouvelle règle [Armure] (D103) — coûts inchangés (7 et 10/17). Variante Gothmog recalculée : **11** pts (perd Inébranlable+JF par défaut).*
 

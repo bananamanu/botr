@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.30"
+version: "0.32"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -105,7 +105,7 @@ Rattaché à une unité (jamais une figurine libre), le badge **Leader** ([[Regl
 
 Un Leader qui ne prend pas le statut Général (les « Leaders mineurs » du Pelennor — Suladan, le Roi de Khand, Angbor le Brave, Forlong le Gros) ne paie que Leader + Destin, sensiblement moins cher qu'un Général en pleine tenue.
 
-> ⚠️ **Roi-Sorcier sur l'ombre ailée — cas extrême signalé.** Général universel + Destin 4 sur un profil bespoke déjà coûteux (§6, `02 - Factions/Mordor.md`) fait grimper la pièce à **17 pts**, au-dessus du Mûmakil (15). Défendable narrativement (le chef des Nazgûl est la pièce la plus dangereuse du Pelennor) mais c'est le prix le plus élevé du projet à ce jour — à confirmer avec Emmanuel, sans quoi il faudra soit plafonner les pièces bespoke les plus chargées, soit accepter ce nouveau sommet d'échelle.
+> 🎲 **Roi-Sorcier sur l'ombre ailée — sommet de l'échelle, confirmé (D112).** Général universel + Destin 4 sur un profil bespoke déjà coûteux (§6, `02 - Factions/Mordor.md`) porte la pièce à **17 pts**, au-dessus du Mûmakil (15). Ce sommet est **assumé** : pas de plafonnement des pièces bespoke les plus chargées. Le chef des Nazgûl est la pièce la plus dangereuse du Pelennor et son prix en est la traduction correcte. Les bornes 3-9 restent la référence pour les unités **standard**, sans Leader.
 
 ### 3.4 Barème des règles (Faction, socle, signatures)
 
@@ -224,12 +224,22 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 - **Architecture badges troisième refonte répercutée** : plus de plafond, Faction ciblée par unité (§3.2), règles socle ex-Spéciale/Élite renommées sans changement de coût (§3.1), Leader/Général/Destin chiffrés (§3.3, palier « Marqué » validé Emmanuel).
 - **Bornes de l'échelle** — dépassées volontairement par le haut : un Général en pleine tenue peut atteindre 12-14 pts, le Roi-Sorcier culmine à 17 (au-dessus du Mûmakil, 15) — nouveau sommet du projet, signalé §3.3. Les bornes 3-9 restent valables pour les unités **standard** (sans Leader).
 
+**Actés (D112/D114, P9, 2026-08-30) :**
+- **Roi-Sorcier confirmé à 17 pts** — sommet tarifaire du projet assumé, **aucun plafonnement** des pièces bespoke. Voir §3.3.
+- ~~**Équilibre Pelennor acté à 219 Bien / 220 Mal**~~ — **chiffre erroné, superseded par D124.** Le recalcul depuis le brut de matrice donne **216 Bien / 215 Mal**, soit 1 point d'écart en faveur du Bien. Le 219/220 n'est reproductible par aucune méthode cohérente sur les rosters en vigueur ; il provenait vraisemblablement d'un comptage sous le régime antérieur à D101, où le badge Faction était porté par toutes les unités éligibles. La décision de fond de D114 — **acter la quasi-parité sans retoucher les effectifs** — reste valide ; seul le chiffre change. Ordre de bataille de référence du **Playtest #5** (12/09) : `[[Pelennor_Epique]]` §3.
+
 **Ouverts :**
-1. **Roi-Sorcier à 17 pts** — au-dessus du Mûmakil, à confirmer avec Emmanuel (voir avertissement §3.3) : accepter ce nouveau sommet, ou plafonner les pièces bespoke les plus chargées ?
-2. **Équilibre du scénario Pelennor** — le recalcul complet des deux camps (`02 - Factions/*.md`, P8) donne un total très proche (219 Bien / 220 Mal, voir compte-rendu P8) : l'ancien gap de 9 pts semble largement résorbé par le nouveau chiffrage Leader/Général plutôt que par un ajustement volontaire d'effectifs. À confirmer si ce résultat est jugé suffisant ou s'il appelle un ajustement fin.
+1. ~~**Roi-Sorcier à 17 pts**~~ — **résolu (D112)**, voir ci-dessus.
+2. ~~**Équilibre du scénario Pelennor**~~ — **résolu (D114)**, chiffre corrigé par **D124**, voir ci-dessus.
+
+**Méthode de chiffrage d'un ordre de bataille (D124).** Toujours partir du **brut de matrice** (§5) et non des coûts finaux des rosters : la compression `round(brut ÷ 3) − 1` n'est pas linéaire, et additionner des coûts finaux produit des erreurs d'un point par unité, dans les deux sens. Contrôle de cohérence disponible : les variantes avec Leader publiées aux rosters (Éomer 13, Théoden 12, Imrahil 14, Gothmog 11, Suladan 9, Roi de Khand 9) doivent toutes retomber sur le calcul.
 3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
 
 ---
+
+*Version : 0.32 — Phase 1 — 2026-08-30. **D124 — le total de D114 est corrigé et une méthode de chiffrage est fixée.** §8 : le 219/220 acté en D114 est marqué erroné et superseded — le recalcul depuis le brut de matrice donne **216 / 215**, soit un point d'écart en faveur du Bien. La décision de fond de D114 (acter la quasi-parité sans retoucher les effectifs) reste valide, seul le chiffre change. Ajout d'une note de méthode : un ordre de bataille se chiffre depuis le brut de matrice, jamais depuis les coûts finaux des rosters, la compression n'étant pas linéaire ; les six variantes avec Leader publiées servent de contrôle de cohérence. Barème inchangé.*
+
+*Version : 0.31 — Phase 1 — 2026-08-30. **P9 — clôture des deux points ouverts du barème (D112/D114).** §3.3 : l'avertissement ⚠️ sur le Roi-Sorcier devient une note 🎲 — les 17 pts sont confirmés comme sommet assumé de l'échelle, sans plafonnement des pièces bespoke ; les bornes 3-9 restent la référence des unités standard. §8 : les points ouverts 1 et 2 passent en résolus, un nouveau bloc « Actés (D112/D114) » enregistre le sommet à 17 pts et l'équilibre Pelennor à 219/220 sans ajustement d'effectifs — cet ordre de bataille devient la référence du Playtest #5 du 12 septembre. Aucun coût modifié, aucune règle touchée : le barème est inchangé, seules ses réserves sont levées.*
 
 *Version : 0.30 — Phase 1 — 2026-08-23. **P8 — Retouches de barème (D103-D107).** Nouvelle règle [Armure] (Créatures, D103) intrinsèque, remplace [Armure 1]+[Protection 1]. [Discipline de cohorte] (D104, Faction Orientaux, +2) et [Horde] troisième version (D105, Faction Mordor, +3, plus d'effet négatif) ajoutées au barème. Nouvelle signature bespoke [Peur 1 contre les bannières vertes] (D106, Aurige de Khand, +2). Bannière retirée du barème disponible chez Khand (jamais). [Inébranlable ∞] entre au barème (6, bespoke) avec un second porteur (Garde du Roi, Rohan).*
 

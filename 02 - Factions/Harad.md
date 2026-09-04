@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "1.7"
+version: "2.0"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -27,6 +27,8 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 | # | Unité | Type | Combat | Classe | Options disponibles | **Points** |
 |---|---|---|---|---|---|---|
 | 1 | Archers du Harad | Infanterie | Distance | 🟢 | Faction | **3** |
+
+> 🎲 **Case comblée (D124).** Archers du Harad **+ Faction [Poison]** : brut 11 + 1 = 12 → `round(12÷3)−1` = **3**. Absorbée par la compression, donc gratuite — comme sur le Mûmakil (D122).
 | 2 | Lanciers du Harad | Infanterie | Mêlée | 🟢 | Faction, Bannière | **3** |
 | 3 | Gardes serpents | Infanterie | Mêlée | 🔵 | Faction *(pas de Bannière, D109)* | **4** |
 | 4 | Gardes serpent à cheval | Cavalerie | Mêlée | 🔵 | Faction, Bannière | **6** |
@@ -66,6 +68,8 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 **Défense (D103, refonte P8) :** porte désormais **[Armure]** (sans X) au lieu de l'ancien duo [Armure 1] intrinsèque + [Protection 1] payant — jet de sauvetage 1d6 contre chaque touche reçue (mêlée ou tir), annulée sur Arcane. Reste intrinsèque, gratuit.
 
 **Occupation :** 4 hexagones en colonne **1–2–1**. Pas de pivot, translation pure, direction libre (D058).
+
+**Option Faction [Poison] (D122) :** disponible, **au tir seulement** — ce sont les Haradrim du [Howdah] qui empoisonnent leurs flèches, pas la bête ses défenses. **Sans coût** : le brut passe de 47 à 48 et les deux compressent vers 15 pts.
 
 **Coût : 15 points.** Détail du calcul (recalculé D103, [Protection 1] superseded par [Armure] intrinsèque) :
 
@@ -110,7 +114,7 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 | **Faction [Poison]** | 1, 2, 3, 4, 5, 6 |
 | **Bannière** | 2, 4, 5 |
 | **Leader/Destin** | Suladan (Gardes serpent à cheval) au Pelennor |
-| **Hors matrice, signature** | Mûmakil (§3) — [Armure] intrinsèque, D103 |
+| **Hors matrice, signature** | Mûmakil (§3) — [Armure] intrinsèque (D103), option [Poison] au tir (D122) |
 
 ---
 
@@ -119,6 +123,10 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 Inchangés — le Mûmakil reste au prix fixé en P5 (D079), non retouché par ce chantier.
 
 ---
+
+*Version : 2.0 — Phase 1 — 2026-08-30. **D124 — case de coût comblée.** Archers du Harad + Faction [Poison] chiffré à **3** (brut 12), absorbé par la compression. La case manquait à la table des options.*
+
+*Version : 1.9 — Phase 1 — 2026-08-30. **D122 — le Mûmakil peut porter la Faction [Poison], au tir seulement.** La pièce signature n'offrait aucune option, étant hors matrice ; l'option est ouverte pour le Pelennor, restreinte au [Howdah] (2 dés, portée 1-3). Sans coût : brut 47→48, les deux compressent vers 15. Aucun autre changement.*
 
 *Version : 1.7 — Phase 1 — 2026-08-23. **Retouches Emmanuel (D109) + refonte défense créature (D103) + correction.** Bannière retirée des Gardes serpents (3), ajoutée aux Pillards haradrim à cheval mêlée (5). **Correction : restauration du détail complet du Mûmakil (§3)**, perdu par erreur lors de la réécriture v1.6 — Charge écrasante, Bête incontrôlable, Howdah réintégrés, défense mise à jour vers la nouvelle règle [Armure] (D103, remplace [Armure 1]+[Protection 1]) : coût final inchangé (**15** pts, absorbé par la compression).*
 

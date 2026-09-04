@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-08-30"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.7"
+version: "2.8"
 ---
 
 # Rohan — Profils d'unités
@@ -34,6 +34,8 @@ Contre-attaque même repoussé. **Outil optionnel**, +1 brut, disponible sur les
 | 2 | Milice lige | Infanterie | Mêlée | 🟢 | Faction, **Bannière** | **3** |
 | 3 | Archers liges | Infanterie | Distance | 🟢 | Faction | **3** |
 | 4 | Éored d'éclaireur | Cavalerie | Distance | 🔵 | Faction | **3** |
+
+> 🎲 **Case comblée (D124).** Éored d'éclaireur **+ Faction [Férocité]** : brut 13 + 1 = 14 → `round(14÷3)−1` = **4**. C'est la seule unité du Rohan où la Faction n'est **pas** absorbée par la compression — sur l'Éored de cavalier (22 → 6) et les Gardes royaux à cheval (24 → 7), elle reste gratuite.
 | 5 | Gardes royaux à cheval | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
 | 6 | Gardes Royaux du Rohan | Infanterie | Mêlée | 🔴 | Faction, Bannière | **5** |
 | 7 | Helmingas de Grimbolg | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
@@ -99,6 +101,8 @@ Bannière portée au Playtest #4 par 2 éoreds (+1 → **7** chacun) et 1 garde 
 - **Garde du Roi à 8/10 pts** — hausse sensible par rapport à l'ancienne version (7/8), à surveiller au prochain playtest : une pièce increvable au recul, avec 5 dés (Légende), à ce tarif, doit rester utilisable dans un format 3v3 sans écraser la ligne.
 
 ---
+
+*Version : 2.8 — Phase 1 — 2026-08-30. **D124 — case de coût comblée.** Éored d'éclaireur + Faction [Férocité] chiffré à **4** (brut 14) : seule unité du roster où la Faction n'est pas absorbée par la compression. La case manquait à la table des options et faussait le chiffrage du scénario du Pelennor. Aucun autre coût touché.*
 
 *Version : 2.7 — Phase 1 — 2026-08-23. **Retouches Emmanuel (D107).** Bannière ajoutée en option sur la Milice lige (2). Garde du Roi (8, 9) devient une pièce **entièrement signature**, hors matrice : Légende + [Inébranlable ∞], Férocité retirée (une unité qui ne recule jamais n'a rien à gagner de la contre-attaque-malgré-recul). Nouveaux coûts : à pied 7→**8**, à cheval 8→**10** (tarif [Inébranlable ∞] repris du Mûmakil, +6 brut bespoke).*
 
