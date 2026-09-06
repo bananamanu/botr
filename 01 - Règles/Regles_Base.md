@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-22"
+date_maj: "2026-09-06"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.17"
+version: "0.19"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -71,7 +71,7 @@ Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois inform
 | **Infanterie** | plateau de **4 figurines** | figurines retirées |
 | **Cavalerie** | plateau de **3 figurines** | figurines retirées |
 | **Créature / Monstre** | socle unique (65 mm) | **compteur de PV** |
-| **Char** | socle unique (65 mm) | **compteur de PV** |
+| **Char** | socle unique (65 mm) | **compteur de PV** — *compte comme Cavalerie pour les activations et les cartes (D127)* |
 
 > **Seuls les Chars et les Créatures portent un compteur de PV.** L'Infanterie et la Cavalerie n'ont pas de PV chiffré : on retire simplement leurs figurines du plateau (1 figurine = 1 « point de vie » implicite).
 
@@ -117,6 +117,8 @@ Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui 
 > 💡 **Exemple de jeu**
 > Des Piquiers réduits à 1 figurine (Faibles) attaquent en mêlée : les faces Épée n'infligent rien, seules les Épées croisées touchent.
 
+> ⚔️ **Forme physique des badges (D130).** Le **badge Leader** est un jeton **couronne**, posé sur le socle : une figurine nommée ne suffit pas, tous les joueurs autour de la table ne reconnaissent pas Angbor le Brave, et le jeton montre d'un coup d'œil où sont les Leaders. **Aucune distinction visuelle pour les Généraux.** La **Bannière** reste une **figurine porte-étendard** — nettement plus visible qu'un jeton. Le **badge Faction** est posé **systématiquement**, même quand toutes les unités d'un type le portent : c'est ce qui permet de voir au premier coup d'œil qui fait quoi.
+
 ### 2.3 Attaque et dégâts
 
 Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur) : 2 (🟢), 3 (🔵) ou 4 (🔴), modifié le cas échéant par le terrain (§7.5) ou une capacité.
@@ -141,7 +143,9 @@ Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche
 
 #### Types particuliers
 
-Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occupent 1 hexagone sur socle 65 mm et se comptent en **PV**. Leur mouvement et leurs règles sont propres à leur profil (pièces signatures), hors de la grille standard (§6.1).
+Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occupent 1 hexagone sur socle 65 mm et se comptent en **PV**.
+
+> ⚔️ **Un Char est du matériel, pas un type de règles (D127).** Le socle 65 mm et le compteur de PV décrivent seulement **comment la pièce est représentée**. Pour tout le reste — activations, cartes d'ordre, cartes de Classe, effets visant un type — un **Char compte comme de la Cavalerie**. Une carte « Charge de cavalerie » active donc les Auriges de Khand. C'est ce qui justifie que l'Aurige soit chiffré dans la matrice en Cavalerie 🔵 mêlée (`02 - Factions/Khand.md` §3) alors qu'il se joue sur socle unique. Leur mouvement et leurs règles sont propres à leur profil (pièces signatures), hors de la grille standard (§6.1).
 
 > **Artillerie / Machine de guerre : hors périmètre de la v1.** Non utilisée au Pelennor ; ses règles sont mises de côté et pourront être réactivées ultérieurement si un scénario l'exige.
 
@@ -337,7 +341,18 @@ Les faces actives en mêlée sont :
 
 ### 7.3 Attaque de tir
 
-Une unité en **mode distance** (jeton arc) peut attaquer une unité ennemie **à portée et en ligne de vue**. Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
+Une unité en **mode distance** (jeton arc) peut attaquer une unité ennemie **à portée et en ligne de vue**.
+
+> ⚔️ **Portée de tir (D132).**
+>
+> | Type | Portée |
+> |---|---|
+> | **Infanterie** de tir | **1–4** |
+> | **Cavalerie** de tir | **1–3** |
+>
+> Le cavalier archer tire moins loin, mais il décroche : c'est lui qui porte `[Mobilité 2]` et se déplace après avoir tiré. `[Plateforme de tir X]` et `[Howdah]` restent à **1–3**, même logique de tir en mouvement.
+>
+> Avec D125, la lecture au plateau tient en une ligne : **un arc, c'est toujours vert et 2 dés — à pied on tire à 4, à cheval à 3.** Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
 
 Les faces actives au tir sont :
 - **Cible** : touche inconditionnelle
@@ -537,6 +552,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 > ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
+
+*Version : 0.19 — Phase 1 — 2026-09-06. **D132 — la portée de tir dépend du type, corrigeant D128.** Infanterie **1–4**, cavalerie **1–3**, au lieu de 1–3 pour tous. `[Plateforme de tir X]` et `[Howdah]` restent à 1–3. §7.3 réécrit en tableau. Aucun coût modifié : la portée n'entre pas dans la dérivation de la matrice.*
+
+*Version : 0.18 — Phase 1 — 2026-09-06. **P12 — trois lacunes comblées (D127, D128, D130).** §7.3 : la **portée de tir est fixée à 1–3 hexagones** pour toute unité de tir, à pied comme montée — la valeur n'était écrite nulle part, alors que §7.3 y renvoyait et que [Plateforme de tir] et [Howdah] l'utilisaient déjà. §2.2 et §6.1 : un **Char est un traitement matériel** (socle 65 mm, compteur de PV) mais **compte comme de la Cavalerie** pour les activations, les cartes d'ordre et tout effet visant un type — ce qui réconcilie le socle unique de l'Aurige de Khand avec son chiffrage en matrice Cavalerie 🔵. §2.2 : forme physique des badges tranchée — Leader = jeton couronne (sans distinction pour les Généraux), Bannière = figurine porte-étendard, Faction = badge posé systématiquement. Aucun coût modifié : la portée n'entre pas dans la dérivation, où le « D » de Attaque × D est un coefficient de mode et non une distance.*
 
 *Version : 0.17 — Phase 1 — 2026-08-22. **Playtest #4 joué — troisième refonte du système de badges (D092) et formalisation du badge Leader (D093).** §2.2 réécrite : badges **Spéciale** et **Élite** abandonnés ; le badge **Faction**, retiré en D090, **revient** mais comme badge assigné **unité par unité** (fluff ou distinction tactique) plutôt que trait de peuple universel ; nouveau badge **Bannière** (figurine porte-étendard, = [Inébranlable 1]) ; tous les badges (Faction/Bannière/Légende/Leader) **cumulables sans plafond**, amende D081/D089. Nouveau **§2.2bis** : le badge Leader sort de la réserve Phase 2 (D089) — rattachement à une unité (dernière figurine retirée), [Inébranlable 1] à son unité et aux unités amies adjacentes, statut **Général** (carte de commandement bonus, main = 4 + Généraux vivants), valeur de **Destin** (jet de sauvetage vers une unité alliée à ≤3 hexagones, ≥1 Couronne sauve). Tableau résumé §7 mis à jour. Coûts (Bannière, Leader/Général) renvoyés à [[Regles_Points]] et au chantier P8. Voir `[[Playtest4_Compte-rendu]]`.*
 

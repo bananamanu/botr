@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-30"
+date_maj: "2026-09-06"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.9"
+version: "0.10"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -48,6 +48,8 @@ En Phase 1, la valeur de commandement est fixée par le format (voir §3). En Ph
 
 > 💡 **Exemple de jeu**
 > Un joueur joue "Percée Gauche" avec 4 cartes en main (dont "Percée Gauche" elle-même). Sa valeur de commandement est 4 : il peut activer jusqu'à 4 unités dans la section gauche.
+
+> ⚔️ **Ordre direct en Épique (D129).** Sur un plateau de 13 × 17 avec 60 unités en jeu, activer une seule unité n'a plus de portée. En format **Épique uniquement**, Ordre direct active **`valeur de commandement ÷ 2`, arrondie au supérieur** — soit **3 unités** avec la main de camp de 5 cartes. Le +1 dé s'applique à chacune. Les formats Normal et Escarmouche gardent l'unité unique.
 
 ### 1.3 Deck partagé
 
@@ -211,7 +213,7 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 | Charge de cavalerie | 3 | Activez autant d'unités de Cavalerie que votre valeur de commandement, dans n'importe quelle section. Les unités 🔴 ainsi activées peuvent se déplacer de 3 cases et batailler quand même (exception à la règle « bouger ou frapper » du 🔴, §6.1). Toutes les unités activées combattent à **+1 dé** en mêlée pour toute la durée du tour. Elles ne peuvent pas tirer à distance. Si vous ne contrôlez aucune unité de Cavalerie, activez 1 unité de votre choix. |
 | Assaut d'infanterie | 2 | Activez autant d'unités d'Infanterie que votre valeur de commandement, dans n'importe quelle section. Ces unités doivent être adjacentes entre elles, formant un groupe continu. Elles peuvent se déplacer de 2 hexagones et combattre en mêlée. Elles ne peuvent pas tirer à distance. Si vous ne contrôlez aucune unité d'Infanterie, activez 1 unité de votre choix. |
 | Pluie de flèches | 2 | Activez toutes vos unités capables de tirer à distance, dans n'importe quelle section. Ces unités tirent deux fois ce tour, mais ne peuvent pas se déplacer ni tirer à bout portant. Si vous ne contrôlez aucune unité à distance, activez 1 unité de votre choix. |
-| Ordre direct | 2 | Activez 1 unité de votre choix, dans n'importe quelle section. Cette unité combat à **+1 dé** pour toute la durée du tour. |
+| Ordre direct | 2 | Activez 1 unité de votre choix, dans n'importe quelle section — **en Épique, `valeur de commandement ÷ 2` arrondie au supérieur (D129)**. Cette ou ces unités combattent à **+1 dé** pour toute la durée du tour. |
 | Contre-attaque | 2 | Jouez cette carte en réponse à la carte que vient de jouer votre adversaire. Vous exécutez le même ordre que lui : si c'est une carte de section, la section gauche devient la droite et vice-versa. Si c'est une carte tactique, appliquez l'effet identique. |
 | Cri de guerre | 1 | Lancez autant de dés de bataille que votre valeur de commandement. Pour chaque face **Épée** ou **Épées croisées** obtenue, activez 1 unité de mêlée de votre choix. Pour chaque face **Cible** obtenue, activez 1 unité à distance de votre choix. Pour chaque face **Couronne** obtenue, activez 1 unité de votre choix. Toutes les unités ainsi activées combattent à **+1 dé** pour ce tour. Puis mélangez la défausse avec la pioche. |
 
@@ -340,6 +342,8 @@ L'alternance des tours entre les deux camps reste celle du format Normal — un 
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.10 — Phase 1 — 2026-09-06. **D129 — Ordre direct passe à l'échelle en Épique.** La carte active désormais `valeur de commandement ÷ 2` arrondie au supérieur, soit 3 unités avec la main de camp de 5 cartes, au lieu d'une seule. Formats Normal et Escarmouche inchangés. Motif : sur 13 × 17 avec une soixantaine d'unités en jeu, une activation unique ne pesait plus rien. Le bonus de +1 dé s'applique à chaque unité activée.*
 
 *Version : 0.9 — Phase 1 — 2026-08-30. **D119 — règle des hexagones de frontière ajoutée au §7.1.** Lacune réelle du document : le transfert de contrôle traitait le cas d'une unité qui *franchit* une limite de Section en cours de tour, mais rien ne disait ce qu'il advenait d'une unité *posée à cheval* sur une limite qui coupe l'hexagone. Un tel hexagone appartient désormais explicitement aux deux Sections voisines, activable par l'un ou l'autre joueur mais jamais par les deux dans le même tour. Aucune autre modification.*
 

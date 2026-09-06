@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-30"
+date_maj: "2026-09-06"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "2.0"
+version: "2.1"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -67,6 +67,8 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 
 **Défense (D103, refonte P8) :** porte désormais **[Armure]** (sans X) au lieu de l'ancien duo [Armure 1] intrinsèque + [Protection 1] payant — jet de sauvetage 1d6 contre chaque touche reçue (mêlée ou tir), annulée sur Arcane. Reste intrinsèque, gratuit.
 
+**Marquage (D131) :** pas de gabarit — la figurine mord elle-même sur ses quatre hexagones. Elle porte **trois badges sur son socle** : le jeton classe/mode **🔴 mêlée** comme toute unité, plus un jeton **🟢 arc** et le **badge Faction du Harad**, qui rappellent ensemble son attaque de tir empoisonnée du [Howdah]. C'est la seule pièce du jeu à porter deux jetons classe/mode, parce qu'elle est la seule à attaquer dans les deux modes au cours d'une même activation.
+
 **Occupation :** 4 hexagones en colonne **1–2–1**. Pas de pivot, translation pure, direction libre (D058).
 
 **Option Faction [Poison] (D122) :** disponible, **au tir seulement** — ce sont les Haradrim du [Howdah] qui empoisonnent leurs flèches, pas la bête ses défenses. **Sans coût** : le brut passe de 47 à 48 et les deux compressent vers 15 pts.
@@ -123,6 +125,8 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 Inchangés — le Mûmakil reste au prix fixé en P5 (D079), non retouché par ce chantier.
 
 ---
+
+*Version : 2.1 — Phase 1 — 2026-09-06. **D131 — marquage du Mûmakil.** Pas de gabarit à fabriquer : la figurine couvre elle-même ses quatre hexagones. Elle porte trois badges sur son socle — le jeton classe/mode 🔴 mêlée, un jeton 🟢 arc et le badge Faction du Harad, ces deux derniers rappelant le tir empoisonné du [Howdah]. Seule pièce du jeu à porter deux jetons classe/mode, étant la seule à attaquer dans les deux modes au cours d'une même activation. Conséquence sur le décompte matériel : +2 jetons 🟢 arc.*
 
 *Version : 2.0 — Phase 1 — 2026-08-30. **D124 — case de coût comblée.** Archers du Harad + Faction [Poison] chiffré à **3** (brut 12), absorbé par la compression. La case manquait à la table des options.*
 

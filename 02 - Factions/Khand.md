@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-09-06"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.7"
+version: "2.8"
 ---
 
 # Khand — Profils d'unités
@@ -47,6 +47,8 @@ Retrait forcé compte double. **Outil optionnel, coût négatif** : **−2 brut*
 
 ## 3. Aurige de Khand — signature *(D108)*
 
+**Profil complet (D127) :** 1 modèle sur **socle 65 mm**, **Mvt 3**, **3 dés**, **3 PV**, **[Peur 1 contre les bannières vertes]**. Le traitement Char est **matériel** : pour les activations, les cartes d'ordre et tout effet visant un type, l'Aurige **compte comme de la Cavalerie** — une « Charge de cavalerie » l'active. C'est pourquoi il est chiffré dans la matrice en Cavalerie 🔵 mêlée, et ses 3 PV sont ceux que son brut paie déjà (terme de socle Cav = Mvt 3 + **PV 3**).
+
 Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regles_Speciales]]) — le fracas du char devant des troupes légères peu aguerries.
 
 **Chiffrage :** brut = 21 (base) + 2 ([Peur 1 vs 🟢], bespoke) = 23 → round(23÷3)−1 = **7**.
@@ -75,6 +77,8 @@ Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regl
 - **[Peur 1 contre les bannières vertes], tarif +2 non testé** — à confirmer au playtest : est-ce trop fort face à un roster où les classes 🟢 dominent (Harad, Khand lui-même en miroir), ou trop anecdotique face à des rosters à dominante 🔵/🔴 ?
 
 ---
+
+*Version : 2.8 — Phase 1 — 2026-09-06. **D127 — profil de l'Aurige de Khand complété et contradiction levée.** La valeur de PV manquait : elle est de **3**, non pas choisie mais déduite — le terme de socle Cavalerie de la matrice vaut Mvt 3 + PV 3, et c'est ce brut de 21 que ses 7 points paient depuis D108. Profil complet : 1 modèle sur socle 65 mm, Mvt 3, 3 dés, 3 PV, [Peur 1 contre les bannières vertes]. La contradiction entre `Regles_Base` (Char hors grille) et ce roster (chiffrage en matrice Cavalerie 🔵) est levée : le Char est un **traitement matériel**, mais l'Aurige **compte comme de la Cavalerie** pour les activations et les cartes. Aucun coût modifié.*
 
 *Version : 2.7 — Phase 1 — 2026-08-23. **Retouches Emmanuel (D108).** Bannière retirée définitivement du roster (jamais disponible chez Khand). Aurige de Khand devient une pièce signature avec la nouvelle règle bespoke [Peur 1 contre les bannières vertes] (+2 brut) — coût de base 6→**7**. Variante avec le Roi de Khand recalculée : **9** pts (inchangé par coïncidence).*
 

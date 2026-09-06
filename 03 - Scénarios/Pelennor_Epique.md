@@ -5,7 +5,7 @@ phase: "1"
 statut: "jouable"
 date_maj: "2026-08-30"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.3"
+version: "1.5"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -275,21 +275,25 @@ Sa figurine, à pied, rejoint **le même éored qu'Éowyn**.
 | Élément | Quantité |
 |---|---|
 | **Jetons classe/mode** 🔵 mêlée | 23 |
+| **Jetons classe/mode** 🟢 distance | **18** *(16 unités de tir + 2 pour les Mûmakil)* |
 | **Jetons classe/mode** 🔴 mêlée | 16 |
-| **Jetons classe/mode** 🟢 distance | 16 |
 | **Jetons classe/mode** 🟢 mêlée | 6 |
+| **Badges Faction** *(posés systématiquement)* | 25 — 16 au Bien, 9 au Mal |
+| **Badges Leader** — jeton couronne | 10, sans distinction pour les 6 Généraux |
+| **Figurines porte-étendard** | 12 |
 | Plateaux d'infanterie (4 figurines) | 32 |
 | Plateaux de cavalerie (3 figurines) | 23 |
-| Socles 65 mm — Créatures | 4 *(Roi-Sorcier, Troll, 2 Mûmakil)* |
-| Socles 65 mm — Chars | 2 *(Auriges de Khand)* |
-| Compteurs de PV | 6, montant jusqu'à **8** *(valeur du Mûmakil)* |
-| Figurines porte-étendard | 12 |
-| Leaders | 10, dont **6 Généraux** |
-| **Total unités / figurines** | **61 / 203** |
+| Socles 65 mm | 6 — Roi-Sorcier, Troll, 2 Mûmakil, 2 Auriges |
+| Compteurs de PV | 6, montant jusqu'à **8** *(le Mûmakil ; l'Aurige en a 3, le Troll 4, le Roi-Sorcier 6)* |
+| **Total** | **61 unités, 203 figurines** |
 
-Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont 🟢**, à 2 dés et 3 points.
+**Stock Azaogames livré :** 30 🔵 mêlée · 18 🔴 mêlée · 27 🟢 distance · 27 🟢 mêlée. Il couvre l'ensemble, au plus juste sur le 🔴 mêlée (18 pour 16).
 
-Le stock livré par Azaogames (30 · 18 · 27 · 27) couvre l'ensemble avec de la marge sur les trois catégories vertes et rouges.
+Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont 🟢, à 2 dés**. La portée dépend du type (D132) — **1–4 à pied, 1–3 à cheval**. Au Pelennor : 10 unités de tir à pied (4 Rangers, 2 Pisteurs, 2 Archers orientaux, 2 Archers du Harad) et 6 montées (4 Éclaireurs, 2 Pillards de Khand).
+
+**Pas de gabarit Mûmakil** (D131) : la figurine mord elle-même sur ses quatre hexagones. Elle porte trois badges — 🔴 mêlée, 🟢 arc et Faction Harad, ces deux derniers rappelant son tir empoisonné.
+
+**Les Auriges de Khand comptent comme de la Cavalerie** (D127) pour les activations et les cartes d'ordre, bien qu'ils soient sur socle 65 mm avec compteur de PV.
 
 ---
 
@@ -300,6 +304,10 @@ Le stock livré par Azaogames (30 · 18 · 27 · 27) couvre l'ensemble avec de l
 - **Temps de mise en place** à chronométrer au Playtest #5 : 72 unités, dont deux Mûmakil à 4 hexagones.
 
 ---
+
+*Version : 1.5 — Phase 1 — 2026-09-06. **D132 — portée de tir par type.** §7 corrigé : 1–4 à pied, 1–3 à cheval, au lieu de 1–3 pour tous. Au Pelennor, 10 unités de tir à pied et 6 montées. Ordre de bataille, chiffrage et équilibre inchangés.*
+
+*Version : 1.4 — Phase 1 — 2026-09-06. **P12 — §7 Matériel complété (D127-D131).** Ajout des badges Faction (25, posés systématiquement) et Leader (10 jetons couronne, sans distinction pour les Généraux) au décompte. Les jetons 🟢 distance passent de 16 à 18 : les deux Mûmakil en portent un en plus de leur 🔴 mêlée, seule pièce du jeu à porter deux jetons classe/mode. Gabarit Mûmakil supprimé du besoin — la figurine couvre ses quatre hexagones. Précision sur les Auriges de Khand, qui comptent comme de la Cavalerie malgré leur socle 65 mm. Ordre de bataille et équilibre inchangés.*
 
 *Version : 1.3 — Phase 1 — 2026-08-30. **D126 — ordre de bataille allégé, équilibre par Section rétabli.** Onze unités retirées pour raccourcir la partie et tenir dans le stock de jetons livré : côté Bien 4 Éored et 2 Guerriers de Lossarnach ; côté Mal 1 bande d'orques du Morannon, 2 bandes d'orques du Mordor, 1 Aurige et 1 Cohorte de piquiers, les Gardes serpent à cheval étant par ailleurs transformés en Pillards haradrim. On passe de 72 à **61 unités** et de 242 à **203 figurines**. Les 4 Éored retirés (au lieu des 2 Guerriers du Lamedon initialement prévus) corrigent un déséquilibre par Section qui atteignait +15 au profit du Rohan : les Sections gauche et droite tombent désormais à **parité exacte**, le Centre à 3 points. Totaux **185 Bien / 188 Mal**. §3 entièrement réécrit et §3.3 remplacé par un tableau d'équilibre par Section. Ajout d'un §7 Matériel avec le décompte complet des jetons, plateaux et compteurs. Zones de déploiement inchangées mais désormais larges (45 à 69 % d'occupation), volontairement non rétrécies.*
 
