@@ -237,13 +237,19 @@ Sa figurine, à cheval, rejoint un éored de cavalerie sans héros.
 >
 > Si le Roi-Sorcier est éliminé par une attaque de l'unité d'Éowyn, sa valeur de **Destin est forcée à 1** au lieu de 4.
 
-### 5.2 Merry
+### 5.2 Merry *(refondu D135 — amende D120)*
 
-Sa figurine, à pied, rejoint **le même éored qu'Éowyn**.
+Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'Éowyn**.
 
-> Au moment où l'unité d'Éowyn attaque le Roi-Sorcier, la figurine de **Merry** peut être **défaussée** : le Roi-Sorcier ne peut pas utiliser son **[Armure]** contre cette attaque. **Une seule fois dans la partie.**
+> Lorsque l'unité subit une touche, quelle qu'en soit la source, la figurine de **Merry** peut être **défaussée** pour l'annuler. **Une seule fois dans la partie.**
 
-> 🎲 **L'intention.** Dans le texte, Merry ne protège pas Éowyn : son coup à l'épée de Westernesse rompt le sortilège qui rend le Roi-Sorcier intouchable, et c'est seulement ensuite qu'Éowyn peut frapper. Mécaniquement, **Éowyn lui retire son Destin, Merry lui retire son Armure** — deux héros, deux protections arrachées. Aucune règle nouvelle n'est créée : les deux effets s'appuient sur des mécaniques existantes.
+**Merry n'est pas une figurine de l'unité.** Il ne compte ni pour l'état **Faible** (l'éored reste Faible à 1 cavalier), ni au décompte des **médailles**, ni pour le nombre de dés, ni pour quoi que ce soit d'autre. C'est un jeton à usage unique qui a la forme d'un hobbit — d'où la figurine posée à côté du plateau plutôt que dessus.
+
+> 🎲 **L'intention — et ce qu'elle coûte.** La version précédente (D120) faisait sauter l'[Armure] du Roi-Sorcier pour une attaque, en écho au coup d'épée de Westernesse qui rompt le sortilège. Plus fidèle au texte, mais plus étroit : elle ne servait qu'en présence du Roi-Sorcier, et sur le seul tour où l'on choisissait de la brûler. La version retenue est plus banale et plus utile — un point de vie de plus sur une unité de cavalerie qui n'en a que trois.
+>
+> **Le calcul, pour mémoire.** Le Roi-Sorcier a 6 PV et son [Armure] annule sur Arcane **ou** Couronne, puisqu'il porte un badge Leader : une touche sur trois absorbée, soit ~9 touches brutes pour l'abattre. L'éored d'Éowyn frappe à 5 dés, ~1,67 touche brute par attaque. L'ancienne règle offrait **une** attaque sans [Armure] : environ **une demi-touche** gagnée sur la partie. La nouvelle offre **un tiers de durabilité en plus** à l'unité que le Roi-Sorcier attaque en retour à 4 dés avec [Terreur] — donc une attaque supplémentaire avant de mourir. En espérance, le couple Éowyn/Merry **sort renforcé** du changement. On perd du fluff, pas de la puissance.
+
+> ⚠️ **D120 n'est pas réécrite.** Elle reste au journal telle qu'elle a été prise ; D135 l'amende. La règle d'Éowyn (§5.1) est **inchangée**.
 
 ### 5.3 Le Roi-Sorcier contre Théoden
 
@@ -285,11 +291,15 @@ Sa figurine, à pied, rejoint **le même éored qu'Éowyn**.
 | Plateaux de cavalerie (3 figurines) | 23 |
 | Socles 65 mm | 6 — Roi-Sorcier, Troll, 2 Mûmakil, 2 Auriges |
 | Compteurs de PV | 6, montant jusqu'à **8** *(le Mûmakil ; l'Aurige en a 3, le Troll 4, le Roi-Sorcier 6)* |
-| **Total** | **61 unités, 203 figurines** |
+| **Pistes d'Espoir / de Désespoir** *(D133)* | 2 — une par camp, graduée jusqu'à **30** |
+| **Dés de bataille** *(D133)* | 6 par camp — face Arcane : **Rune de Gandalf** au Bien, **Œil de Sauron** au Mal |
+| **Total** | **61 unités, 203 figurines** *(hors Éowyn et Merry)* |
 
 **Stock Azaogames livré :** 30 🔵 mêlée · 18 🔴 mêlée · 27 🟢 distance · 27 🟢 mêlée. Il couvre l'ensemble, au plus juste sur le 🔴 mêlée (18 pour 16).
 
 Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont 🟢, à 2 dés**. La portée dépend du type (D132) — **1–4 à pied, 1–3 à cheval**. Au Pelennor : 10 unités de tir à pied (4 Rangers, 2 Pisteurs, 2 Archers orientaux, 2 Archers du Harad) et 6 montées (4 Éclaireurs, 2 Pillards de Khand).
+
+**Dimensionner la piste d'Espoir/Désespoir** (D133) : un camp encaisse de l'ordre de 3 points d'Arcane par round, plus 2 forfaitaires — environ 5 par round. Sans plafond de réserve et avec 6 achats possibles dans le même tour (~18 points), il faut pouvoir afficher une trentaine de points. **Une piste graduée avec un marqueur est plus lisible qu'un tas de jetons** à six joueurs autour d'une table.
 
 **Pas de gabarit Mûmakil** (D131) : la figurine mord elle-même sur ses quatre hexagones. Elle porte trois badges — 🔴 mêlée, 🟢 arc et Faction Harad, ces deux derniers rappelant son tir empoisonné.
 
@@ -301,6 +311,8 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 
 - ~~**Réconciliation du chiffrage**~~ — **résolue (D124)**, voir §3.3. Les trois cases manquantes sont comblées aux rosters.
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change le ressenti, à surveiller.
+- **Réserve d'Espoir/Désespoir (D133), jamais testée.** Trois mesures à prendre au Playtest #5 : le **revenu réel par camp et par round** ; le **temps** d'un tour où un camp lâche 6 achats d'un coup, contre la limite de 3 heures ; et si le maximum de 2 unités par joueur suffit à sortir une aile de la famine de cartes constatée au Playtest #1.
+- **Plafond de 6 dés (D134)** — un seul cas le dépasse aujourd'hui : le Roi-Sorcier contre l'unité de Théoden (4 + 2 + 1 d'Ordre direct = 7, ramené à 6). L'éored d'Éowyn plafonne à 6 pile et n'est pas concerné. Vérifier à la table qu'aucune combinaison n'a été oubliée.
 - **Temps de mise en place** à chronométrer au Playtest #5 : 72 unités, dont deux Mûmakil à 4 hexagones.
 
 ---
@@ -308,6 +320,8 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 *Version : 1.5 — Phase 1 — 2026-09-06. **D132 — portée de tir par type.** §7 corrigé : 1–4 à pied, 1–3 à cheval, au lieu de 1–3 pour tous. Au Pelennor, 10 unités de tir à pied et 6 montées. Ordre de bataille, chiffrage et équilibre inchangés.*
 
 *Version : 1.4 — Phase 1 — 2026-09-06. **P12 — §7 Matériel complété (D127-D131).** Ajout des badges Faction (25, posés systématiquement) et Leader (10 jetons couronne, sans distinction pour les Généraux) au décompte. Les jetons 🟢 distance passent de 16 à 18 : les deux Mûmakil en portent un en plus de leur 🔴 mêlée, seule pièce du jeu à porter deux jetons classe/mode. Gabarit Mûmakil supprimé du besoin — la figurine couvre ses quatre hexagones. Précision sur les Auriges de Khand, qui comptent comme de la Cavalerie malgré leur socle 65 mm. Ordre de bataille et équilibre inchangés.*
+
+*Version : 1.4 — Phase 1 — 2026-09-10. **D135 (Merry refondu), D133 et D134 répercutés.** §5.2 réécrit : la figurine de Merry se défausse désormais pour **annuler une touche quelconque** subie par l'éored, au lieu de retirer l'[Armure] du Roi-Sorcier pour une attaque (D120, amendée et non réécrite) ; Merry n'est **pas une figurine de l'unité** — ni Faible, ni médaille, ni dé — et se pose à côté du plateau. Les règles d'Éowyn (§5.1) et du Roi-Sorcier contre Théoden (§5.3) sont inchangées. §7 Matériel : deux pistes d'Espoir/Désespoir graduées jusqu'à 30, dés propres à chaque camp, note de dimensionnement. §8 : trois points ouverts ajoutés pour le Playtest #5. Relevé au passage, hors périmètre : `[[Regles_Speciales]]` attribue encore [Prise de flanc] à l'Éored de cavalier et [Vigilant] à l'Éored d'éclaireur, alors que les deux ont quitté le roster du Rohan en D101/D102 — [Vigilant] n'est plus portée que par le Roi-Sorcier, [Prise de flanc] par personne. **Ordre de bataille, chiffrage 185/188, équilibre par Section et conditions de victoire inchangés** — D133 n'est pas un badge et ne touche pas [[Regles_Points]].*
 
 *Version : 1.3 — Phase 1 — 2026-08-30. **D126 — ordre de bataille allégé, équilibre par Section rétabli.** Onze unités retirées pour raccourcir la partie et tenir dans le stock de jetons livré : côté Bien 4 Éored et 2 Guerriers de Lossarnach ; côté Mal 1 bande d'orques du Morannon, 2 bandes d'orques du Mordor, 1 Aurige et 1 Cohorte de piquiers, les Gardes serpent à cheval étant par ailleurs transformés en Pillards haradrim. On passe de 72 à **61 unités** et de 242 à **203 figurines**. Les 4 Éored retirés (au lieu des 2 Guerriers du Lamedon initialement prévus) corrigent un déséquilibre par Section qui atteignait +15 au profit du Rohan : les Sections gauche et droite tombent désormais à **parité exacte**, le Centre à 3 points. Totaux **185 Bien / 188 Mal**. §3 entièrement réécrit et §3.3 remplacé par un tableau d'équilibre par Section. Ajout d'un §7 Matériel avec le décompte complet des jetons, plateaux et compteurs. Zones de déploiement inchangées mais désormais larges (45 à 69 % d'occupation), volontairement non rétrécies.*
 

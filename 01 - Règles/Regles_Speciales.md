@@ -383,7 +383,9 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 | Règle | Description préliminaire | Statut |
 |---|---|---|
 | **[Piétinement en zone]** | Attaque touchant plusieurs hexagones adjacents — grandes créatures | ⏳ Phase 2 |
-| **Générosité/malus Espoir-Désespoir sur l'Arcane** | Piste initiale de D001/D034 (dé custom par camp) — non retenue, remplacée par le badge Leader (D093) | Abandonnée |
+| **Générosité/malus Espoir-Désespoir sur l'Arcane** | Piste initiale de D001/D034 (dé custom par camp) — non retenue, remplacée par le badge Leader (D093) | ~~Abandonnée~~ → **réactivée (D133)** |
+
+> 🔄 **Espoir/Désespoir réactivé (D133).** La ligne ci-dessus est conservée telle qu'elle a été écrite — l'historique ne se réécrit pas — mais son statut a changé le 2026-09-10. La piste revient, sous une forme qui n'est plus une « générosité/malus » mais une **réserve de commandement** : chaque face Arcane obtenue rapporte 1 point à son camp, effet déclenché ou non, et ces points s'échangent contre des activations d'unités supplémentaires. Elle ne remplace pas le badge Leader, qui reste inchangé, et elle ne modifie **aucune** des règles déclenchées par l'Arcane de ce document ([Peur X], [Terreur], [Poison], [Armure], [Charge écrasante]) : celles-ci se résolvent exactement comme avant, et le point est gagné en plus. Règle complète : [[Regles_Base]] §5.6.
 
 > ✅ **[Terreur]** (D094) et **[Vol]** (D095, bespoke Roi-Sorcier) sont sorties de cette table — actives depuis le Playtest #4, voir §4b. La couche **Leadership** (D012/D034) est désormais couverte par le badge **Leader** (D093, [[Regles_Base]] §2.2bis) : Général, Destin — pas de dé-randomisation ni de mécanique Espoir/Désespoir séparée, le badge Leader ferme directement les deux points ouverts laissés par D034.
 
@@ -392,6 +394,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.32 — Phase 1 — 2026-09-10. **D133 — la piste Espoir/Désespoir sort des règles abandonnées.** Le §« Différées — Phase 2+ » garde sa ligne d'origine, barrée et annotée « réactivée (D133) », suivie d'une note expliquant sous quelle forme elle revient : une réserve de commandement alimentée par les faces Arcane, et non la générosité/malus envisagée en D001/D034. **Aucune règle de ce document n'est modifiée** — [Peur X], [Terreur], [Poison], [Armure] et [Charge écrasante] se résolvent à l'identique, le point d'Espoir/Désespoir s'ajoutant à leur effet. Correction cosmétique associée : aucune.*
 
 *Version 0.31 — Phase 1 — 2026-08-23. **P8 — Simplification radicale (D103-D106), retouches de rosters.** Nouvelle règle **[Armure]** (sans X, D103) : remplace [Armure 1]+[Protection 1] pour le seul type Créature — jet de sauvetage 1d6, annule sur Arcane (+Couronne si Leader), reste intrinsèque (gratuit). Nouvelle **[Discipline de cohorte]** (D104, Faction Orientaux) : posture défensive activée, renonce à la riposte contre [Défense 1]+[Inébranlable 1], +2 brut. **[Horde]** troisième version (D105, Faction Mordor) : +1 dé et Inébranlable 1 à pleine santé seulement, plus aucun effet négatif ensuite, +3 brut. Nouvelle signature bespoke **[Peur 1 contre les bannières vertes]** (D106, Aurige de Khand), +2 brut. [Archer en mêlée] redevient actif (Legolas, Compagnie Grise repassée en pièce bespoke à règles nommées). [Inébranlable ∞] gagne un second porteur (Garde du Roi, Rohan, devenue pièce signature).*
 

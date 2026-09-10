@@ -44,11 +44,12 @@ Les règles de base couvrent les affrontements sans pouvoirs ni héros — le so
 - **Tapis de jeu hexagonal** : taille selon le format choisi — Escarmouche (10 × 7), Normal (13 × 9) ou Épique (13 × 17). Voir Document de cadrage §4.
 - **Tuiles de terrain** : bois, collines, cours d'eau, gués, ponts, bâtiments (règles détaillées à développer dans un document dédié — hors scope de cette première version)
 - **Deck de commandement** : cartes de section et cartes Tactiques
-- **Dés spéciaux** : 6 faces — Épées croisées / Épée / Cible / Drapeau / Couronne / Arcane (dé BattleLore V2, conservé tel quel)
+- **Dés spéciaux** : 6 faces — Épées croisées / Épée / Cible / Drapeau / Couronne / Arcane (dé BattleLore V2, conservé tel quel). Chaque camp dispose de ses propres dés : la face **Arcane** y porte la **Rune de Gandalf** côté Bien et l'**Œil de Sauron** côté Mal (D133). Le nom mécanique reste **Arcane** dans tous les documents de règles.
 - **Figurines** : unités des peuples joués (MESBG)
 - **Plateaux de mouvement** (movement trays), **neutres** (peints marron/vert, se fondent dans le décor) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie
 - **Jeton classe/mode** (20mm, posé à côté du plateau ou du socle) : couleur = classe (🟢 vert 2 dés / 🔵 bleu 3 dés / 🔴 rouge 4 dés), symbole = mode (épées croisées = mêlée / arc = distance) — un seul marqueur, remplace l'ancien token de mode collé sur le socle
 - **Marqueurs** : compteurs de PV (Chars et Créatures uniquement), médailles objectif, jetons d'activation/cible (aide-mémoire de contre-attaque, §7.6)
+- **Piste d'Espoir / de Désespoir** : une par camp, avec ses jetons — réserve de commandement commune aux joueurs d'un même camp (§5.6, D133)
 
 ### 2.2 Le langage du socle : classe, type et mode
 
@@ -123,6 +124,8 @@ Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui 
 
 Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur) : 2 (🟢), 3 (🔵) ou 4 (🔴), modifié le cas échéant par le terrain (§7.5) ou une capacité.
 
+> ⚠️ **Plafond absolu : 6 dés (D134).** Quels que soient les modificateurs cumulés — badge Légende, [Horde], [Prise de flanc], carte de commandement, terrain surélevé, règle de scénario — **aucune attaque ne lance jamais plus de 6 dés**. Les plafonds de terrain plus bas (2 dés en bois ou en gué, §7.5) restent prioritaires : on applique le terrain d'abord, le plafond de 6 ensuite.
+
 **Quelles faces touchent dépend du mode de l'unité** (son jeton classe/mode) :
 
 | Mode | Faces qui touchent | Couronne | Arcane | Retraite |
@@ -130,7 +133,7 @@ Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur
 | **Mêlée** | Épées croisées · Épée¹ | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
 | **Distance** | Cible | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
 
-*¹ Épée inactive si l'unité est Faible. — ² La **Couronne** ne fait rien par défaut ; elle inflige **1 touche supplémentaire** uniquement si l'unité porte le badge **Leader** (D089, §2.2). — ³ La face **Arcane** déclenche la règle spéciale/signature de l'unité si elle en porte une (ex. [Peur X]) ; sinon c'est un échec.*
+*¹ Épée inactive si l'unité est Faible. — ² La **Couronne** ne fait rien par défaut ; elle inflige **1 touche supplémentaire** uniquement si l'unité porte le badge **Leader** (D089, §2.2). — ³ La face **Arcane** déclenche la règle spéciale/signature de l'unité si elle en porte une (ex. [Peur X]) ; sinon c'est un échec. **Dans tous les cas — effet déclenché ou non — chaque Arcane obtenue rapporte 1 point d'Espoir ou de Désespoir à son camp** (§5.6, D133).*
 
 **Règle de dégâts — unique et universelle :**
 
@@ -208,6 +211,8 @@ Un tour se déroule en **deux phases** successives.
 
 Le joueur actif choisit **une carte** dans sa main et la joue face visible. Cette carte définit quelles unités peuvent être activées ce tour.
 
+Une fois la carte révélée, le camp actif peut **dépenser des points d'Espoir ou de Désespoir** pour activer des unités supplémentaires (§5.6). C'est le seul moment de la partie où la réserve se dépense.
+
 > 💡 **Règle d'urgence** : si aucune carte ne couvre les unités que vous souhaitez activer, vous pouvez **ignorer le texte** de n'importe quelle carte et activer **1 unité de votre choix** sur l'ensemble du champ de bataille.
 
 #### b. Étape d'ordre
@@ -231,6 +236,10 @@ Le joueur actif marque les points de victoire éventuellement gagnés par des **
 #### f. Étape de pioche
 
 Le joueur actif pioche une nouvelle carte pour ramener sa main au nombre de cartes de son format. Si le deck est épuisé, mélangez la défausse pour en former un nouveau.
+
+#### g. Étape d'Espoir / de Désespoir
+
+Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Arcane ne passent pas par cette étape : ils sont posés sur la piste **au moment du lancer**, tout au long du tour, dans les deux camps.
 
 ---
 
@@ -265,6 +274,38 @@ Si aucune unité éligible ne peut être activée avec la carte jouée (ex. aucu
 
 > 🔄 **Résolu (D087)**
 > En Épique, chaque camp compte 3 joueurs (un par Section) mais ne tient **qu'une seule main**, comme en Normal — c'est le joueur Centre qui la tient et décide des cartes jouées, en concertation avec ses coéquipiers Gauche et Droite ; chacun exécute ensuite les activations dans sa propre Section. Un **râtelier de Commandement** partagé (3 cartes visibles des deux camps) vient s'ajouter à la main de chaque camp. Le deck Normal (60 cartes, main de 5) est réutilisé tel quel, sans deck dédié. Détail complet, exemples et erratum : [[Cartes_Commandement]] §7.
+
+### 5.6 Espoir et Désespoir (D133)
+
+Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons sur une piste : l'**Espoir** pour le Bien, le **Désespoir** pour le Mal. Elle sert à activer des unités que la carte jouée ne couvre pas.
+
+**Gagner des points — deux sources**
+
+- **Les faces Arcane.** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur n'importe quel jet rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Cela vaut pour les attaques, les contre-attaques et les jets de sauvegarde d'[Armure], donc dans son propre tour comme dans celui de l'adversaire. Le jeton se pose **immédiatement**, au moment du lancer.
+- **Le forfait de tour.** Chaque camp gagne **2 points** à la fin de son propre tour (§4, étape g).
+
+Il n'y a **pas de plafond de réserve** : les points s'accumulent librement d'un tour à l'autre.
+
+**Dépenser des points**
+
+À l'**étape de commandement**, une fois la carte révélée, un joueur peut puiser dans la réserve de son camp pour activer des unités supplémentaires. Le coût est celui de la **classe** de l'unité — autant de points qu'elle lance de dés :
+
+| Classe | Coût |
+|---|---|
+| 🟢 Légère (2 dés) | **2 points** |
+| 🔵 Standard (3 dés) | **3 points** |
+| 🔴 Lourde (4 dés) | **4 points** |
+
+- **Maximum 2 unités par joueur et par tour.**
+- Un joueur ne peut activer que des unités **de sa propre Section** (en format Normal et Escarmouche, où le joueur tient tout le champ de bataille, la limite de Section ne s'applique pas).
+- Les unités ainsi achetées s'activent **normalement** et **s'ajoutent** à celles ordonnées par la carte.
+- Une unité **déjà activée ce tour** ne peut pas être rachetée.
+
+> 🎲 **La règle en une phrase.** *Une unité coûte autant de points qu'elle lance de dés.*
+
+> 🔄 **Origine (D133).** Décalque du système de Lore de *BattleLore* (Days of Wonder, V1, 2006), où un symbole de Lore non affecté à un autre usage rapporte un jeton, où l'on peut en prendre deux de plus en fin de tour, et où payer des jetons permet d'ordonner une pièce que la carte ne couvre pas. Deux écarts assumés : chez nous **toute** Arcane rapporte, utilisée ou non — sinon le camp du Mal, seul porteur de règles déclenchées par l'Arcane au Pelennor, aurait un revenu structurellement inférieur ; et l'achat reste **dans sa Section**, là où l'original servait justement à ordonner hors section. Ressuscite la piste Espoir/Désespoir de D001/D034, rangée dans les règles abandonnées depuis D093 ([[Regles_Speciales]] §6).
+
+> ⏭️ **Extension prévue (hors V1).** À terme, un **deck de pouvoirs par camp**, avec des cartes propres à chaque Leader, se jouera également contre des points d'Espoir/Désespoir — miroir complet du Lore de BattleLore V1. Rien n'est développé à ce stade : la réserve ne sert qu'aux activations.
 
 ---
 
@@ -378,6 +419,8 @@ Certains terrains modifient le nombre de dés lancés. Ces modificateurs s'appli
 | Attaquant ou cible en **terrain boisé** | Maximum **2 dés** |
 | Attaquant ou cible en **gué** | Maximum **2 dés** |
 | Attaquant en **terrain surélevé**, cible en contrebas | **+1 dé** (mêlée et tir) |
+
+> ⚠️ **Plafond absolu — 6 dés (D134).** Après application de tous les modificateurs, de quelque source qu'ils viennent, une attaque ne lance **jamais plus de 6 dés**. Les plafonds de terrain ci-dessus, plus bas, restent prioritaires : terrain d'abord, plafond de 6 ensuite. Voir §2.3.
 
 > ⚠️ **Rappel — Dégâts :** chaque touche retire **1 figurine/PV**, quelle que soit la cible (§2.3).
 
@@ -493,7 +536,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 ### Séquence de résolution d'un combat
 
 1. Déclarer la cible
-2. Lancer les dés (valeur d'attaque, modifiée par le terrain si applicable)
+2. Lancer les dés (valeur d'attaque, modifiée par le terrain si applicable — **jamais plus de 6**, §7.5)
 3. Relancer / modifier (effets et capacités)
 4. Appliquer [Armure X] si applicable
 5. Compter les touches et les Drapeaux
@@ -502,6 +545,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable)
 9. Contre-attaque si conditions réunies
 10. Avance si cible éliminée ou en retraite
+
+*À chaque lancer de cette séquence, poser 1 jeton d'Espoir/Désespoir par face Arcane obtenue (§5.6).*
 
 ### Dégâts
 
@@ -516,7 +561,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | Cible | Échec | 1 touche |
 | Drapeau | 1 hex de retraite | 1 hex de retraite |
 | Couronne | 1 touche si badge Leader, sinon sans effet | 1 touche si badge Leader, sinon sans effet |
-| Arcane | Règle spéciale/signature (si profil), sinon échec | Règle spéciale/signature (si profil), sinon échec |
+| Arcane *(Rune / Œil)* | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir dans tous les cas** | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir dans tous les cas** |
 
 *Le **jeton classe/mode** (couleur + symbole, §2.1-2.2) détermine quelles faces l'unité lit. Chaque touche retire **1 figurine/PV** (§2.3).*
 
@@ -552,6 +597,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 > ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
+
+*Version : 0.20 — Phase 1 — 2026-09-10. **D133 (réserve d'Espoir et de Désespoir), D134 (plafond de 6 dés).** Nouveau **§5.6** : réserve commune par camp, alimentée par chaque face Arcane obtenue sur n'importe quel jet — effet déclenché ou non — et par 2 points forfaitaires à la fin du tour de son camp ; dépensée à l'étape de commandement pour activer des unités supplémentaires de sa propre Section, au coût de la classe (🟢 2 / 🔵 3 / 🔴 4 points, soit autant de points que de dés lancés), maximum 2 unités par joueur et par tour, sans plafond de réserve. §2.1 : dés propres à chaque camp (Rune de Gandalf / Œil de Sauron sur la face Arcane, nom mécanique inchangé) et piste d'Espoir/Désespoir ajoutée aux composants. §4 : dépense inscrite à l'étape a, nouvelle **étape g** pour le forfait de 2 points en phase de bilan. §2.3, §7.5, séquence résumée et résumé des faces mis à jour. **D134** : plafond absolu de **6 dés** par attaque, tous modificateurs confondus, les plafonds de terrain à 2 dés restant prioritaires — sans effet sur la piétaille, il ne mord aujourd'hui que sur un seul cas — le Roi-Sorcier contre l'unité de Théoden, à 7 dés ramenés à 6 — et pose la barrière avant le futur deck de pouvoirs.*
 
 *Version : 0.19 — Phase 1 — 2026-09-06. **D132 — la portée de tir dépend du type, corrigeant D128.** Infanterie **1–4**, cavalerie **1–3**, au lieu de 1–3 pour tous. `[Plateforme de tir X]` et `[Howdah]` restent à 1–3. §7.3 réécrit en tableau. Aucun coût modifié : la portée n'entre pas dans la dérivation de la matrice.*
 

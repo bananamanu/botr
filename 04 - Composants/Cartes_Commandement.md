@@ -336,12 +336,30 @@ Si l'adversaire vient de jouer 2 cartes de section (§7.3), « Contre-attaque »
 
 L'alternance des tours entre les deux camps reste celle du format Normal — un camp joue, puis l'autre, sans changement lié au nombre de joueurs. Le premier camp à jouer est déterminé par le scénario (voir le document de scénario concerné), pas par une règle de commandement.
 
+### 7.7 Espoir et Désespoir à trois joueurs (D133)
+
+La réserve est **commune au camp** : une seule piste, trois joueurs qui y puisent. Elle se dépense à l'**étape de commandement**, une fois la ou les cartes révélées, et **chaque joueur décide pour sa propre Section** — ce n'est pas une prérogative du joueur Centre, contrairement au choix des cartes (§7.1).
+
+- **Chaque joueur peut acheter jusqu'à 2 unités par tour**, soit **6 au maximum pour le camp** si la réserve suit.
+- Un joueur n'achète que des unités **de sa Section**. Une unité posée sur un **hexagone de frontière** (§7.1) peut être achetée par l'un **ou** l'autre des deux joueurs concernés, jamais par les deux.
+- Les achats sont **cumulables avec les deux cartes de section** du tour (§7.3) : rien n'interdit à un camp de jouer « Attaque Centre » et « Patrouille Droite », puis d'ajouter des unités payées.
+- La réserve étant commune et limitée, **l'arbitrage entre les trois joueurs se fait à la discussion**. En cas de désaccord, le **joueur Centre tranche** — il tient déjà la main.
+
+> 💡 **Exemple de jeu**
+> Le camp Bien joue « Attaque Gauche » : 3 unités activées à gauche. Sa piste d'Espoir affiche 11 points. Le joueur Gauche ajoute une Compagnie Grise 🔴 (4 points) ; le joueur Droite, que la carte ne sert pas du tout, ajoute deux Éored 🔵 (3 + 3 = 6 points). Il reste 1 point sur la piste, et le camp a activé 6 unités au lieu de 3.
+
+> ⚠️ **Pas de plafond de réserve.** Un camp peut thésauriser plusieurs tours puis lâcher 6 achats d'un coup — de l'ordre de 18 points, soit 3 à 4 tours d'épargne. C'est un coup de poing volontairement possible ; c'est aussi un tour long, à surveiller contre la limite de 3 heures du scénario Épique.
+
+Règle complète et sources de gain : [[Regles_Base]] §5.6.
+
 ---
 
 > 🔗 **Voir aussi**
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.11 — Phase 1 — 2026-09-10. **D133 — nouveau §7.7, Espoir et Désespoir à trois joueurs.** La réserve est commune au camp mais la dépense est décidée **par chaque joueur pour sa propre Section**, à l'étape de commandement, dans la limite de 2 unités par joueur et par tour (6 pour le camp). Précise le cas des hexagones de frontière, le cumul avec les deux cartes de section du tour, l'arbitrage par le joueur Centre en cas de désaccord, et le risque de tour long lié à l'absence de plafond de réserve. Règle complète dans [[Regles_Base]] §5.6 — aucune carte du deck n'est modifiée.*
 
 *Version : 0.10 — Phase 1 — 2026-09-06. **D129 — Ordre direct passe à l'échelle en Épique.** La carte active désormais `valeur de commandement ÷ 2` arrondie au supérieur, soit 3 unités avec la main de camp de 5 cartes, au lieu d'une seule. Formats Normal et Escarmouche inchangés. Motif : sur 13 × 17 avec une soixantaine d'unités en jeu, une activation unique ne pesait plus rien. Le bonus de +1 dé s'applique à chaque unité activée.*
 
