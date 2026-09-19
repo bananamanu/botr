@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-30"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "3.2"
+version: "3.3"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
@@ -74,7 +74,7 @@ version: "3.2"
 | **Gimli** | +1 dé de combat |
 | **Legolas** | [Archer en mêlée] (les faces Cible touchent aussi en mêlée) |
 | **Elrohir** | [Férocité] |
-| **Elladan** | [Défense 1] *(= [Armure 1], règle socle générique — pas la Faction du peuple)* |
+| **Elladan** | **[Armure]** *(D143 — était [Défense 1] ; règle socle générique, pas la Faction du peuple)* |
 | **Halbarad** | [Inébranlable 1] |
 | **Aragorn** | Badge **Leader** — Général universel, Destin 4 (voir [[Regles_Points]] §3.3). Son Leader confère aussi [Inébranlable 1] à l'unité, qui **s'additionne** à celui de Halbarad quand les deux sont présents → **[Inébranlable 2]**. |
 
@@ -87,7 +87,7 @@ version: "3.2"
 | Gimli (+1 dé, forfait mêlée) | 3 |
 | Legolas ([Archer en mêlée]) | 2 |
 | Elrohir ([Férocité]) | 1 |
-| Elladan ([Défense 1]) | 2 |
+| Elladan ([Armure]) | 2 |
 | Halbarad ([Inébranlable 1]) | 2 |
 | Aragorn — Leader | 4 |
 | Aragorn — Général | 9 |
@@ -120,6 +120,8 @@ version: "3.2"
 ---
 
 *Version : 3.2 — Phase 1 — 2026-08-30. **D116 — les Hommes d'armes de Dol Amroth rejoignent la ligne 4 (Troupes des Fiefs).** L'unité figurait dans l'ordre de bataille du Pelennor sous le nom trompeur de « Piquiers de Dol Amroth » sans exister au roster. Dol Amroth étant un fief au même titre que Lossarnach et le Lamedon, elle prend place sur la ligne des Troupes des Fiefs : 🔵 mêlée, 4 pts, Faction disponible (5 pts), pas de Bannière. Aucun coût modifié, aucune ligne créée.*
+
+*Version : 3.3 — Phase 1 — 2026-09-19. **P13 — D143.** Elladan confère **[Armure]** au lieu de [Défense 1], celle-ci ayant disparu avec [Armure X] : la Compagnie Grise bénéficie désormais de la sauvegarde unique du jeu (1 dé par touche, annulée sur Arcane — ou Arcane/Couronne, Aragorn portant le badge Leader), **contre le tir comme en mêlée**. **Coût inchangé** : la ligne reste à 2 bruts dans le chiffrage bespoke, donc la Compagnie Grise reste à 15 pts avec Aragorn. Tarif à reconfirmer (`[[Regles_Points]]` §8, point 4) — la règle obtenue est plus forte que celle qui était payée.*
 
 *Version : 3.1 — Phase 1 — 2026-08-23. **Correction (D110) — Chevaliers à pied de Dol Amroth restent 🔴, pas 🔵.** Erreur de classe introduite en v3.0 : ils gardent leur classe lourde d'origine (Armure 1 + Poursuite 1 intrinsèques). Coût de base corrigé 4→**5**, avec Bannière 5→**6**. Note de reclassement erronée retirée.*
 

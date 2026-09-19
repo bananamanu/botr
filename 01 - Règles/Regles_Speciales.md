@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-23"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.31"
+version: "0.33"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -16,7 +16,7 @@ version: "0.31"
 
 > 🔄 **Tri du glossaire — 2026-08-04 (P2, D062)**
 > Le glossaire a fondu. En synthèse :
-> - **Intrinsèque à la taxonomie** (sort du profil, se lit au plateau) : [Mobilité], [Poursuite] et [Armure 1] dérivées de la case classe × type × mode. *Grille complète désormais écrite dans [[Regles_Base]] §2.4 (revue classe × type, D063) — source de vérité unique.*
+> - **Intrinsèque à la taxonomie** (sort du profil, se lit au plateau) : [Mobilité], [Poursuite] et [Armure] dérivées de la case classe × type × mode. *Grille complète désormais écrite dans [[Regles_Base]] §2.4 (revue classe × type, D063) — source de vérité unique.*
 > - **Fusions** : [Perforant X] → **[Relance X]** (une seule règle de relance, mêlée ou tir) · [Inamovible] → **[Inébranlable ∞]** (une valeur, pas un mot-clé de plus).
 > - **Coupées** : [Réception de charge], [Mur de bouclier] (→ [Armure 1]), [Martyre], [Meute X], [Souffle de feu], [Immunisé au feu], [Immunisé au poison], [Terrain favori : X], [Rechargement], [Déploiement avancé]. Détail et renvois au §6. *([Arme de jet X], coupée à P2, a été restaurée au socle générique à P4/D068 — voir §2.)*
 > - **Chaque peuple garde une signature identitaire** ; avec le badge **Élite**, la classe et le type, cela suffit à différencier les unités. Le plafond reste **1–2 règles spéciales par unité**.
@@ -42,7 +42,7 @@ version: "0.31"
 ### Notation
 
 - **[Règle]** : nom entre crochets — standard dans tous les profils.
-- **[Règle X]** : règle avec une valeur numérique (ex. [Armure 1], [Relance 2]).
+- **[Règle X]** : règle avec une valeur numérique (ex. [Peur 1], [Relance 2]).
 
 ### Quatre familles *(D092/D093 — Playtest #4, troisième refonte des badges)*
 
@@ -63,7 +63,7 @@ L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signa
 
 1. **Avant le décompte** — relances : [Relance X], [Horde] *(sans porteur actif, D090)*.
 2. **Au décompte des touches** — effets de **Couronne** (badge Leader uniquement, D089) et effets d'**Arcane** ([Charge écrasante]… — migrées depuis Couronne, D089).
-3. **Réductions défensives** — [Armure X] puis [Protection X].
+3. **Sauvegardes et réductions défensives** — [Armure] (1 dé par touche, D143) puis [Protection X].
 4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Arcane** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) absorbe le tout, quelle qu'en soit la source.
 
 > 🎲 **Note (D089).** Toutes les règles spéciales/signature à déclenchement par face se résolvent désormais sur **Arcane** (y compris [Peur X], déjà le cas depuis D033, et [Charge écrasante], migrée depuis Couronne). La **Couronne** est réservée au badge **Leader** — sur une unité qui ne le porte pas, elle est sans effet. Une unité pourrait en théorie cumuler Peur (Arcane, intrinsèque Créature) et une autre règle à Arcane sur le même jet : dans ce cas les deux effets s'appliquent, chacun sur sa propre attaque (aucun cas actif ne collisionne à ce jour — voir Mûmakil, `02 - Factions/Harad.md`, où Peur ne porte que sur l'attaque de charge et [Howdah] sur un jet de tir séparé).
@@ -76,25 +76,17 @@ L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signa
 
 Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une unité, mais reste soumis au bon sens de lisibilité.
 
-### [Armure X]
+### [Armure]  *(mécanique unique de sauvegarde — D143)*
 
-Lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Les faces **Épées croisées** ne sont jamais affectées. Sans effet contre le **tir**.
+Pour chaque **touche subie**, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Arcane** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises.
 
-> 🔄 **Nom d'usage [Défense X] pour la Faction Gondor/Orientaux — D080/D081.** Quand [Armure X] sert de trait de Faction (imprimé pour tout un peuple, plutôt que dérivé de la classe), elle est désignée **[Défense X]** dans les rosters Gondor et Orientaux — mécanique strictement identique, nom distinct pour ne jamais la confondre avec le plancher [Armure 1] intrinsèque au 🔴 ([[Regles_Base]] §2.4). *(Historique : [Mur de bouclier], identité propre des Orientaux depuis D077, redevient sans porteur actif à P7c — les Orientaux reviennent au miroir mécanique de Gondor, [Défense 1] partout. Depuis P8, Gondor a migré vers [Relance 1] — voir [[Gondor_et_Fiefs]] — ce nom d'usage ne concerne plus qu'Orientaux le temps de son propre recalcul.)*
+Probabilité de base : 1 face sur 6 annule chaque touche. Avec un Leader porté par l'unité, la fenêtre de sauvetage s'élargit à 2 faces sur 6 — synergie gratuite avec le badge Leader déjà payé séparément.
 
-> ⚠️ **[Armure X] reste réservée aux unités standard (matrice).** Pour les Créatures, voir **[Armure] (sans X)** ci-dessous — refonte P8, D103 — qui remplace [Armure X]+[Protection X] pour ce type de profil.
+**Il n'y a pas de valeur X** : une unité porte [Armure] ou ne la porte pas. **Porteurs :** toute unité de classe **🔴** et tout profil de type **Créature**, dans les deux cas en **intrinsèque gratuite** (grille [[Regles_Base]] §2.4) ; plus les unités à qui un badge ou une règle la confère.
 
-### [Armure]  *(sans valeur X — refonte Créatures, D103)*
+> 🔄 **Créée — P8 (D103), arbitrage Emmanuel.** Simplifie deux mécaniques disjointes (réduction déterministe de faces en mêlée / absorption de touches au tir) en une seule mécanique de jet de sauvetage, valable dans les deux cas. Premières porteuses : Mûmakil, Troll du Mordor, Roi-Sorcier sur l'ombre ailée.
 
-Remplace, pour le seul **type Créature**, l'ancien duo [Armure 1] intrinsèque (mêlée) + [Protection 1] payant (tir, D079). Mécanique unifiée, valable contre **toute** attaque reçue (mêlée et distance) :
-
-> Pour chaque touche subie, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Arcane** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093).
-
-Probabilité de base : 1 face sur 6 (Arcane) annule chaque touche, soit environ 1 touche sur 6 absorbée en moyenne. Avec un Leader porté par l'unité, la fenêtre de sauvetage s'élargit à 2 faces sur 6 (Arcane + Couronne) — synergie gratuite avec le badge Leader déjà payé séparément (aucun supplément de coût propre à cette synergie).
-
-**Statut de coût :** reste **intrinsèque au type Créature**, comme l'était [Armure 1] avant refonte — pas de supplément de brut à part pour la porter. Remplace la ligne [Protection 1] (+1 brut) qui existait sur le Mûmakil : voir recalcul dans `Harad.md` §3.
-
-> 🔄 **Créée — P8 (D103), arbitrage Emmanuel.** Simplifie deux mécaniques disjointes (réduction déterministe de faces en mêlée / absorption de touches au tir) en une seule mécanique de jet de sauvetage, valable dans les deux cas. Porteuses : Mûmakil, Troll du Mordor, Roi-Sorcier sur l'ombre ailée. Non testée au playtest — à surveiller (la probabilité de 1/6 est-elle satisfaisante en jeu, ou trop faible pour se sentir « armuré » ?).
+> 🔄 **Généralisée — P13 (D143), après le Playtest #5.** **[Armure X] est supprimée** : la réduction statique de faces Épée n'existe plus, et avec elle disparaissent la valeur X et son nom d'usage **[Défense X]** (§4a). Le jet de sauvetage devient la mécanique de défense **unique du jeu**, pour le plancher 🔴 comme pour les Créatures. C'est la version qui a été jouée au Playtest #5 et validée à la table — le glossaire n'avait jamais transcrit l'intention complète de D103. Conséquences : les Épées croisées, jusqu'ici imparables, deviennent sauvables ; les unités rouges gagnent une protection contre le tir qu'elles n'avaient pas ; [Discipline de cohorte] (§4a) et Elladan (`Gondor_et_Fiefs`) confèrent désormais [Armure] au lieu de [Défense 1]. Aucun profil actif ne portait [Armure 2] — les Cataphractaires l'ont perdue en D072 — donc l'abandon du X ne casse aucun profil. Principe 8 : une seule mécanique de sauvegarde à retenir au lieu de deux, de noms voisins et de fonctionnements opposés.
 
 ### [Protection X]
 
@@ -148,9 +140,11 @@ Chaque **retrait forcé** (recul de combat) de cette unité compte **double** (d
 
 ### [Discipline de cohorte]  *(nouveau, D104 — Faction Orientaux)*
 
-> À la fin de son activation, l'unité peut se mettre en **position défensive** (poser un marqueur dédié). Elle **renonce** à toute contre-attaque jusqu'à sa prochaine activation, mais gagne **[Défense 1]** et **[Inébranlable 1]** tant que le marqueur est en place. Le marqueur est retiré au début de l'activation suivante de l'unité (avant qu'elle n'agisse).
+> À la fin de son activation, l'unité peut se mettre en **position défensive** (poser un marqueur dédié). Elle **renonce** à toute contre-attaque jusqu'à sa prochaine activation, mais gagne **[Armure]** *(D143 — était [Défense 1])* et **[Inébranlable 1]** tant que le marqueur est en place. Le marqueur est retiré au début de l'activation suivante de l'unité (avant qu'elle n'agisse).
 
 > 🔄 **Créée — P8 (D104), Faction Orientaux.** Remplace [Défense 1] comme trait de peuple des Orientaux — pas une posture passive gratuite : le compromis (perte de la riposte) est le prix de la solidité. Disponible en option sur les **Cohortes** (guerriers et piquiers) uniquement — ni les archers, ni les Cataphractaires, dont l'identité de peuple ne repose pas sur la formation serrée. **Coût : +2 brut** (forfait, sous la somme brute de [Défense 1]+[Inébranlable 1] = 4, remise pour la contrepartie de jeu — jugement, à confirmer au playtest).
+
+> 🔄 **Confirmée en l'état — P13 (D142), après le Playtest #5.** La règle n'a **pas été activée une seule fois** de la partie, mais le solo est le pire juge possible d'une posture défensive : on y joue les deux camps vers l'action, et personne n'a de point à tenir comme objectif propre. L'occasion manquée a été identifiée après coup — une Cohorte de guerriers occupait un point stratégique en toute fin de partie, avec peu de chances d'être attaquée : troquer la riposte contre la solidité était exactement le bon calcul. Règle et coût inchangés ; elle est en revanche **rappelée au briefing** du joueur de Section droite du Mal, faute de s'imposer d'elle-même. Son composant défensif passe de [Défense 1] à [Armure] (D143), ce qui la renforce sans changer son prix — **point ouvert de barème**, à reprendre depuis le brut de matrice.
 
 ### [Horde]  *(troisième version, D105 — Faction Mordor)*
 
@@ -202,13 +196,11 @@ Lorsque cette unité attaque, chaque face **Arcane** inflige **1 touche supplém
 
 > 🎲 Ancien fil conducteur du Harad (flèches et lames empoisonnées). Porté par tout le roster d'escorte et la volée du Mûmakil ([Howdah]) jusqu'à D090 — retiré des deux, y compris du Mûmakil (`02 - Factions/Harad.md`).
 
-#### [Défense X]  — *badge Faction, réactivée (D092) — Gondor et Orientaux*
+#### ~~[Défense X]~~  — *supprimée (D143)*
 
-Nom d'usage d'[Armure X] (§2, socle générique) quand la règle sert de trait de Faction plutôt que d'être dérivée de la classe : lorsque cette unité reçoit une attaque de **mêlée**, elle retire **X faces Épée** des résultats avant de compter les touches. Sans effet contre le tir.
+Nom d'usage d'[Armure X] tant que celle-ci existait. **[Armure X] ayant disparu (§2, D143), [Défense X] disparaît avec elle** : partout où elle était portée, lire **[Armure]**. Concernés : [Discipline de cohorte] (ci-dessous) et Elladan, dans la Compagnie Grise (`Gondor_et_Fiefs`).
 
-> 🎲 Miroir mécanique exact entre les deux peuples : troupes régulières et bien équipées, quel que soit le camp. Nom distinct d'[Armure X] pour ne jamais le confondre avec le plancher [Armure 1] intrinsèque au 🔴 ([[Regles_Base]] §2.4) — sur un profil 🔴, [Défense 1] est donc **gratuit** (déjà inclus), seul l'excédent ([Défense 2]) se facture.
->
-> 🔄 **Étendue à tout le roster — P7c (D081).** Jusqu'ici cantonnée aux profils lourds chez Gondor et absente chez les Orientaux (badge [Mur de bouclier], D077), la Faction couvre désormais **toutes** les unités standard des deux peuples, sans exception. **[Mur de bouclier] redevient sans porteur actif** (voir ci-dessous) : les Orientaux reviennent au miroir mécanique de Gondor.
+> 🔄 **Historique conservé.** Réactivée en badge Faction à D092, étendue à tout le roster des deux peuples à P7c (D081), puis abandonnée par Gondor au profit de [Relance 1] à P8 et par les Orientaux au profit de [Discipline de cohorte] (D104). Elle ne subsistait plus que comme composant de cette dernière et sur Elladan — les deux basculent sur [Armure] à D143.
 
 #### [Férocité]  — *badge Faction, réactivée (D092) — Rohan*
 
@@ -260,17 +252,21 @@ Les faces **Cible** infligent aussi une touche lors d'une attaque de **mêlée**
 
 > 🎲 Précision hors norme, dangereuse jusqu'au corps à corps. **Sans porteur de P4/D073 à P8** (la Compagnie Grise l'avait remplacé par le badge Légende) — **redevient actif P8** : la Compagnie Grise repasse en pièce bespoke à règles nommées par figurine, et Legolas la porte à nouveau tant qu'il est présent (voir [[Gondor_et_Fiefs]] §3).
 
-#### [Vigilant]  — *Éored d'éclaireur (Rohan)*
+#### [Vigilant]  — *Roi-Sorcier sur l'ombre ailée (Mordor)*
 
 La cible d'une attaque de cette unité **ne peut pas la contre-attaquer**, quelle que soit l'issue. Mêlée ou tir à bout portant.
 
-> 🎲 Cavalerie légère de harcèlement : elle frappe et se replace sans jamais laisser l'adversaire répliquer. Adaptée des *Riverwatch Riders* (BattleLore V2).
+> 🎲 Adaptée des *Riverwatch Riders* (BattleLore V2), où elle servait la cavalerie légère de harcèlement qui frappe et se replace sans laisser l'adversaire répliquer.
+>
+> 🔄 **Attribution corrigée — P13.** Portée par l'**Éored d'éclaireur** du Rohan jusqu'à la simplification radicale du roster (D101/D102), qui a réduit le menu de l'éored à Faction et Bannière. Son **seul porteur actif est désormais le Roi-Sorcier** (§4b). Correction de forme, sans numéro D : l'attribution périmée traînait depuis le 23 août.
 
-#### [Prise de flanc]  — *Éored de cavalier (Rohan)*
+#### [Prise de flanc]  — *sans porteur actif*
 
 Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre unité amie** attaquant cette ennemie ajoute **1 dé**. Cette unité n'en profite pas pour ses propres attaques. Les sources multiples se cumulent (1 dé chacune).
 
 > 🎲 Rôle de **soutien** (pas de dégât propre) : le cavalier tient la faille ouverte, les lances plus lourdes l'exploitent. Second mot-clé des *Riverwatch Riders*, séparé de [Vigilant].
+>
+> 🔄 **Sans porteur actif — corrigé en P13.** Signature de l'**Éored de cavalier** du Rohan jusqu'à D101/D102, qui l'a retirée du menu du peuple. **Plus aucune unité ne la porte** depuis le 23 août ; conservée au glossaire, réutilisable. Correction de forme, sans numéro D.
 
 #### [Peur 1 contre les bannières vertes]  — *Aurige de Khand, nouveau P8 (D106)*
 
@@ -312,7 +308,7 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 - **[Terreur]** (voir ci-dessus) : chaque Arcane = 2 Drapeaux.
 - **[Vigilant]** (socle, §2) : ne peut jamais être contre-attaqué.
 - **[Vol]** *(bespoke, première application)* : à son activation, se déplace de **4 hexagones** sans tenir compte des figurines présentes sur le trajet (traverse librement unités et terrain).
-- **Intrinsèques Créature** (D071) : [Armure 1], [Peur 1] — coexistent avec [Terreur] ; en pratique [Terreur] est la version employée en attaque, [Peur 1] reste la valeur plancher du type.
+- **Intrinsèques Créature** (D071, D143) : [Armure], [Peur 1] — coexistent avec [Terreur] ; en pratique [Terreur] est la version employée en attaque, [Peur 1] reste la valeur plancher du type.
 
 > 🎲 **« Machine de terreur »** (verdict du Playtest #4) — a joué son rôle de pièce de rupture, mobile et intouchable au contre. Porte, en plus de ce profil générique, une règle strictement propre au scénario Pelennor (bonus contre l'unité de Théoden) : voir `[[Playtest4_Compte-rendu]]` et le document de scénario `03 - Scénarios/`, pas ce glossaire.
 
@@ -325,12 +321,12 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Archer en mêlée]** | Sans porteur actif | Les faces Cible touchent aussi en mêlée |
 | **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche |
 | **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
-| **[Armure X]** | Socle | Retire X faces Épée des attaques de mêlée reçues |
+| **[Armure]** | Socle *(mécanique unique de sauvegarde, D143)* | 1 dé par touche subie, annulée sur Arcane — ou Arcane/Couronne avec un Leader ; mêlée et tir |
 | **[Bannière]** | Badge *(nouveau, D092)* | [Inébranlable 1], incarné par une figurine porte-étendard visible (pas de jeton) |
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | À 1 PV (dernier point) : Furie automatique, contrôle à pile ou face chaque tour, activation gratuite garantie au tour du Mal (refondue D079) |
 | **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Arcane = touche, migré depuis Couronne D089) sur le trajet, sans contre-attaque |
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
-| **[Défense X]** | Badge Faction, réactivée (D092) — Gondor/Orientaux | = [Armure X], nom d'usage quand la règle sert de badge Faction |
+| ~~**[Défense X]**~~ | **Supprimée (D143)** | Lire [Armure] partout où elle était portée |
 | **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Contre-attaque même en cas de recul forcé, puis recule |
 | **[Horde]** | Badge Faction, réactivée (D092) — Mordor | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] *([Poison] retiré, D090)* |
@@ -340,16 +336,16 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
 | **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081, confirmé au Playtest #4)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
-| **[Armure 1]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Plancher d'armure de tout lourd — grille [[Regles_Base]] §2.4 ; toute créature en porte aussi (D071) |
+| **[Armure]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Gratuite sur toute unité 🔴 et toute Créature — grille [[Regles_Base]] §2.4 (D071, D143) |
 | **[Peur X]** | Intrinsèque (type Créature) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
 | **[Plateforme de tir X]** | Sans porteur actif | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
 | **[Poison]** | Sans porteur actif *(ex-badge Faction Harad, retiré D090, non réactivé au Playtest #4)* | Arcane → 1 touche supplémentaire (migré depuis Couronne, D089) |
 | **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Terreur]** | Signature *(créée D094)* | Chaque Arcane = 2 Drapeaux — version renforcée de [Peur X], porteur : Roi-Sorcier sur l'ombre ailée |
 | **[Vol]** | Bespoke *(première application, D095)* | Déplacement de X hex ignorant les figurines sur le trajet — porteur : Roi-Sorcier sur l'ombre ailée |
-| **[Prise de flanc]** | Signature (Éored de cavalier) | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
+| **[Prise de flanc]** | Sans porteur actif *(depuis D101/D102)* | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
 | **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
-| **[Vigilant]** | Signature (Éored d'éclaireur) | La cible de cette unité ne peut pas la contre-attaquer |
+| **[Vigilant]** | Signature (Roi-Sorcier) | La cible de cette unité ne peut pas la contre-attaquer |
 
 ---
 
@@ -394,6 +390,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.33 — Phase 1 — 2026-09-19. **P13 — correctifs du Playtest #5 (D139, D142, D143).** **D143 — [Armure X] supprimée, mécanique de sauvegarde unique.** L'entrée §2 [Armure X] et l'entrée §2 [Armure] (sans X) fusionnent en une seule : 1 dé par touche subie, annulée sur Arcane — ou Arcane/Couronne avec un Leader — valable en mêlée comme au tir, sans valeur X, intrinsèque et gratuite sur tout 🔴 et toute Créature. **[Défense X] disparaît avec elle** (§4a barrée, historique conservé) : [Discipline de cohorte] et Elladan confèrent désormais [Armure]. Ordre de résolution (§2), récapitulatif alphabétique et entrée du Roi-Sorcier alignés. C'est la version jouée et validée au Playtest #5 : le glossaire n'avait jamais transcrit l'intention complète de D103. **D142** : [Discipline de cohorte] confirmée en l'état, jamais activée en solo mais non invalidée — note ajoutée, coût inchangé, point ouvert de barème signalé. **D139** : aucune modification nécessaire, [Charge écrasante] écrivait déjà que l'impact se résout en phase de mouvement, sans contre-attaque — la décision **confirme** le texte existant. **Corrections de forme, sans numéro D** : [Vigilant] n'est plus attribuée à l'Éored d'éclaireur mais au **Roi-Sorcier**, seul porteur depuis D101/D102 ; [Prise de flanc] passe **sans porteur actif**. Ces deux attributions périmées étaient signalées depuis P10b. **Correction de frontmatter** : la version y était restée à 0.31 alors que le changelog portait déjà 0.32 (bump oublié le 10/09) — corrigée ici à 0.33.*
 
 *Version 0.32 — Phase 1 — 2026-09-10. **D133 — la piste Espoir/Désespoir sort des règles abandonnées.** Le §« Différées — Phase 2+ » garde sa ligne d'origine, barrée et annotée « réactivée (D133) », suivie d'une note expliquant sous quelle forme elle revient : une réserve de commandement alimentée par les faces Arcane, et non la générosité/malus envisagée en D001/D034. **Aucune règle de ce document n'est modifiée** — [Peur X], [Terreur], [Poison], [Armure] et [Charge écrasante] se résolvent à l'identique, le point d'Espoir/Désespoir s'ajoutant à leur effet. Correction cosmétique associée : aucune.*
 

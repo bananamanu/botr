@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-06"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.19"
+version: "0.21"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -76,13 +76,13 @@ Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois inform
 
 > **Seuls les Chars et les Créatures portent un compteur de PV.** L'Infanterie et la Cavalerie n'ont pas de PV chiffré : on retire simplement leurs figurines du plateau (1 figurine = 1 « point de vie » implicite).
 
-> **Intrinsèque du type Créature (D071).** Toute Créature porte **[Armure 1]** et **[Peur 1]** sans supplément de coût — ce ne sont plus des signatures à assigner unité par unité, mais des traits du type lui-même, au même titre que le compteur de PV. Une pièce peut dépasser ce plancher (ex. [Peur 2]) moyennant le tarif socle habituel de l'excédent. Première application : Troll du Mordor. *(Le type Char n'a pas cette intrinsèque — sans porteur actif depuis P4/D070.)*
+> **Intrinsèque du type Créature (D071, D143).** Toute Créature porte **[Armure]** et **[Peur 1]** sans supplément de coût — ce ne sont plus des signatures à assigner unité par unité, mais des traits du type lui-même, au même titre que le compteur de PV. Une pièce peut dépasser ce plancher (ex. [Peur 2]) moyennant le tarif socle habituel de l'excédent. Première application : Troll du Mordor. *(Le type Char n'a pas cette intrinsèque — sans porteur actif depuis P4/D070.)*
 
 **Badges — troisième refonte, Playtest #4 (D092/D093).** Les badges **Spéciale** et **Élite** (D073) sont **abandonnés**. Le badge **Faction** (retiré en D090, un temps renvoyé aux cartes de commandement de P8) **revient**, mais change de nature : ce n'est plus un trait de peuple imprimé automatiquement sur tout un roster (D081/D085), c'est un **badge assigné unité par unité**, à la discrétion du concepteur — fluff (« toute unité autour d'Éomer porte [Férocité] ») ou distinction tactique au sein d'un même peuple (« les orques du Morannon portent [Horde] pour se distinguer des orques normaux »). Nouveau badge **Bannière**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton dédié) : confère **[Inébranlable 1]**.
 
 **Les badges sont cumulables librement, sans plafond de 1** *(amende le plafond D081/D089)* :
 
-- **Faction** confère la règle propre à l'unité assignée — reprend le vocabulaire socle existant ([Férocité], [Horde], [Relance X], [Défense X]/[Armure X], [Mercenaire]…) ou une règle neuve si besoin. Voir [[Regles_Speciales]] §4a.
+- **Faction** confère la règle propre à l'unité assignée — reprend le vocabulaire socle existant ([Férocité], [Horde], [Relance X], [Armure], [Mercenaire]…) ou une règle neuve si besoin. Voir [[Regles_Speciales]] §4a.
 - **Bannière** confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
 - **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
 - **Leader** *(formalisé D093, sort de la réserve Phase 2 posée en D089)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7) ; confère aussi **[Inébranlable 1]** à son unité **et** à toute unité amie **adjacente** (cumulable avec un Inébranlable déjà présent) ; peut porter en plus le statut **Général** et une valeur de **Destin** — mécanique complète en §2.2bis.
@@ -154,25 +154,25 @@ Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occu
 
 ### 2.4 Règles intrinsèques par combinaison (classe × type × mode)
 
-Certaines règles spéciales ne se notent **pas** sur le profil : elles découlent directement de la **classe** (couleur du jeton), du **type** (plateau/socle) et du **mode** (symbole du jeton), et se lisent d'un coup d'œil. Une unité applique **toutes** les intrinsèques de sa case. Un profil ne mentionne une valeur que s'il **dépasse** le plancher intrinsèque (ex. [Armure 2]) ou porte en plus une **signature** (voir [[Regles_Speciales]]).
+Certaines règles spéciales ne se notent **pas** sur le profil : elles découlent directement de la **classe** (couleur du jeton), du **type** (plateau/socle) et du **mode** (symbole du jeton), et se lisent d'un coup d'œil. Une unité applique **toutes** les intrinsèques de sa case. Un profil ne mentionne une valeur que s'il **dépasse** le plancher intrinsèque (ex. [Peur 2]) ou porte en plus une **signature** (voir [[Regles_Speciales]]).
 
 | Type + mode | 🟢 Légère (2 dés) | 🔵 Standard (3 dés) | 🔴 Lourde (4 dés) |
 |---|---|---|---|
-| **Infanterie — mêlée** | — | — | **[Armure 1]** |
+| **Infanterie — mêlée** | — | — | **[Armure]** |
 | **Infanterie — distance** | **[Mobilité 1]** | — | *(n'existe pas)* |
-| **Cavalerie — mêlée** | **[Poursuite 2]** | **[Poursuite 2]** | **[Poursuite 1]** + **[Armure 1]** |
+| **Cavalerie — mêlée** | **[Poursuite 2]** | **[Poursuite 2]** | **[Poursuite 1]** + **[Armure]** |
 | **Cavalerie — distance** | **[Mobilité 2]** | **[Mobilité 1]** | *(n'existe pas)* |
 
 Trois lignes de force, toutes lisibles à la couleur ou au socle :
 
-- **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure 1]** d'office : elle retire 1 face Épée des attaques de mêlée subies. C'est le **plancher** — un profil peut monter à [Armure 2] (Cataphractaires orientaux, lourds du Gondor), et la valeur du profil prime alors.
+- **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure]** d'office (D143) : pour chaque touche subie, elle lance 1 dé et l'annule sur Arcane — ou sur Arcane ou Couronne si elle porte un Leader. C'est la **seule** mécanique de sauvegarde du jeu, la même que celle des Créatures, et elle vaut contre la mêlée comme contre le tir. Il n'y a plus de valeur X : une unité a [Armure] ou ne l'a pas.
 - **Cavalerie de mêlée = elle enfonce et poursuit.** Après avoir éliminé ou fait reculer une cible adjacente, elle peut **poursuivre** (§8.2) au lieu d'avancer : **[Poursuite 2]** pour la légère et la standard (plus mobiles), **[Poursuite 1]** pour la lourde (qui traîne son armure). C'est la mécanique de percée du choc de cavalerie.
 - **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de l'ancienne signature [Double Tir] (l'archer immobile qui double la salve — sans porteur actif depuis P4/D072, [[Regles_Speciales]]).
 
 > **Cases vides et cases absentes.** Un tiret « — » signifie *aucune intrinsèque* : l'unité est définie par ses seuls dés et son éventuelle signature. L'**infanterie de tir lourde** et la **cavalerie de tir lourde** *n'existent pas* dans le jeu (aucune combinaison 🔴 + distance) — un archer d'élite est une unité 🔵 portant une signature ou [Relance X] au profil, jamais une unité rouge.
 
 > 💡 **Exemple de jeu**
-> Des Chevaliers (Cavalerie 🔴, mêlée) enfoncent des Orques : lourds, ils portent **[Armure 1]** en défense et **[Poursuite 1]** — après avoir fait reculer les Orques, ils avancent d'1 hexagone et frappent une seconde cible adjacente. Un Éored du Rohan (Cavalerie 🔵) à leur place disposerait de **[Poursuite 2]** (jusqu'à 2 hexagones).
+> Des Chevaliers (Cavalerie 🔴, mêlée) enfoncent des Orques : lourds, ils portent **[Armure]** en défense et **[Poursuite 1]** — après avoir fait reculer les Orques, ils avancent d'1 hexagone et frappent une seconde cible adjacente. Un Éored du Rohan (Cavalerie 🔵) à leur place disposerait de **[Poursuite 2]** (jusqu'à 2 hexagones).
 
 > 🔗 Définitions complètes des mots-clés : [[Regles_Speciales]] (socle générique). Ces règles se lisent au plateau et **ne sont jamais réécrites sur le profil** tant que celui-ci ne dépasse pas le plancher.
 
@@ -202,6 +202,10 @@ Les joueurs déploient leurs unités en **alternant**, une unité à la fois, en
 ---
 
 ## 4. Déroulement d'un tour
+
+> **Tour et manche (D136).** Un **tour** est le tour d'**un seul camp** : le joueur actif déroule les étapes a à g ci-dessous. Une **manche** est un tour de chaque camp, dans l'ordre fixé par le scénario. C'est la manche qui sert d'unité de compte pour la durée d'une partie et pour sa fin (§4.1).
+>
+> **Le scénario désigne le camp qui ouvre la manche.** À défaut d'indication, l'attaquant commence.
 
 Un tour se déroule en **deux phases** successives.
 
@@ -239,7 +243,15 @@ Le joueur actif pioche une nouvelle carte pour ramener sa main au nombre de cart
 
 #### g. Étape d'Espoir / de Désespoir
 
-Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Arcane ne passent pas par cette étape : ils sont posés sur la piste **au moment du lancer**, tout au long du tour, dans les deux camps.
+Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Arcane ne passent pas par cette étape : ils sont posés sur la piste **au moment du lancer**, à l'étape d'attaque. Seul le camp actif en gagne (D137).
+
+### 4.1 Fin de partie (D136)
+
+La partie s'arrête sur une **limite de temps**, fixée par le scénario, mais jamais au milieu d'une manche — et jamais sans que les joueurs sachent qu'ils jouent la dernière.
+
+> Quand le chrono sonne : on **termine la manche en cours**, puis on joue **une dernière manche**, annoncée comme telle à la table. La partie s'arrête à la fin du tour du second camp.
+
+Les deux camps jouent ainsi le même nombre de tours, et le camp qui ferme la manche a le dernier mot — ce qui compte lorsque le scénario attribue des points à des positions tenues **à la fin de la partie**.
 
 ---
 
@@ -281,7 +293,9 @@ Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons su
 
 **Gagner des points — deux sources**
 
-- **Les faces Arcane.** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur n'importe quel jet rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Cela vaut pour les attaques, les contre-attaques et les jets de sauvegarde d'[Armure], donc dans son propre tour comme dans celui de l'adversaire. Le jeton se pose **immédiatement**, au moment du lancer.
+- **Les faces Arcane d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose **immédiatement**, au moment du lancer. Ne rapportent **rien** : les **contre-attaques**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
+
+> 💡 **Règle mémorisable :** *on ne gagne de l'Espoir qu'en attaquant* — donc uniquement dans son propre tour.
 - **Le forfait de tour.** Chaque camp gagne **2 points** à la fin de son propre tour (§4, étape g).
 
 Il n'y a **pas de plafond de réserve** : les points s'accumulent librement d'un tour à l'autre.
@@ -360,8 +374,8 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 1. **Déclarer la cible** : choisir une unité ennemie éligible (adjacente pour la mêlée, à portée et en ligne de vue pour le tir).
 2. **Lancer les dés** : lancer un nombre de dés égal à la valeur d'attaque de l'unité, modifiée par les effets de terrain si applicable.
 3. **Relancer et modifier** : utiliser les capacités ou effets disponibles.
-4. **Appliquer [Armure X]** si applicable : retirer X faces Épée des résultats.
-5. **Compter les touches et les Drapeaux** : identifier les faces actives selon le type d'attaque.
+4. **Compter les touches et les Drapeaux** : identifier les faces actives selon le type d'attaque.
+5. **Appliquer [Armure]** si la cible la porte : **1 dé par touche subie**, la touche est annulée sur **Arcane** — ou sur **Arcane ou Couronne** si l'unité porte un Leader.
 6. **Appliquer [Protection X]** si applicable : ignorer X touches.
 7. **Retirer les figurines** selon la règle générale de dégâts (voir §2.3).
 8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable.
@@ -538,15 +552,15 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 1. Déclarer la cible
 2. Lancer les dés (valeur d'attaque, modifiée par le terrain si applicable — **jamais plus de 6**, §7.5)
 3. Relancer / modifier (effets et capacités)
-4. Appliquer [Armure X] si applicable
-5. Compter les touches et les Drapeaux
+4. Compter les touches et les Drapeaux
+5. Appliquer [Armure] si la cible la porte (1 dé par touche, annulée sur Arcane · + Couronne si Leader)
 6. Appliquer [Protection X] si applicable
 7. Retirer **1 figurine/PV par touche** (§2.3)
 8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable)
 9. Contre-attaque si conditions réunies
 10. Avance si cible éliminée ou en retraite
 
-*À chaque lancer de cette séquence, poser 1 jeton d'Espoir/Désespoir par face Arcane obtenue (§5.6).*
+*Seul le **jet d'attaque** (étape 2) rapporte de l'Espoir/Désespoir : 1 jeton par face Arcane obtenue (§5.6, D137). Ni la contre-attaque, ni le jet d'[Armure], ni le Destin.*
 
 ### Dégâts
 
@@ -561,7 +575,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | Cible | Échec | 1 touche |
 | Drapeau | 1 hex de retraite | 1 hex de retraite |
 | Couronne | 1 touche si badge Leader, sinon sans effet | 1 touche si badge Leader, sinon sans effet |
-| Arcane *(Rune / Œil)* | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir dans tous les cas** | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir dans tous les cas** |
+| Arcane *(Rune / Œil)* | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir si c'est un jet d'attaque** | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir si c'est un jet d'attaque** |
 
 *Le **jeton classe/mode** (couleur + symbole, §2.1-2.2) détermine quelles faces l'unité lit. Chaque touche retire **1 figurine/PV** (§2.3).*
 
@@ -570,7 +584,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | Règle | Résumé |
 |---|---|
 | **Faible** | Dernière figurine : Épée inactive en attaque *(sauf badge Élite, Jamais Faible)* |
-| **[Armure X]** | Retire X faces Épée des attaques de mêlée reçues |
+| **[Armure]** | 1 dé par touche subie, annulée sur Arcane (+ Couronne si Leader) — mêlée et tir |
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
@@ -581,7 +595,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **Légende** (badge, cumulable, réservé aux unités uniques) | Marqueur : +1 dé de combat |
 | **Leader** (badge, cumulable, D093) | Marqueur : touche aussi sur Couronne, [Inébranlable 1] à son unité + unités amies adjacentes, statut Général et Destin possibles (§2.2bis) |
 
-> Les règles **[Armure X]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
+> Les règles **[Armure]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
 
 ---
 
@@ -597,6 +611,8 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 > ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
+
+*Version : 0.21 — Phase 1 — 2026-09-19. **P13 — correctifs du Playtest #5 (D136, D137, D143).** **D143** : `[Armure X]` est supprimée, il n'existe plus qu'une seule mécanique de sauvegarde — **[Armure]**, 1 dé par touche subie, annulée sur Arcane (ou Arcane/Couronne avec un Leader), valable en mêlée comme au tir. Elle est intrinsèque à tout 🔴 (§2.4) et à toute Créature (§2.2). Plus aucune valeur X : §2.4 réécrit, séquence de combat §7.1 réordonnée (la sauvegarde se résout **après** le décompte des touches, plus avant), séquence résumée, mémo et exemples alignés. **D137** : le gain d'Espoir/Désespoir est limité aux **jets d'attaque** — ni contre-attaque, ni sauvegarde d'[Armure], ni Destin (§5.6, étape g, résumé des faces). **D136** : les notions de **tour** et de **manche** sont distinguées en tête du §4, le scénario désigne le camp qui ouvre, et un nouveau **§4.1** fixe la fin de partie — on termine la manche en cours puis on en joue une dernière, annoncée comme telle. Aucun coût modifié dans ce document.*
 
 *Version : 0.20 — Phase 1 — 2026-09-10. **D133 (réserve d'Espoir et de Désespoir), D134 (plafond de 6 dés).** Nouveau **§5.6** : réserve commune par camp, alimentée par chaque face Arcane obtenue sur n'importe quel jet — effet déclenché ou non — et par 2 points forfaitaires à la fin du tour de son camp ; dépensée à l'étape de commandement pour activer des unités supplémentaires de sa propre Section, au coût de la classe (🟢 2 / 🔵 3 / 🔴 4 points, soit autant de points que de dés lancés), maximum 2 unités par joueur et par tour, sans plafond de réserve. §2.1 : dés propres à chaque camp (Rune de Gandalf / Œil de Sauron sur la face Arcane, nom mécanique inchangé) et piste d'Espoir/Désespoir ajoutée aux composants. §4 : dépense inscrite à l'étape a, nouvelle **étape g** pour le forfait de 2 points en phase de bilan. §2.3, §7.5, séquence résumée et résumé des faces mis à jour. **D134** : plafond absolu de **6 dés** par attaque, tous modificateurs confondus, les plafonds de terrain à 2 dés restant prioritaires — sans effet sur la piétaille, il ne mord aujourd'hui que sur un seul cas — le Roi-Sorcier contre l'unité de Théoden, à 7 dés ramenés à 6 — et pose la barrière avant le futur deck de pouvoirs.*
 

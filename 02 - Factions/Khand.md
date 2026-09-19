@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-06"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.8"
+version: "2.9"
 ---
 
 # Khand — Profils d'unités
@@ -19,6 +19,8 @@ version: "2.8"
 ## 1. Faction de Khand — [Mercenaire]
 
 Retrait forcé compte double. **Outil optionnel, coût négatif** : **−2 brut**. Disponible sur tout le roster sauf l'Aurige.
+
+> 🔄 **D140 — deux porteurs au Pelennor (Playtest #5).** Le badge n'avait **aucun porteur** à l'ordre de bataille du scénario, Khand étant le seul peuple à entrer en jeu sans identité mécanique visible : sa Faction est un malus que personne ne prend volontairement. Deux Pillards le portent désormais — un **hache** (5 → **4**) et un **archer** (3 → **2**) — et la Section droite du Mal perd 2 points, sans compensation. Voir `[[Pelennor_Epique]]` §3.2.
 
 **Bannière : jamais disponible chez Khand** (D108).
 
@@ -79,6 +81,8 @@ Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regl
 ---
 
 *Version : 2.8 — Phase 1 — 2026-09-06. **D127 — profil de l'Aurige de Khand complété et contradiction levée.** La valeur de PV manquait : elle est de **3**, non pas choisie mais déduite — le terme de socle Cavalerie de la matrice vaut Mvt 3 + PV 3, et c'est ce brut de 21 que ses 7 points paient depuis D108. Profil complet : 1 modèle sur socle 65 mm, Mvt 3, 3 dés, 3 PV, [Peur 1 contre les bannières vertes]. La contradiction entre `Regles_Base` (Char hors grille) et ce roster (chiffrage en matrice Cavalerie 🔵) est levée : le Char est un **traitement matériel**, mais l'Aurige **compte comme de la Cavalerie** pour les activations et les cartes. Aucun coût modifié.*
+
+*Version : 2.9 — Phase 1 — 2026-09-19. **P13 — D140, [Mercenaire] entre en jeu au Pelennor.** Le roster n'est pas modifié — l'option existait déjà sur les quatre profils hors Aurige — mais elle avait **zéro porteur** à l'ordre de bataille du scénario. Deux Pillards la portent désormais, un de chaque type, aux coûts déjà publiés au §2 (hache 4, archer 2). Note ajoutée au §1. Aucun coût ni profil retouché.*
 
 *Version : 2.7 — Phase 1 — 2026-08-23. **Retouches Emmanuel (D108).** Bannière retirée définitivement du roster (jamais disponible chez Khand). Aurige de Khand devient une pièce signature avec la nouvelle règle bespoke [Peur 1 contre les bannières vertes] (+2 brut) — coût de base 6→**7**. Variante avec le Roi de Khand recalculée : **9** pts (inchangé par coïncidence).*
 

@@ -25,14 +25,12 @@
             "id": "615b2779f8225468",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "02 - Factions/Rohan.md",
-                "mode": "source",
-                "source": false
+                "file": "07 - Aides de jeu/5a_Roster_Bien.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Rohan"
+              "icon": "lucide-file-text",
+              "title": "5a_Roster_Bien"
             }
           }
         ],
@@ -202,11 +200,18 @@
   },
   "active": "615b2779f8225468",
   "lastOpenFiles": [
+    "05 - Playtest/Playtest5_Compte-rendu.md",
+    "07 - Aides de jeu/5b_Roster_Mal.pdf",
+    "07 - Aides de jeu/5a_Roster_Bien.pdf",
+    "07 - Aides de jeu/1_Aide_commune.pdf",
+    "07 - Aides de jeu/2_Profils_28_unites.pdf",
+    "07 - Aides de jeu/3_Fiche_joueur_Centre.pdf",
+    "07 - Aides de jeu/4_Fiche_scenario.pdf",
+    "02 - Factions/Rohan.md",
     "06 - Images/plans/BdTdM_Pelennor_zones.pdf",
     "06 - Images/plans/BdTdM_plan_Epique_vierge.pdf",
     "06 - Images/plans/BdTdM_Pelennor_zones_final.pdf",
     "06 - Images/plans",
-    "06 - Images/Nouveau dossier",
     "02 - Factions/Harad.md",
     "03 - Scénarios/Pelennor_Epique.md",
     "01 - Règles/Regles_Base.md",
@@ -220,20 +225,13 @@
     "06 - Images/dés/icons8-crown-black-64.png",
     "06 - Images/dés/icons8-gandalf-100-black.png",
     "06 - Images/dés/icons8-sauron-100-black.png",
-    "06 - Images/dés",
     "02 - Factions/Orientaux.md",
     "05 - Playtest/Playtest4_Compte-rendu.md",
     "03 - Scénarios/Playtest4_Epique_Pelennor.md",
     "02 - Factions/Gondor_et_Fiefs.md",
-    "06 - Images/pions/fichier-azao-bichet-emmanuel.zip",
-    "06 - Images/pions/traits-de-coupe-recto.pdf",
-    "06 - Images/pions/verso.pdf",
-    "06 - Images/pions/recto.pdf",
-    "06 - Images/pions/pions.sla.9986",
     "01 - Règles/Regles_Base (1).md",
     "04 - Composants/Cartes_Commandement (1).md",
     "00 - META/Document_de_cadrage (1).md",
-    "02 - Factions/Rohan.md",
     "02 - Factions/Mordor.md",
     "02 - Factions/Khand.md",
     "01 - Règles/Regles_Speciales.md",

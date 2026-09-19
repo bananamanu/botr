@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-30"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.32"
+version: "0.34"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -41,7 +41,7 @@ Le coût **de base** d'une unité standard se lit dans cette table, selon sa cas
 
 *(Valeurs **finales**, prêtes pour la fiche. 🔴 + distance n'existe pas, D063.)*
 
-Rappel des intrinsèques incluses (pour mémoire, **pas** à ajouter) : 🔴 → [Armure 1] ; cavalerie de mêlée → [Poursuite 2] (🟢/🔵) ou [Poursuite 1] (🔴) ; tir léger/monté → [Mobilité] (🟢 cav 2 ; 🟢 inf et 🔵 cav 1).
+Rappel des intrinsèques incluses (pour mémoire, **pas** à ajouter) : 🔴 → [Armure] *(D143)* ; cavalerie de mêlée → [Poursuite 2] (🟢/🔵) ou [Poursuite 1] (🔴) ; tir léger/monté → [Mobilité] (🟢 cav 2 ; 🟢 inf et 🔵 cav 1).
 
 > **Prime de choc de la cavalerie lourde (D065).** La case **Cav 🔴 mêlée** porte **+1 brut** au-delà de sa dérivation mécanique : la charge blindée compounde plus que ne le dit le compte de dés linéaire, mais un dé entier de plus (dé lourd = 4) déborderait à 8 et toucherait aussi l'infanterie lourde. La prime est donc **réservée à la cavalerie** et dosée à **+1**, ce qui pose la case à **7** — et lui rend son ancien coût (Chevaliers de Dol Amroth). C'est le seul écart assumé entre la matrice et la formule brute.
 
@@ -76,7 +76,7 @@ Chaque peuple garde sa règle de Faction propre, son tarif, et son **nom d'usage
 | Peuple | Faction | Coût brut |
 |---|---|---|
 | **Gondor** *(à jour, D101)* | « Défenseur de la Terre du Milieu » = [Relance 1] | **+2**, jamais gratuit *(remplace [Défense 1] — plus de plancher 🔴 à absorber)* |
-| Orientaux | [Défense 1] *(= [Armure 1])* | +2, gratuit sur 🔴 — **à reconfirmer si le peuple suit Gondor vers [Relance 1]** |
+| **Orientaux** *(à jour, D104)* | [Discipline de cohorte] = posture : [Armure] + [Inébranlable 1] *(D143 — était [Défense 1])* | **+2** *(forfait)*, disponible sur les seules Cohortes |
 | Rohan | [Férocité] | +1 |
 | Khand | [Mercenaire] | **−2** *(coût négatif)* |
 | Mordor | [Horde] | +1 |
@@ -113,8 +113,7 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062), **réaligné P8** (D
 
 | Règle | Coût | Note |
 |---|---|---|
-| **[Armure X] / [Défense X]** | 2 × X | Socle libre / **Faction Orientaux** *(Gondor a migré vers [Relance 1], voir `Gondor_et_Fiefs.md`)*. Sur 🔴, plancher [Armure 1] **inclus** → ne facturer que l'excédent. |
-| **[Armure]** *(sans X, Créatures)* | **0** *(intrinsèque)* | D103, P8 — remplace [Armure 1]+[Protection 1] pour le type Créature. Jet de sauvetage 1d6 (Arcane annule, +Couronne si Leader), toujours gratuit comme l'ancien [Armure 1]. |
+| **[Armure]** | **0** *(intrinsèque)* sur 🔴 et sur les Créatures · **2** *(forfait)* si conférée à une autre unité | **D143, P13 — [Armure X] et [Défense X] sont supprimées du barème** ; il n'existe plus de valeur X à multiplier. Jet de sauvegarde 1d6 par touche (Arcane annule, + Couronne si Leader), mêlée et tir. Le forfait de 2 reprend l'ancien tarif de [Défense 1] : **valeur à reconfirmer**, la règle unifiée étant plus forte que la réduction statique qu'elle remplace (voir §8). |
 | **[Inébranlable X]** | 2 × X | Socle libre. Si l'unité porte déjà [Inébranlable 1] via Bannière ou Leader, le premier point est inclus → ne facturer que l'excédent. |
 | **[Inébranlable ∞]** | 6 *(forfait, bespoke)* | ≈3× le forfait standard [Inébranlable 1] — jugement par analogie (D079). Porteurs : Mûmakil, Garde du Roi (Rohan, P8). |
 | **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. *(Sur les Créatures, supersedée par [Armure] — D103.)* |
@@ -130,7 +129,7 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062), **réaligné P8** (D
 | **[Poursuite X]** | 3 × X | Cavalerie de mêlée : plancher (2 ou 1) **inclus** → ne facturer que l'excédent. |
 | **[Mobilité X]** | 1 × X | Tir léger/monté : plancher **inclus** → excédent seul. |
 | **[Férocité]** | 1 | **Faction Rohan** — devenue option (D101), disponible sur 1-7 ; en dur sur la Garde du Roi jusqu'à P8 (retirée, voir D107). |
-| **[Discipline de cohorte]** | **2** *(forfait)* | **Faction Orientaux**, D104, P8 — remplace [Défense X]. Posture activée : renonce à la riposte, gagne [Défense 1]+[Inébranlable 1]. Disponible sur les Cohortes (guerriers, piquiers) uniquement. |
+| **[Discipline de cohorte]** | **2** *(forfait)* | **Faction Orientaux**, D104, P8. Posture activée : renonce à la riposte, gagne **[Armure] + [Inébranlable 1]** *(D143 — était [Défense 1])*. Disponible sur les Cohortes (guerriers, piquiers) uniquement. **Tarif inchangé, à reconfirmer** (§8). |
 | **[Horde]** *(troisième version)* | **3** *(forfait)* | **Faction Mordor**, D105, P8 — +1 dé et Inébranlable 1 à pleine santé, aucun effet négatif ensuite. Disponible sur tous les orques (bandes, Uruk-hai, Piétaille orque, wargs). |
 | **[Peur 1 contre les bannières vertes]** | **2** *(forfait, bespoke)* | D106, P8 — signature Aurige de Khand. Cible uniquement la classe 🟢. |
 | **[Mur de bouclier]** | **1** *(forfait)* | Sans porteur actif depuis P7c/D081 — [Protection 1] tant qu'aucune touche subie, perdue à la 1ʳᵉ. Conservée au barème, réutilisable. |
@@ -176,7 +175,7 @@ Pour traçabilité — la matrice du §2 découle mécaniquement de la formule b
 |---|---|---|---|---|---|
 | Inf 🟢 mêlée | 6 | 6 | — | 12 | **3** |
 | Inf 🔵 mêlée | 6 | 9 | — | 15 | **4** |
-| Inf 🔴 mêlée | 5 | 12 | Armure 1 (2) | 19 | **5** |
+| Inf 🔴 mêlée | 5 | 12 | Armure (2) | 19 | **5** |
 | Inf 🟢 distance | 6 | 4 | Mobilité 1 (1) | 11 | **3** |
 | Inf 🔵 distance | 6 | 6 | — | 12 | **3** |
 | Cav 🟢 mêlée | 7 | 6 | Poursuite 2 (6) | 19 | **5** |
@@ -201,9 +200,9 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 
 **Gardes de la Citadelle** — 🔵 Infanterie, mêlée, [Inébranlable 1] + Jamais Faible (règle socle, ex-badge Élite). Brut 15 + (+2) = **17** → `round(17/3)−1` = **5**. *(Inchangé — la règle socle est indépendante du ciblage de Faction.)*
 
-**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23**, inclut [Armure 1] + [Poursuite 1] + prime de choc D065 — Faction [Défense 1] **gratuite** de toute façon sur 🔴). [Inébranlable 1] + Jamais Faible (+2 → 25) → `round(25/3)−1` = **7**. *(Coût de base inchangé par rapport à l'ère P7c — Faction n'y coûtait déjà rien.)*
+**Chevaliers de Dol Amroth** — 🔴 Cavalerie, mêlée (base **23**, inclut [Armure] + [Poursuite 1] + prime de choc D065 — la sauvegarde est **gratuite** de toute façon sur 🔴). [Inébranlable 1] + Jamais Faible (+2 → 25) → `round(25/3)−1` = **7**. *(Coût de base inchangé par rapport à l'ère P7c — Faction n'y coûtait déjà rien.)*
 
-**Chevaliers de Dol Amroth — variante avec Imrahil** (Général, Destin 3, Playtest #4) : brut 23 + Élite (2) + [Défense 1] Faction (0, gratuite 🔴) + Leader (4) + Général (9) + Destin 3 (6) = **44** → `round(44/3)−1` = **14**. *(La composante Général domine largement le calcul — cohérent avec le tarif délibérément lourd de §3.3.)*
+**Chevaliers de Dol Amroth — variante avec Imrahil** (Général, Destin 3, Playtest #4) : brut 23 + Élite (2) + [Armure] (0, gratuite 🔴) + Leader (4) + Général (9) + Destin 3 (6) = **44** → `round(44/3)−1` = **14**. *(La composante Général domine largement le calcul — cohérent avec le tarif délibérément lourd de §3.3.)*
 
 ---
 
@@ -213,7 +212,7 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 - Passage à la **matrice** (type × mode × classe), intrinsèques incluses par case ; suppléments Élite + signatures ajoutés au brut avant compression.
 - **Rebase durabilité** : Inf 6→4 PV, Cav 3 ; socle Mvt+PV recalculé sur la grille §6.1.
 - **Élite = [Inébranlable 1]**, +2 brut.
-- **[Armure X] = règle de faction** ouverte à toute classe (pas verrouillée au rouge) ; sur 🔴, seul l'excédent au-dessus du plancher [Armure 1] est facturé.
+- **[Armure X] = règle de faction** ouverte à toute classe (pas verrouillée au rouge) ; sur 🔴, seul l'excédent au-dessus du plancher [Armure 1] est facturé. *(Superseded par D143 : plus de valeur X, la sauvegarde est binaire.)*
 
 **Ajusté (D065, 2026-08-05) :**
 - **Prime de choc de la cavalerie lourde** : +1 brut sur la seule case **Cav 🔴 mêlée** (22→23 → final **6→7**). Supersède la valeur Cav 🔴 mêlée de D064. Réservée à la cavalerie et dosée à +1 (un dé lourd = 4 déborderait à 8 et toucherait l'infanterie). Rend son ancien coût de 7 à la cavalerie lourde.
@@ -228,14 +227,20 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 - **Roi-Sorcier confirmé à 17 pts** — sommet tarifaire du projet assumé, **aucun plafonnement** des pièces bespoke. Voir §3.3.
 - ~~**Équilibre Pelennor acté à 219 Bien / 220 Mal**~~ — **chiffre erroné, superseded par D124.** Le recalcul depuis le brut de matrice donne **216 Bien / 215 Mal**, soit 1 point d'écart en faveur du Bien. Le 219/220 n'est reproductible par aucune méthode cohérente sur les rosters en vigueur ; il provenait vraisemblablement d'un comptage sous le régime antérieur à D101, où le badge Faction était porté par toutes les unités éligibles. La décision de fond de D114 — **acter la quasi-parité sans retoucher les effectifs** — reste valide ; seul le chiffre change. Ordre de bataille de référence du **Playtest #5** (12/09) : `[[Pelennor_Epique]]` §3.
 
+**Actés (D143, P13, 2026-09-19) :**
+- **[Armure X] et [Défense X] disparaissent du barème.** Il n'existe plus qu'une mécanique de sauvegarde, sans valeur X : **[Armure]**, 1 dé par touche, annulée sur Arcane (+ Couronne avec un Leader), mêlée et tir. Elle reste **intrinsèque et gratuite** sur toute unité 🔴 et sur toute Créature — donc **aucun coût de profil ne bouge de ce seul fait**, et le brut de 2 inscrit à la case Inf/Cav 🔴 de la matrice (§5) est conservé tel quel.
+
 **Ouverts :**
 1. ~~**Roi-Sorcier à 17 pts**~~ — **résolu (D112)**, voir ci-dessus.
 2. ~~**Équilibre du scénario Pelennor**~~ — **résolu (D114)**, chiffre corrigé par **D124**, voir ci-dessus.
 
 **Méthode de chiffrage d'un ordre de bataille (D124).** Toujours partir du **brut de matrice** (§5) et non des coûts finaux des rosters : la compression `round(brut ÷ 3) − 1` n'est pas linéaire, et additionner des coûts finaux produit des erreurs d'un point par unité, dans les deux sens. Contrôle de cohérence disponible : les variantes avec Leader publiées aux rosters (Éomer 13, Théoden 12, Imrahil 14, Gothmog 11, Suladan 9, Roi de Khand 9) doivent toutes retomber sur le calcul.
+4. ⚠️ **Tarif de la sauvegarde conférée par badge, ouvert depuis D143.** Deux forfaits à **+2 brut** achetaient [Défense 1] — réduction statique d'une face Épée, en mêlée seulement : **[Discipline de cohorte]** (Orientaux, D104, en composant) et **Elladan** (Compagnie Grise, `Gondor_et_Fiefs`). Ils achètent désormais [Armure], nettement plus forte : elle joue aussi **contre le tir** et sauve **toutes** les faces, Épées croisées comprises. Le tarif est **conservé en l'état** faute de mesure — la règle unifiée n'a été éprouvée qu'en intrinsèque, jamais en badge payant, et aucun playtest n'est prévu avant la convention. À reprendre depuis le brut de matrice à la première occasion. Impact chiffré du report : deux unités du Pelennor, aucune incidence sur l'équilibre par Section.
 3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
 
 ---
+
+*Version : 0.34 — Phase 1 — 2026-09-19. **P13 — D143, suppression d'[Armure X] et de [Défense X] du barème.** Les deux lignes fusionnent en une entrée **[Armure]** unique : gratuite en intrinsèque sur 🔴 et sur les Créatures, forfait de 2 quand un badge la confère. Il n'y a plus de valeur X à multiplier, donc plus d'excédent à facturer au-dessus d'un plancher. **Aucun coût de profil ne change** : la mécanique était déjà gratuite là où elle est intrinsèque, et le brut de 2 de la case 🔴 mêlée (§5) est conservé. §3.2 : la ligne Orientaux, restée à [Défense 1] depuis avant D104, est mise à jour vers [Discipline de cohorte]. §8 : nouveau bloc d'actés, et **point ouvert n°4** — le forfait de +2 qui achetait [Défense 1] ([Discipline de cohorte], Elladan) achète désormais une règle plus forte, tarif reconduit faute de mesure, à reprendre depuis le brut. Exemples §7 et rappel des intrinsèques §3.1 alignés.*
 
 *Version : 0.32 — Phase 1 — 2026-08-30. **D124 — le total de D114 est corrigé et une méthode de chiffrage est fixée.** §8 : le 219/220 acté en D114 est marqué erroné et superseded — le recalcul depuis le brut de matrice donne **216 / 215**, soit un point d'écart en faveur du Bien. La décision de fond de D114 (acter la quasi-parité sans retoucher les effectifs) reste valide, seul le chiffre change. Ajout d'une note de méthode : un ordre de bataille se chiffre depuis le brut de matrice, jamais depuis les coûts finaux des rosters, la compression n'étant pas linéaire ; les six variantes avec Leader publiées servent de contrôle de cohérence. Barème inchangé.*
 

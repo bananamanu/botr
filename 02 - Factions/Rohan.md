@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-30"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.8"
+version: "2.9"
 ---
 
 # Rohan — Profils d'unités
@@ -36,6 +36,8 @@ Contre-attaque même repoussé. **Outil optionnel**, +1 brut, disponible sur les
 | 4 | Éored d'éclaireur | Cavalerie | Distance | 🔵 | Faction | **3** |
 
 > 🎲 **Case comblée (D124).** Éored d'éclaireur **+ Faction [Férocité]** : brut 13 + 1 = 14 → `round(14÷3)−1` = **4**. C'est la seule unité du Rohan où la Faction n'est **pas** absorbée par la compression — sur l'Éored de cavalier (22 → 6) et les Gardes royaux à cheval (24 → 7), elle reste gratuite.
+
+> ⚠️ **Case chiffrée mais à éviter (D141, Playtest #5).** [Férocité] permet de contre-attaquer *malgré* un recul forcé. L'Éored d'éclaireur est une **unité de tir montée qui ne va presque jamais au contact** : la règle ne s'y déclenche pratiquement jamais. La case reste au barème pour la complétude, mais **la poser sur un éclaireur revient à payer 1 point pour rien** — au Pelennor, l'ordre de bataille ne le fait plus.
 | 5 | Gardes royaux à cheval | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
 | 6 | Gardes Royaux du Rohan | Infanterie | Mêlée | 🔴 | Faction, Bannière | **5** |
 | 7 | Helmingas de Grimbolg | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
@@ -101,6 +103,8 @@ Bannière portée au Playtest #4 par 2 éoreds (+1 → **7** chacun) et 1 garde 
 - **Garde du Roi à 8/10 pts** — hausse sensible par rapport à l'ancienne version (7/8), à surveiller au prochain playtest : une pièce increvable au recul, avec 5 dés (Légende), à ce tarif, doit rester utilisable dans un format 3v3 sans écraser la ligne.
 
 ---
+
+*Version : 2.9 — Phase 1 — 2026-09-19. **P13 — D141, avertissement sur [Férocité] posée sur un éclaireur.** Le roster n'est pas modifié : l'option reste disponible et son coût de 4 pts reste juste. Mais le Playtest #5 a montré que la case n'a aucun intérêt de jeu — une unité de tir montée ne subit presque jamais le recul forcé que [Férocité] permet d'ignorer. Avertissement ajouté sous la case comblée de D124. Conséquence au scénario : `[[Pelennor_Epique]]` passe de six à quatre badges [Férocité], tous sur des unités montées de mêlée, et la Section droite du Bien tombe de 67 à 65 points. Aucun coût de profil retouché.*
 
 *Version : 2.8 — Phase 1 — 2026-08-30. **D124 — case de coût comblée.** Éored d'éclaireur + Faction [Férocité] chiffré à **4** (brut 14) : seule unité du roster où la Faction n'est pas absorbée par la compression. La case manquait à la table des options et faussait le chiffrage du scénario du Pelennor. Aucun autre coût touché.*
 

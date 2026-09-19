@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-16"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.2"
+version: "0.3"
 ---
 
 # Batailles de la Terre du Milieu — Règles de terrain
@@ -62,6 +62,10 @@ La ligne de vue **n'est pas bloquée** par :
 **Cas d'arête :** lorsque la ligne de vue longe le bord d'un ou plusieurs hexagones, elle est décalée d'un côté. Elle n'est bloquée que s'il y a du terrain bloquant ou une unité des **deux côtés** de la ligne.
 
 **Unités en hauteur :** une unité positionnée sur un hexagone de terrain surélevé ignore toutes les autres unités lorsqu'elle trace sa ligne de vue. Le terrain bloquant continue de bloquer sa LdV normalement.
+
+**Le Mûmakil (D138) :** la ligne de vue entre un Mûmakil et n'importe quelle unité est **toujours dégagée, dans les deux sens** — rien ne la bloque, ni les unités interposées, ni le terrain bloquant. La bête dépasse tout ce qui se trouve sur le champ de bataille : elle voit tout, et tout la voit. Seule exception de ce type dans le jeu.
+
+> 🎲 **Tranché au Playtest #5 (D138).** Le ruling s'était imposé de lui-même à la table — personne ne se demande sérieusement si un oliphant est caché derrière une ligne d'orques. Il est écrit ici parce qu'un joueur de convention, lui, posera la question.
 
 > ⚠️ **Point ouvert**
 > Les unités volantes (ex. Nazgûl montés sur créature ailée) et leurs interactions avec la ligne de vue seront précisées en Phase 2, avec le reste des règles de monstres avancés.
@@ -274,6 +278,8 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.3 — Phase 1 — 2026-09-19. **P13 — D138, exception de ligne de vue du Mûmakil.** §2 : la LdV entre un Mûmakil et n'importe quelle unité est toujours dégagée dans les deux sens, unités interposées et terrain bloquant compris. Seule exception de ce type dans le jeu. Aucune autre règle de terrain touchée.*
 
 *Version : 0.2 — Phase 1 — 2026-08-16. **Corrections de relecture — revue de finalisation « Verrouillage v1.0 ».** Liens `[[Document de cadrage]]` corrigés en `[[Document_de_cadrage]]` (nom réel du fichier, 2 occurrences). Aucune décision mécanique — pas de numéro D.*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
 statut: "jouable"
-date_maj: "2026-08-30"
+date_maj: "2026-09-19"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.5"
+version: "1.6"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -25,10 +25,10 @@ Le scénario couvre le moment où les trois forces se rencontrent. Il est **fid�
 | | |
 |---|---|
 | **Format** | Épique — 13 lignes × 17 colonnes, 215 hexagones |
-| **Joueurs** | 6 (3 par camp, un par Section) |
+| **Joueurs** | 6 (3 par camp, un par Section) — **le Mal ouvre chaque manche** (D136) |
 | **Orientation** | Le **Bien** occupe le côté de la **ligne 1**, le **Mal** celui de la **ligne 13** |
 | **Terrain** | **Aucun.** Le Pelennor est une plaine cultivée ; le relief est à Mindolluin, hors plateau |
-| **Durée** | **3 heures de jeu**, déploiement non compté. On termine le tour en cours |
+| **Durée** | Chrono **3 h 45**, déploiement non compté. On termine la manche en cours, puis on joue **une dernière manche annoncée** (D136) — compter 4 h 15 à 4 h 30 |
 | **Effectifs** | 30 unités au Bien, 31 au Mal |
 
 ---
@@ -72,7 +72,7 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 
 ### 3.1 Camp du Bien
 
-**Section Droite — Le Rohan** *(67 pts, 10 unités)*
+**Section Droite — Le Rohan** *(65 pts, 10 unités)*
 
 | Unité | Nb | Options | Pts/u |
 |---|---|---|---|
@@ -83,7 +83,9 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 | Gardes royaux à cheval | 1 | **Théoden** (Général, Destin 1), Faction | 12 |
 | Gardes royaux à cheval | 2 | Bannière | 7 |
 
-Six badges **Faction [Férocité]** sont à répartir par le joueur du Rohan sur ses huit unités qui n'en portent pas déjà. La Faction est **gratuite** sur les Éored de cavalier et les Gardes royaux à cheval, mais **coûte +1** sur un Éored d'éclaireur — il n'y a que quatre emplacements gratuits, donc **deux badges au minimum tombent sur des éclaireurs**. Ces **+2 points** sont inclus dans le total de 67.
+**Quatre badges Faction [Férocité]** sont à répartir par le joueur du Rohan, librement, sur ses quatre unités **montées de mêlée** qui n'en portent pas déjà : les deux Éored de cavalier et les deux Gardes royaux à cheval. Tous sont **gratuits** — le total de 65 est fixe quel que soit le placement. **Aucun badge sur les Éored d'éclaireur.**
+
+> 🔄 **D141 — passé de six badges à quatre (Playtest #5).** L'ordre de bataille en imposait six pour quatre emplacements gratuits : deux tombaient forcément sur des éclaireurs, facturés +1 pièce. Or [Férocité] permet de contre-attaquer même en reculant — sur une **unité de tir montée qui ne va presque jamais au contact**, elle ne se déclenche jamais. Le Rohan payait 2 points pour deux badges morts. Ce n'est donc pas un affaiblissement : on cesse de facturer du vide, et le placement devient un vrai choix du joueur au lieu d'une contrainte arithmétique.
 
 **Section Centre — Dol Amroth et Lossarnach** *(62 pts, 9 unités)*
 
@@ -127,20 +129,24 @@ Six badges **Faction [Férocité]** sont à répartir par le joueur du Rohan sur
 | Bande d'orques du Mordor | 2 | Bannière | 5 |
 | Bande de pisteurs orques | 2 | — | 3 |
 
-**Section Droite — Les royaumes déchus** *(67 pts, 13 unités)*
+**Section Droite — Les royaumes déchus** *(65 pts, 13 unités)*
 
 | Unité | Nb | Options | Pts/u |
 |---|---|---|---|
 | Aurige de Khand | 1 | **Roi de Khand** (Leader, Destin 2) | 9 |
 | Aurige de Khand | 1 | — | 7 |
-| Pillards de Khand (hache) | 2 | — | 5 |
-| Pillards de Khand (archers) | 2 | — | 3 |
+| Pillards de Khand (hache) | 1 | Faction [Mercenaire] | 4 |
+| Pillards de Khand (hache) | 1 | — | 5 |
+| Pillards de Khand (archers) | 1 | Faction [Mercenaire] | 2 |
+| Pillards de Khand (archers) | 1 | — | 3 |
 | Cohorte de piquiers orientaux | 1 | Faction [Discipline de cohorte] | 5 |
 | Cohorte d'archers orientaux | 2 | — | 3 |
 | Cohorte d'orientaux | 1 | Faction, Bannière | 5 |
 | Cohorte d'orientaux | 1 | Faction | 5 |
 | Cataphractaires orientaux | 1 | Bannière | 7 |
 | Cataphractaires orientaux | 1 | — | 7 |
+
+> 🔄 **D140 — Khand entre en piste avec deux [Mercenaire] (Playtest #5).** Le peuple était **le seul du scénario sans aucun badge Faction**, sa règle propre étant un malus que personne ne prend volontairement : chaque retrait forcé compte double, pour **−2 brut**. Deux Pillards la portent désormais, un de chaque type, et la Section perd 2 points **sans compensation**. Le badge est posé sur la figurine comme tout badge Faction. L'Aurige ne peut jamais le porter (D070) : seul corps régulier du peuple.
 
 **Section Gauche — Les Mûmakil** *(56 pts, 8 unités)*
 
@@ -163,8 +169,8 @@ Six badges **Faction [Férocité]** sont à répartir par le joueur du Rohan sur
 |---|---|---|---|
 | **Gauche** — Aragorn vs Harad | 56 | 56 | **0** |
 | **Centre** — Dol Amroth vs Mordor | 62 | 65 | Mal +3 |
-| **Droite** — Rohan vs Khand et Orientaux | 67 | 67 | **0** |
-| **Total** | **185** | **188** | **Mal +3** |
+| **Droite** — Rohan vs Khand et Orientaux | 65 | 65 | **0** |
+| **Total** | **183** | **186** | **Mal +3** |
 
 **Deux Sections sur trois à parité exacte.** C'est le chiffre qui compte le plus : en 3 contre 3, chaque joueur affronte une Section et non l'armée entière, et un total global équilibré peut très bien cacher un front écrasé.
 
@@ -270,9 +276,15 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 
 **Contrôle d'un point stratégique :** le camp qui a une unité **sur l'hexagone à la fin de la partie**. Un hexagone vide ne rapporte à personne.
 
-**Fin de partie :** au terme de **3 heures de jeu**, déploiement non compté, le tour en cours est terminé puis la partie s'arrête.
+**Initiative (D136) :** le **Mal ouvre chaque manche**, le Bien la ferme. L'assaut vient du Mordor et les défenseurs réagissent — et le Bien a ainsi le dernier mot de la dernière manche, ce qui compte pour des points stratégiques comptés à la fin.
+
+**Fin de partie (D136) :** le chrono est réglé sur **3 h 45**, déploiement non compté. Quand il sonne, on **termine la manche en cours**, puis on joue **une dernière manche, annoncée comme telle à la table**. La partie s'arrête à la fin du tour du Bien. Prévoir **4 h 15 à 4 h 30 de jeu**, plus l'heure de mise en place.
+
+> 🎲 **Pourquoi annoncer la dernière manche (Playtest #5).** Tout se joue au dernier tour : les points stratégiques se comptent à la fin, un Leader à 1 PV vaut 3 points de bascule, et la partie test s'est terminée à une action du match nul. Un chrono sec interdit de jouer la dernière manche *comme* la dernière — les joueurs doivent savoir quand lâcher leur réserve d'Espoir et quand se ruer sur les hexagones.
 
 **Égalité :** aucun départage. Un 4-4 est un **match nul**, et c'est un résultat parfaitement acceptable — sans doute même le meilleur pour clore une convention.
+
+> ⚠️ **Tenir le score ligne par ligne, jamais en total courant.** Au Playtest #5, la victoire militaire a été comptée 1 point au lieu de 2 — par le concepteur lui-même. Et un total brut ment sur la partie : le 5-2 final recouvrait un écart d'une seule action. La fiche de scénario doit porter une **grille à remplir condition par condition**, remplie à la fin devant tout le monde.
 
 ---
 
@@ -284,7 +296,7 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 | **Jetons classe/mode** 🟢 distance | **18** *(16 unités de tir + 2 pour les Mûmakil)* |
 | **Jetons classe/mode** 🔴 mêlée | 16 |
 | **Jetons classe/mode** 🟢 mêlée | 6 |
-| **Badges Faction** *(posés systématiquement)* | 25 — 16 au Bien, 9 au Mal |
+| **Badges Faction** *(posés systématiquement)* | 25 — **14 au Bien, 11 au Mal** *(D140/D141 : le Rohan passe de 8 à 6, Khand de 0 à 2 — total inchangé)* |
 | **Badges Leader** — jeton couronne | 10, sans distinction pour les 6 Généraux |
 | **Figurines porte-étendard** | 12 |
 | Plateaux d'infanterie (4 figurines) | 32 |
@@ -305,17 +317,25 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 
 **Les Auriges de Khand comptent comme de la Cavalerie** (D127) pour les activations et les cartes d'ordre, bien qu'ils soient sur socle 65 mm avec compteur de PV.
 
+**Le Mûmakil voit tout et est vu de tous** (D138) : la ligne de vue entre un Mûmakil et n'importe quelle unité est toujours dégagée, dans les deux sens, quelles que soient les unités interposées. Règle générale, écrite dans `[[Terrain]]` §2 — rappelée ici parce qu'elle se pose à chaque partie du Pelennor, les deux bêtes étant en ligne de mire de tout le champ de bataille.
+
+**La charge du Mûmakil ne subit pas de contre-attaque** (D139) : `[Charge écrasante]` se résout en **phase de mouvement**, pas en combat. Confirmé au Playtest #5 — le texte de `[[Regles_Speciales]]` le disait déjà, il est rappelé ici pour la table.
+
 ---
 
 ## 8. Points ouverts
 
 - ~~**Réconciliation du chiffrage**~~ — **résolue (D124)**, voir §3.3. Les trois cases manquantes sont comblées aux rosters.
-- **[Horde] v3 jamais testée** — la disparition de l'effet négatif change le ressenti, à surveiller.
-- **Réserve d'Espoir/Désespoir (D133), jamais testée.** Trois mesures à prendre au Playtest #5 : le **revenu réel par camp et par round** ; le **temps** d'un tour où un camp lâche 6 achats d'un coup, contre la limite de 3 heures ; et si le maximum de 2 unités par joueur suffit à sortir une aile de la famine de cartes constatée au Playtest #1.
-- **Plafond de 6 dés (D134)** — un seul cas le dépasse aujourd'hui : le Roi-Sorcier contre l'unité de Théoden (4 + 2 + 1 d'Ordre direct = 7, ramené à 6). L'éored d'Éowyn plafonne à 6 pile et n'est pas concerné. Vérifier à la table qu'aucune combinaison n'a été oubliée.
-- **Temps de mise en place** à chronométrer au Playtest #5 : 72 unités, dont deux Mûmakil à 4 hexagones.
+- ~~**[Horde] v3 jamais testée**~~ — **éprouvée au Playtest #5**, sans problème. Effet de jeu non anticipé : les porteurs deviennent des cibles prioritaires pour le tir, l'adversaire cherchant à leur retirer l'état « pleine santé ».
+- ~~**Réserve d'Espoir/Désespoir (D133), jamais testée**~~ — **éprouvée au Playtest #5.** Elle fonctionne et produit de vraies bascules, mais le revenu était structurellement plus élevé au Mal : corrigé par **D137**, qui limite le gain aux seuls jets d'attaque. Le maximum de 2 unités par joueur suffit ; aucun plafond de camp n'est ajouté.
+- ~~**Plafond de 6 dés (D134)**~~ — **déclenché une fois** au Playtest #5, conformément au seul cas prévu. Aucune combinaison oubliée.
+- ~~**Temps de mise en place**~~ — **mesuré à 1 h** au Playtest #5 pour les 61 unités, jugé acceptable. **Condition à tenir en P15 :** les unités doivent être sorties et **déjà disposées sur leurs plateaux de mouvement** avant l'arrivée des joueurs.
+- **Aides de jeu jamais éprouvées par un tiers.** Le Playtest #5 ne les a pas utilisées — le concepteur connaît le jeu par cœur. Les deux écarts de lecture de la partie (barème de victoire militaire, double mécanique d'[Armure]) suggèrent qu'elles portent une vraie charge. À faire relire par un joueur avant l'impression de P11b.
+- **Tarif de la sauvegarde conférée par badge** — ouvert par D143, voir `[[Regles_Points]]` §8 point 4. Concerne deux unités du scénario, sans incidence sur l'équilibre par Section.
 
 ---
+
+*Version : 1.6 — Phase 1 — 2026-09-19. **P13 — correctifs du Playtest #5 (D136, D138, D139, D140, D141).** **§3 ordre de bataille :** Khand entre deux **[Mercenaire]** (un Pillard hache à 4, un Pillard archer à 2), Section droite du Mal **67 → 65**, sans compensation (D140) ; le Rohan passe de **six à quatre badges [Férocité]**, librement placés sur ses seules unités montées de mêlée, Section droite du Bien **67 → 65** (D141) — les deux badges supprimés tombaient forcément sur des éclaireurs, où [Férocité] ne se déclenche jamais. **§3.3 : totaux 183 Bien / 186 Mal**, la parité exacte des Sections gauche et droite est préservée, le Centre reste à 3 points. **§6 :** initiative fixée — le **Mal ouvre chaque manche** — et fin de partie réécrite : chrono à **3 h 45**, on termine la manche en cours puis on en joue **une dernière, annoncée** (D136) ; note ajoutée sur la tenue du score ligne par ligne, la victoire militaire ayant été comptée 1 point au lieu de 2 au playtest. **§7 :** décompte des badges Faction réparti 14/11 (total inchangé à 25) ; rappels de la ligne de vue du Mûmakil (D138) et de l'absence de contre-attaque sur [Charge écrasante] (D139). **§8 :** quatre points ouverts clos par le playtest ([Horde] v3, réserve d'Espoir/Désespoir, plafond de 6 dés, temps de mise en place mesuré à 1 h) ; deux ouverts ajoutés (aides de jeu non éprouvées, tarif de la sauvegarde conférée par badge). Correctif de forme : le point sur le temps de mise en place parlait encore de 72 unités au lieu de 61.*
 
 *Version : 1.5 — Phase 1 — 2026-09-06. **D132 — portée de tir par type.** §7 corrigé : 1–4 à pied, 1–3 à cheval, au lieu de 1–3 pour tous. Au Pelennor, 10 unités de tir à pied et 6 montées. Ordre de bataille, chiffrage et équilibre inchangés.*
 
