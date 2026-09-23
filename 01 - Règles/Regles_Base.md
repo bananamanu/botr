@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.21"
+version: "0.25"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -44,12 +44,12 @@ Les règles de base couvrent les affrontements sans pouvoirs ni héros — le so
 - **Tapis de jeu hexagonal** : taille selon le format choisi — Escarmouche (10 × 7), Normal (13 × 9) ou Épique (13 × 17). Voir Document de cadrage §4.
 - **Tuiles de terrain** : bois, collines, cours d'eau, gués, ponts, bâtiments (règles détaillées à développer dans un document dédié — hors scope de cette première version)
 - **Deck de commandement** : cartes de section et cartes Tactiques
-- **Dés spéciaux** : 6 faces — Épées croisées / Épée / Cible / Drapeau / Couronne / Arcane (dé BattleLore V2, conservé tel quel). Chaque camp dispose de ses propres dés : la face **Arcane** y porte la **Rune de Gandalf** côté Bien et l'**Œil de Sauron** côté Mal (D133). Le nom mécanique reste **Arcane** dans tous les documents de règles.
+- **Dés spéciaux** : 6 faces — Épées croisées / Épée / Arc / Drapeau / Couronne / Pouvoir (dé BattleLore V2, conservé tel quel). Chaque camp dispose de ses propres dés : la face **Pouvoir** y porte la **Rune de Gandalf** côté Bien et l'**Œil de Sauron** côté Mal (D133). La face se nomme **Pouvoir** dans tous les documents de règles (D148).
 - **Figurines** : unités des peuples joués (MESBG)
 - **Plateaux de mouvement** (movement trays), **neutres** (peints marron/vert, se fondent dans le décor) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie
 - **Jeton classe/mode** (20mm, posé à côté du plateau ou du socle) : couleur = classe (🟢 vert 2 dés / 🔵 bleu 3 dés / 🔴 rouge 4 dés), symbole = mode (épées croisées = mêlée / arc = distance) — un seul marqueur, remplace l'ancien token de mode collé sur le socle
 - **Marqueurs** : compteurs de PV (Chars et Créatures uniquement), médailles objectif, jetons d'activation/cible (aide-mémoire de contre-attaque, §7.6)
-- **Piste d'Espoir / de Désespoir** : une par camp, avec ses jetons — réserve de commandement commune aux joueurs d'un même camp (§5.6, D133)
+- **Piste de Pouvoir** : une par camp, avec ses jetons — réserve de commandement commune aux joueurs d'un même camp (§5.6, D133)
 
 ### 2.2 Le langage du socle : classe, type et mode
 
@@ -63,7 +63,7 @@ Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois inform
 | 🔵 **Bleu** | Standard | **3** |
 | 🔴 **Rouge** | Lourde / élite | **4** |
 
-**Le mode = le symbole du jeton : épées croisées (mêlée) ou arc (distance).** *(Pivot D089 — fusionne l'ancien token de mode, désormais un seul jeton pour classe + mode.)* Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Cible**.
+**Le mode = le symbole du jeton : épées croisées (mêlée) ou arc (distance).** *(Pivot D089 — fusionne l'ancien token de mode, désormais un seul jeton pour classe + mode.)* Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Arc**.
 
 **Le type**, donné par la forme du plateau/socle et le nombre de figurines — indépendant de la couleur, donc inchangé par le retrait de la coloration des plateaux :
 
@@ -95,9 +95,9 @@ Un badge **Leader** est toujours rattaché à une **unité porteuse** (jamais un
 
 - **Retrait** : la figurine du Leader est toujours la **dernière** retirée de son unité.
 - **Effet permanent** : [Inébranlable 1] sur son unité et sur toute unité amie **adjacente** ; touche supplémentaire sur Couronne (§2.3).
-- **Statut Général** *(optionnel, une partie des Leaders seulement)* : la main de commandement du joueur passe de 4 cartes à **4 + nombre de Généraux vivants dans son camp**. Si un Général est éliminé, la main redescend **immédiatement**.
-- **Valeur de Destin** *(1 à 4, propre à chaque Leader)* : lorsque l'unité porteuse du Leader est éliminée, celui-ci tente de trouver refuge dans une unité amie **de sa faction**, à **3 hexagones ou moins**. Le joueur lance autant de dés que la valeur de Destin du Leader : **au moins une Couronne** sauve le Leader, qui rejoint l'unité choisie (sa valeur de Destin **diminue de 1** pour la suite de la partie) ; sans Couronne, ou s'il n'y a **aucune unité de sa faction** à portée, le Leader est **éliminé définitivement**.
-- **Leaders universels** *(exception nommée, à documenter par leader)* : certains Leaders peuvent rejoindre **n'importe quelle faction de leur camp** plutôt que la leur seulement, quand leur statut narratif le justifie (ex. un roi qui commande l'ensemble de son camp). Réservé aux figures dont le texte de Tolkien justifie une autorité transversale — voir `[[Playtest4_Compte-rendu]]` pour les cas tranchés au Pelennor.
+- **Statut Général** *(optionnel, une partie des Leaders seulement)* : la main de commandement du camp compte **4 cartes + 1 par Général vivant** du camp, dans **tous les formats** (D144, D147). Un camp aligne au plus **2 Généraux en Escarmouche**, **3 en Normal**, sans limite en Épique. Si un Général est éliminé, la main redescend **immédiatement**.
+- **Valeur de Destin** *(1 à 4, propre à chaque Leader)* : lorsque l'unité porteuse du Leader est éliminée, celui-ci tente de trouver refuge dans une unité amie **de son peuple**, à **3 hexagones ou moins**. Le joueur lance autant de dés que la valeur de Destin du Leader : **au moins une Couronne** sauve le Leader, qui rejoint l'unité choisie (sa valeur de Destin **diminue de 1** pour la suite de la partie) ; sans Couronne, ou s'il n'y a **aucune unité de son peuple** à portée, le Leader est **éliminé définitivement**.
+- **Leaders universels** *(exception nommée, à documenter par leader)* : certains Leaders peuvent rejoindre **n'importe quel peuple de leur camp** plutôt que le leur seulement, quand leur statut narratif le justifie (ex. un roi qui commande l'ensemble de son camp). Réservé aux figures dont le texte de Tolkien justifie une autorité transversale — voir `[[Playtest4_Compte-rendu]]` pour les cas tranchés au Pelennor.
 
 **Le badge Signature (facultatif, réservé aux pièces marquantes) = règles bespoke propres, hors de la matrice de badges.** Une poignée de pièces (La Compagnie Grise, le Mûmakil…) sortent entièrement du système de badges standard : leurs règles sont écrites au profil, comme des créations uniques. *(Coûts traités par équivalence, [[Regles_Points]] §6.)*
 
@@ -128,18 +128,18 @@ Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur
 
 **Quelles faces touchent dépend du mode de l'unité** (son jeton classe/mode) :
 
-| Mode | Faces qui touchent | Couronne | Arcane | Retraite |
+| Mode | Faces qui touchent | Couronne | Pouvoir | Retraite |
 |---|---|---|---|---|
 | **Mêlée** | Épées croisées · Épée¹ | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
-| **Distance** | Cible | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
+| **Distance** | Arc | Touche supplémentaire si badge Leader² | Règle spéciale/signature³ | Drapeau |
 
-*¹ Épée inactive si l'unité est Faible. — ² La **Couronne** ne fait rien par défaut ; elle inflige **1 touche supplémentaire** uniquement si l'unité porte le badge **Leader** (D089, §2.2). — ³ La face **Arcane** déclenche la règle spéciale/signature de l'unité si elle en porte une (ex. [Peur X]) ; sinon c'est un échec. **Dans tous les cas — effet déclenché ou non — chaque Arcane obtenue rapporte 1 point d'Espoir ou de Désespoir à son camp** (§5.6, D133).*
+*¹ Épée inactive si l'unité est Faible. — ² La **Couronne** ne fait rien par défaut ; elle inflige **1 touche supplémentaire** uniquement si l'unité porte le badge **Leader** (D089, §2.2). — ³ La face **Pouvoir** déclenche la règle spéciale/signature de l'unité si elle en porte une (ex. [Peur X]) ; sinon c'est un échec. **Dans tous les cas — effet déclenché ou non — chaque Pouvoir obtenu rapporte 1 point de Pouvoir à son camp** (§5.6, D133).*
 
 **Règle de dégâts — unique et universelle :**
 
 > **Chaque touche retire exactement 1 figurine — ou 1 PV pour un Char / une Créature — quelle que soit la cible.** Une touche ne retire jamais plus qu'il ne reste.
 
-Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche contre l'infanterie est supprimée, D059/D060). La durabilité d'une unité découle directement de son nombre de figurines/PV — **Infanterie 4, Cavalerie 3** (ratio 1,33, socle sur lequel repose le chiffrage des points, voir [[Regles_Points]]). Cette règle unique vaut aussi pour les touches « hors face » (Couronne convertie en touche sur badge Leader, [Charge écrasante] sur Arcane, recul bloqué, piétinement du Mûmakil…) : **1 touche = 1 figurine/PV**, sans exception.
+Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche contre l'infanterie est supprimée, D059/D060). La durabilité d'une unité découle directement de son nombre de figurines/PV — **Infanterie 4, Cavalerie 3** (ratio 1,33, socle sur lequel repose le chiffrage des points, voir [[Regles_Points]]). Cette règle unique vaut aussi pour les touches « hors face » (Couronne convertie en touche sur badge Leader, [Charge écrasante] sur Pouvoir, recul bloqué, piétinement du Mûmakil…) : **1 touche = 1 figurine/PV**, sans exception.
 
 > 💡 **Exemple de jeu**
 > Des Chevaliers (Cavalerie, 🔴 4 dés, mêlée) chargent des Épéistes (Infanterie, mêlée) : 4 dés → Épées croisées, Épée, Épée, Drapeau = **3 touches** (3 figurines retirées) **+ 1 Drapeau** (1 hexagone de recul).
@@ -165,7 +165,7 @@ Certaines règles spéciales ne se notent **pas** sur le profil : elles découle
 
 Trois lignes de force, toutes lisibles à la couleur ou au socle :
 
-- **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure]** d'office (D143) : pour chaque touche subie, elle lance 1 dé et l'annule sur Arcane — ou sur Arcane ou Couronne si elle porte un Leader. C'est la **seule** mécanique de sauvegarde du jeu, la même que celle des Créatures, et elle vaut contre la mêlée comme contre le tir. Il n'y a plus de valeur X : une unité a [Armure] ou ne l'a pas.
+- **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure]** d'office (D143) : pour chaque touche subie, elle lance 1 dé et l'annule sur Pouvoir — ou sur Pouvoir ou Couronne si elle porte un Leader. C'est la **seule** mécanique de sauvegarde du jeu, la même que celle des Créatures, et elle vaut contre la mêlée comme contre le tir. Il n'y a plus de valeur X : une unité a [Armure] ou ne l'a pas.
 - **Cavalerie de mêlée = elle enfonce et poursuit.** Après avoir éliminé ou fait reculer une cible adjacente, elle peut **poursuivre** (§8.2) au lieu d'avancer : **[Poursuite 2]** pour la légère et la standard (plus mobiles), **[Poursuite 1]** pour la lourde (qui traîne son armure). C'est la mécanique de percée du choc de cavalerie.
 - **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de l'ancienne signature [Double Tir] (l'archer immobile qui double la salve — sans porteur actif depuis P4/D072, [[Regles_Speciales]]).
 
@@ -215,7 +215,7 @@ Un tour se déroule en **deux phases** successives.
 
 Le joueur actif choisit **une carte** dans sa main et la joue face visible. Cette carte définit quelles unités peuvent être activées ce tour.
 
-Une fois la carte révélée, le camp actif peut **dépenser des points d'Espoir ou de Désespoir** pour activer des unités supplémentaires (§5.6). C'est le seul moment de la partie où la réserve se dépense.
+Une fois la carte révélée, le camp actif peut **dépenser des points de Pouvoir** pour activer des unités supplémentaires (§5.6). C'est le seul moment de la partie où la réserve se dépense.
 
 > 💡 **Règle d'urgence** : si aucune carte ne couvre les unités que vous souhaitez activer, vous pouvez **ignorer le texte** de n'importe quelle carte et activer **1 unité de votre choix** sur l'ensemble du champ de bataille.
 
@@ -241,9 +241,9 @@ Le joueur actif marque les points de victoire éventuellement gagnés par des **
 
 Le joueur actif pioche une nouvelle carte pour ramener sa main au nombre de cartes de son format. Si le deck est épuisé, mélangez la défausse pour en former un nouveau.
 
-#### g. Étape d'Espoir / de Désespoir
+#### g. Étape de Pouvoir
 
-Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Arcane ne passent pas par cette étape : ils sont posés sur la piste **au moment du lancer**, à l'étape d'attaque. Seul le camp actif en gagne (D137).
+Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Pouvoir ne passent pas par cette étape : ils sont posés sur la piste **au moment du lancer**, à l'étape d'attaque. Seul le camp actif en gagne (D137).
 
 ### 4.1 Fin de partie (D136)
 
@@ -275,8 +275,7 @@ Les **cartes Tactiques** permettent d'activer un nombre limité d'unités selon 
 
 La valeur de commandement est égale au **nombre de cartes dans la main du joueur actif** au moment où il joue sa carte (cette carte comprise).
 
-- **En Phase 1** (sans héros) : la valeur de commandement est déterminée uniquement par la taille de la main.
-- **En Phase 2+** (avec héros) : elle sera recalculée en tenant compte des héros vivants (règle à développer).
+La main du camp compte **4 cartes + 1 par Général vivant**, quel que soit le format (§2.2bis, D147). La valeur de commandement suit donc les Généraux : elle baisse dès que l'un d'eux tombe.
 
 ### 5.4 Règle d'urgence
 
@@ -285,17 +284,17 @@ Si aucune unité éligible ne peut être activée avec la carte jouée (ex. aucu
 ### 5.5 Jeu à plusieurs joueurs (format Épique)
 
 > 🔄 **Résolu (D087)**
-> En Épique, chaque camp compte 3 joueurs (un par Section) mais ne tient **qu'une seule main**, comme en Normal — c'est le joueur Centre qui la tient et décide des cartes jouées, en concertation avec ses coéquipiers Gauche et Droite ; chacun exécute ensuite les activations dans sa propre Section. Un **râtelier de Commandement** partagé (3 cartes visibles des deux camps) vient s'ajouter à la main de chaque camp. Le deck Normal (60 cartes, main de 5) est réutilisé tel quel, sans deck dédié. Détail complet, exemples et erratum : [[Cartes_Commandement]] §7.
+> En Épique, chaque camp compte 3 joueurs (un par Section) mais ne tient **qu'une seule main**, comme en Normal — c'est le joueur Centre qui la tient et décide des cartes jouées, en concertation avec ses coéquipiers Gauche et Droite ; chacun exécute ensuite les activations dans sa propre Section. Un **râtelier de Commandement** partagé (3 cartes visibles des deux camps) vient s'ajouter à la main de chaque camp. Le deck Normal (60 cartes) est réutilisé tel quel, sans deck dédié ; la main de camp compte **4 cartes + 1 par Général vivant** (§2.2bis, D144). Détail complet, exemples et erratum : [[Cartes_Commandement]] §7.
 
-### 5.6 Espoir et Désespoir (D133)
+### 5.6 La réserve de Pouvoir (D133, D148)
 
-Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons sur une piste : l'**Espoir** pour le Bien, le **Désespoir** pour le Mal. Elle sert à activer des unités que la carte jouée ne couvre pas.
+Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons sur une piste : la réserve de **Pouvoir**. Les jetons portent la Rune de Gandalf au Bien, l'Œil de Sauron au Mal — même mécanique (D148). Elle sert à activer des unités que la carte jouée ne couvre pas.
 
 **Gagner des points — deux sources**
 
-- **Les faces Arcane d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose **immédiatement**, au moment du lancer. Ne rapportent **rien** : les **contre-attaques**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
+- **Les faces Pouvoir d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose **immédiatement**, au moment du lancer. Ne rapportent **rien** : les **contre-attaques**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
 
-> 💡 **Règle mémorisable :** *on ne gagne de l'Espoir qu'en attaquant* — donc uniquement dans son propre tour.
+> 💡 **Règle mémorisable :** *on ne gagne du Pouvoir qu'en attaquant* — donc uniquement dans son propre tour.
 - **Le forfait de tour.** Chaque camp gagne **2 points** à la fin de son propre tour (§4, étape g).
 
 Il n'y a **pas de plafond de réserve** : les points s'accumulent librement d'un tour à l'autre.
@@ -317,9 +316,9 @@ Il n'y a **pas de plafond de réserve** : les points s'accumulent librement d'un
 
 > 🎲 **La règle en une phrase.** *Une unité coûte autant de points qu'elle lance de dés.*
 
-> 🔄 **Origine (D133).** Décalque du système de Lore de *BattleLore* (Days of Wonder, V1, 2006), où un symbole de Lore non affecté à un autre usage rapporte un jeton, où l'on peut en prendre deux de plus en fin de tour, et où payer des jetons permet d'ordonner une pièce que la carte ne couvre pas. Deux écarts assumés : chez nous **toute** Arcane rapporte, utilisée ou non — sinon le camp du Mal, seul porteur de règles déclenchées par l'Arcane au Pelennor, aurait un revenu structurellement inférieur ; et l'achat reste **dans sa Section**, là où l'original servait justement à ordonner hors section. Ressuscite la piste Espoir/Désespoir de D001/D034, rangée dans les règles abandonnées depuis D093 ([[Regles_Speciales]] §6).
+> 🔄 **Origine (D133).** Décalque du système de Lore de *BattleLore* (Days of Wonder, V1, 2006), où un symbole de Lore non affecté à un autre usage rapporte un jeton, où l'on peut en prendre deux de plus en fin de tour, et où payer des jetons permet d'ordonner une pièce que la carte ne couvre pas. Deux écarts assumés : chez nous **tout** Pouvoir rapporte, utilisé ou non — sinon le camp du Mal, seul porteur de règles déclenchées par le Pouvoir au Pelennor, aurait un revenu structurellement inférieur ; et l'achat reste **dans sa Section**, là où l'original servait justement à ordonner hors section. Ressuscite la piste Espoir/Désespoir de D001/D034, rangée dans les règles abandonnées depuis D093 ([[Regles_Speciales]] §6).
 
-> ⏭️ **Extension prévue (hors V1).** À terme, un **deck de pouvoirs par camp**, avec des cartes propres à chaque Leader, se jouera également contre des points d'Espoir/Désespoir — miroir complet du Lore de BattleLore V1. Rien n'est développé à ce stade : la réserve ne sert qu'aux activations.
+> ⏭️ **Extension prévue (hors V1).** À terme, un **deck de pouvoirs par camp**, avec des cartes propres à chaque Leader, se jouera également contre des points de Pouvoir — miroir complet du Lore de BattleLore V1. Rien n'est développé à ce stade : la réserve ne sert qu'aux activations.
 
 ---
 
@@ -375,7 +374,7 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 2. **Lancer les dés** : lancer un nombre de dés égal à la valeur d'attaque de l'unité, modifiée par les effets de terrain si applicable.
 3. **Relancer et modifier** : utiliser les capacités ou effets disponibles.
 4. **Compter les touches et les Drapeaux** : identifier les faces actives selon le type d'attaque.
-5. **Appliquer [Armure]** si la cible la porte : **1 dé par touche subie**, la touche est annulée sur **Arcane** — ou sur **Arcane ou Couronne** si l'unité porte un Leader.
+5. **Appliquer [Armure]** si la cible la porte : **1 dé par touche subie**, la touche est annulée sur **Pouvoir** — ou sur **Pouvoir ou Couronne** si l'unité porte un Leader.
 6. **Appliquer [Protection X]** si applicable : ignorer X touches.
 7. **Retirer les figurines** selon la règle générale de dégâts (voir §2.3).
 8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable.
@@ -391,8 +390,8 @@ Les faces actives en mêlée sont :
 - **Épée** : touche — **inactive si l'unité est Faible**
 - **Drapeau** : retraite
 - **Couronne** : touche supplémentaire si l'unité porte le badge Leader (sinon sans effet)
-- **Arcane** : règle spéciale/signature (si profil), sinon échec
-- **Cible** : échec en mêlée
+- **Pouvoir** : règle spéciale/signature (si profil), sinon échec
+- **Arc** : échec en mêlée
 
 ### 7.3 Attaque de tir
 
@@ -407,13 +406,13 @@ Une unité en **mode distance** (jeton arc) peut attaquer une unité ennemie **�
 >
 > Le cavalier archer tire moins loin, mais il décroche : c'est lui qui porte `[Mobilité 2]` et se déplace après avoir tiré. `[Plateforme de tir X]` et `[Howdah]` restent à **1–3**, même logique de tir en mouvement.
 >
-> Avec D125, la lecture au plateau tient en une ligne : **un arc, c'est toujours vert et 2 dés — à pied on tire à 4, à cheval à 3.** Elle peut également attaquer une unité **adjacente** (en utilisant la face Cible comme si c'était du tir).
+> Avec D125, la lecture au plateau tient en une ligne : **un arc, c'est toujours vert et 2 dés — à pied on tire à 4, à cheval à 3.** Elle peut également attaquer une unité **adjacente** (en utilisant la face Arc comme si c'était du tir).
 
 Les faces actives au tir sont :
-- **Cible** : touche inconditionnelle
+- **Arc** : touche inconditionnelle
 - **Drapeau** : retraite
 - **Couronne** : touche supplémentaire si l'unité porte le badge Leader (sinon sans effet)
-- **Arcane** : règle spéciale/signature (si profil), sinon échec
+- **Pouvoir** : règle spéciale/signature (si profil), sinon échec
 - **Épées croisées** et **Épée** : échec au tir
 
 ### 7.4 Ligne de vue
@@ -553,14 +552,14 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 2. Lancer les dés (valeur d'attaque, modifiée par le terrain si applicable — **jamais plus de 6**, §7.5)
 3. Relancer / modifier (effets et capacités)
 4. Compter les touches et les Drapeaux
-5. Appliquer [Armure] si la cible la porte (1 dé par touche, annulée sur Arcane · + Couronne si Leader)
+5. Appliquer [Armure] si la cible la porte (1 dé par touche, annulée sur Pouvoir · + Couronne si Leader)
 6. Appliquer [Protection X] si applicable
 7. Retirer **1 figurine/PV par touche** (§2.3)
 8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable)
 9. Contre-attaque si conditions réunies
 10. Avance si cible éliminée ou en retraite
 
-*Seul le **jet d'attaque** (étape 2) rapporte de l'Espoir/Désespoir : 1 jeton par face Arcane obtenue (§5.6, D137). Ni la contre-attaque, ni le jet d'[Armure], ni le Destin.*
+*Seul le **jet d'attaque** (étape 2) rapporte du Pouvoir : 1 jeton par face Pouvoir obtenue (§5.6, D137). Ni la contre-attaque, ni le jet d'[Armure], ni le Destin.*
 
 ### Dégâts
 
@@ -572,10 +571,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 |---|---|---|
 | Épées croisées | 1 touche | Échec |
 | Épée | 1 touche (sauf si Faible) | Échec |
-| Cible | Échec | 1 touche |
+| Arc | Échec | 1 touche |
 | Drapeau | 1 hex de retraite | 1 hex de retraite |
 | Couronne | 1 touche si badge Leader, sinon sans effet | 1 touche si badge Leader, sinon sans effet |
-| Arcane *(Rune / Œil)* | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir si c'est un jet d'attaque** | Règle spéciale/signature (si profil), sinon échec — **et 1 point d'Espoir/Désespoir si c'est un jet d'attaque** |
+| Pouvoir *(Rune / Œil)* | Règle spéciale/signature (si profil), sinon échec — **et 1 point de Pouvoir si c'est un jet d'attaque** | Règle spéciale/signature (si profil), sinon échec — **et 1 point de Pouvoir si c'est un jet d'attaque** |
 
 *Le **jeton classe/mode** (couleur + symbole, §2.1-2.2) détermine quelles faces l'unité lit. Chaque touche retire **1 figurine/PV** (§2.3).*
 
@@ -584,7 +583,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | Règle | Résumé |
 |---|---|
 | **Faible** | Dernière figurine : Épée inactive en attaque *(sauf badge Élite, Jamais Faible)* |
-| **[Armure]** | 1 dé par touche subie, annulée sur Arcane (+ Couronne si Leader) — mêlée et tir |
+| **[Armure]** | 1 dé par touche subie, annulée sur Pouvoir (+ Couronne si Leader) — mêlée et tir |
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
@@ -611,6 +610,14 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 > ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
 
 ---
+
+*Version : 0.25 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : §2.1, §2.2, §2.3, §7.2, §7.3, résumé des faces. Le mot « cible » en minuscule (l'unité visée) est inchangé.*
+
+*Version : 0.24 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : §2.1 (dés et piste), §2.3, §2.4, §4 (étapes a et g), §5.6 renommé, §7.1-§7.3, récapitulatifs. La note d'origine du §5.6 garde sa mention historique de la piste Espoir/Désespoir de D001/D034.*
+
+*Version : 0.23 — Phase 1 — 2026-09-23. **D147 — le Général est généralisé à tous les formats.** §2.2bis : main de camp = 4 cartes + 1 par Général vivant partout, avec un plafond de composition de 2 Généraux par camp en Escarmouche, 3 en Normal, aucun en Épique. §5.3 réécrit : il renvoyait encore à un recalcul « en Phase 2+ avec héros », périmé depuis D093.*
+
+*Version : 0.22 — Phase 1 — 2026-09-23. **P14a.1 — cadrage du livret de règles (D144, D145).** **D144** : la main de camp en format Épique compte **4 cartes + 1 par Général vivant** — §2.2bis précisé (main *du camp*, format Épique), §5.5 corrigé (il indiquait une main de 5). **D145** : terminologie — la règle de Destin parle désormais de **peuple** et non de faction (§2.2bis, deux occurrences, plus les Leaders universels), « Faction » ne désignant plus que le badge. Aucun coût modifié.*
 
 *Version : 0.21 — Phase 1 — 2026-09-19. **P13 — correctifs du Playtest #5 (D136, D137, D143).** **D143** : `[Armure X]` est supprimée, il n'existe plus qu'une seule mécanique de sauvegarde — **[Armure]**, 1 dé par touche subie, annulée sur Arcane (ou Arcane/Couronne avec un Leader), valable en mêlée comme au tir. Elle est intrinsèque à tout 🔴 (§2.4) et à toute Créature (§2.2). Plus aucune valeur X : §2.4 réécrit, séquence de combat §7.1 réordonnée (la sauvegarde se résout **après** le décompte des touches, plus avant), séquence résumée, mémo et exemples alignés. **D137** : le gain d'Espoir/Désespoir est limité aux **jets d'attaque** — ni contre-attaque, ni sauvegarde d'[Armure], ni Destin (§5.6, étape g, résumé des faces). **D136** : les notions de **tour** et de **manche** sont distinguées en tête du §4, le scénario désigne le camp qui ouvre, et un nouveau **§4.1** fixe la fin de partie — on termine la manche en cours puis on en joue une dernière, annoncée comme telle. Aucun coût modifié dans ce document.*
 

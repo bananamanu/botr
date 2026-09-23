@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/faction", "peuple/orientaux", "statut/brouillon"]
-version: "3.2"
+version: "3.3"
 ---
 
 # Orientaux — Profils d'unités
@@ -22,7 +22,7 @@ version: "3.2"
 
 **Outil optionnel**, +2 brut. Disponible uniquement sur les **Cohortes** (guerriers et piquiers) — pas les archers, pas les Cataphractaires, dont l'identité ne repose pas sur la formation serrée.
 
-> 🔄 **D143 — le composant défensif devient [Armure].** [Défense 1] a disparu avec [Armure X] : la posture confère désormais la sauvegarde unique du jeu — 1 dé par touche subie, annulée sur Arcane (+ Couronne avec un Leader), **contre le tir comme en mêlée**. La posture y gagne : elle protège maintenant l'unité sous les flèches, ce qui est précisément la situation où renoncer à la riposte ne coûte rien. **Coût inchangé à +2 brut**, à reconfirmer — voir `[[Regles_Points]]` §8 point 4.
+> 🔄 **D143 — le composant défensif devient [Armure].** [Défense 1] a disparu avec [Armure X] : la posture confère désormais la sauvegarde unique du jeu — 1 dé par touche subie, annulée sur Pouvoir (+ Couronne avec un Leader), **contre le tir comme en mêlée**. La posture y gagne : elle protège maintenant l'unité sous les flèches, ce qui est précisément la situation où renoncer à la riposte ne coûte rien. **Coût inchangé à +2 brut**, à reconfirmer — voir `[[Regles_Points]]` §8 point 4.
 
 > 🔄 **D142 — confirmée telle quelle après le Playtest #5.** Jamais activée de la partie, mais le solo ne peut pas juger une posture défensive : personne n'y a de point à tenir comme objectif propre. L'occasion manquée a été identifiée après coup — une Cohorte tenait un point stratégique en fin de partie, peu susceptible d'être attaquée. À rappeler au briefing du joueur de Section droite du Mal.
 
@@ -81,6 +81,8 @@ Aucun Leader nommé côté Orientaux au Playtest #4. Badge **Bannière** porté 
 *Version : 3.1 — Phase 1 — 2026-08-30. **D124 — cases de coût comblées.** Les combinaisons de badges sur les Cohortes 🔵 sont explicitées : Faction seule, Bannière seule et les deux ensemble coûtent toutes **5** (brut 17, 17 et 19, tous compressés vers 5). La case Faction + Bannière manquait et faussait le chiffrage du Pelennor d'un point.*
 
 *Version : 3.2 — Phase 1 — 2026-09-19. **P13 — D143 et D142.** [Discipline de cohorte] confère désormais **[Armure] + [Inébranlable 1]** au lieu de [Défense 1] + [Inébranlable 1] : [Défense X] a disparu avec [Armure X], la sauvegarde unique du jeu la remplace et vaut aussi contre le tir. **Aucun coût modifié** — le forfait de +2 brut est reconduit, à reconfirmer (`[[Regles_Points]]` §8, point 4). D142 : la règle est confirmée en l'état après le Playtest #5, où elle n'a pas été activée — le solo ne pouvant juger une posture défensive. Aucun profil retouché.*
+
+*Version : 3.3 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : [Discipline de cohorte]. Aucun coût modifié.*
 
 *Version : 3.0 — Phase 1 — 2026-08-23. **Nouvelle Faction (D104) + simplification radicale (D101/D102).** [Discipline de cohorte] remplace [Défense X] : posture défensive activée (renonce à la riposte, gagne Défense 1 + Inébranlable 1), +2 brut, disponible seulement sur les deux Cohortes (guerriers, piquiers) — pas les archers ni les Cataphractaires. Plus aucun badge par défaut ailleurs sur le roster.*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-08-30"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.9"
+version: "1.10"
 ---
 
 # Mordor — Profils d'unités
@@ -65,7 +65,7 @@ version: "1.9"
 
 **Règles :** **[Relance 1]** (fixe, signature — le coup de massue qui ne rate pas deux fois).
 
-**Défense (D103) :** **[Armure]** (sans X) — jet de sauvetage 1d6 contre chaque touche reçue, annulée sur Arcane. Remplace l'ancien [Armure 1] intrinsèque (mécanique différente, valeur équivalente). Intrinsèque, gratuit — comme avant.
+**Défense (D103) :** **[Armure]** (sans X) — jet de sauvetage 1d6 contre chaque touche reçue, annulée sur Pouvoir. Remplace l'ancien [Armure 1] intrinsèque (mécanique différente, valeur équivalente). Intrinsèque, gratuit — comme avant.
 
 **Chiffrage (inchangé) :** brut = 2 (Mvt) + 4 (PV) + 12 (Atk 4×3) + 2 (Relance 1) = 20 → round(20÷3)−1 = 6, **+1 prime de pièce signature** = **7**.
 
@@ -77,7 +77,7 @@ version: "1.9"
 |---|---|---|---|---|---|---|
 | Créature | Mêlée | 🔴 *(nominal)* | [Vol] 4 cases *(ignore les figurines)* | 4 dés | 6 | **10** *(base)* / **17** *(avec Général+Destin 4, forme jouée au Pelennor)* |
 
-**Règles :** [Terreur] (Arcane = 2 Drapeaux) · [Vigilant] (jamais contre-attaqué) · [Vol] (bespoke, 4 cases, ignore les figurines).
+**Règles :** [Terreur] (Pouvoir = 2 Drapeaux) · [Vigilant] (jamais contre-attaqué) · [Vol] (bespoke, 4 cases, ignore les figurines).
 
 **Défense (D103) :** **[Armure]** — même refonte que le Troll et le Mûmakil, remplace l'ancien [Armure 1] intrinsèque. Aucun changement de coût (déjà gratuit).
 
@@ -123,6 +123,8 @@ version: "1.9"
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change nettement le ressenti par rapport aux deux versions précédentes, à surveiller au prochain playtest.
 
 ---
+
+*Version : 1.10 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : [Armure] du Troll, [Terreur] du Roi-Sorcier. Aucun coût modifié.*
 
 *Version : 1.9 — Phase 1 — 2026-08-30. **D124 — cases de coût comblées.** Les combinaisons de badges sur les bandes d'orques 🔵 sont explicitées : [Horde] seul est absorbé (4), Bannière seule coûte +1 (5), et [Horde] + Bannière ne coûte pas plus que la Bannière seule (5). Ces cases manquaient et faussaient le chiffrage du Pelennor, où le Morannon avait été surévalué d'un point par unité.*
 

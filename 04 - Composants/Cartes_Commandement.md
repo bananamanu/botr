@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-06"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.10"
+version: "0.15"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -49,7 +49,7 @@ En Phase 1, la valeur de commandement est fixée par le format (voir §3). En Ph
 > 💡 **Exemple de jeu**
 > Un joueur joue "Percée Gauche" avec 4 cartes en main (dont "Percée Gauche" elle-même). Sa valeur de commandement est 4 : il peut activer jusqu'à 4 unités dans la section gauche.
 
-> ⚔️ **Ordre direct en Épique (D129).** Sur un plateau de 13 × 17 avec 60 unités en jeu, activer une seule unité n'a plus de portée. En format **Épique uniquement**, Ordre direct active **`valeur de commandement ÷ 2`, arrondie au supérieur** — soit **3 unités** avec la main de camp de 5 cartes. Le +1 dé s'applique à chacune. Les formats Normal et Escarmouche gardent l'unité unique.
+> ⚔️ **Ordre direct en Épique (D129).** Sur un plateau de 13 × 17 avec 60 unités en jeu, activer une seule unité n'a plus de portée. En format **Épique uniquement**, Ordre direct active **`valeur de commandement ÷ 2`, arrondie au supérieur** — soit, au Pelennor en début de partie, **4 unités** pour le Bien (main de 8 cartes) et **3** pour le Mal (main de 6), la main de camp comptant 4 cartes + 1 par Général vivant (D144). Le +1 dé s'applique à chacune. Les formats Normal et Escarmouche gardent l'unité unique.
 
 ### 1.3 Deck partagé
 
@@ -99,12 +99,12 @@ Chaque carte de commandement comporte les informations suivantes, du haut vers l
 
 | Format | Plateau | Sections | Main de départ | Taille du deck |
 |---|---|---|---|---|
-| **Escarmouche** | 10 × 7 | 3 (G / C / D) | 4 cartes | 45 cartes |
-| **Normal** | 13 × 9 | 3 (G / C / D) | 5 cartes | 60 cartes |
-| **Épique** | 13 × 17 | 3 (G / C / D) | 5 cartes (main de camp, tenue par le joueur Centre) | 60 cartes (deck Normal réutilisé tel quel) |
+| **Escarmouche** | 10 × 7 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **2 Généraux max** par camp (D147) | 45 cartes |
+| **Normal** | 13 × 9 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **3 Généraux max** par camp (D147) | 60 cartes |
+| **Épique** | 13 × 17 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **sans limite** de Généraux (main de camp, tenue par le joueur Centre — D144, D147) | 60 cartes (deck Normal réutilisé tel quel) |
 
 > 🔄 **Résolu (D087)**
-> Le format Épique réutilise le deck Normal sans modification — même 60 cartes, même main de départ. La montée en puissance à 6 joueurs vient du **râtelier de Commandement** partagé (§7), pas d'un deck dédié. Adapté d'*Epic BattleLore* (Days of Wonder, V1, 2007).
+> Le format Épique réutilise le deck Normal sans modification — mêmes 60 cartes, même règle de main : 4 cartes + 1 par Général vivant du camp (D144, D147, [[Regles_Base]] §2.2bis). La montée en puissance à 6 joueurs vient du **râtelier de Commandement** partagé (§7), pas d'un deck dédié. Adapté d'*Epic BattleLore* (Days of Wonder, V1, 2007).
 
 ### 3.2 Logique de différenciation des decks
 
@@ -115,14 +115,19 @@ Le deck Escarmouche est un **sous-ensemble strict** du deck Normal. On retire le
 
 **Total retiré : 15 cartes. Deck Escarmouche : 45 cartes.**
 
-Toutes les autres cartes, y compris les Percées (activation variable selon la main) et les cartes Classe (activation variable par couleur), sont conservées. Sur un plateau réduit avec une main de 4 cartes, la valeur de commandement est naturellement plus basse qu'en Normal, ce qui calibre automatiquement leur puissance.
+Toutes les autres cartes, y compris les Percées (activation variable selon la main) et les cartes Classe (activation variable par couleur), sont conservées. Sur un plateau réduit, le plafond de 2 Généraux limite la main à 6 cartes (7 en Normal), ce qui calibre automatiquement leur puissance.
 
 ### 3.3 La valeur de commandement par format
 
 La main de départ détermine la valeur de commandement de base pour les cartes à activation variable :
 
-- **Normal** : main de 5 cartes → valeur de commandement de départ = 5
-- **Escarmouche** : main de 4 cartes → valeur de commandement de départ = 4
+Dans tous les formats, la main compte **4 cartes + 1 par Général vivant** du camp (D147) :
+
+- **Escarmouche** : 2 Généraux au plus → main de 4 à 6 cartes
+- **Normal** : 3 Généraux au plus → main de 4 à 7 cartes
+- **Épique** : aucune limite → au Pelennor, valeur de départ = 8 pour le Bien, 6 pour le Mal
+
+La main baisse immédiatement dès qu'un Général tombe.
 
 La valeur de commandement fluctue en cours de partie selon les cartes jouées et piochées, ce qui crée une tension dynamique : jouer une carte réduit temporairement la valeur de commandement avant que la pioche ne la rétablisse.
 
@@ -215,10 +220,10 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 | Pluie de flèches | 2 | Activez toutes vos unités capables de tirer à distance, dans n'importe quelle section. Ces unités tirent deux fois ce tour, mais ne peuvent pas se déplacer ni tirer à bout portant. Si vous ne contrôlez aucune unité à distance, activez 1 unité de votre choix. |
 | Ordre direct | 2 | Activez 1 unité de votre choix, dans n'importe quelle section — **en Épique, `valeur de commandement ÷ 2` arrondie au supérieur (D129)**. Cette ou ces unités combattent à **+1 dé** pour toute la durée du tour. |
 | Contre-attaque | 2 | Jouez cette carte en réponse à la carte que vient de jouer votre adversaire. Vous exécutez le même ordre que lui : si c'est une carte de section, la section gauche devient la droite et vice-versa. Si c'est une carte tactique, appliquez l'effet identique. |
-| Cri de guerre | 1 | Lancez autant de dés de bataille que votre valeur de commandement. Pour chaque face **Épée** ou **Épées croisées** obtenue, activez 1 unité de mêlée de votre choix. Pour chaque face **Cible** obtenue, activez 1 unité à distance de votre choix. Pour chaque face **Couronne** obtenue, activez 1 unité de votre choix. Toutes les unités ainsi activées combattent à **+1 dé** pour ce tour. Puis mélangez la défausse avec la pioche. |
+| Cri de guerre | 1 | Lancez autant de dés de bataille que votre valeur de commandement. Pour chaque face **Épée** ou **Épées croisées** obtenue, activez 1 unité de mêlée de votre choix. Pour chaque face **Arc** obtenue, activez 1 unité à distance de votre choix. Pour chaque face **Couronne** obtenue, activez 1 unité de votre choix. Toutes les unités ainsi activées combattent à **+1 dé** pour ce tour. Puis mélangez la défausse avec la pioche. |
 
 > 🎲 **Note de design — Cri de guerre**
-> La carte utilise les faces des dés comme mécanisme de sélection d'unités : Épée et Épées croisées → mêlée, Cible → distance, Couronne → libre. Les faces Drapeau et Arcane n'activent aucune unité. La pioche est mélangée immédiatement, quel que soit le résultat des dés. Adaptée de la carte éponyme « Battlelore » (BattleLore V1) — celle-ci active par **couleur de dé obtenue** (nos dés BattleLore V2 n'ont pas de faces bannière), remplacée ici par une activation par **symbole de dé**, seule modification nécessaire à la reprise du deck V1 (D088). Le nom "Cri de guerre" date de D019 (étape intermédiaire "Ruée générale", depuis "Arcanes de guerre" jugé trop connoté magie).
+> La carte utilise les faces des dés comme mécanisme de sélection d'unités : Épée et Épées croisées → mêlée, Arc → distance, Couronne → libre. Les faces Drapeau et Pouvoir n'activent aucune unité. La pioche est mélangée immédiatement, quel que soit le résultat des dés. Adaptée de la carte éponyme « Battlelore » (BattleLore V1) — celle-ci active par **couleur de dé obtenue** (nos dés BattleLore V2 n'ont pas de faces bannière), remplacée ici par une activation par **symbole de dé**, seule modification nécessaire à la reprise du deck V1 (D088). Le nom "Cri de guerre" date de D019 (étape intermédiaire "Ruée générale", depuis "Arcanes de guerre" jugé trop connoté magie).
 
 ---
 
@@ -251,7 +256,7 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 1. **Choisir le format** de la bataille.
 2. **Prendre le deck correspondant**, déjà constitué et maintenu séparé des autres decks.
 3. **Mélanger le deck** à la vue des deux camps.
-4. **Chaque camp pioche** le nombre de cartes de départ indiqué par le format (5 en Normal, 4 en Escarmouche) pour constituer sa main secrète.
+4. **Chaque camp pioche** le nombre de cartes de départ indiqué par le format (4 + 1 par Général vivant, dans tous les formats) pour constituer sa main secrète.
 5. Le reste du deck forme la **pioche centrale**, placée face cachée entre les joueurs.
 
 ### 5.2 Gestion de la pioche en cours de partie
@@ -264,7 +269,7 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 Si un joueur se retrouve sans carte en main en début de son tour (situation rare mais possible en fin de pioche), il pioche immédiatement **2 cartes** avant de jouer.
 
 > 💡 **Exemple de jeu**
-> Début de partie en format Normal. Le camp du Bien pioche 5 cartes : Patrouille Centre, Charge de cavalerie, Attaque Droite, Éclaireur Gauche, En marche. Sa valeur de commandement est 5. Il joue "Charge de cavalerie" et peut activer jusqu'à 5 unités de cavalerie sur tout le plateau, chacune avec +1 dé en mêlée. Il défausse la carte, pioche 1 carte, et sa main revient à 5.
+> Début de partie en format Normal. Le camp du Bien aligne un Général : il pioche 4 + 1 = 5 cartes : Patrouille Centre, Charge de cavalerie, Attaque Droite, Éclaireur Gauche, En marche. Sa valeur de commandement est 5. Il joue "Charge de cavalerie" et peut activer jusqu'à 5 unités de cavalerie sur tout le plateau, chacune avec +1 dé en mêlée. Il défausse la carte, pioche 1 carte, et sa main revient à 5.
 
 ---
 
@@ -336,7 +341,7 @@ Si l'adversaire vient de jouer 2 cartes de section (§7.3), « Contre-attaque »
 
 L'alternance des tours entre les deux camps reste celle du format Normal — un camp joue, puis l'autre, sans changement lié au nombre de joueurs. Le premier camp à jouer est déterminé par le scénario (voir le document de scénario concerné), pas par une règle de commandement.
 
-### 7.7 Espoir et Désespoir à trois joueurs (D133)
+### 7.7 La réserve de Pouvoir à trois joueurs (D133, D148)
 
 La réserve est **commune au camp** : une seule piste, trois joueurs qui y puisent. Elle se dépense à l'**étape de commandement**, une fois la ou les cartes révélées, et **chaque joueur décide pour sa propre Section** — ce n'est pas une prérogative du joueur Centre, contrairement au choix des cartes (§7.1).
 
@@ -346,7 +351,7 @@ La réserve est **commune au camp** : une seule piste, trois joueurs qui y puise
 - La réserve étant commune et limitée, **l'arbitrage entre les trois joueurs se fait à la discussion**. En cas de désaccord, le **joueur Centre tranche** — il tient déjà la main.
 
 > 💡 **Exemple de jeu**
-> Le camp Bien joue « Attaque Gauche » : 3 unités activées à gauche. Sa piste d'Espoir affiche 11 points. Le joueur Gauche ajoute une Compagnie Grise 🔴 (4 points) ; le joueur Droite, que la carte ne sert pas du tout, ajoute deux Éored 🔵 (3 + 3 = 6 points). Il reste 1 point sur la piste, et le camp a activé 6 unités au lieu de 3.
+> Le camp Bien joue « Attaque Gauche » : 3 unités activées à gauche. Sa piste de Pouvoir affiche 11 points. Le joueur Gauche ajoute une Compagnie Grise 🔴 (4 points) ; le joueur Droite, que la carte ne sert pas du tout, ajoute deux Éored 🔵 (3 + 3 = 6 points). Il reste 1 point sur la piste, et le camp a activé 6 unités au lieu de 3.
 
 > ⚠️ **Pas de plafond de réserve.** Un camp peut thésauriser plusieurs tours puis lâcher 6 achats d'un coup — de l'ordre de 18 points, soit 3 à 4 tours d'épargne. C'est un coup de poing volontairement possible ; c'est aussi un tour long, à surveiller contre la limite de 3 heures du scénario Épique.
 
@@ -358,6 +363,14 @@ Règle complète et sources de gain : [[Regles_Base]] §5.6.
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.15 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : texte et note de « Cri de guerre » (§4.2).*
+
+*Version : 0.14 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : note de « Cri de guerre » (§4.2), §7.7 renommé et son exemple. Le nom historique « Arcanes de guerre » (D019) est conservé.*
+
+*Version : 0.13 — Phase 1 — 2026-09-23. **D147 — la main vaut 4 cartes + 1 par Général vivant dans tous les formats**, avec 2 Généraux au plus en Escarmouche, 3 en Normal, sans limite en Épique. §3.1 (tableau et note), §3.2, §3.3 réécrit, §5.1 étape 4, exemple §5.3 (le Bien y aligne désormais un Général pour retrouver ses 5 cartes). Les decks eux-mêmes ne changent pas.*
+
+*Version : 0.12 — Phase 1 — 2026-09-23. **D144 — la main de camp Épique compte 4 cartes + 1 par Général vivant**, et non 5 cartes. §1.2 (exemple d'Ordre direct D129 recalculé : 4 unités pour le Bien, 3 pour le Mal au Pelennor), §3.1 (tableau et note D087), §3.3 (ligne Épique ajoutée), §5.1 (étape 4). **Correction de forme, sans numéro D** : le frontmatter était resté à `version: 0.10` alors que le changelog portait déjà la 0.11 du 10/09 — bump oublié, corrigé ici.*
 
 *Version : 0.11 — Phase 1 — 2026-09-10. **D133 — nouveau §7.7, Espoir et Désespoir à trois joueurs.** La réserve est commune au camp mais la dépense est décidée **par chaque joueur pour sa propre Section**, à l'étape de commandement, dans la limite de 2 unités par joueur et par tour (6 pour le camp). Précise le cas des hexagones de frontière, le cumul avec les deux cartes de section du tour, l'arbitrage par le joueur Centre en cas de désaccord, et le risque de tour long lié à l'absence de plafond de réserve. Règle complète dans [[Regles_Base]] §5.6 — aucune carte du deck n'est modifiée.*
 

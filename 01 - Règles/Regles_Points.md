@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.34"
+version: "0.37"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -22,7 +22,7 @@ Trois faits, hérités du pivot, rendent la matrice possible :
 
 1. **La classe fixe l'attaque.** Le nombre de dés n'est plus libre (2–4) : il **est** la couleur — 🟢 2, 🔵 3, 🔴 4. Une variable de moins.
 2. **Le type fixe la durabilité et les PV.** Infanterie 4 figurines, Cavalerie 3. La double-touche ayant disparu (**1 touche = 1 figurine**, [[Regles_Base]] §2.3), la durabilité **est** le nombre de figurines : ratio Inf:Cav = **4:3 = 1,33** — identique à l'ancien ratio de durabilité (12:9), mais désormais lisible sans aucun calcul. *(L'ancien §1 « durabilité effective ÷ perte moyenne » est caduc : sans double-touche, il n'y a plus rien à corriger.)*
-3. **Le mode fixe le rendement du dé.** La mêlée touche sur deux faces (Épées croisées, Épée), le tir sur une (Cible) : un dé de mêlée vaut ~1,5× un dé de tir. On garde **D = 3 en mêlée, D = 2 au tir**.
+3. **Le mode fixe le rendement du dé.** La mêlée touche sur deux faces (Épées croisées, Épée), le tir sur une (Arc) : un dé de mêlée vaut ~1,5× un dé de tir. On garde **D = 3 en mêlée, D = 2 au tir**.
 
 **Conséquence directe du rebase de durabilité (Inf 6→4 PV).** Le terme PV de l'infanterie chute de 2 : l'infanterie à règles glisse d'environ **un palier vers le bas** (plus fragile, moins chère). C'est l'effet recherché. La cavalerie (PV inchangés à 3) bouge peu ; la cavalerie **lourde** perd un point de socle car la grille de mouvement lui donne Mvt 2 (elle troque désormais vitesse contre frappe, [[Regles_Base]] §6.1).
 
@@ -113,7 +113,7 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062), **réaligné P8** (D
 
 | Règle | Coût | Note |
 |---|---|---|
-| **[Armure]** | **0** *(intrinsèque)* sur 🔴 et sur les Créatures · **2** *(forfait)* si conférée à une autre unité | **D143, P13 — [Armure X] et [Défense X] sont supprimées du barème** ; il n'existe plus de valeur X à multiplier. Jet de sauvegarde 1d6 par touche (Arcane annule, + Couronne si Leader), mêlée et tir. Le forfait de 2 reprend l'ancien tarif de [Défense 1] : **valeur à reconfirmer**, la règle unifiée étant plus forte que la réduction statique qu'elle remplace (voir §8). |
+| **[Armure]** | **0** *(intrinsèque)* sur 🔴 et sur les Créatures · **2** *(forfait)* si conférée à une autre unité | **D143, P13 — [Armure X] et [Défense X] sont supprimées du barème** ; il n'existe plus de valeur X à multiplier. Jet de sauvegarde 1d6 par touche (Pouvoir annule, + Couronne si Leader), mêlée et tir. Le forfait de 2 reprend l'ancien tarif de [Défense 1] : **valeur à reconfirmer**, la règle unifiée étant plus forte que la réduction statique qu'elle remplace (voir §8). |
 | **[Inébranlable X]** | 2 × X | Socle libre. Si l'unité porte déjà [Inébranlable 1] via Bannière ou Leader, le premier point est inclus → ne facturer que l'excédent. |
 | **[Inébranlable ∞]** | 6 *(forfait, bespoke)* | ≈3× le forfait standard [Inébranlable 1] — jugement par analogie (D079). Porteurs : Mûmakil, Garde du Roi (Rohan, P8). |
 | **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. *(Sur les Créatures, supersedée par [Armure] — D103.)* |
@@ -228,7 +228,10 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 - ~~**Équilibre Pelennor acté à 219 Bien / 220 Mal**~~ — **chiffre erroné, superseded par D124.** Le recalcul depuis le brut de matrice donne **216 Bien / 215 Mal**, soit 1 point d'écart en faveur du Bien. Le 219/220 n'est reproductible par aucune méthode cohérente sur les rosters en vigueur ; il provenait vraisemblablement d'un comptage sous le régime antérieur à D101, où le badge Faction était porté par toutes les unités éligibles. La décision de fond de D114 — **acter la quasi-parité sans retoucher les effectifs** — reste valide ; seul le chiffre change. Ordre de bataille de référence du **Playtest #5** (12/09) : `[[Pelennor_Epique]]` §3.
 
 **Actés (D143, P13, 2026-09-19) :**
-- **[Armure X] et [Défense X] disparaissent du barème.** Il n'existe plus qu'une mécanique de sauvegarde, sans valeur X : **[Armure]**, 1 dé par touche, annulée sur Arcane (+ Couronne avec un Leader), mêlée et tir. Elle reste **intrinsèque et gratuite** sur toute unité 🔴 et sur toute Créature — donc **aucun coût de profil ne bouge de ce seul fait**, et le brut de 2 inscrit à la case Inf/Cav 🔴 de la matrice (§5) est conservé tel quel.
+- **[Armure X] et [Défense X] disparaissent du barème.** Il n'existe plus qu'une mécanique de sauvegarde, sans valeur X : **[Armure]**, 1 dé par touche, annulée sur Pouvoir (+ Couronne avec un Leader), mêlée et tir. Elle reste **intrinsèque et gratuite** sur toute unité 🔴 et sur toute Créature — donc **aucun coût de profil ne bouge de ce seul fait**, et le brut de 2 inscrit à la case Inf/Cav 🔴 de la matrice (§5) est conservé tel quel.
+
+**Actés (D147, P14a, 2026-09-23) :**
+- **Le Général vaut dans tous les formats** : main = 4 cartes + 1 par Général vivant, avec au plus 2 Généraux par camp en Escarmouche, 3 en Normal, aucune limite en Épique. Le plafond est une contrainte de **composition d'armée**, pas un plafond de main. Forfait de **+9 inchangé**.
 
 **Ouverts :**
 1. ~~**Roi-Sorcier à 17 pts**~~ — **résolu (D112)**, voir ci-dessus.
@@ -237,8 +240,15 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 **Méthode de chiffrage d'un ordre de bataille (D124).** Toujours partir du **brut de matrice** (§5) et non des coûts finaux des rosters : la compression `round(brut ÷ 3) − 1` n'est pas linéaire, et additionner des coûts finaux produit des erreurs d'un point par unité, dans les deux sens. Contrôle de cohérence disponible : les variantes avec Leader publiées aux rosters (Éomer 13, Théoden 12, Imrahil 14, Gothmog 11, Suladan 9, Roi de Khand 9) doivent toutes retomber sur le calcul.
 4. ⚠️ **Tarif de la sauvegarde conférée par badge, ouvert depuis D143.** Deux forfaits à **+2 brut** achetaient [Défense 1] — réduction statique d'une face Épée, en mêlée seulement : **[Discipline de cohorte]** (Orientaux, D104, en composant) et **Elladan** (Compagnie Grise, `Gondor_et_Fiefs`). Ils achètent désormais [Armure], nettement plus forte : elle joue aussi **contre le tir** et sauve **toutes** les faces, Épées croisées comprises. Le tarif est **conservé en l'état** faute de mesure — la règle unifiée n'a été éprouvée qu'en intrinsèque, jamais en badge payant, et aucun playtest n'est prévu avant la convention. À reprendre depuis le brut de matrice à la première occasion. Impact chiffré du report : deux unités du Pelennor, aucune incidence sur l'équilibre par Section.
 3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
+5. ⚠️ **Tarif du Général hors Épique, ouvert depuis D147.** Le forfait de **+9** a été fixé et éprouvé en Épique, sur des mains de 6 à 8 cartes. Une carte de plus pèse proportionnellement davantage dans une petite main : passer de 4 à 5 cartes, c'est +25 %, contre +12 % de 8 à 9. Tarif **conservé en l'état** faute de scénario Escarmouche ou Normal avec Général — à reprendre au premier d'entre eux.
 
 ---
+
+*Version : 0.37 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : §2 (valeur relative des dés). Aucun coût modifié.*
+
+*Version : 0.36 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : mentions d'[Armure] (§3.4, §8). Aucun coût modifié.*
+
+*Version : 0.35 — Phase 1 — 2026-09-23. **D147 — Général généralisé à tous les formats.** §8 : nouveau bloc d'actés (main 4 + Généraux partout, plafonds de composition 2 / 3 / aucun) et **point ouvert n°5** — le forfait de +9, fixé en Épique, pèse relativement plus dans les petites mains ; conservé faute de mesure. Aucun coût de profil modifié.*
 
 *Version : 0.34 — Phase 1 — 2026-09-19. **P13 — D143, suppression d'[Armure X] et de [Défense X] du barème.** Les deux lignes fusionnent en une entrée **[Armure]** unique : gratuite en intrinsèque sur 🔴 et sur les Créatures, forfait de 2 quand un badge la confère. Il n'y a plus de valeur X à multiplier, donc plus d'excédent à facturer au-dessus d'un plancher. **Aucun coût de profil ne change** : la mécanique était déjà gratuite là où elle est intrinsèque, et le brut de 2 de la case 🔴 mêlée (§5) est conservé. §3.2 : la ligne Orientaux, restée à [Défense 1] depuis avant D104, est mise à jour vers [Discipline de cohorte]. §8 : nouveau bloc d'actés, et **point ouvert n°4** — le forfait de +2 qui achetait [Défense 1] ([Discipline de cohorte], Elladan) achète désormais une règle plus forte, tarif reconduit faute de mesure, à reprendre depuis le brut. Exemples §7 et rappel des intrinsèques §3.1 alignés.*
 

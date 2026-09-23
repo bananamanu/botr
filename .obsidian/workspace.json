@@ -198,8 +198,11 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "615b2779f8225468",
+  "active": "730387c2e5f186e4",
   "lastOpenFiles": [
+    "08 - Livret/Livret_de_regles.md",
+    "08 - Livret/00_Conventions_et_glossaire.md",
+    "08 - Livret",
     "05 - Playtest/Playtest5_Compte-rendu.md",
     "07 - Aides de jeu/5b_Roster_Mal.pdf",
     "07 - Aides de jeu/5a_Roster_Bien.pdf",
@@ -211,7 +214,6 @@
     "06 - Images/plans/BdTdM_Pelennor_zones.pdf",
     "06 - Images/plans/BdTdM_plan_Epique_vierge.pdf",
     "06 - Images/plans/BdTdM_Pelennor_zones_final.pdf",
-    "06 - Images/plans",
     "02 - Factions/Harad.md",
     "03 - Scénarios/Pelennor_Epique.md",
     "01 - Règles/Regles_Base.md",
@@ -243,8 +245,6 @@
     "01 - Règles/Regles_Speciales (1).md",
     "02 - Factions/Easterling.md",
     "03 - Scénarios/Playtest2_La_grande_bete.md",
-    "05 - Playtest/Playtest1b_Addendum.md",
-    "05 - Playtest/Playtest1_Compte-rendu.md",
-    "03 - Scénarios/Playtest1_Avant-garde_sur_le_Pelennor.md"
+    "05 - Playtest/Playtest1b_Addendum.md"
   ]
 }

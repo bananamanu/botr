@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-06"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "2.1"
+version: "2.2"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -18,7 +18,7 @@ version: "2.1"
 
 ## 1. Faction du Harad — [Poison]
 
-Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le roster d'escorte (1-6).
+Pouvoir inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le roster d'escorte (1-6).
 
 ---
 
@@ -65,7 +65,7 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 
 **Règles spéciales :** [Charge écrasante] *(bespoke)* · [Howdah] *(= [Plateforme de tir 2])* · [Inébranlable ∞] · [Bête incontrôlable] *(bespoke, Furie)*.
 
-**Défense (D103, refonte P8) :** porte désormais **[Armure]** (sans X) au lieu de l'ancien duo [Armure 1] intrinsèque + [Protection 1] payant — jet de sauvetage 1d6 contre chaque touche reçue (mêlée ou tir), annulée sur Arcane. Reste intrinsèque, gratuit.
+**Défense (D103, refonte P8) :** porte désormais **[Armure]** (sans X) au lieu de l'ancien duo [Armure 1] intrinsèque + [Protection 1] payant — jet de sauvetage 1d6 contre chaque touche reçue (mêlée ou tir), annulée sur Pouvoir. Reste intrinsèque, gratuit.
 
 **Marquage (D131) :** pas de gabarit — la figurine mord elle-même sur ses quatre hexagones. Elle porte **trois badges sur son socle** : le jeton classe/mode **🔴 mêlée** comme toute unité, plus un jeton **🟢 arc** et le **badge Faction du Harad**, qui rappellent ensemble son attaque de tir empoisonnée du [Howdah]. C'est la seule pièce du jeu à porter deux jetons classe/mode, parce qu'elle est la seule à attaquer dans les deux modes au cours d'une même activation.
 
@@ -91,7 +91,7 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 
 #### [Charge écrasante] *(bespoke)*
 
-> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Arcane inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 #### [Bête incontrôlable] *(bespoke, refondue P5/D079)*
 
@@ -125,6 +125,8 @@ Arcane inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le ro
 Inchangés — le Mûmakil reste au prix fixé en P5 (D079), non retouché par ce chantier.
 
 ---
+
+*Version : 2.2 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : [Poison], [Armure] du Mûmakil, [Charge écrasante]. Aucun coût modifié.*
 
 *Version : 2.1 — Phase 1 — 2026-09-06. **D131 — marquage du Mûmakil.** Pas de gabarit à fabriquer : la figurine couvre elle-même ses quatre hexagones. Elle porte trois badges sur son socle — le jeton classe/mode 🔴 mêlée, un jeton 🟢 arc et le badge Faction du Harad, ces deux derniers rappelant le tir empoisonné du [Howdah]. Seule pièce du jeu à porter deux jetons classe/mode, étant la seule à attaquer dans les deux modes au cours d'une même activation. Conséquence sur le décompte matériel : +2 jetons 🟢 arc.*
 

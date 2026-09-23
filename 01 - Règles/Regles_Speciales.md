@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.33"
+version: "0.35"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -62,11 +62,11 @@ version: "0.33"
 L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signatures s'y insèrent ainsi :
 
 1. **Avant le décompte** — relances : [Relance X], [Horde] *(sans porteur actif, D090)*.
-2. **Au décompte des touches** — effets de **Couronne** (badge Leader uniquement, D089) et effets d'**Arcane** ([Charge écrasante]… — migrées depuis Couronne, D089).
+2. **Au décompte des touches** — effets de **Couronne** (badge Leader uniquement, D089) et effets de **Pouvoir** ([Charge écrasante]… — migrées depuis Couronne, D089).
 3. **Sauvegardes et réductions défensives** — [Armure] (1 dé par touche, D143) puis [Protection X].
-4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Arcane** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) absorbe le tout, quelle qu'en soit la source.
+4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Pouvoir** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) absorbe le tout, quelle qu'en soit la source.
 
-> 🎲 **Note (D089).** Toutes les règles spéciales/signature à déclenchement par face se résolvent désormais sur **Arcane** (y compris [Peur X], déjà le cas depuis D033, et [Charge écrasante], migrée depuis Couronne). La **Couronne** est réservée au badge **Leader** — sur une unité qui ne le porte pas, elle est sans effet. Une unité pourrait en théorie cumuler Peur (Arcane, intrinsèque Créature) et une autre règle à Arcane sur le même jet : dans ce cas les deux effets s'appliquent, chacun sur sa propre attaque (aucun cas actif ne collisionne à ce jour — voir Mûmakil, `02 - Factions/Harad.md`, où Peur ne porte que sur l'attaque de charge et [Howdah] sur un jet de tir séparé).
+> 🎲 **Note (D089).** Toutes les règles spéciales/signature à déclenchement par face se résolvent désormais sur **Pouvoir** (y compris [Peur X], déjà le cas depuis D033, et [Charge écrasante], migrée depuis Couronne). La **Couronne** est réservée au badge **Leader** — sur une unité qui ne le porte pas, elle est sans effet. Une unité pourrait en théorie cumuler Peur (Pouvoir, intrinsèque Créature) et une autre règle à Pouvoir sur le même jet : dans ce cas les deux effets s'appliquent, chacun sur sa propre attaque (aucun cas actif ne collisionne à ce jour — voir Mûmakil, `02 - Factions/Harad.md`, où Peur ne porte que sur l'attaque de charge et [Howdah] sur un jet de tir séparé).
 
 > 🔗 **Voir aussi** [[Regles_Base]] §2 (types et faces de dé), §7 (combat), §9 (retraite). Les anciennes tables « règles intrinsèques des types » et « priorité de résolution » de ce document sont **supprimées** : périmées par [[Regles_Base]] v0.6 (jamais-Faible au socle, double-touche retirée, 1 touche = 1 figurine/PV).
 
@@ -78,7 +78,7 @@ Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une uni
 
 ### [Armure]  *(mécanique unique de sauvegarde — D143)*
 
-Pour chaque **touche subie**, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Arcane** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises.
+Pour chaque **touche subie**, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Pouvoir** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises.
 
 Probabilité de base : 1 face sur 6 annule chaque touche. Avec un Leader porté par l'unité, la fenêtre de sauvetage s'élargit à 2 faces sur 6 — synergie gratuite avec le badge Leader déjà payé séparément.
 
@@ -128,7 +128,7 @@ Après le lancer, le joueur peut **relancer X dés** de son choix (mêlée **ou*
 
 ### [Arme de jet X]
 
-Le tour où cette unité **s'est déplacée puis attaque en mêlée**, chaque face **Cible** obtenue compte comme **une touche supplémentaire** (au lieu d'un échec) — les projectiles lancés avant le choc.
+Le tour où cette unité **s'est déplacée puis attaque en mêlée**, chaque face **Arc** obtenue compte comme **une touche supplémentaire** (au lieu d'un échec) — les projectiles lancés avant le choc.
 
 > 🔄 **Restaurée — P4 (D068)**, après avoir été coupée au tri P2 (D062) faute de porteur en attente de re-expression, puis réintégrée à l'occasion de la re-expression du Rohan (porteur d'origine : Milice lige, D044). **Sans porteur actif depuis D074** : le Rohan migre son badge Faction vers [Férocité] (pivot « badges universels »). Conservée au socle générique, réutilisable si un futur profil de mêlée veut l'identité « projectile lancé avant le choc ».
 
@@ -192,7 +192,7 @@ Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d
 
 #### [Poison]  — *badge Faction, réactivée (D092) — Harad*
 
-Lorsque cette unité attaque, chaque face **Arcane** inflige **1 touche supplémentaire** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)*.
+Lorsque cette unité attaque, chaque face **Pouvoir** inflige **1 touche supplémentaire** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)*.
 
 > 🎲 Ancien fil conducteur du Harad (flèches et lames empoisonnées). Porté par tout le roster d'escorte et la volée du Mûmakil ([Howdah]) jusqu'à D090 — retiré des deux, y compris du Mûmakil (`02 - Factions/Harad.md`).
 
@@ -234,21 +234,21 @@ Règles propres, **hors matrice de badges**, réservées aux pièces qui ne se r
 
 #### [Peur X]  — *intrinsèque du type Créature*
 
-Chaque face **Arcane** obtenue en attaque compte comme **X Drapeaux** contre la cible (au lieu d'un échec). N'inflige **aucune touche** : la Peur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
+Chaque face **Pouvoir** obtenue en attaque compte comme **X Drapeaux** contre la cible (au lieu d'un échec). N'inflige **aucune touche** : la Peur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
 
-> 🎲 Réutilise la face Arcane (morte par défaut) et pose le premier jalon de la couche Leadership (Phase 2, formalisée D093).
+> 🎲 Réutilise la face Pouvoir (morte par défaut) et pose le premier jalon de la couche Leadership (Phase 2, formalisée D093).
 >
 > 🔄 **Devenue intrinsèque au type Créature — P4 (D071)** : **toute créature porte [Peur 1] et [Armure 1] sans supplément de coût** — ce n'est plus une signature à assigner unité par unité (voir [[Regles_Base]] §2.3, à ajouter). Première application : Troll du Mordor. S'applique aussi au Mûmakil (Harad), sans redondance avec ses règles bespoke déjà en place ([Howdah], [Charge écrasante], [Inébranlable ∞]).
 
 #### [Terreur]  — *signature, créée au Playtest #4 (D094)*
 
-Chaque face **Arcane** obtenue en attaque compte comme **2 Drapeaux** contre la cible (au lieu d'un échec). Comme [Peur X], n'inflige **aucune touche** — la Terreur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
+Chaque face **Pouvoir** obtenue en attaque compte comme **2 Drapeaux** contre la cible (au lieu d'un échec). Comme [Peur X], n'inflige **aucune touche** — la Terreur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
 
 > 🎲 **Version renforcée de [Peur X]**, X fixé à 2 plutôt que gradué — sort de la différée « Terreur (X élevé) » évoquée depuis D062 §7. Réservée aux figures de terreur pure du récit (Nazgûl, Roi-Sorcier) : premier porteur, le **Roi-Sorcier sur l'ombre ailée** (§4b), validé au Playtest #4.
 
 #### [Archer en mêlée]  — *Compagnie Grise (Legolas), redevenu actif P8*
 
-Les faces **Cible** infligent aussi une touche lors d'une attaque de **mêlée** (normalement inertes en mêlée).
+Les faces **Arc** infligent aussi une touche lors d'une attaque de **mêlée** (normalement inertes en mêlée).
 
 > 🎲 Précision hors norme, dangereuse jusqu'au corps à corps. **Sans porteur de P4/D073 à P8** (la Compagnie Grise l'avait remplacé par le badge Légende) — **redevient actif P8** : la Compagnie Grise repasse en pièce bespoke à règles nommées par figurine, et Legolas la porte à nouveau tant qu'il est présent (voir [[Gondor_et_Fiefs]] §3).
 
@@ -270,7 +270,7 @@ Tant qu'une **unité ennemie** est **adjacente** à cette unité, chaque **autre
 
 #### [Peur 1 contre les bannières vertes]  — *Aurige de Khand, nouveau P8 (D106)*
 
-Contre une unité de classe **🟢** uniquement, chaque face **Arcane** obtenue en attaque compte comme **1 Drapeau** (au lieu d'un échec). Sans effet contre les classes 🔵/🔴. N'inflige aucune touche — comme [Peur X], ça fait rompre, pas mourir.
+Contre une unité de classe **🟢** uniquement, chaque face **Pouvoir** obtenue en attaque compte comme **1 Drapeau** (au lieu d'un échec). Sans effet contre les classes 🔵/🔴. N'inflige aucune touche — comme [Peur X], ça fait rompre, pas mourir.
 
 > 🎲 **Créée — P8, arbitrage Emmanuel.** Le fracas du char devant des troupes légères, peu aguerries, qui n'ont jamais affronté ça — sans effet sur des troupes plus lourdes, habituées au choc. Bespoke, ciblée sur une classe plutôt que sur toute cible — **coût : +2 brut**, en dessous du tarif d'un [Peur X] universel puisque la portée est restreinte à un tiers du roster adverse (jugement, à confirmer au playtest).
 
@@ -286,7 +286,7 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 
 #### [Charge écrasante]  *(bespoke)*
 
-À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Arcane inflige aussi une touche** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)* ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)* ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 > 🎲 Choc de masse réservé à la grande créature, en phase de mouvement (l'usage annoncé lors du retrait de l'ancienne [Charge écrasante] générique, D043→D054). Le gabarit 1-2-1 ne pivote pas (translation pure).
 
@@ -305,7 +305,7 @@ Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1
 Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor). Non encore chiffré ni intégré à `02 - Factions/Mordor.md` — repricing et intégration formelle renvoyés à **P8**.
 
 - **6 PV**, **4 dés d'attaque** (classe 🔴).
-- **[Terreur]** (voir ci-dessus) : chaque Arcane = 2 Drapeaux.
+- **[Terreur]** (voir ci-dessus) : chaque Pouvoir = 2 Drapeaux.
 - **[Vigilant]** (socle, §2) : ne peut jamais être contre-attaqué.
 - **[Vol]** *(bespoke, première application)* : à son activation, se déplace de **4 hexagones** sans tenir compte des figurines présentes sur le trajet (traverse librement unités et terrain).
 - **Intrinsèques Créature** (D071, D143) : [Armure], [Peur 1] — coexistent avec [Terreur] ; en pratique [Terreur] est la version employée en attaque, [Peur 1] reste la valeur plancher du type.
@@ -318,13 +318,13 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 
 | Règle | Famille | Résumé |
 |---|---|---|
-| **[Archer en mêlée]** | Sans porteur actif | Les faces Cible touchent aussi en mêlée |
-| **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Cible compte aussi comme touche |
+| **[Archer en mêlée]** | Sans porteur actif | Les faces Arc touchent aussi en mêlée |
+| **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Arc compte aussi comme touche |
 | **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
-| **[Armure]** | Socle *(mécanique unique de sauvegarde, D143)* | 1 dé par touche subie, annulée sur Arcane — ou Arcane/Couronne avec un Leader ; mêlée et tir |
+| **[Armure]** | Socle *(mécanique unique de sauvegarde, D143)* | 1 dé par touche subie, annulée sur Pouvoir — ou Pouvoir/Couronne avec un Leader ; mêlée et tir |
 | **[Bannière]** | Badge *(nouveau, D092)* | [Inébranlable 1], incarné par une figurine porte-étendard visible (pas de jeton) |
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | À 1 PV (dernier point) : Furie automatique, contrôle à pile ou face chaque tour, activation gratuite garantie au tour du Mal (refondue D079) |
-| **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Arcane = touche, migré depuis Couronne D089) sur le trajet, sans contre-attaque |
+| **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Pouvoir = touche, migré depuis Couronne D089) sur le trajet, sans contre-attaque |
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
 | ~~**[Défense X]**~~ | **Supprimée (D143)** | Lire [Armure] partout où elle était portée |
 | **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Contre-attaque même en cas de recul forcé, puis recule |
@@ -337,11 +337,11 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081, confirmé au Playtest #4)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Gratuite sur toute unité 🔴 et toute Créature — grille [[Regles_Base]] §2.4 (D071, D143) |
-| **[Peur X]** | Intrinsèque (type Créature) | Chaque Arcane = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
+| **[Peur X]** | Intrinsèque (type Créature) | Chaque Pouvoir = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
 | **[Plateforme de tir X]** | Sans porteur actif | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
-| **[Poison]** | Sans porteur actif *(ex-badge Faction Harad, retiré D090, non réactivé au Playtest #4)* | Arcane → 1 touche supplémentaire (migré depuis Couronne, D089) |
+| **[Poison]** | Sans porteur actif *(ex-badge Faction Harad, retiré D090, non réactivé au Playtest #4)* | Pouvoir → 1 touche supplémentaire (migré depuis Couronne, D089) |
 | **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
-| **[Terreur]** | Signature *(créée D094)* | Chaque Arcane = 2 Drapeaux — version renforcée de [Peur X], porteur : Roi-Sorcier sur l'ombre ailée |
+| **[Terreur]** | Signature *(créée D094)* | Chaque Pouvoir = 2 Drapeaux — version renforcée de [Peur X], porteur : Roi-Sorcier sur l'ombre ailée |
 | **[Vol]** | Bespoke *(première application, D095)* | Déplacement de X hex ignorant les figurines sur le trajet — porteur : Roi-Sorcier sur l'ombre ailée |
 | **[Prise de flanc]** | Sans porteur actif *(depuis D101/D102)* | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
 | **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
@@ -390,6 +390,10 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.35 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : [Arme de jet X], [Archer en mêlée], récapitulatif alphabétique.*
+
+*Version 0.34 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : ordre de résolution, [Armure], [Poison], [Peur X], [Terreur], [Peur 1 contre les bannières vertes], [Charge écrasante], récapitulatif alphabétique. La section « Différées — Phase 2+ » est conservée telle quelle (historique).*
 
 *Version 0.33 — Phase 1 — 2026-09-19. **P13 — correctifs du Playtest #5 (D139, D142, D143).** **D143 — [Armure X] supprimée, mécanique de sauvegarde unique.** L'entrée §2 [Armure X] et l'entrée §2 [Armure] (sans X) fusionnent en une seule : 1 dé par touche subie, annulée sur Arcane — ou Arcane/Couronne avec un Leader — valable en mêlée comme au tir, sans valeur X, intrinsèque et gratuite sur tout 🔴 et toute Créature. **[Défense X] disparaît avec elle** (§4a barrée, historique conservé) : [Discipline de cohorte] et Elladan confèrent désormais [Armure]. Ordre de résolution (§2), récapitulatif alphabétique et entrée du Roi-Sorcier alignés. C'est la version jouée et validée au Playtest #5 : le glossaire n'avait jamais transcrit l'intention complète de D103. **D142** : [Discipline de cohorte] confirmée en l'état, jamais activée en solo mais non invalidée — note ajoutée, coût inchangé, point ouvert de barème signalé. **D139** : aucune modification nécessaire, [Charge écrasante] écrivait déjà que l'impact se résout en phase de mouvement, sans contre-attaque — la décision **confirme** le texte existant. **Corrections de forme, sans numéro D** : [Vigilant] n'est plus attribuée à l'Éored d'éclaireur mais au **Roi-Sorcier**, seul porteur depuis D101/D102 ; [Prise de flanc] passe **sans porteur actif**. Ces deux attributions périmées étaient signalées depuis P10b. **Correction de frontmatter** : la version y était restée à 0.31 alors que le changelog portait déjà 0.32 (bump oublié le 10/09) — corrigée ici à 0.33.*
 

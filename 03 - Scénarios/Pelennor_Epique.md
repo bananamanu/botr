@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
 statut: "jouable"
-date_maj: "2026-09-19"
+date_maj: "2026-09-23"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.6"
+version: "1.7"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -253,7 +253,7 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 
 > 🎲 **L'intention — et ce qu'elle coûte.** La version précédente (D120) faisait sauter l'[Armure] du Roi-Sorcier pour une attaque, en écho au coup d'épée de Westernesse qui rompt le sortilège. Plus fidèle au texte, mais plus étroit : elle ne servait qu'en présence du Roi-Sorcier, et sur le seul tour où l'on choisissait de la brûler. La version retenue est plus banale et plus utile — un point de vie de plus sur une unité de cavalerie qui n'en a que trois.
 >
-> **Le calcul, pour mémoire.** Le Roi-Sorcier a 6 PV et son [Armure] annule sur Arcane **ou** Couronne, puisqu'il porte un badge Leader : une touche sur trois absorbée, soit ~9 touches brutes pour l'abattre. L'éored d'Éowyn frappe à 5 dés, ~1,67 touche brute par attaque. L'ancienne règle offrait **une** attaque sans [Armure] : environ **une demi-touche** gagnée sur la partie. La nouvelle offre **un tiers de durabilité en plus** à l'unité que le Roi-Sorcier attaque en retour à 4 dés avec [Terreur] — donc une attaque supplémentaire avant de mourir. En espérance, le couple Éowyn/Merry **sort renforcé** du changement. On perd du fluff, pas de la puissance.
+> **Le calcul, pour mémoire.** Le Roi-Sorcier a 6 PV et son [Armure] annule sur Pouvoir **ou** Couronne, puisqu'il porte un badge Leader : une touche sur trois absorbée, soit ~9 touches brutes pour l'abattre. L'éored d'Éowyn frappe à 5 dés, ~1,67 touche brute par attaque. L'ancienne règle offrait **une** attaque sans [Armure] : environ **une demi-touche** gagnée sur la partie. La nouvelle offre **un tiers de durabilité en plus** à l'unité que le Roi-Sorcier attaque en retour à 4 dés avec [Terreur] — donc une attaque supplémentaire avant de mourir. En espérance, le couple Éowyn/Merry **sort renforcé** du changement. On perd du fluff, pas de la puissance.
 
 > ⚠️ **D120 n'est pas réécrite.** Elle reste au journal telle qu'elle a été prise ; D135 l'amende. La règle d'Éowyn (§5.1) est **inchangée**.
 
@@ -280,7 +280,7 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 
 **Fin de partie (D136) :** le chrono est réglé sur **3 h 45**, déploiement non compté. Quand il sonne, on **termine la manche en cours**, puis on joue **une dernière manche, annoncée comme telle à la table**. La partie s'arrête à la fin du tour du Bien. Prévoir **4 h 15 à 4 h 30 de jeu**, plus l'heure de mise en place.
 
-> 🎲 **Pourquoi annoncer la dernière manche (Playtest #5).** Tout se joue au dernier tour : les points stratégiques se comptent à la fin, un Leader à 1 PV vaut 3 points de bascule, et la partie test s'est terminée à une action du match nul. Un chrono sec interdit de jouer la dernière manche *comme* la dernière — les joueurs doivent savoir quand lâcher leur réserve d'Espoir et quand se ruer sur les hexagones.
+> 🎲 **Pourquoi annoncer la dernière manche (Playtest #5).** Tout se joue au dernier tour : les points stratégiques se comptent à la fin, un Leader à 1 PV vaut 3 points de bascule, et la partie test s'est terminée à une action du match nul. Un chrono sec interdit de jouer la dernière manche *comme* la dernière — les joueurs doivent savoir quand lâcher leur réserve de Pouvoir et quand se ruer sur les hexagones.
 
 **Égalité :** aucun départage. Un 4-4 est un **match nul**, et c'est un résultat parfaitement acceptable — sans doute même le meilleur pour clore une convention.
 
@@ -303,15 +303,15 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 | Plateaux de cavalerie (3 figurines) | 23 |
 | Socles 65 mm | 6 — Roi-Sorcier, Troll, 2 Mûmakil, 2 Auriges |
 | Compteurs de PV | 6, montant jusqu'à **8** *(le Mûmakil ; l'Aurige en a 3, le Troll 4, le Roi-Sorcier 6)* |
-| **Pistes d'Espoir / de Désespoir** *(D133)* | 2 — une par camp, graduée jusqu'à **30** |
-| **Dés de bataille** *(D133)* | 6 par camp — face Arcane : **Rune de Gandalf** au Bien, **Œil de Sauron** au Mal |
+| **Pistes de Pouvoir** *(D133)* | 2 — une par camp, graduée jusqu'à **30** |
+| **Dés de bataille** *(D133)* | 6 par camp — face Pouvoir : **Rune de Gandalf** au Bien, **Œil de Sauron** au Mal |
 | **Total** | **61 unités, 203 figurines** *(hors Éowyn et Merry)* |
 
 **Stock Azaogames livré :** 30 🔵 mêlée · 18 🔴 mêlée · 27 🟢 distance · 27 🟢 mêlée. Il couvre l'ensemble, au plus juste sur le 🔴 mêlée (18 pour 16).
 
 Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont 🟢, à 2 dés**. La portée dépend du type (D132) — **1–4 à pied, 1–3 à cheval**. Au Pelennor : 10 unités de tir à pied (4 Rangers, 2 Pisteurs, 2 Archers orientaux, 2 Archers du Harad) et 6 montées (4 Éclaireurs, 2 Pillards de Khand).
 
-**Dimensionner la piste d'Espoir/Désespoir** (D133) : un camp encaisse de l'ordre de 3 points d'Arcane par round, plus 2 forfaitaires — environ 5 par round. Sans plafond de réserve et avec 6 achats possibles dans le même tour (~18 points), il faut pouvoir afficher une trentaine de points. **Une piste graduée avec un marqueur est plus lisible qu'un tas de jetons** à six joueurs autour d'une table.
+**Dimensionner la piste de Pouvoir** (D133) : un camp encaisse de l'ordre de 3 points de Pouvoir par round, plus 2 forfaitaires — environ 5 par round. Sans plafond de réserve et avec 6 achats possibles dans le même tour (~18 points), il faut pouvoir afficher une trentaine de points. **Une piste graduée avec un marqueur est plus lisible qu'un tas de jetons** à six joueurs autour d'une table.
 
 **Pas de gabarit Mûmakil** (D131) : la figurine mord elle-même sur ses quatre hexagones. Elle porte trois badges — 🔴 mêlée, 🟢 arc et Faction Harad, ces deux derniers rappelant son tir empoisonné.
 
@@ -334,6 +334,8 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 - **Tarif de la sauvegarde conférée par badge** — ouvert par D143, voir `[[Regles_Points]]` §8 point 4. Concerne deux unités du scénario, sans incidence sur l'équilibre par Section.
 
 ---
+
+*Version : 1.7 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : §5.2 (calcul de Merry), §6, §7 (pistes et dés). Les points ouverts clos du §8 gardent leur libellé historique.*
 
 *Version : 1.6 — Phase 1 — 2026-09-19. **P13 — correctifs du Playtest #5 (D136, D138, D139, D140, D141).** **§3 ordre de bataille :** Khand entre deux **[Mercenaire]** (un Pillard hache à 4, un Pillard archer à 2), Section droite du Mal **67 → 65**, sans compensation (D140) ; le Rohan passe de **six à quatre badges [Férocité]**, librement placés sur ses seules unités montées de mêlée, Section droite du Bien **67 → 65** (D141) — les deux badges supprimés tombaient forcément sur des éclaireurs, où [Férocité] ne se déclenche jamais. **§3.3 : totaux 183 Bien / 186 Mal**, la parité exacte des Sections gauche et droite est préservée, le Centre reste à 3 points. **§6 :** initiative fixée — le **Mal ouvre chaque manche** — et fin de partie réécrite : chrono à **3 h 45**, on termine la manche en cours puis on en joue **une dernière, annoncée** (D136) ; note ajoutée sur la tenue du score ligne par ligne, la victoire militaire ayant été comptée 1 point au lieu de 2 au playtest. **§7 :** décompte des badges Faction réparti 14/11 (total inchangé à 25) ; rappels de la ligne de vue du Mûmakil (D138) et de l'absence de contre-attaque sur [Charge écrasante] (D139). **§8 :** quatre points ouverts clos par le playtest ([Horde] v3, réserve d'Espoir/Désespoir, plafond de 6 dés, temps de mise en place mesuré à 1 h) ; deux ouverts ajoutés (aides de jeu non éprouvées, tarif de la sauvegarde conférée par badge). Correctif de forme : le point sur le temps de mise en place parlait encore de 72 unités au lieu de 61.*
 
