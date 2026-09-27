@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-09-24"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.25"
+version: "0.28"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -42,18 +42,18 @@ Les règles de base couvrent les affrontements sans pouvoirs ni héros — le so
 ### 2.1 Matériel de jeu
 
 - **Tapis de jeu hexagonal** : taille selon le format choisi — Escarmouche (10 × 7), Normal (13 × 9) ou Épique (13 × 17). Voir Document de cadrage §4.
-- **Tuiles de terrain** : bois, collines, cours d'eau, gués, ponts, bâtiments (règles détaillées à développer dans un document dédié — hors scope de cette première version)
+- **Tuiles de terrain** : bois, collines, cours d'eau, gués, ponts, bâtiments — règles détaillées dans [[Terrain]]
 - **Deck de commandement** : cartes de section et cartes Tactiques
 - **Dés spéciaux** : 6 faces — Épées croisées / Épée / Arc / Drapeau / Couronne / Pouvoir (dé BattleLore V2, conservé tel quel). Chaque camp dispose de ses propres dés : la face **Pouvoir** y porte la **Rune de Gandalf** côté Bien et l'**Œil de Sauron** côté Mal (D133). La face se nomme **Pouvoir** dans tous les documents de règles (D148).
 - **Figurines** : unités des peuples joués (MESBG)
-- **Plateaux de mouvement** (movement trays), **neutres** (peints marron/vert, se fondent dans le décor) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie
-- **Jeton classe/mode** (20mm, posé à côté du plateau ou du socle) : couleur = classe (🟢 vert 2 dés / 🔵 bleu 3 dés / 🔴 rouge 4 dés), symbole = mode (épées croisées = mêlée / arc = distance) — un seul marqueur, remplace l'ancien token de mode collé sur le socle
-- **Marqueurs** : compteurs de PV (Chars et Créatures uniquement), médailles objectif, jetons d'activation/cible (aide-mémoire de contre-attaque, §7.6)
-- **Piste de Pouvoir** : une par camp, avec ses jetons — réserve de commandement commune aux joueurs d'un même camp (§5.6, D133)
+- **Plateaux de mouvement** (movement trays), **neutres** (peints marron/vert, se fondent dans le décor) — 4 emplacements pour l'Infanterie, 3 pour la Cavalerie. **Élément pratique de table, sans valeur de règle (D152)** : le type d'une unité est donné par son profil, pas par son plateau.
+- **Jeton classe/mode** (20mm, posé à côté de l'unité) : couleur = classe (🟢 vert 2 dés / 🔵 bleu 3 dés / 🔴 rouge 4 dés), symbole = mode (épées croisées = mêlée / arc = distance) — un seul marqueur, remplace l'ancien token de mode collé sur le socle
+- **Marqueurs** : compteurs de PV (Chars et Créatures uniquement), médailles objectif. *(Les jetons d'activation et de cible ne sont plus utilisés, D152.)*
+- **Jetons de Pouvoir** : réserve de commandement commune aux joueurs d'un même camp, tenue en jetons, **sans piste** (§5.6, D133, D152)
 
 ### 2.2 Le langage du socle : classe, type et mode
 
-Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois informations sont portées visuellement — deux sur le **jeton classe/mode** (20mm, posé à côté du plateau ou du socle), une sur la **forme du plateau/socle lui-même**.
+Toute unité est définie par trois caractéristiques, données par son **profil** (livret Factions) : sa classe, son type et son mode. Deux se rappellent sur la table grâce au **jeton classe/mode** (20mm, posé à côté de l'unité) ; le type se reconnaît aux figurines, le plateau de mouvement n'ayant aucune valeur de règle (D152).
 
 **La classe = la couleur du jeton = le nombre de dés d'attaque.**
 
@@ -65,7 +65,7 @@ Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois inform
 
 **Le mode = le symbole du jeton : épées croisées (mêlée) ou arc (distance).** *(Pivot D089 — fusionne l'ancien token de mode, désormais un seul jeton pour classe + mode.)* Il indique quelles faces de dé l'unité lit lorsqu'elle attaque (voir §2.3 et §7) : **mêlée → Épées croisées + Épée** · **distance → Arc**.
 
-**Le type**, donné par la forme du plateau/socle et le nombre de figurines — indépendant de la couleur, donc inchangé par le retrait de la coloration des plateaux :
+**Le type**, donné par le profil — indépendant de la couleur :
 
 | Type | Représentation | Pertes suivies par |
 |---|---|---|
@@ -78,16 +78,17 @@ Toute unité se lit **d'un coup d'œil**, sans consulter de profil. Trois inform
 
 > **Intrinsèque du type Créature (D071, D143).** Toute Créature porte **[Armure]** et **[Peur 1]** sans supplément de coût — ce ne sont plus des signatures à assigner unité par unité, mais des traits du type lui-même, au même titre que le compteur de PV. Une pièce peut dépasser ce plancher (ex. [Peur 2]) moyennant le tarif socle habituel de l'excédent. Première application : Troll du Mordor. *(Le type Char n'a pas cette intrinsèque — sans porteur actif depuis P4/D070.)*
 
-**Badges — troisième refonte, Playtest #4 (D092/D093).** Les badges **Spéciale** et **Élite** (D073) sont **abandonnés**. Le badge **Faction** (retiré en D090, un temps renvoyé aux cartes de commandement de P8) **revient**, mais change de nature : ce n'est plus un trait de peuple imprimé automatiquement sur tout un roster (D081/D085), c'est un **badge assigné unité par unité**, à la discrétion du concepteur — fluff (« toute unité autour d'Éomer porte [Férocité] ») ou distinction tactique au sein d'un même peuple (« les orques du Morannon portent [Horde] pour se distinguer des orques normaux »). Nouveau badge **Bannière**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton dédié) : confère **[Inébranlable 1]**.
+**Badges — troisième refonte, Playtest #4 (D092/D093).** Les badges **Spéciale** et **Élite** (D073) sont **abandonnés**. Le badge **Faction** (retiré en D090, un temps renvoyé aux cartes de commandement de P8) **revient**, mais change de nature : ce n'est plus un trait de peuple imprimé automatiquement sur tout un roster (D081/D085), c'est un **badge assigné unité par unité**, à la discrétion du concepteur — fluff (« toute unité autour d'Éomer porte [Férocité] ») ou distinction tactique au sein d'un même peuple (« les orques du Morannon portent [Horde] pour se distinguer des orques normaux »). Nouveau badge **Bannière**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton dédié) : confère **[Inébranlable 1]**. *(D152 : la Bannière n'est plus un badge. C'est une **figurine avec bannière** dans l'unité, qui lui confère [Inébranlable 1].)*
 
 **Les badges sont cumulables librement, sans plafond de 1** *(amende le plafond D081/D089)* :
 
 - **Faction** confère la règle propre à l'unité assignée — reprend le vocabulaire socle existant ([Férocité], [Horde], [Relance X], [Armure], [Mercenaire]…) ou une règle neuve si besoin. Voir [[Regles_Speciales]] §4a.
-- **Bannière** confère **[Inébranlable 1]** (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
 - **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
 - **Leader** *(formalisé D093, sort de la réserve Phase 2 posée en D089)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7) ; confère aussi **[Inébranlable 1]** à son unité **et** à toute unité amie **adjacente** (cumulable avec un Inébranlable déjà présent) ; peut porter en plus le statut **Général** et une valeur de **Destin** — mécanique complète en §2.2bis.
 
-Une unité peut donc porter 0 à 4 badges (Faction, Bannière, Légende, Leader) selon ce que le concepteur juge lisible pour cette unité précise — la limite n'est plus un plafond de comptage mais le jugement éditorial au cas par cas. *(Coûts traités dans [[Regles_Points]] §3.1 — Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8.)*
+Une **figurine avec bannière**, qui n'est pas un badge (D152), confère **[Inébranlable 1]** à son unité (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
+
+Une unité peut donc porter 0 à 3 badges (Faction, Légende, Leader), plus une éventuelle figurine avec bannière, selon ce que le concepteur juge lisible pour cette unité précise — la limite n'est plus un plafond de comptage mais le jugement éditorial au cas par cas. *(Coûts traités dans [[Regles_Points]] §3.1 — Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8.)*
 
 ### 2.2bis Le badge Leader — Général et Destin (D093)
 
@@ -113,18 +114,18 @@ Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui 
 
 - Ses faces **Épée** ne causent aucune touche en mêlée (seules les **Épées croisées** comptent).
 
-> Les Chars et Créatures, suivis en PV, **ne passent pas par l'état Faible** ; leur profil définit d'éventuels seuils (ex. Furie du Mûmakil). Une unité portant le **badge Élite** est également exemptée (Jamais Faible, §2.2) — ses faces Épée continuent de toucher.
+> Les Chars et Créatures, suivis en PV, **ne passent pas par l'état Faible** ; leur profil définit d'éventuels seuils (ex. Furie du Mûmakil).
 
 > 💡 **Exemple de jeu**
 > Des Piquiers réduits à 1 figurine (Faibles) attaquent en mêlée : les faces Épée n'infligent rien, seules les Épées croisées touchent.
 
-> ⚔️ **Forme physique des badges (D130).** Le **badge Leader** est un jeton **couronne**, posé sur le socle : une figurine nommée ne suffit pas, tous les joueurs autour de la table ne reconnaissent pas Angbor le Brave, et le jeton montre d'un coup d'œil où sont les Leaders. **Aucune distinction visuelle pour les Généraux.** La **Bannière** reste une **figurine porte-étendard** — nettement plus visible qu'un jeton. Le **badge Faction** est posé **systématiquement**, même quand toutes les unités d'un type le portent : c'est ce qui permet de voir au premier coup d'œil qui fait quoi.
+> ⚔️ **Forme physique des badges (D130).** Le **badge Leader** est un jeton **couronne**, posé sur le socle : une figurine nommée ne suffit pas, tous les joueurs autour de la table ne reconnaissent pas Angbor le Brave, et le jeton montre d'un coup d'œil où sont les Leaders. **Aucune distinction visuelle pour les Généraux.** La **Bannière** reste une **figurine porte-étendard** — nettement plus visible qu'un jeton — et n'est pas un badge (D152). Le **badge Faction** est posé **systématiquement**, même quand toutes les unités d'un type le portent : c'est ce qui permet de voir au premier coup d'œil qui fait quoi.
 
 ### 2.3 Attaque et dégâts
 
 Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur) : 2 (🟢), 3 (🔵) ou 4 (🔴), modifié le cas échéant par le terrain (§7.5) ou une capacité.
 
-> ⚠️ **Plafond absolu : 6 dés (D134).** Quels que soient les modificateurs cumulés — badge Légende, [Horde], [Prise de flanc], carte de commandement, terrain surélevé, règle de scénario — **aucune attaque ne lance jamais plus de 6 dés**. Les plafonds de terrain plus bas (2 dés en bois ou en gué, §7.5) restent prioritaires : on applique le terrain d'abord, le plafond de 6 ensuite.
+> ⚠️ **Plafond absolu : 6 dés (D134).** Quels que soient les modificateurs cumulés — badge Légende, [Horde], carte de commandement, terrain surélevé, règle de scénario — **aucune attaque ne lance jamais plus de 6 dés**. Les plafonds de terrain plus bas (2 dés en bois ou en gué, §7.5) restent prioritaires : on applique le terrain d'abord, le plafond de 6 ensuite.
 
 **Quelles faces touchent dépend du mode de l'unité** (son jeton classe/mode) :
 
@@ -243,7 +244,7 @@ Le joueur actif pioche une nouvelle carte pour ramener sa main au nombre de cart
 
 #### g. Étape de Pouvoir
 
-Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Pouvoir ne passent pas par cette étape : ils sont posés sur la piste **au moment du lancer**, à l'étape d'attaque. Seul le camp actif en gagne (D137).
+Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les points gagnés sur les faces Pouvoir ne passent pas par cette étape : ils sont ajoutés à la réserve **au moment du lancer**, à l'étape d'attaque. Seul le camp actif en gagne (D137).
 
 ### 4.1 Fin de partie (D136)
 
@@ -261,6 +262,8 @@ Les deux camps jouent ainsi le même nombre de tours, et le camp qui ferme la ma
 > Pas de sous-force nominative par joueur (abandon de la logique « Rohan / Minas Tirith-Dol Amroth / Compagnie Grise » du cadrage 5). « Commandement » ne désigne plus qu'une seule chose : le système de cartes/activation ci-dessous. En format Épique (3v3), **chaque joueur contrôle une Section** (Gauche, Centre ou Droite) plutôt qu'une armée nommée — la répartition des peuples entre les sections reste une décision de scénario (Phase 3), pas une règle de commandement.
 
 ### 5.1 Cartes de section
+
+**Chaque camp nomme ses Sections depuis son propre bord (D150)** : la Section Gauche d'un camp est celle qui se trouve à sa gauche quand il regarde le champ de bataille depuis son bord. La Gauche d'un camp fait donc face à la Droite de l'autre — convention Commands & Colors, que suppose la carte *Contre-attaque* ([[Cartes_Commandement]] §4.2).
 
 Une **carte de section** (Gauche, Centre ou Droite) permet d'activer **toutes les unités** situées dans la section correspondante au moment où la carte est jouée.
 
@@ -288,7 +291,7 @@ Si aucune unité éligible ne peut être activée avec la carte jouée (ex. aucu
 
 ### 5.6 La réserve de Pouvoir (D133, D148)
 
-Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons sur une piste : la réserve de **Pouvoir**. Les jetons portent la Rune de Gandalf au Bien, l'Œil de Sauron au Mal — même mécanique (D148). Elle sert à activer des unités que la carte jouée ne couvre pas.
+Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons de Pouvoir, sans piste (D152) : la réserve de **Pouvoir**. Les jetons portent la Rune de Gandalf au Bien, l'Œil de Sauron au Mal — même mécanique (D148). Elle sert à activer des unités que la carte jouée ne couvre pas.
 
 **Gagner des points — deux sources**
 
@@ -326,7 +329,7 @@ Il n'y a **pas de plafond de réserve** : les points s'accumulent librement d'un
 
 ### 6.1 Mouvement par classe et type
 
-Le mouvement se lit **directement au jeton + au plateau** (couleur du jeton + type du plateau), sans profil — inspiré de *C&C Medieval*. Principe : plus une unité frappe fort (rouge), moins elle est mobile ; les unités lourdes doivent choisir entre **bouger** et **frapper**.
+Le mouvement découle de la **classe** (couleur du jeton) et du **type** de l'unité — inspiré de *C&C Medieval*. Principe : plus une unité frappe fort (rouge), moins elle est mobile ; les unités lourdes doivent choisir entre **bouger** et **frapper**.
 
 | | 🟢 Verte (2 dés) | 🔵 Bleue (3 dés) | 🔴 Rouge (4 dés) |
 |---|---|---|---|
@@ -338,7 +341,7 @@ Le mouvement se lit **directement au jeton + au plateau** (couleur du jeton + ty
 
 > **Règles intrinsèques liées au mouvement.** Plusieurs cases de la grille classe × type × mode portent des règles qui se lisent au plateau (voir §2.4) : **[Mobilité X]** — le tir léger ou monté décroche de X hexagones après avoir tiré — et **[Poursuite X]** — la cavalerie de mêlée enfonce puis frappe une seconde cible (§8.2). Elles ne se notent pas sur le profil.
 
-**Créatures et Chars** conservent une valeur de mouvement **propre à leur profil** (pièces signatures) et ne suivent pas cette grille — le Mûmakil, par exemple, a son déplacement dédié (translation 1-2-1).
+**Chars et Créatures (D153).** Par défaut, un **Char** se déplace comme une unité de **Cavalerie** de sa classe, et une **Créature** comme une unité d'**Infanterie** de sa classe. Un profil peut fixer un mouvement propre, qui prime : le Mûmakil a son déplacement dédié (translation 1-2-1), le Roi-Sorcier [Vol]. Le Troll du Mordor n'a pas de mouvement propre : il se déplace comme l'Infanterie 🔴 (1 hexagone puis attaque, ou 2 sans attaquer).
 
 > Une unité peut toujours se déplacer de moins que son maximum, ou ne pas bouger.
 
@@ -448,6 +451,8 @@ Après avoir subi une attaque et résolu toutes les retraites, l'unité ciblée 
 La contre-attaque est **universelle** — toute unité peut contre-attaquer sans règle spéciale. Elle s'effectue à la valeur d'attaque complète selon la séquence normale (étapes 1 à 8 uniquement — pas d'avance ni de nouvelle contre-attaque).
 
 > 🔄 **Convention de jeu recommandée — Playtest #1b (2026-07-27, D052)** : la contre-attaque universelle est la règle la plus oubliée à la table (constat du Playtest #1, D042). Dispositif validé pour y remédier, en particulier pour la table à 6 joueurs : poser un **jeton d'activation** sur chaque unité du camp actif au moment où elle joue, et un **jeton de cible** sur toute unité adverse qui subit une attaque et survit. Le jeton de cible rappelle qu'une contre-attaque est due ; il est retiré une fois celle-ci résolue. Testé avec succès au Playtest #1b — plus aucun oubli signalé. À intégrer à l'aide de jeu convention.
+>
+> 🔄 **Abandonnée (D152).** Les jetons d'activation et de cible ne sont plus utilisés à la table : la contre-attaque est entrée dans les habitudes des joueurs.
 
 ---
 
@@ -529,7 +534,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | Normal | 6 points |
 | Épique | 8 points |
 
-> ⚠️ **Point ouvert** — ces seuils sont repris tels quels d'un système voisin, à valider (ou recalibrer) au Playtest #1.
+> Le seuil est toujours fixé par le scénario ; ces valeurs sont indicatives. Le seuil Épique de 8 points est celui du Pelennor (D121).
 
 ---
 
@@ -582,7 +587,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 
 | Règle | Résumé |
 |---|---|
-| **Faible** | Dernière figurine : Épée inactive en attaque *(sauf badge Élite, Jamais Faible)* |
+| **Faible** | Dernière figurine : Épée inactive en attaque |
 | **[Armure]** | 1 dé par touche subie, annulée sur Pouvoir (+ Couronne si Leader) — mêlée et tir |
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
@@ -590,7 +595,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
 | **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — contre-attaque même en cas de recul forcé, puis recule normalement |
 | **Faction** (badge, cumulable, D092) | Marqueur : règle assignée à cette unité précise (fluff ou distinction tactique) — plus un trait de peuple universel |
-| **Bannière** (badge, cumulable, D092) | Marqueur, figurine porte-étendard visible : l'unité porte [Inébranlable 1] |
+| **Bannière** (figurine avec bannière, pas un badge — D152) | Figurine porte-étendard visible : l'unité porte [Inébranlable 1] |
 | **Légende** (badge, cumulable, réservé aux unités uniques) | Marqueur : +1 dé de combat |
 | **Leader** (badge, cumulable, D093) | Marqueur : touche aussi sur Couronne, [Inébranlable 1] à son unité + unités amies adjacentes, statut Général et Destin possibles (§2.2bis) |
 
@@ -600,16 +605,16 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 
 ## Points ouverts de ce document
 
-| # | Sujet | Renvoi |
-|---|---|---|
-| 1 | Seuils de victoire par format, à revalider au playtest de la taxonomie | §10.2 / P7a |
-| 2 | Répartition des cartes et ordre de jeu à 3 joueurs par camp (format Épique) | §5.5 |
-| 3 | Recalcul des coûts sur la nouvelle base (durabilité 4:3, archerie affaiblie, **intrinsèques par case §2.4**, passage en matrice) | P3 |
-| 4 | Mouvement et PV des **Créatures / Chars** (hors grille) à confirmer profil par profil | P4 / P5 |
+*Aucun point ouvert à ce jour.*
 
-> ✅ **Résolus par la revue classe × type (2026-08-05, D063)** : les règles spéciales **intrinsèques par combinaison** (ex-#3) et les **bonus intrinsèques par classe/type** (ex-#5, jadis écartés) sont désormais définis au **§2.4**.
-
+> ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario, le Pelennor à 8 points (D121) — §10.2. Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.28 — Phase 1 — 2026-09-24. **D153 — mouvement par défaut des Chars et des Créatures** (§6.1) : un Char se déplace comme la Cavalerie de sa classe, une Créature comme l'Infanterie de sa classe, sauf mouvement propre indiqué au profil. Le Troll du Mordor suit la règle par défaut (Infanterie 🔴).*
+
+*Version : 0.27 — Phase 1 — 2026-09-24. **D152 — le texte suit le matériel réellement utilisé**, sans changement de mécanique. La **Bannière n'est plus un badge** : une figurine avec bannière confère [Inébranlable 1] (§2.2 et récapitulatif). La réserve de Pouvoir se tient **en jetons, sans piste** (§2.1, §4 étape g, §5.6). Les **jetons d'activation et de cible** sont abandonnés (§2.1, §7.6). Le **plateau de mouvement** n'a aucune valeur de règle : le type d'une unité vient de son profil (§2.1, §2.2, §6.1).*
+
+*Version : 0.26 — Phase 1 — 2026-09-24. **D150 — chaque camp nomme ses Sections depuis son propre bord** : §5.1, nouveau premier paragraphe. **Corrections de forme, sans numéro D** : §2.1 renvoie à [[Terrain]] (le terrain était dit « hors scope ») ; §2.2 et récapitulatif ne mentionnent plus le badge Élite, abandonné en D092 ; §2.3 ne cite plus [Prise de flanc], sans porteur depuis D101/D102, parmi les modificateurs du plafond de 6 dés ; §10.2 : le point ouvert sur les seuils est clos (seuil fixé par le scénario, Pelennor à 8, D121) ; table des points ouverts vidée, les quatre sujets étant résolus.*
 
 *Version : 0.25 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : §2.1, §2.2, §2.3, §7.2, §7.3, résumé des faces. Le mot « cible » en minuscule (l'unité visée) est inchangé.*
 

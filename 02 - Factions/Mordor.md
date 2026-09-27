@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-09-25"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.10"
+version: "1.11"
 ---
 
 # Mordor — Profils d'unités
@@ -38,7 +38,7 @@ version: "1.10"
 | 4 | Bande de pisteurs orques | Infanterie | Distance | 🟢 | *(aucune)* | **3** |
 | 5 | Meute de cavaliers wargs | Cavalerie | Mêlée | 🔵 | Horde, Bannière | **6** |
 | 6 | Bande d'uruk-hai du Mordor | Infanterie | Mêlée | 🔴 | Horde, Bannière | **5** |
-| 7 | Troll du Mordor — *signature* | Créature | Mêlée | 🔴 | *(hors matrice, voir §3)* | **7** |
+| 7 | Troll du Mordor — *signature* | Créature | Mêlée | 🔴 | *(hors matrice, voir §3)* | **6** |
 | 8 | Roi-Sorcier sur l'ombre ailée — *signature* | Créature | Mêlée | 🔴 *(nominal)* | *(hors matrice, voir §4)* | **10** *(17 avec Général/Destin)* |
 
 **Coûts avec option Horde (+3 brut) :**
@@ -61,13 +61,13 @@ version: "1.10"
 
 | Type | Combat | Classe | Mouvement | Attaque | PV | **Points** |
 |---|---|---|---|---|---|---|
-| Créature | Mêlée | 🔴 | 2 | 4 dés | 4 | **7** |
+| Créature | Mêlée | 🔴 | comme l'Infanterie 🔴 *(1 + attaque, ou 2 ; D153)* | 4 dés | 4 | **6** |
 
 **Règles :** **[Relance 1]** (fixe, signature — le coup de massue qui ne rate pas deux fois).
 
 **Défense (D103) :** **[Armure]** (sans X) — jet de sauvetage 1d6 contre chaque touche reçue, annulée sur Pouvoir. Remplace l'ancien [Armure 1] intrinsèque (mécanique différente, valeur équivalente). Intrinsèque, gratuit — comme avant.
 
-**Chiffrage (inchangé) :** brut = 2 (Mvt) + 4 (PV) + 12 (Atk 4×3) + 2 (Relance 1) = 20 → round(20÷3)−1 = 6, **+1 prime de pièce signature** = **7**.
+**Chiffrage (D154) :** brut = 1 (Mvt, Infanterie 🔴) + 4 (PV) + 12 (Atk 4×3) + 2 (Relance 1) = 19 → round(19÷3)−1 = 5, **+1 prime de pièce signature** = **6**.
 
 ---
 
@@ -111,7 +111,7 @@ version: "1.10"
 |---|---|
 | **Faction [Horde]** *(troisième version)* | 1, 2, 3, 5, 6 |
 | **Bannière** | 1, 2, 3, 5, 6 |
-| **Signature, hors matrice** | Troll (7) · Roi-Sorcier (8) |
+| **Signature, hors matrice** | Troll (6) · Roi-Sorcier (8) |
 | **Leader/Général/Destin** | Gothmog (Uruk-hai) · Roi-Sorcier au Pelennor |
 
 ---
@@ -123,6 +123,8 @@ version: "1.10"
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change nettement le ressenti par rapport aux deux versions précédentes, à surveiller au prochain playtest.
 
 ---
+
+*Version : 1.11 — Phase 1 — 2026-09-25. **D153** — le Troll du Mordor n'a pas de mouvement propre : il se déplace comme l'Infanterie 🔴 (1 hexagone puis attaque, ou 2 sans attaquer). Colonne Mouvement du §3 corrigée. **D154** : chiffrage recalculé avec le mouvement du barème pour l'Infanterie 🔴 (1 au lieu de 2), le Troll passe de **7 à 6 points** (§2, §3, récapitulatif).*
 
 *Version : 1.10 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : [Armure] du Troll, [Terreur] du Roi-Sorcier. Aucun coût modifié.*
 

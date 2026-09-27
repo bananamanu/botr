@@ -25,16 +25,38 @@
             "id": "615b2779f8225468",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "07 - Aides de jeu/5a_Roster_Bien.pdf"
+                "file": "00 - META/Retours sessions livre de règles.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "5a_Roster_Bien"
+              "icon": "lucide-file",
+              "title": "Retours sessions livre de règles"
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "a8fdc87d16f530c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6233f6418b1ba33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "08 - Livret/Livret_de_regles.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Livret_de_regles"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01 - Règles/BdVM_AideDeJeu.md",
+                "file": "08 - Livret/Livret_de_regles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +141,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour BdVM_AideDeJeu"
+              "title": "Rétroliens"
             }
           },
           {
@@ -184,7 +206,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 587.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -198,14 +220,18 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "730387c2e5f186e4",
+  "active": "d6233f6418b1ba33",
   "lastOpenFiles": [
+    "01 - Règles/files.zip",
+    "01 - Règles/Regles_Base (1).md",
+    "08 - Livret/Livret_de_regles (1).md",
+    "00 - META/Retours sessions livre de règles.md",
     "08 - Livret/Livret_de_regles.md",
+    "07 - Aides de jeu/5a_Roster_Bien.pdf",
     "08 - Livret/00_Conventions_et_glossaire.md",
     "08 - Livret",
     "05 - Playtest/Playtest5_Compte-rendu.md",
     "07 - Aides de jeu/5b_Roster_Mal.pdf",
-    "07 - Aides de jeu/5a_Roster_Bien.pdf",
     "07 - Aides de jeu/1_Aide_commune.pdf",
     "07 - Aides de jeu/2_Profils_28_unites.pdf",
     "07 - Aides de jeu/3_Fiche_joueur_Centre.pdf",
@@ -231,7 +257,6 @@
     "05 - Playtest/Playtest4_Compte-rendu.md",
     "03 - Scénarios/Playtest4_Epique_Pelennor.md",
     "02 - Factions/Gondor_et_Fiefs.md",
-    "01 - Règles/Regles_Base (1).md",
     "04 - Composants/Cartes_Commandement (1).md",
     "00 - META/Document_de_cadrage (1).md",
     "02 - Factions/Mordor.md",
@@ -242,9 +267,6 @@
     "05 - Playtest/Playtest3_Compte-rendu.md",
     "02 - Factions/Rohan (1).md",
     "05 - Playtest/Playtest2_Compte-rendu.md",
-    "01 - Règles/Regles_Speciales (1).md",
-    "02 - Factions/Easterling.md",
-    "03 - Scénarios/Playtest2_La_grande_bete.md",
-    "05 - Playtest/Playtest1b_Addendum.md"
+    "01 - Règles/Regles_Speciales (1).md"
   ]
 }

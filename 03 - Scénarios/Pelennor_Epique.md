@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
 statut: "jouable"
-date_maj: "2026-09-23"
+date_maj: "2026-09-25"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.7"
+version: "1.10"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -37,13 +37,13 @@ Le scénario couvre le moment où les trois forces se rencontrent. Il est **fid�
 
 ### 2.1 Sections
 
-Les trois Sections sont délimitées par deux lignes verticales :
+Les trois Sections sont délimitées par deux lignes verticales. **Chaque camp nomme ses Sections depuis son propre bord (D150)** : le plan se lit depuis le bord du Bien (ligne 1, colonne A à sa gauche), si bien que la Gauche du Bien fait face à la Droite du Mal.
 
-| Section | Étendue |
-|---|---|
-| **Gauche** | de la colonne A au **milieu de la colonne F** |
-| **Centre** | du **milieu de F** au **milieu de L** |
-| **Droite** | du **milieu de L** à la colonne Q |
+| Étendue | Section du Bien | Section du Mal |
+|---|---|---|
+| de la colonne A au **milieu de la colonne F** | **Gauche** | **Droite** |
+| du **milieu de F** au **milieu de L** | **Centre** | **Centre** |
+| du **milieu de L** à la colonne Q | **Droite** | **Gauche** |
 
 Sur les **lignes impaires** (17 hexagones, A→Q), les traits coupent en deux les hexagones **F et L**. Sur les **lignes paires** (16 hexagones, A→P), ils suivent exactement une arête : entre E et F, puis entre K et L.
 
@@ -53,12 +53,12 @@ Sur les **lignes impaires** (17 hexagones, A→Q), les traits coupent en deux le
 
 Quatre points stratégiques, tous sur les colonnes de frontière, symétriques autour de la ligne 7 :
 
-| Point | Section(s) | Camp le plus proche |
-|---|---|---|
-| **F5** | Gauche + Centre | Bien |
-| **L5** | Centre + Droite | Bien |
-| **F9** | Gauche + Centre | Mal |
-| **L9** | Centre + Droite | Mal |
+| Point | Sections du Bien | Sections du Mal | Camp le plus proche |
+|---|---|---|---|
+| **F5** | Gauche + Centre | Droite + Centre | Bien |
+| **L5** | Centre + Droite | Centre + Gauche | Bien |
+| **F9** | Gauche + Centre | Droite + Centre | Mal |
+| **L9** | Centre + Droite | Centre + Gauche | Mal |
 
 Chaque point est donc disputé par deux des trois joueurs d'un même camp, et le **joueur du Centre est adjacent aux quatre**.
 
@@ -116,12 +116,12 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 
 ### 3.2 Camp du Mal
 
-**Section Centre — Le Mordor** *(65 pts, 10 unités)*
+**Section Centre — Le Mordor** *(64 pts, 10 unités)*
 
 | Unité | Nb | Options | Pts/u |
 |---|---|---|---|
 | Roi-Sorcier sur l'ombre ailée | 1 | Général universel, Destin 4 | 17 |
-| Troll du Mordor | 1 | — | 7 |
+| Troll du Mordor | 1 | — | 6 |
 | Bande d'uruk-hai | 1 | **Gothmog** (Général non-universel, Destin 2) | 11 |
 | Bande d'uruk-hai | 1 | — | 5 |
 | Bande d'orques du Morannon | 1 | Faction [Horde], Bannière | 5 |
@@ -129,7 +129,7 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 | Bande d'orques du Mordor | 2 | Bannière | 5 |
 | Bande de pisteurs orques | 2 | — | 3 |
 
-**Section Droite — Les royaumes déchus** *(65 pts, 13 unités)*
+**Section Gauche — Les royaumes déchus** *(65 pts, 13 unités)*
 
 | Unité | Nb | Options | Pts/u |
 |---|---|---|---|
@@ -148,7 +148,7 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 
 > 🔄 **D140 — Khand entre en piste avec deux [Mercenaire] (Playtest #5).** Le peuple était **le seul du scénario sans aucun badge Faction**, sa règle propre étant un malus que personne ne prend volontairement : chaque retrait forcé compte double, pour **−2 brut**. Deux Pillards la portent désormais, un de chaque type, et la Section perd 2 points **sans compensation**. Le badge est posé sur la figurine comme tout badge Faction. L'Aurige ne peut jamais le porter (D070) : seul corps régulier du peuple.
 
-**Section Gauche — Les Mûmakil** *(56 pts, 8 unités)*
+**Section Droite — Les Mûmakil** *(56 pts, 8 unités)*
 
 | Unité | Nb | Options | Pts/u |
 |---|---|---|---|
@@ -165,16 +165,16 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 
 ### 3.3 Équilibre
 
-| Section | Bien | Mal | Écart |
+| Front (Bien / Mal) | Bien | Mal | Écart |
 |---|---|---|---|
-| **Gauche** — Aragorn vs Harad | 56 | 56 | **0** |
-| **Centre** — Dol Amroth vs Mordor | 62 | 65 | Mal +3 |
-| **Droite** — Rohan vs Khand et Orientaux | 65 | 65 | **0** |
-| **Total** | **183** | **186** | **Mal +3** |
+| **Gauche / Droite** — Aragorn vs Harad | 56 | 56 | **0** |
+| **Centre / Centre** — Dol Amroth vs Mordor | 62 | 64 | Mal +2 |
+| **Droite / Gauche** — Rohan vs Khand et Orientaux | 65 | 65 | **0** |
+| **Total** | **183** | **185** | **Mal +2** |
 
 **Deux Sections sur trois à parité exacte.** C'est le chiffre qui compte le plus : en 3 contre 3, chaque joueur affronte une Section et non l'armée entière, et un total global équilibré peut très bien cacher un front écrasé.
 
-Les effectifs sont volontairement asymétriques. À gauche, Aragorn aligne 11 unités contre 8 pour la même valeur — beaucoup de troupes légères face aux deux Mûmakil. À droite, le Rohan n'en a que 10 contre 13, mais ce sont des Éored et des Gardes royaux. Le nombre contre la qualité, dans les deux sens.
+Les effectifs sont volontairement asymétriques. Face au Harad, Aragorn aligne 11 unités contre 8 pour la même valeur — beaucoup de troupes légères face aux deux Mûmakil. Face à Khand et aux Orientaux, le Rohan n'en a que 10 contre 13, mais ce sont des Éored et des Gardes royaux. Le nombre contre la qualité, dans les deux sens.
 
 > 🎲 **Méthode (D124).** Tous les coûts sont calculés depuis le **brut de matrice** de `[[Regles_Points]]` §5, additionné des suppléments de §3.3, puis compressé une seule fois par `round(brut ÷ 3) − 1` — jamais en additionnant des coûts finaux, la compression n'étant pas linéaire.
 
@@ -190,9 +190,9 @@ Les troupes sont préparées à l'avance sur leurs plateaux de mouvement, regrou
 |---|---|---|---|
 | 1 | Mal | **Mordor** — Gothmog et le Roi-Sorcier obligatoires | Centre, lignes 9-13 |
 | 2 | Bien | **Dol Amroth et Lossarnach** — Imrahil et Forlong | Centre, lignes 1-3 |
-| 3 | Mal | **Khand et Orientaux** — le Roi de Khand | Droite, lignes 10-13 |
+| 3 | Mal | **Khand et Orientaux** — le Roi de Khand | Gauche du Mal, lignes 10-13 |
 | 4 | Bien | **Rohan** — Théoden et Éomer | Droite, lignes 1-5 *(sans L5)* |
-| 5 | Mal | **Harad** — Suladan ; **les deux Mûmakil se posent en premier** | Gauche, lignes 10-13 |
+| 5 | Mal | **Harad** — Suladan ; **les deux Mûmakil se posent en premier** | Droite du Mal, lignes 10-13 |
 | 6 | Bien | **Aragorn et la Compagnie Grise**, Rangers, Lamedon, renforts | Gauche, lignes 1-3 |
 
 ### 4.2 Zones de déploiement
@@ -204,9 +204,9 @@ Le placement est **libre à l'intérieur de la zone**. Seuls les Mûmakil ont de
 | **Bien — Section gauche** | B1 C1 D1 E1 · A2 B2 C2 D2 E2 · B3 C3 D3 E3 · B4 C4 D4 | 11 | 16 hex. |
 | **Bien — Centre** | G1 H1 I1 J1 K1 · F2 G2 H2 I2 J2 K2 · G3 H3 I3 J3 K3 | 9 | 16 hex. |
 | **Bien — Section droite** | L1 M1 N1 O1 P1 Q1 · L2 M2 N2 O2 P2 · L3 M3 N3 O3 P3 Q3 · L4 M4 N4 O4 P4 | 10 | 22 hex. |
-| **Mal — Section gauche** | C10 D10 · C11 D11 E11 · C12 D12 · C13 D13 E13 *(hors Mûmakil)* | 6 | 10 hex. |
+| **Mal — Section droite** | C10 D10 · C11 D11 E11 · C12 D12 · C13 D13 E13 *(hors Mûmakil)* | 6 | 10 hex. |
 | **Mal — Centre** | H9 I9 J9 · G10 H10 I10 J10 · G11 H11 I11 J11 K11 · G12 H12 I12 J12 K12 · G13 H13 I13 J13 K13 | 10 | 22 hex. |
-| **Mal — Section droite** | L10 M10 N10 O10 P10 · L11 M11 N11 O11 P11 Q11 · L12 M12 N12 O12 P12 · L13 M13 N13 O13 P13 Q13 | 13 | 22 hex. |
+| **Mal — Section gauche** | L10 M10 N10 O10 P10 · L11 M11 N11 O11 P11 Q11 · L12 M12 N12 O12 P12 · L13 M13 N13 O13 P13 Q13 | 13 | 22 hex. |
 
 Après l'allègement de D126, les zones sont larges — entre 45 % et 69 % d'occupation. Elles ne sont volontairement pas rétrécies : plus le déploiement offre de choix, plus il vaut la peine d'être joué.
 
@@ -218,12 +218,12 @@ Chaque Mûmakil occupe 4 hexagones en colonne **1-2-1** :
 
 | Mûmakil | Occupation |
 |---|---|
-| **Mûmakil d'aile** | **B11** / **A12** + **B12** / **B13** — entièrement en Section Gauche |
-| **Mûmakil de frontière** | **F11** / **E12** + **F12** / **F13** — à cheval sur Gauche et Centre |
+| **Mûmakil d'aile** | **B11** / **A12** + **B12** / **B13** — entièrement en Section Droite du Mal |
+| **Mûmakil de frontière** | **F11** / **E12** + **F12** / **F13** — à cheval sur Droite et Centre du Mal |
 
 Les deux se posent **avant** le reste des troupes du Harad.
 
-> ⚔️ **Le Mûmakil de frontière appartient aux deux Sections** (F11 et F13 sont des hexagones coupés, E12 est à gauche, F12 au centre). Le joueur du Harad **et** celui du Mordor peuvent l'activer. C'est voulu : la plus grosse pièce du Mal est un bien commun, et les deux joueurs devront s'entendre sur qui la lance et quand.
+> ⚔️ **Le Mûmakil de frontière appartient aux deux Sections** (F11 et F13 sont des hexagones coupés, E12 est en Section Droite du Mal, F12 au Centre). Le joueur du Harad **et** celui du Mordor peuvent l'activer. C'est voulu : la plus grosse pièce du Mal est un bien commun, et les deux joueurs devront s'entendre sur qui la lance et quand.
 
 ### 4.4 Plan imprimable
 
@@ -303,7 +303,7 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 | Plateaux de cavalerie (3 figurines) | 23 |
 | Socles 65 mm | 6 — Roi-Sorcier, Troll, 2 Mûmakil, 2 Auriges |
 | Compteurs de PV | 6, montant jusqu'à **8** *(le Mûmakil ; l'Aurige en a 3, le Troll 4, le Roi-Sorcier 6)* |
-| **Pistes de Pouvoir** *(D133)* | 2 — une par camp, graduée jusqu'à **30** |
+| **Jetons de Pouvoir** *(D133, D152)* | une trentaine par camp, sans piste |
 | **Dés de bataille** *(D133)* | 6 par camp — face Pouvoir : **Rune de Gandalf** au Bien, **Œil de Sauron** au Mal |
 | **Total** | **61 unités, 203 figurines** *(hors Éowyn et Merry)* |
 
@@ -311,7 +311,7 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 
 Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont 🟢, à 2 dés**. La portée dépend du type (D132) — **1–4 à pied, 1–3 à cheval**. Au Pelennor : 10 unités de tir à pied (4 Rangers, 2 Pisteurs, 2 Archers orientaux, 2 Archers du Harad) et 6 montées (4 Éclaireurs, 2 Pillards de Khand).
 
-**Dimensionner la piste de Pouvoir** (D133) : un camp encaisse de l'ordre de 3 points de Pouvoir par round, plus 2 forfaitaires — environ 5 par round. Sans plafond de réserve et avec 6 achats possibles dans le même tour (~18 points), il faut pouvoir afficher une trentaine de points. **Une piste graduée avec un marqueur est plus lisible qu'un tas de jetons** à six joueurs autour d'une table.
+**Dimensionner la réserve de Pouvoir** (D133) : un camp encaisse de l'ordre de 3 points de Pouvoir par round, plus 2 forfaitaires — environ 5 par round. Sans plafond de réserve et avec 6 achats possibles dans le même tour (~18 points), il faut pouvoir en tenir une trentaine. *(D152 : la piste graduée un temps envisagée n'est pas utilisée, la réserve se tient en jetons.)*
 
 **Pas de gabarit Mûmakil** (D131) : la figurine mord elle-même sur ses quatre hexagones. Elle porte trois badges — 🔴 mêlée, 🟢 arc et Faction Harad, ces deux derniers rappelant son tir empoisonné.
 
@@ -334,6 +334,12 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 - **Tarif de la sauvegarde conférée par badge** — ouvert par D143, voir `[[Regles_Points]]` §8 point 4. Concerne deux unités du scénario, sans incidence sur l'équilibre par Section.
 
 ---
+
+*Version : 1.10 — Phase 1 — 2026-09-25. **D154 — le Troll du Mordor passe de 7 à 6 points** (mouvement d'Infanterie 🔴, D153). Section Centre du Mal **65 → 64**, écart au Centre **Mal +2**, totaux **183 / 185**.*
+
+*Version : 1.9 — Phase 1 — 2026-09-24. **D152 — le texte suit le matériel réellement utilisé**, sans changement de mécanique. §8 : les pistes de Pouvoir sont remplacées par des jetons, une trentaine par camp.*
+
+*Version : 1.8 — Phase 1 — 2026-09-24. **D150 — chaque camp nomme ses Sections depuis son propre bord.** Les noms du Bien sont inchangés ; ceux du Mal sont inversés : le Harad et les Mûmakil tiennent désormais la **Section Droite du Mal**, Khand et les Orientaux la **Section Gauche du Mal**. Aucune unité ne bouge, aucun coût ne change. §2.1 (table des Sections à deux colonnes), §2.2 (Sections des points stratégiques pour chaque camp), §3.2 (titres des Sections du Mal), §3.3 (fronts nommés Bien / Mal), §4.1, §4.2 et §4.3. À répercuter en P11b : fiche scénario et roster Mal.*
 
 *Version : 1.7 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : §5.2 (calcul de Merry), §6, §7 (pistes et dés). Les points ouverts clos du §8 gardent leur libellé historique.*
 

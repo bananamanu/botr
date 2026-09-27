@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-09-24"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.15"
+version: "0.17"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -298,7 +298,7 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 
 ### 7.1 Rôles
 
-Chaque camp compte 3 joueurs, un par Section. Le camp ne tient qu'**une seule main**, comme en format Normal (§5.1-§5.4 de [[Regles_Base]]) — c'est le **joueur Centre** qui la tient et qui décide, à chaque tour de son camp, quelle(s) carte(s) jouer, en concertation avec ses deux coéquipiers Gauche et Droite.
+Chaque camp compte 3 joueurs, un par Section. Chaque camp nomme ses Sections depuis son propre bord ([[Regles_Base]] §5.1, D150) : le joueur Gauche d'un camp fait face au joueur Droite de l'autre. Le camp ne tient qu'**une seule main**, comme en format Normal (§5.1-§5.4 de [[Regles_Base]]) — c'est le **joueur Centre** qui la tient et qui décide, à chaque tour de son camp, quelle(s) carte(s) jouer, en concertation avec ses deux coéquipiers Gauche et Droite.
 
 Une fois la carte choisie, chaque joueur déplace et fait combattre les unités de **sa propre** Section : le joueur Centre ne joue pas à la place de ses coéquipiers, il choisit seulement quel ordre est donné. Sur une carte multi-sections (En marche, En avant, Encerclement) ou une carte Tactique touchant plusieurs sections (Charge de cavalerie, Cri de guerre, etc.), chaque joueur résout l'activation de ses propres unités concernées.
 
@@ -343,7 +343,7 @@ L'alternance des tours entre les deux camps reste celle du format Normal — un 
 
 ### 7.7 La réserve de Pouvoir à trois joueurs (D133, D148)
 
-La réserve est **commune au camp** : une seule piste, trois joueurs qui y puisent. Elle se dépense à l'**étape de commandement**, une fois la ou les cartes révélées, et **chaque joueur décide pour sa propre Section** — ce n'est pas une prérogative du joueur Centre, contrairement au choix des cartes (§7.1).
+La réserve est **commune au camp** : un seul tas de jetons de Pouvoir, trois joueurs qui y puisent. Elle se dépense à l'**étape de commandement**, une fois la ou les cartes révélées, et **chaque joueur décide pour sa propre Section** — ce n'est pas une prérogative du joueur Centre, contrairement au choix des cartes (§7.1).
 
 - **Chaque joueur peut acheter jusqu'à 2 unités par tour**, soit **6 au maximum pour le camp** si la réserve suit.
 - Un joueur n'achète que des unités **de sa Section**. Une unité posée sur un **hexagone de frontière** (§7.1) peut être achetée par l'un **ou** l'autre des deux joueurs concernés, jamais par les deux.
@@ -351,7 +351,7 @@ La réserve est **commune au camp** : une seule piste, trois joueurs qui y puise
 - La réserve étant commune et limitée, **l'arbitrage entre les trois joueurs se fait à la discussion**. En cas de désaccord, le **joueur Centre tranche** — il tient déjà la main.
 
 > 💡 **Exemple de jeu**
-> Le camp Bien joue « Attaque Gauche » : 3 unités activées à gauche. Sa piste de Pouvoir affiche 11 points. Le joueur Gauche ajoute une Compagnie Grise 🔴 (4 points) ; le joueur Droite, que la carte ne sert pas du tout, ajoute deux Éored 🔵 (3 + 3 = 6 points). Il reste 1 point sur la piste, et le camp a activé 6 unités au lieu de 3.
+> Le camp Bien joue « Attaque Gauche » : 3 unités activées à gauche. Sa réserve compte 11 jetons de Pouvoir. Le joueur Gauche ajoute une Compagnie Grise 🔴 (4 points) ; le joueur Droite, que la carte ne sert pas du tout, ajoute deux Éored 🔵 (3 + 3 = 6 points). Il reste 1 jeton dans la réserve, et le camp a activé 6 unités au lieu de 3.
 
 > ⚠️ **Pas de plafond de réserve.** Un camp peut thésauriser plusieurs tours puis lâcher 6 achats d'un coup — de l'ordre de 18 points, soit 3 à 4 tours d'épargne. C'est un coup de poing volontairement possible ; c'est aussi un tour long, à surveiller contre la limite de 3 heures du scénario Épique.
 
@@ -363,6 +363,10 @@ Règle complète et sources de gain : [[Regles_Base]] §5.6.
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.17 — Phase 1 — 2026-09-24. **D152 — le texte suit le matériel réellement utilisé**, sans changement de mécanique. §7.7 : la réserve de Pouvoir se tient en jetons, sans piste (texte et exemple).*
+
+*Version : 0.16 — Phase 1 — 2026-09-24. **D150 — chaque camp nomme ses Sections depuis son propre bord** (§7.1). Le texte de la carte *Contre-attaque* (§4.2), qui échange gauche et droite, suppose cette convention : il est désormais juste.*
 
 *Version : 0.15 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : texte et note de « Cri de guerre » (§4.2).*
 

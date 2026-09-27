@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-09-24"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.35"
+version: "0.36"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -50,12 +50,12 @@ version: "0.35"
 |---|---|---|
 | **Socle générique** | Vocabulaire universel disponible à tout profil (défense, relance, poursuite…) | §2 de ce document |
 | **Intrinsèque** | Découle de la combinaison classe × type × mode — **ne se note pas sur le profil**, se lit au jeton/plateau | [[Regles_Base]] (§2, §6) |
-| **Badge** | Faction / Bannière / Légende / Leader — assignés **unité par unité**, cumulables sans plafond | §4a de ce document, [[Regles_Base]] §2.2/§2.2bis |
+| **Badge** | Faction / Légende / Leader — assignés **unité par unité**, cumulables sans plafond | §4a de ce document, [[Regles_Base]] §2.2/§2.2bis |
 | **Signature** | Capacité(s) marquante(s), réservée aux **pièces bespoke uniquement** (Compagnie Grise, Mûmakil, Roi-Sorcier), hors matrice de badges | §4b de ce document |
 
 > **Faction restaurée, changée de nature (D092).** Retirée en D090 (renvoyée aux cartes de commandement de P8), elle revient au Playtest #4 mais **plus comme trait de peuple universel** (D081/D085) : c'est désormais un **badge assigné unité par unité**, à la discrétion du concepteur (fluff — « toute unité autour d'Éomer porte [Férocité] » — ou distinction tactique — « les orques du Morannon portent [Horde] pour se distinguer des orques normaux »). Elle reprend le vocabulaire déjà existant ci-dessous (ex-§4a).
 >
-> **Badges : cumulables librement, sans plafond** (amende D081/D089). Une unité peut porter Faction, Bannière, Légende et Leader simultanément si le concepteur le juge lisible pour cette unité. Les badges **Spéciale** et **Élite** (D073) sont **abandonnés** — plus de [Relance 1]/[Inébranlable 1]+Jamais Faible génériques attachés à un badge de ce nom. Nouveau badge **Bannière** = **[Inébranlable 1]**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton). Défini dans [[Regles_Base]] §2.2 ; coûts dans [[Regles_Points]] §3.1 (Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8).
+> **Badges : cumulables librement, sans plafond** (amende D081/D089). Une unité peut porter Faction, Légende et Leader simultanément (la figurine avec bannière n'est pas un badge, D152) si le concepteur le juge lisible pour cette unité. Les badges **Spéciale** et **Élite** (D073) sont **abandonnés** — plus de [Relance 1]/[Inébranlable 1]+Jamais Faible génériques attachés à un badge de ce nom. Nouveau badge **Bannière** = **[Inébranlable 1]**, incarné par une figurine porte-étendard visible sur le socle (pas de jeton). Défini dans [[Regles_Base]] §2.2 ; coûts dans [[Regles_Points]] §3.1 (Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8).
 
 ### Où se résolvent les signatures
 
@@ -390,6 +390,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.36 — Phase 1 — 2026-09-24. **D152 — le texte suit le matériel réellement utilisé**, sans changement de mécanique. La figurine avec bannière n'est plus un badge : table des conventions et encadré « Badges ».*
 
 *Version 0.35 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : [Arme de jet X], [Archer en mêlée], récapitulatif alphabétique.*
 
