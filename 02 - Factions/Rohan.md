@@ -3,16 +3,16 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.9"
+version: "2.10"
 ---
 
 # Rohan — Profils d'unités
 
 > **Objet de ce document (P8 — simplification radicale, D101/D102, retouches D107).** Même principe qu'à Gondor : une unité de base ne porte **plus aucun badge d'office**. Profil = Type + Combat + Classe. Seules options possibles : **Faction** ([Férocité], toujours disponible en tant qu'outil, jamais un supplément systématique) et **Bannière**, marquées ligne par ligne. Pas de fusion de familles nécessaire ici (arbitrage Emmanuel) — les 9 lignes historiques restent distinctes, différenciées par leur classe.
 >
-> **La Garde du Roi (8, 9) devient une pièce entièrement signature (D107)** : elle abandonne Faction et se définit désormais par **Légende** (+1 dé) + **[Inébranlable ∞]** — elle ne recule jamais, donc [Férocité] (contre-attaquer malgré un recul) n'a plus de sens et disparaît.
+> **La Garde du Roi (8, 9) devient une pièce entièrement signature (D107)** : elle abandonne Faction et se définit désormais par **Légende** (+1 dé) + **[Inébranlable ∞]** — elle ne recule jamais, donc [Férocité] (riposter malgré un recul) n'a plus de sens et disparaît.
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
 
@@ -20,7 +20,7 @@ version: "2.9"
 
 ## 1. Faction du Rohan — [Férocité]
 
-Contre-attaque même repoussé. **Outil optionnel**, +1 brut, disponible sur les unités marquées éligibles ci-dessous — jamais automatique.
+Riposte même repoussé. **Outil optionnel**, +1 brut, disponible sur les unités marquées éligibles ci-dessous — jamais automatique.
 
 **Bannière** : [Inébranlable 1], +2 brut, figurine porte-étendard — disponible sur les formations réglées, **y compris désormais la Milice lige** (D107 : une milice peut très bien se rallier à un étendard local).
 
@@ -37,7 +37,7 @@ Contre-attaque même repoussé. **Outil optionnel**, +1 brut, disponible sur les
 
 > 🎲 **Case comblée (D124).** Éored d'éclaireur **+ Faction [Férocité]** : brut 13 + 1 = 14 → `round(14÷3)−1` = **4**. C'est la seule unité du Rohan où la Faction n'est **pas** absorbée par la compression — sur l'Éored de cavalier (22 → 6) et les Gardes royaux à cheval (24 → 7), elle reste gratuite.
 
-> ⚠️ **Case chiffrée mais à éviter (D141, Playtest #5).** [Férocité] permet de contre-attaquer *malgré* un recul forcé. L'Éored d'éclaireur est une **unité de tir montée qui ne va presque jamais au contact** : la règle ne s'y déclenche pratiquement jamais. La case reste au barème pour la complétude, mais **la poser sur un éclaireur revient à payer 1 point pour rien** — au Pelennor, l'ordre de bataille ne le fait plus.
+> ⚠️ **Case chiffrée mais à éviter (D141, Playtest #5).** [Férocité] permet de riposter *malgré* un recul forcé. L'Éored d'éclaireur est une **unité de tir montée qui ne va presque jamais au contact** : la règle ne s'y déclenche pratiquement jamais. La case reste au barème pour la complétude, mais **la poser sur un éclaireur revient à payer 1 point pour rien** — au Pelennor, l'ordre de bataille ne le fait plus.
 | 5 | Gardes royaux à cheval | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
 | 6 | Gardes Royaux du Rohan | Infanterie | Mêlée | 🔴 | Faction, Bannière | **5** |
 | 7 | Helmingas de Grimbolg | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
@@ -64,7 +64,7 @@ Infanterie ou Cavalerie (au choix, jamais les deux simultanément), Mêlée, �
 
 **Règles :** **Légende** (+1 dé) + **[Inébranlable ∞]** (ne recule jamais, quel que soit le nombre de Drapeaux subis).
 
-> 🎲 **Pourquoi plus de Férocité ?** [Férocité] permet de contre-attaquer *malgré* un recul forcé. Une unité qui ne recule **jamais** n'a strictement rien à gagner de cette règle — elle contre-attaque de toute façon, dans tous les cas. La retirer est une simplification pure, pas une perte de puissance.
+> 🎲 **Pourquoi plus de Férocité ?** [Férocité] permet de riposter *malgré* un recul forcé. Une unité qui ne recule **jamais** n'a strictement rien à gagner de cette règle — elle riposte de toute façon, dans tous les cas. La retirer est une simplification pure, pas une perte de puissance.
 
 **Chiffrage (D107, [Inébranlable ∞] au tarif bespoke établi par le Mûmakil — voir [[Regles_Points]] §3.4) :**
 
@@ -103,6 +103,8 @@ Bannière portée au Playtest #4 par 2 éoreds (+1 → **7** chacun) et 1 garde 
 - **Garde du Roi à 8/10 pts** — hausse sensible par rapport à l'ancienne version (7/8), à surveiller au prochain playtest : une pièce increvable au recul, avec 5 dés (Légende), à ce tarif, doit rester utilisable dans un format 3v3 sans écraser la ligne.
 
 ---
+
+*Version : 2.10 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
 *Version : 2.9 — Phase 1 — 2026-09-19. **P13 — D141, avertissement sur [Férocité] posée sur un éclaireur.** Le roster n'est pas modifié : l'option reste disponible et son coût de 4 pts reste juste. Mais le Playtest #5 a montré que la case n'a aucun intérêt de jeu — une unité de tir montée ne subit presque jamais le recul forcé que [Férocité] permet d'ignorer. Avertissement ajouté sous la case comblée de D124. Conséquence au scénario : `[[Pelennor_Epique]]` passe de six à quatre badges [Férocité], tous sur des unités montées de mêlée, et la Section droite du Bien tombe de 67 à 65 points. Aucun coût de profil retouché.*
 

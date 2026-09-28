@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-25"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.11"
+version: "1.12"
 ---
 
 # Mordor — Profils d'unités
@@ -77,7 +77,7 @@ version: "1.11"
 |---|---|---|---|---|---|---|
 | Créature | Mêlée | 🔴 *(nominal)* | [Vol] 4 cases *(ignore les figurines)* | 4 dés | 6 | **10** *(base)* / **17** *(avec Général+Destin 4, forme jouée au Pelennor)* |
 
-**Règles :** [Terreur] (Pouvoir = 2 Drapeaux) · [Vigilant] (jamais contre-attaqué) · [Vol] (bespoke, 4 cases, ignore les figurines).
+**Règles :** [Terreur] (Pouvoir = 2 Drapeaux) · [Vigilant] (ne subit jamais de riposte) · [Vol] (bespoke, 4 cases, ignore les figurines).
 
 **Défense (D103) :** **[Armure]** — même refonte que le Troll et le Mûmakil, remplace l'ancien [Armure 1] intrinsèque. Aucun changement de coût (déjà gratuit).
 
@@ -123,6 +123,8 @@ version: "1.11"
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change nettement le ressenti par rapport aux deux versions précédentes, à surveiller au prochain playtest.
 
 ---
+
+*Version : 1.12 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
 *Version : 1.11 — Phase 1 — 2026-09-25. **D153** — le Troll du Mordor n'a pas de mouvement propre : il se déplace comme l'Infanterie 🔴 (1 hexagone puis attaque, ou 2 sans attaquer). Colonne Mouvement du §3 corrigée. **D154** : chiffrage recalculé avec le mouvement du barème pour l'Infanterie 🔴 (1 au lieu de 2), le Troll passe de **7 à 6 points** (§2, §3, récapitulatif).*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14a"
 statut: "en-cours"
-date_maj: "2026-09-24"
+date_maj: "2026-09-27"
 tags: [BdTdM, type/livret]
-version: "0.3"
+version: "0.5"
 ---
 
 # Batailles de la Terre du Milieu — Livret de règles
@@ -20,7 +20,7 @@ Votre armée ne fait pas tout ce que vous voulez. À votre tour, vous jouez une 
 
 ### Comment gagner
 
-Chaque scénario a ses propres conditions de victoire. En général, chaque unité ennemie mise en déroute rapporte 1 point de victoire, et le premier camp à atteindre le score fixé par le scénario est déclaré vainqueur. 
+Chaque scénario a ses propres conditions de victoire. En général, chaque unité ennemie mise en déroute rapporte 1 point de victoire, et le premier camp à atteindre le score fixé par le scénario est déclaré vainqueur (chapitre 4).
 
 ### Le matériel
 
@@ -189,11 +189,98 @@ Quelques pièces uniques, comme les Mûmakil ou la Compagnie Grise, ont des règ
 
 ## 4. Le tour de jeu
 
-*À rédiger — P14a.3 (29/09).*
+Les deux camps jouent chacun à leur tour. Un tour est celui d'un seul camp ; une manche compte un tour de chaque camp. Le scénario indique le camp qui ouvre chaque manche.
+
+Votre tour suit toujours le même ordre : sept étapes, réparties en deux phases.
+
+{ILLUS:sequence-tour — Frise horizontale des sept étapes, numérotées, en deux blocs « Phase principale » (1 à 4) et « Phase de bilan » (5 à 7). Sous chaque étape, un pictogramme : une carte jouée, une unité désignée du doigt, une flèche de déplacement, des dés, une médaille, une carte piochée, un jeton de Pouvoir.}
+
+### La phase principale
+
+1. **Commandement.** Jouez une carte de votre main, face visible (chapitre 5). Vous pouvez ensuite dépenser des jetons de Pouvoir pour activer des unités supplémentaires.
+2. **Ordre.** Désignez vos unités activées, une à une : celles que la carte permet d'activer, et celles que vous avez payées. Une unité n'est jamais activée deux fois dans le même tour. Une unité non activée ne bouge pas et ne combat pas.
+3. **Mouvement.** Déplacez vos unités activées, dans l'ordre de votre choix (chapitre 6). Chacune termine son déplacement avant que la suivante commence. Une unité peut rester sur place.
+4. **Attaque.** Vos unités activées attaquent, dans l'ordre de votre choix (chapitre 7). Une unité peut renoncer à attaquer.
+
+Toutes vos unités se déplacent avant que la première attaque. Une unité qui a attaqué ne se déplace plus, sauf si une règle le lui permet.
+
+### La phase de bilan
+
+5. **Points de victoire.** Comptez les objectifs d'occupation, s'il y en a (ci-dessous).
+6. **Pioche.** Défaussez la carte jouée et piochez pour compléter votre main. Quand la pioche est vide, mélangez la défausse pour en former une nouvelle.
+7. **Pouvoir.** Ajoutez 2 jetons de Pouvoir à la réserve de votre camp (chapitre 5).
+
+Puis c'est au tour du camp adverse.
+
+### Gagner la partie
+
+Chaque scénario fixe ses conditions de victoire. Sauf indication contraire, elles suivent ces règles :
+
+- **Chaque unité ennemie mise en déroute** vous rapporte 1 point de victoire, dès qu'elle est retirée du champ de bataille. Prenez une médaille.
+- **Le scénario peut fixer des objectifs** qui rapportent aussi des points. Certains sont acquis une fois pour toutes, comme éliminer une unité précise ; d'autres sont temporaires, comme un objectif d'occupation : à chaque étape des points de victoire, quel que soit le camp qui joue, sa médaille va au camp dont une unité occupe l'hexagone. S'il est vide, elle ne va à personne.
+- **Dès qu'un camp atteint le score fixé par le scénario**, il gagne la partie, même au milieu d'un tour.
+
+Certains scénarios s'écartent de ce modèle, par exemple en s'arrêtant sur une limite de temps. Le livret de scénario le précise.
+
+> **Exemple** — Un scénario place un objectif d'occupation sur un gué et fixe la victoire à 6 points. À la fin de son tour, le Gondor a mis 4 unités ennemies en déroute et tient le gué : il compte 5 points. Au tour suivant, des Orques chassent ses Piquiers du gué et s'y installent. À l'étape des points de victoire du Mal, la médaille du gué change de camp : le Gondor retombe à 4 points.
+
+> **À retenir** — Tout le monde se déplace, puis tout le monde attaque.
 
 ## 5. Commander
 
-*À rédiger — P14a.3 (29/09).*
+À chaque tour, une carte de commandement décide quelles unités agissent. Choisir la bonne carte au bon moment est un élément essentiel du jeu.
+
+### La main
+
+Votre camp tient une main secrète de 4 cartes, plus 1 par Général encore en jeu (chapitre 9). Elle diminue dès qu'il est retiré. Les deux camps piochent dans le même deck de commandement.
+
+### Les cartes de section
+
+Une carte de section active des unités dans une ou plusieurs de vos Sections. Le nombre d'unités est indiqué sur la carte : vous choisissez lesquelles, parmi celles qui se trouvent dans la Section visée.
+
+- « Patrouille Gauche » active 2 unités de votre Section Gauche.
+- « En avant » active 2 unités dans chacune de vos trois Sections.
+
+Une unité sur un hexagone de frontière peut être activée par une carte de l'une ou l'autre de ses Sections (chapitre 2).
+
+### Les cartes Tactiques
+
+Une carte Tactique active selon un autre critère que la Section : le type (« Charge de cavalerie »), la classe (« Classe Rouge »), le mode (« Pluie de flèches »)… le plus souvent n'importe où sur le champ de bataille. Beaucoup donnent en plus un avantage, comme 1 dé de plus en combat. La carte dit tout ce qu'elle fait ; son texte complet figure aussi dans le livret de référence.
+
+### La valeur de commandement
+
+Beaucoup de cartes activent « autant d'unités que votre valeur de commandement ». C'est le nombre de cartes que vous avez en main quand vous jouez, carte jouée comprise. Plus votre main est grande, plus ces cartes sont fortes.
+
+### Quand la carte ne convient pas
+
+Vous pouvez toujours ignorer le texte de la carte que vous jouez, et activer à la place 1 unité de votre choix, n'importe où sur le champ de bataille. La carte est défaussée comme d'habitude.
+
+### La réserve de Pouvoir
+
+Chaque camp dispose d'une réserve commune de jetons de Pouvoir. Elle permet d'activer des unités que la carte jouée ne couvre pas.
+
+**Gagner du Pouvoir.**
+
+- Chaque face {DÉ:Pouvoir} Pouvoir obtenue quand vous attaquez vous rapporte 1 jeton, posé aussitôt dans votre réserve, que la face déclenche une règle ou non. Les ripostes, les jets d'[Armure] et les jets de Destin ne rapportent rien.
+- À l'étape de Pouvoir, votre camp ajoute 2 jetons à sa réserve.
+
+Vous ne gagnez donc du Pouvoir que pendant votre propre tour.
+
+**Dépenser du Pouvoir.** À l'étape de commandement, après avoir joué votre carte, vous pouvez activer des unités supplémentaires. Chacune coûte autant de jetons qu'elle lance de dés :
+
+| Classe | Coût |
+|---|---|
+| {VERT} Légère | 2 jetons |
+| {BLEU} Standard | 3 jetons |
+| {ROUGE} Lourde | 4 jetons |
+
+- Vous activez ainsi 2 unités au plus par tour. Elles s'ajoutent à celles de la carte.
+- La réserve n'a pas de plafond : les jetons non dépensés se gardent d'un tour à l'autre.
+- Quand un camp compte plusieurs joueurs, chacun paie pour les unités de sa propre Section (chapitre 10).
+
+> **Exemple** — Le Bien joue « Patrouille Droite » et active 2 unités à droite. Sa réserve compte 9 jetons. Il en dépense 4 pour activer aussi les Chevaliers de Dol Amroth {ROUGE}, au Centre, et 2 pour une unité d'archers {VERT} à gauche. Il lui reste 3 jetons pour les tours suivants.
+
+> **À retenir** — Une unité coûte autant de Pouvoir qu'elle lance de dés.
 
 ## 6. Le mouvement
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "2.2"
+version: "2.3"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -91,7 +91,7 @@ Pouvoir inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le r
 
 #### [Charge écrasante] *(bespoke)*
 
-> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune riposte**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 #### [Bête incontrôlable] *(bespoke, refondue P5/D079)*
 
@@ -125,6 +125,8 @@ Pouvoir inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le r
 Inchangés — le Mûmakil reste au prix fixé en P5 (D079), non retouché par ce chantier.
 
 ---
+
+*Version : 2.3 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
 *Version : 2.2 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : [Poison], [Armure] du Mûmakil, [Charge écrasante]. Aucun coût modifié.*
 

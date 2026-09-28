@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - META/Retours sessions livre de règles.md",
+                "file": "00 - META/Retour session livre de règles (chapitre 4 à 5).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Retours sessions livre de règles"
+              "title": "Retour session livre de règles (chapitre 4 à 5)"
             }
           }
         ],
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08 - Livret/Livret_de_regles.md",
+                "file": "00 - META/Retour session livre de règles (chapitre 4 à 5).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,13 +220,15 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "d6233f6418b1ba33",
+  "active": "615b2779f8225468",
   "lastOpenFiles": [
+    "08 - Livret/Livret_de_regles.md",
+    "00 - META/Retour session livre de règles (chapitre 4 à 5).md",
+    "00 - META/Retour session livre de règles (chapitre 1 à 3).md",
+    "00 - META/Sans titre",
     "01 - Règles/files.zip",
     "01 - Règles/Regles_Base (1).md",
     "08 - Livret/Livret_de_regles (1).md",
-    "00 - META/Retours sessions livre de règles.md",
-    "08 - Livret/Livret_de_regles.md",
     "07 - Aides de jeu/5a_Roster_Bien.pdf",
     "08 - Livret/00_Conventions_et_glossaire.md",
     "08 - Livret",
@@ -238,8 +240,6 @@
     "07 - Aides de jeu/4_Fiche_scenario.pdf",
     "02 - Factions/Rohan.md",
     "06 - Images/plans/BdTdM_Pelennor_zones.pdf",
-    "06 - Images/plans/BdTdM_plan_Epique_vierge.pdf",
-    "06 - Images/plans/BdTdM_Pelennor_zones_final.pdf",
     "02 - Factions/Harad.md",
     "03 - Scénarios/Pelennor_Epique.md",
     "01 - Règles/Regles_Base.md",

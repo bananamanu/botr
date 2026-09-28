@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
 statut: "jouable"
-date_maj: "2026-09-25"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.10"
+version: "1.11"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -85,7 +85,7 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 
 **Quatre badges Faction [Férocité]** sont à répartir par le joueur du Rohan, librement, sur ses quatre unités **montées de mêlée** qui n'en portent pas déjà : les deux Éored de cavalier et les deux Gardes royaux à cheval. Tous sont **gratuits** — le total de 65 est fixe quel que soit le placement. **Aucun badge sur les Éored d'éclaireur.**
 
-> 🔄 **D141 — passé de six badges à quatre (Playtest #5).** L'ordre de bataille en imposait six pour quatre emplacements gratuits : deux tombaient forcément sur des éclaireurs, facturés +1 pièce. Or [Férocité] permet de contre-attaquer même en reculant — sur une **unité de tir montée qui ne va presque jamais au contact**, elle ne se déclenche jamais. Le Rohan payait 2 points pour deux badges morts. Ce n'est donc pas un affaiblissement : on cesse de facturer du vide, et le placement devient un vrai choix du joueur au lieu d'une contrainte arithmétique.
+> 🔄 **D141 — passé de six badges à quatre (Playtest #5).** L'ordre de bataille en imposait six pour quatre emplacements gratuits : deux tombaient forcément sur des éclaireurs, facturés +1 pièce. Or [Férocité] permet de riposter même en reculant — sur une **unité de tir montée qui ne va presque jamais au contact**, elle ne se déclenche jamais. Le Rohan payait 2 points pour deux badges morts. Ce n'est donc pas un affaiblissement : on cesse de facturer du vide, et le placement devient un vrai choix du joueur au lieu d'une contrainte arithmétique.
 
 **Section Centre — Dol Amroth et Lossarnach** *(62 pts, 9 unités)*
 
@@ -319,7 +319,7 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 
 **Le Mûmakil voit tout et est vu de tous** (D138) : la ligne de vue entre un Mûmakil et n'importe quelle unité est toujours dégagée, dans les deux sens, quelles que soient les unités interposées. Règle générale, écrite dans `[[Terrain]]` §2 — rappelée ici parce qu'elle se pose à chaque partie du Pelennor, les deux bêtes étant en ligne de mire de tout le champ de bataille.
 
-**La charge du Mûmakil ne subit pas de contre-attaque** (D139) : `[Charge écrasante]` se résout en **phase de mouvement**, pas en combat. Confirmé au Playtest #5 — le texte de `[[Regles_Speciales]]` le disait déjà, il est rappelé ici pour la table.
+**La charge du Mûmakil ne subit pas de riposte** (D139) : `[Charge écrasante]` se résout en **phase de mouvement**, pas en combat. Confirmé au Playtest #5 — le texte de `[[Regles_Speciales]]` le disait déjà, il est rappelé ici pour la table.
 
 ---
 
@@ -334,6 +334,8 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 - **Tarif de la sauvegarde conférée par badge** — ouvert par D143, voir `[[Regles_Points]]` §8 point 4. Concerne deux unités du scénario, sans incidence sur l'équilibre par Section.
 
 ---
+
+*Version : 1.11 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
 *Version : 1.10 — Phase 1 — 2026-09-25. **D154 — le Troll du Mordor passe de 7 à 6 points** (mouvement d'Infanterie 🔴, D153). Section Centre du Mal **65 → 64**, écart au Centre **Mal +2**, totaux **183 / 185**.*
 

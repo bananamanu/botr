@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.3"
+version: "0.4"
 ---
 
 # Batailles de la Terre du Milieu — Règles de terrain
@@ -177,7 +177,7 @@ Une unité qui **entre** dans un hexagone de gué **s'y arrête immédiatement**
 - Cette limite s'applique à l'**attaquant uniquement**. Une unité sur la berge attaquant une unité dans le gué utilise sa valeur d'attaque normale.
 
 > 💡 **Exemple de jeu**
-> Une unité dans un gué contre-attaque avec 3 dés en profil : 2 dés au lieu de 3. Une unité sur la berge l'attaque normalement.
+> Une unité dans un gué riposte avec 3 dés en profil : 2 dés au lieu de 3. Une unité sur la berge l'attaque normalement.
 
 ### 7.3 Ligne de vue
 
@@ -278,6 +278,8 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.4 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
 *Version : 0.3 — Phase 1 — 2026-09-19. **P13 — D138, exception de ligne de vue du Mûmakil.** §2 : la LdV entre un Mûmakil et n'importe quelle unité est toujours dégagée dans les deux sens, unités interposées et terrain bloquant compris. Seule exception de ce type dans le jeu. Aucune autre règle de terrain touchée.*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-24"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.17"
+version: "0.18"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -201,7 +201,7 @@ Ces cartes activent des unités selon leur position sur le plateau. Le Centre re
 Ces cartes activent des unités selon leur classe ou leur type, ou produisent des effets spéciaux.
 
 > ⚠️ **Note terminologique**
-> La carte "Contre-attaque" décrite ci-dessous est une **carte de commandement** jouée volontairement depuis la main. Elle est distincte de la **règle universelle de contre-attaque** (réaction automatique disponible pour toute unité survivante après avoir subi une attaque au corps-à-corps). Voir [[Regles_Base]] §7.
+> La carte « Contre-attaque » décrite ci-dessous est une **carte de commandement** jouée volontairement depuis la main. La réaction de combat d'une unité attaquée porte un autre nom, la **riposte** (D158, [[Regles_Base]] §7.6).
 
 **Classe** — activation par couleur de classe _(6 cartes, 3 nouvelles — anciennement les cartes bannière de BattleLore V1)_
 
@@ -264,9 +264,7 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 - Après avoir joué une carte, le joueur actif la défausse face visible à côté de la pioche, puis **pioche 1 carte** pour ramener sa main au nombre initial — sauf s'il a joué un Éclaireur (voir §4.2).
 - Si la pioche est épuisée, **mélanger la défausse** pour former une nouvelle pioche. Exception : la carte "Cri de guerre" déclenche ce mélange immédiatement après résolution.
 
-### 5.3 Main minimale
-
-Si un joueur se retrouve sans carte en main en début de son tour (situation rare mais possible en fin de pioche), il pioche immédiatement **2 cartes** avant de jouer.
+> 🔄 **Main minimale supprimée (D159).** La règle « main vide en début de tour : piocher 2 cartes » est retirée : la main est complétée à chaque tour, et seule la perte d'un Général la réduit.
 
 > 💡 **Exemple de jeu**
 > Début de partie en format Normal. Le camp du Bien aligne un Général : il pioche 4 + 1 = 5 cartes : Patrouille Centre, Charge de cavalerie, Attaque Droite, Éclaireur Gauche, En marche. Sa valeur de commandement est 5. Il joue "Charge de cavalerie" et peut activer jusqu'à 5 unités de cavalerie sur tout le plateau, chacune avec +1 dé en mêlée. Il défausse la carte, pioche 1 carte, et sa main revient à 5.
@@ -363,6 +361,8 @@ Règle complète et sources de gain : [[Regles_Base]] §5.6.
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.18 — Phase 1 — 2026-09-27. **P14a.3.** **D158** : la réaction de combat devient la **riposte** ; la carte garde son nom de *Contre-attaque* (note terminologique du §4.2 réécrite). **D159** : la règle de main minimale (ex-§5.3) est supprimée ; l'exemple de début de partie est conservé.*
 
 *Version : 0.17 — Phase 1 — 2026-09-24. **D152 — le texte suit le matériel réellement utilisé**, sans changement de mécanique. §7.7 : la réserve de Pouvoir se tient en jetons, sans piste (texte et exemple).*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-24"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.28"
+version: "0.29"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -218,7 +218,7 @@ Le joueur actif choisit **une carte** dans sa main et la joue face visible. Cett
 
 Une fois la carte révélée, le camp actif peut **dépenser des points de Pouvoir** pour activer des unités supplémentaires (§5.6). C'est le seul moment de la partie où la réserve se dépense.
 
-> 💡 **Règle d'urgence** : si aucune carte ne couvre les unités que vous souhaitez activer, vous pouvez **ignorer le texte** de n'importe quelle carte et activer **1 unité de votre choix** sur l'ensemble du champ de bataille.
+> 💡 **Règle d'urgence (D157)** : le joueur actif peut **toujours** ignorer le texte de la carte qu'il joue et activer à la place **1 unité de son choix**, n'importe où sur le champ de bataille (§5.4).
 
 #### b. Étape d'ordre
 
@@ -236,7 +236,7 @@ Les unités activées qui sont en mesure de combattre effectuent leurs attaques 
 
 #### e. Étape des points de victoire
 
-Le joueur actif marque les points de victoire éventuellement gagnés par des **médailles objectif** définies dans le scénario.
+On fait le point sur les **objectifs d'occupation** du scénario (§10.1, D155) : chacun donne sa médaille au camp dont une unité occupe l'hexagone à ce moment, **quel que soit le camp actif** ; un objectif vide ne la donne à personne. Les points de déroute et d'objectif acquis se marquent, eux, au moment où ils sont gagnés.
 
 #### f. Étape de pioche
 
@@ -248,7 +248,7 @@ Le joueur actif ajoute **2 points** à la réserve de son camp (§5.6). Les poin
 
 ### 4.1 Fin de partie (D136)
 
-La partie s'arrête sur une **limite de temps**, fixée par le scénario, mais jamais au milieu d'une manche — et jamais sans que les joueurs sachent qu'ils jouent la dernière.
+Par défaut, la partie s'arrête dès qu'un camp atteint le score fixé par le scénario (§10.2). Un scénario peut **aussi, ou à la place,** fixer une **limite de temps** (D155) — c'est le cas du Pelennor. La partie ne s'arrête alors jamais au milieu d'une manche, ni sans que les joueurs sachent qu'ils jouent la dernière.
 
 > Quand le chrono sonne : on **termine la manche en cours**, puis on joue **une dernière manche**, annoncée comme telle à la table. La partie s'arrête à la fin du tour du second camp.
 
@@ -265,10 +265,10 @@ Les deux camps jouent ainsi le même nombre de tours, et le camp qui ferme la ma
 
 **Chaque camp nomme ses Sections depuis son propre bord (D150)** : la Section Gauche d'un camp est celle qui se trouve à sa gauche quand il regarde le champ de bataille depuis son bord. La Gauche d'un camp fait donc face à la Droite de l'autre — convention Commands & Colors, que suppose la carte *Contre-attaque* ([[Cartes_Commandement]] §4.2).
 
-Une **carte de section** (Gauche, Centre ou Droite) permet d'activer **toutes les unités** situées dans la section correspondante au moment où la carte est jouée.
+Une **carte de section** active, dans une ou plusieurs Sections, le **nombre d'unités indiqué sur la carte** (D156) : 1 pour Éclaireur, 2 pour Patrouille, 3 pour Attaque, autant que la valeur de commandement pour Percée ; les cartes multi-sections (En marche, En avant, Encerclement) précisent le nombre par Section. Le joueur choisit lesquelles parmi les unités présentes dans la Section visée au moment où la carte est jouée. Détail du deck : [[Cartes_Commandement]] §4.2.
 
 > 💡 **Exemple de jeu**
-> Le joueur Gondor joue « Ordre Centre ». Il active toutes ses unités en section centrale — deux unités de Piquiers et une unité d'Archers. Il déplace les Piquiers et fait tirer les Archers.
+> Le joueur Gondor joue « Patrouille Centre ». Il a trois unités au Centre — deux unités de Piquiers et une unité d'Archers — et en active deux : un des Piquiers, qu'il déplace, et les Archers, qu'il fait tirer.
 
 ### 5.2 Cartes Tactiques
 
@@ -282,7 +282,7 @@ La main du camp compte **4 cartes + 1 par Général vivant**, quel que soit le f
 
 ### 5.4 Règle d'urgence
 
-Si aucune unité éligible ne peut être activée avec la carte jouée (ex. aucune unité dans la section visée), le joueur peut **ignorer le texte** de la carte et activer **1 unité de son choix** n'importe où sur le champ de bataille.
+Le joueur actif peut **toujours** ignorer le texte de la carte qu'il joue et activer à la place **1 unité de son choix**, n'importe où sur le champ de bataille (D157) — règle de *BattleLore* Seconde Édition. La carte est défaussée normalement ; son texte étant ignoré, elle ne produit aucun autre effet (un Éclaireur ne fait donc pas piocher 2 cartes).
 
 ### 5.5 Jeu à plusieurs joueurs (format Épique)
 
@@ -295,7 +295,7 @@ Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons de
 
 **Gagner des points — deux sources**
 
-- **Les faces Pouvoir d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose **immédiatement**, au moment du lancer. Ne rapportent **rien** : les **contre-attaques**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
+- **Les faces Pouvoir d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose **immédiatement**, au moment du lancer. Ne rapportent **rien** : les **ripostes**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
 
 > 💡 **Règle mémorisable :** *on ne gagne du Pouvoir qu'en attaquant* — donc uniquement dans son propre tour.
 - **Le forfait de tour.** Chaque camp gagne **2 points** à la fin de son propre tour (§4, étape g).
@@ -381,7 +381,7 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 6. **Appliquer [Protection X]** si applicable : ignorer X touches.
 7. **Retirer les figurines** selon la règle générale de dégâts (voir §2.3).
 8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable.
-9. **Contre-attaque** si les conditions sont réunies (adjacente, pas de retraite, non éliminée).
+9. **Riposte** si les conditions sont réunies (adjacente, pas de retraite, non éliminée).
 10. **Avance** si la cible est éliminée ou en retraite.
 
 ### 7.2 Attaque de mêlée
@@ -440,19 +440,19 @@ Certains terrains modifient le nombre de dés lancés. Ces modificateurs s'appli
 
 > ⚠️ **Rappel — Dégâts :** chaque touche retire **1 figurine/PV**, quelle que soit la cible (§2.3).
 
-### 7.6 Contre-attaque
+### 7.6 Riposte
 
-Après avoir subi une attaque et résolu toutes les retraites, l'unité ciblée peut **contre-attaquer** si les trois conditions suivantes sont réunies :
+Après avoir subi une attaque et résolu toutes les retraites, l'unité ciblée peut **riposter** si les trois conditions suivantes sont réunies :
 
 - Elle est **adjacente** à l'attaquant.
 - Elle est **restée dans le même hexagone** (aucune retraite effectuée).
 - Elle **n'a pas été éliminée**.
 
-La contre-attaque est **universelle** — toute unité peut contre-attaquer sans règle spéciale. Elle s'effectue à la valeur d'attaque complète selon la séquence normale (étapes 1 à 8 uniquement — pas d'avance ni de nouvelle contre-attaque).
+La riposte est **universelle** — toute unité peut riposter sans règle spéciale. Elle s'effectue à la valeur d'attaque complète selon la séquence normale (étapes 1 à 8 uniquement — pas d'avance ni de nouvelle riposte).
 
-> 🔄 **Convention de jeu recommandée — Playtest #1b (2026-07-27, D052)** : la contre-attaque universelle est la règle la plus oubliée à la table (constat du Playtest #1, D042). Dispositif validé pour y remédier, en particulier pour la table à 6 joueurs : poser un **jeton d'activation** sur chaque unité du camp actif au moment où elle joue, et un **jeton de cible** sur toute unité adverse qui subit une attaque et survit. Le jeton de cible rappelle qu'une contre-attaque est due ; il est retiré une fois celle-ci résolue. Testé avec succès au Playtest #1b — plus aucun oubli signalé. À intégrer à l'aide de jeu convention.
+> 🔄 **Convention de jeu recommandée — Playtest #1b (2026-07-27, D052)** : la riposte universelle est la règle la plus oubliée à la table (constat du Playtest #1, D042). Dispositif validé pour y remédier, en particulier pour la table à 6 joueurs : poser un **jeton d'activation** sur chaque unité du camp actif au moment où elle joue, et un **jeton de cible** sur toute unité adverse qui subit une attaque et survit. Le jeton de cible rappelle qu'une riposte est due ; il est retiré une fois celle-ci résolue. Testé avec succès au Playtest #1b — plus aucun oubli signalé. À intégrer à l'aide de jeu convention.
 >
-> 🔄 **Abandonnée (D152).** Les jetons d'activation et de cible ne sont plus utilisés à la table : la contre-attaque est entrée dans les habitudes des joueurs.
+> 🔄 **Abandonnée (D152).** Les jetons d'activation et de cible ne sont plus utilisés à la table : la riposte est entrée dans les habitudes des joueurs.
 
 ---
 
@@ -463,7 +463,7 @@ La contre-attaque est **universelle** — toute unité peut contre-attaquer sans
 Après avoir **éliminé** ou **forcé la retraite** d'une cible adjacente lors d'un combat de mêlée, l'unité attaquante peut **avancer** dans l'hexagone que la cible occupait.
 
 - L'avance est **universelle** et **optionnelle**.
-- Une unité qui avance **ne peut pas être contre-attaquée** au titre de cette avance.
+- Une unité qui avance **ne peut pas subir de riposte** au titre de cette avance.
 
 ### 8.2 Poursuite ([Poursuite X])
 
@@ -514,27 +514,31 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 
 ### 9.4 Après la retraite
 
-Une unité ayant effectué une retraite **ne peut pas contre-attaquer** ce tour.
+Une unité ayant effectué une retraite **ne peut pas riposter** ce tour.
 
 ---
 
 ## 10. Fin de partie
 
+> **Modèle de base (D155).** Les conditions de victoire suivent le modèle générique de *Commands & Colors* et de *Memoir '44*. Chaque scénario peut s'en écarter : le Pelennor, calibré pour la convention, compte 8 points en jeu à la fin de la partie et s'arrête sur une limite de temps (`[[Pelennor_Epique]]` §6).
+
 ### 10.1 Points de victoire
 
-Chaque **unité ennemie mise en déroute** rapporte **1 point de victoire**. Des points supplémentaires peuvent être accordés par les **médailles objectif** définies dans le scénario.
+- **Déroute.** Chaque **unité ennemie mise en déroute** rapporte **1 point de victoire** — une médaille —, dès qu'elle est retirée du champ de bataille.
+- **Objectif acquis.** Le scénario peut fixer des objectifs qui rapportent des points **définitivement** une fois remplis : éliminer une unité précise, atteindre un hexagone…
+- **Objectif d'occupation — temporaire.** Le scénario peut désigner des hexagones dont la médaille appartient au camp qui les **occupe**. L'occupation se vérifie à l'**étape des points de victoire de chaque tour**, quel que soit le camp actif (§4, étape e) : la médaille va au camp dont une unité se trouve sur l'hexagone, et à personne s'il est vide. Elle peut donc changer de camp à chaque tour.
 
 ### 10.2 Condition de victoire
 
-La partie se termine dès qu'un camp atteint le **seuil de victoire** défini par le scénario :
+La partie se termine **dès qu'un camp atteint le score** fixé par le scénario, même au milieu d'un tour :
 
-| Format | Seuil indicatif |
+| Format | Score indicatif |
 |---|---|
 | Escarmouche | 4 points |
 | Normal | 6 points |
 | Épique | 8 points |
 
-> Le seuil est toujours fixé par le scénario ; ces valeurs sont indicatives. Le seuil Épique de 8 points est celui du Pelennor (D121).
+> Le score est toujours fixé par le scénario ; ces valeurs sont indicatives. Un scénario peut aussi fixer une limite de temps (§4.1).
 
 ---
 
@@ -548,8 +552,9 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | | Ordre | Déclarer les unités activées |
 | | Mouvement | Effectuer les mouvements |
 | | Attaque | Résoudre les combats |
-| Bilan | Points de victoire | Marquer les médailles objectif |
+| Bilan | Points de victoire | Vérifier les objectifs d'occupation |
 | | Pioche | Piocher 1 carte |
+| | Pouvoir | Ajouter 2 jetons à la réserve du camp |
 
 ### Séquence de résolution d'un combat
 
@@ -561,10 +566,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 6. Appliquer [Protection X] si applicable
 7. Retirer **1 figurine/PV par touche** (§2.3)
 8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable)
-9. Contre-attaque si conditions réunies
+9. Riposte si conditions réunies
 10. Avance si cible éliminée ou en retraite
 
-*Seul le **jet d'attaque** (étape 2) rapporte du Pouvoir : 1 jeton par face Pouvoir obtenue (§5.6, D137). Ni la contre-attaque, ni le jet d'[Armure], ni le Destin.*
+*Seul le **jet d'attaque** (étape 2) rapporte du Pouvoir : 1 jeton par face Pouvoir obtenue (§5.6, D137). Ni la riposte, ni le jet d'[Armure], ni le Destin.*
 
 ### Dégâts
 
@@ -593,7 +598,7 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
 | **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
-| **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — contre-attaque même en cas de recul forcé, puis recule normalement |
+| **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — riposte même en cas de recul forcé, puis recule normalement |
 | **Faction** (badge, cumulable, D092) | Marqueur : règle assignée à cette unité précise (fluff ou distinction tactique) — plus un trait de peuple universel |
 | **Bannière** (figurine avec bannière, pas un badge — D152) | Figurine porte-étendard visible : l'unité porte [Inébranlable 1] |
 | **Légende** (badge, cumulable, réservé aux unités uniques) | Marqueur : +1 dé de combat |
@@ -607,8 +612,10 @@ La partie se termine dès qu'un camp atteint le **seuil de victoire** défini pa
 
 *Aucun point ouvert à ce jour.*
 
-> ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario, le Pelennor à 8 points (D121) — §10.2. Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
+> ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.29 — Phase 1 — 2026-09-27. **P14a.3 — commandement et victoire réalignés (D155-D158).** **D155** : modèle de victoire de base façon *Commands & Colors* — 1 point par déroute, objectifs acquis, objectifs d'occupation temporaires vérifiés à l'étape e de chaque tour, victoire immédiate au score du scénario ; la limite de temps devient une option de scénario (§4 étape e, §4.1, §10 réécrit — la mention d'un « seuil de 8 points du Pelennor » était erronée). **D156** : une carte de section active le nombre d'unités indiqué sur la carte, et non toutes les unités de la Section (§5.1, exemple corrigé). **D157** : règle d'urgence de *BattleLore* Seconde Édition — on peut toujours ignorer le texte de la carte jouée pour activer 1 unité au choix (§4 étape a, §5.4). **D158** : la contre-attaque de combat devient la **riposte** (§5.6, §7.1, §7.6 renommé, §8.1, §9.4, récapitulatifs) ; la carte *Contre-attaque* garde son nom.*
 
 *Version : 0.28 — Phase 1 — 2026-09-24. **D153 — mouvement par défaut des Chars et des Créatures** (§6.1) : un Char se déplace comme la Cavalerie de sa classe, une Créature comme l'Infanterie de sa classe, sauf mouvement propre indiqué au profil. Le Troll du Mordor suit la règle par défaut (Infanterie 🔴).*
 

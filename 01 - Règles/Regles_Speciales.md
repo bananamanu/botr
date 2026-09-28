@@ -3,16 +3,16 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-24"
+date_maj: "2026-09-27"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.36"
+version: "0.37"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
 
 > **Objet de ce document (refonte P2, D062).** Depuis le pivot « taxonomie visuelle » (D059–D061), l'identité d'une unité — **classe** (couleur du jeton = dés), **type** (plateau/socle), **mode** (symbole du jeton, mêlée/distance — jeton unique depuis D089) — se lit d'un coup d'œil, et l'essentiel des règles en **découle** au lieu d'être mémorisé profil par profil. Ce glossaire n'est donc plus un catalogue : c'est la **référence des signatures**, la courte liste des capacités marquantes qu'un adversaire doit pouvoir identifier **d'un coup d'œil**. Il conserve en tête le **socle générique** (vocabulaire défensif/offensif universel), renvoie à [[Regles_Base]] pour tout ce qui est intrinsèque à la taxonomie, et liste en fin de document ce qui a été retiré.
 >
-> Aligné sur **[[Regles_Base]] v0.6** et **[[Terrain]]**. Les règles universelles (Faible, contre-attaque, avance, retraite, faces de dé) sont définies dans [[Regles_Base]], pas ici.
+> Aligné sur **[[Regles_Base]] v0.6** et **[[Terrain]]**. Les règles universelles (Faible, riposte, avance, retraite, faces de dé) sont définies dans [[Regles_Base]], pas ici.
 
 > 🔄 **Tri du glossaire — 2026-08-04 (P2, D062)**
 > Le glossaire a fondu. En synthèse :
@@ -116,9 +116,9 @@ Alternative à l'avance (voir [[Regles_Base]] §8.2) : après avoir éliminé ou
 
 ### [Férocité]
 
-Cette unité peut effectuer sa **contre-attaque même si l'attaque subie la force à reculer** : elle résout d'abord la contre-attaque, **puis** recule normalement. C'est l'exception à la condition « restée sur son hexagone » de [[Regles_Base]] §7.6.
+Cette unité peut effectuer sa **riposte même si l'attaque subie la force à reculer** : elle résout d'abord la riposte, **puis** recule normalement. C'est l'exception à la condition « restée sur son hexagone » de [[Regles_Base]] §7.6.
 
-> 💡 Attaquée avec 3 Épées + 1 Drapeau, une unité [Férocité] contre-attaque quand même, immédiatement, avant de reculer d'1 hexagone.
+> 💡 Attaquée avec 3 Épées + 1 Drapeau, une unité [Férocité] riposte quand même, immédiatement, avant de reculer d'1 hexagone.
 
 ### [Relance X]
 
@@ -140,7 +140,7 @@ Chaque **retrait forcé** (recul de combat) de cette unité compte **double** (d
 
 ### [Discipline de cohorte]  *(nouveau, D104 — Faction Orientaux)*
 
-> À la fin de son activation, l'unité peut se mettre en **position défensive** (poser un marqueur dédié). Elle **renonce** à toute contre-attaque jusqu'à sa prochaine activation, mais gagne **[Armure]** *(D143 — était [Défense 1])* et **[Inébranlable 1]** tant que le marqueur est en place. Le marqueur est retiré au début de l'activation suivante de l'unité (avant qu'elle n'agisse).
+> À la fin de son activation, l'unité peut se mettre en **position défensive** (poser un marqueur dédié). Elle **renonce** à toute riposte jusqu'à sa prochaine activation, mais gagne **[Armure]** *(D143 — était [Défense 1])* et **[Inébranlable 1]** tant que le marqueur est en place. Le marqueur est retiré au début de l'activation suivante de l'unité (avant qu'elle n'agisse).
 
 > 🔄 **Créée — P8 (D104), Faction Orientaux.** Remplace [Défense 1] comme trait de peuple des Orientaux — pas une posture passive gratuite : le compromis (perte de la riposte) est le prix de la solidité. Disponible en option sur les **Cohortes** (guerriers et piquiers) uniquement — ni les archers, ni les Cataphractaires, dont l'identité de peuple ne repose pas sur la formation serrée. **Coût : +2 brut** (forfait, sous la somme brute de [Défense 1]+[Inébranlable 1] = 4, remise pour la contrepartie de jeu — jugement, à confirmer au playtest).
 
@@ -204,7 +204,7 @@ Nom d'usage d'[Armure X] tant que celle-ci existait. **[Armure X] ayant disparu 
 
 #### [Férocité]  — *badge Faction, réactivée (D092) — Rohan*
 
-Cette unité peut effectuer sa contre-attaque même si l'attaque subie la force à reculer (voir §2, socle générique) — l'exception à la condition « restée sur son hexagone ».
+Cette unité peut effectuer sa riposte même si l'attaque subie la force à reculer (voir §2, socle générique) — l'exception à la condition « restée sur son hexagone ».
 
 > 🎲 Au Playtest #4, assignée par fluff aux unités entourant Éomer plutôt qu'à tout le roster — reflète le retour au principe « badge par unité », pas trait de peuple. Traduit la vaillance désespérée du Rohan mieux qu'une arme ou une armure.
 
@@ -254,7 +254,7 @@ Les faces **Arc** infligent aussi une touche lors d'une attaque de **mêlée** (
 
 #### [Vigilant]  — *Roi-Sorcier sur l'ombre ailée (Mordor)*
 
-La cible d'une attaque de cette unité **ne peut pas la contre-attaquer**, quelle que soit l'issue. Mêlée ou tir à bout portant.
+La cible d'une attaque de cette unité **ne peut pas riposter**, quelle que soit l'issue. Mêlée ou tir à bout portant.
 
 > 🎲 Adaptée des *Riverwatch Riders* (BattleLore V2), où elle servait la cavalerie légère de harcèlement qui frappe et se replace sans laisser l'adversaire répliquer.
 >
@@ -286,7 +286,7 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 
 #### [Charge écrasante]  *(bespoke)*
 
-À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)* ; cela se passe **en phase de mouvement — pas de combat, aucune contre-attaque**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)* ; cela se passe **en phase de mouvement — pas de combat, aucune riposte**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 > 🎲 Choc de masse réservé à la grande créature, en phase de mouvement (l'usage annoncé lors du retrait de l'ancienne [Charge écrasante] générique, D043→D054). Le gabarit 1-2-1 ne pivote pas (translation pure).
 
@@ -306,7 +306,7 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 
 - **6 PV**, **4 dés d'attaque** (classe 🔴).
 - **[Terreur]** (voir ci-dessus) : chaque Pouvoir = 2 Drapeaux.
-- **[Vigilant]** (socle, §2) : ne peut jamais être contre-attaqué.
+- **[Vigilant]** (socle, §2) : ne peut jamais subir de riposte.
 - **[Vol]** *(bespoke, première application)* : à son activation, se déplace de **4 hexagones** sans tenir compte des figurines présentes sur le trajet (traverse librement unités et terrain).
 - **Intrinsèques Créature** (D071, D143) : [Armure], [Peur 1] — coexistent avec [Terreur] ; en pratique [Terreur] est la version employée en attaque, [Peur 1] reste la valeur plancher du type.
 
@@ -324,10 +324,10 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Armure]** | Socle *(mécanique unique de sauvegarde, D143)* | 1 dé par touche subie, annulée sur Pouvoir — ou Pouvoir/Couronne avec un Leader ; mêlée et tir |
 | **[Bannière]** | Badge *(nouveau, D092)* | [Inébranlable 1], incarné par une figurine porte-étendard visible (pas de jeton) |
 | **[Bête incontrôlable]** | Signature bespoke (Mûmakil) | À 1 PV (dernier point) : Furie automatique, contrôle à pile ou face chaque tour, activation gratuite garantie au tour du Mal (refondue D079) |
-| **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Pouvoir = touche, migré depuis Couronne D089) sur le trajet, sans contre-attaque |
+| **[Charge écrasante]** | Signature bespoke (Mûmakil) | Charge de 2 hex en mouvement : 4 dés (Pouvoir = touche, migré depuis Couronne D089) sur le trajet, sans riposte |
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
 | ~~**[Défense X]**~~ | **Supprimée (D143)** | Lire [Armure] partout où elle était portée |
-| **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Contre-attaque même en cas de recul forcé, puis recule |
+| **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Riposte même en cas de recul forcé, puis recule |
 | **[Horde]** | Badge Faction, réactivée (D092) — Mordor | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] *([Poison] retiré, D090)* |
 | **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
@@ -345,7 +345,7 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Vol]** | Bespoke *(première application, D095)* | Déplacement de X hex ignorant les figurines sur le trajet — porteur : Roi-Sorcier sur l'ombre ailée |
 | **[Prise de flanc]** | Sans porteur actif *(depuis D101/D102)* | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
 | **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
-| **[Vigilant]** | Signature (Roi-Sorcier) | La cible de cette unité ne peut pas la contre-attaquer |
+| **[Vigilant]** | Signature (Roi-Sorcier) | La cible de cette unité ne peut pas riposter |
 
 ---
 
@@ -359,7 +359,7 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 | **[Inamovible]** | Fusionnée | → **[Inébranlable ∞]** |
 | **[Mobilité X]** | Devenue intrinsèque | → 🟢 distance (§3) — plus un mot-clé de profil |
 | **[Mur de bouclier]** | **Restaurée (D077)** | → refondue en signature conditionnelle Orientaux, voir §Signatures de peuple |
-| **[Réception de charge]** | Coupée | — (bonus de contre-attaque accroché à l'action la plus oubliée à la table) |
+| **[Réception de charge]** | Coupée | — (bonus de riposte accroché à l'action la plus oubliée à la table) |
 | **[Arme de jet X]** | Coupée puis **restaurée** | → socle générique (P4, D068), voir §2 — coupure P2 caduque |
 | **[Martyre]** | Coupée | Jamais assignée |
 | **[Meute X]** | Coupée | Candidate créature en Phase 2 |
@@ -390,6 +390,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version 0.37 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
 *Version 0.36 — Phase 1 — 2026-09-24. **D152 — le texte suit le matériel réellement utilisé**, sans changement de mécanique. La figurine avec bannière n'est plus un badge : table des conventions et encadré « Badges ».*
 
