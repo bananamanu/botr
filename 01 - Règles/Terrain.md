@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-09-28"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.4"
+version: "0.5"
 ---
 
 # Batailles de la Terre du Milieu — Règles de terrain
@@ -61,7 +61,7 @@ La ligne de vue **n'est pas bloquée** par :
 
 **Cas d'arête :** lorsque la ligne de vue longe le bord d'un ou plusieurs hexagones, elle est décalée d'un côté. Elle n'est bloquée que s'il y a du terrain bloquant ou une unité des **deux côtés** de la ligne.
 
-**Unités en hauteur :** une unité positionnée sur un hexagone de terrain surélevé ignore toutes les autres unités lorsqu'elle trace sa ligne de vue. Le terrain bloquant continue de bloquer sa LdV normalement.
+**Unités en hauteur (D162) :** une unité positionnée sur un hexagone de terrain surélevé ignore les unités **adjacentes à elle et en contrebas** lorsqu'elle trace sa ligne de vue. Toute autre unité interposée la bloque normalement, de même que le terrain bloquant.
 
 **Le Mûmakil (D138) :** la ligne de vue entre un Mûmakil et n'importe quelle unité est **toujours dégagée, dans les deux sens** — rien ne la bloque, ni les unités interposées, ni le terrain bloquant. La bête dépasse tout ce qui se trouve sur le champ de bataille : elle voit tout, et tout la voit. Seule exception de ce type dans le jeu.
 
@@ -103,7 +103,7 @@ Une unité qui **entre** dans un hexagone de terrain boisé **s'y arrête imméd
 
 ### 4.2 Combat
 
-- Toute attaque dont **l'attaquant ou la cible** se trouve en terrain boisé est limitée à **2 dés maximum** (avant modificateurs).
+- Toute attaque dont **l'attaquant ou la cible** se trouve en terrain boisé est limitée à **2 dés maximum** (avant modificateurs : les bonus de carte, de badge ou de colline s'ajoutent ensuite, puis le plafond absolu de 6 — D160).
 - Cette limite s'applique aussi bien au **tir** qu'à la **mêlée**.
 - Si la valeur d'attaque de l'unité est inférieure ou égale à 2, elle lance ses dés normalement.
 
@@ -138,7 +138,7 @@ Ce bonus ne s'applique **pas** si :
 ### 5.3 Ligne de vue
 
 - Un hexagone de terrain surélevé est du **terrain bloquant** pour les unités en contrebas.
-- Une unité en hauteur ignore toutes les autres unités pour tracer sa LdV (mais pas le terrain bloquant).
+- Une unité en hauteur ignore les unités adjacentes en contrebas pour tracer sa LdV (D162) — ni les autres unités, ni le terrain bloquant.
 
 ---
 
@@ -173,7 +173,7 @@ Une unité qui **entre** dans un hexagone de gué **s'y arrête immédiatement**
 
 ### 7.2 Combat
 
-- Toute unité **positionnée dans un gué** attaque avec un maximum de **2 dés** (avant modificateurs), en mêlée comme au tir.
+- Toute unité **positionnée dans un gué** attaque avec un maximum de **2 dés** (avant modificateurs, D160), en mêlée comme au tir.
 - Cette limite s'applique à l'**attaquant uniquement**. Une unité sur la berge attaquant une unité dans le gué utilise sa valeur d'attaque normale.
 
 > 💡 **Exemple de jeu**
@@ -262,7 +262,7 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 |---|---|---|---|---|---|
 | **Campagne** | Libre | Normal | Normal | Dégagée | Libre |
 | **Terrain boisé** | Arrêt à l'entrée | Max 2 dés | Max 2 dés | Bloquante si traversée | Libre |
-| **Terrain surélevé** | Libre | +1 dé si cible en contrebas | Normal | Bloquante (unités en hauteur ignorent les unités) | Libre |
+| **Terrain surélevé** | Libre | +1 dé si cible en contrebas | Normal | Bloquante (unités en hauteur ignorent les unités adjacentes en contrebas) | Libre |
 | **Cours d'eau** | Impassable | — | — | Dégagée | **Impassable** |
 | **Gué** | Arrêt à l'entrée | Max 2 dés si dans le gué | Normal | Dégagée | Libre |
 | **Pont** | Libre (1 unité max) | Normal | Normal | Dégagée | Libre |
@@ -278,6 +278,8 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.5 — Phase 1 — 2026-09-28. **P14a.4.** **D160** : « avant modificateurs » confirmé et explicité pour le bois et le gué (§4.2, §7.2). **D161** : le gué ne plafonne que l'attaquant qui s'y trouve (§7.2 inchangé, [[Regles_Base]] §7.5 aligné). **D162** : une unité en hauteur n'ignore plus que les unités adjacentes en contrebas pour tracer sa ligne de vue (§2, §5.3, §11) — à reprendre à l'entrée *Colline* du livret de référence.*
 
 *Version : 0.4 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 

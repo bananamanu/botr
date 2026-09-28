@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-09-28"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.29"
+version: "0.30"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -125,7 +125,7 @@ Une unité d'**Infanterie** ou de **Cavalerie** est **Faible** lorsqu'il ne lui 
 
 Une unité attaque en lançant un nombre de dés égal à sa **classe** (couleur) : 2 (🟢), 3 (🔵) ou 4 (🔴), modifié le cas échéant par le terrain (§7.5) ou une capacité.
 
-> ⚠️ **Plafond absolu : 6 dés (D134).** Quels que soient les modificateurs cumulés — badge Légende, [Horde], carte de commandement, terrain surélevé, règle de scénario — **aucune attaque ne lance jamais plus de 6 dés**. Les plafonds de terrain plus bas (2 dés en bois ou en gué, §7.5) restent prioritaires : on applique le terrain d'abord, le plafond de 6 ensuite.
+> ⚠️ **Plafond absolu : 6 dés (D134).** Quels que soient les modificateurs cumulés — badge Légende, [Horde], carte de commandement, terrain surélevé, règle de scénario — **aucune attaque ne lance jamais plus de 6 dés**. Les plafonds de terrain (2 dés en bois ou en gué, §7.5) portent sur les **dés de l'unité, avant tout modificateur** (D160) : les bonus s'ajoutent ensuite, et le plafond de 6 s'applique en dernier.
 
 **Quelles faces touchent dépend du mode de l'unité** (son jeton classe/mode) :
 
@@ -168,7 +168,7 @@ Trois lignes de force, toutes lisibles à la couleur ou au socle :
 
 - **Rouge = fortement armuré.** Toute unité lourde (🔴), à pied ou montée, porte **[Armure]** d'office (D143) : pour chaque touche subie, elle lance 1 dé et l'annule sur Pouvoir — ou sur Pouvoir ou Couronne si elle porte un Leader. C'est la **seule** mécanique de sauvegarde du jeu, la même que celle des Créatures, et elle vaut contre la mêlée comme contre le tir. Il n'y a plus de valeur X : une unité a [Armure] ou ne l'a pas.
 - **Cavalerie de mêlée = elle enfonce et poursuit.** Après avoir éliminé ou fait reculer une cible adjacente, elle peut **poursuivre** (§8.2) au lieu d'avancer : **[Poursuite 2]** pour la légère et la standard (plus mobiles), **[Poursuite 1]** pour la lourde (qui traîne son armure). C'est la mécanique de percée du choc de cavalerie.
-- **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **après l'étape d'attaque**, §6) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de l'ancienne signature [Double Tir] (l'archer immobile qui double la salve — sans porteur actif depuis P4/D072, [[Regles_Speciales]]).
+- **Tir léger ou monté = harceleur mobile.** En mode distance, l'unité décroche après avoir tiré ([Mobilité X] : déplacement de X hexagones **aussitôt après son attaque**, §6.1, D163) : **[Mobilité 2]** pour la cavalerie légère (la plus insaisissable), **[Mobilité 1]** pour la cavalerie standard et l'infanterie légère. L'**archer à pied standard (🔵) ne décroche pas** — c'est l'archer de ligne « planté » (la base), miroir de l'ancienne signature [Double Tir] (l'archer immobile qui double la salve — sans porteur actif depuis P4/D072, [[Regles_Speciales]]).
 
 > **Cases vides et cases absentes.** Un tiret « — » signifie *aucune intrinsèque* : l'unité est définie par ses seuls dés et son éventuelle signature. L'**infanterie de tir lourde** et la **cavalerie de tir lourde** *n'existent pas* dans le jeu (aucune combinaison 🔴 + distance) — un archer d'élite est une unité 🔵 portant une signature ou [Relance X] au profil, jamais une unité rouge.
 
@@ -339,11 +339,13 @@ Le mouvement découle de la **classe** (couleur du jeton) et du **type** de l'un
 - « **X cases + combat** » : l'unité peut se déplacer jusqu'à X hexagones **puis** attaquer.
 - « **ou Y cases** » (unités rouges) : alternativement, elle **renonce à attaquer** pour se déplacer de Y hexagones.
 
-> **Règles intrinsèques liées au mouvement.** Plusieurs cases de la grille classe × type × mode portent des règles qui se lisent au plateau (voir §2.4) : **[Mobilité X]** — le tir léger ou monté décroche de X hexagones après avoir tiré — et **[Poursuite X]** — la cavalerie de mêlée enfonce puis frappe une seconde cible (§8.2). Elles ne se notent pas sur le profil.
+> **Règles intrinsèques liées au mouvement.** Plusieurs cases de la grille classe × type × mode portent des règles qui se lisent au plateau (voir §2.4) : **[Mobilité X]** — le tir léger ou monté décroche de X hexagones après avoir tiré (précisions D163 ci-dessous) — et **[Poursuite X]** — la cavalerie de mêlée enfonce puis frappe une seconde cible (§8.2). Elles ne se notent pas sur le profil.
 
 **Chars et Créatures (D153).** Par défaut, un **Char** se déplace comme une unité de **Cavalerie** de sa classe, et une **Créature** comme une unité d'**Infanterie** de sa classe. Un profil peut fixer un mouvement propre, qui prime : le Mûmakil a son déplacement dédié (translation 1-2-1), le Roi-Sorcier [Vol]. Le Troll du Mordor n'a pas de mouvement propre : il se déplace comme l'Infanterie 🔴 (1 hexagone puis attaque, ou 2 sans attaquer).
 
 > Une unité peut toujours se déplacer de moins que son maximum, ou ne pas bouger.
+
+**Décrochage — [Mobilité X] (D163).** Le déplacement de X hexagones se fait **aussitôt après l'attaque de l'unité**, avant qu'une autre unité attaque. Il suit toutes les règles de mouvement (§6.2, §6.3 : occupation, bord, arrêt à l'entrée d'un terrain). Il vaut aussi après un tir à bout portant. Il n'est **jamais** déclenché sans attaque : ni par une unité qui renonce à attaquer, ni par une riposte.
 
 ### 6.2 Règles de mouvement
 
@@ -428,15 +430,17 @@ La ligne de vue est tracée du **centre de l'hexagone attaquant** au **centre de
 
 ### 7.5 Modificateurs de dés liés au terrain
 
-Certains terrains modifient le nombre de dés lancés. Ces modificateurs s'appliquent **avant** tout bonus ou malus du profil.
+Certains terrains modifient le nombre de dés lancés. Les **plafonds** de terrain portent sur les dés de l'unité et s'appliquent **avant** tout autre modificateur — carte, badge, règle, terrain surélevé (D160).
 
 | Situation | Effet sur les dés |
 |---|---|
 | Attaquant ou cible en **terrain boisé** | Maximum **2 dés** |
-| Attaquant ou cible en **gué** | Maximum **2 dés** |
+| Attaquant en **gué** *(la cible dans un gué n'impose rien à l'attaquant, D161)* | Maximum **2 dés** |
 | Attaquant en **terrain surélevé**, cible en contrebas | **+1 dé** (mêlée et tir) |
 
-> ⚠️ **Plafond absolu — 6 dés (D134).** Après application de tous les modificateurs, de quelque source qu'ils viennent, une attaque ne lance **jamais plus de 6 dés**. Les plafonds de terrain ci-dessus, plus bas, restent prioritaires : terrain d'abord, plafond de 6 ensuite. Voir §2.3.
+> ⚠️ **Plafond absolu — 6 dés (D134).** Après application de tous les modificateurs, de quelque source qu'ils viennent, une attaque ne lance **jamais plus de 6 dés**. Ordre : plafond de terrain sur les dés de l'unité, puis modificateurs, puis plafond de 6 (D160, amende D134). Voir §2.3.
+
+> 💡 **Exemple de jeu (D160)** — Des Gardes serpents (3 dés) attaquent des archers postés dans un bois : 2 dés. La carte jouée donne +1 dé : **3 dés**.
 
 > ⚠️ **Rappel — Dégâts :** chaque touche retire **1 figurine/PV**, quelle que soit la cible (§2.3).
 
@@ -597,7 +601,7 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
 | **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
-| **[Mobilité X]** | Déplacement supplémentaire après l'étape d'attaque |
+| **[Mobilité X]** | Déplacement de X hex aussitôt après sa propre attaque — jamais sans attaque ni sur une riposte (D163) |
 | **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — riposte même en cas de recul forcé, puis recule normalement |
 | **Faction** (badge, cumulable, D092) | Marqueur : règle assignée à cette unité précise (fluff ou distinction tactique) — plus un trait de peuple universel |
 | **Bannière** (figurine avec bannière, pas un badge — D152) | Figurine porte-étendard visible : l'unité porte [Inébranlable 1] |
@@ -614,6 +618,8 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 
 > ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.30 — Phase 1 — 2026-09-28. **P14a.4 — mouvement et terrain (D160, D161, D163).** **D160** : les plafonds de terrain à 2 dés portent sur les dés de l'unité, avant tout modificateur ; les bonus s'ajoutent ensuite, le plafond de 6 en dernier — amende D134, qui rendait le terrain prioritaire (§2.3, §7.5, exemple ajouté). **D161** : le gué ne plafonne que l'unité qui s'y trouve quand elle attaque — table du §7.5 alignée sur [[Terrain]] §7.2. **D163** : précisions sur [Mobilité X] — aussitôt après l'attaque, règles normales de mouvement, vaut au bout portant, jamais sans attaque ni sur riposte (§2.4, §6.1, récapitulatif).*
 
 *Version : 0.29 — Phase 1 — 2026-09-27. **P14a.3 — commandement et victoire réalignés (D155-D158).** **D155** : modèle de victoire de base façon *Commands & Colors* — 1 point par déroute, objectifs acquis, objectifs d'occupation temporaires vérifiés à l'étape e de chaque tour, victoire immédiate au score du scénario ; la limite de temps devient une option de scénario (§4 étape e, §4.1, §10 réécrit — la mention d'un « seuil de 8 points du Pelennor » était erronée). **D156** : une carte de section active le nombre d'unités indiqué sur la carte, et non toutes les unités de la Section (§5.1, exemple corrigé). **D157** : règle d'urgence de *BattleLore* Seconde Édition — on peut toujours ignorer le texte de la carte jouée pour activer 1 unité au choix (§4 étape a, §5.4). **D158** : la contre-attaque de combat devient la **riposte** (§5.6, §7.1, §7.6 renommé, §8.1, §9.4, récapitulatifs) ; la carte *Contre-attaque* garde son nom.*
 

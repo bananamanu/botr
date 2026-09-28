@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14"
 statut: "en-cours"
-date_maj: "2026-09-27"
+date_maj: "2026-09-28"
 tags: [BdTdM, type/livret]
-version: "0.8"
+version: "0.9"
 ---
 
 # Corpus joueur — conventions et glossaire
@@ -39,6 +39,7 @@ version: "0.8"
   - Réserve de Pouvoir : règle complète au chapitre 5 (commandement) ; rappel au chapitre 7 au moment du lancer ; spécificités à trois joueurs au chapitre 10.
   - [Armure] et plafond de 6 dés : chapitre 7 (combat). Le chapitre 3 annonce seulement « rouge = armuré ».
   - Grille des intrinsèques : une seule fois, au chapitre 3 ; [Mobilité] expliquée au chapitre 6, [Poursuite] au chapitre 7.
+  - Ligne de vue : paragraphe dédié et explicite au chapitre 7 ; le chapitre 8 dit seulement quels terrains la bloquent. Le cas de l'unité sur une colline est réservé au livret de référence (entrée *Colline*).
 - **Renvois** vers un autre livret par **nom d'entrée**, jamais par numéro de paragraphe : « voir *Armure* dans le livret de référence ».
 - **Faces de dé** : toujours par leur nom mécanique (Épées croisées, Épée, Arc, Drapeau, Couronne, Pouvoir). La Rune de Gandalf et l'Œil de Sauron sont présentés une seule fois, au chapitre 1.
 - **Nombres** : en chiffres pour les valeurs de jeu (2 dés, 3 hexagones, 1 touche), en lettres dans le récit.
@@ -85,6 +86,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Arc** | Face de dé : 1 touche en mode distance. Même symbole que le jeton des unités de tir, qui ne lisent que cette face. | « Cible » (le mot *cible* désigne l'unité visée) |
 | **Badge** | Jeton de badge d'unité posé sur le socle, qui donne une règle à l'unité : Leader ou Faction. | « marqueur », « option » |
 | **Bannière** | Figurine avec bannière dans une unité : l'unité gagne [Inébranlable 1]. Ce n'est pas un badge. | « badge Bannière », « étendard » comme nom de règle ; jamais « Drapeau » |
+| **Bois** | Terrain : arrête l'unité qui y entre, plafonne à 2 dés l'attaque dont l'attaquant ou la cible s'y trouve, bloque la vue. | « forêt », « terrain boisé » |
 | **Bord** | Le bord du champ de bataille du côté d'un camp. Les Sections se nomment depuis lui ; les retraites se font vers lui. | « ligne de base », « côté » |
 | **Camp** | Bien ou Mal. | « alliance », « armée » |
 | **Carte de section** | Carte qui active des unités d'une ou plusieurs Sections. | « ordre » |
@@ -92,6 +94,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Champ de bataille** | Le tapis hexagonal. | « plateau », « table », « carte » (sauf carte à jouer) |
 | **Char** | Pièce sur socle unique avec compteur de PV, qui compte comme Cavalerie pour tout le reste. | « chariot » |
 | **Classe** | Légère / Standard / Lourde, lue à la couleur du jeton : 2 / 3 / 4 dés. | « rang », « niveau » |
+| **Colline** | Terrain : +1 dé contre une cible en contrebas, bloque la vue. | « terrain surélevé », « hauteur » comme nom de terrain |
 | **Contre-attaque** | **Uniquement** la carte Tactique qui rejoue la carte que l'adversaire vient de jouer. | pour la réaction d'une unité attaquée (dire « riposte ») |
 | **Créature** | Pièce sur socle unique avec compteur de PV, [Armure] et [Peur 1] intrinsèques ; jamais Faible. | « monstre », « bête » |
 | **Déroute** | Élimination d'une unité ; rapporte 1 point de victoire à l'adversaire. | « destruction » |
@@ -108,6 +111,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Mode** | Mêlée ou distance, lu au symbole du jeton. | « type d'attaque » |
 | **Objectif** | Hexagone ou but fixé par le scénario, qui rapporte des points de victoire. Un objectif **d'occupation** est temporaire : sa médaille va, à chaque étape des points de victoire, au camp qui occupe l'hexagone. | « point de contrôle » |
 | **Peuple** | Rohan, Gondor, Mordor, Harad, Khand, Orientaux. | « faction », « race » |
+| **Plaine** | Hexagone sans terrain, sans aucun effet. | « campagne », « terrain découvert » |
 | **Plateau** | Plateau de mouvement : élément pratique de table, sans valeur de règle. Les livrets n'en parlent pas. | pour désigner le champ de bataille ; comme source d'une règle |
 | **Pouvoir** | Face de dé portant la Rune de Gandalf (Bien) ou l'Œil de Sauron (Mal) — même face, même mécanique. Déclenche la règle spéciale de l'unité ; sur un jet d'attaque, rapporte 1 jeton de Pouvoir. Désigne aussi la **réserve** commune du camp, en jetons de Pouvoir, dépensée pour activer des unités supplémentaires. | « Arcane », « Espoir », « Désespoir », « magie », « mana » |
 | **PV** | Points de vie : une figurine en Infanterie et Cavalerie, un compteur pour Chars et Créatures. | — |
@@ -123,6 +127,8 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Valeur de commandement** | Nombre de cartes en main au moment de jouer, carte jouée comprise. | — |
 
 ---
+
+*Version : 0.9 — 2026-09-28. P14a.4. Entrées Bois, Colline et Plaine (noms de terrain du livret, « campagne » et « terrain boisé / surélevé » restent au corpus de conception). §3 : la ligne de vue a un paragraphe dédié au chapitre 7.*
 
 *Version : 0.8 — 2026-09-27. P14a.3. D155 : entrée Objectif (objectif d'occupation temporaire). D158 : la réaction de combat s'appelle désormais **riposte** (entrée Riposte ajoutée) ; « Contre-attaque » ne désigne plus que la carte (entrée réécrite). Entrée Activation : l'étape b est désignée par son nom, étape d'ordre.*
 *Version : 0.7 — 2026-09-24. D152 : le plateau de mouvement n'a pas de valeur de règle (entrées Plateau et Type) ; la classe, le type et le mode viennent du profil.*

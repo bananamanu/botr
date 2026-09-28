@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-09-28"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.37"
+version: "0.38"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -161,6 +161,8 @@ Ces effets **ne se notent pas sur le profil** : ils découlent de la classe (cou
 ### 🟢 Léger + mode distance → [Mobilité 1]
 
 Toute unité **légère (🟢, 2 dés) en mode distance** décroche après avoir tiré : **après son attaque**, elle peut se déplacer de **1 hexagone supplémentaire**. Sans attaque ce tour, pas de bonus (elle bouge de son Mouvement normal).
+
+> ⚔️ **Précisions (D163).** Le décrochage se fait **aussitôt** après l'attaque, avant qu'une autre unité attaque ; il suit les règles normales de mouvement (occupation, bord, arrêt à l'entrée d'un terrain) ; il vaut aussi après un tir à bout portant ; une **riposte** ne le déclenche jamais. Détail : [[Regles_Base]] §6.1.
 
 > 🎲 Identité **harceleur** (tir-puis-décroche), lisible d'un coup d'œil (jeton vert + symbole distance) — plus besoin d'écrire [Mobilité 1] sur ces profils. Formule pour l'aide de jeu : *« Tu frappes, puis tu décroches. Pas d'attaque, pas de bonus. »*
 
@@ -390,6 +392,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.38 — Phase 1 — 2026-09-28. **D163** — précisions sur [Mobilité X] au §3 (déclenchement aussitôt après l'attaque, règles normales de mouvement, bout portant, pas de riposte).*
 
 *Version 0.37 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
