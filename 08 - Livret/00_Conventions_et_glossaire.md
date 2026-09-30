@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14"
 statut: "en-cours"
-date_maj: "2026-09-28"
+date_maj: "2026-09-30"
 tags: [BdTdM, type/livret]
-version: "0.9"
+version: "1.0"
 ---
 
 # Corpus joueur — conventions et glossaire
@@ -26,8 +26,8 @@ version: "0.9"
 ## 2. Frontières — qui dit quoi
 
 - **Une règle n'a qu'une seule définition**, dans le livret où elle est définie. Les autres livrets y renvoient.
-- **Livret de règles** : tout ce qu'il faut pour jouer des unités standard — taxonomie (classe, type, mode), intrinsèques, badge **Leader** (Général, Destin), figurine avec bannière, réserve de Pouvoir, format Épique, terrain en version courte, **hexagones de frontière**, y compris à plusieurs joueurs par camp (chapitre 2, D151). Le badge Faction y est seulement annoncé : « il donne une règle propre à l'unité, indiquée sur son profil ».
-- **Livret de référence** : définitions de toutes les règles entre crochets hors signatures — socle générique **et** règles de badge Faction ([Férocité], [Horde], [Poison], [Mercenaire], [Discipline de cohorte]…) ; cas limites (obstacles de retraite, transfert de contrôle) ; texte des cartes de commandement ; terrain complet.
+- **Livret de règles** : tout ce qu'il faut pour jouer des unités standard — taxonomie (classe, type, mode), intrinsèques, badge **Leader** (Général, Destin), figurine avec bannière, réserve de Pouvoir, format Épique, terrain en version courte, **hexagones de frontière**, y compris à plusieurs joueurs par camp (chapitre 2, D151), **retraite bloquée** et cas d'arête de la ligne de vue (chapitre 7, D168). Le badge Faction y est seulement annoncé : « il donne une règle propre à l'unité, indiquée sur son profil ».
+- **Livret de référence** : définitions de toutes les règles entre crochets hors signatures — socle générique **et** règles de badge Faction ([Férocité], [Horde], [Poison], [Mercenaire], [Discipline de cohorte]…) ; cas limites rares (encerclement et autres retraites complexes, transfert de contrôle — la retraite bloquée courante est au livret de règles, D168) ; texte des cartes de commandement ; terrain complet.
 - **Livret Factions** : indique **qui porte** une règle de badge Faction, sans la redéfinir. Seules les **signatures** (Mûmakil, Roi-Sorcier, Compagnie Grise…) y sont écrites en entier.
 - **Livret de scénario** : ce qui n'existe que dans cette bataille. Les unités y sont nommées, leurs profils sont dans le livret Factions.
 
@@ -84,6 +84,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 |---|---|---|
 | **Activation**, **activer** | Mettre une unité en action, par une carte ou en dépensant du Pouvoir. Une unité non activée ne bouge ni ne combat. | « ordonner », « ordre » (sauf nom de l'étape d'ordre, et de la carte Ordre direct) |
 | **Arc** | Face de dé : 1 touche en mode distance. Même symbole que le jeton des unités de tir, qui ne lisent que cette face. | « Cible » (le mot *cible* désigne l'unité visée) |
+| **Avance**, **avancer** | Après une attaque de **mêlée** qui met la cible en déroute ou la fait reculer, entrée facultative de l'attaquant dans l'hexagone libéré. Jamais après un tir ni une riposte. | « percée », « exploitation » |
 | **Badge** | Jeton de badge d'unité posé sur le socle, qui donne une règle à l'unité : Leader ou Faction. | « marqueur », « option » |
 | **Bannière** | Figurine avec bannière dans une unité : l'unité gagne [Inébranlable 1]. Ce n'est pas un badge. | « badge Bannière », « étendard » comme nom de règle ; jamais « Drapeau » |
 | **Bois** | Terrain : arrête l'unité qui y entre, plafonne à 2 dés l'attaque dont l'attaquant ou la cible s'y trouve, bloque la vue. | « forêt », « terrain boisé » |
@@ -106,6 +107,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Jeton classe/mode** | Jeton de 20 mm : couleur = classe, symbole = mode. | « token » |
 | **Hexagone de frontière** | Hexagone coupé par une limite de Section : il appartient aux deux Sections voisines. | « hexagone partagé » |
 | **Leader** | Badge (jeton de badge d'unité à couronne) : touche aussi sur Couronne, [Inébranlable 1] pour son unité et les unités amies adjacentes. | « héros » |
+| **Ligne de vue** | Ligne droite du centre de l'hexagone du tireur au centre de celui de la cible ; bloquée par une unité ou un terrain bloquant traversé. | « LdV » dans les livrets, « champ de vision » |
 | **Main** | Cartes du camp : 4 + 1 par Général vivant, dans tous les formats. Tenue par le joueur Centre en Épique. | — |
 | **Manche** | Un tour de chaque camp. | « tour de jeu » |
 | **Mode** | Mêlée ou distance, lu au symbole du jeton. | « type d'attaque » |
@@ -113,6 +115,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Peuple** | Rohan, Gondor, Mordor, Harad, Khand, Orientaux. | « faction », « race » |
 | **Plaine** | Hexagone sans terrain, sans aucun effet. | « campagne », « terrain découvert » |
 | **Plateau** | Plateau de mouvement : élément pratique de table, sans valeur de règle. Les livrets n'en parlent pas. | pour désigner le champ de bataille ; comme source d'une règle |
+| **Portée** | Distance de tir en hexagones, sans compter celui du tireur : Infanterie 1-4, Cavalerie 1-3. | « rayon » |
 | **Pouvoir** | Face de dé portant la Rune de Gandalf (Bien) ou l'Œil de Sauron (Mal) — même face, même mécanique. Déclenche la règle spéciale de l'unité ; sur un jet d'attaque, rapporte 1 jeton de Pouvoir. Désigne aussi la **réserve** commune du camp, en jetons de Pouvoir, dépensée pour activer des unités supplémentaires. | « Arcane », « Espoir », « Désespoir », « magie », « mana » |
 | **PV** | Points de vie : une figurine en Infanterie et Cavalerie, un compteur pour Chars et Créatures. | — |
 | **Râtelier** | Les 3 cartes visibles communes aux deux camps, en format Épique. | « rivière » |
@@ -127,6 +130,8 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Valeur de commandement** | Nombre de cartes en main au moment de jouer, carte jouée comprise. | — |
 
 ---
+
+*Version : 1.0 — 2026-09-30. P14a.5. D168 : la retraite bloquée et le cas d'arête de la ligne de vue sont traités au livret de règles (chapitre 7) ; le livret de référence ne garde que les cas limites rares (§2). Entrées Avance (mêlée uniquement, D167), Ligne de vue et Portée ajoutées.*
 
 *Version : 0.9 — 2026-09-28. P14a.4. Entrées Bois, Colline et Plaine (noms de terrain du livret, « campagne » et « terrain boisé / surélevé » restent au corpus de conception). §3 : la ligne de vue a un paragraphe dédié au chapitre 7.*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14a"
 statut: "en-cours"
-date_maj: "2026-09-28"
+date_maj: "2026-09-30"
 tags: [BdTdM, type/livret]
-version: "0.6"
+version: "0.7"
 ---
 
 # Batailles de la Terre du Milieu — Livret de règles
@@ -331,7 +331,115 @@ Pendant un combat, une unité peut aussi reculer, avancer ou poursuivre. Ces dé
 
 ## 7. Le combat
 
-*À rédiger — P14a.5 (03/10).*
+À l'étape d'attaque, chaque unité activée peut attaquer une unité ennemie. Le combat se règle aux dés : selon la façon de combattre de l'unité, chaque face obtenue touche, fait reculer ou est sans effet.
+
+Une attaque se résout toujours dans le même ordre :
+
+1. **Choisir la cible.**
+2. **Lancer les dés** et interpréter les résultats.
+3. **Encaisser** : la cible perd des figurines ou ses points de vie.
+4. **Reculer** : la cible recule, si elle a survécu.
+5. **Riposter** : la cible frappe à son tour, si elle n'a pas bougé.
+6. **Avancer** : l'attaquant gagne du terrain, si la cible a reculé ou a été éliminée.
+
+### Choisir la cible
+
+Une unité de mêlée {MÊLÉE} attaque une unité ennemie adjacente.
+
+Une unité de tir {DISTANCE} attaque une unité ennemie à portée, et qu'elle voit (ci-dessous). La portée se compte en hexagones, sans compter celui du tireur : une unité adjacente est à 1 hexagone. L'Infanterie tire jusqu'à 4 hexagones, la Cavalerie jusqu'à 3. Une unité de tir peut aussi tirer sur une unité ennemie adjacente.
+
+Une unité n'attaque qu'une fois par tour, sauf si une règle ou une carte Tactique lui donne une attaque de plus, comme [Poursuite] ou Pluie de flèches.
+
+### La ligne de vue
+
+Pour tirer, une unité doit voir sa cible. Tendez une ligne droite du centre de l'hexagone du tireur au centre de l'hexagone de la cible : c'est la ligne de vue. Elle est bloquée si elle traverse un hexagone qui contient :
+
+- une autre unité, amie ou ennemie ;
+- un terrain qui bloque la vue : bois, colline ou bâtiment.
+
+L'hexagone du tireur et celui de la cible ne comptent pas : une unité peut tirer depuis un bois, et sur une unité qui se trouve dans un bois.
+
+Quand la ligne longe exactement le côté commun à deux hexagones, elle n'est bloquée que si ces deux hexagones la bloquent l'un et l'autre.
+
+Une unité sur une colline voit par-dessus certaines unités (voir *Colline* dans le livret de référence). Le Mûmakil, qui domine tout le champ de bataille, a ses propres règles de vue (livret Factions). La mêlée n'a pas besoin de ligne de vue.
+
+{ILLUS:ligne-de-vue — Morceau du champ de bataille. Des Archers de Minas Tirith (jeton vert à l'arc) et quatre cibles, chacune reliée à eux par une ligne tracée de centre à centre. Ligne 1, dégagée (en vert). Ligne 2, qui traverse un hexagone occupé par une unité amie des archers (en rouge, bloquée). Ligne 3, qui traverse un bois (en rouge, bloquée). Ligne 4, vers une cible qui se trouve elle-même dans un bois (en vert, dégagée). En encart : une ligne qui longe le côté commun à deux hexagones, dont un seul est occupé (en vert, dégagée).}
+
+### Combien de dés
+
+Une unité lance autant de dés que sa classe : 2 {VERT}, 3 {BLEU} ou 4 {ROUGE}. Comptez dans cet ordre :
+
+1. les dés de l'unité, avec les limitations liées au terrain (chapitre 8) ;
+2. les dés en plus que donne une carte, une colline ou une règle ;
+3. jamais plus de 6 dés au total.
+
+### Lire les dés
+
+Le mode de l'unité, rappelé par son jeton, dit quelles faces touchent.
+
+| Face | {MÊLÉE} Mêlée | {DISTANCE} Distance |
+|---|---|---|
+| {DÉ:ÉpéesCroisées} Épées croisées | 1 touche | — |
+| {DÉ:Épée} Épée | 1 touche, sauf si l'unité est Faible | — |
+| {DÉ:Arc} Arc | — | 1 touche |
+| {DÉ:Drapeau} Drapeau | 1 hexagone de retraite | 1 hexagone de retraite |
+| {DÉ:Couronne} Couronne | 1 touche si un Leader mène l'unité | 1 touche si un Leader mène l'unité |
+| {DÉ:Pouvoir} Pouvoir | Déclenche la règle de l'unité, s'il y en a une | Déclenche la règle de l'unité, s'il y en a une |
+
+Un tiret signifie que la face ne fait rien.
+
+**Faible.** Une unité d'Infanterie ou de Cavalerie réduite à une seule figurine ne touche plus sur {DÉ:Épée} Épée en mêlée : seules les Épées croisées comptent encore.
+
+**Couronne.** Sans Leader, la Couronne ne fait rien (chapitre 9).
+
+**Pouvoir.** Si l'unité porte une règle qui se déclenche sur Pouvoir, la face l'applique ; sinon, elle ne fait rien. Toute Créature porte ainsi [Peur 1] : chacun de ses Pouvoirs compte comme 1 Drapeau de plus contre la cible. La Peur fait reculer, elle ne touche pas. Dans tous les cas, chaque Pouvoir obtenu en attaquant rapporte 1 jeton de Pouvoir à votre camp (chapitre 5).
+
+### Encaisser les touches
+
+Additionnez les touches, puis appliquez dans cet ordre :
+
+1. **[Protection].** Une unité dans un bâtiment ignore autant de touches que sa valeur de [Protection] (chapitre 8).
+2. **[Armure].** Pour chaque touche restante, la cible lance 1 dé : chaque {DÉ:Pouvoir} Pouvoir annule une touche. Si un Leader mène l'unité, chaque {DÉ:Couronne} Couronne en annule une aussi. Toute unité rouge et toute Créature porte [Armure] (chapitre 3). Ces dés ne rapportent pas de Pouvoir.
+3. **Pertes.** Pour chaque touche qui reste, retirez 1 figurine, ou 1 PV du compteur. Une unité qui perd sa dernière figurine, ou son dernier PV, est en déroute : retirez-la, l'adversaire prend une médaille.
+
+### Reculer
+
+Si la cible survit, chaque {DÉ:Drapeau} Drapeau la fait reculer de 1 hexagone. C'est son propre camp qui la déplace : à chaque hexagone, il choisit un hexagone adjacent libre, plus proche de son bord que celui qu'elle quitte. D'où que vienne l'attaque, une unité recule toujours vers son bord. Le terrain ne gêne pas la retraite sauf s'il est infranchissable (chapitre 8).
+
+**[Inébranlable].** Une unité qui porte [Inébranlable 1] ignore 1 Drapeau à chaque attaque qu'elle subit. Une figurine avec bannière le donne à son unité (chapitre 3), un Leader à son unité et à chaque unité amie adjacente (chapitre 9). Ces sources s'additionnent : une unité avec bannière, adjacente à un Leader ami, porte [Inébranlable 2] et ignore 2 Drapeaux.
+
+{ILLUS:retraite — Morceau du champ de bataille, bord du Mal en haut. Une Bande d'orques du Mordor subit 2 Drapeaux. Flèche 1 : elle recule d'un hexagone vers le haut, dans l'un des deux hexagones plus proches de son bord, l'autre étant occupé. Flèche 2 : les deux hexagones suivants sont occupés, l'un par des orques amis, l'autre par une unité du Bien ; la flèche s'arrête, marquée « bloquée : 1 perte », et une figurine est retirée.}
+
+**Retraite bloquée.** Quand aucun hexagone libre ne rapproche l'unité de son bord, parce que le bord, un cours d'eau ou d'autres unités, amies comme ennemies, lui barrent la route, sa retraite est bloquée. Elle perd 1 figurine, ou 1 PV, par hexagone qu'elle n'a pas pu parcourir. L'[Armure] ne sauve pas ces pertes.
+
+### Riposter
+
+Une fois les pertes et la retraite réglées, la cible peut riposter si elle remplit trois conditions :
+
+- elle est adjacente à l'attaquant ;
+- elle n'a pas bougé ;
+- elle n'est pas en déroute.
+
+Une unité dont la retraite a été bloquée n'a pas bougé : si elle survit à ses pertes, elle peut donc riposter.
+
+Elle attaque alors son assaillant avec tous ses dés, comme pour une attaque normale : terrain, [Armure] et retraite s'appliquent. Une unité de tir riposte aussi, puisqu'elle peut tirer sur une unité adjacente. Mais une riposte ne rapporte pas de Pouvoir, et l'unité qui riposte ne peut ni avancer, ni poursuivre, ni décrocher. On ne riposte jamais à une riposte.
+
+### Avancer et poursuivre
+
+**Avancer.** Quand une attaque de mêlée met sa cible en déroute ou la fait reculer, l'attaquant peut entrer dans l'hexagone qu'elle a libéré. Rien ne l'y oblige. Un tir, même sur une unité adjacente, ne permet pas d'avancer, pas plus qu'une riposte.
+
+**Poursuivre.** Une unité qui porte [Poursuite 1] ou [Poursuite 2], comme toute Cavalerie de mêlée (chapitre 3), peut poursuivre au lieu d'avancer :
+
+1. Elle se déplace de 1 hexagone, ou 2 avec [Poursuite 2], en entrant d'abord dans l'hexagone libéré. Ce déplacement suit toutes les règles du chapitre 6 : un bois, un gué ou un bâtiment l'arrête.
+2. Elle attaque une unité ennemie adjacente, la même ou une autre.
+
+L'attaque de poursuite est une attaque comme les autres : elle rapporte du Pouvoir, sa cible peut riposter, et l'attaquant peut ensuite avancer. Mais une unité ne poursuit qu'une fois par tour.
+
+{ILLUS:poursuite — Morceau du champ de bataille, en trois temps. 1) Des Chevaliers de Dol Amroth (jeton rouge aux épées croisées) attaquent une Bande d'orques du Mordor (jeton bleu aux épées croisées). 2) Les orques reculent d'un hexagone ; les Chevaliers entrent dans l'hexagone libéré, flèche de 1 hexagone marquée « Poursuite 1 ». 3) Les Chevaliers attaquent de nouveau : deux flèches en pointillé désignent les cibles possibles, les orques et une autre unité ennemie adjacente.}
+
+> **Exemple** — Des Chevaliers de Dol Amroth {ROUGE}{MÊLÉE} se déplacent de 2 hexagones et chargent une Bande d'orques du Mordor {BLEU}{MÊLÉE}, les uns et les autres sans badge ni bannière. Les Chevaliers lancent 4 dés : Épées croisées, Épée, Drapeau, Arc. Deux touches : les orques perdent 2 figurines, puis reculent de 1 hexagone. Comme ils ont reculé, ils ne ripostent pas. Les Chevaliers portent [Poursuite 1] : au lieu d'avancer, ils entrent dans l'hexagone libéré, au contact des orques, et attaquent de nouveau. Épée, Couronne, Pouvoir, Arc : une seule touche, car la Couronne ne fait rien sans Leader ; le Pouvoir ne déclenche rien, mais il rapporte 1 jeton au Bien. Réduits à 1 figurine, les orques n'ont pas bougé : ils ripostent avec 3 dés. Épées croisées, Épée, Drapeau : désormais Faibles, ils ne touchent que sur les Épées croisées. Les Chevaliers portent [Armure] : ils lancent 1 dé pour cette touche, obtiennent un Pouvoir et l'annulent. Le Drapeau les fait tout de même reculer de 1 hexagone vers le bord du Bien.
+
+> **À retenir** — D'abord les pertes, ensuite le recul : la cible qui tient bon riposte, celle qui cède laisse l'attaquant avancer.
 
 ## 8. Le terrain
 

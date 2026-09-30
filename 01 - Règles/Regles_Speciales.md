@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-28"
+date_maj: "2026-09-30"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.38"
+version: "0.39"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -78,7 +78,7 @@ Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une uni
 
 ### [Armure]  *(mécanique unique de sauvegarde — D143)*
 
-Pour chaque **touche subie**, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Pouvoir** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises.
+Pour chaque **touche subie** — après [Protection X] le cas échéant (D164) —, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Pouvoir** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises. **Ne s'applique pas aux touches de retraite bloquée** ([[Regles_Base]] §9.3, D165).
 
 Probabilité de base : 1 face sur 6 annule chaque touche. Avec un Leader porté par l'unité, la fenêtre de sauvetage s'élargit à 2 faces sur 6 — synergie gratuite avec le badge Leader déjà payé séparément.
 
@@ -90,7 +90,7 @@ Probabilité de base : 1 face sur 6 annule chaque touche. Avec un Leader porté 
 
 ### [Protection X]
 
-Une unité en position protégée (terrain) ignore **X touches** après décompte des dégâts.
+Une unité en position protégée (terrain) ignore **X touches** après décompte des dégâts, **avant** le jet d'[Armure] (D164).
 
 | Position | Valeur |
 |---|---|
@@ -104,15 +104,19 @@ Une unité en position protégée (terrain) ignore **X touches** après décompt
 
 Cette unité ignore **X résultats de retraite** par attaque reçue, quelle qu'en soit la source (dés, [Peur X], cartes, effets).
 
+**Cumul (D171)** : les sources d'[Inébranlable] s'additionnent. Une unité avec bannière ([Inébranlable 1]) adjacente à un Leader ami ([Inébranlable 1] aux unités amies adjacentes) porte **[Inébranlable 2]**.
+
 - **Convention [Inébranlable ∞]** : une unité qui ne recule **jamais** (elle ignore tout Drapeau). Remplace l'ancienne règle [Inamovible] (fusionnée en P2). Réservée aux grandes créatures ancrées et aux pièces signature — premier porteur : le Mûmakil ; **second porteur, P8 : la Garde du Roi (Rohan)**, devenue pièce entièrement signature — voir [[Rohan]] §3.
 
 > 💡 [Inébranlable 2] face à 3 Drapeaux → recule d'1 seul hexagone. [Inébranlable ∞] → ne recule pas.
 
 ### [Poursuite X]
 
-Alternative à l'avance (voir [[Regles_Base]] §8.2) : après avoir éliminé ou fait reculer une cible adjacente, se déplacer de 1 à X hexagones puis effectuer **une attaque supplémentaire** contre une unité adjacente à la nouvelle position. Une fois par tour.
+Alternative à l'avance (voir [[Regles_Base]] §8.2) : après avoir éliminé ou fait reculer une cible adjacente **en mêlée**, se déplacer de 1 à X hexagones — selon les règles normales de mouvement, arrêt à l'entrée d'un bois, d'un gué ou d'un bâtiment compris — puis effectuer **une attaque supplémentaire** contre une unité ennemie adjacente à la nouvelle position, la cible initiale ou une autre. Une fois par tour.
 
-> Gradée selon la pièce (ex. 1 pour la cavalerie de ligne, 2 pour un éored). Reste un mot-clé de profil, **pas** un trait automatique de la Cavalerie (arbitrage D062, point 6).
+L'attaque de poursuite est une **attaque complète** (D166) : elle rapporte du Pouvoir, sa cible peut riposter, et l'attaquant peut ensuite avancer — mais pas poursuivre une seconde fois.
+
+> Intrinsèque à la Cavalerie de mêlée depuis D063 ([[Regles_Base]] §2.4) : **[Poursuite 2]** pour la légère et la standard, **[Poursuite 1]** pour la lourde.
 
 ### [Férocité]
 
@@ -392,6 +396,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.39 — Phase 1 — 2026-09-30. **P14a.5.** **D164** : [Protection X] avant [Armure]. **D165** : [Armure] ne sauve pas les touches de retraite bloquée. **D166** : [Poursuite X] — déplacement aux règles normales, attaque de poursuite complète, cible initiale possible. **D171** : les sources d'[Inébranlable X] s'additionnent. Correction de forme, sans numéro D : la note de [Poursuite X] la disait encore « pas un trait automatique de la Cavalerie », périmée depuis D063 qui l'a rendue intrinsèque à la Cavalerie de mêlée.*
 
 *Version : 0.38 — Phase 1 — 2026-09-28. **D163** — précisions sur [Mobilité X] au §3 (déclenchement aussitôt après l'attaque, règles normales de mouvement, bout portant, pas de riposte).*
 

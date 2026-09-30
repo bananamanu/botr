@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-28"
+date_maj: "2026-09-30"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.30"
+version: "0.31"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -379,12 +379,12 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 2. **Lancer les dés** : lancer un nombre de dés égal à la valeur d'attaque de l'unité, modifiée par les effets de terrain si applicable.
 3. **Relancer et modifier** : utiliser les capacités ou effets disponibles.
 4. **Compter les touches et les Drapeaux** : identifier les faces actives selon le type d'attaque.
-5. **Appliquer [Armure]** si la cible la porte : **1 dé par touche subie**, la touche est annulée sur **Pouvoir** — ou sur **Pouvoir ou Couronne** si l'unité porte un Leader.
-6. **Appliquer [Protection X]** si applicable : ignorer X touches.
+5. **Appliquer [Protection X]** si applicable : ignorer X touches (D164 — avant [Armure]).
+6. **Appliquer [Armure]** si la cible la porte : **1 dé par touche restante**, la touche est annulée sur **Pouvoir** — ou sur **Pouvoir ou Couronne** si l'unité porte un Leader.
 7. **Retirer les figurines** selon la règle générale de dégâts (voir §2.3).
-8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable.
-9. **Riposte** si les conditions sont réunies (adjacente, pas de retraite, non éliminée).
-10. **Avance** si la cible est éliminée ou en retraite.
+8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable. Les touches de retraite bloquée (§9.3) ne se sauvegardent pas par [Armure] (D165).
+9. **Riposte** si les conditions sont réunies (adjacente, restée dans son hexagone — y compris si sa retraite a été bloquée —, non éliminée ; D170).
+10. **Avance** si la cible est éliminée ou en retraite — mêlée uniquement (§8.1).
 
 ### 7.2 Attaque de mêlée
 
@@ -449,7 +449,7 @@ Certains terrains modifient le nombre de dés lancés. Les **plafonds** de terra
 Après avoir subi une attaque et résolu toutes les retraites, l'unité ciblée peut **riposter** si les trois conditions suivantes sont réunies :
 
 - Elle est **adjacente** à l'attaquant.
-- Elle est **restée dans le même hexagone** (aucune retraite effectuée).
+- Elle est **restée dans le même hexagone** : c'est la position qui compte (D170). Une unité dont la retraite a été bloquée n'a pas bougé et peut donc riposter si elle survit à ses pertes.
 - Elle **n'a pas été éliminée**.
 
 La riposte est **universelle** — toute unité peut riposter sans règle spéciale. Elle s'effectue à la valeur d'attaque complète selon la séquence normale (étapes 1 à 8 uniquement — pas d'avance ni de nouvelle riposte).
@@ -468,14 +468,17 @@ Après avoir **éliminé** ou **forcé la retraite** d'une cible adjacente lors 
 
 - L'avance est **universelle** et **optionnelle**.
 - Une unité qui avance **ne peut pas subir de riposte** au titre de cette avance.
+- **Mêlée uniquement (D167)** : ni un tir — même sur une unité adjacente —, ni une riposte ne permettent d'avancer.
 
 ### 8.2 Poursuite ([Poursuite X])
 
 Certaines unités possèdent **[Poursuite X]**. Lorsqu'elles peuvent avancer, elles peuvent choisir à la place d'effectuer une **poursuite** :
 
-1. Se déplacer d'**au moins 1 hexagone** et jusqu'à **X hexagones**, en passant par l'hexagone libéré.
-2. Effectuer **une attaque supplémentaire** contre une unité adjacente à la nouvelle position.
+1. Se déplacer d'**au moins 1 hexagone** et jusqu'à **X hexagones**, en passant par l'hexagone libéré. Ce déplacement suit **toutes les règles de mouvement** (§6.2, §6.3) — occupation, bord, arrêt à l'entrée d'un bois, d'un gué ou d'un bâtiment (D166).
+2. Effectuer **une attaque supplémentaire** contre une unité ennemie adjacente à la nouvelle position — la cible initiale ou une autre.
 3. Utilisation limitée à **une seule fois par tour**.
+
+L'attaque de poursuite est **une attaque complète** (D166) : elle rapporte du Pouvoir (§5.6), sa cible peut riposter (§7.6), et l'attaquant peut ensuite **avancer** (§8.1) — mais pas poursuivre une seconde fois.
 
 ---
 
@@ -487,7 +490,7 @@ La retraite est résolue immédiatement après le retrait des figurines (étape 
 
 Chaque face **Drapeau** obtenue par l'attaquant force la cible à reculer d'**1 hexagone**. Il n'y a pas de valeur de moral : **1 Drapeau = 1 hexagone**, sans exception.
 
-> **[Inébranlable X]** est le seul modificateur : l'unité ignore X Drapeaux par attaque reçue, quelle qu'en soit la source.
+> **[Inébranlable X]** est le seul modificateur : l'unité ignore X Drapeaux par attaque reçue, quelle qu'en soit la source. Les sources **s'additionnent** (D171) : figurine avec bannière, Leader de l'unité, Leader ami adjacent.
 
 ### 9.2 Direction de la retraite (recul façon Memoir '44)
 
@@ -513,12 +516,15 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 | Forêt, gué, bâtiment, terrain surélevé, pont | Aucun — retraite continue normalement. |
 | Sortie du plateau (l'unité est déjà sur son propre bord et devrait en sortir) | Bloqué — 1 touche par hexagone non résolu. |
 | Cours d'eau infranchissable, ou aucun hexagone valable disponible (encerclement) | Bloqué — 1 touche par hexagone non résolu. |
-| Unité ennemie occupant le seul hexagone valable | Bloqué — 1 touche par hexagone non résolu. |
-| Unité amie occupant le seul hexagone valable | **Soutien** — tous les hex restants ignorés, 0 touche supplémentaire. |
+| Unité, amie ou ennemie, occupant le seul hexagone valable | Bloqué — 1 touche par hexagone non résolu. |
+
+> **Soutien abandonné (D169).** Une unité amie ne soutient plus la retraite : elle la bloque, comme une unité ennemie.
+
+> **Pas de sauvegarde (D165).** Les touches de retraite bloquée ne passent pas par l'[Armure] : une unité acculée ne se sauve pas. Elles tombent après l'étape de sauvegarde, et un second jet serait inutilement lourd.
 
 ### 9.4 Après la retraite
 
-Une unité ayant effectué une retraite **ne peut pas riposter** ce tour.
+Une unité ayant effectué une retraite **ne peut pas riposter** ce tour. Une unité dont la retraite a été bloquée, restée dans son hexagone, le peut (D170).
 
 ---
 
@@ -566,12 +572,12 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 2. Lancer les dés (valeur d'attaque, modifiée par le terrain si applicable — **jamais plus de 6**, §7.5)
 3. Relancer / modifier (effets et capacités)
 4. Compter les touches et les Drapeaux
-5. Appliquer [Armure] si la cible la porte (1 dé par touche, annulée sur Pouvoir · + Couronne si Leader)
-6. Appliquer [Protection X] si applicable
+5. Appliquer [Protection X] si applicable
+6. Appliquer [Armure] si la cible la porte (1 dé par touche restante, annulée sur Pouvoir · + Couronne si Leader)
 7. Retirer **1 figurine/PV par touche** (§2.3)
-8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable)
+8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable · retraite bloquée sans [Armure])
 9. Riposte si conditions réunies
-10. Avance si cible éliminée ou en retraite
+10. Avance si cible éliminée ou en retraite (mêlée uniquement) — ou [Poursuite X]
 
 *Seul le **jet d'attaque** (étape 2) rapporte du Pouvoir : 1 jeton par face Pouvoir obtenue (§5.6, D137). Ni la riposte, ni le jet d'[Armure], ni le Destin.*
 
@@ -600,7 +606,7 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 | **[Armure]** | 1 dé par touche subie, annulée sur Pouvoir (+ Couronne si Leader) — mêlée et tir |
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
 | **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
-| **[Poursuite X]** | Alternative à l'avance : déplacement + attaque supplémentaire |
+| **[Poursuite X]** | Alternative à l'avance : déplacement (règles normales) + attaque supplémentaire complète, une fois par tour |
 | **[Mobilité X]** | Déplacement de X hex aussitôt après sa propre attaque — jamais sans attaque ni sur une riposte (D163) |
 | **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — riposte même en cas de recul forcé, puis recule normalement |
 | **Faction** (badge, cumulable, D092) | Marqueur : règle assignée à cette unité précise (fluff ou distinction tactique) — plus un trait de peuple universel |
@@ -618,6 +624,8 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 
 > ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.31 — Phase 1 — 2026-09-30. **P14a.5 — combat (D164-D167, D169-D171).** **D164** : [Protection X] s'applique avant [Armure], qui ne se lance que sur les touches restantes (§7.1 étapes 5-6, récapitulatif). **D165** : les touches de retraite bloquée ne se sauvegardent pas par [Armure] (§7.1 étape 8, §9.3, récapitulatif). **D166** : le déplacement de [Poursuite X] suit les règles normales de mouvement, et l'attaque de poursuite est une attaque complète — Pouvoir, riposte, avance possible, pas de seconde poursuite ; elle peut viser la cible initiale (§8.2, mémo). **D167** : l'avance est réservée à la mêlée, ni après un tir au contact ni après une riposte (§7.1 étape 10, §8.1). **D169** : la règle du soutien est abandonnée, une unité amie bloque la retraite comme une unité ennemie (§9.3). **D170** : la riposte dépend de la position — une unité dont la retraite a été bloquée, restée dans son hexagone, peut riposter (§7.1, §7.6, §9.4). **D171** : les sources d'[Inébranlable] s'additionnent (§9.1).*
 
 *Version : 0.30 — Phase 1 — 2026-09-28. **P14a.4 — mouvement et terrain (D160, D161, D163).** **D160** : les plafonds de terrain à 2 dés portent sur les dés de l'unité, avant tout modificateur ; les bonus s'ajoutent ensuite, le plafond de 6 en dernier — amende D134, qui rendait le terrain prioritaire (§2.3, §7.5, exemple ajouté). **D161** : le gué ne plafonne que l'unité qui s'y trouve quand elle attaque — table du §7.5 alignée sur [[Terrain]] §7.2. **D163** : précisions sur [Mobilité X] — aussitôt après l'attaque, règles normales de mouvement, vaut au bout portant, jamais sans attaque ni sur riposte (§2.4, §6.1, récapitulatif).*
 

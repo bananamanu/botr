@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-28"
+date_maj: "2026-09-30"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.5"
+version: "0.6"
 ---
 
 # Batailles de la Terre du Milieu — Règles de terrain
@@ -221,7 +221,7 @@ Une unité occupant un bâtiment bénéficie de **[Protection X]**, où X est d�
 | **Bâtiment solide** | [Protection 2] |
 | **Fortification** | [Protection 3] |
 
-**Effet :** l'unité ignore X touches par attaque reçue, avant d'appliquer les pertes. S'applique à toutes les attaques (mêlée et tir).
+**Effet :** l'unité ignore X touches par attaque reçue, avant le jet d'[Armure] et avant d'appliquer les pertes (D164). S'applique à toutes les attaques (mêlée et tir).
 
 > 💡 **Exemple de jeu**
 > Une unité dans un bâtiment solide [Protection 2] reçoit 5 touches et 1 Drapeau : elle ignore 2 touches → 3 touches effectives. Le Drapeau force 1 hexagone de retraite.
@@ -241,16 +241,13 @@ Le terrain **n'a aucun effet** sur la retraite. Une unité en retraite traverse 
 Seules deux situations **bloquent** la retraite et infligent **1 touche par hexagone non résolu** :
 
 - **Terrain impassable** (cours d'eau, bord du plateau)
-- **Unité ennemie** sur le chemin de retraite
-
-**Exception — soutien :** si l'unité entre dans un hexagone occupé par une unité **amie**, elle est soutenue : tous les hexagones de retraite restants sont ignorés sans touche supplémentaire.
+- **Unité, amie ou ennemie,** sur le chemin de retraite (le soutien par une unité amie est abandonné, D169)
 
 | Obstacle rencontré en retraite | Effet |
 |---|---|
 | **Campagne, forêt, gué, bâtiment, terrain surélevé, pont** | Aucun — retraite continue normalement. |
 | **Cours d'eau / bord du plateau** | Bloqué — 1 touche par hexagone non résolu. |
-| **Unité ennemie** | Bloqué — 1 touche par hexagone non résolu. |
-| **Unité amie** | Soutien — tous les hexagones restants ignorés, 0 touche. |
+| **Unité amie ou ennemie** | Bloqué — 1 touche par hexagone non résolu. |
 
 > 🔗 **Voir aussi** [[Regles_Base]] §9 — Retraite
 
@@ -278,6 +275,8 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.6 — Phase 1 — 2026-09-30. **P14a.5.** **D164** : [Protection X] s'applique avant le jet d'[Armure] (§9.2). **D169** : soutien abandonné, une unité amie bloque la retraite comme une unité ennemie (§10).*
 
 *Version : 0.5 — Phase 1 — 2026-09-28. **P14a.4.** **D160** : « avant modificateurs » confirmé et explicité pour le bois et le gué (§4.2, §7.2). **D161** : le gué ne plafonne que l'attaquant qui s'y trouve (§7.2 inchangé, [[Regles_Base]] §7.5 aligné). **D162** : une unité en hauteur n'ignore plus que les unités adjacentes en contrebas pour tracer sa ligne de vue (§2, §5.3, §11) — à reprendre à l'entrée *Colline* du livret de référence.*
 
