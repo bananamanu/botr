@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14a"
 statut: "en-cours"
-date_maj: "2026-09-30"
+date_maj: "2026-10-03"
 tags: [BdTdM, type/livret]
-version: "0.7"
+version: "0.10"
 ---
 
 # Batailles de la Terre du Milieu — Livret de règles
@@ -488,11 +488,99 @@ Le terrain ne gêne pas une unité qui recule : elle traverse bois, gués, colli
 
 ## 9. Leaders, Généraux et Destin
 
-*À rédiger — P14a.6 (06/10).*
+Les grands noms du Seigneur des Anneaux ne combattent pas seuls : chacun mène une unité. Aragorn marche avec la Compagnie Grise, Imrahil chevauche en tête de ses chevaliers. Ce sont les Leaders.
 
-## 10. Le format Épique : commander à trois
+### Le Leader
 
-*À rédiger — P14a.6 (06/10).*
+Un Leader est un personnage nommé qui mène une unité. Sa figurine fait partie de l'unité, et un jeton de badge d'unité {LEADER} posé à côté d'elle le signale sur le champ de bataille. Un Leader peut mener n'importe quelle unité de son peuple. Quelques unités, comme la Compagnie Grise avec Aragorn, incluent leur Leader dans leur profil.
+
+Un Leader donne les avantages suivants à son unité :
+
+- Au combat, l'unité touche également sur {DÉ:Couronne} Couronne, que ce soit en attaque ou quand elle riposte (chapitre 7).
+- Si l'unité porte [Armure], chaque Couronne annule une touche, comme une face Pouvoir (chapitre 7).
+- L'unité et chaque unité amie adjacente gagnent [Inébranlable 1] : elles ignorent 1 Drapeau à chaque attaque qu'elles subissent (chapitre 7).
+
+Quand son unité perd des figurines, celle du Leader est toujours retirée en dernier. Une unité n'est jamais menée par plus d'un Leader.
+
+### Le Général
+
+Certains Leaders sont aussi des Généraux : leur profil l'indique. Un Général commande au-delà de son unité. Tant qu'il est en jeu, la main de son camp compte 1 carte de plus (chapitre 5).
+
+Quand un Général est éliminé, son camp défausse aussitôt une carte de sa main, à son choix, même pendant le tour adverse. La main compte désormais une carte de moins.
+
+Le format limite le nombre de Généraux qu'un camp peut aligner : 2 en Escarmouche, 3 en Normal, sans limite en Épique.
+
+### Le Destin
+
+Chaque Leader a une valeur de Destin, de 1 à 4, indiquée sur son profil. Elle lui laisse une chance de survivre à son unité.
+
+Quand une unité menée par un Leader est mise en déroute, l'adversaire marque son point de victoire comme d'habitude. Puis le Leader tente de rejoindre une autre unité :
+
+1. **Choisissez une unité de repli.** Il faut une unité amie de son peuple, sans Leader, à 3 hexagones ou moins de l'hexagone qu'occupait son unité. S'il n'y en a aucune, le Leader est éliminé, sans jet.
+2. **Lancez autant de dés que sa valeur de Destin.** Ces dés ne rapportent pas de Pouvoir.
+3. **Si au moins une {DÉ:Couronne} Couronne est obtenue : il est sauvé.** Il rejoint l'unité de votre choix parmi les unités de repli possibles, et sa valeur de Destin baisse de 1 pour le reste de la partie. Sans Couronne, il est éliminé.
+
+Le Leader sauvé prend la place d'une figurine ordinaire de l'unité qui l'accueille : retirez-en une et posez la sienne. L'unité ne gagne aucun PV. Posez le jeton {LEADER} à côté d'elle. Sur un Char ou une Créature, seul le jeton change de place.
+
+Un Leader dont le Destin tombe à 0 n'a plus de jet : il est éliminé avec sa prochaine unité. Un Général sauvé reste en jeu, et la main de son camp ne change pas.
+
+Certains Leaders sont **universels** : leur unité de repli peut appartenir à n'importe quel peuple de leur camp. Leur profil le précise.
+
+Un Leader éliminé ne rapporte pas de point de victoire : seule compte la déroute de son unité. Le scénario peut toutefois en faire un objectif.
+
+> **Exemple** — Les Chevaliers de Dol Amroth menés par Imrahil, Général au Destin 3, sont mis en déroute. Le Mal marque 1 point de victoire. À 3 hexagones ou moins se trouvent des Guerriers de Lossarnach, menés par Forlong le Gros, et des Hommes d'armes de Dol Amroth. Les Guerriers de Lossarnach ont déjà un Leader : seuls les Hommes d'armes peuvent accueillir Imrahil. Le Bien lance 3 dés : Épée, Drapeau, Couronne. Imrahil est sauvé. Sa figurine remplace l'une de celles des Hommes d'armes, qui ne gagnent aucun PV, et le jeton {LEADER} passe à côté d'eux. Son Destin tombe à 2. Imrahil est toujours en jeu : la main du Bien garde toutes ses cartes.
+
+> **À retenir** — Un Leader rend son unité plus redoutable, et son Destin peut lui permettre de survivre à sa déroute.
+
+## 10. Le format Épique et le mode multi-joueurs
+
+Les grandes batailles se jouent en format Épique, sur un champ de bataille de 13 × 17 hexagones. Comme les autres formats, il se joue à deux, un joueur par camp. Il peut aussi se jouer à six, trois joueurs par camp : c'est le mode multi-joueurs, qui reste optionnel.
+
+Le râtelier, la façon de jouer ses cartes et l'adaptation des cartes Tactiques valent pour toute partie Épique. Les trois dernières sections ne concernent que le mode multi-joueurs.
+
+### Le râtelier
+
+Le râtelier est une rangée de 3 cartes de commandement, posée face visible à côté de la pioche et commune aux deux camps. Avant le premier tour, retournez-y les 3 premières cartes de la pioche.
+
+### Jouer ses cartes
+
+À l'étape de commandement, votre camp joue au choix :
+
+- **jusqu'à 2 cartes de section**, dont une au plus de sa main et une au plus du râtelier ;
+- **ou une seule carte Tactique**, de sa main ou du râtelier.
+
+Un camp ne joue jamais une carte de section et une carte Tactique dans le même tour, ni deux cartes Tactiques.
+
+**La valeur de commandement** reste le nombre de cartes dans la main du camp. Les cartes du râtelier n'y comptent jamais, même celle que vous jouez.
+
+**Repiocher.** À l'étape de pioche, chaque carte jouée est remplacée là d'où elle vient : piochez une carte pour votre main si vous avez joué une carte de votre main, et retournez une carte de la pioche dans le râtelier si vous en avez pris une. Le râtelier compte toujours 3 cartes. Un cas rare de mise à jour est traité dans le livret de référence (voir *Râtelier*).
+
+### Adaptation des cartes tactiques
+
+Toutes les cartes Tactiques s'utilisent comme dans les autres formats, à l'exception des deux suivantes :
+
+- **Ordre direct** active 1 unité par tranche de 2 cartes dans la main du camp, arrondi au supérieur : 3 unités avec une main de 5 ou 6 cartes, 4 avec une main de 7 ou 8.
+- **Contre-attaque**, quand l'adversaire vient de jouer 2 cartes de section, n'en reprend qu'une, au choix.
+
+Leur texte complet figure dans le livret de référence.
+
+### Un joueur par Section
+
+Chaque joueur commande une Section de son camp : Gauche, Centre ou Droite. Il commande les unités de son camp qui s'y trouvent au début du tour. Une unité qui change de Section pendant le tour reste à son joueur jusqu'à la fin du tour, puis passe à celui de sa nouvelle Section. Une unité sur un hexagone de frontière peut être activée par l'un ou l'autre des deux joueurs voisins (chapitre 2).
+
+### Les cartes de commandement en mode multi-joueurs
+
+Votre camp ne tient qu'une main, comme à deux joueurs : 4 cartes, plus 1 par Général en jeu (chapitre 9). C'est le joueur Centre qui la tient. Il la montre à ses deux coéquipiers, jamais à l'adversaire. Les trois joueurs discutent des cartes à jouer ; le joueur Centre a le dernier mot.
+
+Une fois les cartes jouées, chaque joueur active, déplace et fait combattre les unités de sa propre Section. Le joueur Centre choisit les cartes, pas les unités de ses coéquipiers.
+
+### Les jetons Pouvoir en mode multi-joueurs
+
+La réserve de Pouvoir reste commune au camp (chapitre 5). Une fois les cartes jouées, chaque joueur peut acheter jusqu'à 2 unités de sa propre Section : un camp peut donc en activer 6 de plus. Une unité sur un hexagone de frontière peut être achetée par l'un ou l'autre de ses deux joueurs. Si les joueurs ne s'entendent pas sur l'usage de la réserve, le joueur Centre tranche.
+
+> **Exemple** — Au Pelennor, le Mal joue « Attaque Gauche » de sa main et « Patrouille Droite » du râtelier. Le joueur Gauche active 3 unités de Khand et des Orientaux, le joueur Droite 2 unités du Harad. Les cartes ne donnent rien au joueur Centre : avec l'accord de ses coéquipiers, il dépense 6 des 7 jetons de la réserve pour activer deux Bandes d'orques du Mordor {BLEU}. À l'étape de pioche, le Mal pioche 1 carte pour sa main et en retourne 1 dans le râtelier.
+
+> **À retenir** — Le joueur Centre choisit les cartes, chacun commande sa Section.
 
 ## 11. Un tour commenté
 

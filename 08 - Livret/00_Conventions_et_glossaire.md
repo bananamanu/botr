@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14"
 statut: "en-cours"
-date_maj: "2026-09-30"
+date_maj: "2026-10-03"
 tags: [BdTdM, type/livret]
-version: "1.0"
+version: "1.2"
 ---
 
 # Corpus joueur — conventions et glossaire
@@ -27,7 +27,7 @@ version: "1.0"
 
 - **Une règle n'a qu'une seule définition**, dans le livret où elle est définie. Les autres livrets y renvoient.
 - **Livret de règles** : tout ce qu'il faut pour jouer des unités standard — taxonomie (classe, type, mode), intrinsèques, badge **Leader** (Général, Destin), figurine avec bannière, réserve de Pouvoir, format Épique, terrain en version courte, **hexagones de frontière**, y compris à plusieurs joueurs par camp (chapitre 2, D151), **retraite bloquée** et cas d'arête de la ligne de vue (chapitre 7, D168). Le badge Faction y est seulement annoncé : « il donne une règle propre à l'unité, indiquée sur son profil ».
-- **Livret de référence** : définitions de toutes les règles entre crochets hors signatures — socle générique **et** règles de badge Faction ([Férocité], [Horde], [Poison], [Mercenaire], [Discipline de cohorte]…) ; cas limites rares (encerclement et autres retraites complexes, transfert de contrôle — la retraite bloquée courante est au livret de règles, D168) ; texte des cartes de commandement ; terrain complet.
+- **Livret de référence** : définitions de toutes les règles entre crochets hors signatures — socle générique **et** règles de badge Faction ([Férocité], [Horde], [Poison], [Mercenaire], [Discipline de cohorte]…) ; cas limites rares (encerclement et autres retraites complexes, râtelier entièrement composé de cartes Tactiques — D176, transfert de contrôle — la retraite bloquée courante est au livret de règles, D168) ; texte des cartes de commandement ; terrain complet.
 - **Livret Factions** : indique **qui porte** une règle de badge Faction, sans la redéfinir. Seules les **signatures** (Mûmakil, Roi-Sorcier, Compagnie Grise…) y sont écrites en entier.
 - **Livret de scénario** : ce qui n'existe que dans cette bataille. Les unités y sont nommées, leurs profils sont dans le livret Factions.
 
@@ -99,16 +99,16 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Contre-attaque** | **Uniquement** la carte Tactique qui rejoue la carte que l'adversaire vient de jouer. | pour la réaction d'une unité attaquée (dire « riposte ») |
 | **Créature** | Pièce sur socle unique avec compteur de PV, [Armure] et [Peur 1] intrinsèques ; jamais Faible. | « monstre », « bête » |
 | **Déroute** | Élimination d'une unité ; rapporte 1 point de victoire à l'adversaire. | « destruction » |
-| **Destin** | Valeur d'un Leader : nombre de dés lancés pour le sauver quand son unité est éliminée (une Couronne suffit). | « chance » |
+| **Destin** | Valeur d'un Leader : nombre de dés lancés pour le sauver quand son unité est mise en déroute (une Couronne suffit). Sauvé, il prend la place d'une figurine ordinaire d'une unité amie sans Leader, sans gain de PV. | « chance » |
 | **Drapeau** | Face de dé : 1 hexagone de retraite. | « bannière », « étendard » |
 | **Faction** | **Uniquement** le badge (jeton de badge d'unité) qui donne une règle propre à une unité, indiquée sur son profil. | pour désigner un peuple |
 | **Faible** | Infanterie ou Cavalerie réduite à une figurine : ses Épées ne touchent plus en mêlée. | « blessé » |
-| **Général** | Statut d'un Leader : +1 carte dans la main du camp tant qu'il vit. Au plus 2 par camp en Escarmouche, 3 en Normal, sans limite en Épique. | « chef », « commandant » |
+| **Général** | Statut d'un Leader : +1 carte dans la main du camp tant qu'il est en jeu ; éliminé, son camp défausse aussitôt une carte. Au plus 2 par camp en Escarmouche, 3 en Normal, sans limite en Épique. | « chef », « commandant » |
 | **Jeton classe/mode** | Jeton de 20 mm : couleur = classe, symbole = mode. | « token » |
 | **Hexagone de frontière** | Hexagone coupé par une limite de Section : il appartient aux deux Sections voisines. | « hexagone partagé » |
-| **Leader** | Badge (jeton de badge d'unité à couronne) : touche aussi sur Couronne, [Inébranlable 1] pour son unité et les unités amies adjacentes. | « héros » |
+| **Leader** | Badge (jeton de badge d'unité à couronne) : touche aussi sur Couronne, [Inébranlable 1] pour son unité et les unités amies adjacentes. Jamais plus d'un Leader par unité. | « héros » |
 | **Ligne de vue** | Ligne droite du centre de l'hexagone du tireur au centre de celui de la cible ; bloquée par une unité ou un terrain bloquant traversé. | « LdV » dans les livrets, « champ de vision » |
-| **Main** | Cartes du camp : 4 + 1 par Général vivant, dans tous les formats. Tenue par le joueur Centre en Épique. | — |
+| **Main** | Cartes du camp : 4 + 1 par Général vivant, dans tous les formats. Tenue par le joueur Centre en mode multi-joueurs, qui la montre à ses coéquipiers. | — |
 | **Manche** | Un tour de chaque camp. | « tour de jeu » |
 | **Mode** | Mêlée ou distance, lu au symbole du jeton. | « type d'attaque » |
 | **Objectif** | Hexagone ou but fixé par le scénario, qui rapporte des points de victoire. Un objectif **d'occupation** est temporaire : sa médaille va, à chaque étape des points de victoire, au camp qui occupe l'hexagone. | « point de contrôle » |
@@ -130,6 +130,10 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Valeur de commandement** | Nombre de cartes en main au moment de jouer, carte jouée comprise. | — |
 
 ---
+
+*Version : 1.2 — 2026-10-03. Retour d'Emmanuel sur les chapitres 9 et 10. Entrée Main : « mode multi-joueurs » remplace « Épique » (le format Épique se joue aussi à deux). D178 : un Leader peut mener n'importe quelle unité de son peuple.*
+
+*Version : 1.1 — 2026-10-03. P14a.6. Entrées Destin (refuge, D172-D173), Général (défausse immédiate, D174), Leader (un par unité, D173) et Main (montrée aux coéquipiers, D177) précisées. §2 : le râtelier entièrement Tactique est un cas limite du livret de référence (D176).*
 
 *Version : 1.0 — 2026-09-30. P14a.5. D168 : la retraite bloquée et le cas d'arête de la ligne de vue sont traités au livret de règles (chapitre 7) ; le livret de référence ne garde que les cas limites rares (§2). Entrées Avance (mêlée uniquement, D167), Ligne de vue et Portée ajoutées.*
 

@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-10-03"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.37"
+version: "0.38"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -104,6 +104,8 @@ Rattaché à une unité (jamais une figurine libre), le badge **Leader** ([[Regl
 - Destin (+2/point) : assurance-vie graduée, dans la même logique tarifaire que [Protection X] (+1×X) mais un cran au-dessus car elle porte sur l'élimination complète, pas une simple touche.
 
 Un Leader qui ne prend pas le statut Général (les « Leaders mineurs » du Pelennor — Suladan, le Roi de Khand, Angbor le Brave, Forlong le Gros) ne paie que Leader + Destin, sensiblement moins cher qu'un Général en pleine tenue.
+
+> 🔄 **Coût de Leader séparé (D179).** Un Leader pouvant mener n'importe quelle unité de son peuple (D178), son coût (Leader + Général + Destin) est **séparé** de celui de l'unité et s'ajoute au coût de l'unité qu'il rejoint au déploiement. **Méthode de chiffrage à fixer en P14d** : la compression (§4) s'appliquant aujourd'hui une fois sur le brut total de l'unité, un coût de Leader compressé à part peut décaler d'un point certains totaux — le 216/215 du Pelennor (D124) sera à revérifier. Exceptions : les pièces dont le Leader est indissociable (Compagnie Grise avec Aragorn, Roi-Sorcier) gardent un coût unique.
 
 > 🎲 **Roi-Sorcier sur l'ombre ailée — sommet de l'échelle, confirmé (D112).** Général universel + Destin 4 sur un profil bespoke déjà coûteux (§6, `02 - Factions/Mordor.md`) porte la pièce à **17 pts**, au-dessus du Mûmakil (15). Ce sommet est **assumé** : pas de plafonnement des pièces bespoke les plus chargées. Le chef des Nazgûl est la pièce la plus dangereuse du Pelennor et son prix en est la traduction correcte. Les bornes 3-9 restent la référence pour les unités **standard**, sans Leader.
 
@@ -243,6 +245,8 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 5. ⚠️ **Tarif du Général hors Épique, ouvert depuis D147.** Le forfait de **+9** a été fixé et éprouvé en Épique, sur des mains de 6 à 8 cartes. Une carte de plus pèse proportionnellement davantage dans une petite main : passer de 4 à 5 cartes, c'est +25 %, contre +12 % de 8 à 9. Tarif **conservé en l'état** faute de scénario Escarmouche ou Normal avec Général — à reprendre au premier d'entre eux.
 
 ---
+
+*Version : 0.38 — Phase 1 — 2026-10-03. **D179** : §3.3, le coût du Leader est séparé de celui de l'unité et s'ajoute à l'unité qu'il rejoint au déploiement ; méthode de chiffrage et revérification du total Pelennor renvoyées à P14d.*
 
 *Version : 0.37 — Phase 1 — 2026-09-23. **D149 — la face Cible devient la face Arc**, conformément au dé réellement utilisé. Renommage sans changement de mécanique : §2 (valeur relative des dés). Aucun coût modifié.*
 

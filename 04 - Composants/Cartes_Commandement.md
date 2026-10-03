@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-10-03"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.18"
+version: "0.20"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -291,12 +291,14 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 
 ## 7. Commandement à plusieurs joueurs — format Épique
 
+> 🔄 **D180 — l'Épique se joue aussi à deux.** Le râtelier (§7.2), le déroulement du tour (§7.3), la valeur de commandement (§7.4), l'erratum Contre-attaque (§7.5) et Ordre direct à l'échelle (D129) valent pour **toute** partie Épique. Seuls les rôles (§7.1) et la réserve de Pouvoir à trois joueurs (§7.7) relèvent du mode multi-joueurs, optionnel.
+
 > 🔄 **Résolu (D087, note mise à jour D088)**
 > Adapté d'*Epic BattleLore* (Days of Wonder, extension V1, 2007), avec une seule simplification restante : pas de cartes Lore (pas de couche magie en V1, D001/D010). Les cartes Classe (ex-bannières, D088) sont incluses comme le reste du deck Normal réutilisé tel quel — aucune règle Épique spécifique ne les concerne. Déjà tranché en amont (D016) : chaque joueur contrôle une **Section** (Gauche/Centre/Droite), pas de sous-force nominative.
 
 ### 7.1 Rôles
 
-Chaque camp compte 3 joueurs, un par Section. Chaque camp nomme ses Sections depuis son propre bord ([[Regles_Base]] §5.1, D150) : le joueur Gauche d'un camp fait face au joueur Droite de l'autre. Le camp ne tient qu'**une seule main**, comme en format Normal (§5.1-§5.4 de [[Regles_Base]]) — c'est le **joueur Centre** qui la tient et qui décide, à chaque tour de son camp, quelle(s) carte(s) jouer, en concertation avec ses deux coéquipiers Gauche et Droite.
+Chaque camp compte 3 joueurs, un par Section. Chaque camp nomme ses Sections depuis son propre bord ([[Regles_Base]] §5.1, D150) : le joueur Gauche d'un camp fait face au joueur Droite de l'autre. Le camp ne tient qu'**une seule main**, comme en format Normal (§5.1-§5.4 de [[Regles_Base]]) — c'est le **joueur Centre** qui la tient et qui décide, à chaque tour de son camp, quelle(s) carte(s) jouer, en concertation avec ses deux coéquipiers Gauche et Droite. Il **montre la main à ses coéquipiers**, jamais à l'adversaire, et garde le dernier mot (D177).
 
 Une fois la carte choisie, chaque joueur déplace et fait combattre les unités de **sa propre** Section : le joueur Centre ne joue pas à la place de ses coéquipiers, il choisit seulement quel ordre est donné. Sur une carte multi-sections (En marche, En avant, Encerclement) ou une carte Tactique touchant plusieurs sections (Charge de cavalerie, Cri de guerre, etc.), chaque joueur résout l'activation de ses propres unités concernées.
 
@@ -311,7 +313,7 @@ Une fois la carte choisie, chaque joueur déplace et fait combattre les unités 
 
 En plus de sa main, chaque camp peut piocher dans un **râtelier commun** de 3 cartes, visibles des deux camps, posé à côté de la pioche. Avant le premier tour, remplir le râtelier avec les 3 cartes du dessus du deck Normal (§3, 60 cartes — deck unique, partagé entre les deux camps comme en Normal, §1.3).
 
-À la fin de son tour, si une carte a été prélevée dans le râtelier, un camp pioche une carte de remplacement depuis la pioche et la place dans le râtelier (visible des deux camps) — le râtelier doit toujours compter 3 cartes en début de tour. Si les 3 cartes du râtelier sont un jour toutes des cartes Tactiques, défaussez-les et repiochez 3 nouvelles cartes : le râtelier doit toujours contenir au moins une carte de section une fois reconstitué. Si la pioche s'épuise, mélangez la défausse pour former une nouvelle pioche.
+À la fin de son tour, si une carte a été prélevée dans le râtelier, un camp pioche une carte de remplacement depuis la pioche et la place dans le râtelier (visible des deux camps) — le râtelier doit toujours compter 3 cartes en début de tour. Si les 3 cartes du râtelier sont un jour toutes des cartes Tactiques, défaussez-les et repiochez 3 nouvelles cartes : le râtelier doit toujours contenir au moins une carte de section une fois reconstitué. *(Corpus joueur : ce cas rare est décrit au livret de référence, entrée Râtelier, et non au livret de règles — D176. Le livret de règles formule la repioche en une règle : chaque carte jouée est remplacée là d'où elle vient.)* Si la pioche s'épuise, mélangez la défausse pour former une nouvelle pioche.
 
 ### 7.3 Déroulement du tour
 
@@ -361,6 +363,10 @@ Règle complète et sources de gain : [[Regles_Base]] §5.6.
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.20 — Phase 1 — 2026-10-03. **D180** : §7, les règles Épiques valent aussi à deux joueurs ; seuls §7.1 et §7.7 relèvent du mode multi-joueurs.*
+
+*Version : 0.19 — Phase 1 — 2026-10-03. **P14a.6.** **D177** : en Épique, le joueur Centre montre la main à ses coéquipiers (§7.1). **D176** : le râtelier entièrement Tactique est renvoyé au livret de référence côté corpus joueur, mécanique inchangée (§7.2).*
 
 *Version : 0.18 — Phase 1 — 2026-09-27. **P14a.3.** **D158** : la réaction de combat devient la **riposte** ; la carte garde son nom de *Contre-attaque* (note terminologique du §4.2 réécrite). **D159** : la règle de main minimale (ex-§5.3) est supprimée ; l'exemple de début de partie est conservé.*
 

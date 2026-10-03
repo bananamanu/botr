@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-30"
+date_maj: "2026-10-03"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.31"
+version: "0.34"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -92,12 +92,15 @@ Une unité peut donc porter 0 à 3 badges (Faction, Légende, Leader), plus une 
 
 ### 2.2bis Le badge Leader — Général et Destin (D093)
 
-Un badge **Leader** est toujours rattaché à une **unité porteuse** (jamais une figurine libre sur le plateau) :
+Un badge **Leader** est toujours rattaché à une **unité porteuse** (jamais une figurine libre sur le plateau). Un Leader peut mener **n'importe quelle unité de son peuple** ; quelques profils, comme la Compagnie Grise avec Aragorn, l'incluent d'office (D178) :
 
 - **Retrait** : la figurine du Leader est toujours la **dernière** retirée de son unité.
+- **Une unité, un Leader** (D173) : une unité n'est jamais menée par plus d'un Leader.
 - **Effet permanent** : [Inébranlable 1] sur son unité et sur toute unité amie **adjacente** ; touche supplémentaire sur Couronne (§2.3).
-- **Statut Général** *(optionnel, une partie des Leaders seulement)* : la main de commandement du camp compte **4 cartes + 1 par Général vivant** du camp, dans **tous les formats** (D144, D147). Un camp aligne au plus **2 Généraux en Escarmouche**, **3 en Normal**, sans limite en Épique. Si un Général est éliminé, la main redescend **immédiatement**.
+- **Statut Général** *(optionnel, une partie des Leaders seulement)* : la main de commandement du camp compte **4 cartes + 1 par Général vivant** du camp, dans **tous les formats** (D144, D147). Un camp aligne au plus **2 Généraux en Escarmouche**, **3 en Normal**, sans limite en Épique. Si un Général est éliminé, son camp **défausse aussitôt une carte de sa main, à son choix**, même pendant le tour adverse — en Épique, c'est le joueur Centre qui défausse (D174). Un Général sauvé par son Destin reste en jeu : la main ne change pas.
 - **Valeur de Destin** *(1 à 4, propre à chaque Leader)* : lorsque l'unité porteuse du Leader est éliminée, celui-ci tente de trouver refuge dans une unité amie **de son peuple**, à **3 hexagones ou moins**. Le joueur lance autant de dés que la valeur de Destin du Leader : **au moins une Couronne** sauve le Leader, qui rejoint l'unité choisie (sa valeur de Destin **diminue de 1** pour la suite de la partie) ; sans Couronne, ou s'il n'y a **aucune unité de son peuple** à portée, le Leader est **éliminé définitivement**.
+  - **Refuge** : l'unité d'accueil ne doit pas déjà être menée par un Leader (D173). La figurine du Leader **prend la place d'une figurine ordinaire** de l'unité d'accueil, que l'on retire : l'unité ne gagne aucun PV. Sur un Char ou une Créature, seul le jeton couronne change de place (D172). Un Leader dont le Destin tombe à 0 n'a plus de jet.
+  - **Point de victoire** : un Leader éliminé ne rapporte **aucun point** en plus de la déroute de son unité ; le scénario peut en faire un objectif (D175).
 - **Leaders universels** *(exception nommée, à documenter par leader)* : certains Leaders peuvent rejoindre **n'importe quel peuple de leur camp** plutôt que le leur seulement, quand leur statut narratif le justifie (ex. un roi qui commande l'ensemble de son camp). Réservé aux figures dont le texte de Tolkien justifie une autorité transversale — voir `[[Playtest4_Compte-rendu]]` pour les cas tranchés au Pelennor.
 
 **Le badge Signature (facultatif, réservé aux pièces marquantes) = règles bespoke propres, hors de la matrice de badges.** Une poignée de pièces (La Compagnie Grise, le Mûmakil…) sortent entièrement du système de badges standard : leurs règles sont écrites au profil, comme des créations uniques. *(Coûts traités par équivalence, [[Regles_Points]] §6.)*
@@ -286,8 +289,8 @@ Le joueur actif peut **toujours** ignorer le texte de la carte qu'il joue et act
 
 ### 5.5 Jeu à plusieurs joueurs (format Épique)
 
-> 🔄 **Résolu (D087)**
-> En Épique, chaque camp compte 3 joueurs (un par Section) mais ne tient **qu'une seule main**, comme en Normal — c'est le joueur Centre qui la tient et décide des cartes jouées, en concertation avec ses coéquipiers Gauche et Droite ; chacun exécute ensuite les activations dans sa propre Section. Un **râtelier de Commandement** partagé (3 cartes visibles des deux camps) vient s'ajouter à la main de chaque camp. Le deck Normal (60 cartes) est réutilisé tel quel, sans deck dédié ; la main de camp compte **4 cartes + 1 par Général vivant** (§2.2bis, D144). Détail complet, exemples et erratum : [[Cartes_Commandement]] §7.
+> 🔄 **Résolu (D087)** — *D180 : toutes les règles Épiques (râtelier, 2 cartes de section par tour, adaptation d'Ordre direct et de Contre-attaque) valent aussi à deux joueurs ; seuls le découpage par Section, la main tenue par le joueur Centre et l'achat de Pouvoir par joueur relèvent du mode multi-joueurs, optionnel.*
+> En Épique, chaque camp compte 3 joueurs (un par Section) mais ne tient **qu'une seule main**, comme en Normal — c'est le joueur Centre qui la tient et décide des cartes jouées, en concertation avec ses coéquipiers Gauche et Droite, à qui il **montre la main** — jamais à l'adversaire (D177) ; chacun exécute ensuite les activations dans sa propre Section. Un **râtelier de Commandement** partagé (3 cartes visibles des deux camps) vient s'ajouter à la main de chaque camp. Le deck Normal (60 cartes) est réutilisé tel quel, sans deck dédié ; la main de camp compte **4 cartes + 1 par Général vivant** (§2.2bis, D144). Détail complet, exemples et erratum : [[Cartes_Commandement]] §7.
 
 ### 5.6 La réserve de Pouvoir (D133, D148)
 
@@ -624,6 +627,12 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 
 > ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.34 — Phase 1 — 2026-10-03. **D180** : §5.5, les règles Épiques valent aussi à deux joueurs ; le mode multi-joueurs est optionnel.*
+
+*Version : 0.33 — Phase 1 — 2026-10-03. **D178** : §2.2bis, un Leader peut mener n'importe quelle unité de son peuple.*
+
+*Version : 0.32 — Phase 1 — 2026-10-03. **P14a.6 — Leaders et format Épique (D172-D175, D177).** §2.2bis : une unité, un Leader (D173) ; le Leader sauvé par son Destin remplace une figurine ordinaire de l'unité d'accueil, sans gain de PV, jeton seul sur un Char ou une Créature (D172) ; Destin à 0 = plus de jet ; défausse immédiate d'une carte au choix à l'élimination d'un Général, qui reste en jeu s'il est sauvé (D174) ; un Leader éliminé ne rapporte pas de point (D175). §5.5 : la main est montrée aux coéquipiers (D177).*
 
 *Version : 0.31 — Phase 1 — 2026-09-30. **P14a.5 — combat (D164-D167, D169-D171).** **D164** : [Protection X] s'applique avant [Armure], qui ne se lance que sur les touches restantes (§7.1 étapes 5-6, récapitulatif). **D165** : les touches de retraite bloquée ne se sauvegardent pas par [Armure] (§7.1 étape 8, §9.3, récapitulatif). **D166** : le déplacement de [Poursuite X] suit les règles normales de mouvement, et l'attaque de poursuite est une attaque complète — Pouvoir, riposte, avance possible, pas de seconde poursuite ; elle peut viser la cible initiale (§8.2, mémo). **D167** : l'avance est réservée à la mêlée, ni après un tir au contact ni après une riposte (§7.1 étape 10, §8.1). **D169** : la règle du soutien est abandonnée, une unité amie bloque la retraite comme une unité ennemie (§9.3). **D170** : la riposte dépend de la position — une unité dont la retraite a été bloquée, restée dans son hexagone, peut riposter (§7.1, §7.6, §9.4). **D171** : les sources d'[Inébranlable] s'additionnent (§9.1).*
 
