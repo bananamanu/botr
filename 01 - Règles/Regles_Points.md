@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-03"
+date_maj: "2026-10-04"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.38"
+version: "0.39"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -241,10 +241,12 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 
 **Méthode de chiffrage d'un ordre de bataille (D124).** Toujours partir du **brut de matrice** (§5) et non des coûts finaux des rosters : la compression `round(brut ÷ 3) − 1` n'est pas linéaire, et additionner des coûts finaux produit des erreurs d'un point par unité, dans les deux sens. Contrôle de cohérence disponible : les variantes avec Leader publiées aux rosters (Éomer 13, Théoden 12, Imrahil 14, Gothmog 11, Suladan 9, Roi de Khand 9) doivent toutes retomber sur le calcul.
 4. ⚠️ **Tarif de la sauvegarde conférée par badge, ouvert depuis D143.** Deux forfaits à **+2 brut** achetaient [Défense 1] — réduction statique d'une face Épée, en mêlée seulement : **[Discipline de cohorte]** (Orientaux, D104, en composant) et **Elladan** (Compagnie Grise, `Gondor_et_Fiefs`). Ils achètent désormais [Armure], nettement plus forte : elle joue aussi **contre le tir** et sauve **toutes** les faces, Épées croisées comprises. Le tarif est **conservé en l'état** faute de mesure — la règle unifiée n'a été éprouvée qu'en intrinsèque, jamais en badge payant, et aucun playtest n'est prévu avant la convention. À reprendre depuis le brut de matrice à la première occasion. Impact chiffré du report : deux unités du Pelennor, aucune incidence sur l'équilibre par Section.
-3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
+3. ~~**Cartes bannière (vert/bleu/rouge)**~~ — **résolu (D088)** : intégrées au deck sous le nom Classe Verte/Bleue/Rouge *(renommées **Bannières vertes/bleues/rouges** le 2026-10-04)*, activation par couleur = classe, sans impact sur le coût unitaire (l'activation n'est pas tarifée au profil en C&C). Le risque signalé (roster mono-couleur dur à activer) reste un point de vigilance pour la conception des rosters, mais n'est plus un point ouvert côté deck — voir [[Cartes_Commandement]] §4.2.
 5. ⚠️ **Tarif du Général hors Épique, ouvert depuis D147.** Le forfait de **+9** a été fixé et éprouvé en Épique, sur des mains de 6 à 8 cartes. Une carte de plus pèse proportionnellement davantage dans une petite main : passer de 4 à 5 cartes, c'est +25 %, contre +12 % de 8 à 9. Tarif **conservé en l'état** faute de scénario Escarmouche ou Normal avec Général — à reprendre au premier d'entre eux.
 
 ---
+
+*Version : 0.39 — Phase 1 — 2026-10-04. Correction de nom, sans numéro D : renvoi au nouveau nom des cartes **Bannières vertes/bleues/rouges** (§8, point 3 clos, annoté sans réécriture). Aucun coût modifié.*
 
 *Version : 0.38 — Phase 1 — 2026-10-03. **D179** : §3.3, le coût du Leader est séparé de celui de l'unité et s'ajoute à l'unité qu'il rejoint au déploiement ; méthode de chiffrage et revérification du total Pelennor renvoyées à P14d.*
 

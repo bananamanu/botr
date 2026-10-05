@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-10-04"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "3.4"
+version: "3.5"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
@@ -34,7 +34,7 @@ version: "3.4"
 |---|---|---|---|---|---|---|
 | 1 | Rangers *(du Gondor, d'Ithilien, du Nord — même profil)* | Infanterie | Distance | 🟢 | Faction | **3** |
 | 2 | Archers de Minas Tirith | Infanterie | Distance | 🟢 | Faction, Bannière | **3** |
-| 3 | Troupes régulières de Minas Tirith *(Garde de la Citadelle, Guerriers de Minas Tirith)* | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
+| 3 | Guerriers de Minas Tirith *(et Garde de la Citadelle, même profil)* | Infanterie | Mêlée | 🔵 | Faction, Bannière | **4** |
 | 4 | Troupes des Fiefs *(Guerriers de Lossarnach, Guerriers des clans de Lamedon, **Hommes d'armes de Dol Amroth**)* | Infanterie | Mêlée | 🔵 | Faction | **4** |
 | 5 | Troupes lourdes des Fiefs *(Chevaliers à pied de Dol Amroth)* | Infanterie | Mêlée | 🔴 | Bannière | **5** |
 | 6 | Cavalerie du Gondor *(Chevaliers de Dol Amroth, Chevaliers de Minas Tirith)* | Cavalerie | Mêlée | 🔴 | Faction, Bannière | **7** |
@@ -46,7 +46,7 @@ version: "3.4"
 |---|---|---|---|---|---|
 | 1 | Rangers | 3 | 3 *(absorbé)* | — | — |
 | 2 | Archers de Minas Tirith | 3 | 3 *(absorbé)* | 3 *(absorbé)* | **4** |
-| 3 | Troupes régulières MT | 4 | **5** | **5** | **5** *(absorbé)* |
+| 3 | Guerriers de Minas Tirith | 4 | **5** | **5** | **5** *(absorbé)* |
 | 4 | Troupes des Fiefs | 4 | **5** | — | — |
 | 5 | Troupes lourdes des Fiefs | 5 | — | **6** | — |
 | 6 | Cavalerie du Gondor | 7 | 7 *(absorbé)* | 7 *(absorbé)* | **8** |
@@ -105,8 +105,8 @@ version: "3.4"
 
 | Option | Disponible sur |
 |---|---|
-| **Faction (Relance 1)** | Rangers (1) · Archers de Minas Tirith (2) · Troupes régulières MT (3) · Troupes des Fiefs (4) · Cavalerie du Gondor (6) |
-| **Bannière** | Archers de Minas Tirith (2) · Troupes régulières MT (3) · Troupes lourdes des Fiefs (5) · Cavalerie du Gondor (6) |
+| **Faction (Relance 1)** | Rangers (1) · Archers de Minas Tirith (2) · Guerriers de Minas Tirith (3) · Troupes des Fiefs (4) · Cavalerie du Gondor (6) |
+| **Bannière** | Archers de Minas Tirith (2) · Guerriers de Minas Tirith (3) · Troupes lourdes des Fiefs (5) · Cavalerie du Gondor (6) |
 | **Hors matrice** | La Compagnie Grise (7) |
 
 ---
@@ -138,3 +138,5 @@ version: "3.4"
 *Version : 2.1 — Phase 1 — 2026-08-08. **Pivot « badges universels » (D073).** Badge Élite enrichi (+ Jamais Faible, coût inchangé). Nouveau badge **Légende** (+1 dé de combat) : La Compagnie Grise (13) perd tout son empilement de règles bespoke ([Archer en mêlée], [Férocité]) au profit des quatre badges standard (Faction + Spéciale + Élite + Légende) — sort du régime « hors matrice », chiffrée à la matrice comme le reste du roster. Coût 6 → **7 pts**, devient l'une des unités d'infanterie les plus chères du roster. Profils 1-12 inchangés (Faction/Spéciale déjà conformes au nouveau standard). Non testé — validation P7a.*
 
 *Version : 2.0 — Phase 1 — 2026-08-08. **Refonte P4 (D067) : re-expression complète sur la taxonomie visuelle et le système de badges.** Roster resserré de 14 à 13 unités (Vétérans d'Osgiliath retirés, Archers de la Racine Noire fusionnés dans la famille Rangers, Rangers du Nord ajoutés). Trois badges fixes (Faction/Spéciale/Élite) remplacent le barème à valeur variable. Compagnie Grise refondue : 6→4 figurines, règles actives en permanence (fin du suivi conditionnel par figurine), badge Élite ajouté. Renommage [Arme Lourde X]→[Relance X] (D066) répercuté. Non testé — validation P7a.*
+
+*Version : 3.5 — Phase 1 — 2026-10-04. **Correction de nom, sans numéro D** (retour d'Emmanuel sur le chapitre 11) : le profil 3 s'appelle **Guerriers de Minas Tirith** (la Garde de la Citadelle en partage le profil) au lieu de « Troupes régulières de Minas Tirith ». Coûts inchangés.*

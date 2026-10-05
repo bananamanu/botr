@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-03"
+date_maj: "2026-10-04"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.20"
+version: "0.21"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -115,7 +115,7 @@ Le deck Escarmouche est un **sous-ensemble strict** du deck Normal. On retire le
 
 **Total retiré : 15 cartes. Deck Escarmouche : 45 cartes.**
 
-Toutes les autres cartes, y compris les Percées (activation variable selon la main) et les cartes Classe (activation variable par couleur), sont conservées. Sur un plateau réduit, le plafond de 2 Généraux limite la main à 6 cartes (7 en Normal), ce qui calibre automatiquement leur puissance.
+Toutes les autres cartes, y compris les Percées (activation variable selon la main) et les cartes Bannières (activation variable par couleur de classe), sont conservées. Sur un plateau réduit, le plafond de 2 Généraux limite la main à 6 cartes (7 en Normal), ce qui calibre automatiquement leur puissance.
 
 ### 3.3 La valeur de commandement par format
 
@@ -203,13 +203,13 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 > ⚠️ **Note terminologique**
 > La carte « Contre-attaque » décrite ci-dessous est une **carte de commandement** jouée volontairement depuis la main. La réaction de combat d'une unité attaquée porte un autre nom, la **riposte** (D158, [[Regles_Base]] §7.6).
 
-**Classe** — activation par couleur de classe _(6 cartes, 3 nouvelles — anciennement les cartes bannière de BattleLore V1)_
+**Bannières** — activation par couleur de classe _(6 cartes, 3 nouvelles — reprises des cartes bannière de BattleLore V1)_
 
 | Carte | Nb | Effet |
 |---|---|---|
-| Classe Verte | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🟢 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🟢, activez 1 unité de votre choix. |
-| Classe Bleue | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🔵 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🔵, activez 1 unité de votre choix. |
-| Classe Rouge | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🔴 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🔴, activez 1 unité de votre choix. |
+| Bannières vertes | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🟢 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🟢, activez 1 unité de votre choix. |
+| Bannières bleues | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🔵 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🔵, activez 1 unité de votre choix. |
+| Bannières rouges | 2 | Pour chaque carte de Commandement en main (celle-ci comprise), activez 1 unité 🔴 de votre choix, dans n'importe quelle section. Si vous ne contrôlez aucune unité 🔴, activez 1 unité de votre choix. |
 
 **Autres cartes Tactiques** _(12 cartes)_
 
@@ -238,7 +238,7 @@ Ces cartes activent des unités selon leur classe ou leur type, ou produisent de
 | En marche | 2 | 2 |
 | **En avant** | **2** | **—** |
 | Encerclement | 2 | 2 |
-| **Classe (Verte/Bleue/Rouge)** | **6** | **6** |
+| **Bannières (vertes/bleues/rouges)** | **6** | **6** |
 | Charge de cavalerie | 3 | 3 |
 | Assaut d'infanterie | 2 | 2 |
 | Pluie de flèches | 2 | 2 |
@@ -294,7 +294,7 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 > 🔄 **D180 — l'Épique se joue aussi à deux.** Le râtelier (§7.2), le déroulement du tour (§7.3), la valeur de commandement (§7.4), l'erratum Contre-attaque (§7.5) et Ordre direct à l'échelle (D129) valent pour **toute** partie Épique. Seuls les rôles (§7.1) et la réserve de Pouvoir à trois joueurs (§7.7) relèvent du mode multi-joueurs, optionnel.
 
 > 🔄 **Résolu (D087, note mise à jour D088)**
-> Adapté d'*Epic BattleLore* (Days of Wonder, extension V1, 2007), avec une seule simplification restante : pas de cartes Lore (pas de couche magie en V1, D001/D010). Les cartes Classe (ex-bannières, D088) sont incluses comme le reste du deck Normal réutilisé tel quel — aucune règle Épique spécifique ne les concerne. Déjà tranché en amont (D016) : chaque joueur contrôle une **Section** (Gauche/Centre/Droite), pas de sous-force nominative.
+> Adapté d'*Epic BattleLore* (Days of Wonder, extension V1, 2007), avec une seule simplification restante : pas de cartes Lore (pas de couche magie en V1, D001/D010). Les cartes Bannières (D088) sont incluses comme le reste du deck Normal réutilisé tel quel — aucune règle Épique spécifique ne les concerne. Déjà tranché en amont (D016) : chaque joueur contrôle une **Section** (Gauche/Centre/Droite), pas de sous-force nominative.
 
 ### 7.1 Rôles
 
@@ -363,6 +363,8 @@ Règle complète et sources de gain : [[Regles_Base]] §5.6.
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.21 — Phase 1 — 2026-10-04. **Correction de nom, sans numéro D** (retour d'Emmanuel sur le chapitre 11) : les cartes Classe Verte / Bleue / Rouge s'appellent **Bannières vertes / bleues / rouges**, nom de la carte physique ; leur texte parle toujours d'unités de classe verte, bleue ou rouge.*
 
 *Version : 0.20 — Phase 1 — 2026-10-03. **D180** : §7, les règles Épiques valent aussi à deux joueurs ; seuls §7.1 et §7.7 relèvent du mode multi-joueurs.*
 

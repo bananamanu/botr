@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-30"
+date_maj: "2026-10-04"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.39"
+version: "0.40"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -64,7 +64,7 @@ L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signa
 1. **Avant le décompte** — relances : [Relance X], [Horde] *(sans porteur actif, D090)*.
 2. **Au décompte des touches** — effets de **Couronne** (badge Leader uniquement, D089) et effets de **Pouvoir** ([Charge écrasante]… — migrées depuis Couronne, D089).
 3. **Sauvegardes et réductions défensives** — [Armure] (1 dé par touche, D143) puis [Protection X].
-4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Pouvoir** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) absorbe le tout, quelle qu'en soit la source.
+4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Pouvoir** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) peut absorber le tout, quelle qu'en soit la source (facultatif, D182).
 
 > 🎲 **Note (D089).** Toutes les règles spéciales/signature à déclenchement par face se résolvent désormais sur **Pouvoir** (y compris [Peur X], déjà le cas depuis D033, et [Charge écrasante], migrée depuis Couronne). La **Couronne** est réservée au badge **Leader** — sur une unité qui ne le porte pas, elle est sans effet. Une unité pourrait en théorie cumuler Peur (Pouvoir, intrinsèque Créature) et une autre règle à Pouvoir sur le même jet : dans ce cas les deux effets s'appliquent, chacun sur sa propre attaque (aucun cas actif ne collisionne à ce jour — voir Mûmakil, `02 - Factions/Harad.md`, où Peur ne porte que sur l'attaque de charge et [Howdah] sur un jet de tir séparé).
 
@@ -102,17 +102,19 @@ Une unité en position protégée (terrain) ignore **X touches** après décompt
 
 ### [Inébranlable X]
 
-Cette unité ignore **X résultats de retraite** par attaque reçue, quelle qu'en soit la source (dés, [Peur X], cartes, effets).
+Cette unité **peut ignorer jusqu'à X résultats de retraite** par attaque reçue, quelle qu'en soit la source (dés, [Peur X], cartes, effets).
+
+**Facultatif (D182)** : c'est le camp de l'unité qui choisit, Drapeau par Drapeau, d'en ignorer ou non — il peut préférer la laisser reculer, par exemple pour la dégager. Comme l'avance et la poursuite, c'est un choix, jamais une obligation.
 
 **Cumul (D171)** : les sources d'[Inébranlable] s'additionnent. Une unité avec bannière ([Inébranlable 1]) adjacente à un Leader ami ([Inébranlable 1] aux unités amies adjacentes) porte **[Inébranlable 2]**.
 
 - **Convention [Inébranlable ∞]** : une unité qui ne recule **jamais** (elle ignore tout Drapeau). Remplace l'ancienne règle [Inamovible] (fusionnée en P2). Réservée aux grandes créatures ancrées et aux pièces signature — premier porteur : le Mûmakil ; **second porteur, P8 : la Garde du Roi (Rohan)**, devenue pièce entièrement signature — voir [[Rohan]] §3.
 
-> 💡 [Inébranlable 2] face à 3 Drapeaux → recule d'1 seul hexagone. [Inébranlable ∞] → ne recule pas.
+> 💡 [Inébranlable 2] face à 3 Drapeaux → recule d'1 hexagone au moins, 3 au plus, au choix de son camp. [Inébranlable ∞] → ne recule pas.
 
 ### [Poursuite X]
 
-Alternative à l'avance (voir [[Regles_Base]] §8.2) : après avoir éliminé ou fait reculer une cible adjacente **en mêlée**, se déplacer de 1 à X hexagones — selon les règles normales de mouvement, arrêt à l'entrée d'un bois, d'un gué ou d'un bâtiment compris — puis effectuer **une attaque supplémentaire** contre une unité ennemie adjacente à la nouvelle position, la cible initiale ou une autre. Une fois par tour.
+Alternative facultative à l'avance (voir [[Regles_Base]] §8.2) : après avoir éliminé ou fait reculer une cible adjacente **en mêlée**, se déplacer de 1 à X hexagones — selon les règles normales de mouvement, arrêt à l'entrée d'un bois, d'un gué ou d'un bâtiment compris — puis effectuer **une attaque supplémentaire** contre une unité ennemie adjacente à la nouvelle position, la cible initiale ou une autre. Une fois par tour.
 
 L'attaque de poursuite est une **attaque complète** (D166) : elle rapporte du Pouvoir, sa cible peut riposter, et l'attaquant peut ensuite avancer — mais pas poursuivre une seconde fois.
 
@@ -180,7 +182,7 @@ Toute unité **légère (🟢, 2 dés) en mode distance** décroche après avoir
 
 #### [Bannière]  — *badge, nouveau (D092)*
 
-L'unité porte **[Inébranlable 1]** (ignore 1 résultat de retraite par attaque reçue, cumulable avec un autre Inébranlable déjà présent). Incarnée par une figurine porte-étendard visible sur le socle — **pas de jeton dédié**, contrairement aux autres badges.
+L'unité porte **[Inébranlable 1]** (peut ignorer 1 résultat de retraite par attaque reçue, cumulable avec un autre Inébranlable déjà présent). Incarnée par une figurine porte-étendard visible sur le socle — **pas de jeton dédié**, contrairement aux autres badges.
 
 > 🎲 Repris du jeu de plateau MESBG (bannières visibles sur les unités) : une pièce identifiable à la table sans consulter de fiche, cohérent avec le principe de lisibilité au plateau (principe 3). Coût : tarif [Inébranlable 1] existant (+2 brut, [[Regles_Points]] §3.1), à confirmer en P8.
 
@@ -336,7 +338,7 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Riposte même en cas de recul forcé, puis recule |
 | **[Horde]** | Badge Faction, réactivée (D092) — Mordor | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] *([Poison] retiré, D090)* |
-| **[Inébranlable X]** | Socle | Ignore X retraites (∞ = ne recule jamais, ex-[Inamovible]) |
+| **[Inébranlable X]** | Socle | Peut ignorer jusqu'à X retraites, au choix (D182) ; ∞ = ne recule jamais, ex-[Inamovible] |
 | **[Leader]** | Badge *(formalisé D093, sort de la réserve Phase 2)* | Touche aussi sur Couronne ; [Inébranlable 1] à son unité + unités amies adjacentes ; statut Général et valeur de Destin possibles — [[Regles_Base]] §2.2bis |
 | **[Mercenaire]** | Badge Faction, réactivée (D092) — Khand *(coût négatif)* | Chaque retrait forcé compte double |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
@@ -396,6 +398,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.40 — Phase 1 — 2026-10-04. **D182 — [Inébranlable X] est facultatif** : le camp de l'unité choisit, Drapeau par Drapeau, d'en ignorer jusqu'à X. Exemple et récapitulatif mis à jour. [Poursuite X] dite explicitement « alternative facultative » à l'avance, sans changement de mécanique. La convention [Inébranlable ∞] (Mûmakil, Garde du Roi) reste inchangée : ne recule jamais.*
 
 *Version : 0.39 — Phase 1 — 2026-09-30. **P14a.5.** **D164** : [Protection X] avant [Armure]. **D165** : [Armure] ne sauve pas les touches de retraite bloquée. **D166** : [Poursuite X] — déplacement aux règles normales, attaque de poursuite complète, cible initiale possible. **D171** : les sources d'[Inébranlable X] s'additionnent. Correction de forme, sans numéro D : la note de [Poursuite X] la disait encore « pas un trait automatique de la Cavalerie », périmée depuis D063 qui l'a rendue intrinsèque à la Cavalerie de mêlée.*
 

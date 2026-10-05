@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-03"
+date_maj: "2026-10-04"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.34"
+version: "0.35"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -86,7 +86,7 @@ Toute unité est définie par trois caractéristiques, données par son **profil
 - **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
 - **Leader** *(formalisé D093, sort de la réserve Phase 2 posée en D089)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7) ; confère aussi **[Inébranlable 1]** à son unité **et** à toute unité amie **adjacente** (cumulable avec un Inébranlable déjà présent) ; peut porter en plus le statut **Général** et une valeur de **Destin** — mécanique complète en §2.2bis.
 
-Une **figurine avec bannière**, qui n'est pas un badge (D152), confère **[Inébranlable 1]** à son unité (l'unité ignore 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
+Une **figurine avec bannière**, qui n'est pas un badge (D152), confère **[Inébranlable 1]** à son unité (l'unité peut ignorer 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
 
 Une unité peut donc porter 0 à 3 badges (Faction, Légende, Leader), plus une éventuelle figurine avec bannière, selon ce que le concepteur juge lisible pour cette unité précise — la limite n'est plus un plafond de comptage mais le jugement éditorial au cas par cas. *(Coûts traités dans [[Regles_Points]] §3.1 — Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8.)*
 
@@ -385,7 +385,7 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 5. **Appliquer [Protection X]** si applicable : ignorer X touches (D164 — avant [Armure]).
 6. **Appliquer [Armure]** si la cible la porte : **1 dé par touche restante**, la touche est annulée sur **Pouvoir** — ou sur **Pouvoir ou Couronne** si l'unité porte un Leader.
 7. **Retirer les figurines** selon la règle générale de dégâts (voir §2.3).
-8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable. Les touches de retraite bloquée (§9.3) ne se sauvegardent pas par [Armure] (D165).
+8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable, au choix du camp de la cible (D182). Les touches de retraite bloquée (§9.3) ne se sauvegardent pas par [Armure] (D165).
 9. **Riposte** si les conditions sont réunies (adjacente, restée dans son hexagone — y compris si sa retraite a été bloquée —, non éliminée ; D170).
 10. **Avance** si la cible est éliminée ou en retraite — mêlée uniquement (§8.1).
 
@@ -493,7 +493,7 @@ La retraite est résolue immédiatement après le retrait des figurines (étape 
 
 Chaque face **Drapeau** obtenue par l'attaquant force la cible à reculer d'**1 hexagone**. Il n'y a pas de valeur de moral : **1 Drapeau = 1 hexagone**, sans exception.
 
-> **[Inébranlable X]** est le seul modificateur : l'unité ignore X Drapeaux par attaque reçue, quelle qu'en soit la source. Les sources **s'additionnent** (D171) : figurine avec bannière, Leader de l'unité, Leader ami adjacent.
+> **[Inébranlable X]** est le seul modificateur : l'unité peut ignorer jusqu'à X Drapeaux par attaque reçue, quelle qu'en soit la source. C'est un choix de son camp, comme l'avance et la poursuite (D182). Les sources **s'additionnent** (D171) : figurine avec bannière, Leader de l'unité, Leader ami adjacent.
 
 ### 9.2 Direction de la retraite (recul façon Memoir '44)
 
@@ -578,7 +578,7 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 5. Appliquer [Protection X] si applicable
 6. Appliquer [Armure] si la cible la porte (1 dé par touche restante, annulée sur Pouvoir · + Couronne si Leader)
 7. Retirer **1 figurine/PV par touche** (§2.3)
-8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] si applicable · retraite bloquée sans [Armure])
+8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] au choix · retraite bloquée sans [Armure])
 9. Riposte si conditions réunies
 10. Avance si cible éliminée ou en retraite (mêlée uniquement) — ou [Poursuite X]
 
@@ -608,7 +608,7 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 | **Faible** | Dernière figurine : Épée inactive en attaque |
 | **[Armure]** | 1 dé par touche subie, annulée sur Pouvoir (+ Couronne si Leader) — mêlée et tir |
 | **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
-| **[Inébranlable X]** | Ignore X résultats de retraite par attaque reçue |
+| **[Inébranlable X]** | Peut ignorer jusqu'à X résultats de retraite par attaque reçue (facultatif, D182) |
 | **[Poursuite X]** | Alternative à l'avance : déplacement (règles normales) + attaque supplémentaire complète, une fois par tour |
 | **[Mobilité X]** | Déplacement de X hex aussitôt après sa propre attaque — jamais sans attaque ni sur une riposte (D163) |
 | **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — riposte même en cas de recul forcé, puis recule normalement |
@@ -627,6 +627,8 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 
 > ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.35 — Phase 1 — 2026-10-04. **D182 — [Inébranlable X] est facultatif** : §2.2, §7.1 (étape 8), §9.1, aide-mémoire et récapitulatif. L'avance et la poursuite l'étaient déjà (§8).*
 
 *Version : 0.34 — Phase 1 — 2026-10-03. **D180** : §5.5, les règles Épiques valent aussi à deux joueurs ; le mode multi-joueurs est optionnel.*
 

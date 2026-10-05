@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14a"
 statut: "en-cours"
-date_maj: "2026-10-03"
+date_maj: "2026-10-04"
 tags: [BdTdM, type/livret]
-version: "0.10"
+version: "0.13"
 ---
 
 # Batailles de la Terre du Milieu — Livret de règles
@@ -179,7 +179,7 @@ Un badge donne une règle de plus à une unité. Il est matérialisé par un jet
 - {LEADER} **Leader** : un Leader mène l'unité. Il la rend plus dangereuse et affermit ses voisins (chapitre 9).
 - {FACTION} **Faction** : l'unité a une règle propre, indiquée sur son profil et définie dans le livret de référence.
 
-Une unité peut aussi compter une **figurine avec bannière**. Ce n'est pas un badge, mais l'unité y gagne [Inébranlable 1] : elle ignore 1 {DÉ:Drapeau} Drapeau à chaque attaque qu'elle subit (chapitre 7).
+Une unité peut aussi compter une **figurine avec bannière**. Ce n'est pas un badge, mais l'unité y gagne [Inébranlable 1] : elle peut ignorer 1 {DÉ:Drapeau} Drapeau à chaque attaque qu'elle subit (chapitre 7).
 
 Quelques pièces uniques, comme les Mûmakil ou la Compagnie Grise, ont des règles bien à elles : ce sont des **signatures**, écrites en entier sur leur profil dans le livret Factions.
 
@@ -245,7 +245,7 @@ Une unité sur un hexagone de frontière peut être activée par une carte de l'
 
 ### Les cartes Tactiques
 
-Une carte Tactique active selon un autre critère que la Section : le type (« Charge de cavalerie »), la classe (« Classe Rouge »), le mode (« Pluie de flèches »)… le plus souvent n'importe où sur le champ de bataille. Beaucoup donnent en plus un avantage, comme 1 dé de plus en combat. La carte dit tout ce qu'elle fait ; son texte complet figure aussi dans le livret de référence.
+Une carte Tactique active selon un autre critère que la Section : le type (« Charge de cavalerie »), la classe (« Bannières rouges »), le mode (« Pluie de flèches »)… le plus souvent n'importe où sur le champ de bataille. Beaucoup donnent en plus un avantage, comme 1 dé de plus en combat. La carte dit tout ce qu'elle fait ; son texte complet figure aussi dans le livret de référence.
 
 ### La valeur de commandement
 
@@ -406,7 +406,7 @@ Additionnez les touches, puis appliquez dans cet ordre :
 
 Si la cible survit, chaque {DÉ:Drapeau} Drapeau la fait reculer de 1 hexagone. C'est son propre camp qui la déplace : à chaque hexagone, il choisit un hexagone adjacent libre, plus proche de son bord que celui qu'elle quitte. D'où que vienne l'attaque, une unité recule toujours vers son bord. Le terrain ne gêne pas la retraite sauf s'il est infranchissable (chapitre 8).
 
-**[Inébranlable].** Une unité qui porte [Inébranlable 1] ignore 1 Drapeau à chaque attaque qu'elle subit. Une figurine avec bannière le donne à son unité (chapitre 3), un Leader à son unité et à chaque unité amie adjacente (chapitre 9). Ces sources s'additionnent : une unité avec bannière, adjacente à un Leader ami, porte [Inébranlable 2] et ignore 2 Drapeaux.
+**[Inébranlable].** Une unité qui porte [Inébranlable 1] peut ignorer 1 Drapeau à chaque attaque qu'elle subit. C'est un choix, comme l'avance et la poursuite : son camp peut aussi la laisser reculer, par exemple pour la dégager. Une figurine avec bannière donne [Inébranlable 1] à son unité (chapitre 3), un Leader à son unité et à chaque unité amie adjacente (chapitre 9). Ces sources s'additionnent : une unité avec bannière, adjacente à un Leader ami, porte [Inébranlable 2] et peut ignorer jusqu'à 2 Drapeaux.
 
 {ILLUS:retraite — Morceau du champ de bataille, bord du Mal en haut. Une Bande d'orques du Mordor subit 2 Drapeaux. Flèche 1 : elle recule d'un hexagone vers le haut, dans l'un des deux hexagones plus proches de son bord, l'autre étant occupé. Flèche 2 : les deux hexagones suivants sont occupés, l'un par des orques amis, l'autre par une unité du Bien ; la flèche s'arrête, marquée « bloquée : 1 perte », et une figurine est retirée.}
 
@@ -498,7 +498,7 @@ Un Leader donne les avantages suivants à son unité :
 
 - Au combat, l'unité touche également sur {DÉ:Couronne} Couronne, que ce soit en attaque ou quand elle riposte (chapitre 7).
 - Si l'unité porte [Armure], chaque Couronne annule une touche, comme une face Pouvoir (chapitre 7).
-- L'unité et chaque unité amie adjacente gagnent [Inébranlable 1] : elles ignorent 1 Drapeau à chaque attaque qu'elles subissent (chapitre 7).
+- L'unité et chaque unité amie adjacente gagnent [Inébranlable 1] : elles peuvent ignorer 1 Drapeau à chaque attaque qu'elles subissent (chapitre 7).
 
 Quand son unité perd des figurines, celle du Leader est toujours retirée en dernier. Une unité n'est jamais menée par plus d'un Leader.
 
@@ -584,4 +584,61 @@ La réserve de Pouvoir reste commune au camp (chapitre 5). Une fois les cartes j
 
 ## 11. Un tour commenté
 
-*À rédiger — P14a.7 (08/10).*
+Ce chapitre suit un tour complet, de la carte jouée à la dernière pioche. Il n'apprend aucune règle nouvelle : chaque geste renvoie au chapitre qui l'explique. La partie se joue en format Normal, à deux joueurs, et c'est au tour du Mal.
+
+{ILLUS:tour-commente-avant — Morceau du champ de bataille vu depuis le bord du Mal (en bas), avec la ligne entre la Section Gauche et la Section Centre du Mal. Terrain : une colline portant une médaille objectif, un bois entre les lignes, un bois côté Mal. Bien : Guerriers de Minas Tirith (bleu, épées croisées) et Chevaliers de Dol Amroth (rouge, épées croisées) côte à côte, Archers de Minas Tirith (vert, arc) devant eux ; plus loin, Guerriers de Lossarnach (bleu, épées croisées) avec le jeton Leader de Forlong. Mal : Bande d'orques du Mordor (bleu, épées croisées, bannière) au pied de la colline, Bande de pisteurs orques (vert, arc) derrière eux, Meute de cavaliers wargs (bleu, épées croisées) en retrait ; au Centre, Bande d'uruk-hai (rouge, épées croisées) avec le jeton Leader de Gothmog.}
+
+### La situation
+
+Ce morceau du champ de bataille porte une colline et deux bois. Le scénario a posé une médaille objectif sur la colline : à chaque étape des points de victoire, elle va au camp qui l'occupe (chapitre 4). Pour l'instant, personne ne la tient.
+
+Le Bien tient une ligne. Ses Archers de Minas Tirith {VERT}{DISTANCE} sont en avant, avec derrière eux des Guerriers de Minas Tirith {BLEU}{MÊLÉE} et des Chevaliers de Dol Amroth {ROUGE}{MÊLÉE}. Plus loin, face au Centre du Mal, se tiennent des Guerriers de Lossarnach {BLEU}{MÊLÉE} menés par Forlong le Gros, un Leader.
+
+Dans sa Section Gauche, le Mal aligne une Meute de cavaliers wargs {BLEU}{MÊLÉE}, une Bande d'orques du Mordor {BLEU}{MÊLÉE} avec bannière et une Bande de pisteurs orques {VERT}{DISTANCE}. Au Centre attend une Bande d'uruk-hai {ROUGE}{MÊLÉE}, menée par Gothmog, Leader et Général. Aucune de ces unités ne porte de badge Faction.
+
+Gothmog est le seul Général du Mal : sa main compte 5 cartes (chapitre 9). Sa réserve contient 6 jetons de Pouvoir.
+
+### 1. Commandement
+
+Le Mal a en main Patrouille Gauche, Charge de cavalerie, Éclaireur Centre, Attaque Droite et Bannières vertes. Charge de cavalerie est tentante : elle active autant d'unités de Cavalerie que sa valeur de commandement, soit 5, car la carte jouée compte dans la main (chapitre 5). Mais le Mal n'a ici qu'une unité de Cavalerie, les Wargs. Il garde la carte pour plus tard et joue Patrouille Gauche, qui active 2 unités de sa Section Gauche.
+
+Il dépense ensuite sa réserve. Une unité coûte autant de jetons qu'elle lance de dés : les Pisteurs {VERT} lui coûtent 2 jetons, les Uruk-hai {ROUGE} 4. Il a atteint le maximum de 2 unités achetées par tour, et sa réserve tombe à 0.
+
+### 2. Ordre
+
+Le Mal désigne ses 4 unités activées : les Wargs et les Orques pour la carte, les Pisteurs et les Uruk-hai en dépensant les jetons de Pouvoir. Ses autres unités ne bougeront pas et ne combattront pas ce tour.
+
+### 3. Mouvement
+
+Le Mal déplace ses unités une à une, dans l'ordre de son choix (chapitre 6).
+
+- **Les Pisteurs** partent les premiers. Les Orques leur barrent encore la route : ils ne peuvent pas les traverser et les contournent, en 2 hexagones.
+- **Les Orques** montent sur la colline, à 1 hexagone. La colline ne freine pas le mouvement (chapitre 8). Les voilà adjacents aux Archers, en contrebas.
+- **Les Wargs**, Cavalerie standard, se déplacent de 3 hexagones et viennent au contact des Archers.
+- **Les Uruk-hai** se déplacent de 1 hexagone seulement, jusqu'au contact des Guerriers de Lossarnach. Unité rouge, ils ne pourraient plus attaquer s'ils allaient plus loin.
+
+### 4. Attaque
+
+Toutes les unités ont bougé : le combat commence. Le Mal choisit l'ordre de ses attaques (chapitre 7).
+
+**Les Pisteurs tirent.** Leur cible idéale, les Archers, est à 3 hexagones, mais la ligne de vue traverse la colline : elle est bloquée. Les Guerriers de Minas Tirith, à 3 hexagones eux aussi, sont bien en vue. Les Pisteurs lancent 2 dés : Arc et Pouvoir. Une touche : les Guerriers de Minas Tirith perdent 1 figurine. Le Pouvoir ne déclenche rien, mais il rapporte 1 jeton au Mal. Les Guerriers de Minas Tirith ne sont pas adjacents aux Pisteurs : ils ne ripostent pas. Grâce à [Mobilité 1], les Pisteurs décrochent aussitôt de 1 hexagone et entrent dans un bois. Au tour du Bien, toute unité qui les attaquera lancera 2 dés au plus.
+
+**Les Orques chargent depuis la colline.** Ils attaquent les Archers en contrebas avec 3 dés, plus 1 pour la colline (chapitre 8) : Épées croisées, Épée, Couronne, Pouvoir. Deux touches : les Archers perdent 2 figurines. La Couronne ne fait rien sans Leader, et le Pouvoir rapporte 1 jeton. Les Archers n'ont pas bougé : ils ripostent, car une unité de tir peut tirer sur une unité adjacente. Leurs 2 dés donnent Arc et Drapeau. Une touche : les Orques perdent 1 figurine. Leur bannière leur donne [Inébranlable 1] : ils choisissent d'ignorer le Drapeau et restent sur la colline.
+
+**Gothmog frappe Forlong.** Les Uruk-hai lancent 4 dés : Épées croisées, Couronne, Drapeau, Arc. Grâce à Gothmog, la Couronne touche : 2 touches, les Guerriers de Lossarnach perdent 2 figurines. La figurine de Forlong est retirée en dernier : il reste en jeu. Il donne [Inébranlable 1] à son unité, qui choisit d'ignorer le Drapeau et riposte avec ses 3 dés. Épée, Épée, Couronne : 3 touches, car la Couronne touche aussi pour Forlong. Les Uruk-hai portent [Armure] : ils lancent 1 dé par touche et obtiennent Pouvoir, Couronne et Drapeau. Le Pouvoir annule une touche, la Couronne une autre, parce que Gothmog mène l'unité (chapitre 9). Les Uruk-hai perdent 1 figurine. Ni la riposte ni les dés d'[Armure] ne rapportent de Pouvoir.
+
+**Les Wargs achèvent les Archers.** Il ne reste aux Archers que 2 figurines. Les Wargs lancent 3 dés : Épées croisées, Drapeau, Arc. Une touche : il reste 1 figurine. Le Drapeau devrait faire reculer les Archers de 1 hexagone, mais les deux hexagones qui les rapprochent de leur bord sont occupés par les Guerriers de Minas Tirith et les Chevaliers. Leur retraite est bloquée (chapitre 7) : ils perdent leur dernière figurine et sont mis en déroute. Le Mal prend une médaille.
+
+Comme toute Cavalerie standard de mêlée, les Wargs portent [Poursuite 2] (chapitre 3). Ils pourraient s'arrêter dans l'hexagone libéré, au contact des Chevaliers, et les attaquer avec leurs 3 dés. Ils préfèrent entrer dans l'hexagone libéré puis dans le bois voisin, qui les arrête, toujours au contact des Chevaliers. Depuis le bois, ils ne lancent que 2 dés : Épées croisées et Pouvoir. Une touche, et 1 jeton de Pouvoir de plus pour le Mal. Les Chevaliers lancent 1 dé d'[Armure] : Arc, la touche passe, ils perdent 1 figurine. Ils ripostent, mais leur cible est dans un bois : ils lancent 2 dés au lieu de 4. Épée et Arc : une touche, les Wargs perdent 1 figurine. Le choix tactique de se placer dans le bois s'est avéré payant : les Wargs ont renoncé à 1 dé, les Chevaliers à 2. Une unité ne poursuit qu'une fois par tour : l'attaque des Wargs s'arrête là.
+
+### Le bilan
+
+5. **Points de victoire.** Les Orques occupent la colline : la médaille objectif va au Mal. Avec celle des Archers, il a pris 2 médailles ce tour.
+6. **Pioche.** Le Mal défausse Patrouille Gauche et pioche 1 carte : sa main revient à 5.
+7. **Pouvoir.** Les Pisteurs, les Orques et les Wargs ont chacun obtenu 1 Pouvoir en attaquant, soit 3 jetons. Le Mal en ajoute 2 : sa réserve, vidée à l'étape de commandement, compte désormais 5 jetons.
+
+C'est au tour du Bien. Ses Chevaliers voudront venger les Archers, mais tant que les Wargs restent dans le bois, ils ne lanceront que 2 dés contre eux.
+
+{ILLUS:tour-commente-apres — Le même morceau du champ de bataille à la fin du tour, avec les trajets en pointillé. Gris : mouvements des Pisteurs (contournement des Orques), des Orques (montée sur la colline), des Wargs et des Uruk-hai. Orange : décrochage des Pisteurs dans le bois côté Mal. Rouge : poursuite des Wargs, de l'hexagone libéré par les Archers jusqu'au bois entre les lignes. Une croix marque l'hexagone des Archers mis en déroute. La médaille de la colline est passée au Mal. Effectifs restants : Guerriers de Minas Tirith 3, Chevaliers 2, Guerriers de Lossarnach 2 avec Forlong, Wargs 2, Orques 3, Pisteurs 4, Uruk-hai 3 avec Gothmog.}
+
+> **À retenir** — Chaque tour suit les mêmes sept étapes : jouez votre carte, activez, déplacez tout le monde, puis attaquez et faites le bilan.

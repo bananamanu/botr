@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
 statut: "jouable"
-date_maj: "2026-09-27"
+date_maj: "2026-10-04"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.11"
+version: "1.12"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -109,8 +109,8 @@ Aucun de ces quatre hexagones ne peut être occupé au déploiement.
 | Guerriers du Lamedon | 1 | Faction Gondor | 5 |
 | Guerriers du Lamedon | 2 | — | 4 |
 | Rangers du Nord | 4 | Faction Gondor | 3 |
-| Troupes régulières de Minas Tirith | 1 | Bannière | 5 |
-| Troupes régulières de Minas Tirith | 1 | — | 4 |
+| Guerriers de Minas Tirith | 1 | Bannière | 5 |
+| Guerriers de Minas Tirith | 1 | — | 4 |
 
 > 🎲 **Les renforts de Pelargir.** Les deux unités de Minas Tirith figurent les hommes libérés par la prise des navires corsaires, remontés avec la flotte d'Aragorn (D117).
 
@@ -334,6 +334,8 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 - **Tarif de la sauvegarde conférée par badge** — ouvert par D143, voir `[[Regles_Points]]` §8 point 4. Concerne deux unités du scénario, sans incidence sur l'équilibre par Section.
 
 ---
+
+*Version : 1.12 — Phase 1 — 2026-10-04. **Correction de nom, sans numéro D** : « Guerriers de Minas Tirith » remplace « Troupes régulières de Minas Tirith » (§3.1), en accord avec `[[Gondor_et_Fiefs]]` v3.5. Ordre de bataille et coûts inchangés.*
 
 *Version : 1.11 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 
