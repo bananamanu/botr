@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14"
 statut: "en-cours"
-date_maj: "2026-10-03"
+date_maj: "2026-10-05"
 tags: [BdTdM, type/livret]
-version: "1.2"
+version: "1.3"
 ---
 
 # Corpus joueur — conventions et glossaire
@@ -93,7 +93,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Carte de section** | Carte qui active des unités d'une ou plusieurs Sections. | « ordre » |
 | **Carte Tactique** | Carte qui active selon un autre critère (type, classe…). | « carte spéciale » |
 | **Champ de bataille** | Le tapis hexagonal. | « plateau », « table », « carte » (sauf carte à jouer) |
-| **Char** | Pièce sur socle unique avec compteur de PV, qui compte comme Cavalerie pour tout le reste. | « chariot » |
+| **Char** | Pièce sur socle unique avec compteur de PV, qui compte comme Cavalerie pour tout le reste, règles intrinsèques comprises. | « chariot » |
 | **Classe** | Légère / Standard / Lourde, lue à la couleur du jeton : 2 / 3 / 4 dés. | « rang », « niveau » |
 | **Colline** | Terrain : +1 dé contre une cible en contrebas, bloque la vue. | « terrain surélevé », « hauteur » comme nom de terrain |
 | **Contre-attaque** | **Uniquement** la carte Tactique qui rejoue la carte que l'adversaire vient de jouer. | pour la réaction d'une unité attaquée (dire « riposte ») |
@@ -130,6 +130,8 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Valeur de commandement** | Nombre de cartes en main au moment de jouer, carte jouée comprise. | — |
 
 ---
+
+*Version : 1.3 — 2026-10-05. P14a.8. D183 : entrée Char, le Char porte les règles intrinsèques de la Cavalerie.*
 
 *Version : 1.2 — 2026-10-03. Retour d'Emmanuel sur les chapitres 9 et 10. Entrée Main : « mode multi-joueurs » remplace « Épique » (le format Épique se joue aussi à deux). D178 : un Leader peut mener n'importe quelle unité de son peuple.*
 

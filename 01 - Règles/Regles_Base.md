@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-04"
+date_maj: "2026-10-05"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.35"
+version: "0.36"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -152,7 +152,7 @@ Il n'y a **plus** de dégâts variables selon le type de cible (la double-touche
 
 Les **Chars** (ex. Aurige de Khand) et les **Créatures** (Mûmakil, Troll) occupent 1 hexagone sur socle 65 mm et se comptent en **PV**.
 
-> ⚔️ **Un Char est du matériel, pas un type de règles (D127).** Le socle 65 mm et le compteur de PV décrivent seulement **comment la pièce est représentée**. Pour tout le reste — activations, cartes d'ordre, cartes de Classe, effets visant un type — un **Char compte comme de la Cavalerie**. Une carte « Charge de cavalerie » active donc les Auriges de Khand. C'est ce qui justifie que l'Aurige soit chiffré dans la matrice en Cavalerie 🔵 mêlée (`02 - Factions/Khand.md` §3) alors qu'il se joue sur socle unique. Leur mouvement et leurs règles sont propres à leur profil (pièces signatures), hors de la grille standard (§6.1).
+> ⚔️ **Un Char est du matériel, pas un type de règles (D127).** Le socle 65 mm et le compteur de PV décrivent seulement **comment la pièce est représentée**. Pour tout le reste — activations, cartes d'ordre, cartes de Classe, effets visant un type — un **Char compte comme de la Cavalerie**. Une carte « Charge de cavalerie » active donc les Auriges de Khand. C'est ce qui justifie que l'Aurige soit chiffré dans la matrice en Cavalerie 🔵 mêlée (`02 - Factions/Khand.md` §3) alors qu'il se joue sur socle unique. Il porte aussi les **intrinsèques de la Cavalerie** de sa classe et de son mode (§2.4, **D183**) — [Poursuite 2] pour l'Aurige, déjà comprise dans son coût de case — et se déplace comme elle sauf mouvement propre au profil (§6.1, D153). Sa signature s'ajoute à ces règles.
 
 > **Artillerie / Machine de guerre : hors périmètre de la v1.** Non utilisée au Pelennor ; ses règles sont mises de côté et pourront être réactivées ultérieurement si un scénario l'exige.
 
@@ -166,6 +166,8 @@ Certaines règles spéciales ne se notent **pas** sur le profil : elles découle
 | **Infanterie — distance** | **[Mobilité 1]** | — | *(n'existe pas)* |
 | **Cavalerie — mêlée** | **[Poursuite 2]** | **[Poursuite 2]** | **[Poursuite 1]** + **[Armure]** |
 | **Cavalerie — distance** | **[Mobilité 2]** | **[Mobilité 1]** | *(n'existe pas)* |
+
+> **Chars (D183).** Un Char lit la ligne **Cavalerie** de son mode : l'Aurige de Khand (🔵 mêlée) porte [Poursuite 2].
 
 Trois lignes de force, toutes lisibles à la couleur ou au socle :
 
@@ -627,6 +629,8 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 
 > ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.36 — Phase 1 — 2026-10-05. **D183 — un Char porte les intrinsèques de la Cavalerie** de sa classe et de son mode : §2.4 (note sous la grille) et note D127 du §2.5 (la phrase « règles propres à leur profil, hors de la grille standard » est remplacée).*
 
 *Version : 0.35 — Phase 1 — 2026-10-04. **D182 — [Inébranlable X] est facultatif** : §2.2, §7.1 (étape 8), §9.1, aide-mémoire et récapitulatif. L'avance et la poursuite l'étaient déjà (§8).*
 

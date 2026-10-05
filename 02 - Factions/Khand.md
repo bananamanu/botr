@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-19"
+date_maj: "2026-10-05"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.9"
+version: "2.10"
 ---
 
 # Khand — Profils d'unités
@@ -53,6 +53,8 @@ Retrait forcé compte double. **Outil optionnel, coût négatif** : **−2 brut*
 
 Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regles_Speciales]]) — le fracas du char devant des troupes légères peu aguerries.
 
+**Intrinsèques (D183) :** comme tout Char, l'Aurige lit la ligne Cavalerie de la grille ([[Regles_Base]] §2.4) et porte **[Poursuite 2]**. Elle est déjà comprise dans le brut de base 21 de la case Cavalerie 🔵 mêlée : **coût inchangé**.
+
 **Chiffrage :** brut = 21 (base) + 2 ([Peur 1 vs 🟢], bespoke) = 23 → round(23÷3)−1 = **7**.
 
 ---
@@ -79,6 +81,8 @@ Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regl
 - **[Peur 1 contre les bannières vertes], tarif +2 non testé** — à confirmer au playtest : est-ce trop fort face à un roster où les classes 🟢 dominent (Harad, Khand lui-même en miroir), ou trop anecdotique face à des rosters à dominante 🔵/🔴 ?
 
 ---
+
+*Version : 2.10 — Phase 1 — 2026-10-05. **D183** : l'Aurige porte [Poursuite 2], intrinsèque de la Cavalerie 🔵 mêlée, déjà comprise dans son coût (7, inchangé). Note pour P14d : « [Peur 1 contre les bannières vertes] » entre en collision avec le nom des cartes Bannières vertes ; à formuler « contre les unités vertes » au livret Factions.*
 
 *Version : 2.8 — Phase 1 — 2026-09-06. **D127 — profil de l'Aurige de Khand complété et contradiction levée.** La valeur de PV manquait : elle est de **3**, non pas choisie mais déduite — le terme de socle Cavalerie de la matrice vaut Mvt 3 + PV 3, et c'est ce brut de 21 que ses 7 points paient depuis D108. Profil complet : 1 modèle sur socle 65 mm, Mvt 3, 3 dés, 3 PV, [Peur 1 contre les bannières vertes]. La contradiction entre `Regles_Base` (Char hors grille) et ce roster (chiffrage en matrice Cavalerie 🔵) est levée : le Char est un **traitement matériel**, mais l'Aurige **compte comme de la Cavalerie** pour les activations et les cartes. Aucun coût modifié.*
 

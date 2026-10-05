@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-04"
+date_maj: "2026-10-05"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.40"
+version: "0.41"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -343,7 +343,7 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Mercenaire]** | Badge Faction, réactivée (D092) — Khand *(coût négatif)* | Chaque retrait forcé compte double |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
 | **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081, confirmé au Playtest #4)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
-| **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
+| **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée, Chars compris — D183) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Gratuite sur toute unité 🔴 et toute Créature — grille [[Regles_Base]] §2.4 (D071, D143) |
 | **[Peur X]** | Intrinsèque (type Créature) | Chaque Pouvoir = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
 | **[Plateforme de tir X]** | Sans porteur actif | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
@@ -398,6 +398,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.41 — Phase 1 — 2026-10-05. **D183** : les Chars portent les intrinsèques de la Cavalerie ; porteurs de [Poursuite X] précisés au récapitulatif.*
 
 *Version : 0.40 — Phase 1 — 2026-10-04. **D182 — [Inébranlable X] est facultatif** : le camp de l'unité choisit, Drapeau par Drapeau, d'en ignorer jusqu'à X. Exemple et récapitulatif mis à jour. [Poursuite X] dite explicitement « alternative facultative » à l'avance, sans changement de mécanique. La convention [Inébranlable ∞] (Mûmakil, Garde du Roi) reste inchangée : ne recule jamais.*
 

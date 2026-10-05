@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14a"
 statut: "en-cours"
-date_maj: "2026-10-04"
+date_maj: "2026-10-05"
 tags: [BdTdM, type/livret]
-version: "0.13"
+version: "0.14"
 ---
 
 # Batailles de la Terre du Milieu — Livret de règles
@@ -109,7 +109,7 @@ Chaque unité a un profil, dans le livret Factions. Il donne ses trois caractér
 | Char | 1 pièce | sur un compteur |
 | Créature | 1 pièce | sur un compteur |
 
-Un profil peut déroger à la composition : la Compagnie Grise, par exemple, compte six figurines. Un Char compte comme de la Cavalerie pour les cartes et les activations.
+Un profil peut déroger à la composition : la Compagnie Grise, par exemple, compte six figurines. Un Char compte comme de la Cavalerie pour tout le reste : cartes, activations et règles qu'il porte d'office (ci-dessous).
 
 ### La classe
 
@@ -162,6 +162,8 @@ Certaines règles découlent directement du type, de la classe et du mode. L'uni
 | Cavalerie {MÊLÉE} | [Poursuite 2] | [Poursuite 2] | [Poursuite 1], [Armure] |
 | Cavalerie {DISTANCE} | [Mobilité 2] | [Mobilité 1] | n'existe pas |
 | Créature | [Armure] et [Peur 1], quelle que soit sa classe | | |
+
+Un Char lit la ligne de la Cavalerie de son mode.
 
 Quatre idées suffisent à retenir le tableau :
 
@@ -222,7 +224,7 @@ Chaque scénario fixe ses conditions de victoire. Sauf indication contraire, ell
 
 Certains scénarios s'écartent de ce modèle, par exemple en s'arrêtant sur une limite de temps. Le livret de scénario le précise.
 
-> **Exemple** — Un scénario place un objectif d'occupation sur un gué et fixe la victoire à 6 points. À la fin de son tour, le Gondor a mis 4 unités ennemies en déroute et tient le gué : il compte 5 points. Au tour suivant, des Orques chassent ses Piquiers du gué et s'y installent. À l'étape des points de victoire du Mal, la médaille du gué change de camp : le Gondor retombe à 4 points.
+> **Exemple** — Un scénario place un objectif d'occupation sur un gué et fixe la victoire à 6 points. À la fin de son tour, le Bien a mis 4 unités ennemies en déroute et tient le gué : il compte 5 points. Au tour suivant, des Orques chassent ses Guerriers de Minas Tirith du gué et s'y installent. À l'étape des points de victoire du Mal, la médaille du gué change de camp : le Bien retombe à 4 points.
 
 > **À retenir** — Tout le monde se déplace, puis tout le monde attaque.
 
@@ -592,7 +594,7 @@ Ce chapitre suit un tour complet, de la carte jouée à la dernière pioche. Il 
 
 Ce morceau du champ de bataille porte une colline et deux bois. Le scénario a posé une médaille objectif sur la colline : à chaque étape des points de victoire, elle va au camp qui l'occupe (chapitre 4). Pour l'instant, personne ne la tient.
 
-Le Bien tient une ligne. Ses Archers de Minas Tirith {VERT}{DISTANCE} sont en avant, avec derrière eux des Guerriers de Minas Tirith {BLEU}{MÊLÉE} et des Chevaliers de Dol Amroth {ROUGE}{MÊLÉE}. Plus loin, face au Centre du Mal, se tiennent des Guerriers de Lossarnach {BLEU}{MÊLÉE} menés par Forlong le Gros, un Leader.
+Le Bien tient une ligne. Ses Archers de Minas Tirith {VERT}{DISTANCE} sont en avant, avec derrière eux des Guerriers de Minas Tirith {BLEU}{MÊLÉE} et des Chevaliers de Dol Amroth {ROUGE}{MÊLÉE}. Plus loin, face au Centre du Mal, se tiennent des Guerriers de Lossarnach {BLEU}{MÊLÉE} menés par Forlong le Gros, un Leader. Aucune unité du Bien ne porte de bannière ni de badge Faction.
 
 Dans sa Section Gauche, le Mal aligne une Meute de cavaliers wargs {BLEU}{MÊLÉE}, une Bande d'orques du Mordor {BLEU}{MÊLÉE} avec bannière et une Bande de pisteurs orques {VERT}{DISTANCE}. Au Centre attend une Bande d'uruk-hai {ROUGE}{MÊLÉE}, menée par Gothmog, Leader et Général. Aucune de ces unités ne porte de badge Faction.
 
@@ -635,7 +637,7 @@ Comme toute Cavalerie standard de mêlée, les Wargs portent [Poursuite 2] (chap
 
 5. **Points de victoire.** Les Orques occupent la colline : la médaille objectif va au Mal. Avec celle des Archers, il a pris 2 médailles ce tour.
 6. **Pioche.** Le Mal défausse Patrouille Gauche et pioche 1 carte : sa main revient à 5.
-7. **Pouvoir.** Les Pisteurs, les Orques et les Wargs ont chacun obtenu 1 Pouvoir en attaquant, soit 3 jetons. Le Mal en ajoute 2 : sa réserve, vidée à l'étape de commandement, compte désormais 5 jetons.
+7. **Pouvoir.** Vidée à l'étape de commandement, la réserve du Mal a déjà reçu 3 jetons pendant les attaques : 1 pour les Pisteurs, 1 pour les Orques, 1 pour les Wargs. Le Mal en ajoute 2 : sa réserve compte désormais 5 jetons.
 
 C'est au tour du Bien. Ses Chevaliers voudront venger les Archers, mais tant que les Wargs restent dans le bois, ils ne lanceront que 2 dés contre eux.
 
