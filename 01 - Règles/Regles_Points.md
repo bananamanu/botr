@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-04"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.39"
+version: "0.41"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -118,7 +118,7 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062), **réaligné P8** (D
 | **[Armure]** | **0** *(intrinsèque)* sur 🔴 et sur les Créatures · **2** *(forfait)* si conférée à une autre unité | **D143, P13 — [Armure X] et [Défense X] sont supprimées du barème** ; il n'existe plus de valeur X à multiplier. Jet de sauvegarde 1d6 par touche (Pouvoir annule, + Couronne si Leader), mêlée et tir. Le forfait de 2 reprend l'ancien tarif de [Défense 1] : **valeur à reconfirmer**, la règle unifiée étant plus forte que la réduction statique qu'elle remplace (voir §8). |
 | **[Inébranlable X]** | 2 × X | Socle libre. Si l'unité porte déjà [Inébranlable 1] via Bannière ou Leader, le premier point est inclus → ne facturer que l'excédent. |
 | **[Inébranlable ∞]** | 6 *(forfait, bespoke)* | ≈3× le forfait standard [Inébranlable 1] — jugement par analogie (D079). Porteurs : Mûmakil, Garde du Roi (Rohan, P8). |
-| **[Protection X]** | 1 × X | Le plus souvent porté par le terrain. *(Sur les Créatures, supersedée par [Armure] — D103.)* |
+| **[Protection]** | 1 | Sans valeur depuis D193 ; portée par le terrain (bâtiment), aucun profil actif. *(Sur les Créatures, supersedée par [Armure] — D103.)* |
 | **[Relance X]** | 2 × X | Socle libre — ex-badge « Spéciale » (D073), nom de badge abandonné D092, coût inchangé. |
 | **Légende** *(badge, pièces uniques)* | 3 (mêlée) / 2 (tir) *(forfait, +1 dé)* | D073 — voir [[Regles_Speciales]] §Conventions. |
 | **[Inébranlable 1] + Jamais Faible** | 2 *(forfait)* | Socle libre — ex-badge « Élite » (D073), nom de badge abandonné D092, coût inchangé. **Ne fait plus partie du menu d'options standard depuis P8 (D101/D102)** — ne survit que dans les pièces signature. |
@@ -135,11 +135,11 @@ Repris de l'Option B (D026), **élagué au tri P2** (D062), **réaligné P8** (D
 | **[Horde]** *(troisième version)* | **3** *(forfait)* | **Faction Mordor**, D105, P8 — +1 dé et Inébranlable 1 à pleine santé, aucun effet négatif ensuite. Disponible sur tous les orques (bandes, Uruk-hai, Piétaille orque, wargs). |
 | **[Peur 1 contre les bannières vertes]** | **2** *(forfait, bespoke)* | D106, P8 — signature Aurige de Khand. Cible uniquement la classe 🟢. |
 | **[Mur de bouclier]** | **1** *(forfait)* | Sans porteur actif depuis P7c/D081 — [Protection 1] tant qu'aucune touche subie, perdue à la 1ʳᵉ. Conservée au barème, réutilisable. |
-| **[Poison]** | 1 | **Faction Harad** — universelle sur tout le roster d'escorte. |
+| **[Poison]** | 1 | **Faction Harad**, option sur tout le roster d'escorte. Refondue D194 (jeton Empoisonnée, profite à tout le camp) : **forfait à revoir en P14d**. |
 | **[Double Tir]** | 3 | Sans porteur actif depuis P4/D072. Conservée au barème, réutilisable. |
 | **[Prise de flanc]** | 3 *(forfait)* | Signature Éored de cavalier. Provisoire, D049. |
-| **[Vigilant]** | 2 *(forfait)* | Signature Éored d'éclaireur. Provisoire, D050. |
-| **[Archer en mêlée]** | 2 | Signature Compagnie Grise. |
+| **[Vigilant]** | 2 *(forfait)* | Porteur : Roi-Sorcier (ex-Éored d'éclaireur, retiré D101/D102). Mot-clé du livret de référence (D186). Provisoire, D050. |
+| **[Archer en mêlée]** | 2 | Porteur : Legolas (Compagnie Grise). Mot-clé du livret de référence (D186). |
 | **[Peur X]** | *(intrinsèque Créature — voir note)* | Devenue intrinsèque au type Créature (P4/D071), plus une signature au barème. Toute créature en porte 1 sans supplément. |
 
 > **Retirées au tri P2** (ne plus chiffrer) : [Réception de charge], [Martyre], [Meute X], [Souffle de feu], immunités, [Terrain favori], [Rechargement], [Déploiement avancé]. Traçabilité : [[Regles_Speciales]] §6. *([Arme de jet X] restaurée au barème ci-dessus, P4/D068.)*
@@ -245,6 +245,10 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 5. ⚠️ **Tarif du Général hors Épique, ouvert depuis D147.** Le forfait de **+9** a été fixé et éprouvé en Épique, sur des mains de 6 à 8 cartes. Une carte de plus pèse proportionnellement davantage dans une petite main : passer de 4 à 5 cartes, c'est +25 %, contre +12 % de 8 à 9. Tarif **conservé en l'état** faute de scénario Escarmouche ou Normal avec Général — à reprendre au premier d'entre eux.
 
 ---
+
+*Version : 0.41 — Phase 1 — 2026-10-17. **D193** : [Protection] sans valeur, forfait 1. **D194** : [Poison] refondu ; son forfait de +1 brut est signalé à revoir en P14d. Aucun coût modifié à ce stade.*
+
+*Version : 0.40 — Phase 1 — 2026-10-17. **D186** : [Vigilant] et [Archer en mêlée] deviennent des mots-clés du livret de référence ; porteur de [Vigilant] corrigé (Roi-Sorcier). **D185** : [Terreur] devient [Peur 2] au profil du Roi-Sorcier, même coût (`[[Mordor]]` §4). Aucun coût modifié.*
 
 *Version : 0.39 — Phase 1 — 2026-10-04. Correction de nom, sans numéro D : renvoi au nouveau nom des cartes **Bannières vertes/bleues/rouges** (§8, point 3 clos, annoté sans réécriture). Aucun coût modifié.*
 

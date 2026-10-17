@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-30"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.6"
+version: "0.7"
 ---
 
 # Batailles de la Terre du Milieu — Règles de terrain
@@ -213,7 +213,7 @@ Une unité qui **entre** dans un hexagone de bâtiment **s'y arrête immédiatem
 
 ### 9.2 Combat — [Protection X]
 
-Une unité occupant un bâtiment bénéficie de **[Protection X]**, où X est défini par le type de bâtiment indiqué dans le scénario :
+Une unité occupant un bâtiment bénéficie de **[Protection]** : elle ignore **1 touche** par attaque, quel que soit le type de bâtiment (D193). *Barème d'origine, supprimé par D193 :*
 
 | Type de bâtiment | [Protection X] |
 |---|---|
@@ -221,10 +221,10 @@ Une unité occupant un bâtiment bénéficie de **[Protection X]**, où X est d�
 | **Bâtiment solide** | [Protection 2] |
 | **Fortification** | [Protection 3] |
 
-**Effet :** l'unité ignore X touches par attaque reçue, avant le jet d'[Armure] et avant d'appliquer les pertes (D164). S'applique à toutes les attaques (mêlée et tir).
+**Effet :** l'unité ignore 1 touche par attaque reçue, avant le jet d'[Armure] et avant d'appliquer les pertes (D164). S'applique à toutes les attaques (mêlée et tir).
 
 > 💡 **Exemple de jeu**
-> Une unité dans un bâtiment solide [Protection 2] reçoit 5 touches et 1 Drapeau : elle ignore 2 touches → 3 touches effectives. Le Drapeau force 1 hexagone de retraite.
+> Une unité dans un bâtiment [Protection] reçoit 5 touches et 1 Drapeau : elle ignore 1 touche → 4 touches effectives. Le Drapeau force 1 hexagone de retraite.
 
 ### 9.3 Ligne de vue
 
@@ -263,11 +263,11 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 | **Cours d'eau** | Impassable | — | — | Dégagée | **Impassable** |
 | **Gué** | Arrêt à l'entrée | Max 2 dés si dans le gué | Normal | Dégagée | Libre |
 | **Pont** | Libre (1 unité max) | Normal | Normal | Dégagée | Libre |
-| **Bâtiment** | Arrêt à l'entrée | Normal | Normal + [Protection X] | Bloquante si traversée | Libre |
+| **Bâtiment** | Arrêt à l'entrée | Normal | Normal + [Protection] | Bloquante si traversée | Libre |
 
 > **Note sur [Terrain favori : X] :** une unité portant cette règle pour un type de terrain donné ignore le plafond de dés et l'arrêt à l'entrée pour ce terrain. La ligne de vue du terrain s'applique normalement à toutes les unités, y compris celles-ci. Aucun peuple de la V1 ne porte cette règle pour l'instant (voir [[Regles_Speciales]]).
 
-> **Note sur [Protection X] :** valeur définie par le scénario (ruine = 1, bâtiment solide = 2, fortification = 3). S'applique aux touches en combat uniquement.
+> **Note sur [Protection] :** 1 touche ignorée par attaque, quel que soit le bâtiment (D193). S'applique aux touches en combat uniquement.
 
 ---
 
@@ -275,6 +275,8 @@ Seules deux situations **bloquent** la retraite et infligent **1 touche par hexa
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.7 — Phase 1 — 2026-10-17. **D193** : [Protection X] devient [Protection], 1 touche ignorée par attaque quel que soit le bâtiment (§9.2, §11). Le barème ruine/solide/fortification reste affiché sous la règle, pour l'historique.*
 
 *Version : 0.6 — Phase 1 — 2026-09-30. **P14a.5.** **D164** : [Protection X] s'applique avant le jet d'[Armure] (§9.2). **D169** : soutien abandonné, une unité amie bloque la retraite comme une unité ennemie (§10).*
 

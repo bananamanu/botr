@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-05"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.36"
+version: "0.38"
 ---
 
 # Batailles de la Terre du Milieu — Règles de base
@@ -41,7 +41,7 @@ Les règles de base couvrent les affrontements sans pouvoirs ni héros — le so
 
 ### 2.1 Matériel de jeu
 
-- **Tapis de jeu hexagonal** : taille selon le format choisi — Escarmouche (10 × 7), Normal (13 × 9) ou Épique (13 × 17). Voir Document de cadrage §4.
+- **Tapis de jeu hexagonal** : taille selon le format choisi — Escarmouche (10 × 7), Normal (13 × 9) ou Épique (17 × 13) — colonnes × lignes (D195). Voir Document de cadrage §4.
 - **Tuiles de terrain** : bois, collines, cours d'eau, gués, ponts, bâtiments — règles détaillées dans [[Terrain]]
 - **Deck de commandement** : cartes de section et cartes Tactiques
 - **Dés spéciaux** : 6 faces — Épées croisées / Épée / Arc / Drapeau / Couronne / Pouvoir (dé BattleLore V2, conservé tel quel). Chaque camp dispose de ses propres dés : la face **Pouvoir** y porte la **Rune de Gandalf** côté Bien et l'**Œil de Sauron** côté Mal (D133). La face se nomme **Pouvoir** dans tous les documents de règles (D148).
@@ -86,7 +86,7 @@ Toute unité est définie par trois caractéristiques, données par son **profil
 - **Légende** (réservé aux unités uniques) confère **+1 dé de combat** : l'unité lance un dé de plus que sa classe ne l'indique, dans son mode (mêlée ou distance).
 - **Leader** *(formalisé D093, sort de la réserve Phase 2 posée en D089)* : l'unité inflige aussi une touche sur la face **Couronne**, en plus des faces normales de son mode (voir §2.3 et §7) ; confère aussi **[Inébranlable 1]** à son unité **et** à toute unité amie **adjacente** (cumulable avec un Inébranlable déjà présent) ; peut porter en plus le statut **Général** et une valeur de **Destin** — mécanique complète en §2.2bis.
 
-Une **figurine avec bannière**, qui n'est pas un badge (D152), confère **[Inébranlable 1]** à son unité (l'unité peut ignorer 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle).
+Une **figurine avec bannière**, qui n'est pas un badge (D152), confère **[Inébranlable 1]** à son unité (l'unité peut ignorer 1 recul par attaque reçue, voir [[Regles_Speciales]] §Socle). **Pertes (D192)** : la figurine avec bannière est retirée en dernier, en avant-dernier si un Leader mène l'unité ; une unité qui n'a plus de figurine avec bannière perd cet [Inébranlable 1].
 
 Une unité peut donc porter 0 à 3 badges (Faction, Légende, Leader), plus une éventuelle figurine avec bannière, selon ce que le concepteur juge lisible pour cette unité précise — la limite n'est plus un plafond de comptage mais le jugement éditorial au cas par cas. *(Coûts traités dans [[Regles_Points]] §3.1 — Bannière au tarif [Inébranlable 1] existant ; Leader/Général : coût significatif à chiffrer, point ouvert P8.)*
 
@@ -300,7 +300,7 @@ Chaque camp dispose d'une **réserve commune**, matérialisée par des jetons de
 
 **Gagner des points — deux sources**
 
-- **Les faces Pouvoir d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose **immédiatement**, au moment du lancer. Ne rapportent **rien** : les **ripostes**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
+- **Les faces Pouvoir d'un jet d'attaque (D137).** Chaque **Rune de Gandalf** ou **Œil de Sauron** obtenue sur un **jet d'attaque** rapporte **1 point** à son camp — **qu'elle ait déclenché un effet ou non**. Le jeton se pose au moment du lancer, **après les relances** éventuelles : un Pouvoir relancé ne rapporte rien, un dé relancé qui donne Pouvoir rapporte son jeton (D188). Ne rapportent **rien** : les **ripostes**, les jets de sauvegarde d'**[Armure]** et les jets de **Destin**.
 
 > 💡 **Règle mémorisable :** *on ne gagne du Pouvoir qu'en attaquant* — donc uniquement dans son propre tour.
 - **Le forfait de tour.** Chaque camp gagne **2 points** à la fin de son propre tour (§4, étape g).
@@ -346,7 +346,7 @@ Le mouvement découle de la **classe** (couleur du jeton) et du **type** de l'un
 
 > **Règles intrinsèques liées au mouvement.** Plusieurs cases de la grille classe × type × mode portent des règles qui se lisent au plateau (voir §2.4) : **[Mobilité X]** — le tir léger ou monté décroche de X hexagones après avoir tiré (précisions D163 ci-dessous) — et **[Poursuite X]** — la cavalerie de mêlée enfonce puis frappe une seconde cible (§8.2). Elles ne se notent pas sur le profil.
 
-**Chars et Créatures (D153).** Par défaut, un **Char** se déplace comme une unité de **Cavalerie** de sa classe, et une **Créature** comme une unité d'**Infanterie** de sa classe. Un profil peut fixer un mouvement propre, qui prime : le Mûmakil a son déplacement dédié (translation 1-2-1), le Roi-Sorcier [Vol]. Le Troll du Mordor n'a pas de mouvement propre : il se déplace comme l'Infanterie 🔴 (1 hexagone puis attaque, ou 2 sans attaquer).
+**Chars et Créatures (D153).** Par défaut, un **Char** se déplace comme une unité de **Cavalerie** de sa classe, et une **Créature** comme une unité d'**Infanterie** de sa classe. Un profil peut fixer un mouvement propre, qui prime : le Mûmakil a son déplacement dédié (translation 1-2-1), le Roi-Sorcier [Vol 4] (D186). Le Troll du Mordor n'a pas de mouvement propre : il se déplace comme l'Infanterie 🔴 (1 hexagone puis attaque, ou 2 sans attaquer).
 
 > Une unité peut toujours se déplacer de moins que son maximum, ou ne pas bouger.
 
@@ -384,7 +384,7 @@ Quelle que soit la nature de l'attaque (mêlée ou tir), la résolution suit tou
 2. **Lancer les dés** : lancer un nombre de dés égal à la valeur d'attaque de l'unité, modifiée par les effets de terrain si applicable.
 3. **Relancer et modifier** : utiliser les capacités ou effets disponibles.
 4. **Compter les touches et les Drapeaux** : identifier les faces actives selon le type d'attaque.
-5. **Appliquer [Protection X]** si applicable : ignorer X touches (D164 — avant [Armure]).
+5. **Appliquer [Protection]** si applicable : ignorer 1 touche (D164 — avant [Armure] ; D193 — sans valeur).
 6. **Appliquer [Armure]** si la cible la porte : **1 dé par touche restante**, la touche est annulée sur **Pouvoir** — ou sur **Pouvoir ou Couronne** si l'unité porte un Leader.
 7. **Retirer les figurines** selon la règle générale de dégâts (voir §2.3).
 8. **Résoudre la retraite** : 1 Drapeau = 1 hexagone. Appliquer [Inébranlable X] si applicable, au choix du camp de la cible (D182). Les touches de retraite bloquée (§9.3) ne se sauvegardent pas par [Armure] (D165).
@@ -577,7 +577,7 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 2. Lancer les dés (valeur d'attaque, modifiée par le terrain si applicable — **jamais plus de 6**, §7.5)
 3. Relancer / modifier (effets et capacités)
 4. Compter les touches et les Drapeaux
-5. Appliquer [Protection X] si applicable
+5. Appliquer [Protection] si applicable (1 touche)
 6. Appliquer [Armure] si la cible la porte (1 dé par touche restante, annulée sur Pouvoir · + Couronne si Leader)
 7. Retirer **1 figurine/PV par touche** (§2.3)
 8. Résoudre la retraite (1 Drapeau = 1 hex · [Inébranlable X] au choix · retraite bloquée sans [Armure])
@@ -609,14 +609,13 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 |---|---|
 | **Faible** | Dernière figurine : Épée inactive en attaque |
 | **[Armure]** | 1 dé par touche subie, annulée sur Pouvoir (+ Couronne si Leader) — mêlée et tir |
-| **[Protection X]** | Ignore X touches par attaque (terrain, fortifications) |
+| **[Protection]** | Ignore 1 touche par attaque (bâtiment) — D193 |
 | **[Inébranlable X]** | Peut ignorer jusqu'à X résultats de retraite par attaque reçue (facultatif, D182) |
 | **[Poursuite X]** | Alternative à l'avance : déplacement (règles normales) + attaque supplémentaire complète, une fois par tour |
 | **[Mobilité X]** | Déplacement de X hex aussitôt après sa propre attaque — jamais sans attaque ni sur une riposte (D163) |
-| **[Férocité]** | Sans porteur actif *(ex-Faction Rohan, retiré D090)* — riposte même en cas de recul forcé, puis recule normalement |
+| **[Férocité]** | Badge Faction (Rohan) — riposte même en cas de recul forcé, puis recule normalement |
 | **Faction** (badge, cumulable, D092) | Marqueur : règle assignée à cette unité précise (fluff ou distinction tactique) — plus un trait de peuple universel |
 | **Bannière** (figurine avec bannière, pas un badge — D152) | Figurine porte-étendard visible : l'unité porte [Inébranlable 1] |
-| **Légende** (badge, cumulable, réservé aux unités uniques) | Marqueur : +1 dé de combat |
 | **Leader** (badge, cumulable, D093) | Marqueur : touche aussi sur Couronne, [Inébranlable 1] à son unité + unités amies adjacentes, statut Général et Destin possibles (§2.2bis) |
 
 > Les règles **[Armure]**, **[Mobilité X]** et **[Poursuite X]** sont pour partie **intrinsèques** : elles sont attachées à une case de la grille §2.4 et se lisent au plateau. Un profil ne les réécrit que s'il **dépasse** le plancher intrinsèque.
@@ -629,6 +628,10 @@ La partie se termine **dès qu'un camp atteint le score** fixé par le scénario
 
 > ✅ **Résolus.** Seuils de victoire : fixés par chaque scénario — §10.2 ; modèle de base générique, le Pelennor s'en écarte (D121, D155). Commandement à 3 joueurs par camp : main unique tenue par le joueur Centre et râtelier (D087) — §5.5. Recalcul des coûts sur la nouvelle base : matrice de [[Regles_Points]] (P3, méthode D124). Mouvement et PV des Créatures et Chars : fixés profil par profil dans les fichiers de peuple (P4-P5, D127). Intrinsèques par combinaison : §2.4 (D063).
 ---
+
+*Version : 0.38 — Phase 1 — 2026-10-17. **D192** : §2.2, ordre de retrait de la figurine avec bannière, perte de son [Inébranlable 1]. **D193** : [Protection] sans valeur (§7.1, récapitulatifs). **D195** : format Épique noté 17 × 13 (§2.1).*
+
+*Version : 0.37 — Phase 1 — 2026-10-17. **D188** : §5.6, les jetons de Pouvoir se comptent après les relances. Corrections de forme, sans numéro D : mémo des règles spéciales — [Férocité] n'est plus « sans porteur actif » (badge Faction du Rohan depuis D092), ligne Légende retirée (badge qui n'existe plus). §6.1 : renvoi au [Vol 4] du Roi-Sorcier (D186).*
 
 *Version : 0.36 — Phase 1 — 2026-10-05. **D183 — un Char porte les intrinsèques de la Cavalerie** de sa classe et de son mode : §2.4 (note sous la grille) et note D127 du §2.5 (la phrase « règles propres à leur profil, hors de la grille standard » est remplacée).*
 

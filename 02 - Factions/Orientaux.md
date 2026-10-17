@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-23"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/faction", "peuple/orientaux", "statut/brouillon"]
-version: "3.3"
+version: "3.4"
 ---
 
 # Orientaux — Profils d'unités
@@ -18,7 +18,7 @@ version: "3.3"
 
 ## 1. Faction des Orientaux — [Discipline de cohorte]
 
-> À la fin de son activation, l'unité peut se mettre en **position défensive** (marqueur à poser). Elle **renonce** à sa riposte éventuelle jusqu'à sa prochaine activation, et gagne **[Armure]** *(D143 — était [Défense 1])* + **[Inébranlable 1]** tant que le marqueur est en place.
+> Aussitôt après son attaque — ou à l'étape d'attaque si, activée, elle renonce à attaquer —, l'unité peut se mettre en **position défensive** (jeton de position défensive dédié, D191). Elle **renonce** à sa riposte éventuelle jusqu'à sa prochaine activation, et gagne **[Armure]** *(D143 — était [Défense 1])* + **[Inébranlable 1]** tant que le marqueur est en place.
 
 **Outil optionnel**, +2 brut. Disponible uniquement sur les **Cohortes** (guerriers et piquiers) — pas les archers, pas les Cataphractaires, dont l'identité ne repose pas sur la formation serrée.
 
@@ -81,6 +81,8 @@ Aucun Leader nommé côté Orientaux au Playtest #4. Badge **Bannière** porté 
 *Version : 3.1 — Phase 1 — 2026-08-30. **D124 — cases de coût comblées.** Les combinaisons de badges sur les Cohortes 🔵 sont explicitées : Faction seule, Bannière seule et les deux ensemble coûtent toutes **5** (brut 17, 17 et 19, tous compressés vers 5). La case Faction + Bannière manquait et faussait le chiffrage du Pelennor d'un point.*
 
 *Version : 3.2 — Phase 1 — 2026-09-19. **P13 — D143 et D142.** [Discipline de cohorte] confère désormais **[Armure] + [Inébranlable 1]** au lieu de [Défense 1] + [Inébranlable 1] : [Défense X] a disparu avec [Armure X], la sauvegarde unique du jeu la remplace et vaut aussi contre le tir. **Aucun coût modifié** — le forfait de +2 brut est reconduit, à reconfirmer (`[[Regles_Points]]` §8, point 4). D142 : la règle est confirmée en l'état après le Playtest #5, où elle n'a pas été activée — le solo ne pouvant juger une posture défensive. Aucun profil retouché.*
+
+*Version : 3.4 — Phase 1 — 2026-10-17. **D191** : [Discipline de cohorte] se prend aussitôt après l'attaque, avec un jeton de position défensive dédié (§1). Aucun coût modifié.*
 
 *Version : 3.3 — Phase 1 — 2026-09-23. **D148 — la face Arcane devient la face Pouvoir, et la réserve d'Espoir/Désespoir devient la réserve de Pouvoir**, un seul nom pour les deux camps (seul le graphisme change : Rune de Gandalf / Œil de Sauron, sur le dé comme sur le jeton). Renommage sans changement de mécanique : [Discipline de cohorte]. Aucun coût modifié.*
 

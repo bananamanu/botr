@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.6.4">
+    <DOCUMENT ANZPAGES="7" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="1" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="18" HCMS="1" DPSo="0" DPSFo="0" DPuse="1" DPgam="0" DPbla="1" DPPr="ISO Coated v2 (ECI)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 (ECI)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 (ECI)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="fr" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20.001" MAJGRID="100.001" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.001" ScratchLeft="100.001" ScratchRight="100.001" ScratchTop="20.001" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.001" dispY="10.001" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="4C9900" SPACE="RGB" R="76" G="153" B="0"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="Cool Black" SPACE="CMYK" C="60" M="0" Y="0" K="100"/>
+        <COLOR NAME="Cyan" SPACE="CMYK" C="100" M="0" Y="0" K="0"/>
+        <COLOR NAME="Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="Green Blue" SPACE="RGB" R="17" G="100" B="180"/>
+        <COLOR NAME="Magenta" SPACE="CMYK" C="0" M="100" Y="0" K="0"/>
+        <COLOR NAME="RVB #374317" SPACE="RGB" R="55" G="67" B="23"/>
+        <COLOR NAME="RVB #c50203" SPACE="RGB" R="197" G="2" B="3"/>
+        <COLOR NAME="RVB #c69251" SPACE="RGB" R="198" G="146" B="81"/>
+        <COLOR NAME="Red" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rich Black" SPACE="CMYK" C="60" M="40" Y="40" K="100"/>
+        <COLOR NAME="Vert clair" SPACE="RGB" R="140" G="154" B="116"/>
+        <COLOR NAME="Vert encore plus clair" SPACE="RGB" R="195" G="194" B="166"/>
+        <COLOR NAME="Vert titre" SPACE="RGB" R="98" G="100" B="64"/>
+        <COLOR NAME="Warm Black" SPACE="CMYK" C="0" M="60" Y="29.8039215686275" K="100"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow" SPACE="CMYK" C="0" M="0" Y="100" K="0"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Alegreya Sans Bold" FONTSIZE="10" FONTFEATURES="-clig" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="fr"/>
+        <CHARSTYLE CNAME="Style de caractères pour puces" FONT="Arial Bold" FONTSIZE="10" FONTFEATURES="-clig" FEATURES="inherit" FCOLOR="RVB #374317" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="fr"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Alegreya Sans Regular" FONTSIZE="11" FONTFEATURES="-clig"/>
+        <STYLE NAME="Titre 1" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="24" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Garamond Premier Pro Bold" FONTSIZE="25" FONTFEATURES="-clig" FEATURES="underline smallcaps" FCOLOR="RVB #374317" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1"/>
+        <STYLE NAME="Titre 2" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="20" INDENT="0" RMARGIN="0" FIRST="0" VOR="3" NACH="2" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Garamond Premier Pro Bold" FONTSIZE="18" FONTFEATURES="-clig" FEATURES="smallcaps" FCOLOR="RVB #374317" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1"/>
+        <STYLE NAME="Liste à puce" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="14.1732283464567" RMARGIN="0" FIRST="0" VOR="0" NACH="5" ParagraphEffectCharStyle="Style de caractères pour puces" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="1" BulletStr="●" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Alegreya Sans Regular" FONTSIZE="11" FONTFEATURES="-clig"/>
+        <STYLE NAME="Exemple" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="11.3385826771654" RMARGIN="11.3385826771654" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="RVB #c69251" BSHADE="100" FONT="Alegreya Sans Italic" FONTSIZE="11" FONTFEATURES="-clig"/>
+        <STYLE NAME="A retenir" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="11.3385826771654" RMARGIN="11.3385826771654" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="RVB #374317" BSHADE="100" FONT="Alegreya Sans Regular" FONTSIZE="11" FONTFEATURES="-clig" FCOLOR="White"/>
+        <STYLE NAME="Header" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="5.66929133858268" RMARGIN="11.3385826771654" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="RVB #374317" BSHADE="100" FONT="Alegreya Sans Bold" FONTSIZE="11" FONTFEATURES="-clig" FEATURES="smallcaps" FCOLOR="White" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1">
+            <Tabs Type="0" Pos="62.3622047244095" Fill=""/>
+            <Tabs Type="0" Pos="155.905511811024" Fill=""/>
+        </STYLE>
+        <STYLE NAME="Ligne tableau impair" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="5.66929133858268" RMARGIN="11.3385826771654" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="Vert clair" BSHADE="100" FONT="Alegreya Sans Regular" FONTSIZE="11" FONTFEATURES="-clig" FEATURES="" FCOLOR="Warm Black" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1">
+            <Tabs Type="0" Pos="62.3622047244095" Fill=""/>
+            <Tabs Type="0" Pos="155.905511811024" Fill=""/>
+        </STYLE>
+        <STYLE NAME="Ligne tableau pair" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="5.66929133858268" RMARGIN="11.3385826771654" FIRST="0" VOR="0" NACH="5" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" BCOLOR="Vert encore plus clair" BSHADE="100" FONT="Alegreya Sans Regular" FONTSIZE="11" FONTFEATURES="-clig" FEATURES="" FCOLOR="Warm Black" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1">
+            <Tabs Type="0" Pos="62.3622047244095" Fill=""/>
+            <Tabs Type="0" Pos="155.905511811024" Fill=""/>
+        </STYLE>
+        <STYLE NAME="Liste numérotée" ALIGN="3" DIRECTION="0" LINESPMode="0" LINESP="15" INDENT="14.1732283464567" RMARGIN="0" FIRST="0" VOR="0" NACH="5" ParagraphEffectCharStyle="Default Character Style" ParagraphEffectOffset="5.66929133858268" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="1" HyphenConsecutiveLines="2" BCOLOR="None" BSHADE="100" FONT="Alegreya Sans Regular" FONTSIZE="11" FONTFEATURES="-clig"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Fond de page" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="1" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="4" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="NPI06931D (HP LaserJet MFP M28w)" filename="" separationName="All" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 (ECI)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
+            <Fonts Name="Alegreya Sans Italic"/>
+            <Fonts Name="Alegreya Sans Regular"/>
+            <Subset Name="Alegreya Sans Bold"/>
+            <Subset Name="Arial Bold"/>
+            <Subset Name="Garamond Premier Pro Bold"/>
+            <Subset Name="aaatord Regular"/>
+            <LPI Color="" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="Section 1" From="0" To="6" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normal gauche" MNAM="" Size="A4" Orientation="0" LEFT="1" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="Normal droite" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="2" NAM="Page de garde" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="695.276590551181" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="" MNAM="Page de garde" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="901.890763779528" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="" MNAM="Normal gauche" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="695.276590551181" PAGEYPOS="901.890763779528" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="2" NAM="" MNAM="Normal droite" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="1783.78052755906" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="3" NAM="" MNAM="Normal gauche" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="695.276590551181" PAGEYPOS="1783.78052755906" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="4" NAM="" MNAM="Normal droite" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="2665.67029133858" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="5" NAM="" MNAM="Normal gauche" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="695.276590551181" PAGEYPOS="2665.67029133858" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="6" NAM="" MNAM="Normal droite" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <FRAMEOBJECT InID="14866" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209127056" PTYPE="6" WIDTH="11.3385826771654" HEIGHT="11.3385826771655" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.833333136574083" PCOLOR="4C9900" PLINEART="1" path="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" copath="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" isInline="1" gXpos="0" gYpos="0" gWidth="11.3385826771654" gHeight="11.3385826771655" LAYER="0"/>
+        <FRAMEOBJECT InID="10311" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209124224" PTYPE="2" WIDTH="14.1732283464567" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.141732283464567" LOCALSCY="0.141732283464567" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L14.1732 0 L14.1732 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L14.1732 0 L14.1732 14.1732 L0 14.1732 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.741769458561407" gWidth="14.8955738881538" gHeight="14.8955738881538" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="29745" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209121392" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.177165354330709" LOCALSCY="0.177165354330709" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-crown-black-64.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.593415566849103" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="18208" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209144048" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-gandalf-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.593415566849103" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="30968" XPOS="0" YPOS="0" OwnPage="-1" ItemID="208974496" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/finish.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.593415566849217" gWidth="11.9164591105231" gHeight="11.9164591105232" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="23687" XPOS="0" YPOS="0" OwnPage="-1" ItemID="210718160" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-simple-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.59341556684916" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="12696" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209138384" PTYPE="12" WIDTH="124.724409448819" HEIGHT="56.6929133858275" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 3" TEXTFLOWMODE="1" groupWidth="124.724409448819" groupHeight="56.6929133858275" groupClips="1" path="M0 0 L124.724 0 L124.724 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L124.724 0 L124.724 56.6929 L0 56.6929 L0 0 Z" isInline="1" gXpos="0" gYpos="0" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+            <PAGEOBJECT XPOS="478.197850393703" YPOS="1016.56792913386" OwnPage="-1" ItemID="209135552" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 186" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+                <PAGEOBJECT XPOS="478.197850393703" YPOS="1016.56792913386" OwnPage="-1" ItemID="209132720" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="4C9900" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+                <PAGEOBJECT XPOS="488.119110236223" YPOS="1026.48918897638" OwnPage="-1" ItemID="208951840" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.0941190944881891" LOCALSCY="0.0941190944881891" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/pions/archery.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.9212598425197" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="546.229346456695" YPOS="1016.56792913386" OwnPage="-1" ItemID="208954672" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 136 (22)" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="68.031496062992" gYpos="6.82121026329696e-13" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+                <PAGEOBJECT XPOS="546.229346456695" YPOS="1016.56792913386" OwnPage="-1" ItemID="208963168" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #c50203" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+                <PAGEOBJECT XPOS="556.150606299215" YPOS="1026.48918897638" OwnPage="-1" ItemID="208957504" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.481889763779528" LOCALSCY="0.481889763779528" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-battle-100-white.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.92125984251967" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            </PAGEOBJECT>
+        </FRAMEOBJECT>
+        <FRAMEOBJECT InID="14233" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209115728" PTYPE="2" WIDTH="26.3414634146342" HEIGHT="32.5948160169003" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.263414634146342" LOCALSCY="0.263414634146342" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L26.3415 0 L26.3415 32.5948 L0 32.5948 L0 0 Z" copath="M0 0 L26.3415 0 L26.3415 32.5948 L0 32.5948 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0" gWidth="26.3414634146342" gHeight="32.5948160169003" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="19457" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209129888" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/finish.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.593415566849103" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="5692" XPOS="0" YPOS="0" OwnPage="-1" ItemID="208977328" PTYPE="2" WIDTH="13.0972839645268" HEIGHT="11.3385826771674" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.113385826771674" LOCALSCY="0.113385826771674" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L13.0973 0 L13.0973 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L13.0973 0 L13.0973 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0" gWidth="13.0972839645268" gHeight="11.3385826771674" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="26800" XPOS="0" YPOS="0" OwnPage="-1" ItemID="208971664" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.59341556684916" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="8487" XPOS="0" YPOS="0" OwnPage="-1" ItemID="208960336" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0253093363329585" LOCALSCY="0.0253093363329585" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-sauron-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.593415566849103" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="5477" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209118560" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.59341556684916" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="13618" XPOS="0" YPOS="0" OwnPage="-1" ItemID="209141216" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-simple-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.59341556684916" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="3270" XPOS="0" YPOS="0" OwnPage="-1" ItemID="208966000" PTYPE="2" WIDTH="13.0972839645268" HEIGHT="11.3385826771674" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.113385826771674" LOCALSCY="0.113385826771674" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L13.0973 0 L13.0973 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L13.0973 0 L13.0973 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0" gWidth="13.0972839645268" gHeight="11.3385826771674" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <FRAMEOBJECT InID="30883" XPOS="0" YPOS="0" OwnPage="-1" ItemID="208968832" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" isInline="1" gXpos="0" gYpos="0.593415566849131" gWidth="11.9164591105231" gHeight="11.9164591105231" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <MASTEROBJECT XPOS="100.001" YPOS="20.001" OwnPage="1" ItemID="208980160" PTYPE="2" WIDTH="595.275590551181" HEIGHT="841.889763779528" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24003048006096" LOCALSCY="0.239991380780937" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="0" Pagenumber="0" PFILE="../06 - Images/charte/fond_parchemin_A4_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" copath="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" OnMasterPage="Normal droite" ImageRes="0" gXpos="31478868.5049223" gYpos="42552964.8829073" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <MASTEROBJECT XPOS="100.001" YPOS="20.001" OwnPage="0" ItemID="209615792" PTYPE="2" WIDTH="595.275590551181" HEIGHT="841.889763779528" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24003048006096" LOCALSCY="0.239991380780937" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="0" Pagenumber="0" PFILE="../06 - Images/charte/fond_parchemin_A4_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" copath="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" OnMasterPage="Normal gauche" gXpos="100.001" gYpos="67972555.4340965" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <MASTEROBJECT XPOS="255.906511811024" YPOS="799.528559055118" OwnPage="0" ItemID="209621456" PTYPE="2" WIDTH="283.464566929134" HEIGHT="42.5196850393701" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.114300228600457" LOCALSCY="0.114300228600457" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_01_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L283.465 0 L283.465 42.5197 L0 42.5197 L0 0 Z" copath="M0 0 L283.465 0 L283.465 42.5197 L0 42.5197 L0 0 Z" OnMasterPage="Normal gauche" ImageRes="0" gXpos="255.906511811024" gYpos="64057744.4104751" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <MASTEROBJECT XPOS="381.394892836566" YPOS="820.374543307087" OwnPage="0" ItemID="209690032" PTYPE="4" WIDTH="32.4878048780488" HEIGHT="25.4634146341464" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32.4878 0 L32.4878 25.4634 L0 25.4634 L0 0 Z" copath="M0 0 L32.4878 0 L32.4878 25.4634 L0 25.4634 L0 0 Z" OnMasterPage="Normal gauche" gXpos="381.394892836566" gYpos="59837922.7367723" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONTSIZE="13"/>
+                <var name="pgno"/>
+                <trail/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="255.906511811024" YPOS="799.528559055118" OwnPage="1" ItemID="209610128" PTYPE="2" WIDTH="283.464566929134" HEIGHT="42.5196850393701" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.114300228600457" LOCALSCY="0.114300228600457" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_01_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L283.465 0 L283.465 42.5197 L0 42.5197 L0 0 Z" copath="M0 0 L283.465 0 L283.465 42.5197 L0 42.5197 L0 0 Z" OnMasterPage="Normal droite" ImageRes="0" gXpos="27658545.6702832" gYpos="44298122.363223" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <MASTEROBJECT XPOS="381.394892836566" YPOS="820.374543307087" OwnPage="1" ItemID="209308800" PTYPE="4" WIDTH="32.4878048780488" HEIGHT="25.4634146341464" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32.4878 0 L32.4878 25.4634 L0 25.4634 L0 0 Z" copath="M0 0 L32.4878 0 L32.4878 25.4634 L0 25.4634 L0 0 Z" OnMasterPage="Normal droite" gXpos="27658671.1586642" gYpos="40078300.6895195" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONTSIZE="13"/>
+                <var name="pgno"/>
+                <trail/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="216.321722104859" YPOS="28.0629921259847" OwnPage="1" ItemID="209311632" PTYPE="4" WIDTH="362.634146341463" HEIGHT="22.386787017476" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L362.634 0 L362.634 22.3868 L0 22.3868 L0 0 Z" copath="M0 0 L362.634 0 L362.634 22.3868 L0 22.3868 L0 0 Z" OnMasterPage="Normal droite" gXpos="27123353.3295889" gYpos="39326138.2992275" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="55" FONT="Garamond Premier Pro Bold" FONTSIZE="12" FEATURES="inherit smallcaps" FCOLOR="Rich Black"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="12" FEATURES="inherit smallcaps" FCOLOR="Rich Black" CH="Batailles de la Terre du Milieu - Livret des règles"/>
+                <trail ALIGN="1" LINESP="55"/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="142.52068503937" YPOS="48.3474566929134" OwnPage="1" ItemID="209618624" PTYPE="5" WIDTH="481.889763779528" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR2="RVB #374317" PLINEART="1" path="" OnMasterPage="Normal droite" gXpos="27122684.2529613" gYpos="39326158.5836921" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="216.321722104859" YPOS="28.0629921259847" OwnPage="0" ItemID="212330400" PTYPE="4" WIDTH="362.634146341463" HEIGHT="22.386787017476" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L362.634 0 L362.634 22.3868 L0 22.3868 L0 0 Z" copath="M0 0 L362.634 0 L362.634 22.3868 L0 22.3868 L0 0 Z" OnMasterPage="Normal gauche" gXpos="46052.5421945458" gYpos="58225035.9370314" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="55" FONT="Garamond Premier Pro Bold" FONTSIZE="12" FEATURES="inherit smallcaps" FCOLOR="Rich Black"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="12" FEATURES="inherit smallcaps" FCOLOR="Rich Black" CH="Batailles de la Terre du Milieu - Livret des règles"/>
+                <trail ALIGN="1" LINESP="55"/>
+            </StoryText>
+        </MASTEROBJECT>
+        <MASTEROBJECT XPOS="170.867141732283" YPOS="48.3474566929134" OwnPage="0" ItemID="209624288" PTYPE="5" WIDTH="481.889763779528" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR2="RVB #374317" PLINEART="1" path="" OnMasterPage="Normal gauche" gXpos="45411.812023622" gYpos="58225056.2214959" gWidth="0" gHeight="0" LAYER="0"/>
+        <MASTEROBJECT XPOS="100.001" YPOS="20.001" OwnPage="2" ItemID="209612960" PTYPE="2" WIDTH="595.275590551181" HEIGHT="841.889763779528" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.24003048006096" LOCALSCY="0.239991380780937" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="0" Pagenumber="0" PFILE="../06 - Images/charte/fond_parchemin_A4_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" copath="M0 0 L595.276 0 L595.276 841.89 L0 841.89 L0 0 Z" OnMasterPage="Page de garde" ImageRes="0" gXpos="30980027.5600412" gYpos="40394098.7411741" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="2736.53643307087" OwnPage="6" ItemID="210946944" PTYPE="4" WIDTH="481.89" HEIGHT="677.48" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 677.48 L234.398 677.48 L234.398 350.683 L0 350.683 L0 0 Z" copath="M0 0 L481.89 0 L481.89 677.48 L0 677.48 L0 0 Z" gXpos="737.796275590551" gYpos="2736.53643307087" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="210949776"/>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="2736.53643307087" OwnPage="5" ItemID="210949776" PTYPE="4" WIDTH="481.889763779528" HEIGHT="680.314960629921" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 680.315 L229.606 680.315 L229.606 651.969 L0 651.969 L0 253.512 L35.1655 253.512 L35.1655 156.927 L0 156.927 L0 0 Z" copath="M0 0 L481.89 0 L481.89 680.315 L0 680.315 L0 0 Z" gXpos="170.867141732283" gYpos="2736.53643307087" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="210946944" BACKITEM="267485312"/>
+        <PAGEOBJECT XPOS="746.182678509698" YPOS="249.165354330709" OwnPage="0" ItemID="210954672" PTYPE="4" WIDTH="493.463414634146" HEIGHT="199.317073170732" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L493.463 0 L493.463 199.317 L0 199.317 L0 0 Z" copath="M0 0 L493.463 0 L493.463 199.317 L0 199.317 L0 0 Z" gXpos="746.182678509698" gYpos="249.165354330709" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="55" FONT="Garamond Premier Pro Bold" FONTSIZE="50" FEATURES="inherit outline smallcaps" FCOLOR="White" SCOLOR="RVB #374317" TXTOUT="15"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="50" FEATURES="inherit outline smallcaps" FCOLOR="White" SCOLOR="RVB #374317" TXTOUT="15" CH="Batailles de la "/>
+                <para ALIGN="1" LINESP="55"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="50" FEATURES="inherit outline smallcaps" FCOLOR="White" SCOLOR="RVB #374317" TXTOUT="15" CH="Terre du Milieu"/>
+                <trail ALIGN="1" LINESP="55"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="746.182678509698" YPOS="249.165354330709" OwnPage="0" ItemID="210957504" PTYPE="4" WIDTH="493.463414634146" HEIGHT="199.317073170732" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L493.463 0 L493.463 199.317 L0 199.317 L0 0 Z" copath="M0 0 L493.463 0 L493.463 199.317 L0 199.317 L0 0 Z" gXpos="746.182678509698" gYpos="249.165354330709" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="55" FONT="Garamond Premier Pro Bold" FONTSIZE="50" FEATURES="inherit smallcaps" FCOLOR="White"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="50" FEATURES="inherit smallcaps" FCOLOR="White" CH="Batailles de la "/>
+                <para ALIGN="1" LINESP="55"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="50" FEATURES="inherit smallcaps" FCOLOR="White" CH="Terre du Milieu"/>
+                <trail ALIGN="1" LINESP="55"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="972.756905511811" OwnPage="1" ItemID="212357792" PTYPE="4" WIDTH="481.89" HEIGHT="680.315" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="2" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 56.6929 L246.614 56.6929 L246.614 99.2126 L481.89 99.2126 L481.89 141.194 L243.78 141.194 L243.78 200.902 L481.89 200.902 L481.89 261.78 L242.874 261.78 L242.874 324.121 L481.89 324.121 L481.89 358.365 L241.996 358.365 L241.996 418.072 L480.336 418.072 L480.336 634.961 L244.629 634.961 L244.629 680.315 L232.91 680.315 L232.91 555.048 L0 555.048 L0 0 Z" copath="M0 0 L481.89 0 L481.89 680.315 L0 680.315 L0 0 Z" gXpos="170.867141732283" gYpos="972.756905511811" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="265719840" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT CH="1. Le jeu en un coup d'œil "/>
+                <para PARENT="Titre 1"/>
+                <ITEXT FONT="Alegreya Sans Italic" CH="Ba­tailles de la Terre du Mi­lieu"/>
+                <ITEXT CH=" est un jeu de pla­teau avec fi­gu­rines qui vous fait re­jouer les grandes ba­tailles du Sei­gneur des An­neaux. Deux camps s'af­frontent, le Bien et le Mal, sur un champ de ba­taille dé­cou­pé en hexa­gones. Chaque camp est me­né par un à trois joueurs."/>
+                <para/>
+                <ITEXT CH="Votre ar­mée ne fait pas tout ce que vous vou­lez. À votre tour, vous jouez une carte de com­man­de­ment : elle dé­signe les uni­tés que vous pou­vez ac­ti­ver. Ces uni­tés se dé­placent, puis com­battent, et des jets de dés dé­ter­minent l'is­sue des af­fron­te­ments. Puis c'est au tour du camp ad­verse."/>
+                <para/>
+                <ITEXT CH="Com­ment ga­gner"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque scé­na­rio a ses propres condi­tions de vic­toire. En gé­né­ral, chaque uni­té en­ne­mie mise en dé­route rap­porte 1 point de vic­toire, et le pre­mier camp à at­teindre le score fixé par le scé­na­rio est dé­cla­ré vain­queur (cha­pitre 4). "/>
+                <ITEXT FONT="Alegreya Sans Italic" CH="Le li­vret de scé­na­rio "/>
+                <ITEXT CH="in­dique ce dont vou sa­vez be­soin pour chaque ba­taille. Voi­ci ce que vous y trou­ve­rez :"/>
+                <para/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="le champ de ba­taille"/>
+                <ITEXT CH=", un ta­pis d'hexa­gones, et par­fois des élé­ments de ter­rain ;"/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="les fi­gu­rines"/>
+                <ITEXT CH=" des peuples en­ga­gés ; "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="les je­tons classe/mode"/>
+                <ITEXT CH=", un par uni­té, qui in­diquent com­ment elle com­bat et se dé­place (cha­pitre 3) ; "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="les je­tons de badge d'uni­té"/>
+                <ITEXT CH=" et les "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="comp­teurs de PV"/>
+                <ITEXT CH=" ;"/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="le deck de com­man­de­ment"/>
+                <ITEXT CH=", fait de cartes de Sec­tion et de cartes Tac­tiques ; "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="les dés"/>
+                <ITEXT CH=", un jeu par camp ; "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="les je­tons de Pou­voir"/>
+                <ITEXT CH=" "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="les mé­dailles ob­jec­tif. "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Les dés"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque dé a six faces : "/>
+                <ITEXT Unicode="25" COBJ="5477"/>
+                <ITEXT CH=" Épées croi­sées, "/>
+                <ITEXT Unicode="25" COBJ="23687"/>
+                <ITEXT CH=" Épée, "/>
+                <ITEXT Unicode="25" COBJ="26800"/>
+                <ITEXT CH=" Arc, "/>
+                <ITEXT Unicode="25" COBJ="19457"/>
+                <ITEXT CH=" Dra­peau, "/>
+                <ITEXT Unicode="25" COBJ="29745"/>
+                <ITEXT CH=" Cou­ronne et "/>
+                <ITEXT Unicode="25" COBJ="18208"/>
+                <ITEXT CH="/ "/>
+                <ITEXT Unicode="25" COBJ="8487"/>
+                <ITEXT CH=" Pou­voir. Le cha­pitre 7 dit ce que fait cha­cune. Chaque camp lance ses propres dés. Ils ne dif­fèrent que par le sym­bole de la face Pou­voir : la Rune de Gan­dalf sur les dés du Bien, l'Œil de Sau­ron sur ceux du Mal. C'est la même face, avec le même ef­fet. "/>
+                <para/>
+                <ITEXT CH="Les je­tons de Pou­voir de chaque camp portent le même sym­bole que ses dés. "/>
+                <para/>
+                <ITEXT CH="Trois for­mats de jeu"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque scé­na­rio se joue dans l'un des trois for­mats du jeu. Le for­mat fixe la taille du champ de ba­taille, et avec elle l'am­pleur de l'af­fron­te­ment : le nombre d'uni­tés en­ga­gées, le nombre de Gé­né­raux qu'un camp peut ali­gner (cha­pitre 9) et le nombre de joueurs au­tour de la table."/>
+                <para/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="For­mat es­car­mouche :"/>
+                <ITEXT CH=" se joue sur un champ de ba­taille de 10 × 7 hexa­gones et re­pré­sente un en­ga­ge­ment ra­pide entre deux avant-gardes"/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="For­mat nor­mal :"/>
+                <ITEXT CH=" le for­mat de ré­fé­rence, sur un pla­teau de 13 × 9 hexa­gones et si­mule une ba­taille ran­gée"/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="For­mat épique : "/>
+                <ITEXT CH="se joue sur un champ de ba­taille de 17 × 13 hexa­gones et per­met de re­jouer les grandes ba­tailles ico­niques du Sei­gneur des An­neaux, jus­qu'à trois joueurs par camp (cha­pitre 10)"/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Vos quatre li­vrets"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Le li­vret de règles"/>
+                <ITEXT CH=", ce­lui-ci. Li­sez-le une fois, du dé­but à la fin : vous n'au­rez pas à le rou­vrir en jouant."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" KERN="0" CH="Le li­vret de ré­fé­rence"/>
+                <ITEXT KERN="0" CH=", à gar­der sur la table. Les règles entre cro­chets, comme "/>
+                <ITEXT FONT="Alegreya Sans Bold" KERN="0" CH="[Ar­mure]"/>
+                <ITEXT KERN="0" CH=" ou "/>
+                <ITEXT FONT="Alegreya Sans Bold" KERN="0" CH="[Fé­ro­ci­té]"/>
+                <ITEXT KERN="0" CH=", y sont clas­sées par ordre al­pha­bé­tique, avec les cas par­ti­cu­liers et le texte des cartes."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Le li­vret Fac­tions"/>
+                <ITEXT CH=", un cha­pitre par peuple : le pro­fil et le coût de chaque uni­té."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Le li­vret de scé­na­rio :"/>
+                <ITEXT CH=" la ba­taille, sa mise en place et ses règles propres. "/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT KERN="-3" CH="2. Le champ de ba­taille"/>
+                <para PARENT="Titre 1"/>
+                <ITEXT CH="Les hexa­gones"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Le champ de ba­taille est dé­cou­pé en hexa­gones. Une uni­té oc­cupe tou­jours un hexa­gone en­tier, et un hexa­gone n'ac­cueille ja­mais qu'une seule uni­té. Les rares pièces qui en couvrent plu­sieurs le pré­cisent sur leur pro­fil. "/>
+                <para/>
+                <ITEXT CH="Deux hexa­gones qui par­tagent un cô­té sont ad­ja­cents : chaque hexa­gone a six voi­sins, sauf au bord du champ de ba­taille. Toutes les dis­tances se comptent en hexa­gones."/>
+                <para/>
+                <ITEXT CH="Les bords"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque camp a son bord : le bord du champ de ba­taille de son cô­té. Le scé­na­rio dé­ploie votre ar­mée de ce cô­té, et vos uni­tés re­culent tou­jours vers lui (cha­pitre 7). "/>
+                <para/>
+                <ITEXT CH="Les Sec­tions"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Deux lignes dé­coupent le champ de ba­taille en trois Sec­tions : Gauche, Centre et Droite. Les cartes de com­man­de­ment s'y ré­fèrent : une carte « "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="At­taque Gauche"/>
+                <ITEXT CH=" » ac­tive des uni­tés de votre Sec­tion Gauche (cha­pitre 5)."/>
+                <para/>
+                <ITEXT CH="Chaque camp nomme ses Sec­tions de­puis son propre bord. Votre Gauche est à votre gauche quand vous re­gar­dez le champ de ba­taille de­puis votre bord. Elle fait donc face à la Droite de l'ad­ver­saire. "/>
+                <para/>
+                <ITEXT CH="Les hexa­gones de fron­tière"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Une ligne de Sec­tion peut cou­per des hexa­gones en deux au lieu de suivre leurs cô­tés. Un hexa­gone ain­si cou­pé ap­par­tient aux deux Sec­tions voi­sines : une carte de l'une comme de l'autre peut ac­ti­ver l'uni­té qui s'y trouve. Quand un camp compte plu­sieurs joueurs, cha­cun des deux joueurs des Sec­tions voi­sines peut donc l'ac­ti­ver. Mais, comme toute uni­té, elle ne peut être ac­ti­vée qu'une seule fois par tour."/>
+                <para/>
+                <ITEXT CH="Le ter­rain"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Cer­tains hexa­gones portent du ter­rain : bois, col­lines, cours d'eau, gués, ponts ou bâ­ti­ments. Le ter­rain freine le mou­ve­ment et in­flue sur le com­bat (cha­pitre 8). Le scé­na­rio in­dique où le 4 pla­cer ; un hexa­gone sans ter­rain est une plaine. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="3.  caractéristiques d'une unité"/>
+                <para PARENT="Titre 1"/>
+                <ITEXT CH="Une unité est un groupe de figurines qui occupent le même hexagone et agissent ensemble. C'est la pièce de base du jeu : c'est elle que vous activez, elle qui se déplace, attaque et subit des touches."/>
+                <para/>
+                <ITEXT CH="Le profil"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque unité a un profil, dans le livret Factions. Il donne ses trois caractéristiques : son "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="type"/>
+                <ITEXT CH=", sa "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="classe"/>
+                <ITEXT CH=" et son "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="mode"/>
+                <ITEXT CH=". Il indique aussi son coût, ses badges et, pour quelques pièces uniques, des règles propres. "/>
+                <para/>
+                <ITEXT CH="Le type"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="La classe"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="La classe donne le nombre de dés que l'unité lance quand elle attaque."/>
+                <para/>
+                <ITEXT CH="Le mode"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Le mode donne la façon de combattre de l'unité, et donc les faces qui touchent quand elle attaque ; "/>
+                <para/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Mêlée"/>
+                <ITEXT CH=" : l'unité combat au corps à corps. Elle touche sur "/>
+                <ITEXT Unicode="25" COBJ="3270"/>
+                <ITEXT CH=" Épées croisées et "/>
+                <ITEXT Unicode="25" COBJ="13618"/>
+                <ITEXT CH=" Épée."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Distance"/>
+                <ITEXT CH=" : l'unité tire. Elle touche sur "/>
+                <ITEXT Unicode="25" COBJ="30883"/>
+                <ITEXT CH=" Arc."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Le jeton classe/mode"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Sur le champ de bataille, un jeton posé à côté de chaque unité rappelle sa classe et son mode. Sa couleur donne la classe, son symbole le mode. Ce symbole est celui de la face de dé qui compte : des épées croisées pour la mêlée, un arc pour le tir. Vous n'avez donc pas besoin du profil en cours de partie pour savoir combien de dés lance une unité et sur quelles faces elle touche."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="Les points de vie"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque touche retire une figurine de l'unité, ou 1 PV du compteur d'un Char ou d'une Créature. Quand elle perd sa dernière figurine, ou son dernier PV, elle est en déroute : retirez- la, l'adversaire marque 1 point de victoire."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="Une unité d'Infanterie ou de Cavalerie réduite à une seule figurine est Faible : elle combat moins bien (chapitre 7)."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="Le mouvement"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="La classe et le type d'une unité fixent de combien d'hexagones elle peut se déplacer quand elle est activée."/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Infanterie"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="4C9900" CH="Légère"/>
+                <tab/>
+                <ITEXT CH="2 cases, puis attaque"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="Green Blue" CH="Standard"/>
+                <tab/>
+                <ITEXT CH="2 cases puis attaque"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203" CH="Lourde"/>
+                <tab/>
+                <ITEXT CH="1 puis attaque, ou 2 sans attaquer"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Cavalerie"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0"/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="4C9900" CH="Légère"/>
+                <tab/>
+                <ITEXT CH="4 cases, puis attaque"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="Green Blue" CH="Standard"/>
+                <tab/>
+                <ITEXT CH="3 cases puis attaque"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203" CH="Lourde"/>
+                <tab/>
+                <ITEXT CH="2 puis attaque, ou 3 sans attaquer"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT CH="Plus une unité frappe fort, moins elle est mobile : une unité rouge doit choisir entre avancer et frapper. Une unité peut toujours se déplacer de moins, ou rester sur place. Les Chars se déplacent comme une unité de Cavalerie et, sauf mention contraire, les Créatures comme une unité d'Infanterie. Certaines unités ont un mouvement propre, indiqué sur leur profil. Le chapitre 6 explique comment se déplacer. "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="Les règles que l'unité porte d'office"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Certaines règles découlent directement du type, de la classe et du mode. L'unité les porte d'office, sans qu'elles soient écrites sur son profil : on les dit intrinsèques. Un Char lit la ligne de la Cavalerie de son mode."/>
+                <para PARENT="Default Paragraph Style" ALIGN="3">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Infanterie - Mélée"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="4C9900" CH="Légère"/>
+                <tab/>
+                <ITEXT CH="—"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="Green Blue" CH="Standard"/>
+                <tab FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203"/>
+                <ITEXT CH="—"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203" CH="Lourde"/>
+                <tab/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Armure]"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Infanterie - Distance"/>
+                <ITEXT CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="4C9900" CH="Légère"/>
+                <tab/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Mobilité 1]"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="Green Blue" CH="Standard"/>
+                <tab FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203"/>
+                <ITEXT CH="—"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203" CH="Lourde"/>
+                <tab/>
+                <ITEXT CH="n'existe pas"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Cavalerie - Mélée"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="4C9900" CH="Légère"/>
+                <tab/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Poursuite 2]"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="Green Blue" CH="Standard"/>
+                <tab FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Poursuite 2]"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203" CH="Lourde"/>
+                <tab/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Poursuite 1] [Armure]"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Cavalerie - Distance"/>
+                <ITEXT CH=" "/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="4C9900" CH="Légère"/>
+                <tab/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Mobilité]"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="Green Blue" CH="Standard"/>
+                <tab FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Mobilité 1]"/>
+                <breakline/>
+                <ITEXT FONT="Alegreya Sans Bold" FCOLOR="RVB #c50203" CH="Lourde"/>
+                <tab/>
+                <ITEXT CH="n'existe pas"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Créature"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Armure]"/>
+                <ITEXT CH=" et "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Peur 1]"/>
+                <ITEXT CH=", quelle que soit sa classe"/>
+                <para PARENT="Default Paragraph Style"/>
+                <ITEXT CH="Quatre idées suffisent à retenir le tableau :"/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" KERN="-1" CH="Les unités rouges représentent l'élite armurée."/>
+                <ITEXT KERN="-1" CH=" Toute unité lourde, à pied comme à cheval, porte "/>
+                <ITEXT FONT="Alegreya Sans Bold" KERN="-1" CH="[Armure]"/>
+                <ITEXT KERN="-1" CH=" : elle peut annuler des touches (chapitre 7)."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="La cavalerie de mêlée poursuit."/>
+                <ITEXT CH=" Après avoir fait reculer son adversaire ou l'avoir mis en déroute, elle peut s'élancer et frapper encore ("/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Poursuite]"/>
+                <ITEXT CH=", chapitre 7). La légère et la standard vont plus loin que la lourde."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Le tireur léger ou monté décroche."/>
+                <ITEXT CH=" Après avoir tiré, il peut se déplacer ("/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Mobilité]"/>
+                <ITEXT CH=", chapitre 6). L'archer à pied standard, lui, reste planté."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="La Créature est armurée et fait peur. Elle porte "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Armure]"/>
+                <ITEXT CH=" et "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Peur 1] "/>
+                <ITEXT CH=": ses faces Pouvoir font reculer l'ennemi (chapitre 7)."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Un profil ne rappelle l'une de ces règles que s'il va au-delà, par exemple "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Peur 2]. "/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT CH="Badges et bannière"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Un badge donne une règle de plus à une unité. Il est matérialisé par un jeton de badge d'unité, posé à côté d'elle."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Leader :"/>
+                <ITEXT CH=" un Leader mène l'unité. Il la rend plus dangereuse et affermit ses voisins (chapitre 9)."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Faction :"/>
+                <ITEXT CH=" l'unité a une règle propre, indiquée sur son profil et définie dans le livret de référence."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Une unité peut aussi compter une figurine avec bannière. Ce n'est pas un badge, mais l'unité y gagne "/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="[Inébranlable 1]"/>
+                <ITEXT CH=" : elle peut ignorer 1 "/>
+                <ITEXT Unicode="25" COBJ="30968"/>
+                <ITEXT CH="  à chaque attaque qu'elle subit (chapitre 7). Cette figurine est retirée en dernier, juste avant un éventuel Leader ; sans elle, l’unité perd cet avantage."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT CH="Quelques pièces uniques, comme les Mûmakil ou la Compagnie Grise, ont des règles bien à elles : ce sont des signatures, écrites en entier sur leur profil dans le livret Factions."/>
+                <para PARENT="Default Paragraph Style" ALIGN="0">
+                    <Tabs Type="0" Pos="71.0120867787867" Fill=""/>
+                </para>
+                <ITEXT CH="4. Le tour de jeu"/>
+                <para PARENT="Titre 1"/>
+                <ITEXT CH="Les deux camps jouent chacun à leur tour. Un tour est celui d'un seul camp ; une manche compte un tour de chaque camp. Le scénario indique le camp qui ouvre chaque manche."/>
+                <para/>
+                <ITEXT CH="Votre tour suit toujours le même ordre : sept étapes, réparties en deux phases."/>
+                <para/>
+                <ITEXT CH="La phase principale"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Commandement."/>
+                <ITEXT CH=" Jouez une carte de votre main, face visible (chapitre 5). Vous pouvez ensuite dépenser des jetons de Pouvoir pour activer des unités supplémentaires."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Ordre. "/>
+                <ITEXT CH="Désignez vos unités activées, une à une : celles que la carte permet d'activer, et celles que vous avez payées. Une unité n'est jamais activée deux fois dans le même tour. Une unité non activée ne bouge pas et ne combat pas."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Mouvement. "/>
+                <ITEXT CH="Déplacez vos unités activées, dans l'ordre de votre choix (chapitre 6). Chacune termine son déplacement avant que la suivante commence. Une unité peut rester sur place."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Attaque."/>
+                <ITEXT CH=" Vos unités activées attaquent, dans l'ordre de votre choix (chapitre 7). Une unité peut renoncer à attaquer."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT CH="Toutes vos unités se déplacent avant que la première attaque. Une unité qui a attaqué ne se déplace plus, sauf si une règle le lui permet."/>
+                <para/>
+                <ITEXT CH="La phase de bilan"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Points de victoire. "/>
+                <ITEXT CH="Comptez les objectifs d'occupation, s'il y en a (voir ci-dessous)."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Pioche."/>
+                <ITEXT CH=" Défaussez la carte jouée et piochez pour compléter votre main. Quand la pioche est vide, mélangez la défausse pour en former une nouvelle."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Pouvoir. "/>
+                <ITEXT CH="Ajoutez 2 jetons de Pouvoir à la réserve de votre camp (chapitre 5)."/>
+                <para PARENT="Liste numérotée"/>
+                <ITEXT CH="Puis c'est au tour du camp adverse."/>
+                <para/>
+                <ITEXT CH="Gagner la partie"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Chaque scénario fixe ses conditions de victoire. Sauf indication contraire, elles suivent ces règles :"/>
+                <para/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Chaque unité ennemie mise en déroute"/>
+                <ITEXT CH=" vous rapporte 1 point de victoire, dès qu'elle est retirée du champ de bataille. Prenez une médaille."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Le scénario peut fixer des objectifs"/>
+                <ITEXT CH=" qui rapportent aussi des points. Certains sont acquis une fois pour toutes, comme éliminer une unité précise ; d'autres sont temporaires, comme un objectif d'occupation : à chaque étape des points de victoire, quel que soit le camp qui joue, sa médaille va au camp dont une unité occupe l'hexagone. S'il est vide, elle ne va à personne."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT FONT="Alegreya Sans Bold" CH="Dès qu'un camp atteint le score fixé par le scénario"/>
+                <ITEXT CH=", il gagne la partie, même au milieu d'un tour."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Certains scénarios s'écartent de ce modèle, par exemple en s'arrêtant sur une limite de temps. Le livret de scénario le précise."/>
+                <para/>
+                <ITEXT CH="5. Commander"/>
+                <para PARENT="Titre 1"/>
+                <ITEXT CH="À chaque tour, une carte de commandement décide quelles unités agissent. Choisir la bonne carte au bon moment est un élément essentiel du jeu."/>
+                <para/>
+                <ITEXT CH="La main"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Votre camp tient une main secrète de 4 cartes, plus 1 par Général encore en jeu (chapitre 9). Elle diminue dès qu'il est retiré. Les deux camps piochent dans le même deck de commandement."/>
+                <para/>
+                <ITEXT CH="Les cartes de section"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Une carte de section active des unités dans une ou plusieurs de vos Sections. Le nombre d'unités est indiqué sur la carte : vous choisissez lesquelles, parmi celles qui se trouvent dans la Section visée."/>
+                <para/>
+                <ITEXT CH="« Patrouille Gauche » active 2 unités de votre Section Gauche."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="« En avant » active 2 unités dans chacune de vos trois Sections."/>
+                <para PARENT="Liste à puce"/>
+                <ITEXT CH="Une unité sur un hexagone de frontière peut être activée par une carte de l'une ou l'autre de ses Sections (chapitre 2)."/>
+                <para/>
+                <ITEXT CH="Les cartes Tactiques"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Une carte Tactique active selon un autre critère que la Section : le type (« Charge de cavalerie »), la classe (« Bannières rouges »), le mode (« Pluie de flèches »)… le plus souvent n'importe où sur le champ de bataille. Beaucoup donnent en plus un avantage, comme 1 dé de plus en combat. La carte dit tout ce qu'elle fait ; son texte complet figure aussi dans le livret de référence."/>
+                <para/>
+                <ITEXT CH="La valeur de commandement"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Beaucoup de cartes activent « autant d'unités que votre valeur de commandement ». C'est le nombre de cartes que vous avez en main quand vous jouez, carte jouée comprise. Plus votre main est grande, plus ces cartes sont fortes."/>
+                <para/>
+                <ITEXT KERN="-3" CH="Quand la carte ne convient pas"/>
+                <para PARENT="Titre 2"/>
+                <ITEXT CH="Vous pouvez toujours ignorer le texte de la carte que vous jouez, et activer à la place 1 unité de votre choix, n'importe où sur le champ de bataille. La carte est défaussée comme d'habitude."/>
+                <para/>
+                <para/>
+                <ITEXT CH="La réserve de Pouvoir"/>
+                <para/>
+                <ITEXT CH="Chaque camp dispose d'une réserve commune de jetons de Pouvoir. Elle permet d'activer des unités que la carte jouée ne couvre pas."/>
+                <para/>
+                <para/>
+                <ITEXT CH="Gagner du Pouvoir."/>
+                <para/>
+                <para/>
+                <ITEXT CH="Chaque face {DÉ:Pouvoir} Pouvoir obtenue quand vous attaquez vous rapporte 1 jeton, posé aussitôt dans votre réserve, que la face déclenche une règle ou non. Les ripostes, les jets d'[Armure] et les jets de Destin ne rapportent rien."/>
+                <para/>
+                <ITEXT CH="À l'étape de Pouvoir, votre camp ajoute 2 jetons à sa réserve."/>
+                <para/>
+                <ITEXT CH="Vous ne gagnez donc du Pouvoir que pendant votre propre tour."/>
+                <para/>
+                <para/>
+                <ITEXT CH="Dépenser du Pouvoir. À l'étape de commandement, après avoir joué votre carte, vous pouvez activer des unités supplémentaires. Chacune coûte autant de jetons qu'elle lance de dés :"/>
+                <para/>
+                <para/>
+                <ITEXT CH="Classe"/>
+                <tab/>
+                <ITEXT CH="Coût"/>
+                <para/>
+                <ITEXT CH="{VERT} Légère"/>
+                <tab/>
+                <ITEXT CH="2 jetons"/>
+                <para/>
+                <ITEXT CH="{BLEU} Standard"/>
+                <tab/>
+                <ITEXT CH="3 jetons"/>
+                <para/>
+                <ITEXT CH="{ROUGE} Lourde"/>
+                <tab/>
+                <ITEXT CH="4 jetons"/>
+                <para/>
+                <ITEXT CH="Vous activez ainsi 2 unités au plus par tour. Elles s'ajoutent à celles de la carte."/>
+                <para/>
+                <ITEXT CH="La réserve n'a pas de plafond : les jetons non dépensés se gardent d'un tour à l'autre."/>
+                <para/>
+                <ITEXT CH="Quand un camp compte plusieurs joueurs, chacun paie pour les unités de sa propre Section (chapitre 10)."/>
+                <para/>
+                <ITEXT CH="Exemple — Le Bien joue « Patrouille Droite » et active 2 unités à droite. Sa réserve compte 9 jetons. Il en dépense 4 pour activer aussi les Chevaliers de Dol Amroth {ROUGE}, au Centre, et 2 pour une unité d'archers {VERT} à gauche. Il lui reste 3 jetons pour les tours suivants."/>
+                <para/>
+                <para/>
+                <ITEXT CH="Àretenir — Une unité coûte autant de Pouvoir qu'elle lance de dés."/>
+                <para/>
+                <para/>
+                <para/>
+                <para/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="174.606271777004" YPOS="1383.62127904744" OwnPage="1" ItemID="209638448" PTYPE="2" WIDTH="229.170731707317" HEIGHT="116.275782600346" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.049296" LOCALSCY="0.049296" LOCALX="517.522943517163" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="../06 - Images/plans/plateau-normal.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L229.171 0 L229.171 116.276 L0 116.276 L0 0 Z" copath="M0 0 L229.171 0 L229.171 116.276 L0 116.276 L0 0 Z" gXpos="174.606271777004" gYpos="1383.62127904744" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="418.341463414634" YPOS="1592.13520261188" OwnPage="1" ItemID="209627120" PTYPE="2" WIDTH="233.560975609756" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.0941778127458694" LOCALSCY="0.0941778127458694" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.561 0 L233.561 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.561 0 L233.561 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="418.341463414634" gYpos="1592.13520261187" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="169.489188976378" YPOS="1523.44947735192" OwnPage="1" ItemID="209629952" PTYPE="2" WIDTH="115.921960849406" HEIGHT="114.898954703833" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="31.8770234894413" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/eclaireur_rohan.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L115.922 0 L115.922 114.899 L0 114.899 L0 0 Z" copath="M0 0 L115.922 0 L115.922 114.899 L0 114.899 L0 0 Z" ImageRes="0" gXpos="169.489188976378" gYpos="1523.44947735192" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="332.210540755576" YPOS="1525.77265354331" OwnPage="1" ItemID="209635616" PTYPE="2" WIDTH="62.5936088507231" HEIGHT="101.575778512442" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.181385318772218" LOCALSCY="0.181385318772218" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/berserker_uruk_hai.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L62.5936 0 L62.5936 101.576 L0 101.576 L0 0 Z" copath="M0 0 L62.5936 0 L62.5936 101.576 L0 101.576 L0 0 Z" ImageRes="0" gXpos="332.210540755576" gYpos="1525.77265354331" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="478.197850393703" YPOS="1016.56792913386" OwnPage="1" ItemID="209641280" PTYPE="12" WIDTH="124.724409448819" HEIGHT="56.6929133858275" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 3" TEXTFLOWMODE="1" groupWidth="124.724409448819" groupHeight="56.6929133858275" groupClips="1" path="M0 0 L124.724 0 L124.724 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L124.724 0 L124.724 56.6929 L0 56.6929 L0 0 Z" gXpos="478.197850393703" gYpos="1016.56792913386" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="478.197850393703" YPOS="1016.56792913386" OwnPage="1" ItemID="209632784" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 186" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+                <PAGEOBJECT XPOS="478.197850393703" YPOS="1016.56792913386" OwnPage="1" ItemID="209649776" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="4C9900" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+                <PAGEOBJECT XPOS="488.119110236223" YPOS="1026.48918897638" OwnPage="1" ItemID="209655440" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.0941190944881891" LOCALSCY="0.0941190944881891" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/pions/archery.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.9212598425197" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="546.229346456695" YPOS="1016.56792913386" OwnPage="1" ItemID="209646944" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 136 (22)" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="68.031496062992" gYpos="6.82121026329696e-13" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+                <PAGEOBJECT XPOS="546.229346456695" YPOS="1016.56792913386" OwnPage="1" ItemID="209652608" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #c50203" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+                <PAGEOBJECT XPOS="556.150606299215" YPOS="1026.48918897638" OwnPage="1" ItemID="209644112" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.481889763779528" LOCALSCY="0.481889763779528" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-battle-100-white.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.92125984251967" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="253.179044692584" YPOS="1557.8041496063" OwnPage="1" ItemID="209669600" PTYPE="2" WIDTH="62.5936088507231" HEIGHT="101.575778512442" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.138788489691182" LOCALSCY="0.138788489691182" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/grimbold.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L62.5936 0 L62.5936 101.576 L0 101.576 L0 0 Z" copath="M0 0 L62.5936 0 L62.5936 101.576 L0 101.576 L0 0 Z" ImageRes="0" gXpos="253.179044692584" gYpos="1557.8041496063" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="175.40257480315" YPOS="1638.89863779528" OwnPage="1" ItemID="262930256" PTYPE="4" WIDTH="218.267716535433" HEIGHT="34.846705012483" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L218.268 0 L218.268 34.8467 L0 34.8467 L0 0 Z" copath="M0 0 L218.268 0 L218.268 34.8467 L0 34.8467 L0 0 Z" gXpos="175.40257480315" gYpos="1638.89863779528" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Italic" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Italic" FONTSIZE="10" CH="Un éclaireur du Rohan, Grimbold et un berserker uruk-hai"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="439.189976377954" YPOS="1117.56792913386" OwnPage="1" ItemID="209661104" PTYPE="2" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0598658008298065" LOCALSCY="0.0598658008298065" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/logo.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="302.338582677165" gYpos="193.000000000001" gWidth="1145.1968503937" gHeight="805.039370078745" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="512.890763779529" YPOS="1117.56792913386" OwnPage="1" ItemID="209663936" PTYPE="2" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0616897860563948" LOCALSCY="0.0616897860563948" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/mordor.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="376.039370078741" gYpos="193.000000000001" gWidth="1145.1968503937" gHeight="805.039370078745" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="422.965855002881" YPOS="1217.0487804878" OwnPage="1" ItemID="209666768" PTYPE="2" WIDTH="235.317073170732" HEIGHT="88.6097560975611" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.104492636907501" LOCALSCY="0.104492636907501" LOCALX="325.532487629797" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L235.317 0 L235.317 88.6098 L0 88.6098 L0 0 Z" copath="M0 0 L235.317 0 L235.317 88.6098 L0 88.6098 L0 0 Z" ImageRes="0" gXpos="422.965855002881" gYpos="1217.0487804878" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="583.756905511812" YPOS="1117.56792913386" OwnPage="1" ItemID="209658272" PTYPE="12" WIDTH="56.6929133858216" HEIGHT="56.6929133858293" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 305 (20)" groupWidth="56.6929133858216" groupHeight="56.6929133858293" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="446.905511811024" gYpos="193" gWidth="1145.1968503937" gHeight="805.039370078745" LAYER="0">
+            <PAGEOBJECT XPOS="583.756905511812" YPOS="1117.56792913386" OwnPage="1" ItemID="209672432" PTYPE="2" WIDTH="56.6929133858216" HEIGHT="56.6929133858293" FRTYPE="0" CLIPEDIT="0" PWIDTH="0.833333333333371" PLINEART="1" LOCALSCX="0.0452096597973059" LOCALSCY="0.0452096597973059" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/badge_doree.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="56.6929133858216" gHeight="56.6929133858293" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            <PAGEOBJECT XPOS="594.386826771654" YPOS="1128.1978503937" OwnPage="1" ItemID="265665696" PTYPE="2" WIDTH="35.4330708661385" HEIGHT="35.4330708661434" FRTYPE="0" CLIPEDIT="0" PWIDTH="0.833333333333371" PLINEART="1" LOCALSCX="0.553641732283414" LOCALSCY="0.553641732283414" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-crown-black.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L35.4331 0 L35.4331 35.4331 L0 35.4331 L0 0 Z" copath="M0 0 L35.4331 0 L35.4331 35.4331 L0 35.4331 L0 0 Z" gXpos="10.6299212598417" gYpos="10.6299212598429" gWidth="56.6929133858216" gHeight="56.6929133858293" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="972.756905511811" OwnPage="2" ItemID="265719840" PTYPE="4" WIDTH="481.89" HEIGHT="680.315" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 680.315 L235.276 680.315 L235.276 513.78 L0 513.78 L0 0 Z" copath="M0 0 L481.89 0 L481.89 680.315 L0 680.315 L0 0 Z" gXpos="737.796275590551" gYpos="972.756905511811" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="265711008" BACKITEM="212357792"/>
+        <PAGEOBJECT XPOS="746.182678509698" YPOS="413.574803149606" OwnPage="0" ItemID="214036544" PTYPE="4" WIDTH="493.463414634146" HEIGHT="199.317073170732" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L493.463 0 L493.463 199.317 L0 199.317 L0 0 Z" copath="M0 0 L493.463 0 L493.463 199.317 L0 199.317 L0 0 Z" gXpos="746.182678509698" gYpos="413.574803149606" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESP="55" FONT="Garamond Premier Pro Bold" FONTSIZE="40" FEATURES="inherit smallcaps" FCOLOR="Rich Black"/>
+                <ITEXT FONT="Garamond Premier Pro Bold" FONTSIZE="40" FEATURES="inherit smallcaps" FCOLOR="Rich Black" CH="Livret de règles"/>
+                <trail ALIGN="1" LINESP="55"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="542.071866141734" YPOS="1325.59942519685" OwnPage="1" ItemID="265657200" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6928999999988" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 294" groupWidth="56.6929133858268" groupHeight="56.6928999999988" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="405.220472440945" gYpos="401.031496062993" gWidth="1145.1968503937" gHeight="805.039370078745" LAYER="0">
+            <PAGEOBJECT XPOS="542.071866141734" YPOS="1325.59942519685" OwnPage="1" ItemID="265660032" PTYPE="2" WIDTH="56.6929000000032" HEIGHT="56.6928999999988" FRTYPE="0" CLIPEDIT="0" PWIDTH="0.8333331365742" PLINEART="1" LOCALSCX="0.0452096491228061" LOCALSCY="0.0452096491228061" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/badge_doree.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="56.6929133858268" gHeight="56.6928999999988" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            <PAGEOBJECT XPOS="542.071866141734" YPOS="1345.44194488189" OwnPage="1" ItemID="262917904" PTYPE="4" WIDTH="56.6929133858268" HEIGHT="30.6006773942804" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L56.6929 0 L56.6929 30.6007 L0 30.6007 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 30.6007 L0 30.6007 L0 0 Z" gXpos="0" gYpos="19.8425196850391" gWidth="56.6929133858268" gHeight="56.6928999999988" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1" FONT="aaatord Regular" FONTSIZE="22"/>
+                    <ITEXT FONTSIZE="22" CH="C"/>
+                    <trail ALIGN="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="474.040370078742" YPOS="1325.59942519685" OwnPage="1" ItemID="265662864" PTYPE="12" WIDTH="56.6929133858216" HEIGHT="56.6929133858269" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 289 (17)" groupWidth="56.6929133858216" groupHeight="56.6929133858269" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="337.188976377953" gYpos="401.031496062993" gWidth="1145.1968503937" gHeight="805.039370078745" LAYER="0">
+            <PAGEOBJECT XPOS="474.040370078742" YPOS="1325.59942519685" OwnPage="1" ItemID="265654368" PTYPE="2" WIDTH="56.6929133858216" HEIGHT="56.6929133858269" FRTYPE="0" CLIPEDIT="0" PWIDTH="0.833333333333336" PLINEART="1" LOCALSCX="0.0452096597973059" LOCALSCY="0.0452096597973059" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/badge_doree.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="56.6929133858216" gHeight="56.6929133858269" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            <PAGEOBJECT XPOS="491.35442955489" YPOS="1339.65454330709" OwnPage="1" ItemID="262905936" PTYPE="4" WIDTH="27.6585365853662" HEIGHT="37.0360461508915" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L27.6585 0 L27.6585 37.036 L0 37.036 L0 0 Z" copath="M0 0 L27.6585 0 L27.6585 37.036 L0 37.036 L0 0 Z" gXpos="17.3140594761476" gYpos="14.0551181102363" gWidth="56.6929133858216" gHeight="56.6929133858269" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle ALIGN="1" FONT="aaatord Regular" FONTSIZE="33"/>
+                    <ITEXT FONT="aaatord Regular" FONTSIZE="33" CH="A"/>
+                    <trail ALIGN="1"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="5.74096543115036" YPOS="1360.14634146341" OwnPage="-1" ItemID="265671360" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1360.14634146341" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="5.7409654311504" YPOS="1379.98886114845" OwnPage="-1" ItemID="265674192" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-simple-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1379.98886114845" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="5.7409654311504" YPOS="1399.83138083349" OwnPage="-1" ItemID="265677024" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1399.83138083349" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="5.7409654311504" YPOS="1419.67390051853" OwnPage="-1" ItemID="265679856" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/finish.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1419.67390051853" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="5.7409654311504" YPOS="1439.51642020357" OwnPage="-1" ItemID="265668528" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.177165354330709" LOCALSCY="0.177165354330709" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-crown-black-64.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1439.51642020357" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="5.7409654311504" YPOS="1459.35893988861" OwnPage="-1" ItemID="265682688" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-gandalf-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1459.35893988861" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="5.7409654311504" YPOS="1479.20145957365" OwnPage="-1" ItemID="265691184" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" ROT="357" PWIDTH="1" PLINEART="1" LOCALSCX="0.0253093363329585" LOCALSCY="0.0253093363329585" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-sauron-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="5.74096543115036" gYpos="1479.20145957365" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="1488.66241732284" OwnPage="2" ItemID="215314960" PTYPE="4" WIDTH="233.858267716535" HEIGHT="76.5354330708661" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="RVB #374317" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 76.5354 L0 76.5354 L0 0 Z" copath="M0 0 L233.859 0 L233.859 76.5355 L0 76.5355 L0 0 Z" gXpos="737.796275590551" gYpos="1488.66241732284" gWidth="210.372501514234" gHeight="92.2819575782693" PSTYLE="A retenir" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="A retenir"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" FCOLOR="White" CH="À re­te­nir"/>
+                <para PARENT="A retenir"/>
+                <ITEXT FCOLOR="White" CH="À votre tour, vous jouez une carte, vous ac­ti­vez les uni­tés qu'elle dé­signe, puis elles se dé­placent et at­taquent."/>
+                <trail PARENT="A retenir"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="985.716507997476" YPOS="1016.7945073939" OwnPage="2" ItemID="265694016" PTYPE="2" WIDTH="249.150786029794" HEIGHT="165.726177645474" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.0668250716312395" LOCALSCY="0.0668250716312395" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/plans/plateau-normal.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L249.151 0 L249.151 165.726 L0 165.726 L0 0 Z" copath="M0 0 L249.151 0 L249.151 165.726 L0 165.726 L0 0 Z" gXpos="390.440917446295" gYpos="1016.7945073939" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="992.339582677165" YPOS="1001.89863779528" OwnPage="2" ItemID="266998128" PTYPE="4" WIDTH="218.267716535433" HEIGHT="34.846705012483" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L218.268 0 L218.268 34.8467 L0 34.8467 L0 0 Z" copath="M0 0 L218.268 0 L218.268 34.8467 L0 34.8467 L0 0 Z" gXpos="397.063992125985" gYpos="1001.89863779528" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10" FEATURES="inherit smallcaps"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" FEATURES="inherit smallcaps" CH="Camp du Mal"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="992.339582677165" YPOS="1180.48131496064" OwnPage="2" ItemID="265685520" PTYPE="4" WIDTH="218.267716535433" HEIGHT="16.7381972344851" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L218.268 0 L218.268 16.7382 L0 16.7382 L0 0 Z" copath="M0 0 L218.268 0 L218.268 16.7382 L0 16.7382 L0 0 Z" gXpos="397.063992125985" gYpos="1180.48131496064" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10" FEATURES="inherit smallcaps"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" FEATURES="inherit smallcaps" CH="Camp du Bien"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1001.09548818898" YPOS="1134.33170866142" OwnPage="2" ItemID="265696848" PTYPE="4" WIDTH="42.5196850393701" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR="RVB #c69251" PCOLOR2="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" gXpos="405.819897637796" gYpos="1134.33170866142" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" CH="Gauche"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1080.46556692913" YPOS="1134.33170866142" OwnPage="2" ItemID="265699680" PTYPE="4" WIDTH="42.5196850393701" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR="RVB #c69251" PCOLOR2="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" gXpos="485.189976377953" gYpos="1134.33170866142" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" CH="Centre"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1158.70178740158" YPOS="1134.33170866142" OwnPage="2" ItemID="265688352" PTYPE="4" WIDTH="42.5196850393701" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR="RVB #c69251" PCOLOR2="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" gXpos="563.426196850394" gYpos="1134.33170866142" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" CH="Droite"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1001.09548818898" YPOS="1040.7884015748" OwnPage="2" ItemID="265702512" PTYPE="4" WIDTH="42.5196850393701" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR="RVB #c69251" PCOLOR2="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" gXpos="405.819897637796" gYpos="1040.7884015748" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" CH="Droite"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1080.46556692913" YPOS="1040.7884015748" OwnPage="2" ItemID="265708176" PTYPE="4" WIDTH="42.5196850393701" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR="RVB #c69251" PCOLOR2="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" gXpos="485.189976377953" gYpos="1040.7884015748" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" CH="Centre"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1158.70178740158" YPOS="1040.7884015748" OwnPage="2" ItemID="265713840" PTYPE="4" WIDTH="42.5196850393701" HEIGHT="14.1732283464567" FRTYPE="0" CLIPEDIT="0" PWIDTH="1.41732283464567" PCOLOR="RVB #c69251" PCOLOR2="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" copath="M0 0 L42.5197 0 L42.5197 14.1732 L0 14.1732 L0 0 Z" gXpos="563.426196850394" gYpos="1040.7884015748" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Bold" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="10" CH="Gauche"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="986.333589398886" YPOS="1376.41866717881" OwnPage="2" ItemID="265705344" PTYPE="2" WIDTH="233.560975609756" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.0941778127458694" LOCALSCY="0.0941778127458694" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.561 0 L233.561 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.561 0 L233.561 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="391.057998847705" gYpos="1376.4186671788" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="1854.64666929134" OwnPage="3" ItemID="265711008" PTYPE="4" WIDTH="481.89" HEIGHT="608.405595517022" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M236.113 99.639 L236.113 0 L481.89 0 L481.89 608.406 L285.786 608.406 L285.786 538.162 L232.099 538.162 L232.099 381.744 L0 381.744 L0 99.639 L236.113 99.639 Z" copath="M0 0 L481.89 0 L481.89 680.315 L0 680.315 L0 0 Z" gXpos="170.867141732283" gYpos="1854.64666929134" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="267485312" BACKITEM="265719840"/>
+        <PAGEOBJECT XPOS="738.656424044558" YPOS="1575.12732859613" OwnPage="2" ItemID="265716672" PTYPE="2" WIDTH="233.560975609756" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.0941778127458694" LOCALSCY="0.0941778127458694" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.561 0 L233.561 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.561 0 L233.561 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="738.656424044558" gYpos="1575.12732859612" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="1854.64666929134" OwnPage="3" ItemID="267490976" PTYPE="4" WIDTH="233.858267716535" HEIGHT="90.7086614173228" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #c69251" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 90.7087 L0 90.7087 L0 0 Z" copath="M0 0 L233.858 0 L233.858 90.7087 L0 90.7087 L0 0 Z" gXpos="170.867141732283" gYpos="1854.64666929134" gWidth="0" gHeight="0" PSTYLE="Exemple" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Exemple" FCOLOR="Black" BGCOLOR="RVB #c69251"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" FCOLOR="Black" BGCOLOR="RVB #c69251" CH="Exemple"/>
+                <para PARENT="Exemple"/>
+                <ITEXT FCOLOR="Black" BGCOLOR="RVB #c69251" CH="Au Pe­len­nor, Ara­gorn dé­barque dans la Sec­tion Gauche du Bien. En face de lui, le Ha­rad et ses Mû­ma­kil tiennent la Sec­tion Droite du Mal. Quand le Mal joue une carte Droite, ce sont eux qui s'ébranlent."/>
+                <trail PARENT="Exemple"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="2291.18210236222" OwnPage="3" ItemID="267488144" PTYPE="2" WIDTH="233.858267716535" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.094297688595377" LOCALSCY="0.094297688595377" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="766.142732283465" gYpos="1409.29233858267" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="1854.64666929134" OwnPage="4" ItemID="267485312" PTYPE="4" WIDTH="481.889763779528" HEIGHT="680.314960629921" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="2" COLGAP="14.1732283464567" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L481.89 0 L481.89 680.315 L0 680.315 L0 183.987 L236.431 183.987 L236.431 128.74 L0 128.74 L0 0 Z" copath="M0 0 L481.89 0 L481.89 680.315 L0 680.315 L0 0 Z" gXpos="737.796275590551" gYpos="1854.64666929134" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="210949776" BACKITEM="265711008"/>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="2214.64666929134" OwnPage="3" ItemID="267499472" PTYPE="4" WIDTH="233.858267716535" HEIGHT="63.7795275590551" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 63.7795 L0 63.7795 L0 0 Z" copath="M0 0 L233.858 0 L233.858 63.7795 L0 63.7795 L0 0 Z" gXpos="170.867141732283" gYpos="2214.64666929134" gWidth="0" gHeight="0" PSTYLE="A retenir" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="A retenir"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="À retenir"/>
+                <para PARENT="A retenir"/>
+                <ITEXT CH="Votre Gauche est toujours à votre gauche : elle fait face à la Droite adverse."/>
+                <trail PARENT="A retenir"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="418.898637795276" YPOS="2095.5915511811" OwnPage="3" ItemID="267502304" PTYPE="12" WIDTH="233.858267716535" HEIGHT="85.0393700787363" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 7" TEXTFLOWMODE="1" groupWidth="233.858267716535" groupHeight="85.0393700787363" groupClips="1" path="M0 0 L233.858 0 L233.858 85.0394 L0 85.0394 L0 0 Z" copath="M0 0 L233.858 0 L233.858 85.0394 L0 85.0394 L0 0 Z" gXpos="418.898637795276" gYpos="2095.5915511811" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2095.5915511811" OwnPage="3" ItemID="267505136" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #374317" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="2.83464566929134" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="233.858267716535" gHeight="85.0393700787363" PSTYLE="Header" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Header"/>
+                    <ITEXT FONT="Alegreya Sans Bold" CH="Type"/>
+                    <tab FONT="Alegreya Sans Bold"/>
+                    <ITEXT FONT="Alegreya Sans Bold" CH="Composition"/>
+                    <tab FONT="Alegreya Sans Bold"/>
+                    <ITEXT FONT="Alegreya Sans Bold" CH="Points de vie"/>
+                    <trail PARENT="Header"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2112.59942519685" OwnPage="3" ItemID="267496640" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="17.0078740157473" gWidth="233.858267716535" gHeight="85.0393700787363" PSTYLE="Ligne tableau impair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau impair"/>
+                    <ITEXT CH="Infanterie"/>
+                    <tab/>
+                    <ITEXT CH="4 figurines à pied "/>
+                    <tab/>
+                    <ITEXT CH="1 par figurine"/>
+                    <trail PARENT="Ligne tableau impair"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2129.6072992126" OwnPage="3" ItemID="267493808" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert encore plus clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="34.0157480314942" gWidth="233.858267716535" gHeight="85.0393700787363" PSTYLE="Ligne tableau pair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau pair"/>
+                    <ITEXT CH="Cavalerie"/>
+                    <tab/>
+                    <ITEXT CH="3 figurines montées"/>
+                    <tab/>
+                    <ITEXT CH="1 par figurine"/>
+                    <trail PARENT="Ligne tableau pair"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2146.61517322835" OwnPage="3" ItemID="267519296" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="51.0236220472416" gWidth="233.858267716535" gHeight="85.0393700787363" PSTYLE="Ligne tableau impair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau impair"/>
+                    <ITEXT CH="Char"/>
+                    <tab/>
+                    <ITEXT CH="1 figurine"/>
+                    <tab/>
+                    <ITEXT CH="1 par jeton"/>
+                    <trail PARENT="Ligne tableau impair"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2163.62304724409" OwnPage="3" ItemID="267513632" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert encore plus clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="68.0314960629885" gWidth="233.858267716535" gHeight="85.0393700787363" PSTYLE="Ligne tableau pair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau pair"/>
+                    <ITEXT CH="Créature"/>
+                    <tab/>
+                    <ITEXT CH="1 figurine"/>
+                    <tab/>
+                    <ITEXT CH="1 par jeton"/>
+                    <trail PARENT="Ligne tableau pair"/>
+                </StoryText>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="3158.89863779527" OwnPage="5" ItemID="267510800" PTYPE="4" WIDTH="233.858267716535" HEIGHT="178.582677165354" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #c69251" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 178.583 L0 178.583 L0 0 Z" copath="M0 0 L233.858 0 L233.858 178.583 L0 178.583 L0 0 Z" gXpos="170.867141732283" gYpos="3158.89863779527" gWidth="0" gHeight="0" PSTYLE="Exemple" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Exemple"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Exemple"/>
+                <para PARENT="Exemple"/>
+                <ITEXT CH="Le livret Factions décrit les Chevaliers de Dol Amroth comme de la Cavalerie lourde de mêlée. Sur le champ de bataille, leur jeton est rouge, aux épées croisées. Ils lancent 4 dés et touchent sur Épées croisées et Épée. Ils ont 3 PV. Ils se déplacent de 2 hexagones puis attaquent, ou de 3 sans attaquer. Ils portent [Armure] et [Poursuite 1]. En face, les Archers du Harad sont de l'Infanterie légère de distance, au jeton vert à l'arc : 2 dés, touche sur Arc, 4 PV, 2 hexagones puis tir, et [Mobilité 1] pour décrocher. "/>
+                <trail PARENT="Exemple"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="418.898637795276" YPOS="2251.49706299212" OwnPage="3" ItemID="267507968" PTYPE="12" WIDTH="233.858267716535" HEIGHT="68.0314960629894" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 23" TEXTFLOWMODE="1" groupWidth="233.858267716535" groupHeight="68.0314960629894" groupClips="1" path="M0 0 L233.858 0 L233.858 68.0315 L0 68.0315 L0 0 Z" copath="M0 0 L233.858 0 L233.858 68.0315 L0 68.0315 L0 0 Z" gXpos="418.898637795276" gYpos="2251.49706299212" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2251.49706299212" OwnPage="3" ItemID="267524960" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #374317" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="2.83464566929134" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="0" gYpos="0" gWidth="233.858267716535" gHeight="68.0314960629894" PSTYLE="Header" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Header"/>
+                    <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="11" CH="Classe"/>
+                    <tab FONT="Alegreya Sans Bold" FONTSIZE="11"/>
+                    <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="11" CH="Couleur"/>
+                    <tab FONT="Alegreya Sans Bold" FONTSIZE="11"/>
+                    <ITEXT FONT="Alegreya Sans Bold" FONTSIZE="11" CH="Dés"/>
+                    <trail PARENT="Header"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2268.50493700786" OwnPage="3" ItemID="267527792" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="17.0078740157473" gWidth="233.858267716535" gHeight="68.0314960629894" PSTYLE="Ligne tableau impair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau impair"/>
+                    <ITEXT FONT="Alegreya Sans Regular" FONTSIZE="11" FCOLOR="Warm Black" CH="Légère"/>
+                    <tab FONTSIZE="11"/>
+                    <tab FONTSIZE="11"/>
+                    <ITEXT FONTSIZE="11" CH="2"/>
+                    <trail PARENT="Ligne tableau impair"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2285.51281102361" OwnPage="3" ItemID="267522128" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert encore plus clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="34.0157480314942" gWidth="233.858267716535" gHeight="68.0314960629894" PSTYLE="Ligne tableau pair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau pair"/>
+                    <ITEXT FONTSIZE="11" CH="Standard"/>
+                    <tab FONTSIZE="11"/>
+                    <tab FONTSIZE="11"/>
+                    <ITEXT FONTSIZE="11" CH="3"/>
+                    <trail PARENT="Ligne tableau pair"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="418.898637795276" YPOS="2302.52068503936" OwnPage="3" ItemID="267516464" PTYPE="4" WIDTH="233.858267716535" HEIGHT="17.007874015748" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Vert clair" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" copath="M0 0 L233.858 0 L233.858 17.0079 L0 17.0079 L0 0 Z" gXpos="4.54747350886464e-13" gYpos="51.0236220472416" gWidth="233.858267716535" gHeight="68.0314960629894" PSTYLE="Ligne tableau impair" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+                <StoryText>
+                    <DefaultStyle PARENT="Ligne tableau impair"/>
+                    <ITEXT FONTSIZE="11" CH="Lourde"/>
+                    <tab FONTSIZE="11"/>
+                    <tab FONTSIZE="11"/>
+                    <ITEXT FONTSIZE="11" CH="4"/>
+                    <trail PARENT="Ligne tableau impair"/>
+                </StoryText>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="491.182102362205" YPOS="2305.35533070865" OwnPage="3" ItemID="267541952" PTYPE="6" WIDTH="11.3385826771654" HEIGHT="11.3385826771644" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.833333333333329" PCOLOR="RVB #c50203" PLINEART="1" path="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" copath="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" gXpos="72.2834645669287" gYpos="53.8582677165332" gWidth="233.858267716535" gHeight="68.0314960629894" LAYER="0"/>
+            <PAGEOBJECT XPOS="491.182102362205" YPOS="2288.3474566929" OwnPage="3" ItemID="267539120" PTYPE="6" WIDTH="11.3385826771654" HEIGHT="11.3385826771643" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.833333333333334" PCOLOR="Green Blue" PLINEART="1" path="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" copath="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" gXpos="72.2834645669287" gYpos="36.8503937007863" gWidth="233.858267716535" gHeight="68.0314960629894" LAYER="0"/>
+            <PAGEOBJECT XPOS="491.182102362205" YPOS="2271.33958267716" OwnPage="3" ItemID="267533456" PTYPE="6" WIDTH="11.3385826771654" HEIGHT="11.3385826771655" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.833333136574083" PCOLOR="4C9900" PLINEART="1" path="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" copath="M11.3386 5.66929 C11.3386 8.80047 8.80047 11.3386 5.66929 11.3386 C2.53823 11.3386 0 8.80047 0 5.66929 C0 2.53823 2.53823 0 5.66929 0 C8.80047 0 11.3386 2.53823 11.3386 5.66929 Z" gXpos="72.2834645669287" gYpos="19.8425196850385" gWidth="233.858267716535" gHeight="68.0314960629894" LAYER="0"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="424.520453236028" YPOS="2391.65027847128" OwnPage="3" ItemID="267530624" PTYPE="2" WIDTH="22.6771653543307" HEIGHT="22.6771653543307" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.226771653543307" LOCALSCY="0.226771653543307" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L22.6772 0 L22.6772 22.6772 L0 22.6772 L0 0 Z" copath="M0 0 L22.6772 0 L22.6772 22.6772 L0 22.6772 L0 0 Z" ImageRes="0" gXpos="424.520453236028" gYpos="2391.65027847128" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="424.520453236028" YPOS="2427.83138083349" OwnPage="3" ItemID="267547616" PTYPE="2" WIDTH="22.6771653543307" HEIGHT="22.6771653543307" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.0442913385826771" LOCALSCY="0.0442913385826771" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L22.6772 0 L22.6772 22.6772 L0 22.6772 L0 0 Z" copath="M0 0 L22.6772 0 L22.6772 22.6772 L0 22.6772 L0 0 Z" ImageRes="0" gXpos="424.520453236028" gYpos="2427.83138083349" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="765.12698425197" YPOS="1983.32383464567" OwnPage="4" ItemID="267544784" PTYPE="12" WIDTH="81.0708661417312" HEIGHT="36.8503937007874" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 19" groupWidth="124.724409448819" groupHeight="56.6929133858275" groupClips="1" path="M0 0 L81.0709 0 L81.0709 36.8504 L0 36.8504 L0 0 Z" copath="M0 0 L81.0709 0 L81.0709 36.8504 L0 36.8504 L0 0 Z" gXpos="765.12698425197" gYpos="1983.32383464567" gWidth="0" gHeight="0" LAYER="0">
+            <PAGEOBJECT XPOS="765.12698425197" YPOS="1983.32383464567" OwnPage="4" ItemID="267536288" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" ANNAME="Groupe 186" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+                <PAGEOBJECT XPOS="765.12698425197" YPOS="1983.32383464567" OwnPage="4" ItemID="268053376" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="4C9900" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+                <PAGEOBJECT XPOS="775.04824409449" YPOS="1993.24509448819" OwnPage="4" ItemID="268050544" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.0941190944881891" LOCALSCY="0.0941190944881891" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/pions/archery.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.9212598425197" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            </PAGEOBJECT>
+            <PAGEOBJECT XPOS="833.158480314962" YPOS="1983.32383464567" OwnPage="4" ItemID="268061872" PTYPE="12" WIDTH="56.6929133858268" HEIGHT="56.6929133858268" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 136 (22)" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="68.031496062992" gYpos="6.82121026329696e-13" gWidth="124.724409448819" gHeight="56.6929133858275" LAYER="0">
+                <PAGEOBJECT XPOS="833.158480314962" YPOS="1983.32383464567" OwnPage="4" ItemID="268067536" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #c50203" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+                <PAGEOBJECT XPOS="843.079740157482" YPOS="1993.24509448819" OwnPage="4" ItemID="268059040" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.481889763779528" LOCALSCY="0.481889763779528" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-battle-100-white.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.92125984251967" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            </PAGEOBJECT>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="746.410448818898" YPOS="2023.11123622048" OwnPage="4" ItemID="268056208" PTYPE="4" WIDTH="218.267716535433" HEIGHT="18.3509712474911" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L218.268 0 L218.268 18.351 L0 18.351 L0 0 Z" copath="M0 0 L218.268 0 L218.268 18.351 L0 18.351 L0 0 Z" gXpos="151.134858267717" gYpos="1141.22147244095" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Italic" FONTSIZE="10"/>
+                <ITEXT FONT="Alegreya Sans Italic" FONTSIZE="10" CH="Exemples de jetons classe/mode"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="854.638795275591" YPOS="1983.22934645669" OwnPage="4" ItemID="268073200" PTYPE="12" WIDTH="36.8503937007874" HEIGHT="36.8503937007874" FRTYPE="0" CLIPEDIT="1" ANNAME="Copie de Groupe 184 (22)" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L36.8504 0 L36.8504 36.8504 L0 36.8504 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 36.8504 L0 36.8504 L0 0 Z" gXpos="854.638795275591" gYpos="1983.22934645669" gWidth="36.8503937007874" gHeight="36.8503937007874" LAYER="0">
+            <PAGEOBJECT XPOS="854.638795275591" YPOS="1983.22934645669" OwnPage="4" ItemID="268076032" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="Green Blue" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+            <PAGEOBJECT XPOS="864.560055118111" YPOS="1993.15060629921" OwnPage="4" ItemID="268070368" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.481889763779528" LOCALSCY="0.481889763779528" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-battle-100-white.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.92125984251967" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="898.859278157483" YPOS="1983.22934645669" OwnPage="4" ItemID="268064704" PTYPE="12" WIDTH="36.8503937007874" HEIGHT="36.8503937007874" FRTYPE="0" CLIPEDIT="1" ANNAME="Copie de Groupe 185 (22)" groupWidth="68.0314960629921" groupHeight="68.0314960629921" groupClips="1" path="M0 0 L36.8504 0 L36.8504 36.8504 L0 36.8504 L0 0 Z" copath="M0 0 L36.8504 0 L36.8504 36.8504 L0 36.8504 L0 0 Z" gXpos="898.859278157483" gYpos="1983.22934645669" gWidth="36.8503937007874" gHeight="36.8503937007874" LAYER="0">
+            <PAGEOBJECT XPOS="898.859278157483" YPOS="1983.22934645669" OwnPage="4" ItemID="268084528" PTYPE="6" WIDTH="68.0314960629921" HEIGHT="68.0314960629921" FRTYPE="1" CLIPEDIT="0" PWIDTH="1" PCOLOR="4C9900" PLINEART="1" path="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" copath="M68.0315 34.0157 C68.0315 52.8028 52.8028 68.0315 34.0157 68.0315 C15.2294 68.0315 0 52.8028 0 34.0157 C0 15.2294 15.2294 0 34.0157 0 C52.8028 0 68.0315 15.2294 68.0315 34.0157 Z" gXpos="0" gYpos="0" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0"/>
+            <PAGEOBJECT XPOS="908.780538000003" YPOS="1993.15060629921" OwnPage="4" ItemID="268078864" PTYPE="2" WIDTH="48.1889763779528" HEIGHT="48.1889763779528" FRTYPE="1" CLIPEDIT="0" PWIDTH="0.699035641503959" PLINEART="1" LOCALSCX="0.481889763779528" LOCALSCY="0.481889763779528" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-battle-100-white.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" copath="M48.189 24.0945 C48.189 37.402 37.402 48.189 24.0945 48.189 C10.7875 48.189 0 37.402 0 24.0945 C0 10.7875 10.7875 0 24.0945 0 C37.402 0 48.189 10.7875 48.189 24.0945 Z" ImageRes="0" gXpos="9.9212598425197" gYpos="9.9212598425197" gWidth="68.0314960629921" gHeight="68.0314960629921" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="1065.50474495871" YPOS="1977.6030343768" OwnPage="4" ItemID="268081696" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="1065.50474495871" gYpos="1977.6030343768" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1076.91419377761" YPOS="2047.85500288073" OwnPage="4" ItemID="268095856" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="1076.91419377761" gYpos="2047.85500288073" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1062.67009928942" YPOS="2118.20145957364" OwnPage="4" ItemID="268090192" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="1062.67009928942" gYpos="2118.20145957364" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1074.07954810832" YPOS="2188.16996351065" OwnPage="4" ItemID="268087360" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="1074.07954810832" gYpos="2188.16996351065" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1032.90631976186" YPOS="2257.66602650277" OwnPage="4" ItemID="268093024" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.113385826771654" LOCALSCY="0.113385826771654" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/icons8-battle-100-black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="1032.90631976186" gYpos="2257.66602650277" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="1046.58348511619" YPOS="2257.61878240828" OwnPage="4" ItemID="268104352" PTYPE="2" WIDTH="11.3385826771654" HEIGHT="11.3385826771654" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0221456692913387" LOCALSCY="0.0221456692913387" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/dés/archery_black.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" copath="M0 0 L11.3386 0 L11.3386 11.3386 L0 11.3386 L0 0 Z" ImageRes="0" gXpos="1046.58348511619" gYpos="2257.61878240828" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="985.867141732283" YPOS="2300.01674803151" OwnPage="4" ItemID="268107184" PTYPE="2" WIDTH="233.858267716535" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.094297688595377" LOCALSCY="0.094297688595377" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="1581.14273228346" gYpos="1418.12698425196" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="738.130209333589" YPOS="2289.36585365854" OwnPage="4" ItemID="268101520" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="738.130209333589" gYpos="2289.36585365854" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="738.130209333589" YPOS="2360.23199539081" OwnPage="4" ItemID="268110016" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="738.130209333589" gYpos="2360.23199539082" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="1992.12698425197" OwnPage="4" ItemID="268098688" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="1992.12698425197" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2062.99312598425" OwnPage="4" ItemID="268115680" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2062.99312598425" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2044.56792913386" OwnPage="4" ItemID="268112848" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2044.56792913386" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2114.58367716535" OwnPage="4" ItemID="268974816" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2114.58367716535" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2133.00887401574" OwnPage="4" ItemID="268988976" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2133.00887401574" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2184.88288976377" OwnPage="4" ItemID="268980480" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2184.88288976377" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2203.30808661416" OwnPage="4" ItemID="268983312" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2203.30808661416" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2254.04824409447" OwnPage="4" ItemID="268977648" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2254.04824409448" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2272.7569055118" OwnPage="4" ItemID="268991808" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2272.7569055118" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="2293.73328346455" OwnPage="4" ItemID="268997472" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="2293.73328346455" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="985.827771653543" YPOS="1975.11911023622" OwnPage="4" ItemID="268986144" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="985.827771653543" gYpos="1975.11911023622" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="738.130209333589" YPOS="2274.05876704436" OwnPage="4" ItemID="268994640" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="738.130209333589" gYpos="2274.05876704437" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="738.130209333589" YPOS="2342.09026310735" OwnPage="4" ItemID="269011632" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="738.130209333589" gYpos="2342.09026310736" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="738.130209333589" YPOS="2408.98790090262" OwnPage="4" ItemID="269008800" PTYPE="5" WIDTH="233.858267716535" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" SHADE="0" PCOLOR2="Black" PLINEART="1" path="" gXpos="738.130209333589" gYpos="2408.98790090263" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="171.00887401575" YPOS="2896.34745669291" OwnPage="5" ItemID="269000304" PTYPE="12" WIDTH="28.3464566929095" HEIGHT="28.3464566929134" FRTYPE="0" CLIPEDIT="0" ANNAME="Copie de Groupe 305 (24)" groupWidth="56.6929133858216" groupHeight="56.6929133858293" groupClips="1" path="M0 0 L28.3465 0 L28.3465 28.3465 L0 28.3465 L0 0 Z" copath="M0 0 L28.3465 0 L28.3465 28.3465 L0 28.3465 L0 0 Z" gXpos="34.157480314961" gYpos="208.000000000001" gWidth="1145.1968503937" gHeight="805.039370078745" LAYER="0">
+            <PAGEOBJECT XPOS="171.00887401575" YPOS="2896.34745669291" OwnPage="5" ItemID="269005968" PTYPE="2" WIDTH="56.6929133858216" HEIGHT="56.6929133858293" FRTYPE="0" CLIPEDIT="0" PWIDTH="0.833333333333371" PLINEART="1" LOCALSCX="0.0452096597973059" LOCALSCY="0.0452096597973059" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/badge_doree.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" copath="M0 0 L56.6929 0 L56.6929 56.6929 L0 56.6929 L0 0 Z" gXpos="0" gYpos="0" gWidth="56.6929133858216" gHeight="56.6929133858293" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+            <PAGEOBJECT XPOS="181.638795275592" YPOS="2906.97737795276" OwnPage="5" ItemID="269014464" PTYPE="2" WIDTH="35.4330708661385" HEIGHT="35.4330708661434" FRTYPE="0" CLIPEDIT="0" PWIDTH="0.833333333333371" PLINEART="1" LOCALSCX="0.553641732283414" LOCALSCY="0.553641732283414" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../../../Plateau/Battlelore of the Ring/icons8-crown-black.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L35.4331 0 L35.4331 35.4331 L0 35.4331 L0 0 Z" copath="M0 0 L35.4331 0 L35.4331 35.4331 L0 35.4331 L0 0 Z" gXpos="10.6299212598417" gYpos="10.6299212598429" gWidth="56.6929133858216" gHeight="56.6929133858293" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="172.174228346458" YPOS="2948.89076377953" OwnPage="5" ItemID="269003136" PTYPE="2" WIDTH="28.3464566929125" HEIGHT="28.3464566929125" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PLINEART="1" LOCALSCX="0.0299329004149023" LOCALSCY="0.0299329004149023" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/badges/logo.png" PRFILE="Embedded sRGB built-in" IRENDER="0" EPROF="Embedded sRGB built-in" path="M0 0 L28.3465 0 L28.3465 28.3465 L0 28.3465 L0 0 Z" copath="M0 0 L28.3465 0 L28.3465 28.3465 L0 28.3465 L0 0 Z" gXpos="172.174228346458" gYpos="2948.89076377953" gWidth="28.3464566929125" gHeight="28.3464566929125" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="418.875015748031" YPOS="2870.90651181104" OwnPage="5" ItemID="269028624" PTYPE="2" WIDTH="233.858267716535" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.094297688595377" LOCALSCY="0.094297688595377" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="1609.42619685039" gYpos="1107.12698425196" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="170.867141732283" YPOS="3348.8198976378" OwnPage="5" ItemID="269025792" PTYPE="4" WIDTH="233.858267716535" HEIGHT="59.5275590551181" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #374317" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 59.5276 L0 59.5276 L0 0 Z" copath="M0 0 L233.858 0 L233.858 59.5276 L0 59.5276 L0 0 Z" gXpos="170.867141732283" gYpos="3348.8198976378" gWidth="0" gHeight="0" PSTYLE="A retenir" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="A retenir"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="À retenir"/>
+                <para PARENT="A retenir"/>
+                <ITEXT CH="Le profil donne le type, la classe et le mode ; en jeu, le jeton rappelle la classe et le mode"/>
+                <trail PARENT="A retenir"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="894.764087478394" YPOS="825.04037007874" OwnPage="0" ItemID="269022960" PTYPE="4" WIDTH="196.300596696754" HEIGHT="19.8425196850394" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L196.301 0 L196.301 19.8425 L0 19.8425 L0 0 Z" copath="M0 0 L196.301 0 L196.301 19.8425 L0 19.8425 L0 0 Z" gXpos="894.764087478394" gYpos="825.04037007874" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" FONT="Alegreya Sans Regular"/>
+                <ITEXT FONT="Alegreya Sans Regular" CH="Version 0.15"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="3209.92225984252" OwnPage="6" ItemID="269020128" PTYPE="4" WIDTH="233.858267716535" HEIGHT="62.3622047244095" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #374317" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 62.3622 L0 62.3622 L0 0 Z" copath="M0 0 L233.858 0 L233.858 62.3622 L0 62.3622 L0 0 Z" gXpos="737.796275590551" gYpos="3209.92225984252" gWidth="0" gHeight="0" PSTYLE="A retenir" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="A retenir"/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="À retenir"/>
+                <para PARENT="A retenir"/>
+                <ITEXT CH="Tout le monde se déplace, puis tout le monde attaque."/>
+                <trail PARENT="A retenir"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="737.796275590551" YPOS="3065.35533070866" OwnPage="6" ItemID="269017296" PTYPE="4" WIDTH="233.858267716535" HEIGHT="136.062992125984" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="RVB #c69251" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="5.66929133858268" BEXTRA="5.66929133858268" REXTRA="0" VAlign="1" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L233.858 0 L233.858 136.063 L0 136.063 L0 0 Z" copath="M0 0 L233.858 0 L233.858 136.063 L0 136.063 L0 0 Z" gXpos="737.796275590551" gYpos="3065.35533070866" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="Alegreya Sans Bold" FEATURES="inherit smallcaps" CH="Exemple"/>
+                <para PARENT="Exemple"/>
+                <ITEXT CH="Un scénario place un objectif d'occupation sur un gué et fixe la victoire à 6 points. À la fin de son tour, le Bien a mis 4 unités ennemies en déroute et tient le gué : il compte 5 points. Au tour suivant, des Orques chassent ses Guerriers de Minas Tirith du gué et s'y installent. À l'étape des points de victoire du Mal, la médaille du gué change de camp : le Bien retombe à 4 points."/>
+                <trail PARENT="Exemple"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="738.875015748031" YPOS="3283.90651181104" OwnPage="6" ItemID="419415680" PTYPE="2" WIDTH="233.858267716535" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.094297688595377" LOCALSCY="0.094297688595377" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="1929.42619685039" gYpos="1520.12698425196" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="986.875015748031" YPOS="2817.90651181104" OwnPage="6" ItemID="419412848" PTYPE="2" WIDTH="233.858267716535" HEIGHT="24.7812560015366" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" TEXTFLOWMODE="1" LOCALSCX="0.094297688595377" LOCALSCY="0.094297688595377" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="../06 - Images/charte/separateur_08_300dpi.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" copath="M0 0 L233.858 0 L233.858 24.7813 L0 24.7813 L0 0 Z" ImageRes="0" gXpos="2177.42619685039" gYpos="1054.12698425196" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

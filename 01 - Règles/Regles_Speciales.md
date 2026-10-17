@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-05"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.41"
+version: "0.43"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -63,7 +63,7 @@ L'ordre de résolution d'un combat est celui de [[Regles_Base]] §7.1. Les signa
 
 1. **Avant le décompte** — relances : [Relance X], [Horde] *(sans porteur actif, D090)*.
 2. **Au décompte des touches** — effets de **Couronne** (badge Leader uniquement, D089) et effets de **Pouvoir** ([Charge écrasante]… — migrées depuis Couronne, D089).
-3. **Sauvegardes et réductions défensives** — [Armure] (1 dé par touche, D143) puis [Protection X].
+3. **Sauvegardes et réductions défensives** — [Protection] (1 touche, D193) puis [Armure] (1 dé par touche, D143, D164).
 4. **Retraites** — les **Drapeaux**, plus les Drapeaux issus de la face **Pouvoir** via [Peur X] ; [Inébranlable X] (jusqu'à ∞) peut absorber le tout, quelle qu'en soit la source (facultatif, D182).
 
 > 🎲 **Note (D089).** Toutes les règles spéciales/signature à déclenchement par face se résolvent désormais sur **Pouvoir** (y compris [Peur X], déjà le cas depuis D033, et [Charge écrasante], migrée depuis Couronne). La **Couronne** est réservée au badge **Leader** — sur une unité qui ne le porte pas, elle est sans effet. Une unité pourrait en théorie cumuler Peur (Pouvoir, intrinsèque Créature) et une autre règle à Pouvoir sur le même jet : dans ce cas les deux effets s'appliquent, chacun sur sa propre attaque (aucun cas actif ne collisionne à ce jour — voir Mûmakil, `02 - Factions/Harad.md`, où Peur ne porte que sur l'attaque de charge et [Howdah] sur un jet de tir séparé).
@@ -78,7 +78,7 @@ Vocabulaire universel. Ne compte **pas** dans le plafond de signatures d'une uni
 
 ### [Armure]  *(mécanique unique de sauvegarde — D143)*
 
-Pour chaque **touche subie** — après [Protection X] le cas échéant (D164) —, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Pouvoir** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises. **Ne s'applique pas aux touches de retraite bloquée** ([[Regles_Base]] §9.3, D165).
+Pour chaque **touche subie** — après [Protection] le cas échéant (D164) —, le défenseur lance **1 dé spécial**. La touche est **annulée** sur un résultat **Pouvoir** — et aussi sur **Couronne** si l'unité porte le badge **Leader** (D093). Vaut contre **toute** attaque reçue, mêlée comme tir, et contre toutes les faces, Épées croisées comprises. **Ne s'applique pas aux touches de retraite bloquée** ([[Regles_Base]] §9.3, D165).
 
 Probabilité de base : 1 face sur 6 annule chaque touche. Avec un Leader porté par l'unité, la fenêtre de sauvetage s'élargit à 2 faces sur 6 — synergie gratuite avec le badge Leader déjà payé séparément.
 
@@ -88,9 +88,11 @@ Probabilité de base : 1 face sur 6 annule chaque touche. Avec un Leader porté 
 
 > 🔄 **Généralisée — P13 (D143), après le Playtest #5.** **[Armure X] est supprimée** : la réduction statique de faces Épée n'existe plus, et avec elle disparaissent la valeur X et son nom d'usage **[Défense X]** (§4a). Le jet de sauvetage devient la mécanique de défense **unique du jeu**, pour le plancher 🔴 comme pour les Créatures. C'est la version qui a été jouée au Playtest #5 et validée à la table — le glossaire n'avait jamais transcrit l'intention complète de D103. Conséquences : les Épées croisées, jusqu'ici imparables, deviennent sauvables ; les unités rouges gagnent une protection contre le tir qu'elles n'avaient pas ; [Discipline de cohorte] (§4a) et Elladan (`Gondor_et_Fiefs`) confèrent désormais [Armure] au lieu de [Défense 1]. Aucun profil actif ne portait [Armure 2] — les Cataphractaires l'ont perdue en D072 — donc l'abandon du X ne casse aucun profil. Principe 8 : une seule mécanique de sauvegarde à retenir au lieu de deux, de noms voisins et de fonctionnements opposés.
 
-### [Protection X]
+### [Protection]  *(sans valeur depuis D193)*
 
-Une unité en position protégée (terrain) ignore **X touches** après décompte des dégâts, **avant** le jet d'[Armure] (D164).
+Une unité en position protégée (bâtiment) ignore **1 touche** par attaque reçue après décompte des dégâts, **avant** le jet d'[Armure] (D164). Non cumulable.
+
+> 🔄 **[Protection X] devient [Protection] — P14b (D193).** Au-delà de 1, la protection était beaucoup trop forte. Le barème ci-dessous, par type de bâtiment, est conservé pour l'historique : tout bâtiment vaut désormais [Protection].
 
 | Position | Valeur |
 |---|---|
@@ -142,11 +144,15 @@ Le tour où cette unité **s'est déplacée puis attaque en mêlée**, chaque fa
 
 Chaque **retrait forcé** (recul de combat) de cette unité compte **double** (déplacement de recul et éventuels dégâts de collision doublés, selon la règle qui déclenche le retrait).
 
+> ⚔️ **Lecture (D187).** Chaque Drapeau fait reculer l'unité de **2 hexagones** ; si la retraite est bloquée, elle perd 1 figurine par hexagone non parcouru, donc jusqu'à 2 par Drapeau. Les Drapeaux ignorés par [Inébranlable] ne font rien.
+
 > 🔄 **Créée — P4 (D070)**, premier badge/règle à **coût négatif** du projet : **−2 brut**, symétrique au coût des badges positifs existants. Traduit un moral fragile et une motivation strictement pécuniaire — l'unité cède plus volontiers le terrain qu'une troupe régulière ou fidèle. Porteuse d'origine : Khand (badge Faction, D070) — généralisable à toute future troupe mercenaire d'un autre peuple.
 
 ### [Discipline de cohorte]  *(nouveau, D104 — Faction Orientaux)*
 
 > À la fin de son activation, l'unité peut se mettre en **position défensive** (poser un marqueur dédié). Elle **renonce** à toute riposte jusqu'à sa prochaine activation, mais gagne **[Armure]** *(D143 — était [Défense 1])* et **[Inébranlable 1]** tant que le marqueur est en place. Le marqueur est retiré au début de l'activation suivante de l'unité (avant qu'elle n'agisse).
+
+> ⚔️ **Précisions (D191).** La posture se prend **aussitôt après l'attaque** de l'unité — ou à l'étape d'attaque si, activée, elle renonce à attaquer — et se matérialise par un **jeton de position défensive** dédié. Le jeton reste en place si l'unité recule.
 
 > 🔄 **Créée — P8 (D104), Faction Orientaux.** Remplace [Défense 1] comme trait de peuple des Orientaux — pas une posture passive gratuite : le compromis (perte de la riposte) est le prix de la solidité. Disponible en option sur les **Cohortes** (guerriers et piquiers) uniquement — ni les archers, ni les Cataphractaires, dont l'identité de peuple ne repose pas sur la formation serrée. **Coût : +2 brut** (forfait, sous la somme brute de [Défense 1]+[Inébranlable 1] = 4, remise pour la contrepartie de jeu — jugement, à confirmer au playtest).
 
@@ -188,6 +194,8 @@ L'unité porte **[Inébranlable 1]** (peut ignorer 1 résultat de retraite par a
 
 #### [Horde]  — *badge Faction, réactivée (D092) — Mordor*
 
+> ⚠️ **Version périmée, conservée pour l'historique.** La règle en vigueur est la troisième version (D105), au §2 : +1 dé et [Inébranlable 1] à pleine santé, sans aucun effet négatif ensuite. Correction de forme, sans numéro D.
+
 Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d'attaque**. Dès qu'elle subit sa **première touche**, elle perd ce bonus **et** passe immédiatement en **état Faible** ([[Regles_Base]] §2.2 : ses faces Épée cessent de toucher) — **quel que soit le nombre de figurines qu'il lui reste**, pas seulement à la dernière.
 
 > 🎲 « Très fort au premier choc, s'effondre au premier sang » : la horde d'orques nombreuse, redoutable en masse et vite débandée dès qu'elle encaisse. Condition lisible au nombre de figurines, sans jeton. Inspirée des *Warriors* de C&C Ancients.
@@ -200,7 +208,9 @@ Tant que cette unité **n'a subi aucune touche**, elle bénéficie de **+1 dé d
 
 #### [Poison]  — *badge Faction, réactivée (D092) — Harad*
 
-Lorsque cette unité attaque, chaque face **Pouvoir** inflige **1 touche supplémentaire** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)*.
+Quand cette unité attaque ou riposte, chaque face **Pouvoir** **empoisonne** sa cible, **sans la toucher** : posez le jeton *Empoisonnée* à côté d'elle. **Toute attaque ou riposte contre une unité empoisonnée touche aussi sur Pouvoir**, que l'attaquant porte [Poison] ou non. Le jeton reste jusqu'à la déroute ; une unité n'est empoisonnée qu'une fois. Sur une cible empoisonnée, le Pouvoir touche et déclenche aussi la règle de l'attaquant ([Peur]…).
+
+> 🔄 **Refondue — P14b (D194).** Remplace la version D089 (« chaque Pouvoir inflige 1 touche supplémentaire ») : retour à la règle d'origine du système, le poison qui affaiblit la cible pour toute l'armée. Forfait de +1 brut **à revoir en P14d** (point ouvert de barème).
 
 > 🎲 Ancien fil conducteur du Harad (flèches et lames empoisonnées). Porté par tout le roster d'escorte et la volée du Mûmakil ([Howdah]) jusqu'à D090 — retiré des deux, y compris du Mûmakil (`02 - Factions/Harad.md`).
 
@@ -218,7 +228,7 @@ Cette unité peut effectuer sa riposte même si l'attaque subie la force à recu
 
 #### [Mercenaire]  — *badge Faction, réactivée (D092) — Khand*  *(coût négatif)*
 
-Chaque retrait forcé (recul de combat) de cette unité compte double (voir §2, socle générique).
+Chaque retrait forcé (recul de combat) de cette unité compte double (voir §2, socle générique) : chaque Drapeau = 2 hexagones de retraite (lecture D187).
 
 > 🎲 Assignable aux troupes mercenaires et pillards de Khand. **L'Aurige de Khand ne le porte pas** : seul corps régulier du peuple, pas un mercenaire — exclusion par identité (D070).
 
@@ -248,19 +258,21 @@ Chaque face **Pouvoir** obtenue en attaque compte comme **X Drapeaux** contre la
 >
 > 🔄 **Devenue intrinsèque au type Créature — P4 (D071)** : **toute créature porte [Peur 1] et [Armure 1] sans supplément de coût** — ce n'est plus une signature à assigner unité par unité (voir [[Regles_Base]] §2.3, à ajouter). Première application : Troll du Mordor. S'applique aussi au Mûmakil (Harad), sans redondance avec ses règles bespoke déjà en place ([Howdah], [Charge écrasante], [Inébranlable ∞]).
 
-#### [Terreur]  — *signature, créée au Playtest #4 (D094)*
+#### ~~[Terreur]~~  — *supprimée (D185)*
+
+> 🔄 **Supprimée — P14b (D185).** [Terreur] était exactement [Peur 2] : le Roi-Sorcier porte désormais **[Peur 2]**, même mécanique, même coût. Texte d'origine conservé ci-dessous pour l'historique.
 
 Chaque face **Pouvoir** obtenue en attaque compte comme **2 Drapeaux** contre la cible (au lieu d'un échec). Comme [Peur X], n'inflige **aucune touche** — la Terreur fait rompre, elle ne tue pas. Annulable par l'[Inébranlable X] de la cible.
 
 > 🎲 **Version renforcée de [Peur X]**, X fixé à 2 plutôt que gradué — sort de la différée « Terreur (X élevé) » évoquée depuis D062 §7. Réservée aux figures de terreur pure du récit (Nazgûl, Roi-Sorcier) : premier porteur, le **Roi-Sorcier sur l'ombre ailée** (§4b), validé au Playtest #4.
 
-#### [Archer en mêlée]  — *Compagnie Grise (Legolas), redevenu actif P8*
+#### [Archer en mêlée]  — *Compagnie Grise (Legolas), redevenu actif P8 — défini au livret de référence (D186)*
 
 Les faces **Arc** infligent aussi une touche lors d'une attaque de **mêlée** (normalement inertes en mêlée).
 
 > 🎲 Précision hors norme, dangereuse jusqu'au corps à corps. **Sans porteur de P4/D073 à P8** (la Compagnie Grise l'avait remplacé par le badge Légende) — **redevient actif P8** : la Compagnie Grise repasse en pièce bespoke à règles nommées par figurine, et Legolas la porte à nouveau tant qu'il est présent (voir [[Gondor_et_Fiefs]] §3).
 
-#### [Vigilant]  — *Roi-Sorcier sur l'ombre ailée (Mordor)*
+#### [Vigilant]  — *Roi-Sorcier sur l'ombre ailée (Mordor) — défini au livret de référence (D186)*
 
 La cible d'une attaque de cette unité **ne peut pas riposter**, quelle que soit l'issue. Mêlée ou tir à bout portant.
 
@@ -290,7 +302,7 @@ En plus de son attaque normale, cette unité effectue **une attaque de tir de X 
 
 ### Signatures bespoke — Mûmakil
 
-Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par équivalence d'impact, pas à la formule). Le Mûmakil porte aussi **[Inébranlable ∞]** (socle, ex-[Inamovible]) et, depuis P5 (D079), **[Protection 1] contre le tir uniquement** (formalise le houserule appliqué au Playtest #2, où la bête avait été traitée comme cible molle).
+Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par équivalence d'impact, pas à la formule). Le Mûmakil porte aussi **[Inébranlable ∞]** (socle, ex-[Inamovible]) et, depuis P5 (D079), **[Protection 1] contre le tir uniquement** (formalise le houserule appliqué au Playtest #2, où la bête avait été traitée comme cible molle) — *supersédée par [Armure] depuis D103 (`[[Harad]]` §3) ; correction de forme, sans numéro D.*
 
 #### [Charge écrasante]  *(bespoke)*
 
@@ -313,10 +325,10 @@ Le Mûmakil entre en **Furie** dès qu'il tombe à **son dernier point de vie (1
 Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor). Non encore chiffré ni intégré à `02 - Factions/Mordor.md` — repricing et intégration formelle renvoyés à **P8**.
 
 - **6 PV**, **4 dés d'attaque** (classe 🔴).
-- **[Terreur]** (voir ci-dessus) : chaque Pouvoir = 2 Drapeaux.
+- **[Peur 2]** (ex-[Terreur], D185) : chaque Pouvoir = 2 Drapeaux.
 - **[Vigilant]** (socle, §2) : ne peut jamais subir de riposte.
-- **[Vol]** *(bespoke, première application)* : à son activation, se déplace de **4 hexagones** sans tenir compte des figurines présentes sur le trajet (traverse librement unités et terrain).
-- **Intrinsèques Créature** (D071, D143) : [Armure], [Peur 1] — coexistent avec [Terreur] ; en pratique [Terreur] est la version employée en attaque, [Peur 1] reste la valeur plancher du type.
+- **[Vol 4]** *(mot-clé [Vol X] défini au livret de référence, D186)* : à son activation, se déplace de **4 hexagones** sans tenir compte des figurines présentes sur le trajet (traverse librement unités et terrain).
+- **Intrinsèques Créature** (D071, D143) : [Armure], [Peur 1] — [Peur 2] du profil remplace [Peur 1] (D185).
 
 > 🎲 **« Machine de terreur »** (verdict du Playtest #4) — a joué son rôle de pièce de rupture, mobile et intouchable au contre. Porte, en plus de ce profil générique, une règle strictement propre au scénario Pelennor (bonus contre l'unité de Théoden) : voir `[[Playtest4_Compte-rendu]]` et le document de scénario `03 - Scénarios/`, pas ce glossaire.
 
@@ -326,7 +338,7 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 
 | Règle | Famille | Résumé |
 |---|---|---|
-| **[Archer en mêlée]** | Sans porteur actif | Les faces Arc touchent aussi en mêlée |
+| **[Archer en mêlée]** | Mot-clé du livret de référence (D186) — porteur : Legolas (Compagnie Grise) | Les faces Arc touchent aussi en mêlée |
 | **[Arme de jet X]** | Socle *(sans porteur actif)* | Le tour où l'unité s'est déplacée puis attaque en mêlée, chaque Arc compte aussi comme touche |
 | **[Relance X]** | Socle | Relance X dés (mêlée ou tir) — absorbe l'ex-[Perforant X] |
 | **[Armure]** | Socle *(mécanique unique de sauvegarde, D143)* | 1 dé par touche subie, annulée sur Pouvoir — ou Pouvoir/Couronne avec un Leader ; mêlée et tir |
@@ -336,24 +348,24 @@ Nouveau profil signature, type **Créature**, créé pour le Playtest #4 (Mordor
 | **[Double Tir]** | Sans porteur actif | Seconde attaque à distance si non déplacé |
 | ~~**[Défense X]**~~ | **Supprimée (D143)** | Lire [Armure] partout où elle était portée |
 | **[Férocité]** | Badge Faction, réactivée (D092) — Rohan *(aussi disponible au socle)* | Riposte même en cas de recul forcé, puis recule |
-| **[Horde]** | Badge Faction, réactivée (D092) — Mordor | +1 dé à pleine santé, Faible dès la 1ʳᵉ touche — refondue P4/D075 |
+| **[Horde]** | Badge Faction (D092) — Mordor | +1 dé et [Inébranlable 1] à pleine santé, sans effet négatif ensuite — troisième version, D105 |
 | **[Howdah]** | Signature bespoke (Mûmakil) | = [Plateforme de tir 2] *([Poison] retiré, D090)* |
 | **[Inébranlable X]** | Socle | Peut ignorer jusqu'à X retraites, au choix (D182) ; ∞ = ne recule jamais, ex-[Inamovible] |
 | **[Leader]** | Badge *(formalisé D093, sort de la réserve Phase 2)* | Touche aussi sur Couronne ; [Inébranlable 1] à son unité + unités amies adjacentes ; statut Général et valeur de Destin possibles — [[Regles_Base]] §2.2bis |
-| **[Mercenaire]** | Badge Faction, réactivée (D092) — Khand *(coût négatif)* | Chaque retrait forcé compte double |
+| **[Mercenaire]** | Badge Faction, réactivée (D092) — Khand *(coût négatif)* | Chaque Drapeau = 2 hexagones de retraite (D187) |
 | **[Mobilité X]** | Intrinsèque (tir léger/monté) | Déplacement +X hex après avoir attaqué — grille [[Regles_Base]] §2.4 |
 | **[Mur de bouclier]** | Sans porteur actif *(depuis P7c/D081, confirmé au Playtest #4)* | [Protection 1] tant qu'aucune touche subie, perdue définitivement à la 1ʳᵉ |
 | **[Poursuite X]** *(intrinsèque)* | Intrinsèque (cavalerie de mêlée, Chars compris — D183) | 2 en 🟢/🔵, 1 en 🔴 — grille [[Regles_Base]] §2.4 |
 | **[Armure]** *(intrinsèque)* | Intrinsèque (lourd 🔴 + type Créature) | Gratuite sur toute unité 🔴 et toute Créature — grille [[Regles_Base]] §2.4 (D071, D143) |
 | **[Peur X]** | Intrinsèque (type Créature) | Chaque Pouvoir = X Drapeaux (n'inflige pas de touche) — devenue intrinsèque P4/D071, plus une signature à assigner |
 | **[Plateforme de tir X]** | Sans porteur actif | Tir de X dés (portée 1–3) en plus de l'attaque, 1×/activation |
-| **[Poison]** | Sans porteur actif *(ex-badge Faction Harad, retiré D090, non réactivé au Playtest #4)* | Pouvoir → 1 touche supplémentaire (migré depuis Couronne, D089) |
+| **[Poison]** | Badge Faction (Harad, option depuis D101) | Pouvoir → jeton Empoisonnée ; toute attaque contre une cible empoisonnée touche aussi sur Pouvoir (D194) |
 | **[Poursuite X]** | Socle | Alternative à l'avance : déplacement + attaque supplémentaire |
-| **[Terreur]** | Signature *(créée D094)* | Chaque Pouvoir = 2 Drapeaux — version renforcée de [Peur X], porteur : Roi-Sorcier sur l'ombre ailée |
-| **[Vol]** | Bespoke *(première application, D095)* | Déplacement de X hex ignorant les figurines sur le trajet — porteur : Roi-Sorcier sur l'ombre ailée |
+| ~~**[Terreur]**~~ | **Supprimée (D185)** | Lire [Peur 2] |
+| **[Vol X]** | Mot-clé du livret de référence (D186) | Déplacement jusqu'à X hex en survolant unités et terrain — porteur : Roi-Sorcier sur l'ombre ailée ([Vol 4]) |
 | **[Prise de flanc]** | Sans porteur actif *(depuis D101/D102)* | +1 dé aux attaques amies contre une ennemie adjacente à cette unité |
-| **[Protection X]** | Socle | Ignore X touches (terrain, fortifications) |
-| **[Vigilant]** | Signature (Roi-Sorcier) | La cible de cette unité ne peut pas riposter |
+| **[Protection]** | Socle *(sans valeur, D193)* | Ignore 1 touche par attaque (bâtiment) |
+| **[Vigilant]** | Mot-clé du livret de référence (D186) — porteur : Roi-Sorcier | La cible de cette unité ne peut pas riposter |
 
 ---
 
@@ -398,6 +410,10 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.43 — Phase 1 — 2026-10-17. **D193** : [Protection X] devient [Protection], 1 touche, non cumulable ; ordre de résolution corrigé ([Protection] avant [Armure], conforme à D164). **D194** : [Poison] refondu, jeton Empoisonnée. Correction de forme, sans numéro D : la [Protection 1] contre le tir du Mûmakil est signalée comme supersédée par [Armure] (D103).*
+
+*Version : 0.42 — Phase 1 — 2026-10-17. **P14b.** **D185** : [Terreur] supprimée, le Roi-Sorcier porte [Peur 2]. **D186** : [Vigilant], [Vol X] (Roi-Sorcier [Vol 4]) et [Archer en mêlée] sont des mots-clés du livret de référence. **D187** : lecture de [Mercenaire], chaque Drapeau = 2 hexagones. **D191** : [Discipline de cohorte] se prend après l'attaque, jeton dédié. Corrections de forme, sans numéro D : la version périmée de [Horde] au §4a est signalée comme telle (règle en vigueur : D105, §2) ; récapitulatif — [Horde] alignée sur D105, [Poison] n'est plus « sans porteur actif ».*
 
 *Version : 0.41 — Phase 1 — 2026-10-05. **D183** : les Chars portent les intrinsèques de la Cavalerie ; porteurs de [Poursuite X] précisés au récapitulatif.*
 

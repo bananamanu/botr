@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-05"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.10"
+version: "2.11"
 ---
 
 # Khand — Profils d'unités
@@ -18,7 +18,7 @@ version: "2.10"
 
 ## 1. Faction de Khand — [Mercenaire]
 
-Retrait forcé compte double. **Outil optionnel, coût négatif** : **−2 brut**. Disponible sur tout le roster sauf l'Aurige.
+Chaque Drapeau fait reculer l'unité de 2 hexagones au lieu d'un ; retraite bloquée : 1 perte par hexagone non parcouru (lecture D187). **Outil optionnel, coût négatif** : **−2 brut**. Disponible sur tout le roster sauf l'Aurige.
 
 > 🔄 **D140 — deux porteurs au Pelennor (Playtest #5).** Le badge n'avait **aucun porteur** à l'ordre de bataille du scénario, Khand étant le seul peuple à entrer en jeu sans identité mécanique visible : sa Faction est un malus que personne ne prend volontairement. Deux Pillards le portent désormais — un **hache** (5 → **4**) et un **archer** (3 → **2**) — et la Section droite du Mal perd 2 points, sans compensation. Voir `[[Pelennor_Epique]]` §3.2.
 
@@ -81,6 +81,8 @@ Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regl
 - **[Peur 1 contre les bannières vertes], tarif +2 non testé** — à confirmer au playtest : est-ce trop fort face à un roster où les classes 🟢 dominent (Harad, Khand lui-même en miroir), ou trop anecdotique face à des rosters à dominante 🔵/🔴 ?
 
 ---
+
+*Version : 2.11 — Phase 1 — 2026-10-17. **D187** : lecture de [Mercenaire] explicitée au §1 (chaque Drapeau = 2 hexagones). Aucun coût modifié.*
 
 *Version : 2.10 — Phase 1 — 2026-10-05. **D183** : l'Aurige porte [Poursuite 2], intrinsèque de la Cavalerie 🔵 mêlée, déjà comprise dans son coût (7, inchangé). Note pour P14d : « [Peur 1 contre les bannières vertes] » entre en collision avec le nom des cartes Bannières vertes ; à formuler « contre les unités vertes » au livret Factions.*
 

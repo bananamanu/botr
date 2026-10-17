@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "composant"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-04"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/composant", "phase/1", "statut/brouillon"]
-version: "0.21"
+version: "0.23"
 ---
 
 # Batailles de la Terre du Milieu — Cartes de commandement
@@ -49,7 +49,7 @@ En Phase 1, la valeur de commandement est fixée par le format (voir §3). En Ph
 > 💡 **Exemple de jeu**
 > Un joueur joue "Percée Gauche" avec 4 cartes en main (dont "Percée Gauche" elle-même). Sa valeur de commandement est 4 : il peut activer jusqu'à 4 unités dans la section gauche.
 
-> ⚔️ **Ordre direct en Épique (D129).** Sur un plateau de 13 × 17 avec 60 unités en jeu, activer une seule unité n'a plus de portée. En format **Épique uniquement**, Ordre direct active **`valeur de commandement ÷ 2`, arrondie au supérieur** — soit, au Pelennor en début de partie, **4 unités** pour le Bien (main de 8 cartes) et **3** pour le Mal (main de 6), la main de camp comptant 4 cartes + 1 par Général vivant (D144). Le +1 dé s'applique à chacune. Les formats Normal et Escarmouche gardent l'unité unique.
+> ⚔️ **Ordre direct en Épique (D129).** Sur un plateau de 17 × 13 avec 60 unités en jeu, activer une seule unité n'a plus de portée. En format **Épique uniquement**, Ordre direct active **`valeur de commandement ÷ 2`, arrondie au supérieur** — soit, au Pelennor en début de partie, **4 unités** pour le Bien (main de 8 cartes) et **3** pour le Mal (main de 6), la main de camp comptant 4 cartes + 1 par Général vivant (D144). Le +1 dé s'applique à chacune. Les formats Normal et Escarmouche gardent l'unité unique.
 
 ### 1.3 Deck partagé
 
@@ -101,7 +101,7 @@ Chaque carte de commandement comporte les informations suivantes, du haut vers l
 |---|---|---|---|---|
 | **Escarmouche** | 10 × 7 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **2 Généraux max** par camp (D147) | 45 cartes |
 | **Normal** | 13 × 9 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **3 Généraux max** par camp (D147) | 60 cartes |
-| **Épique** | 13 × 17 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **sans limite** de Généraux (main de camp, tenue par le joueur Centre — D144, D147) | 60 cartes (deck Normal réutilisé tel quel) |
+| **Épique** | 17 × 13 | 3 (G / C / D) | 4 cartes + 1 par Général vivant — **sans limite** de Généraux (main de camp, tenue par le joueur Centre — D144, D147) | 60 cartes (deck Normal réutilisé tel quel) |
 
 > 🔄 **Résolu (D087)**
 > Le format Épique réutilise le deck Normal sans modification — mêmes 60 cartes, même règle de main : 4 cartes + 1 par Général vivant du camp (D144, D147, [[Regles_Base]] §2.2bis). La montée en puissance à 6 joueurs vient du **râtelier de Commandement** partagé (§7), pas d'un deck dédié. Adapté d'*Epic BattleLore* (Days of Wonder, V1, 2007).
@@ -161,6 +161,8 @@ Ces cartes activent des unités selon leur position sur le plateau. Le Centre re
 | Éclaireur Gauche | 2 | Activez 1 unité dans la section gauche. Au lieu de piocher normalement en fin de tour, piochez 2 cartes et défaussez-en 1. |
 | Éclaireur Centre | 2 | Activez 1 unité dans la section centrale. Au lieu de piocher normalement en fin de tour, piochez 2 cartes et défaussez-en 1. |
 | Éclaireur Droite | 2 | Activez 1 unité dans la section droite. Au lieu de piocher normalement en fin de tour, piochez 2 cartes et défaussez-en 1. |
+
+> ⚔️ **Éclaireur pris au râtelier (D189).** En Épique, un Éclaireur pris au râtelier ne fait pas piocher pour la main : le camp retourne 2 cartes de la pioche, en place une dans le râtelier et défausse l'autre.
 
 **Patrouille** — Section unique, 2 unités _(11 cartes — présentes en Escarmouche)_
 
@@ -300,7 +302,7 @@ _Exemple (non définitif, à des fins d'illustration uniquement) :_
 
 Chaque camp compte 3 joueurs, un par Section. Chaque camp nomme ses Sections depuis son propre bord ([[Regles_Base]] §5.1, D150) : le joueur Gauche d'un camp fait face au joueur Droite de l'autre. Le camp ne tient qu'**une seule main**, comme en format Normal (§5.1-§5.4 de [[Regles_Base]]) — c'est le **joueur Centre** qui la tient et qui décide, à chaque tour de son camp, quelle(s) carte(s) jouer, en concertation avec ses deux coéquipiers Gauche et Droite. Il **montre la main à ses coéquipiers**, jamais à l'adversaire, et garde le dernier mot (D177).
 
-Une fois la carte choisie, chaque joueur déplace et fait combattre les unités de **sa propre** Section : le joueur Centre ne joue pas à la place de ses coéquipiers, il choisit seulement quel ordre est donné. Sur une carte multi-sections (En marche, En avant, Encerclement) ou une carte Tactique touchant plusieurs sections (Charge de cavalerie, Cri de guerre, etc.), chaque joueur résout l'activation de ses propres unités concernées.
+Une fois la carte choisie, chaque joueur déplace et fait combattre les unités de **sa propre** Section : le joueur Centre ne joue pas à la place de ses coéquipiers, il choisit seulement quel ordre est donné. Sur une carte multi-sections (En marche, En avant, Encerclement) ou une carte Tactique touchant plusieurs sections (Charge de cavalerie, Cri de guerre, etc.), chaque joueur résout l'activation de ses propres unités concernées. Quand une carte active un **nombre limité** d'unités n'importe où (Charge de cavalerie, Assaut d'infanterie, Bannières, Ordre direct, Cri de guerre, règle d'urgence), les joueurs se répartissent les activations **à la discussion** ; en cas de désaccord, **le joueur Centre tranche** (D190).
 
 > 💡 **Exemple de jeu**
 > Le camp Bien joue « En avant » (2 unités par section). Le joueur Centre annonce la carte ; chacun des 3 joueurs déplace et fait combattre 2 de ses propres unités, dans sa propre Section.
@@ -313,7 +315,7 @@ Une fois la carte choisie, chaque joueur déplace et fait combattre les unités 
 
 En plus de sa main, chaque camp peut piocher dans un **râtelier commun** de 3 cartes, visibles des deux camps, posé à côté de la pioche. Avant le premier tour, remplir le râtelier avec les 3 cartes du dessus du deck Normal (§3, 60 cartes — deck unique, partagé entre les deux camps comme en Normal, §1.3).
 
-À la fin de son tour, si une carte a été prélevée dans le râtelier, un camp pioche une carte de remplacement depuis la pioche et la place dans le râtelier (visible des deux camps) — le râtelier doit toujours compter 3 cartes en début de tour. Si les 3 cartes du râtelier sont un jour toutes des cartes Tactiques, défaussez-les et repiochez 3 nouvelles cartes : le râtelier doit toujours contenir au moins une carte de section une fois reconstitué. *(Corpus joueur : ce cas rare est décrit au livret de référence, entrée Râtelier, et non au livret de règles — D176. Le livret de règles formule la repioche en une règle : chaque carte jouée est remplacée là d'où elle vient.)* Si la pioche s'épuise, mélangez la défausse pour former une nouvelle pioche.
+À la fin de son tour, si une carte a été prélevée dans le râtelier, un camp pioche une carte de remplacement depuis la pioche et la place dans le râtelier (visible des deux camps) — le râtelier doit toujours compter 3 cartes en début de tour. Un Éclaireur pris au râtelier y est remplacé par l'une de 2 cartes retournées, au choix du camp, l'autre étant défaussée (D189, §4.2). Si les 3 cartes du râtelier sont un jour toutes des cartes Tactiques, défaussez-les et repiochez 3 nouvelles cartes : le râtelier doit toujours contenir au moins une carte de section une fois reconstitué. *(Corpus joueur : ce cas rare est décrit au livret de référence, entrée Râtelier, et non au livret de règles — D176. Le livret de règles formule la repioche en une règle : chaque carte jouée est remplacée là d'où elle vient.)* Si la pioche s'épuise, mélangez la défausse pour former une nouvelle pioche.
 
 ### 7.3 Déroulement du tour
 
@@ -363,6 +365,10 @@ Règle complète et sources de gain : [[Regles_Base]] §5.6.
 > [[Regles_Base]] — [[Regles_Speciales]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.23 — Phase 1 — 2026-10-17. **D195** : format Épique noté 17 × 13 (colonnes × lignes), §1.2 et §3.1.*
+
+*Version : 0.22 — Phase 1 — 2026-10-17. **P14b.** **D189** : Éclaireur pris au râtelier (§4.2, §7.2). **D190** : en mode multi-joueurs, les activations des cartes à nombre limité se répartissent à la discussion, le joueur Centre tranche (§7.1).*
 
 *Version : 0.21 — Phase 1 — 2026-10-04. **Correction de nom, sans numéro D** (retour d'Emmanuel sur le chapitre 11) : les cartes Classe Verte / Bleue / Rouge s'appellent **Bannières vertes / bleues / rouges**, nom de la carte physique ; leur texte parle toujours d'unités de classe verte, bleue ou rouge.*
 

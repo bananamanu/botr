@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.12"
+version: "1.13"
 ---
 
 # Mordor — Profils d'unités
@@ -75,9 +75,9 @@ version: "1.12"
 
 | Type | Combat | Classe | Mouvement | Attaque | PV | **Points** |
 |---|---|---|---|---|---|---|
-| Créature | Mêlée | 🔴 *(nominal)* | [Vol] 4 cases *(ignore les figurines)* | 4 dés | 6 | **10** *(base)* / **17** *(avec Général+Destin 4, forme jouée au Pelennor)* |
+| Créature | Mêlée | 🔴 *(nominal)* | [Vol 4] *(survole unités et terrain)* | 4 dés | 6 | **10** *(base)* / **17** *(avec Général+Destin 4, forme jouée au Pelennor)* |
 
-**Règles :** [Terreur] (Pouvoir = 2 Drapeaux) · [Vigilant] (ne subit jamais de riposte) · [Vol] (bespoke, 4 cases, ignore les figurines).
+**Règles :** [Peur 2] (Pouvoir = 2 Drapeaux, ex-[Terreur], D185) · [Vigilant] (ne subit jamais de riposte) · [Vol 4] (4 hexagones, survole unités et terrain, D186). Ces trois mots-clés sont définis au livret de référence.
 
 **Défense (D103) :** **[Armure]** — même refonte que le Troll et le Mûmakil, remplace l'ancien [Armure 1] intrinsèque. Aucun changement de coût (déjà gratuit).
 
@@ -87,9 +87,9 @@ version: "1.12"
 |---|---|
 | Socle (Mvt 4 + PV 6) | 10 |
 | Attaque (4 dés mêlée, D=3) | 12 |
-| [Terreur] *(excédent sur [Peur 1] gratuit)* | 2 |
+| [Peur 2] *(excédent sur [Peur 1] gratuit ; ex-[Terreur], D185)* | 2 |
 | [Vigilant] | 2 |
-| [Vol] *(bespoke)* | 8 |
+| [Vol 4] | 8 |
 | **Sous-total** | **34** |
 | **Final = round(34÷3)−1** | **10** |
 
@@ -123,6 +123,8 @@ version: "1.12"
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change nettement le ressenti par rapport aux deux versions précédentes, à surveiller au prochain playtest.
 
 ---
+
+*Version : 1.13 — Phase 1 — 2026-10-17. **D185** : [Terreur] supprimée, le Roi-Sorcier porte [Peur 2] (même mécanique, même coût). **D186** : [Vol] devient [Vol 4] ; [Vigilant] et [Vol X] sont définis au livret de référence. Aucun coût modifié.*
 
 *Version : 1.12 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 

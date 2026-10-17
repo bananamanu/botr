@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14"
 statut: "en-cours"
-date_maj: "2026-10-05"
+date_maj: "2026-10-17"
 tags: [BdTdM, type/livret]
-version: "1.3"
+version: "1.5"
 ---
 
 # Corpus joueur — conventions et glossaire
@@ -19,16 +19,16 @@ version: "1.3"
 | Livret | Tâche | Rôle | Lecture |
 |---|---|---|---|
 | **Livret de règles** — `Livret_de_regles.md` | P14a | Apprendre à jouer, sur le modèle FFG *Learn to Play*. ~12 pages. | Linéaire, une fois, jamais rouvert en jeu |
-| **Livret de référence** | P14b | Tout le vocabulaire générique : mots-clés, intrinsèques, règles de badge Faction, cas limites, texte des cartes. Indépendant de tout roster et de tout scénario. | Consultation à la table, entrées alphabétiques |
+| **Livret de référence** — `Livret_de_reference.md` | P14b | **Toutes** les règles du jeu en entrées alphabétiques (D184) : termes du livret de règles repris en entier, mots-clés, intrinsèques, règles de badge Faction, cas limites, texte des cartes, terrain complet. Indépendant de tout roster et de tout scénario. Fait foi en cas de contradiction apparente avec le livret de règles. | Consultation à la table, entrées alphabétiques |
 | **Livret Factions** | P14d | Un chapitre par peuple : identité, profils d'unités avec leur coût, badges Faction disponibles, Leaders nommés (Général, Destin), signatures écrites en entier. | Préparation d'une bataille, consultation |
 | **Livret de scénario** — Pelennor | P14c | Contexte fidèle au texte de Tolkien, carte, hexagones de frontière, ordre de bataille (unités nommées, sans profil), déploiement, règles propres, conditions de victoire. | Mise en place |
 
 ## 2. Frontières — qui dit quoi
 
-- **Une règle n'a qu'une seule définition**, dans le livret où elle est définie. Les autres livrets y renvoient.
+- **Une règle n'a qu'une seule définition**, dans le livret où elle est définie. Les autres livrets y renvoient. **Exception (D184)** : le livret de référence reprend en entier les règles du livret de règles, avec les mêmes formulations, pour qu'on n'ait jamais à rouvrir celui-ci en jeu ; il fait foi en cas de contradiction apparente. Toute modification d'une règle se reporte dans les deux livrets.
 - **Livret de règles** : tout ce qu'il faut pour jouer des unités standard — taxonomie (classe, type, mode), intrinsèques, badge **Leader** (Général, Destin), figurine avec bannière, réserve de Pouvoir, format Épique, terrain en version courte, **hexagones de frontière**, y compris à plusieurs joueurs par camp (chapitre 2, D151), **retraite bloquée** et cas d'arête de la ligne de vue (chapitre 7, D168). Le badge Faction y est seulement annoncé : « il donne une règle propre à l'unité, indiquée sur son profil ».
 - **Livret de référence** : définitions de toutes les règles entre crochets hors signatures — socle générique **et** règles de badge Faction ([Férocité], [Horde], [Poison], [Mercenaire], [Discipline de cohorte]…) ; cas limites rares (encerclement et autres retraites complexes, râtelier entièrement composé de cartes Tactiques — D176, transfert de contrôle — la retraite bloquée courante est au livret de règles, D168) ; texte des cartes de commandement ; terrain complet.
-- **Livret Factions** : indique **qui porte** une règle de badge Faction, sans la redéfinir. Seules les **signatures** (Mûmakil, Roi-Sorcier, Compagnie Grise…) y sont écrites en entier.
+- **Livret Factions** : indique **qui porte** une règle de badge Faction ou un mot-clé du livret de référence, sans la redéfinir. [Vigilant], [Vol X] et [Archer en mêlée] sont des mots-clés du livret de référence, pas des signatures (D186). Seules les **signatures** restantes (règles propres du Mûmakil, de la Compagnie Grise, de l'Aurige de Khand…) y sont écrites en entier.
 - **Livret de scénario** : ce qui n'existe que dans cette bataille. Les unités y sont nommées, leurs profils sont dans le livret Factions.
 
 ## 3. Règles d'écriture
@@ -69,6 +69,8 @@ Pas d'emoji dans les livrets : ils passent mal dans l'ODT puis dans Scribus. On 
 | `{LEADER}` | Jeton de badge d'unité Leader (couronne) |
 | `{FACTION}` | Jeton de badge d'unité Faction |
 | `{POUVOIR:Bien}` `{POUVOIR:Mal}` | Jeton de Pouvoir (Rune de Gandalf / Œil de Sauron) |
+| `{POSITION}` | Jeton de position défensive ([Discipline de cohorte], D191) |
+| `{POISON}` | Jeton Empoisonnée ([Poison], D194) |
 
 ### Marqueurs d'illustration
 
@@ -86,7 +88,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Arc** | Face de dé : 1 touche en mode distance. Même symbole que le jeton des unités de tir, qui ne lisent que cette face. | « Cible » (le mot *cible* désigne l'unité visée) |
 | **Avance**, **avancer** | Après une attaque de **mêlée** qui met la cible en déroute ou la fait reculer, entrée facultative de l'attaquant dans l'hexagone libéré. Jamais après un tir ni une riposte. | « percée », « exploitation » |
 | **Badge** | Jeton de badge d'unité posé sur le socle, qui donne une règle à l'unité : Leader ou Faction. | « marqueur », « option » |
-| **Bannière** | Figurine avec bannière dans une unité : l'unité gagne [Inébranlable 1]. Ce n'est pas un badge. | « badge Bannière », « étendard » comme nom de règle ; jamais « Drapeau » |
+| **Bannière** | Figurine avec bannière dans une unité : l'unité gagne [Inébranlable 1]. Ce n'est pas un badge. Retirée en dernier, avant un éventuel Leader ; perdue, elle emporte l'[Inébranlable 1] (D192). | « badge Bannière », « étendard » comme nom de règle ; jamais « Drapeau » |
 | **Bois** | Terrain : arrête l'unité qui y entre, plafonne à 2 dés l'attaque dont l'attaquant ou la cible s'y trouve, bloque la vue. | « forêt », « terrain boisé » |
 | **Bord** | Le bord du champ de bataille du côté d'un camp. Les Sections se nomment depuis lui ; les retraites se font vers lui. | « ligne de base », « côté » |
 | **Camp** | Bien ou Mal. | « alliance », « armée » |
@@ -104,8 +106,10 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Faction** | **Uniquement** le badge (jeton de badge d'unité) qui donne une règle propre à une unité, indiquée sur son profil. | pour désigner un peuple |
 | **Faible** | Infanterie ou Cavalerie réduite à une figurine : ses Épées ne touchent plus en mêlée. | « blessé » |
 | **Général** | Statut d'un Leader : +1 carte dans la main du camp tant qu'il est en jeu ; éliminé, son camp défausse aussitôt une carte. Au plus 2 par camp en Escarmouche, 3 en Normal, sans limite en Épique. | « chef », « commandant » |
-| **Jeton classe/mode** | Jeton de 20 mm : couleur = classe, symbole = mode. | « token » |
+| **Jeton classe/mode** | Jeton posé à côté de l'unité : couleur = classe, symbole = mode. | « token » |
 | **Hexagone de frontière** | Hexagone coupé par une limite de Section : il appartient aux deux Sections voisines. | « hexagone partagé » |
+| **Jeton Empoisonnée** | Jeton posé à côté d'une unité empoisonnée ([Poison]) : toute attaque contre elle touche aussi sur Pouvoir. | « marqueur de poison » |
+| **Jeton de position défensive** | Jeton dédié posé à côté d'une unité en position défensive ([Discipline de cohorte]). | « marqueur de posture » |
 | **Leader** | Badge (jeton de badge d'unité à couronne) : touche aussi sur Couronne, [Inébranlable 1] pour son unité et les unités amies adjacentes. Jamais plus d'un Leader par unité. | « héros » |
 | **Ligne de vue** | Ligne droite du centre de l'hexagone du tireur au centre de celui de la cible ; bloquée par une unité ou un terrain bloquant traversé. | « LdV » dans les livrets, « champ de vision » |
 | **Main** | Cartes du camp : 4 + 1 par Général vivant, dans tous les formats. Tenue par le joueur Centre en mode multi-joueurs, qui la montre à ses coéquipiers. | — |
@@ -130,6 +134,10 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Valeur de commandement** | Nombre de cartes en main au moment de jouer, carte jouée comprise. | — |
 
 ---
+
+*Version : 1.5 — 2026-10-17. Retour d'Emmanuel sur le livret de référence. D192 : entrée Bannière (ordre de retrait). D194 : marqueur `{POISON}` et entrée Jeton Empoisonnée. Entrée Jeton classe/mode : « de 20 mm » retiré. D195 : le format Épique se note 17 × 13.*
+
+*Version : 1.4 — 2026-10-17. P14b. D184 : le livret de référence est complet et fait foi (§1, §2, exception à la règle de définition unique). D186 : [Vigilant], [Vol X] et [Archer en mêlée] sont des mots-clés du livret de référence (§2). D191 : marqueur `{POSITION}` et entrée Jeton de position défensive.*
 
 *Version : 1.3 — 2026-10-05. P14a.8. D183 : entrée Char, le Char porte les règles intrinsèques de la Cavalerie.*
 

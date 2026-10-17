@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-10-17"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "2.3"
+version: "2.4"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -18,7 +18,7 @@ version: "2.3"
 
 ## 1. Faction du Harad — [Poison]
 
-Pouvoir inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le roster d'escorte (1-6).
+Chaque Pouvoir empoisonne la cible (jeton *Empoisonnée*, sans toucher) ; toute attaque contre une cible empoisonnée touche aussi sur Pouvoir (D194). **Outil optionnel**, +1 brut *(à revoir en P14d)*, disponible sur tout le roster d'escorte (1-6).
 
 ---
 
@@ -125,6 +125,8 @@ Pouvoir inflige 1 touche. **Outil optionnel**, +1 brut, disponible sur tout le r
 Inchangés — le Mûmakil reste au prix fixé en P5 (D079), non retouché par ce chantier.
 
 ---
+
+*Version : 2.4 — Phase 1 — 2026-10-17. **D194** : [Poison] refondu (jeton Empoisonnée, toute attaque contre la cible touche sur Pouvoir), §1. Forfait de +1 brut conservé à ce stade, à revoir en P14d. Aucun coût modifié.*
 
 *Version : 2.3 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 

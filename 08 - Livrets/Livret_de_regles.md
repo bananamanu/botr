@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14a"
 statut: "en-cours"
-date_maj: "2026-10-05"
+date_maj: "2026-10-17"
 tags: [BdTdM, type/livret]
-version: "0.14"
+version: "0.15"
 ---
 
 # Batailles de la Terre du Milieu — Livret de règles
@@ -49,7 +49,7 @@ Chaque scénario se joue dans l'un des trois formats du jeu. Le format fixe la t
 | ----------- | ----------------- | ----------------------------------------------------------------------------------------------------- |
 | Escarmouche | 10 × 7 hexagones  | un engagement rapide entre deux avant-gardes                                                          |
 | Normal      | 13 × 9 hexagones  | une bataille rangée                                                                                   |
-| Épique      | 13 × 17 hexagones | les grandes batailles iconiques du Seigneur des Anneaux, jusqu'à trois joueurs par camp (chapitre 10) |
+| Épique      | 17 × 13 hexagones | les grandes batailles iconiques du Seigneur des Anneaux, jusqu'à trois joueurs par camp (chapitre 10) |
 
 ### Vos quatre livrets
 
@@ -181,7 +181,7 @@ Un badge donne une règle de plus à une unité. Il est matérialisé par un jet
 - {LEADER} **Leader** : un Leader mène l'unité. Il la rend plus dangereuse et affermit ses voisins (chapitre 9).
 - {FACTION} **Faction** : l'unité a une règle propre, indiquée sur son profil et définie dans le livret de référence.
 
-Une unité peut aussi compter une **figurine avec bannière**. Ce n'est pas un badge, mais l'unité y gagne [Inébranlable 1] : elle peut ignorer 1 {DÉ:Drapeau} Drapeau à chaque attaque qu'elle subit (chapitre 7).
+Une unité peut aussi compter une **figurine avec bannière**. Ce n'est pas un badge, mais l'unité y gagne [Inébranlable 1] : elle peut ignorer 1 {DÉ:Drapeau} Drapeau à chaque attaque qu'elle subit (chapitre 7). Cette figurine est retirée en dernier, juste avant un éventuel Leader ; sans elle, l'unité perd cet avantage.
 
 Quelques pièces uniques, comme les Mûmakil ou la Compagnie Grise, ont des règles bien à elles : ce sont des **signatures**, écrites en entier sur leur profil dans le livret Factions.
 
@@ -400,7 +400,7 @@ Un tiret signifie que la face ne fait rien.
 
 Additionnez les touches, puis appliquez dans cet ordre :
 
-1. **[Protection].** Une unité dans un bâtiment ignore autant de touches que sa valeur de [Protection] (chapitre 8).
+1. **[Protection].** Une unité dans un bâtiment ignore 1 touche (chapitre 8).
 2. **[Armure].** Pour chaque touche restante, la cible lance 1 dé : chaque {DÉ:Pouvoir} Pouvoir annule une touche. Si un Leader mène l'unité, chaque {DÉ:Couronne} Couronne en annule une aussi. Toute unité rouge et toute Créature porte [Armure] (chapitre 3). Ces dés ne rapportent pas de Pouvoir.
 3. **Pertes.** Pour chaque touche qui reste, retirez 1 figurine, ou 1 PV du compteur. Une unité qui perd sa dernière figurine, ou son dernier PV, est en déroute : retirez-la, l'adversaire prend une médaille.
 
@@ -474,7 +474,7 @@ Ces deux limites s'appliquent avant toute autre règle. Les dés qu'une carte ou
 
 **Colline.** Une unité sur une colline lance 1 dé de plus quand elle attaque une cible en contrebas. Le bonus disparaît si la cible est elle aussi sur une colline.
 
-**Bâtiment.** Une unité dans un bâtiment porte [Protection] : elle ignore un nombre de touches à chaque attaque qu'elle subit. Le scénario indique ce nombre.
+**Bâtiment.** Une unité dans un bâtiment porte [Protection] : elle ignore 1 touche à chaque attaque qu'elle subit.
 
 ### La vue
 
@@ -536,7 +536,7 @@ Un Leader éliminé ne rapporte pas de point de victoire : seule compte la déro
 
 ## 10. Le format Épique et le mode multi-joueurs
 
-Les grandes batailles se jouent en format Épique, sur un champ de bataille de 13 × 17 hexagones. Comme les autres formats, il se joue à deux, un joueur par camp. Il peut aussi se jouer à six, trois joueurs par camp : c'est le mode multi-joueurs, qui reste optionnel.
+Les grandes batailles se jouent en format Épique, sur un champ de bataille de 17 × 13 hexagones. Comme les autres formats, il se joue à deux, un joueur par camp. Il peut aussi se jouer à six, trois joueurs par camp : c'est le mode multi-joueurs, qui reste optionnel.
 
 Le râtelier, la façon de jouer ses cartes et l'adaptation des cartes Tactiques valent pour toute partie Épique. Les trois dernières sections ne concernent que le mode multi-joueurs.
 
