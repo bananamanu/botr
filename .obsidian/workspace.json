@@ -25,12 +25,14 @@
             "id": "d6233f6418b1ba33",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "08 - Livrets/livret-regles.pdf"
+                "file": "08 - Livrets/Livret_de_regles.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "livret-regles"
+              "icon": "lucide-file",
+              "title": "Livret_de_regles"
             }
           },
           {
@@ -46,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Livret_de_regles"
             }
+          },
+          {
+            "id": "afa320d2629a0d8a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "08 - Livrets/livret-regles.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "livret-regles"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -213,7 +227,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 626.5
+    "width": 843.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,21 +240,26 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "d6233f6418b1ba33",
+  "active": "afa320d2629a0d8a",
   "lastOpenFiles": [
-    "08 - Livrets/Livret_de_reference.md",
+    "07 - Aides de jeu/1_Aide_commune (1).pdf",
     "08 - Livrets/Livret_de_regles.md",
-    "08 - Livrets/livret-regles.sla.2556",
-    "08 - Livrets/livret-regles.sla.2336",
-    "06 - Images/pions/pions_emergency_17_10_2026_17_03.sla",
-    "06 - Images/pions/pions_emergency_17_10_2026_17_03.sla.2234",
-    "08 - Livrets/livret-regles_emergency_17_10_2026_17_03.sla",
-    "08 - Livrets/livret-regles_emergency_17_10_2026_17_03.sla.2233",
-    "06 - Images/pions/pions_autosave_17_10_2026_17_02.sla",
-    "06 - Images/pions/pions_autosave_17_10_2026_17_02.sla.2125",
+    "08 - Livrets/livret-regles.sla.3605",
+    "08 - Livrets/livret-regles.sla.3290",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_04_27.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_04_27.sla.3100",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_04_17.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_04_17.sla.2501",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_04_07.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_04_07.sla.1904",
+    "08 - Livrets/livret-regles.sla.1570",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_03_57.sla",
+    "06 - Images/exemples/archer_harad.png",
+    "06 - Images/exemples/guerrier_harad.png",
+    "06 - Images/exemples/chevalier_dol_amroth.png",
+    "06 - Images/dol_amroth.jpg",
+    "08 - Livrets/Livret_de_reference.md",
     "00 - META/Retour session livre de références.md",
-    "06 - Images/pions/pions_autosave_17_10_2026_16_52.sla",
-    "06 - Images/pions/pions_autosave_17_10_2026_16_52.sla.1526",
     "00 - META/Document_de_cadrage.md",
     "00 - META/Document_de_cadrage_1.md",
     "00 - META/Retour session livre de règles (chapitre11).md",
@@ -251,10 +270,6 @@
     "06 - Images/plateau-normal.png",
     "06 - Images/dés.png",
     "06 - Images/map.png",
-    "06 - Images/map.avif",
-    "06 - Images/charte/separateurs_pack_300dpi.png",
-    "06 - Images/charte/separateur_08_300dpi.png",
-    "06 - Images/charte/separateur_07_300dpi.png",
     "02 - Factions/Rohan.md",
     "08 - Livrets/00_Conventions_et_glossaire.md",
     "00 - META/Retour session livre de règles (chapitre 11).md",
