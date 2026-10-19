@@ -62,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08 - Livrets/livret-regles.pdf",
+                "file": "08 - Livrets/Livret_de_regles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -240,20 +240,26 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "afa320d2629a0d8a",
+  "active": "d6233f6418b1ba33",
   "lastOpenFiles": [
-    "07 - Aides de jeu/1_Aide_commune (1).pdf",
+    "08 - Livrets/livret-regles.sla.6105",
+    "08 - Livrets/livret-regles.sla.5945",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_19_05.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_19_05.sla.5623",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_18_55.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_18_55.sla.5024",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_18_45.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_18_45.sla.4426",
+    "06 - Images/exemples/guerrier_minas_tirith.png",
+    "06 - Images/exemples/archer_minas_tirith.png",
+    "06 - Images/exemples/Archer chevalier en armure d’argent.png",
+    "06 - Images/exemples/Chevalier miniature en pleine charge.png",
+    "06 - Images/exemples/guerrier_orc.png",
+    "06 - Images/exemples/Guerrier_orc (2).png",
+    "08 - Livrets/livret-regles.sla.7162",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_13_49.sla",
+    "08 - Livrets/livret-regles_autosave_18_10_2026_13_49.sla.6722",
     "08 - Livrets/Livret_de_regles.md",
-    "08 - Livrets/livret-regles.sla.3605",
-    "08 - Livrets/livret-regles.sla.3290",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_04_27.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_04_27.sla.3100",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_04_17.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_04_17.sla.2501",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_04_07.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_04_07.sla.1904",
-    "08 - Livrets/livret-regles.sla.1570",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_03_57.sla",
     "06 - Images/exemples/archer_harad.png",
     "06 - Images/exemples/guerrier_harad.png",
     "06 - Images/exemples/chevalier_dol_amroth.png",
@@ -264,12 +270,6 @@
     "00 - META/Document_de_cadrage_1.md",
     "00 - META/Retour session livre de règles (chapitre11).md",
     "01 - Règles/Terrain.md",
-    "06 - Images/plans/plateau-normal.png",
-    "06 - Images/plans/plateau-norm.png",
-    "06 - Images/plans/plateau-page002.png",
-    "06 - Images/plateau-normal.png",
-    "06 - Images/dés.png",
-    "06 - Images/map.png",
     "02 - Factions/Rohan.md",
     "08 - Livrets/00_Conventions_et_glossaire.md",
     "00 - META/Retour session livre de règles (chapitre 11).md",
