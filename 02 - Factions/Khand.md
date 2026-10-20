@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-17"
+date_maj: "2026-10-19"
 tags: [BdTdM, "type/faction", "peuple/khand", "statut/brouillon"]
-version: "2.11"
+version: "2.12"
 ---
 
 # Khand — Profils d'unités
@@ -13,6 +13,8 @@ version: "2.11"
 > **Objet de ce document (P8 — simplification radicale, D101/D102, retouches D108).** Même principe qu'à Gondor : plus aucun badge d'office. [Mercenaire] devient une option (D102). **Retouche Emmanuel (D108) : Khand ne porte jamais de Bannière** — troupes disparates, sans étendard commun. En contrepartie, l'Aurige de Khand (le char) gagne une signature bespoke : **[Peur 1 contre les bannières vertes]**.
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
+
+> 🔄 **Coûts d'option et de Leader (D196-D197, P14d).** Bannière **+1**, badge Faction **+1** ([Mercenaire] **−1**) et Leader **1 + Destin, +3 s'il est Général** s'ajoutent désormais au coût final, hors compression. Les tables « coûts avec options » et les variantes avec Leader ci-dessous gardent l'ancien chiffrage par le brut : **le livret Factions (`08 - Livrets/Livret_Factions.md`) fait foi pour les coûts.**
 
 ---
 
@@ -81,6 +83,8 @@ Cavalerie, Mêlée, 🔵. **[Peur 1 contre les bannières vertes]** (voir [[Regl
 - **[Peur 1 contre les bannières vertes], tarif +2 non testé** — à confirmer au playtest : est-ce trop fort face à un roster où les classes 🟢 dominent (Harad, Khand lui-même en miroir), ou trop anecdotique face à des rosters à dominante 🔵/🔴 ?
 
 ---
+
+*Version : 2.12 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts. Nom de règle au livret : [Peur 1 contre les unités vertes].*
 
 *Version : 2.11 — Phase 1 — 2026-10-17. **D187** : lecture de [Mercenaire] explicitée au §1 (chaque Drapeau = 2 hexagones). Aucun coût modifié.*
 

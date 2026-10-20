@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-17"
+date_maj: "2026-10-20"
 tags: [BdTdM, "type/faction", "peuple/harad", "statut/brouillon"]
-version: "2.4"
+version: "2.6"
 ---
 
 # Harad — Profils d'unités *(escorte + Pillards + Mûmakil)*
@@ -13,6 +13,8 @@ version: "2.4"
 > **Objet de ce document (P8 — simplification radicale, D101, généralisée).** Même principe qu'à Gondor : plus aucun badge d'office. [Poison] — trait matériel — devient lui aussi une **option**, pas un défaut. Le Mûmakil reste hors matrice, inchangé.
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.30, [[Regles_Points]] v0.29.
+
+> 🔄 **Coûts d'option et de Leader (D196-D197, P14d).** Bannière **+1**, badge Faction **+1** ([Mercenaire] **−1**) et Leader **1 + Destin, +3 s'il est Général** s'ajoutent désormais au coût final, hors compression. Les tables « coûts avec options » et les variantes avec Leader ci-dessous gardent l'ancien chiffrage par le brut : **le livret Factions (`08 - Livrets/Livret_Factions.md`) fait foi pour les coûts.**
 
 ---
 
@@ -91,7 +93,7 @@ Chaque Pouvoir empoisonne la cible (jeton *Empoisonnée*, sans toucher) ; toute 
 
 #### [Charge écrasante] *(bespoke)*
 
-> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** ; cela se passe **en phase de mouvement — pas de combat, aucune riposte**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+> À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où **chaque Pouvoir donne, au choix du camp qui contrôle le Mûmakil, 1 touche ou 1 Drapeau de plus ([Peur 1])** *(D200)* ; cela se passe **en phase de mouvement — pas de combat, aucune riposte**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 #### [Bête incontrôlable] *(bespoke, refondue P5/D079)*
 
@@ -125,6 +127,10 @@ Chaque Pouvoir empoisonne la cible (jeton *Empoisonnée*, sans toucher) ; toute 
 Inchangés — le Mûmakil reste au prix fixé en P5 (D079), non retouché par ce chantier.
 
 ---
+
+*Version : 2.6 — Phase 1 — 2026-10-20. **D200** : [Charge écrasante], chaque Pouvoir donne au choix 1 touche ou 1 Drapeau ([Peur 1]), jamais les deux. Coût inchangé.*
+
+*Version : 2.5 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts.*
 
 *Version : 2.4 — Phase 1 — 2026-10-17. **D194** : [Poison] refondu (jeton Empoisonnée, toute attaque contre la cible touche sur Pouvoir), §1. Forfait de +1 brut conservé à ce stade, à revoir en P14d. Aucun coût modifié.*
 

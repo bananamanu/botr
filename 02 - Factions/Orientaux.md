@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-17"
+date_maj: "2026-10-19"
 tags: [BdTdM, "type/faction", "peuple/orientaux", "statut/brouillon"]
-version: "3.4"
+version: "3.5"
 ---
 
 # Orientaux — Profils d'unités
@@ -13,6 +13,8 @@ version: "3.4"
 > **Objet de ce document (P8 — simplification radicale D101/D102, nouvelle Faction D104).** Même principe que les autres peuples : plus aucun badge d'office. La Faction des Orientaux change complètement : elle abandonne [Défense X] (miroir de Gondor) pour une identité propre, **[Discipline de cohorte]** — une posture défensive activée plutôt qu'un bonus permanent.
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
+
+> 🔄 **Coûts d'option et de Leader (D196-D197, P14d).** Bannière **+1**, badge Faction **+1** ([Mercenaire] **−1**) et Leader **1 + Destin, +3 s'il est Général** s'ajoutent désormais au coût final, hors compression. Les tables « coûts avec options » et les variantes avec Leader ci-dessous gardent l'ancien chiffrage par le brut : **le livret Factions (`08 - Livrets/Livret_Factions.md`) fait foi pour les coûts.**
 
 ---
 
@@ -77,6 +79,8 @@ Aucun Leader nommé côté Orientaux au Playtest #4. Badge **Bannière** porté 
 - **Roster sans Leader nommé à ce stade** — si un futur scénario attache un chef oriental, il faudra définir comment [Discipline de cohorte] interagit avec Leader/Général (cumul libre, a priori, comme tout le reste).
 
 ---
+
+*Version : 3.5 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts.*
 
 *Version : 3.1 — Phase 1 — 2026-08-30. **D124 — cases de coût comblées.** Les combinaisons de badges sur les Cohortes 🔵 sont explicitées : Faction seule, Bannière seule et les deux ensemble coûtent toutes **5** (brut 17, 17 et 19, tous compressés vers 5). La case Faction + Bannière manquait et faussait le chiffrage du Pelennor d'un point.*
 

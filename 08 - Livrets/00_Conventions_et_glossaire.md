@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14"
 statut: "en-cours"
-date_maj: "2026-10-17"
+date_maj: "2026-10-20"
 tags: [BdTdM, type/livret]
-version: "1.5"
+version: "1.6"
 ---
 
 # Corpus joueur — conventions et glossaire
@@ -20,7 +20,7 @@ version: "1.5"
 |---|---|---|---|
 | **Livret de règles** — `Livret_de_regles.md` | P14a | Apprendre à jouer, sur le modèle FFG *Learn to Play*. ~12 pages. | Linéaire, une fois, jamais rouvert en jeu |
 | **Livret de référence** — `Livret_de_reference.md` | P14b | **Toutes** les règles du jeu en entrées alphabétiques (D184) : termes du livret de règles repris en entier, mots-clés, intrinsèques, règles de badge Faction, cas limites, texte des cartes, terrain complet. Indépendant de tout roster et de tout scénario. Fait foi en cas de contradiction apparente avec le livret de règles. | Consultation à la table, entrées alphabétiques |
-| **Livret Factions** | P14d | Un chapitre par peuple : identité, profils d'unités avec leur coût, badges Faction disponibles, Leaders nommés (Général, Destin), signatures écrites en entier. | Préparation d'une bataille, consultation |
+| **Livret Factions** — `Livret_Factions.md` | P14d | Un chapitre par peuple : identité, profils d'unités avec leur coût, badges Faction disponibles, Leaders nommés (Général, Destin), signatures écrites en entier. | Préparation d'une bataille, consultation |
 | **Livret de scénario** — Pelennor | P14c | Contexte fidèle au texte de Tolkien, carte, hexagones de frontière, ordre de bataille (unités nommées, sans profil), déploiement, règles propres, conditions de victoire. | Mise en place |
 
 ## 2. Frontières — qui dit quoi
@@ -126,7 +126,7 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Retraite**, **reculer** | Déplacement forcé par les Drapeaux, toujours vers son propre bord. | « fuite », « déroute » |
 | **Riposte**, **riposter** | Réaction d'une unité attaquée, adjacente, qui n'a ni reculé ni été éliminée : elle attaque à son tour son assaillant. | « contre-attaque », « contre-attaquer » |
 | **Section** | Gauche, Centre ou Droite du champ de bataille, nommée depuis le bord de son camp : la Gauche d'un camp fait face à la Droite de l'autre. | « flanc », « aile » |
-| **Signature** | Règle propre à une pièce unique, écrite en entier dans le livret Factions. | — |
+| **Signature** | Règle propre à certaines unités, écrite en entier dans le livret Factions. | — |
 | **Tour** | Tour d'un seul camp, de l'étape de commandement à celle de Pouvoir. | « round » |
 | **Touche** | Retire 1 figurine ou 1 PV, quelle que soit la cible. | « blessure », « dégât » |
 | **Type** | Infanterie, Cavalerie, Char, Créature, donné par le profil de l'unité. | « catégorie » |
@@ -134,6 +134,8 @@ Termes employés dans les quatre livrets. La colonne « Éviter » liste les syn
 | **Valeur de commandement** | Nombre de cartes en main au moment de jouer, carte jouée comprise. | — |
 
 ---
+
+*Version : 1.6 — 2026-10-20. Entrée Signature : « certaines unités » au lieu de « une pièce unique » (le Mûmakil, le Troll et l'Aurige peuvent être alignés en plusieurs exemplaires). Livret Factions : nom de fichier `Livret_Factions.md`.*
 
 *Version : 1.5 — 2026-10-17. Retour d'Emmanuel sur le livret de référence. D192 : entrée Bannière (ordre de retrait). D194 : marqueur `{POISON}` et entrée Jeton Empoisonnée. Entrée Jeton classe/mode : « de 20 mm » retiré. D195 : le format Épique se note 17 × 13.*
 

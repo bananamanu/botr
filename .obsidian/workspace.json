@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "08 - Livrets/Livret_de_regles.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -180,20 +180,6 @@
             }
           },
           {
-            "id": "2451c87e6b0703cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "08 - Livrets/Livret_de_reference.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Livret_de_reference"
-            }
-          },
-          {
             "id": "51fbd251c084029c",
             "type": "leaf",
             "state": {
@@ -221,9 +207,23 @@
               "icon": "lucide-list",
               "title": "Plan de BdVM_AideDeJeu"
             }
+          },
+          {
+            "id": "13ac8faf070067bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "08 - Livrets/Livret_Factions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Livret_Factions"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -242,30 +242,31 @@
   },
   "active": "d6233f6418b1ba33",
   "lastOpenFiles": [
-    "08 - Livrets/livret-regles.sla.6105",
-    "08 - Livrets/livret-regles.sla.5945",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_19_05.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_19_05.sla.5623",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_18_55.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_18_55.sla.5024",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_18_45.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_18_45.sla.4426",
+    "00 - META/Retour session livret de factions.md",
+    "08 - Livrets/Livret_Factions.md",
+    "00 - META/Retour session livre de références.md",
+    "08 - Livrets/Livret_de_regles.md",
+    "08 - Livrets/Livret_de_reference.md",
+    "08 - Livrets/Livret_Factions.odt",
+    "08 - Livrets/livret-regles.sla.5173",
+    "08 - Livrets/livret-regles_autosave_19_10_2026_08_54.sla",
+    "08 - Livrets/livret-regles_autosave_19_10_2026_08_54.sla.5163",
+    "08 - Livrets/livret-regles.sla.5122",
+    "08 - Livrets/livret-regles_autosave_19_10_2026_08_44.sla",
+    "08 - Livrets/livret-regles_autosave_19_10_2026_08_44.sla.4565",
+    "08 - Livrets/livret-regles_autosave_19_10_2026_08_34.sla",
+    "08 - Livrets/livret-regles_autosave_19_10_2026_08_34.sla.3967",
+    "08 - Livrets/livret-regles.sla.3224",
     "06 - Images/exemples/guerrier_minas_tirith.png",
     "06 - Images/exemples/archer_minas_tirith.png",
     "06 - Images/exemples/Archer chevalier en armure d’argent.png",
     "06 - Images/exemples/Chevalier miniature en pleine charge.png",
     "06 - Images/exemples/guerrier_orc.png",
     "06 - Images/exemples/Guerrier_orc (2).png",
-    "08 - Livrets/livret-regles.sla.7162",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_13_49.sla",
-    "08 - Livrets/livret-regles_autosave_18_10_2026_13_49.sla.6722",
-    "08 - Livrets/Livret_de_regles.md",
     "06 - Images/exemples/archer_harad.png",
     "06 - Images/exemples/guerrier_harad.png",
     "06 - Images/exemples/chevalier_dol_amroth.png",
     "06 - Images/dol_amroth.jpg",
-    "08 - Livrets/Livret_de_reference.md",
-    "00 - META/Retour session livre de références.md",
     "00 - META/Document_de_cadrage.md",
     "00 - META/Document_de_cadrage_1.md",
     "00 - META/Retour session livre de règles (chapitre11).md",
@@ -286,7 +287,6 @@
     "01 - Règles/Regles_Base (1).md",
     "08 - Livret/00_Conventions_et_glossaire.md",
     "05 - Playtest/Playtest5_Compte-rendu.md",
-    "02 - Factions/Harad.md",
-    "03 - Scénarios/Pelennor_Epique.md"
+    "02 - Factions/Harad.md"
   ]
 }

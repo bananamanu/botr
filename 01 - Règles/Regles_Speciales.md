@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-17"
+date_maj: "2026-10-20"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon"]
-version: "0.43"
+version: "0.44"
 ---
 
 # Batailles de la Terre du Milieu — Règles spéciales
@@ -306,7 +306,7 @@ Règles **propres au Mûmakil**, non transférables (l'unité est chiffrée par 
 
 #### [Charge écrasante]  *(bespoke)*
 
-À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où l'**Pouvoir inflige aussi une touche** *(migré depuis Couronne, D089 — Couronne est réservée au badge Leader)* ; cela se passe **en phase de mouvement — pas de combat, aucune riposte**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
+À son activation, le Mûmakil **DOIT** effectuer un déplacement complet de **2 hexagones** (1 + 1) vers l'hexagone de tête visé, **sans tenir compte** des figurines présentes. Chaque unité dont un hexagone est traversé subit une **attaque de 4 dés** où **chaque Pouvoir donne, au choix du camp qui contrôle le Mûmakil, 1 touche ou 1 Drapeau de plus ([Peur 1])** *(D200)* ; cela se passe **en phase de mouvement — pas de combat, aucune riposte**. Toute **cavalerie** repoussée recule du **double**. S'il reste des unités gênantes non détruites/repoussées, il s'arrête au dernier hexagone libre. **Aucune attaque de mêlée en phase d'attaque.**
 
 > 🎲 Choc de masse réservé à la grande créature, en phase de mouvement (l'usage annoncé lors du retrait de l'ancienne [Charge écrasante] générique, D043→D054). Le gabarit 1-2-1 ne pivote pas (translation pure).
 
@@ -410,6 +410,8 @@ Traçabilité des règles sorties du glossaire actif le 2026-08-04 (D062).
 > 🔗 **Voir aussi** [[Regles_Base]] — [[Terrain]] — [[Regles_Points]] — [[Document_de_cadrage]]
 
 ---
+
+*Version : 0.44 — Phase 1 — 2026-10-20. **D200** : [Charge écrasante], chaque Pouvoir donne au choix 1 touche ou 1 Drapeau ([Peur 1]), jamais les deux.*
 
 *Version : 0.43 — Phase 1 — 2026-10-17. **D193** : [Protection X] devient [Protection], 1 touche, non cumulable ; ordre de résolution corrigé ([Protection] avant [Armure], conforme à D164). **D194** : [Poison] refondu, jeton Empoisonnée. Correction de forme, sans numéro D : la [Protection 1] contre le tir du Mûmakil est signalée comme supersédée par [Armure] (D103).*
 

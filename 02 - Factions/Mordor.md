@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-17"
+date_maj: "2026-10-19"
 tags: [BdTdM, "type/faction", "peuple/mordor", "statut/brouillon"]
-version: "1.13"
+version: "1.14"
 ---
 
 # Mordor — Profils d'unités
@@ -13,6 +13,8 @@ version: "1.13"
 > **Objet de ce document (P8 — simplification radicale D101/D102, [Horde] troisième version D105, refonte défense créature D103).** Même principe que les autres peuples : plus aucun badge d'office. [Horde] devient une **option**, disponible sur tous les orques (bandes, Uruk-hai, wargs, et la nouvelle **Piétaille orque du Mordor** — troupe légère supplémentaire, voir §2). Nouvelle version de [Horde] : +1 dé et [Inébranlable 1] à pleine santé seulement, **sans effet négatif** ensuite (contrairement aux versions précédentes). Le Roi-Sorcier et le Troll adoptent la nouvelle règle **[Armure]** (défense unifiée des Créatures, D103).
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
+
+> 🔄 **Coûts d'option et de Leader (D196-D197, P14d).** Bannière **+1**, badge Faction **+1** ([Mercenaire] **−1**) et Leader **1 + Destin, +3 s'il est Général** s'ajoutent désormais au coût final, hors compression. Les tables « coûts avec options » et les variantes avec Leader ci-dessous gardent l'ancien chiffrage par le brut : **le livret Factions (`08 - Livrets/Livret_Factions.md`) fait foi pour les coûts.**
 
 ---
 
@@ -123,6 +125,8 @@ version: "1.13"
 - **[Horde] v3 jamais testée** — la disparition de l'effet négatif change nettement le ressenti par rapport aux deux versions précédentes, à surveiller au prochain playtest.
 
 ---
+
+*Version : 1.14 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts.*
 
 *Version : 1.13 — Phase 1 — 2026-10-17. **D185** : [Terreur] supprimée, le Roi-Sorcier porte [Peur 2] (même mécanique, même coût). **D186** : [Vol] devient [Vol 4] ; [Vigilant] et [Vol X] sont définis au livret de référence. Aucun coût modifié.*
 

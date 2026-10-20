@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-09-27"
+date_maj: "2026-10-19"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.10"
+version: "2.11"
 ---
 
 # Rohan — Profils d'unités
@@ -15,6 +15,8 @@ version: "2.10"
 > **La Garde du Roi (8, 9) devient une pièce entièrement signature (D107)** : elle abandonne Faction et se définit désormais par **Légende** (+1 dé) + **[Inébranlable ∞]** — elle ne recule jamais, donc [Férocité] (riposter malgré un recul) n'a plus de sens et disparaît.
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.31, [[Regles_Points]] v0.30.
+
+> 🔄 **Coûts d'option et de Leader (D196-D197, P14d).** Bannière **+1**, badge Faction **+1** ([Mercenaire] **−1**) et Leader **1 + Destin, +3 s'il est Général** s'ajoutent désormais au coût final, hors compression. Les tables « coûts avec options » et les variantes avec Leader ci-dessous gardent l'ancien chiffrage par le brut : **le livret Factions (`08 - Livrets/Livret_Factions.md`) fait foi pour les coûts.**
 
 ---
 
@@ -103,6 +105,8 @@ Bannière portée au Playtest #4 par 2 éoreds (+1 → **7** chacun) et 1 garde 
 - **Garde du Roi à 8/10 pts** — hausse sensible par rapport à l'ancienne version (7/8), à surveiller au prochain playtest : une pièce increvable au recul, avec 5 dés (Légende), à ce tarif, doit rester utilisable dans un format 3v3 sans écraser la ligne.
 
 ---
+
+*Version : 2.11 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts. **D198** : la Garde du Roi perd Légende (badge supprimé) et garde [Inébranlable ∞] seule : **7** à pied, **9** à cheval (§3 ci-dessus non réécrit).*
 
 *Version : 2.10 — Phase 1 — 2026-09-27. **D158 — la contre-attaque de combat devient la riposte**, sans changement de mécanique (« riposter », « subir une riposte »). La carte de commandement *Contre-attaque* garde son nom.*
 

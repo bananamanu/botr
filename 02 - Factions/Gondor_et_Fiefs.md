@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-04"
+date_maj: "2026-10-19"
 tags: [BdTdM, "type/faction", "peuple/gondor", "statut/brouillon"]
-version: "3.5"
+version: "3.6"
 ---
 
 # Gondor et ses fiefs — Profils d'unités
@@ -15,6 +15,8 @@ version: "3.5"
 > La Compagnie Grise redevient une pièce **entièrement bespoke** : six figurines nommées (Aragorn, Gimli, Legolas, Elrohir, Elladan, Halbarad), chacune apportant sa propre règle tant qu'elle est présente — retour à l'esprit d'origine plutôt qu'un empilement de badges génériques.
 >
 > Aligné sur [[Regles_Base]] v0.17, [[Regles_Speciales]] v0.30, [[Regles_Points]] v0.29.
+
+> 🔄 **Coûts d'option et de Leader (D196-D197, P14d).** Bannière **+1**, badge Faction **+1** ([Mercenaire] **−1**) et Leader **1 + Destin, +3 s'il est Général** s'ajoutent désormais au coût final, hors compression. Les tables « coûts avec options » et les variantes avec Leader ci-dessous gardent l'ancien chiffrage par le brut : **le livret Factions (`08 - Livrets/Livret_Factions.md`) fait foi pour les coûts.**
 
 ---
 
@@ -118,6 +120,8 @@ version: "3.5"
 - **Options « absorbées » par la compression** (Rangers+Faction, Archers+Faction seule, Cavalerie+Faction seule) — à surveiller : est-ce acceptable qu'un outil narratif ne change parfois rien au prix, ou faut-il revoir le tarif de Faction à la hausse pour que l'option pèse toujours ?
 
 ---
+
+*Version : 3.6 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts.*
 
 *Version : 3.2 — Phase 1 — 2026-08-30. **D116 — les Hommes d'armes de Dol Amroth rejoignent la ligne 4 (Troupes des Fiefs).** L'unité figurait dans l'ordre de bataille du Pelennor sous le nom trompeur de « Piquiers de Dol Amroth » sans exister au roster. Dol Amroth étant un fief au même titre que Lossarnach et le Lamedon, elle prend place sur la ligne des Troupes des Fiefs : 🔵 mêlée, 4 pts, Faction disponible (5 pts), pas de Bannière. Aucun coût modifié, aucune ligne créée.*
 

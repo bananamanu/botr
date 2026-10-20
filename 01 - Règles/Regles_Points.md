@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "regles"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-17"
+date_maj: "2026-10-19"
 tags: [BdTdM, "type/regles", "phase/1", "statut/brouillon", "construction-armee"]
-version: "0.41"
+version: "0.42"
 ---
 
 # Batailles de la Terre du Milieu — Système de points
@@ -58,6 +58,8 @@ Final = round(Brut ÷ 3) − 1
 
 **Plus de plafond.** Une unité additionne librement : une éventuelle règle **socle générique** ([Relance X], [Inébranlable X]… — voir §3.1), le badge **Faction** de son peuple si elle est assignée à en porter une (§3.2, désormais ciblé plutôt qu'universel), le badge **Bannière** si une figurine porte-étendard l'incarne, le badge **Légende** si c'est une pièce unique, et le badge **Leader** (avec ses composantes Général/Destin optionnelles, §3.3) si un personnage nommé y est attaché. La compression (§4) se fait **une fois**, après avoir additionné tous les suppléments — jamais à la volée en partie.
 
+> 🔄 **Options au barème final (D196, P14d).** La **bannière** et le **badge Faction** ne passent plus par le brut : ils s'ajoutent au coût **final** de l'unité, après compression du profil de base. Bannière **+1** ; badge Faction **+1** pour tous les peuples, sauf [Mercenaire] **−1**. Les forfaits bruts de ces options au §3.4 ne servent plus au chiffrage. Le **Leader** s'ajoute de même au coût final : **1 + Destin, +3 s'il est Général** (D197). La formule `Brut → Final` ci-dessus reste celle du profil de base et des pièces uniques.
+
 ### 3.1 Règles socle portées directement au profil *(ex-badges Spéciale/Élite, D073 — noms de badge abandonnés D092, effets et coûts inchangés)*
 
 Ces deux effets restent au vocabulaire socle générique ([[Regles_Speciales]] §2) et se notent directement sur le profil qui les mérite, sans être rattachés à une catégorie de badge nommée :
@@ -106,6 +108,8 @@ Rattaché à une unité (jamais une figurine libre), le badge **Leader** ([[Regl
 Un Leader qui ne prend pas le statut Général (les « Leaders mineurs » du Pelennor — Suladan, le Roi de Khand, Angbor le Brave, Forlong le Gros) ne paie que Leader + Destin, sensiblement moins cher qu'un Général en pleine tenue.
 
 > 🔄 **Coût de Leader séparé (D179).** Un Leader pouvant mener n'importe quelle unité de son peuple (D178), son coût (Leader + Général + Destin) est **séparé** de celui de l'unité et s'ajoute au coût de l'unité qu'il rejoint au déploiement. **Méthode de chiffrage à fixer en P14d** : la compression (§4) s'appliquant aujourd'hui une fois sur le brut total de l'unité, un coût de Leader compressé à part peut décaler d'un point certains totaux — le 216/215 du Pelennor (D124) sera à revérifier. Exceptions : les pièces dont le Leader est indissociable (Compagnie Grise avec Aragorn, Roi-Sorcier) gardent un coût unique.
+
+> 🔄 **Méthode fixée (D197, P14d).** Coût d'un Leader = **1 + Destin, +3 s'il est Général**, ajouté au coût final de l'unité qu'il rejoint. Théoden 5, Éomer 7, Imrahil 7, Forlong 3, Angbor 3, Gothmog 6, Suladan 3, Roi de Khand 3. Compagnie Grise (15) et Roi-Sorcier (17) gardent leur coût unique.
 
 > 🎲 **Roi-Sorcier sur l'ombre ailée — sommet de l'échelle, confirmé (D112).** Général universel + Destin 4 sur un profil bespoke déjà coûteux (§6, `02 - Factions/Mordor.md`) porte la pièce à **17 pts**, au-dessus du Mûmakil (15). Ce sommet est **assumé** : pas de plafonnement des pièces bespoke les plus chargées. Le chef des Nazgûl est la pièce la plus dangereuse du Pelennor et son prix en est la traduction correcte. Les bornes 3-9 restent la référence pour les unités **standard**, sans Leader.
 
@@ -245,6 +249,8 @@ Les **Créatures** (Mûmakil, Troll) et **Chars** (Aurige de Khand) se comptent 
 5. ⚠️ **Tarif du Général hors Épique, ouvert depuis D147.** Le forfait de **+9** a été fixé et éprouvé en Épique, sur des mains de 6 à 8 cartes. Une carte de plus pèse proportionnellement davantage dans une petite main : passer de 4 à 5 cartes, c'est +25 %, contre +12 % de 8 à 9. Tarif **conservé en l'état** faute de scénario Escarmouche ou Normal avec Général — à reprendre au premier d'entre eux.
 
 ---
+
+*Version : 0.42 — Phase 1 — 2026-10-19. **D196** : bannière +1 et badge Faction +1 ([Mercenaire] −1) au coût final, hors compression ; le point ouvert sur [Poison] (D194) est clos. **D197** : Leader = 1 + Destin, +3 s'il est Général (§3.3). **D198** : badge Légende supprimé (ligne du §3.4 conservée pour l'historique, sans porteur).*
 
 *Version : 0.41 — Phase 1 — 2026-10-17. **D193** : [Protection] sans valeur, forfait 1. **D194** : [Poison] refondu ; son forfait de +1 brut est signalé à revoir en P14d. Aucun coût modifié à ce stade.*
 
