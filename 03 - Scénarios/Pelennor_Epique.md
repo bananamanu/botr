@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "scenario"
 phase: "1"
 statut: "jouable"
-date_maj: "2026-10-04"
+date_maj: "2026-10-23"
 tags: [BdTdM, "type/scenario", "phase/1", "statut/jouable", "format/epique", pelennor]
-version: "1.12"
+version: "1.13"
 ---
 
 # La Bataille des Champs du Pelennor — format Épique
@@ -35,6 +35,7 @@ Le scénario couvre le moment où les trois forces se rencontrent. Il est **fid�
 
 ## 2. La carte
 
+![[Plan_Pelennor_zones.jpg]]
 ### 2.1 Sections
 
 Les trois Sections sont délimitées par deux lignes verticales. **Chaque camp nomme ses Sections depuis son propre bord (D150)** : le plan se lit depuis le bord du Bien (ligne 1, colonne A à sa gauche), si bien que la Gauche du Bien fait face à la Droite du Mal.
@@ -274,6 +275,8 @@ Sa figurine, à pied, est **posée à côté** du plateau du **même éored qu'�
 | 3 | **Sort des Mûmakil** — au Bien si les **deux** sont morts ; au Mal si **aucun** ne l'est ; à personne si un seul est mort | **1** |
 | 4 | **Points stratégiques** — F5, L5, F9, L9 | **1 chacun** |
 
+**Décapitation :** le Bien doit éliminer au moins **3 des 4** Leaders du Mal, le Mal au moins **4 des 6** Leaders du Bien. Un Leader sauvé par son Destin n'est pas éliminé. **Si les deux camps atteignent leur seuil, le point ne va à personne** : comme les autres conditions, il reste exclusif, et le total en jeu reste de 8.
+
 **Contrôle d'un point stratégique :** le camp qui a une unité **sur l'hexagone à la fin de la partie**. Un hexagone vide ne rapporte à personne.
 
 **Initiative (D136) :** le **Mal ouvre chaque manche**, le Bien la ferme. L'assaut vient du Mordor et les défenseurs réagissent — et le Bien a ainsi le dernier mot de la dernière manche, ce qui compte pour des points stratégiques comptés à la fin.
@@ -334,6 +337,8 @@ Aucun jeton 🔵 distance : depuis D125, **toutes les unités de tir du jeu sont
 - **Tarif de la sauvegarde conférée par badge** — ouvert par D143, voir `[[Regles_Points]]` §8 point 4. Concerne deux unités du scénario, sans incidence sur l'équilibre par Section.
 
 ---
+
+*Version : 1.13 — Phase 1 — 2026-10-23. **Précision de forme, sans numéro D (choix d'Emmanuel, P11b.3)** : §6, seuils de Décapitation explicités (3/4 pour le Bien, 4/6 pour le Mal) ; si les deux camps les atteignent, le point ne va à personne, ce qui garde les 8 points exclusifs. Relevé en refaisant la fiche de scénario.*
 
 *Version : 1.12 — Phase 1 — 2026-10-04. **Correction de nom, sans numéro D** : « Guerriers de Minas Tirith » remplace « Troupes régulières de Minas Tirith » (§3.1), en accord avec `[[Gondor_et_Fiefs]]` v3.5. Ordre de bataille et coûts inchangés.*
 
