@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "faction"
 phase: "1"
 statut: "brouillon-a-tester"
-date_maj: "2026-10-19"
+date_maj: "2026-10-22"
 tags: [BdTdM, "type/faction", "peuple/rohan", "statut/brouillon"]
-version: "2.11"
+version: "2.12"
 ---
 
 # Rohan — Profils d'unités
@@ -35,7 +35,7 @@ Riposte même repoussé. **Outil optionnel**, +1 brut, disponible sur les unité
 | 1 | Éored de cavalier du Rohan | Cavalerie | Mêlée | 🔵 | Faction, Bannière | **6** |
 | 2 | Milice lige | Infanterie | Mêlée | 🟢 | Faction, **Bannière** | **3** |
 | 3 | Archers liges | Infanterie | Distance | 🟢 | Faction | **3** |
-| 4 | Éored d'éclaireur | Cavalerie | Distance | 🔵 | Faction | **3** |
+| 4 | Éored d'éclaireur | Cavalerie | Distance | 🟢 | Faction | **3** |
 
 > 🎲 **Case comblée (D124).** Éored d'éclaireur **+ Faction [Férocité]** : brut 13 + 1 = 14 → `round(14÷3)−1` = **4**. C'est la seule unité du Rohan où la Faction n'est **pas** absorbée par la compression — sur l'Éored de cavalier (22 → 6) et les Gardes royaux à cheval (24 → 7), elle reste gratuite.
 
@@ -105,6 +105,8 @@ Bannière portée au Playtest #4 par 2 éoreds (+1 → **7** chacun) et 1 garde 
 - **Garde du Roi à 8/10 pts** — hausse sensible par rapport à l'ancienne version (7/8), à surveiller au prochain playtest : une pièce increvable au recul, avec 5 dés (Légende), à ce tarif, doit rester utilisable dans un format 3v3 sans écraser la ligne.
 
 ---
+
+*Version : 2.12 — Phase 1 — 2026-10-22. **Éored d'éclaireur 🔵 → 🟢 au §2**, correction de forme : D125 (30/08) annonçait ce passage dans la v2.9, qui ne l'avait pas porté. Aucun coût touché.*
 
 *Version : 2.11 — Phase 1 — 2026-10-19. **D196-D197** : options et Leaders au coût final, hors compression ; le livret Factions fait foi pour les coûts. **D198** : la Garde du Roi perd Légende (badge supprimé) et garde [Inébranlable ∞] seule : **7** à pied, **9** à cheval (§3 ci-dessus non réécrit).*
 

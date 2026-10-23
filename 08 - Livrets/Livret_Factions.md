@@ -3,9 +3,9 @@ projet: "Batailles de la Terre du Milieu"
 type: "livret"
 phase: "P14d"
 statut: "en-cours"
-date_maj: "2026-10-20"
+date_maj: "2026-10-22"
 tags: [BdTdM, type/livret]
-version: "0.2"
+version: "0.3"
 ---
 
 # Batailles de la Terre du Milieu — Livret Factions
@@ -76,7 +76,7 @@ Disponible sur toutes les unités du Rohan, sauf la Garde du Roi.
 
 | Type | Classe | Mode | Coût |
 |---|---|---|---|
-| Cavalerie | {BLEU} Standard | {DISTANCE} Distance | **3** |
+| Cavalerie | {VERT} Légère | {DISTANCE} Distance | **3** |
 
 **Options :** {FACTION} [Férocité] +1
 
@@ -601,6 +601,8 @@ Les Orientaux n'ont pas de Leader nommé.
 **Options :** figurine avec bannière +1
 
 ---
+
+*Version : 0.3 — 2026-10-22. Éored d'éclaireur passé de {BLEU} Standard à {VERT} Légère, conformément à D125 (toutes les unités de tir du jeu sont vertes) ; l'erreur venait de `Rohan.md`, corrigé dans la même passe. Coût inchangé.*
 
 *Version : 0.2 — 2026-10-20. Retour d'Emmanuel. Présentation générique (« les différents peuples de la Terre du Milieu ») et textes d'identité détachés du Pelennor. Paragraphe « Le coût d'une unité » retiré : les coûts sont donnés sur chaque fiche. Leaders inclus présentés de façon générique ; ligne de Leader pour Aragorn (universel, +8). « Pièce unique » remplacé par « (unique) » sur la Garde du Roi, la Compagnie Grise et le Roi-Sorcier, retiré du Troll, du Mûmakil et de l'Aurige, qu'une armée peut aligner en plusieurs exemplaires. Fort-le-Cor. Sans Aragorn, pas de Compagnie Grise. D200 : à la [Charge écrasante], chaque Pouvoir donne au choix 1 touche ou 1 Drapeau.*
 
