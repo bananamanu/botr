@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - Scénarios/Pelennor_Epique.md",
-                "mode": "source",
+                "file": "08 - Livrets/Livret_de_reference.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pelennor_Epique"
+              "title": "Livret_de_reference"
             }
           },
           {
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 - Scénarios/Pelennor_Epique.md",
+                "file": "08 - Livrets/Livret_de_reference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,7 +227,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 843.5
+    "width": 842.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,31 +242,33 @@
   },
   "active": "d6233f6418b1ba33",
   "lastOpenFiles": [
-    "08 - Livrets/Livret_de_regles.md",
-    "06 - Images/Plan_Pelennor_zones.jpg",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_57.sla",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_57.sla.9036",
-    "06 - Images/plateau-epique.png",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_47.sla",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_47.sla.8439",
-    "06 - Images/plateau_autosave_23_10_2026_05_47.sla",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_37.sla",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_37.sla.7840",
-    "08 - Livrets/livret-regles_autosave_23_10_2026_05_27.sla",
-    "08 - Livrets/livret-regles_autosave_22_10_2026_20_06.sla",
-    "08 - Livrets/livret-regles_autosave_22_10_2026_17_02.sla",
-    "06 - Images/hexagone_batiment.png",
-    "06 - Images/hexagone_pont.png",
-    "00 - META/Retour session livret de factions.md",
+    "07 - Aides de jeu/Aide_de_jeu_compilee.pdf",
+    "08 - Livrets/livret-reference.sla.322",
+    "08 - Livrets/livret-reference.sla.4073",
+    "08 - Livrets/livret-reference_autosave_25_10_2026_22_22.sla",
+    "08 - Livrets/livret-reference_autosave_25_10_2026_22_22.sla.3671",
+    "08 - Livrets/livret-reference.sla.3319",
+    "08 - Livrets/livret-reference_autosave_25_10_2026_22_12.sla",
+    "08 - Livrets/livret-reference_autosave_25_10_2026_22_12.sla.3073",
+    "08 - Livrets/livret-reference_autosave_25_10_2026_22_01.sla",
+    "08 - Livrets/livret-reference_autosave_25_10_2026_22_01.sla.2475",
+    "06 - Images/hexagone_plaine.png",
+    "06 - Images/plaine.png",
+    "08 - Livrets/livret-reference.sla.1746",
     "08 - Livrets/Livret_Factions.md",
-    "00 - META/Retour session livre de références.md",
     "08 - Livrets/Livret_de_reference.md",
-    "06 - Images/exemples/guerrier_minas_tirith.png",
-    "06 - Images/exemples/archer_minas_tirith.png",
-    "06 - Images/exemples/Archer chevalier en armure d’argent.png",
-    "06 - Images/exemples/Chevalier miniature en pleine charge.png",
-    "06 - Images/exemples/guerrier_orc.png",
-    "06 - Images/exemples/Guerrier_orc (2).png",
+    "08 - Livrets/Livret_de_regles.md",
+    "06 - Images/livret/aragorn.png",
+    "06 - Images/livret/cavalier_rohan.png",
+    "06 - Images/exemples/guerrier_lossarnach.png",
+    "06 - Images/exemples/guerrier_uruk_hai.png",
+    "06 - Images/exemples/guerrier_orc_banniere.png",
+    "06 - Images/exemples/forlong.png",
+    "06 - Images/exemples/cavalier_warg.png",
+    "06 - Images/exemples/gothmog.png",
+    "03 - Scénarios/Pelennor_Epique.md",
+    "00 - META/Retour session livret de factions.md",
+    "00 - META/Retour session livre de références.md",
     "00 - META/Document_de_cadrage.md",
     "00 - META/Document_de_cadrage_1.md",
     "00 - META/Retour session livre de règles (chapitre11).md",
@@ -285,7 +287,6 @@
     "00 - META/Retour session livre de règles (chapitre 4 à 5).md",
     "00 - META/Retour session livre de règles (chapitre 1 à 3).md",
     "01 - Règles/Regles_Base (1).md",
-    "08 - Livret/00_Conventions_et_glossaire.md",
-    "05 - Playtest/Playtest5_Compte-rendu.md"
+    "08 - Livret/00_Conventions_et_glossaire.md"
   ]
 }

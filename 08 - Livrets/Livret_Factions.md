@@ -147,7 +147,7 @@ La Garde du Roi se joue à pied ou à cheval : choisissez l'une des deux version
 
 ---
 
-## Le Gondor et ses fiefs
+## Le Gondor et ses fief
 
 Le Gondor est le royaume des Dúnedain du Sud, héritiers de Númenor. Depuis des siècles, Minas Tirith, la Cité Blanche, monte la garde face au Mordor, de l'autre côté de l'Anduin, et ses soldats n'ont jamais connu de longue paix. Autour de la Cité s'étendent les fiefs du royaume, dont les seigneurs lèvent leurs propres troupes quand vient l'appel : Dol Amroth et ses chevaliers à l'étendard du cygne, Lossarnach, le Lamedon et d'autres encore. Les Rangers veillent sur les terres perdues de l'Ithilien, et du Nord descendent parfois les Dúnedain, les Rôdeurs, parents lointains des hommes du Gondor.
 
